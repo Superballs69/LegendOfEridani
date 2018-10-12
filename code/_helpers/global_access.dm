@@ -43,8 +43,14 @@
 			return global.SSantags;
 		if("SSatoms")
 			return global.SSatoms;
+		if("SScharacter_setup")
+			return global.SScharacter_setup;
+		if("SSchemistry")
+			return global.SSchemistry;
 		if("SScircuit")
 			return global.SScircuit;
+		if("SScodex")
+			return global.SScodex;
 		if("SSculture")
 			return global.SSculture;
 		if("SSevac")
@@ -81,6 +87,10 @@
 			return global.SSobj;
 		if("SSopen_space")
 			return global.SSopen_space;
+		if("SSpersistence")
+			return global.SSpersistence;
+		if("SSplants")
+			return global.SSplants;
 		if("SSprocessing")
 			return global.SSprocessing;
 		if("SSradiation")
@@ -275,10 +285,6 @@
 			return global.can_call_ert;
 		if("captain_announcement")
 			return global.captain_announcement;
-		if("cargo_supply_pack_root")
-			return global.cargo_supply_pack_root;
-		if("cargo_supply_packs")
-			return global.cargo_supply_packs;
 		if("changelog_hash")
 			return global.changelog_hash;
 		if("channel_color_presets")
@@ -291,8 +297,6 @@
 			return global.checked_for_inactives;
 		if("chemical_reaction_logs")
 			return global.chemical_reaction_logs;
-		if("chemical_reactions_list")
-			return global.chemical_reactions_list;
 		if("chicken_count")
 			return global.chicken_count;
 		if("church_name")
@@ -359,8 +363,6 @@
 			return global.department_accounts;
 		if("department_radio_keys")
 			return global.department_radio_keys;
-		if("description_icons")
-			return global.description_icons;
 		if("diary")
 			return global.diary;
 		if("dna_activity_bounds")
@@ -675,8 +677,6 @@
 			return global.pipe_colors;
 		if("pipe_processing_killed")
 			return global.pipe_processing_killed;
-		if("plant_controller")
-			return global.plant_controller;
 		if("plant_seed_sprites")
 			return global.plant_seed_sprites;
 		if("playable_species")
@@ -689,8 +689,6 @@
 			return global.powerinstances;
 		if("powers")
 			return global.powers;
-		if("preferences_datums")
-			return global.preferences_datums;
 		if("priority_air_alarms")
 			return global.priority_air_alarms;
 		if("priority_announcement")
@@ -1030,8 +1028,14 @@
 			global.SSantags=newval;
 		if("SSatoms")
 			global.SSatoms=newval;
+		if("SScharacter_setup")
+			global.SScharacter_setup=newval;
+		if("SSchemistry")
+			global.SSchemistry=newval;
 		if("SScircuit")
 			global.SScircuit=newval;
+		if("SScodex")
+			global.SScodex=newval;
 		if("SSculture")
 			global.SSculture=newval;
 		if("SSevac")
@@ -1068,6 +1072,10 @@
 			global.SSobj=newval;
 		if("SSopen_space")
 			global.SSopen_space=newval;
+		if("SSpersistence")
+			global.SSpersistence=newval;
+		if("SSplants")
+			global.SSplants=newval;
 		if("SSprocessing")
 			global.SSprocessing=newval;
 		if("SSradiation")
@@ -1262,10 +1270,6 @@
 			global.can_call_ert=newval;
 		if("captain_announcement")
 			global.captain_announcement=newval;
-		if("cargo_supply_pack_root")
-			global.cargo_supply_pack_root=newval;
-		if("cargo_supply_packs")
-			global.cargo_supply_packs=newval;
 		if("changelog_hash")
 			global.changelog_hash=newval;
 		if("channel_color_presets")
@@ -1278,8 +1282,6 @@
 			global.checked_for_inactives=newval;
 		if("chemical_reaction_logs")
 			global.chemical_reaction_logs=newval;
-		if("chemical_reactions_list")
-			global.chemical_reactions_list=newval;
 		if("chicken_count")
 			global.chicken_count=newval;
 		if("church_name")
@@ -1346,8 +1348,6 @@
 			global.department_accounts=newval;
 		if("department_radio_keys")
 			global.department_radio_keys=newval;
-		if("description_icons")
-			global.description_icons=newval;
 		if("diary")
 			global.diary=newval;
 		if("dna_activity_bounds")
@@ -1662,8 +1662,6 @@
 			global.pipe_colors=newval;
 		if("pipe_processing_killed")
 			global.pipe_processing_killed=newval;
-		if("plant_controller")
-			global.plant_controller=newval;
 		if("plant_seed_sprites")
 			global.plant_seed_sprites=newval;
 		if("playable_species")
@@ -1676,8 +1674,6 @@
 			global.powerinstances=newval;
 		if("powers")
 			global.powers=newval;
-		if("preferences_datums")
-			global.preferences_datums=newval;
 		if("priority_air_alarms")
 			global.priority_air_alarms=newval;
 		if("priority_announcement")
@@ -1995,7 +1991,10 @@
 	"SSalarm",
 	"SSantags",
 	"SSatoms",
+	"SScharacter_setup",
+	"SSchemistry",
 	"SScircuit",
+	"SScodex",
 	"SSculture",
 	"SSevac",
 	"SSevent",
@@ -2014,6 +2013,8 @@
 	"SSnano",
 	"SSobj",
 	"SSopen_space",
+	"SSpersistence",
+	"SSplants",
 	"SSprocessing",
 	"SSradiation",
 	"SSshuttle",
@@ -2111,15 +2112,12 @@
 	"cameranet",
 	"can_call_ert",
 	"captain_announcement",
-	"cargo_supply_pack_root",
-	"cargo_supply_packs",
 	"changelog_hash",
 	"channel_color_presets",
 	"channel_to_radio_key",
 	"chargen_robolimbs",
 	"checked_for_inactives",
 	"chemical_reaction_logs",
-	"chemical_reactions_list",
 	"chicken_count",
 	"church_name",
 	"client_preference_stats_",
@@ -2153,7 +2151,6 @@
 	"delta_index",
 	"department_accounts",
 	"department_radio_keys",
-	"description_icons",
 	"diary",
 	"dna_activity_bounds",
 	"dna_genes",
@@ -2311,14 +2308,12 @@
 	"photo_count",
 	"pipe_colors",
 	"pipe_processing_killed",
-	"plant_controller",
 	"plant_seed_sprites",
 	"playable_species",
 	"possible_changeling_IDs",
 	"power_alarm",
 	"powerinstances",
 	"powers",
-	"preferences_datums",
 	"priority_air_alarms",
 	"priority_announcement",
 	"priv_all_access",

@@ -94,7 +94,6 @@ var/list/admin_verbs_admin = list(
 	/client/proc/change_security_level,
 	/client/proc/view_chemical_reaction_logs,
 	/client/proc/makePAI,
-	/datum/admins/proc/paralyze_mob,
 	/client/proc/fixatmos,
 	/client/proc/list_traders,
 	/client/proc/add_trader,
@@ -193,7 +192,6 @@ var/list/admin_verbs_debug = list(
 	/datum/admins/proc/map_template_load,
 	/datum/admins/proc/map_template_load_new_z,
 	/datum/admins/proc/map_template_upload,
-	/client/proc/show_plant_genes,
 	/client/proc/enable_debug_verbs,
 	/client/proc/callproc,
 	/client/proc/callproc_target,
@@ -318,8 +316,9 @@ var/list/admin_verbs_mod = list(
 	/client/proc/check_antagonists,
 	/client/proc/cmd_admin_subtle_message, // send an message to somebody as a 'voice in their head',
 	/client/proc/aooc,
-	/datum/admins/proc/sendFax
-
+	/datum/admins/proc/sendFax,
+	/datum/admins/proc/paralyze_mob,
+	/datum/admins/proc/view_persistent_data
 )
 
 var/list/admin_verbs_mentor = list(
@@ -545,7 +544,7 @@ var/list/admin_verbs_mentor = list(
 	var/datum/preferences/D
 	var/client/C = GLOB.ckey_directory[warned_ckey]
 	if(C)	D = C.prefs
-	else	D = preferences_datums[warned_ckey]
+	else	D = SScharacter_setup.preferences_datums[warned_ckey]
 
 	if(!D)
 		to_chat(src, "<font color='red'>Error: warn(): No such ckey found.</font>")

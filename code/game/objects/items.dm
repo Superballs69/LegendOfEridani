@@ -487,8 +487,11 @@ var/list/global/slot_flags_enumeration = list(
 //For non-projectile attacks this usually means the attack is blocked.
 //Otherwise should return 0 to indicate that the attack is not affected in any way.
 /obj/item/proc/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
-	if(get_parry_chance(user))
-		if(default_parry_check(user, attacker, damage_source) && prob(get_parry_chance()))
+	var/parry_chance = get_parry_chance(user)
+	if(attacker)	
+		parry_chance = max(0, parry_chance - 10 * attacker.get_skill_difference(SKILL_COMBAT, user))
+	if(parry_chance)
+		if(default_parry_check(user, attacker, damage_source) && prob(parry_chance))
 			user.visible_message("<span class='danger'>\The [user] parries [attack_text] with \the [src]!</span>")
 			playsound(user.loc, 'sound/weapons/punchmiss.ogg', 50, 1)
 			on_parry()
@@ -501,7 +504,19 @@ var/list/global/slot_flags_enumeration = list(
 /obj/item/proc/get_parry_chance(mob/user)
 	. = base_parry_chance
 	if(user)
-		. += 15 * (user.get_skill_value(SKILL_COMBAT) - SKILL_BASIC)
+		if(base_parry_chance || user.skill_check(SKILL_COMBAT, SKILL_ADEPT))
+			. += 10 * (user.get_skill_value(SKILL_COMBAT) - SKILL_BASIC)
+
+/obj/item/proc/on_disarm_attempt(mob/target, mob/living/attacker)
+	if(force < 1)
+		return 0
+	if(!istype(attacker))
+		return 0
+	attacker.apply_damage(force, damtype, attacker.hand ? BP_L_HAND : BP_R_HAND, used_weapon = src)
+	attacker.visible_message("<span class='danger'>[attacker] hurts \his hand on [src]!</span>")
+	playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
+	playsound(target, hitsound, 50, 1, -1)
+	return 1
 
 /obj/item/proc/get_loc_turf()
 	var/atom/L = loc
@@ -529,14 +544,6 @@ var/list/global/slot_flags_enumeration = list(
 	user.do_attack_animation(M)
 
 	src.add_fingerprint(user)
-	//if((CLUMSY in user.mutations) && prob(50))
-	//	M = user
-		/*
-		to_chat(M, "<span class='warning'>You stab yourself in the eye.</span>")
-		M.sdisabilities |= BLIND
-		M.weakened += 4
-		M.adjustBruteLoss(10)
-		*/
 
 	if(istype(H))
 
@@ -583,6 +590,7 @@ var/list/global/slot_flags_enumeration = list(
 	if(istype(src, /obj/item/clothing/gloves))
 		var/obj/item/clothing/gloves/G = src
 		G.transfer_blood = 0
+	trace_DNA = null
 
 /obj/item/reveal_blood()
 	if(was_bloodied && !fluorescent)
@@ -614,18 +622,19 @@ var/list/global/slot_flags_enumeration = list(
 		blood_DNA[M.dna.unique_enzymes] = M.dna.b_type
 	return 1 //we applied blood to the item
 
-/obj/item/proc/generate_blood_overlay()
-	if(blood_overlay)
-		return
+GLOBAL_LIST_EMPTY(blood_overlay_cache)
 
+/obj/item/proc/generate_blood_overlay(force = FALSE)
+	if(blood_overlay && !force)
+		return
+	if(GLOB.blood_overlay_cache["[icon]" + icon_state])
+		blood_overlay = GLOB.blood_overlay_cache["[icon]" + icon_state]
+		return
 	var/icon/I = new /icon(icon, icon_state)
 	I.Blend(new /icon('icons/effects/blood.dmi', rgb(255,255,255)),ICON_ADD) //fills the icon_state with white (except where it's transparent)
 	I.Blend(new /icon('icons/effects/blood.dmi', "itemblood"),ICON_MULTIPLY) //adds blood and the remaining white areas become transparant
-
-	//not sure if this is worth it. It attaches the blood_overlay to every item of the same type if they don't have one already made.
-	for(var/obj/item/A in world)
-		if(A.type == type && !A.blood_overlay)
-			A.blood_overlay = image(I)
+	blood_overlay = image(I)
+	GLOB.blood_overlay_cache["[icon]" + icon_state] = blood_overlay
 
 /obj/item/proc/showoff(mob/user)
 	for (var/mob/M in view(user))

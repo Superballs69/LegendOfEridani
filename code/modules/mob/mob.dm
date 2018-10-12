@@ -637,6 +637,11 @@
 		var/mob/living/carbon/human/H = AM
 		if(H.pull_damage())
 			to_chat(src, "<span class='danger'>Pulling \the [H] in their current condition would probably be a bad idea.</span>")
+
+		var/obj/item/clothing/C = H.get_covering_equipped_item_by_zone(BP_CHEST)
+		if(istype(C))
+			C.leave_evidence(src)
+
 	//Attempted fix for people flying away through space when cuffed and dragged.
 	if(ismob(AM))
 		var/mob/pulled = AM
@@ -1160,6 +1165,9 @@
 
 /mob/proc/can_drown()
 	return 0
+
+/mob/proc/get_sex()
+	return gender
 
 /mob/is_fluid_pushable(var/amt)
 	if(..() && !buckled && (lying || !Check_Shoegrip()) && (amt >= mob_size * (lying ? 5 : 10)))

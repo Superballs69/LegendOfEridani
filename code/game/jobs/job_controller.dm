@@ -395,7 +395,7 @@ var/global/datum/controller/occupations/job_master
 		for(var/mob/new_player/player in unassigned)
 			if(player.client.prefs.alternate_option == RETURN_TO_LOBBY)
 				player.ready = 0
-				player.new_player_panel_proc()
+				player.new_player_panel()
 				unassigned -= player
 		return 1
 
@@ -476,7 +476,7 @@ var/global/datum/controller/occupations/job_master
 				if(H.char_branch && H.char_branch.email_domain)
 					domain = H.char_branch.email_domain
 				else
-					domain = "freemail.nt"
+					domain = "freemail.net"
 				desired_name = H.real_name
 				ntnet_global.create_email(H, desired_name, domain)
 			// END EMAIL GENERATION

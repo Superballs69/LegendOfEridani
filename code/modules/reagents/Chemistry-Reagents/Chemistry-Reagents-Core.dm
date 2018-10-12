@@ -12,6 +12,7 @@
 		"has_oxy" = 1
 	)
 	name = "Blood"
+	description = "A red (or blue) liquid commonly found inside animals, most of whom are pretty insistent about it being left where you found it."
 	reagent_state = LIQUID
 	metabolism = REM * 5
 	color = "#c80000"
@@ -67,10 +68,11 @@
 	var/weakref/W = data["donor"]
 	if (!W)
 		blood_splatter(T, src, 1)
+		return
 	W = W.resolve()
-	if(istype(W, /mob/living/carbon/human))
+	if(ishuman(W))
 		blood_splatter(T, src, 1)
-	else if(istype(W, /mob/living/carbon/alien))
+	else if(isalien(W))
 		var/obj/effect/decal/cleanable/blood/B = blood_splatter(T, src, 1)
 		if(B)
 			B.blood_DNA["UNKNOWN DNA STRUCTURE"] = "X*"
@@ -201,7 +203,7 @@
 
 /datum/reagent/fuel
 	name = "Welding fuel"
-	description = "Required for welders. Flamable."
+	description = "A stable hydrazine-based compound whose exact manufacturing specifications are a closely-guarded secret. One of the most common fuels in human space. Extremely flammable."
 	taste_description = "gross metal"
 	reagent_state = LIQUID
 	color = "#660000"
@@ -221,4 +223,16 @@
 /datum/reagent/fuel/touch_mob(var/mob/living/L, var/amount)
 	if(istype(L))
 		L.adjust_fire_stacks(amount / 10) // Splashing people with welding fuel to make them easy to ignite!
+
+/datum/reagent/fuel/ex_act(obj/item/weapon/reagent_containers/holder, severity)
+	if(volume <= 50)
+		return
+	var/turf/T = get_turf(holder)
+	if(volume > 500)
+		explosion(T,1,2,4)
+	else if(volume > 100)
+		explosion(T,0,1,3)
+	else if(volume > 50)
+		explosion(T,-1,1,2)
+	remove_self(volume)
 
