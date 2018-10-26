@@ -7,7 +7,7 @@
 	layer = 5.2
 	climb_speed_mult = 0.25
 	anchored = FALSE
-	atom_flags = ATOM_FLAG_CHECKS_BORDER | ATOM_FLAG_CLIMBABLE
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CHECKS_BORDER | ATOM_FLAG_CLIMBABLE
 	icon_state = "railing0-1"
 
 	var/material/material
@@ -128,7 +128,7 @@
 			if (UpdateNeighbors)
 				R.update_icon(0)
 
-/obj/structure/railing/update_icon(var/update_neighbors = TRUE)
+/obj/structure/railing/on_update_icon(var/update_neighbors = TRUE)
 	NeighborsCheck(update_neighbors)
 	overlays.Cut()
 	if (!neighbor_status || !anchored)
@@ -248,7 +248,7 @@
 		if(!anchored)
 			playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 			if(do_after(user, 20, src))
-				if(!anchored)
+				if(anchored)
 					return
 				user.visible_message("<span class='notice'>\The [user] dismantles \the [src].</span>", "<span class='notice'>You dismantle \the [src].</span>")
 				material.place_sheet(loc, 2)

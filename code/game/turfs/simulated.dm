@@ -91,7 +91,7 @@
 					S.handle_movement(src, MOVING_QUICKLY(H))
 					if(S.track_blood && S.blood_DNA)
 						bloodDNA = S.blood_DNA
-						bloodcolor=S.blood_color
+						bloodcolor = S.blood_color
 						S.track_blood--
 			else
 				if(H.track_blood && H.feet_blood_DNA)
@@ -172,6 +172,6 @@
 	return ..()
 
 /turf/simulated/Initialize()
-	if(ticker && ticker.current_state == GAME_STATE_PLAYING)
+	if(GAME_STATE >= RUNLEVEL_GAME)
 		fluid_update()
 	. = ..()
