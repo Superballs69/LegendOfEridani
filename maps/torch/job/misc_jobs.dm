@@ -16,7 +16,7 @@ Civilian
 *******/
 
 /datum/job/assistant
-	title = "Passenger"
+	title = "Crewman"
 	total_positions = 12
 	spawn_positions = 12
 	supervisors = "the Executive Officer"
@@ -24,29 +24,15 @@ Civilian
 	economic_power = 6
 	announced = FALSE
 	alt_titles = list(
-		"Journalist" = /decl/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Historian",
-		"Botanist",
-		"Investor" = /decl/hierarchy/outfit/job/torch/passenger/passenger/investor,
-		"Naturalist",
-		"Ecologist",
-		"Entertainer",
-		"Independent Observer",
-		"Sociologist",
-		"Trainer")
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ,
-		/datum/mil_rank/civ/contractor
-	)
+		"General Technician",
+		"Technical Assistant")
+	outfit_type = /decl/hierarchy/outfit/job/assistant
 	required_education = EDUCATION_TIER_NONE
 
 /datum/job/merchant
 	title = "Merchant"
 	department = "Civilian"
 	department_flag = CIV
-
 	total_positions = 2
 	spawn_positions = 2
 	availablity_chance = 30
@@ -55,15 +41,12 @@ Civilian
 	ideal_character_age = 30
 	minimal_player_age = 0
 	create_record = 0
-	outfit_type = /decl/hierarchy/outfit/job/torch/merchant
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/merchant
 	latejoin_at_spawnpoints = 1
 	access = list(access_merchant)
 	announced = FALSE
 	min_skill = list(   SKILL_FINANCE = SKILL_ADEPT,
 	                    SKILL_PILOT	  = SKILL_BASIC)
-
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 24
 
@@ -71,7 +54,6 @@ Civilian
 	title = "Stowaway"
 	department = "Civilian"
 	department_flag = CIV
-
 	total_positions = 1
 	spawn_positions = 1
 	availablity_chance = 20
@@ -81,8 +63,6 @@ Civilian
 	minimal_player_age = 0
 	create_record = 0
 	account_allowed = 0
-	outfit_type = /decl/hierarchy/outfit/job/torch/stowaway
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/civ)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/stowaway
 	latejoin_at_spawnpoints = 1
 	announced = FALSE

@@ -1,8 +1,7 @@
-/datum/job/pathfinder
-	title = "Pathfinder"
+/datum/job/pathfinder_commander
+	title = "Pathfinder Commander"
 	department = "Exploration"
 	department_flag = EXP
-
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Commanding Officer and the Executive Officer"
@@ -10,11 +9,7 @@
 	minimal_player_age = 1
 	economic_power = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
-	)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_commander
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -33,10 +28,10 @@
 	required_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the EC’s Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot Charon if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
+	return "You are the Pathfinder Commander. Your duty is to organize and lead the expeditions to away sites, carrying out the Arcturus-Project's Primary Mission. You command the Pathfinders. You make sure that expedition has the supplies and personnel it needs. You can pilot Charon if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
 
-/datum/job/nt_pilot
-	title = "Shuttle Pilot"
+/datum/job/pathfinder_pilot
+	title = "Pathfinder Pilot"
 	supervisors = "the Pathfinder"
 	department = "Exploration"
 	department_flag = EXP
@@ -47,18 +42,7 @@
 	economic_power = 10
 	minimal_player_age = 0
 	ideal_character_age = 25
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
-	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7
-	)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_pilot
 
 	access = list(access_mining_office,
 						access_mining_station, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy,
@@ -70,22 +54,16 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	required_education = EDUCATION_TIER_BASIC
 
-/datum/job/explorer
-	title = "Explorer"
+/datum/job/pathfinder_explorer
+	title = "Pathfinder"
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Commanding Officer, Executive Officer, and Pathfinder"
+	supervisors = "the Captain, the Head of Personnel and the Pathfinder Commander"
 	selection_color = "#68099e"
 	ideal_character_age = 20
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
-
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5
-	)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_explorer
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
@@ -99,4 +77,4 @@
 	required_education = EDUCATION_TIER_BASIC
 
 /datum/job/explorer/get_description_blurb()
-	return "You are an Explorer. Your duty is to go on expeditions to away sites. The Pathfinder is your team leader. You are to look for anything of economic or scientific interest to the SCG - mineral deposits, alien flora/fauna, artifacts. You will also likely encounter hazardous environments, aggressive wildlife or malfunctioning defense systems, so tread carefully."
+	return "You are Pathfinder. Your duty is to go on expeditions to away sites. The Pathfinder Commander is your team leader. You are to look for anything of economic or scientific interest to the SCG - mineral deposits, alien flora/fauna, artifacts. You will also likely encounter hazardous environments, aggressive wildlife or malfunctioning defense systems, so tread carefully."

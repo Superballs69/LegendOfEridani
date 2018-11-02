@@ -1,194 +1,187 @@
 //Torch ID Cards (they have to be here to make the outfits work, no way around it)
 
-/obj/item/weapon/card/id/torch
+/obj/item/weapon/card/id/eclipse
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the SEV Torch."
-	icon_state = "id"
+	desc = "An identification card issued to personnel aboard the EEV Eclipse."
+	icon_state = "civ"
 	item_state = "card-id"
 	job_access_type = /datum/job/assistant
 
-/obj/item/weapon/card/id/torch/silver
+/obj/item/weapon/card/id/eclipse/silver
 	desc = "A silver identification card belonging to heads of staff."
-	icon_state = "silver"
+	icon_state = "civGold"
 	item_state = "silver_id"
 	job_access_type = /datum/job/hop
 
-/obj/item/weapon/card/id/torch/gold
-	desc = "A golden identification card belonging to the Commanding Officer."
-	icon_state = "gold"
+/obj/item/weapon/card/id/eclipse/gold
+	desc = "A golden identification card belonging to the Captain."
+	icon_state = "goldNew"
 	item_state = "gold_id"
 	job_access_type = /datum/job/captain
 
-/obj/item/weapon/card/id/torch/captains_spare
+/obj/item/weapon/card/id/eclipse/captains_spare
 	name = "commanding officer's spare ID"
 	desc = "The skipper's spare ID."
 	icon_state = "gold"
 	item_state = "gold_id"
 	registered_name = "Commanding Officer"
 	assignment = "Commanding Officer"
-/obj/item/weapon/card/id/torch/captains_spare/New()
+
+/obj/item/weapon/card/id/eclipse/captains_spare/New()
 	access = get_all_station_access()
 	..()
 
+/obj/item/weapon/card/id/eclipse/ice
+	name = "Federal Agent ID card"
+	desc = "A government issued ID card to federal law enforcemenet agents."
+	icon_state = "centcomNew"
+	item_state = "silver_id"
 
-// SolGov Crew and Contractors
-/obj/item/weapon/card/id/torch/crew
-	desc = "An identification card issued to SolGov crewmembers aboard the SEV Torch."
-	icon_state = "solgov"
-	job_access_type = /datum/job/crew
+/obj/item/weapon/card/id/eclipse/ice/New()
+	access = get_all_station_access()
+	..()
 
-
-/obj/item/weapon/card/id/torch/contractor
-	desc = "An identification card issued to private contractors aboard the SEV Torch."
-	icon_state = "civ"
-	job_access_type = /datum/job/assistant
-
-
-/obj/item/weapon/card/id/torch/silver/medical
-	job_access_type = /datum/job/cmo
-
-/obj/item/weapon/card/id/torch/crew/medical
-	job_access_type = /datum/job/doctor
-
-/obj/item/weapon/card/id/torch/crew/medical/senior
-	job_access_type = /datum/job/senior_doctor
-
-/obj/item/weapon/card/id/torch/contractor/medical
-	job_access_type = /datum/job/doctor_contractor
-
-/obj/item/weapon/card/id/torch/contractor/chemist
-	job_access_type = /datum/job/chemist
-
-/obj/item/weapon/card/id/torch/contractor/biomech
-	job_access_type = /datum/job/biomech
-
-/obj/item/weapon/card/id/torch/contractor/medical/counselor
-	job_access_type = /datum/job/psychiatrist
-
-
-/obj/item/weapon/card/id/torch/silver/security
-	job_access_type = /datum/job/hos
-
-/obj/item/weapon/card/id/torch/crew/security
-	job_access_type = /datum/job/officer
-
-/obj/item/weapon/card/id/torch/crew/security/brigofficer
-	job_access_type = /datum/job/warden
-
-/obj/item/weapon/card/id/torch/crew/security/forensic
-	job_access_type = /datum/job/detective
-
-
-/obj/item/weapon/card/id/torch/silver/engineering
-	job_access_type = /datum/job/chief_engineer
-
-/obj/item/weapon/card/id/torch/crew/engineering
-	job_access_type = /datum/job/engineer
-
-/obj/item/weapon/card/id/torch/crew/engineering/senior
-	job_access_type = /datum/job/senior_engineer
-
-/obj/item/weapon/card/id/torch/contractor/engineering
-	job_access_type = /datum/job/engineer_contractor
-
-/obj/item/weapon/card/id/torch/contractor/engineering/roboticist
-	job_access_type = /datum/job/roboticist
-
-
-/obj/item/weapon/card/id/torch/crew/supply/deckofficer
-	job_access_type = /datum/job/qm
-
-/obj/item/weapon/card/id/torch/crew/supply
-	job_access_type = /datum/job/cargo_tech
-
-/obj/item/weapon/card/id/torch/contractor/supply
-	job_access_type = /datum/job/cargo_contractor
-
-
-/obj/item/weapon/card/id/torch/crew/service //unused
-	job_access_type = /datum/job/assistant
-
-/obj/item/weapon/card/id/torch/crew/service/janitor
-	job_access_type = /datum/job/janitor
-
-/obj/item/weapon/card/id/torch/crew/service/chef
-	job_access_type = /datum/job/chef
-
-/obj/item/weapon/card/id/torch/contractor/service //unused
-	job_access_type = /datum/job/assistant
-
-/obj/item/weapon/card/id/torch/contractor/service/bartender
-	job_access_type = /datum/job/bartender
-
-
-/obj/item/weapon/card/id/torch/crew/representative
-	job_access_type = /datum/job/representative
-
-/obj/item/weapon/card/id/torch/crew/sea
-	job_access_type = /datum/job/sea
-
-/obj/item/weapon/card/id/torch/crew/bridgeofficer
-	job_access_type = /datum/job/bridgeofficer
-
-/obj/item/weapon/card/id/torch/crew/pathfinder
-	job_access_type = /datum/job/pathfinder
-
-/obj/item/weapon/card/id/torch/crew/explorer
-	job_access_type = /datum/job/explorer
-
-/obj/item/weapon/card/id/torch/crew/pilot
-	job_access_type = /datum/job/nt_pilot
-
-/obj/item/weapon/card/id/torch/crew/explorer/xenolifetechnician
-	job_access_type = /datum/job/xenolife_technician
-
-//NanoTrasen and Passengers
-
-/obj/item/weapon/card/id/torch/passenger
-	desc = "A card issued to passengers aboard the SEV Torch."
-	icon_state = "id"
-	job_access_type = /datum/job/assistant
-
-/obj/item/weapon/card/id/torch/passenger/research
-	desc = "A card issued to corporate personnel aboard the SEV Torch."
+/obj/item/weapon/card/id/eclipse/liaison
+	name = "Liasion's ID Card"
+	desc = "An ETF issued ID card to corporate liasions to the Arcturus-Eclipse project."
 	icon_state = "corporate"
-	job_access_type = /datum/job/scientist_assistant
-
-/obj/item/weapon/card/id/torch/silver/research
-	job_access_type = /datum/job/rd
-
-/obj/item/weapon/card/id/torch/passenger/research/senior_scientist
-	job_access_type = /datum/job/senior_scientist
-
-/obj/item/weapon/card/id/torch/passenger/research/nt_pilot
-	job_access_type = /datum/job/nt_pilot
-
-/obj/item/weapon/card/id/torch/passenger/research/scientist
-	job_access_type = /datum/job/scientist
-
-/obj/item/weapon/card/id/torch/passenger/research/mining
-	job_access_type = /datum/job/mining
-
-/obj/item/weapon/card/id/torch/passenger/research/guard
-	job_access_type = /datum/job/guard
-
-/obj/item/weapon/card/id/torch/passenger/research/liaison
 	job_access_type = /datum/job/liaison
 
+//Medical
+/obj/item/weapon/card/id/eclipse/silver/medical
+	icon_state = "medGold"
+	item_state = "silver_id"
+	job_access_type = /datum/job/cmo
+
+/obj/item/weapon/card/id/eclipse/medical
+	icon_state = "med"
+	job_access_type = /datum/job/doctor
+
+/obj/item/weapon/card/id/eclipse/medical/senior
+	job_access_type = /datum/job/senior_doctor
+
+/obj/item/weapon/card/id/eclipse/medical/paramedic
+	job_access_type = /datum/job/paramedic
+
+/obj/item/weapon/card/id/eclipse/medical/resident
+	job_access_type = /datum/job/medical_trainee
+
+/obj/item/weapon/card/id/eclipse/medical/labtech
+	job_access_type = /datum/job/labtech
+
+/obj/item/weapon/card/id/eclipse/medical/biomech
+	job_access_type = /datum/job/biomech
+
+/obj/item/weapon/card/id/eclipse/medical/counselor
+	job_access_type = /datum/job/psychiatrist
+
+//Security
+/obj/item/weapon/card/id/eclipse/silver/security
+	icon_state = "secGold"
+	item_state = "silver_id"
+	job_access_type = /datum/job/hos
+
+/obj/item/weapon/card/id/eclipse/security
+	icon_state = "sec"
+	job_access_type = /datum/job/officer
+
+/obj/item/weapon/card/id/eclipse/security/warden
+	job_access_type = /datum/job/warden
+
+/obj/item/weapon/card/id/eclipse/security/iaa
+	icon_state = "centcomNew"
+	item_state = "gold_id"
+	job_access_type = /datum/job/detective
+
+//Engineering
+/obj/item/weapon/card/id/eclipse/silver/engineering
+	icon_state = "engGold"
+	item_state = "silver_id"
+	job_access_type = /datum/job/chief_engineer
+
+/obj/item/weapon/card/id/eclipse/engineering
+	job_access_type = /datum/job/engineer
+
+/obj/item/weapon/card/id/eclipse/engineering/senior
+	job_access_type = /datum/job/senior_engineer
+
+/obj/item/weapon/card/id/eclipse/engineering/apprentice
+	job_access_type = /datum/job/engineer_apprentice
+
+/obj/item/weapon/card/id/eclipse/engineering/roboticist
+	job_access_type = /datum/job/roboticist
+
+//Supply
+/obj/item/weapon/card/id/eclipse/supply
+	icon_state = "cargo"
+	job_access_type = /datum/job/cargo_tech
+
+/obj/item/weapon/card/id/eclipse/supply/qm
+	icon_state = "cargoGold"
+	item_state = "silver_id"
+	job_access_type = /datum/job/qm
+
+/obj/item/weapon/card/id/eclipse/supply/mining
+	job_access_type = /datum/job/mining
+
+
+//Service
+/obj/item/weapon/card/id/eclipse/service //Unused, do not use, pls -SB
+	icon_state = "civ"
+
+/obj/item/weapon/card/id/eclipse/service/janitor
+	job_access_type = /datum/job/janitor
+
+/obj/item/weapon/card/id/eclipse/service/cook
+	job_access_type = /datum/job/chef
+
+/obj/item/weapon/card/id/eclipse/service/bartender
+	job_access_type = /datum/job/bartender
+
+//Exploration
+/obj/item/weapon/card/id/eclipse/exploration
+	icon_state = "cyan"
+	job_access_type = /datum/job/pathfinder_explorer
+
+/obj/item/weapon/card/id/eclipse/exploration/commander
+	icon_state = "cyanGold"
+	job_access_type = /datum/job/pathfinder_commander
+
+/obj/item/weapon/card/id/eclipse/exploration/pilot
+	job_access_type = /datum/job/pathfinder_pilot
+
+//Research
+/obj/item/weapon/card/id/eclipse/silver/research
+	icon_state = "sciGold"
+	item_state = "silver_id"
+	job_access_type = /datum/job/rd
+
+/obj/item/weapon/card/id/eclipse/research
+	icon_state = "sci"
+	job_access_type = /datum/job/scientist
+
+/obj/item/weapon/card/id/eclipse/research/senior_scientist
+	job_access_type = /datum/job/senior_scientist
+
+/obj/item/weapon/card/id/eclipse/research/assistant
+	job_access_type = /datum/job/scientist_assistant
+
+/obj/item/weapon/card/id/eclipse/research/xenolifetechnician
+	job_access_type = /datum/job/xenolife_technician
 
 //Merchant
-/obj/item/weapon/card/id/torch/merchant
+/obj/item/weapon/card/id/eclipse/merchant
 	desc = "An identification card issued to Merchants, indicating their right to sell and buy goods."
 	icon_state = "trader"
 	job_access_type = /datum/job/merchant
 
 //Stowaway
-/obj/item/weapon/card/id/torch/stowaway
-	desc = "An identification card issued to personnel aboard the SEV Torch. Looks like the photo fell off this one."
+/obj/item/weapon/card/id/eclipse/stowaway
+	desc = "An identification card issued to personnel aboard the EEV Eclipse. Looks like the photo fell off this one."
 	icon_state = "id"
-	job_access_type = /datum/job/crew
+	job_access_type = /datum/job/assistant
 
-/obj/item/weapon/card/id/torch/stowaway/New()
+/obj/item/weapon/card/id/eclipse/stowaway/New()
 	..()
 	var/species = SPECIES_HUMAN
 	if(prob(10))

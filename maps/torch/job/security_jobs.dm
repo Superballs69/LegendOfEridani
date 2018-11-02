@@ -1,22 +1,12 @@
 /datum/job/warden
-	title = "Brig Officer"
+	title = "Warden"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
 	economic_power = 5
 	minimal_player_age = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/brig_officer/fleet
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e6,
-	)
+	outfit_type = /decl/hierarchy/outfit/job/security/warden
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -37,78 +27,23 @@
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BASIC
 
-/datum/job/detective
-	title = "Forensic Technician"
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Chief of Security"
-	economic_power = 5
-	minimal_player_age = 7
-	ideal_character_age = 35
-	skill_points = 14
-	alt_titles = list(
-		"Criminal Investigator"
-	)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
-		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/sol/agent
-	)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_COMPUTER    = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_BASIC,
-	                    SKILL_FORENSICS   = SKILL_ADEPT)
-
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
-	skill_points = 20
-
-	access = list(access_security, access_brig, access_forensics_lockers,
-			            access_maint_tunnels, access_emergency_storage,
-			            access_sec_doors, access_solgov_crew, access_morgue)
-	minimal_access = list()
-
-	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_TRADE
-
 /datum/job/officer
-	title = "Master at Arms"
-	total_positions = 4
-	spawn_positions = 4
+	title = "ISEC Contractor"
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Chief of Security"
 	economic_power = 4
 	minimal_player_age = 7
 	ideal_character_age = 25
-	alt_titles = list()
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
-	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-	)
+	alt_titles = list(
+		"TIGER Contractor",
+		"Probationary TIGER Contractor",
+		"Probationary ISEC Contractor"
+		)
+	outfit_type = /decl/hierarchy/outfit/job/security/officer
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
 
@@ -124,3 +59,35 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BASIC
+
+/datum/job/iaa
+	title = "Internal Affairs Agent"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the FCA."
+	economic_power = 9
+	minimal_player_age = 7
+	ideal_character_age = 35
+	skill_points = 14
+	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX,
+	                    SKILL_BUREAUCRACY = SKILL_MAX)
+	skill_points = 32
+
+	access = list(access_security, access_brig, access_forensics_lockers,
+			            access_maint_tunnels, access_emergency_storage,
+			            access_sec_doors, access_solgov_crew, access_morgue)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+	required_education = EDUCATION_TIER_TRADE

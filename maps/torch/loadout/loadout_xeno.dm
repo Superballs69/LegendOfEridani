@@ -1,5 +1,4 @@
 /datum/gear/suit/lab_xyn_machine
-	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/gloves/dress/modified
 	display_name = "modified gloves, dress"
@@ -14,7 +13,6 @@
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/suit/unathi/savage_hunter
-	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/head/skrell_helmet
 	display_name = "skrellian helmet (Skrell)"
