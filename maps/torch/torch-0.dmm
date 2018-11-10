@@ -1,4 +1,4 @@
-//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE 
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /turf/space,
 /area/space)
@@ -503,6 +503,11 @@
 	pixel_x = 21
 	},
 /obj/machinery/camera/network/exploration_shuttle,
+/obj/machinery/alarm{
+	frequency = 1439;
+	pixel_y = 23;
+	req_one_access = list(11,24)
+	},
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
 "bG" = (
@@ -947,6 +952,11 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -24
 	},
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
@@ -1680,6 +1690,11 @@
 	icon_state = "shuttle_chair_preview";
 	dir = 8
 	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/airlock)
 "dD" = (
@@ -1934,6 +1949,10 @@
 	},
 /obj/structure/handrai,
 /obj/machinery/camera/network/exploration_shuttle,
+/obj/machinery/firealarm{
+	dir = 2;
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/cargo)
 "dY" = (
@@ -2340,6 +2359,10 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/machinery/firealarm{
+	dir = 2;
+	pixel_y = 24
+	},
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/atmos)
 "fa" = (
@@ -2417,6 +2440,10 @@
 /obj/structure/handrai,
 /obj/random_multi/single_item/boombox,
 /obj/structure/catwalk,
+/obj/machinery/firealarm{
+	dir = 2;
+	pixel_y = 24
+	},
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/power)
 "fg" = (
@@ -5707,6 +5734,12 @@
 /obj/effect/floor_decal/corner/brown{
 	dir = 6
 	},
+/obj/machinery/alarm{
+	alarm_id = "petrov3";
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/fore)
 "mP" = (
@@ -6859,6 +6892,11 @@
 	c_tag = "Fifth Deck Hallway - Lift";
 	dir = 1
 	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -22
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/fore)
 "oY" = (
@@ -7268,10 +7306,6 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "pS" = (
@@ -7592,6 +7626,11 @@
 /obj/effect/floor_decal/corner/brown{
 	icon_state = "corner_white";
 	dir = 1
+	},
+/obj/machinery/alarm{
+	frequency = 1439;
+	pixel_y = 23;
+	req_one_access = list(11,24)
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
@@ -11172,10 +11211,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
-"Ar" = (
-/obj/effect/paint/red,
-/turf/simulated/wall/titanium,
-/area/quartermaster/hangar)
 "As" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -16456,6 +16491,19 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/cell3)
+"Vz" = (
+/obj/structure/ladder/up,
+/obj/effect/floor_decal/corner/brown{
+	dir = 9
+	},
+/obj/machinery/alarm{
+	alarm_id = "xenobio2_alarm";
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/hallway/primary/fifthdeck/aft)
 "VA" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -36928,8 +36976,8 @@ ie
 aJ
 kd
 ee
-Ar
-Ar
+aY
+aY
 bG
 Cm
 cj
@@ -38761,7 +38809,7 @@ gC
 qD
 Zb
 lh
-xl
+Vz
 xl
 TL
 hy

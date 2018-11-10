@@ -383,14 +383,16 @@
 	//Handle job slot/tater cleanup.
 	if(occupant.mind)
 		var/job = occupant.mind.assigned_role
-		job_master.FreeRole(job)
+		job_master.ClearSlot(job)
 
 		if(occupant.mind.objectives.len)
 			occupant.mind.objectives = null
 			occupant.mind.special_role = null
 
 	// Delete them from datacore.
-	var/datum/computer_file/report/crew_record/R = get_crewmember_record(occupant.real_name)
+	var/sanitized_name = occupant.real_name
+	sanitized_name = sanitize(sanitized_name)
+	var/datum/computer_file/report/crew_record/R = get_crewmember_record(sanitized_name)
 	if(R)
 		qdel(R)
 
@@ -462,8 +464,7 @@
 		if(!check_occupant_allowed(grab.affecting))
 			return
 
-		var/mob/M = G:affecting
-		attempt_enter(M, user)
+		attempt_enter(grab.affecting, user)
 
 /obj/machinery/cryopod/verb/eject()
 	set name = "Eject Pod"
