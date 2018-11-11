@@ -48,7 +48,7 @@
 	name = "security patrol gun box"
 	desc = "A secure box containing a sidearm for TIGER and ISEC contractors."
 
-/obj/item/gunbox/security/attack_self(mob/living/user)
+/obj/item/gunbox/patrol/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ward Takashi R870"] = list(/obj/item/weapon/gun/projectile/shotgun/pump, /obj/item/weapon/storage/box/beanbags, /obj/item/weapon/storage/box/beanbags)
 	options["SRX-9 Hurricane"] = list(/obj/item/weapon/gun/projectile/automatic/srx9, /obj/item/ammo_magazine/m57/rubber, /obj/item/ammo_magazine/m57/rubber)

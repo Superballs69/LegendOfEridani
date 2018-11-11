@@ -1,6 +1,6 @@
 /datum/map/torch
-	name = "Torch"
-	full_name = "SEV Torch"
+	name = "Eclipse"
+	full_name = "EEV Eclipse"
 	path = "torch"
 	//flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
@@ -14,13 +14,13 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "SEV Torch"
-	station_short = "Torch"
+	station_name  = "EEV Eclipse"
+	station_short = "Eclipse"
 	dock_name     = "TBD"
-	boss_name     = "Expeditionary Command"
+	boss_name     = "Eridani Trade Federation"
 	boss_short    = "Command"
-	company_name  = "Sol Central Government"
-	company_short = "SolGov"
+	company_name  = "Solar Systems Alliance"
+	company_short = "SSA"
 
 	map_admin_faxes = list("Corporate Central Office")
 
@@ -47,9 +47,9 @@
 
 /datum/map/torch/map_info(victim)
 	to_chat(victim, "<h2>Current map information</h2>")
-	to_chat(victim, "You're aboard the <b>[station_name]</b>, an Expeditionary Corps vessel. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way.")
-	to_chat(victim, "The vessel is staffed with a mix of SCG government personnel and hired contractors.")
-	to_chat(victim, "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector.")
+	to_chat(victim, "You're aboard the <b>[station_name]</b>, an Eridani Trade Federation sanctioned mission. Its primary mission is looking for undiscovered sapient alien species, technological advancements and general exploration.")
+	to_chat(victim, "The vessel is staffed with a mix of ETF government officials and ETF companies.")
+	to_chat(victim, "This area of space is uncharted, away from SSA/ETF/FF territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector.")
 
 /datum/map/torch/send_welcome()
 	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"

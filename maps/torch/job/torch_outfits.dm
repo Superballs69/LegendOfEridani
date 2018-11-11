@@ -168,6 +168,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 /decl/hierarchy/outfit/job/eclipse/security
 	hierarchy_type = /decl/hierarchy/outfit/job/eclipse/security
 	l_ear = /obj/item/device/radio/headset/headset_sec
+	shoes = /obj/item/clothing/shoes/dutyboots
 	pda_slot = slot_l_store
 
 /decl/hierarchy/outfit/job/eclipse/security/New()
@@ -191,6 +192,12 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	id_type = /obj/item/weapon/card/id/eclipse/security
 	pda_type = /obj/item/modular_computer/pda/security
 
+/decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
+	..()
+	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack
+	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger
+
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
 	name = OUTFIT_JOB_NAME("TIGER Contractor")
 	uniform = /obj/item/clothing/under/tiger
@@ -200,6 +207,12 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/eclipse/security
 	pda_type = /obj/item/modular_computer/pda/security
+
+/decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
+	..()
+	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack
+	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger
 
 /decl/hierarchy/outfit/job/eclipse/security/iaa
 	name = OUTFIT_JOB_NAME("Internal Affairs Agent")
