@@ -133,7 +133,7 @@
 	Investigate and mark any prospective colony worlds as per usual procedures.<br>
 	There is no SCG presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
 	The current docking code is: [torch.docking_codes]<br>
-	Report all findings via bluespace comm buoys during inter-system jumps.<br>
+	Report all findings via quantum comm buoys during inter-system jumps.<br>
 
 	<i>ADM Lau.</i></tt>
 	<i>This paper has been stamped with the stamp of SCG Expeditionary Command.</i>

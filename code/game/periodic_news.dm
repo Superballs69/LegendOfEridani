@@ -42,10 +42,10 @@
 
 		announcement
 			round_time = 60*20
-			message = {"The new field of research trying to explain several interesting spacetime oddities,
-						also known as \"Bluespace Research\", has reached new heights. Of the several
+			message = {"The new field of research trying to explain several interesting spacetime oddities
+						has reached new heights. Of the several
 						hundred space stations now orbiting in Tau Ceti, fifteen are now specially equipped
-						to experiment with and research Bluespace effects. Rumours have it some of these
+						to experiment with and research pocket-space effects. Rumours have it some of these
 						stations even sport functional \"travel gates\" that can instantly move a whole research
 						team to an alternate reality."}
 

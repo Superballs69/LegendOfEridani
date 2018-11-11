@@ -1400,7 +1400,7 @@
 			to_chat(usr, "This can only be used on instances of type /mob/living")
 			return
 
-		if(alert(src.owner, "Are you sure you wish to hit [key_name(M)] with Blue Space Artillery?",  "Confirm Firing?" , "Yes" , "No") != "Yes")
+		if(alert(src.owner, "Are you sure you wish to hit [key_name(M)] with P.C. Long Distance Artillery?",  "Confirm Firing?" , "Yes" , "No") != "Yes")
 			return
 
 		if(BSACooldown)
@@ -1411,9 +1411,9 @@
 		spawn(50)
 			BSACooldown = 0
 
-		to_chat(M, "You've been hit by bluespace artillery!")
-		log_admin("[key_name(M)] has been hit by Bluespace Artillery fired by [src.owner]")
-		message_admins("[key_name(M)] has been hit by Bluespace Artillery fired by [src.owner]")
+		to_chat(M, "You've been hit by orbital artillery!")
+		log_admin("[key_name(M)] has been hit by Orbital Artillery fired by [src.owner]")
+		message_admins("[key_name(M)] has been hit by Orbital Artillery fired by [src.owner]")
 
 		var/obj/effect/stop/S
 		S = new /obj/effect/stop(M.loc)

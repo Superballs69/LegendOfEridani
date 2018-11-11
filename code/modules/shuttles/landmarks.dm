@@ -20,7 +20,7 @@
 	//Will also leave this type of turf behind if set.
 	var/turf/base_turf
 	//Name of the shuttle, null for generic waypoint
-	var/shuttle_restricted 
+	var/shuttle_restricted
 	var/flags = 0
 
 /obj/effect/shuttle_landmark/Initialize()
@@ -108,7 +108,7 @@
 			T.ChangeTurf(get_base_turf_by_area(T))
 
 /obj/item/device/spaceflare
-	name = "bluespace flare"
+	name = "quantum flare"
 	desc = "Burst transmitter used to broadcast all needed information for shuttle navigation systems. Has a flare attached for marking the spot where you probably shouldn't be standing."
 	icon_state = "bluflare"
 	light_color = "#3728ff"

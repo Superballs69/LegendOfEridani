@@ -396,7 +396,7 @@
 // TG ports
 
 /obj/item/weapon/reagent_containers/syringe/bluespace
-	name = "bluespace syringe"
+	name = "large syringe"
 	desc = "An advanced syringe that can hold 60 units of chemicals."
 	amount_per_transfer_from_this = 20
 	volume = 60

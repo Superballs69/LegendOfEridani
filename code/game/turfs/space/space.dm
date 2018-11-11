@@ -218,5 +218,5 @@
 
 //Bluespace turfs for shuttles and possible future transit use
 /turf/space/bluespace
-	name = "bluespace"
+	name = "hyperspace"
 	icon_state = "bluespace"

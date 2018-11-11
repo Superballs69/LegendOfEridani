@@ -1,7 +1,7 @@
 // QUALITY COPYPASTA
 /turf/unsimulated/wall/supermatter
-	name = "Bluespace"
-	desc = "THE END IS right now actually."
+	name = "Spatio-Temporal Anomaly."
+	desc = "Get the dimensional duct tape!"
 
 	icon = 'icons/turf/space.dmi'
 	icon_state = "bluespace"
@@ -22,7 +22,7 @@
 		Consume(A)
 
 /turf/unsimulated/wall/supermatter/Destroy()
-	STOP_PROCESSING(SSturf, src)	
+	STOP_PROCESSING(SSturf, src)
 	. = ..()
 
 /turf/unsimulated/wall/supermatter/Process(wait, times_fired)

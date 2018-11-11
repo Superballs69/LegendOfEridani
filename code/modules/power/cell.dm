@@ -213,7 +213,7 @@
 
 /obj/item/weapon/cell/infinite
 	name = "experimental power cell"
-	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself by draining power from contained bluespace pocket."
+	desc = "This special experimental power cell has both very large capacity, and the capacity of recharging itself via a miniaturized nuclear reactor."
 	icon_state = "icell"
 	origin_tech =  null
 	maxcharge = 3000

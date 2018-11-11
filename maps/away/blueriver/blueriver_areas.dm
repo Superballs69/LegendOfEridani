@@ -1,5 +1,5 @@
 /area/bluespaceriver/underground
-	name = "\improper Bluespace River Underground"
+	name = "\improper Blue River Underground"
 	icon_state = "underground"
 	icon = 'blueriver.dmi'
 	ambience = list('sound/ambience/spookyspace1.ogg', 'sound/ambience/spookyspace2.ogg')

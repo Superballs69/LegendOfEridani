@@ -88,8 +88,8 @@
 		log_and_message_admins("[user? key_name(user) : "Autotransfer"] has initiated abandonment of the spacecraft.")
 
 /datum/evacuation_option/bluespace_jump
-	option_text = "Initiate bluespace jump"
-	option_desc = "initiate a bluespace jump"
+	option_text = "Initiate FTL jump"
+	option_desc = "initiate a FTL jump"
 	option_target = EVAC_OPT_BLUESPACE_JUMP
 	needs_syscontrol = TRUE
 	silicon_allowed = TRUE
@@ -107,7 +107,7 @@
 		to_chat(user, "Jump preparation already in progress.")
 		return
 	if (evacuation_controller.call_evacuation(user, 0))
-		log_and_message_admins("[user? key_name(user) : "Autotransfer"] has initiated bluespace jump preparation.")
+		log_and_message_admins("[user? key_name(user) : "Autotransfer"] has initiated wormhole jump preparation.")
 
 /datum/evacuation_option/cancel_abandon_ship
 	option_text = "Cancel abandonment"
@@ -121,7 +121,7 @@
 		log_and_message_admins("[key_name(user)] has cancelled abandonment of the spacecraft.")
 
 /datum/evacuation_option/cancel_bluespace_jump
-	option_text = "Cancel bluespace jump"
+	option_text = "Cancel FTL jump"
 	option_desc = "cancel the jump preparation"
 	option_target = EVAC_OPT_CANCEL_BLUESPACE_JUMP
 	needs_syscontrol = TRUE
@@ -129,7 +129,7 @@
 
 /datum/evacuation_option/cancel_bluespace_jump/execute(mob/user)
 	if (evacuation_controller && evacuation_controller.cancel_evacuation())
-		log_and_message_admins("[key_name(user)] has cancelled the bluespace jump.")
+		log_and_message_admins("[key_name(user)] has cancelled the wormhole jump.")
 
 /obj/screen/fullscreen/bluespace_overlay
 	icon = 'icons/effects/effects.dmi'

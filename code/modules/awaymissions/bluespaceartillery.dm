@@ -1,7 +1,7 @@
 
 /obj/machinery/artillerycontrol
 	var/reload = 180
-	name = "bluespace artillery control"
+	name = "PyroCorp artillery control"
 	icon_state = "control_boxp1"
 	icon = 'icons/obj/machines/particle_accelerator2.dmi'
 	density = 1
@@ -16,14 +16,14 @@
 	icon = 'icons/obj/machines/artillery.dmi'
 	anchored = 1
 	density = 1
-	desc = "The ship's old bluespace artillery cannon. Looks inoperative."
+	desc = "The ship's old PyroCorp artillery cannon. Looks inoperative."
 
 /obj/structure/artilleryplaceholder/decorative
 	density = 0
 
 /obj/machinery/artillerycontrol/attack_hand(mob/user as mob)
 	user.set_machine(src)
-	var/dat = "<B>Bluespace Artillery Control:</B><BR>"
+	var/dat = "<B>PyroCorp Artillery Control:</B><BR>"
 	dat += "Locked on<BR>"
 	dat += "<B>Charge progress: [reload]/180:</B><BR>"
 	dat += "<A href='byond://?src=\ref[src];fire=1'>Open Fire</A><BR>"
@@ -44,7 +44,7 @@
 		if (src.reload < 180)
 			return
 		if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (istype(usr, /mob/living/silicon)))
-			command_announcement.Announce("Bluespace artillery fire detected. Brace for impact.")
+			command_announcement.Announce("Hostile artillery fire detected. Brace for impact.")
 			message_admins("[key_name_admin(usr)] has launched an artillery strike.", 1)
 			var/list/L = list()
 			for(var/turf/T in get_area_turfs(thearea))

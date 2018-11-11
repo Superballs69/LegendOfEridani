@@ -191,7 +191,7 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 	if(M)
 		for(var/mob/living/silicon/ai/master in masters)
 			var/ai_text = text
-			if(!master.say_understands(M, speaking))//The AI will be able to understand most mobs talking through the holopad.			
+			if(!master.say_understands(M, speaking))//The AI will be able to understand most mobs talking through the holopad.
 				if(speaking)
 					ai_text = speaking.scramble(text)
 				else
@@ -407,7 +407,7 @@ Holographic project of everything else.
 
 /obj/machinery/hologram/holopad/longrange
 	name = "long range holopad"
-	desc = "It's a floor-mounted device for projecting holographic images. This one utilizes bluespace transmitter to communicate with far away locations."
+	desc = "It's a floor-mounted device for projecting holographic images. This one utilizes wormhole transmitter to communicate with far away locations."
 	icon_state = "holopad-Y0"
 	map_range = 2
 	power_per_hologram = 1000 //per usage per hologram

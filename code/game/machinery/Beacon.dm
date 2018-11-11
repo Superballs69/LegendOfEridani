@@ -2,8 +2,8 @@
 
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "floor_beaconf"
-	name = "Bluespace Gigabeacon"
-	desc = "A device that draws power from bluespace and creates a permanent tracking beacon."
+	name = "Quantum Gigabeacon"
+	desc = "A device that draws power from the quantum realm and creates a permanent tracking beacon."
 	level = 1		// underfloor
 	anchored = 1
 	use_power = 1

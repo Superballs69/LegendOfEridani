@@ -161,8 +161,8 @@ research holder datum.
 	id = TECH_POWER
 
 /datum/tech/bluespace
-	name = "'Blue-space' Technology"
-	desc = "Devices that utilize the sub-reality known as 'blue-space'"
+	name = "'Pocket Space' Technology"
+	desc = "The various technologies related to"
 	id = TECH_BLUESPACE
 
 /datum/tech/biotech

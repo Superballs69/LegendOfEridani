@@ -192,7 +192,7 @@
 	name = "\improper Second Deck Safe Room"
 
 /area/maintenance/bluespace
-	name = "Bluespace Drive"
+	name = "Wormhole/FTL Drive"
 	icon_state = "engineering"
 
 

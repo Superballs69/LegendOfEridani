@@ -178,8 +178,8 @@
 	return stationtime2text()
 
 /obj/item/integrated_circuit/time/clock/bluespace
-	name = "integrated clock (Bluespace Absolute Time)"
-	desc = "Tells you what the time is, in Bluespace Absolute Time, unaffected by local time dilation or other phenomenon."
+	name = "integrated clock (Galactic Administrative Time)"
+	desc = "Tells you what the time is, in Galactic Administrative Time, unaffected by local time dilation or other phenomenon."
 
 /obj/item/integrated_circuit/time/clock/bluespace/get_time()
 	return REALTIMEOFDAY

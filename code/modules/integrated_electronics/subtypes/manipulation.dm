@@ -541,7 +541,7 @@
 
 /obj/item/integrated_circuit/manipulation/bluespace_rift
 	name = "bluespace rift generator"
-	desc = "This powerful circuit can open rifts to another realspace location through bluespace."
+	desc = "This powerful circuit can open rifts to another realspace location through wormholes."
 	extended_desc = "If a valid teleporter console is supplied as input then its selected teleporter beacon will be used as destination point, \
 					and if not an undefined destination point is selected. \
 					Rift direction is a cardinal value determening in which direction the rift will be opened, relative the local north. \

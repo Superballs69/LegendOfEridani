@@ -1,5 +1,5 @@
 /datum/universal_state/bluespace_jump
-	name = "Bluespace Jump"
+	name = "Wormhole Jump"
 	var/list/bluespaced = list()
 	var/list/bluegoasts = list()
 	var/list/affected_levels
@@ -69,7 +69,7 @@
 	bluegoasts.Cut()
 
 /obj/effect/bluegoast
-	name = "bluespace echo"
+	name = "unknown echo"
 	desc = "It's not going to punch you, is it?"
 	var/mob/living/carbon/human/daddy
 	anchored = 1

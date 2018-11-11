@@ -17,7 +17,7 @@
 	..()
 
 /datum/map_template/ruin/away_site/blueriver
- 	name = "Bluespace River"
+ 	name = "Blue River"
  	id = "awaysite_blue"
  	description = "Two z-level map with an arctic planet and an alien underground surface"
  	suffixes = list("blueriver/blueriver-1.dmm", "blueriver/blueriver-2.dmm")
