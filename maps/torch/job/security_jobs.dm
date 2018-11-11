@@ -6,7 +6,7 @@
 	economic_power = 5
 	minimal_player_age = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/security/warden
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/warden
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -36,11 +36,11 @@
 	minimal_player_age = 7
 	ideal_character_age = 25
 	alt_titles = list(
-		"TIGER Contractor",
-		"Probationary TIGER Contractor",
-		"Probationary ISEC Contractor"
+		"TIGER Contractor" = /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor,
+		"Probationary TIGER Contractor" = /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor,
+		"Probationary ISEC Contractor" = /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
 		)
-	outfit_type = /decl/hierarchy/outfit/job/security/officer
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_ADEPT,
@@ -64,12 +64,12 @@
 	title = "Internal Affairs Agent"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the FCA."
+	supervisors = "the FCA"
 	economic_power = 9
 	minimal_player_age = 7
 	ideal_character_age = 35
 	skill_points = 14
-	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/iaa
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,

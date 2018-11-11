@@ -1,9 +1,9 @@
 /obj/item/weapon/gun/projectile/revolver
-	name = "revolver"
-	desc = "The Lumoco Arms HE Colt is a choice revolver for when you absolutely, positively need to put a hole in the other guy. Uses .357 ammo."
+	name = "M-30"
+	desc = "The Frontier Armament Company's M-30 is a choice revolver for when you absolutely, positively need to put a hole in the other guy. This model has brought controversy as it isn't durable as most FAC-produced firearms. Uses .357 and .38 rounds."
 	icon_state = "revolver"
 	item_state = "revolver"
-	caliber = "357"
+	caliber = list("357","38")
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
@@ -40,21 +40,49 @@
 	chamber_offset = 0
 	return ..()
 
+/obj/item/weapon/gun/projectile/revolver/police
+	name = "M-30 'Police Special'"
+	desc = "The FAC's renowned M30 has seen service amongst Frontier military and police organizations, and has such made a specialized model with a shortened barrel and black furniture. Uses .357 and .38 rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "m30_police"
+	ammo_type = /obj/item/ammo_casing/a38/rubber
+	unacidable = 1
+
 /obj/item/weapon/gun/projectile/revolver/mateba
-	name = "mateba"
+	name = "Mateba Autorevolver"
+	desc = "This unique looking handgun is named after an Italian company famous for the manufacture of these revolvers, and pasta kneading machines. Uses .357 and .38 rounds."
 	icon_state = "mateba"
-	caliber = ".50"
+	caliber = list("357","38")
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	ammo_type = /obj/item/ammo_casing/a50
+	ammo_type = /obj/item/ammo_casing/a357
+
+/obj/item/weapon/gun/projectile/revolver/inspector
+	name = "KDI \"Inspector\" .357"
+	desc = "Another high-quality firearm developed by Kusanagi Defense Industries. Features a sturdy frame, electronic chamber indicators and polygonal rifling for dead-on accuracy. Uses .357 and .38 rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "inspector"
+	fire_delay = 5
+	accuracy = 2
+	fire_sound = 'sound/weapons/gunshot/revolver.ogg'
+
+/obj/item/weapon/gun/projectile/revolver/inspector/proc/update_charge()
+	if(loaded.len==0)
+		overlays += "inspector_off"
+	else
+		overlays += "inspector_on"
+
+/obj/item/weapon/gun/projectile/revolver/inspector/update_icon()
+	overlays.Cut()
+	update_charge()
 
 /obj/item/weapon/gun/projectile/revolver/detective
-	name = "revolver"
-	desc = "A cheap Martian knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds."
+	name = "S&W Model 10"
+	desc = "A cheap Olympia Foundry knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds."
 	icon_state = "detective"
 	max_shells = 6
 	caliber = "38"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	ammo_type = /obj/item/ammo_casing/c38
+	ammo_type = /obj/item/ammo_casing/a38
 
 /obj/item/weapon/gun/projectile/revolver/detective/verb/rename_gun()
 	set name = "Name Gun"
@@ -79,10 +107,10 @@
 	name = "Deckard .44"
 	desc = "A custom-built revolver, based off the semi-popular Detective Special model."
 	icon_state = "deckard-empty"
-	ammo_type = /obj/item/ammo_magazine/c38/rubber
+	ammo_type = /obj/item/ammo_magazine/s38/rubber
 
 /obj/item/weapon/gun/projectile/revolver/deckard/emp
-	ammo_type = /obj/item/ammo_casing/c38/emp
+	ammo_type = /obj/item/ammo_casing/a38/emp
 
 /obj/item/weapon/gun/projectile/revolver/deckard/on_update_icon()
 	..()
@@ -124,4 +152,4 @@
 	max_shells = 6
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	ammo_type = /obj/item/ammo_casing/c44
+	ammo_type = /obj/item/ammo_casing/a44

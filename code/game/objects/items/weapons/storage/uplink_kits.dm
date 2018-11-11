@@ -91,13 +91,13 @@
 /obj/item/weapon/storage/backpack/satchel/syndie_kit/revolver
 	startswith = list(
 		/obj/item/weapon/gun/projectile/revolver,
-		/obj/item/ammo_magazine/a357
+		/obj/item/ammo_magazine/s357
 	)
 
 /obj/item/weapon/storage/backpack/satchel/syndie_kit/revolver2
 	startswith = list(
 		/obj/item/weapon/gun/projectile/revolver/webley,
-		/obj/item/ammo_magazine/c44
+		/obj/item/ammo_magazine/s44
 	)
 
 /obj/item/weapon/storage/box/syndie_kit/toxin
@@ -173,6 +173,6 @@
 
 /obj/item/weapon/storage/backpack/satchel/syndie_kit/armor
 	startswith = list(
-		/obj/item/clothing/suit/armor/pcarrier/merc,
-		/obj/item/clothing/head/helmet/merc
+		/obj/item/clothing/suit/armor/pcarrier/tan/combat,
+		/obj/item/clothing/head/helmet/combat
 	)

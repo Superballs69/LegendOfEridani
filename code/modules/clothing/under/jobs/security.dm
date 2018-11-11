@@ -200,3 +200,50 @@
 	icon_state = "wardenblueclothes"
 	item_state = "ba_suit"
 	worn_state = "wardenblueclothes"
+
+/*
+ * ISEC/TIGER Uniforms
+ */
+
+/obj/item/clothing/under/isec
+	name = "ISEC utility jumpsuit"
+	desc = "A gray utility jumpsuit issued to all ISEC contractors in the Arcturus-Eclipse project."
+	icon_state = "isecutility"
+	item_state = "ba_suit"
+	worn_state = "isecutility"
+	armor = list(melee = 10, bullet = 0, laser = 10,energy = 10, bomb = 0, bio = 10, rad = 0)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/under/tiger
+	name = "TIGER utility jumpsuit"
+	desc = "A green utility jumpsuit issued to all TIGER contractors in the Arcturus-Eclipse project."
+	icon_state = "tigerutility"
+	item_state = "ba_suit"
+	worn_state = "tigerutility"
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 10, bio = 10, rad = 0)
+	siemens_coefficient = 0.9
+
+/*
+ * ICE Uniforms
+ */
+
+/obj/item/clothing/under/ice
+	name = "ICE combat jumpsuit"
+	desc = "A black-navy blue combat jumpsuit issued to all ICE agents. A very robust jumpsuit."
+	icon_state = "ice"
+	item_state = "ba_suit"
+	worn_state = "ice"
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 10, rad = 10)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/under/ice/formal
+	name = "ICE formal combat jumpsuit"
+	desc = "A combat shirt and formal outfit combo. For those agents who wish to fight in style."
+	icon_state = "iceformal"
+	worn_state = "iceformal"
+
+/obj/item/clothing/under/ice/light
+	name = "ICE utility jumpsuit"
+	desc = "A moisture wicking t-shirt combined with comfortable tactical cargo pants. A fitting choice for the comfy-operator."
+	icon_state = "icelight"
+	worn_state = "icelight"

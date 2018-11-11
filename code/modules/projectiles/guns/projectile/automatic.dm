@@ -8,7 +8,7 @@
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/a9mm
 	multi_aim = 1
 	burst_delay = 2
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
@@ -32,8 +32,8 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
 	slot_flags = SLOT_BELT
 	ammo_type = /obj/item/ammo_casing/c45
-	magazine_type = /obj/item/ammo_magazine/c45uzi
-	allowed_magazines = /obj/item/ammo_magazine/c45uzi //more damage compared to the wt550, smaller mag size
+	magazine_type = /obj/item/ammo_magazine/m45uzi
+	allowed_magazines = /obj/item/ammo_magazine/m45uzi //more damage compared to the wt550, smaller mag size
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
@@ -41,7 +41,7 @@
 		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/mini_uzi/on_update_icon()
+/obj/item/weapon/gun/projectile/automatic/machine_pistol/on_update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "mpistolen"
@@ -49,8 +49,8 @@
 		icon_state = "mpistolen-empty"
 
 /obj/item/weapon/gun/projectile/automatic/c20r
-	name = "10mm submachine gun"
-	desc = "The C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Uses 10mm rounds. Has a 'Scarborough Arms - Per falcis, per pravitas' buttstamp."
+	name = "C-20r"
+	desc = "The C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Uses 10mm rounds. It has a Seburo Arms authentication stamped on the stock."
 	icon_state = "c20r"
 	item_state = "c20r"
 	w_class = ITEM_SIZE_LARGE
@@ -59,8 +59,8 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	slot_flags = SLOT_BELT|SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/a10mm
-	allowed_magazines = /obj/item/ammo_magazine/a10mm
+	magazine_type = /obj/item/ammo_magazine/m10mm
+	allowed_magazines = /obj/item/ammo_magazine/m10mm
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	one_hand_penalty = 1
@@ -81,8 +81,8 @@
 	return
 
 /obj/item/weapon/gun/projectile/automatic/sts35
-	name = "assault rifle"
-	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. The serial number has been scratched off. Uses 5.56mm rounds."
+	name = "STS-35"
+	desc = "The rugged Frontier Armament Company STS-35 is a durable automatic weapon that is standard issue with Frontier Federation forces. Uses 5.56mm rounds."
 	icon_state = "arifle"
 	item_state = null
 	w_class = ITEM_SIZE_HUGE
@@ -91,8 +91,8 @@
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/c556
-	allowed_magazines = /obj/item/ammo_magazine/c556
+	magazine_type = /obj/item/ammo_magazine/m556
+	allowed_magazines = /obj/item/ammo_magazine/m556
 	one_hand_penalty = 3
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
@@ -111,7 +111,7 @@
 	..()
 
 /obj/item/weapon/gun/projectile/automatic/wt550
-	name = "9mm submachine gun"
+	name = "WT-550"
 	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use. Uses 9mm rounds."
 	icon_state = "wt550"
 	item_state = "wt550"
@@ -119,7 +119,7 @@
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
-	ammo_type = /obj/item/ammo_casing/c9mm/rubber
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/rubber
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt
@@ -139,9 +139,10 @@
 		icon_state = "wt550"
 	return
 
-/obj/item/weapon/gun/projectile/automatic/z8
-	name = "bullpup assault rifle"
-	desc = "The Z8 Bulldog is an older model bullpup carbine, made by the now defunct Zendai Foundries. Uses armor piercing 7.62mm rounds. Makes you feel like a space marine when you hold it."
+/obj/item/weapon/gun/projectile/automatic/c8
+	name = "C8"
+	desc = "The C8 is an older model designated marksman rifle, reproduced by Seburo Arms.\
+	Makes you feel like a space marine when you hold it. Uses 7.62mm rounds and has an under barrel grenade launcher."
 	icon_state = "carbine"
 	item_state = "z8carbine"
 	w_class = ITEM_SIZE_HUGE
@@ -151,8 +152,8 @@
 	ammo_type = /obj/item/ammo_casing/a762
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/a762
-	allowed_magazines = /obj/item/ammo_magazine/a762
+	magazine_type = /obj/item/ammo_magazine/m762
+	allowed_magazines = /obj/item/ammo_magazine/m762
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	one_hand_penalty = 5
@@ -170,23 +171,23 @@
 	var/use_launcher = 0
 	var/obj/item/weapon/gun/launcher/grenade/underslung/launcher
 
-/obj/item/weapon/gun/projectile/automatic/z8/Initialize()
+/obj/item/weapon/gun/projectile/automatic/c8/Initialize()
 	. = ..()
 	launcher = new(src)
 
-/obj/item/weapon/gun/projectile/automatic/z8/attackby(obj/item/I, mob/user)
+/obj/item/weapon/gun/projectile/automatic/c8/attackby(obj/item/I, mob/user)
 	if((istype(I, /obj/item/weapon/grenade)))
 		launcher.load(I, user)
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/z8/attack_hand(mob/user)
+/obj/item/weapon/gun/projectile/automatic/c8/attack_hand(mob/user)
 	if(user.get_inactive_hand() == src && use_launcher)
 		launcher.unload(user)
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/z8/Fire(atom/target, mob/living/user, params, pointblank=0, reflex=0)
+/obj/item/weapon/gun/projectile/automatic/c8/Fire(atom/target, mob/living/user, params, pointblank=0, reflex=0)
 	if(use_launcher)
 		launcher.Fire(target, user, params, pointblank, reflex)
 		if(!launcher.chambered)
@@ -194,7 +195,7 @@
 	else
 		..()
 
-/obj/item/weapon/gun/projectile/automatic/z8/on_update_icon()
+/obj/item/weapon/gun/projectile/automatic/c8/on_update_icon()
 	..()
 	if(ammo_magazine)
 		if(ammo_magazine.stored_ammo.len)
@@ -205,16 +206,53 @@
 		icon_state = "carbine"
 	return
 
-/obj/item/weapon/gun/projectile/automatic/z8/examine(mob/user)
+/obj/item/weapon/gun/projectile/automatic/c8/examine(mob/user)
 	. = ..()
 	if(launcher.chambered)
 		to_chat(user, "\The [launcher] has \a [launcher.chambered] loaded.")
 	else
 		to_chat(user, "\The [launcher] is empty.")
 
+/obj/item/weapon/gun/projectile/automatic/c8s
+	name = "C8-S"
+	desc = "The C8-S is the civilian version of Seburo Arm's workhorse DMR, locked in semi-auto and lacking a grenade launcher. Popular with law-enforcement and security companies."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "c8s"
+	item_state = "z8carbine"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	caliber = "7.62mm"
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
+	ammo_type = /obj/item/ammo_casing/a762
+	slot_flags = SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m762
+	allowed_magazines = list(/obj/item/ammo_magazine/m762, /obj/item/ammo_magazine/m762ext)
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	one_hand_penalty = 4
+	burst_delay = 0
+	wielded_item_state = "z8carbine-wielded"
+	fire_sound = 'sound/weapons/gunshot/z8.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, use_launcher=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null)
+		)
+
+/obj/item/weapon/gun/projectile/automatic/c8s/update_icon()
+	..()
+	if(ammo_magazine)
+		if(ammo_magazine.stored_ammo.len)
+			icon_state = "c8s-loaded"
+		else
+			icon_state = "c8s-empty"
+	else
+		icon_state = "c8s"
+	return
+
 /obj/item/weapon/gun/projectile/automatic/l6_saw
-	name = "light machine gun"
-	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2531' engraved on the reciever." //probably should refluff this
+	name = "L6 Saw"
+	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. 'Olympia Foundry-2531' is engraved on the reciever.\
+	Uses 5.45mm rounds. It's also compatible with magazines from STS-35 assault rifles."
 	icon_state = "l6closed100"
 	item_state = "l6closedmag"
 	w_class = ITEM_SIZE_HUGE
@@ -226,8 +264,8 @@
 	slot_flags = 0 //need sprites for SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/a556
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/box/a556
-	allowed_magazines = list(/obj/item/ammo_magazine/box/a556, /obj/item/ammo_magazine/c556)
+	magazine_type = /obj/item/ammo_magazine/box/b556
+	allowed_magazines = list(/obj/item/ammo_magazine/box/b556, /obj/item/ammo_magazine/m556)
 	one_hand_penalty = 6
 	wielded_item_state = "gun_wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/lmg_magin.ogg'
@@ -243,7 +281,7 @@
 	var/cover_open = 0
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw/mag
-	magazine_type = /obj/item/ammo_magazine/c556
+	magazine_type = /obj/item/ammo_magazine/m556
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw/special_check(mob/user)
 	if(cover_open)
@@ -291,3 +329,331 @@
 		to_chat(user, "<span class='warning'>You need to open the cover to unload [src].</span>")
 		return
 	..()
+
+//--Eridani Additions--//
+
+/obj/item/weapon/gun/projectile/automatic/c18r
+	name = "C-18r"
+	desc = "The Seburo Arms 9x19mm C-18r \"Sol\" is a compact and reliable bullpup submachine gun commonly seen in use by special forces all around the galaxy. Uses 9mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "c18r"
+	item_state = "wt550"
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	caliber = "9mm"
+	magazine_type = /obj/item/ammo_magazine/m9mmsmg
+	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds, /obj/item/ammo_magazine/m9mmsmg)
+	load_method = MAGAZINE
+	multi_aim = 1
+	burst_delay = 2
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	fire_sound = 'sound/weapons/gunshot/c18r.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-15,-15),       dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/c18r/proc/update_charge()
+	if(!ammo_magazine)
+		return
+	var/ratio = ammo_magazine.stored_ammo.len / ammo_magazine.max_ammo
+	if(ratio < 0.25 && ratio != 0)
+		ratio = 0.25
+	ratio = round(ratio, 0.25) * 100
+	overlays += "smg_[ratio]"
+
+/obj/item/weapon/gun/projectile/automatic/c18r/update_icon()
+	icon_state = (ammo_magazine)? "c18r" : "c18r-e"
+	overlays.Cut()
+	update_charge()
+
+/obj/item/weapon/gun/projectile/automatic/c22r
+	name = "C-22r"
+	desc = "The C-22r is a select-fire SMG designed by Seburo Arms. Developed in competition of Ward Takashi's WT-550 for NanoTrasen new SMG contract.\
+	Utimately, the WT-550 won and the C-22r is commonly seen in use by Frontier Militia and other private military contractors."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "c22r"
+	item_state = "c20r" // Placeholder
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mmds
+	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds)
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	fire_sound = 'sound/weapons/gunshot/p92x.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15,-30), dispersion=list(0.0, 0.6, 0.6))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/c22r/update_icon(var/ignore_inhands)
+	..()
+	if(istype(ammo_magazine,/obj/item/ammo_magazine/mc9mmds))
+		icon_state = "c22r-short"
+	else
+		icon_state = (ammo_magazine)? "c22r" : "c22r-empty"
+	if(!ignore_inhands) update_held_icon()
+
+/obj/item/weapon/gun/projectile/automatic/c31a
+	name = "C-31A"
+	desc = "C-31A"
+	desc = "The Seburo Arms C-31A is a lightweight, sturdy and hard-hitting bullpup assault rifle. It is the standard issue firearm of the SSA Armed Forces \
+	and can be found in use by Frontier Federation forces as well. Uses 7.62mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "c31a-small"
+	item_state = "c31a"
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	caliber = "7.62mm"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
+	slot_flags = SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m762
+	allowed_magazines = list(/obj/item/ammo_magazine/m762, /obj/item/ammo_magazine/m762ext)
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	fire_sound = 'sound/weapons/gunshot/c31a.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null),
+		list(mode_name="2-round bursts", burst=2, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15), dispersion=list(0.0, 0.6))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/c31a/update_icon(var/ignore_inhands)
+	..()
+	if(istype(ammo_magazine,/obj/item/ammo_magazine/m762))
+		icon_state = "c31a-small"
+	else if(istype(ammo_magazine,/obj/item/ammo_magazine/m762ext))
+		icon_state = "c31a"
+	else
+		item_state = "c31a-empty"
+	if(!ignore_inhands)
+		update_held_icon()
+
+/obj/item/weapon/gun/projectile/automatic/uzi
+	name = "UZI"
+	desc = "A classic open bolt, blowback submachine gun. Reproduced by Olympia Foundry, and is popular amongst criminals, government agents and even law enforcement agents. Chambered in .45 ACP."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "uzi"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = ".45"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	ammo_type = /obj/item/ammo_casing/a45
+	magazine_type = /obj/item/ammo_magazine/m45uzi
+	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
+	multi_aim = 1
+	burst_delay = 2
+	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+
+	//machine pistol, easier to one-hand with
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/uzi/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "uzi"
+	else
+		icon_state = "uzi-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/pcx12
+	name = "PC-X12 \"Bulldog\" automatic shotgun"
+	desc = "The PyroCorp Experimental 12 gauge automatic shotgun is a direct competitor to Seburo's extensive line of bullpup firearms. The bullpup design allows for compact firepower and controlled recoil. \
+	Frontier Marine Marauders are reported to be exclusively using this shotgun in combat. If you're seeing this, you're in trouble."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "bulldog"
+	item_state = "c20r" //placeholder
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	caliber = "shotgun"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	slot_flags = SLOT_BELT|SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m12ga
+	allowed_magazines = /obj/item/ammo_magazine/m12ga
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	one_hand_penalty = 2
+	accuracy = 1.2
+	fire_sound = 'sound/weapons/gunshot/bulldog.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/pcx12/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "bulldog"
+	else
+		icon_state = "bulldog-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/p90
+	name = "FAC FN-P90"
+	desc = "The FAC P90 is a compact, large capacity submachine gun produced by Frontier Armament Company. Despite its fierce reputation, it still manages to feel like a toy. Chambered in 5.7x28mm."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "p90smg"
+	item_state = "p90"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "5.7x28mm"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT // ToDo: Belt sprite.
+	fire_sound = 'sound/weapons/gunshot/p90.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m57smg
+	allowed_magazines = list(/obj/item/ammo_magazine/m57smg) // ToDo: New sprite for the different mag.
+	unacidable = 1 //frontier guns arr stronk
+
+	firemodes = list(
+		list(mode_name="semiauto", burst=1, fire_delay=0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-15,-15), dispersion=list(0.0, 0.6, 1.0))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/p90/update_icon()
+	icon_state = "p90smg-[ammo_magazine ? round(ammo_magazine.stored_ammo.len, 6) : "empty"]"
+
+/obj/item/weapon/gun/projectile/automatic/srx9
+	name = "HI SRX-9 'Hurricane'"
+	desc = "Hesphaestus Industries answer to the increasing demand of high power security weapons. The SRX-9 is a low-cost alternative to the P90. Chambered in 5.7x28mm."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "hurricane"
+	item_state = "c20r"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "5.7x28mm"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	fire_sound = 'sound/weapons/gunshot/p90.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m57/rubber
+	allowed_magazines = list(/obj/item/ammo_magazine/m57)
+	accuracy = -0.35
+
+	firemodes = list(
+		list(mode_name="semiauto", burst=1, fire_delay=0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-15,-15), dispersion=list(0.0, 0.6, 1.0))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/srx9/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "hurricane"
+	else
+		icon_state = "hurricane-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/mk5
+	name = "KDI MK5"
+	desc = "A well renowned submachinegun made by KDI. The MK5 is an integrally suppressed machinegun. Renowned for it's accuracy and reliability, the MK5 has seen service from all ends of the Milky Way. Chambered in 9mm."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "mk5"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = "9mm"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	magazine_type = /obj/item/ammo_magazine/m9mmsmg
+	allowed_magazines = list(/obj/item/ammo_magazine/m9mmsmg)
+	multi_aim = 1
+	burst_delay = 0
+	silenced = 1
+	accuracy = 0.80
+	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/uzi/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "mk5"
+	else
+		icon_state = "mk5-empty"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/mx9
+	name = "FAC MX9"
+	desc = "A Frontier Armament Company produced sub-machine gun. This particular model is a Frontier Federation-issue for recon units. Chambered in .45 ACP."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "mx9"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = ".45"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	magazine_type = /obj/item/ammo_magazine/m45uzi
+	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
+	multi_aim = 1
+	burst_delay = 0
+	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/mx9/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "mx9"
+	else
+		icon_state = "mx9-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/kopis
+	name = "OF-9 'Kopis'"
+	desc = "A compact and relatively cheap polymer submachine pistol made by Olympia Foundry. Chambered in 9mm."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "kopis"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = "9mm"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	magazine_type = /obj/item/ammo_magazine/mc9mmds
+	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds)
+	multi_aim = 1
+	burst_delay = 0
+	accuracy = -0.25
+	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/kopis/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "kopis"
+	else
+		icon_state = "kopis-empty"
+
+	if(!ignore_inhands) update_held_icon()
+	return

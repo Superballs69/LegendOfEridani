@@ -1,18 +1,81 @@
 /obj/item/weapon/gun/projectile/colt
-	name = "vintage .45 pistol"
-	desc = "A cheap Martian knock-off of a Colt M1911. Uses .45 rounds."
-	magazine_type = /obj/item/ammo_magazine/c45m
-	allowed_magazines = /obj/item/ammo_magazine/c45m
+	name = "Olympia Foundry 1911"
+	desc = "An Olympia Foundry produced 1911. A legendary classic. Uses .45 rounds."
+	magazine_type = /obj/item/ammo_magazine/m45m
+	allowed_magazines = /obj/item/ammo_magazine/m45m
 	icon_state = "colt"
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
+/obj/item/weapon/gun/projectile/colt/fac
+	name = "Frontier Armament Company 1911"
+	desc = "The Frontier Armament Company's take on the 1911. Compared to most other manufacturers, all parts are forged and made to endure the harsh abuse of frontier worlds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "fac_1911"
+	accuracy = 0.50
+	unacidable = 1
+
+/obj/item/weapon/gun/projectile/colt/fac/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "fac_1911"
+	else
+		icon_state = "fac_1911-empty"
+
+/obj/item/weapon/gun/projectile/colt/fac/compact
+	name = "FAC 1911 Compact"
+	desc = "A shortened concealed carry variant of the FAC's 1911. Still as durable and can fit in your pocket, only drawback is lesser accuracy than the baseline model."
+	icon_state = "fac_compact"
+	accuracy = 0.25
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/gun/projectile/colt/fac/compact/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "fac_compact"
+	else
+		icon_state = "fac_compact-empty"
+
+/obj/item/weapon/gun/projectile/colt/kdi
+	name = "Kusanagi Defense Industries 1911"
+	desc = "KDI's take on the legendary 1911, featuring a unique polymer frame, low tolerance parts and a chrome lined barrel with polygonal rifling. Along with the internal upgrades\
+	 the blue night sights make shooting with gun a breeze. The gun also features a magazine auto-eject feature."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "kdi_standard"
+	accuracy = 1
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+
+/obj/item/weapon/gun/projectile/colt/kdi/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "kdi_standard"
+	else
+		icon_state = "kdi_standard-empty"
+
+/obj/item/weapon/gun/projectile/colt/kdi/infiltrator
+	name = "KDI 1911 Infiltrator"
+	desc = "An even further enhancement of KDI's original 1911 model tuned by the company's gunsmiths. Featuring a low profile reflex sight, laser aiming module and a ported slide.\
+	 these firearms are usually found in the hands of elite special forces and counter-terror groups."
+	icon_state = "kdi_infiltrator"
+	accuracy = 2
+	fire_delay = 0
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+
+/obj/item/weapon/gun/projectile/colt/kdi/infiltrator/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "kdi_infiltrator"
+	else
+		icon_state = "kdi_infiltrator-empty"
+
 /obj/item/weapon/gun/projectile/military
 	name = "military .45 pistol"
 	desc = "The WT45 - a mass produced kinetic sidearm in widespread service with the SCGDF. Uses .45 rounds."
-	magazine_type = /obj/item/ammo_magazine/c45mds/flash
-	allowed_magazines = /obj/item/ammo_magazine/c45mds
+	magazine_type = /obj/item/ammo_magazine/m45mds/flash
+	allowed_magazines = /obj/item/ammo_magazine/m45mds
 	icon_state = "usp"
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
@@ -31,8 +94,8 @@
 	name = ".45 pistol"
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. Uses .45 rounds."
 	icon_state = "secguncomp"
-	magazine_type = /obj/item/ammo_magazine/c45m/flash
-	allowed_magazines = /obj/item/ammo_magazine/c45m
+	magazine_type = /obj/item/ammo_magazine/m45m/flash
+	allowed_magazines = /obj/item/ammo_magazine/m45m
 	caliber = ".45"
 	accuracy = -0.35
 	fire_delay = 5.5
@@ -63,7 +126,7 @@
 		icon_state = "secgundark-e"
 
 /obj/item/weapon/gun/projectile/sec/wood/lethal
-	magazine_type = /obj/item/ammo_magazine/c45m
+	magazine_type = /obj/item/ammo_magazine/m45m
 
 /obj/item/weapon/gun/projectile/silenced
 	name = "silenced pistol"
@@ -74,8 +137,8 @@
 	silenced = 1
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/c45m
-	allowed_magazines = /obj/item/ammo_magazine/c45m
+	magazine_type = /obj/item/ammo_magazine/m45m
+	allowed_magazines = /obj/item/ammo_magazine/m45m
 
 /obj/item/weapon/gun/projectile/magnum_pistol
 	name = ".50 magnum pistol"
@@ -87,8 +150,8 @@
 	fire_delay = 12
 	screen_shake = 2
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/a50
-	allowed_magazines = /obj/item/ammo_magazine/a50
+	magazine_type = /obj/item/ammo_magazine/m50
+	allowed_magazines = /obj/item/ammo_magazine/m50
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'
 
@@ -108,7 +171,7 @@
 	origin_tech = list(TECH_COMBAT = 3)
 	ammo_type = /obj/item/ammo_casing/a75
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/a75
+	magazine_type = /obj/item/ammo_magazine/m75
 	fire_delay = 25
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -123,11 +186,12 @@
 		icon_state = "gyropistol"
 
 /obj/item/weapon/gun/projectile/beretta
-	name = "9mm combat pistol"
-	desc = "The Lumoco Arms P9 Brigadier. A robust sidearm designed for military duty. Uses 9mm rounds."
+	name = "M92X"
+	desc = "Olympia Foundry's revival of the Italian-American classic. Uses 9mm rounds."
 	magazine_type = /obj/item/ammo_magazine/mc9mmds
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmds
-	icon_state = "92fs"
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "m9"
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
@@ -136,9 +200,29 @@
 /obj/item/weapon/gun/projectile/beretta/on_update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
-		icon_state = "92fs"
+		icon_state = "m9"
 	else
-		icon_state = "92fs-e"
+		icon_state = "m9-e"
+
+/obj/item/weapon/gun/projectile/p226xr
+	name = "P226XR"
+	desc = "The P226XR is a revival of the 21st century model from the now-defunct Sig Sauer. This model is made by the Frontier Armament Company. Uses 9mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "p226xr"
+	magazine_type = /obj/item/ammo_magazine/mc9mmds
+	allowed_magazines = /obj/item/ammo_magazine/mc9mmds
+	caliber = "9mm"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	load_method = MAGAZINE
+	accuracy = 0.92
+	unacidable = 1
+
+/obj/item/weapon/gun/projectile/beretta/on_update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "p226xr"
+	else
+		icon_state = "p226xr-e"
 
 /obj/item/weapon/gun/projectile/pistol
 	name = "holdout pistol"
@@ -292,3 +376,60 @@
 		return
 	else
 		..()
+
+/obj/item/weapon/gun/projectile/deagle
+	name = "Desert Eagle"
+	desc = "The perfect handgun for shooters with a need to hit targets through a wall and behind a fridge in your neighbor's house. Uses .50AE rounds. Made by Olympia Foundry."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "deagle"
+	item_state = "revolver"
+	force = 14.0
+	caliber = ".50"
+	fire_delay = 6
+	screen_shake = 2
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m50
+	allowed_magazines = list(/obj/item/ammo_magazine/m50)
+	fire_sound = 'sound/weapons/gunshot/mateba.ogg'
+
+/obj/item/weapon/gun/projectile/deagle/lamia
+	name = "KDI \"Lamia\""
+	desc = "An upgrade kit for the Olympia Foundry Desert Eagle made by Kusanagi Defense Industries to minimize recoil and to simplify operation."
+	icon_state = "lamia_mk1"
+	accuracy = 1
+	fire_delay = 3
+	screen_shake = 1
+
+/obj/item/weapon/gun/projectile/deagle/lamia/update_icon()
+	overlays.Cut()
+	if(!ammo_magazine)
+		return
+	var/ratio = ammo_magazine.stored_ammo.len * 100 / ammo_magazine.max_ammo
+	ratio = round(ratio, 33)
+	overlays += "deagle_[ratio]" // Fugly.
+
+/obj/item/weapon/gun/projectile/deagle/lamia/mk2
+	name = "KDI \"Lamia\" MK2"
+	desc = "A further development of the Lamia Desert Eagle upgrade kit, now a standalone firearm. An impressive feat by KDI for ease of firing a legendary hand-cannon."
+	icon_state = "lamia_mk2"
+	fire_delay = 2
+	screen_shake = 0
+	accuracy = 1.30
+
+/obj/item/weapon/gun/projectile/fiveseven
+	name = "KDI FN-57"
+	desc = "Another classic retooled and redone by Kusanagi Defense Industries. Commonly seen in use with major police forces and comes with a tactical light installed. Uses 5.7x28mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "fiveseven"
+	caliber = "5.7x28mm"
+	load_method = MAGAZINE
+	fire_sound = 'sound/weapons/gunshot/fiveseven.ogg'
+	magazine_type = /obj/item/ammo_magazine/m57
+	allowed_magazines = list(/obj/item/ammo_magazine/m57)
+
+/obj/item/weapon/gun/projectile/fiveseven/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "[initial(icon_state)]"
+	else
+		icon_state = "[initial(icon_state)]-e"

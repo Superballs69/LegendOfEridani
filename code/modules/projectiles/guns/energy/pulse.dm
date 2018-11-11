@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/pulse_rifle
-	name = "pulse rifle"
+	name = "LPR-13b"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists."
 	icon_state = "pulse"
 	item_state = "pulse"

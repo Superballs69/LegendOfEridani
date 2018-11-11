@@ -9933,8 +9933,8 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/ammo_magazine/a762/empty,
-/obj/item/ammo_magazine/a762/empty,
+/obj/item/ammo_magazine/m762/empty,
+/obj/item/ammo_magazine/m762/empty,
 /turf/simulated/floor/plating,
 /area/vacant/armory)
 "wv" = (

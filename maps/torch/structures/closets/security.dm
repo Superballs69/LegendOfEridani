@@ -3,7 +3,7 @@
  */
 
 /obj/structure/closet/secure_closet/security_torch
-	name = "master at arms' locker"
+	name = "contractor locker"
 	req_access = list(access_brig)
 	icon_state = "sec1"
 	icon_closed = "sec"
@@ -13,16 +13,17 @@
 
 /obj/structure/closet/secure_closet/security_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/suit/armor/pcarrier/security,
+		/obj/item/clothing/head/helmet/security,
+		/obj/item/gunbox/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/device/flash,
 		/obj/item/weapon/reagent_containers/spray/pepper,
-		/obj/item/weapon/grenade/chem_grenade/teargas,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
+		/obj/item/weapon/gun/energy/taser,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
@@ -47,8 +48,7 @@
 
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/command/security,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/suit/armor/pcarrier/security/hos,
 		/obj/item/clothing/head/HoS/dermal,
 		/obj/item/device/radio/headset/heads/cos,
 		/obj/item/device/radio/headset/heads/cos/alt,
@@ -77,7 +77,7 @@
 	)
 
 /obj/structure/closet/secure_closet/brigofficer
-	name = "brig officer's locker"
+	name = "warden's locker"
 	req_access = list(access_armory)
 	icon_state = "wardensecure1"
 	icon_closed = "wardensecure"
@@ -87,8 +87,8 @@
 
 /obj/structure/closet/secure_closet/brigofficer/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/suit/armor/pcarrier/security/warden,
+		/obj/item/clothing/head/helmet/security/warden,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
@@ -96,7 +96,8 @@
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/weapon/gun/energy/gun/secure,
+		/obj/item/weapon/gun/energy/gun/small,
+		/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/handcuffs,
 		/obj/item/device/hailer,
@@ -125,7 +126,7 @@
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		//obj/item/clothing/suit/armor/pcarrier/medium/security,
 		/obj/item/weapon/gun/energy/gun/small/secure,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,

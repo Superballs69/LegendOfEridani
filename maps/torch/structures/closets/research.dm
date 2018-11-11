@@ -35,7 +35,7 @@
 		/obj/item/device/camera,
 		/obj/item/taperoll/research,
 		/obj/item/clothing/glasses/welding/superior,
-		/obj/item/clothing/suit/armor/pcarrier/light,
+		//obj/item/clothing/suit/armor/pcarrier/light,
 		/obj/item/weapon/storage/box/secret_project_disks/science,
 		/obj/item/weapon/storage/belt/general,
 		/obj/item/device/holowarrant,
@@ -150,8 +150,8 @@
 /obj/structure/closet/secure_closet/guard/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/guard,
-		/obj/item/clothing/suit/armor/pcarrier/medium/nt,
-		/obj/item/clothing/head/helmet/nt/guard,
+		//obj/item/clothing/suit/armor/pcarrier/medium/nt,
+		//obj/item/clothing/head/helmet/nt/guard,
 		/obj/item/clothing/head/soft/sec/corp/guard,
 		/obj/item/clothing/head/beret/guard,
 		/obj/item/clothing/accessory/armband/whitered,

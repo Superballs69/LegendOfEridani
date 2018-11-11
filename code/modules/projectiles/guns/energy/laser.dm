@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/laser
-	name = "laser carbine"
+	name = "HI G40E"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
 	icon_state = "laser"
 	item_state = "laser"
@@ -20,7 +20,7 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/laser/practice
-	name = "practice laser carbine"
+	name = "HI 640E"
 	desc = "A modified version of the HI G40E, this one fires less concentrated energy bolts designed for target practice."
 	icon_state = "laserp"
 	projectile_type = /obj/item/projectile/beam/practice
@@ -49,10 +49,10 @@
 			projectile_type = null
 
 obj/item/weapon/gun/energy/retro
-	name = "retro laser"
+	name = "AE02 laser gun"
 	icon_state = "retro"
 	item_state = "retro"
-	desc = "An older model of the basic lasergun. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
+	desc = "The trailblazer for energy weaponry, the galactic standard for laser weapons until it was replaced by the G40E. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam

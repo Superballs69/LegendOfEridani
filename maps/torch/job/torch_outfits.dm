@@ -40,13 +40,12 @@ These outfits will spawn with some gear.
 /decl/hierarchy/outfit/job/eclipse/command/ice
 	name = OUTFIT_JOB_NAME("ICE Agent")
 	l_ear = /obj/item/device/radio/headset/heads/captain
-	uniform = /obj/item/clothing/under/rank/internalaffairs
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
-	shoes = /obj/item/clothing/shoes/brown
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	l_hand = /obj/item/weapon/storage/briefcase
+	uniform = /obj/item/clothing/under/ice
+	shoes = /obj/item/clothing/shoes/dutyboots
+	glasses = /obj/item/clothing/glasses/sunglasses/sechud
 	id_type = /obj/item/weapon/card/id/eclipse/ice
 	pda_type = /obj/item/modular_computer/pda/forensics
+	r_hand = /obj/item/weapon/gun/projectile/fiveseven
 
 /decl/hierarchy/outfit/job/eclipse/command/hop
 	name = OUTFIT_JOB_NAME("Head of Personnel")
@@ -184,7 +183,9 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
 	name = OUTFIT_JOB_NAME("ISEC Contractor")
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/isec
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/thick
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/eclipse/security
@@ -192,7 +193,9 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
 	name = OUTFIT_JOB_NAME("TIGER Contractor")
-	uniform = /obj/item/clothing/under/rank/security
+	uniform = /obj/item/clothing/under/tiger
+	mask = /obj/item/clothing/mask/balaclava
+	gloves = /obj/item/clothing/gloves/thick
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/eclipse/security

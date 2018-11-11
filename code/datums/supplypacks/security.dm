@@ -12,7 +12,7 @@
 
 /decl/hierarchy/supply_pack/security/lightarmor
 	name = "Armor - Light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light = 4,
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/security = 4,
 					/obj/item/clothing/head/helmet =4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
@@ -21,7 +21,7 @@
 
 /decl/hierarchy/supply_pack/security/armor
 	name = "Armor - Unmarked"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium = 2,
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/security/heavy = 2,
 					/obj/item/clothing/head/helmet =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
@@ -31,7 +31,7 @@
 /decl/hierarchy/supply_pack/security/tacticalarmor
 	name = "Armor - Tactical"
 	contains = list(/obj/item/clothing/under/tactical,
-					/obj/item/clothing/suit/armor/pcarrier/tan/tactical,
+					/obj/item/clothing/suit/armor/pcarrier/swat,
 					/obj/item/clothing/head/helmet/tactical,
 					/obj/item/clothing/mask/balaclava/tactical,
 					/obj/item/clothing/glasses/tacgoggles,
@@ -234,7 +234,7 @@
 
 /decl/hierarchy/supply_pack/security/bullpupammo
 	name = "Ammunition - 7.62"
-	contains = list(/obj/item/ammo_magazine/a762 = 4)
+	contains = list(/obj/item/ammo_magazine/m762 = 4)
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "7.62 ammunition crate"
@@ -243,7 +243,7 @@
 
 /decl/hierarchy/supply_pack/security/bullpupammopractice
 	name = "Ammunition - 7.62 practice"
-	contains = list(/obj/item/ammo_magazine/a762/practice = 8)
+	contains = list(/obj/item/ammo_magazine/m762/practice = 8)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "7.62 practice ammunition crate"

@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "WT R870"
+	desc = "The mass-produced Ward-Takahashi R870 shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 4
@@ -45,14 +45,26 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
-	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
+	name = "KDI 870MCS"
+	desc = "A KDI production of a well renowned shotgun. This model is fitted with KDI-produced aftermarket parts and a choke, making your shot more accurate."
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 3 //a little heavier than the regular shotgun
+	accuracy = 1
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg
+	name = "Seburo KSG"
+	desc = "Seburo's entry to the shotgun consumer market. A compact, high capacity pump shotgun. Commonly seen in use with personal security contractors."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "ksg"
+	w_class = ITEM_SIZE_LARGE
+	max_shells = 14
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	one_hand_penalty = 2
+	accuracy = 0
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
@@ -124,3 +136,51 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	one_hand_penalty = 0
+
+//--Semi Autos--//
+/obj/item/weapon/gun/projectile/shotgun/semi
+	name = "KS-40"
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. Uses 12g rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "ks40"
+	item_state = "cshotgun"
+	max_shells = 7
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	obj_flags =  OBJ_FLAG_CONDUCTIBLE
+	caliber = "12g"
+	one_hand_penalty = 3
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3)
+	load_method = SINGLE_CASING|SPEEDLOADER
+	handle_casings = EJECT_CASINGS
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+
+/obj/item/weapon/gun/projectile/shotgun/semi/unload_ammo(user, allow_dump)
+	..(user, allow_dump=0)
+
+/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker
+	name = "KDI Peacewalker"
+	desc = "A semi-automatic shotgun by KDI, features it's signature electronic chambering indicator and a full choke, allowing for accurate shooting."
+	icon_state = "peacewalker"
+	max_shells = 6
+	accuracy = 1.75
+	one_hand_penalty = 0
+
+/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker/proc/update_charge()
+	var/ratio = (loaded.len + (chambered? 1 : 0)) / max_shells
+	if(ratio < 0.25 && ratio != 0)
+		ratio = 0.25
+	ratio = round(ratio, 0.25) * 100
+	overlays += "shotgun_[ratio]"
+
+/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker/update_icon()
+	overlays.Cut()
+	update_charge()
+
+/obj/item/weapon/gun/projectile/shotgun/semi/spas
+	name = " PC SPAS-12"
+	desc = "A reproduction of a 21st century classic. PyroCorp reintroduces a classic and reliable shotgun to the market, commonly seen in use with security and police forces."
+	icon_state = "spas12"
+	max_shells = 8
+	accuracy = 1

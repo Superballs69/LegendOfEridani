@@ -14,7 +14,7 @@
 
 /obj/structure/closet/secure_closet/CO/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		//obj/item/clothing/suit/armor/pcarrier/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/radio/headset/heads/torchcaptain,
 		/obj/item/clothing/glasses/sunglasses,
@@ -44,7 +44,7 @@
 /obj/structure/closet/secure_closet/XO/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		//obj/item/clothing/suit/armor/pcarrier/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/radio/headset/heads/torchxo,
 		/obj/item/weapon/storage/belt/holster/general,
@@ -77,7 +77,7 @@
 /obj/structure/closet/secure_closet/sea/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		//obj/item/clothing/suit/armor/pcarrier/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/radio/headset/heads/torchxo,
 		/obj/item/device/radio/headset/heads/torchxo/alt,
@@ -107,7 +107,7 @@
 		/obj/item/device/radio,
 		/obj/item/weapon/pen,
 		/obj/item/device/tape/random,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		//obj/item/clothing/suit/armor/pcarrier/medium/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/device/taperecorder,
 		/obj/item/device/flash,

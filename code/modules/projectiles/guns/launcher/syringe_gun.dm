@@ -135,6 +135,13 @@
 	item_state = "rapidsyringegun"
 	max_darts = 5
 
+/obj/item/weapon/gun/launcher/syringe/mini
+	name = "syringe pistol"
+	desc = "A modification of the stringe gun design, made smaller and concealable."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "stimpistol"
+	w_class = ITEM_SIZE_SMALL
+
 /obj/item/weapon/gun/launcher/syringe/disguised
 	name = "deluxe electronic cigarette"
 	desc = "A premium model eGavana MK3 electronic cigarette, shaped like a cigar."

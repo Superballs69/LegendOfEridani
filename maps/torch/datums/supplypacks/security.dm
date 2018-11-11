@@ -1,6 +1,7 @@
 /decl/hierarchy/supply_pack/security
 	name = "Security"
 
+/*
 /decl/hierarchy/supply_pack/security/lightarmorsol
 	name = "Armor - SCG light"
 	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/sol = 4,
@@ -9,16 +10,18 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper SolGov light armor crate"
 	access = access_security
+*/
 
 /decl/hierarchy/supply_pack/security/secarmor
 	name = "Armor - Security"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/security = 2,
-					/obj/item/clothing/head/helmet/solgov/security =2)
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/security = 2,
+					/obj/item/clothing/head/helmet/security =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "security armor crate"
 	access = access_security
 
+/*
 /decl/hierarchy/supply_pack/security/solarmor
 	name = "Armor - Peacekeeper"
 	contains = list(/obj/item/clothing/suit/armor/pcarrier/blue/sol = 2,
@@ -27,7 +30,9 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "peacekeeper armor crate"
 	access = access_emergency_armory
+*/
 
+/*
 /decl/hierarchy/supply_pack/security/comarmor
 	name = "Armor - Command"
 	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/command = 2,
@@ -36,24 +41,27 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "command armor crate"
 	access = access_heads
+*/
 
 /decl/hierarchy/supply_pack/security/nanoarmor
 	name = "Armor - Corporate"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/nt = 2,
-					/obj/item/clothing/head/helmet/nt/guard =2)
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/security = 2,
+					/obj/item/clothing/head/helmet/security =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "corporate armor crate"
 	access = access_nanotrasen
 
+/*
 /decl/hierarchy/supply_pack/security/lightnanoarmor
 	name = "Armor - Corporate light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/nt = 2,
-					/obj/item/clothing/head/helmet/nt/guard =2)
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/security = 2,
+					/obj/item/clothing/head/helmet/security =2)
 	cost = 15
 	containertype = /obj/structure/closet/crate/secure
 	containername = "corporate light armor crate"
 	access = access_nanotrasen
+*/
 
 /decl/hierarchy/supply_pack/security/pistol
 	name = "Weapons - Ballistic sidearms"
@@ -111,7 +119,7 @@
 
 /decl/hierarchy/supply_pack/security/bullpup
 	name = "Weapons - Ballistic rifles"
-	contains = list(/obj/item/weapon/gun/projectile/automatic/z8 = 2)
+	contains = list(/obj/item/weapon/gun/projectile/automatic/c8 = 2)
 	cost = 80 //Because 5.56 is OP as fuck right now.
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "bullpup automatic rifle crate"
@@ -120,7 +128,7 @@
 
 /decl/hierarchy/supply_pack/security/pistolammo
 	name = "Ammunition - .45 magazines"
-	contains = list(/obj/item/ammo_magazine/c45mds = 4)
+	contains = list(/obj/item/ammo_magazine/m45mds = 4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = ".45 ammunition crate"
@@ -129,7 +137,7 @@
 
 /decl/hierarchy/supply_pack/security/pistolammorubber
 	name = "Ammunition - .45 rubber"
-	contains = list(/obj/item/ammo_magazine/c45mds/rubber = 4)
+	contains = list(/obj/item/ammo_magazine/m45mds/rubber = 4)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = ".45 rubber ammunition crate"
@@ -137,7 +145,7 @@
 
 /decl/hierarchy/supply_pack/security/pistolammopractice
 	name = "Ammunition - .45 practice"
-	contains = list(/obj/item/ammo_magazine/c45mds/practice = 8)
+	contains = list(/obj/item/ammo_magazine/m45mds/practice = 8)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = ".45 practice ammunition crate"
@@ -191,7 +199,7 @@
 
 /decl/hierarchy/supply_pack/security/magnum_ammo
 	name = "Ammo - .44 Magnum"
-	contains = list(/obj/item/ammo_magazine/c44 = 4)
+	contains = list(/obj/item/ammo_magazine/s44 = 4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = ".44 magnum ammunition crate"

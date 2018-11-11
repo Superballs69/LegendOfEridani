@@ -824,6 +824,7 @@
 #include "code\game\objects\items\cryobag.dm"
 #include "code\game\objects\items\documents.dm"
 #include "code\game\objects\items\glassjar.dm"
+#include "code\game\objects\items\gunbox.dm"
 #include "code\game\objects\items\holosign_creator.dm"
 #include "code\game\objects\items\instruments.dm"
 #include "code\game\objects\items\latexballoon.dm"

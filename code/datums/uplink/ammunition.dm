@@ -5,9 +5,9 @@
 	item_cost = 4
 	category = /datum/uplink_category/ammunition
 
-/datum/uplink_item/item/ammo/c45m
+/datum/uplink_item/item/ammo/m45m
 	name = ".45"
-	path = /obj/item/ammo_magazine/c45m
+	path = /obj/item/ammo_magazine/m45m
 
 /datum/uplink_item/item/ammo/mc9mm
 	name = "9mm"
@@ -23,15 +23,15 @@
 	item_cost = 6
 	path = /obj/item/ammo_magazine/mc9mmds
 
-/datum/uplink_item/item/ammo/a357
+/datum/uplink_item/item/ammo/s357
 	name = ".357"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/a357
+	path = /obj/item/ammo_magazine/s357
 
-/datum/uplink_item/item/ammo/a556
+/datum/uplink_item/item/ammo/m556
 	name = "5.56mm"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/c556
+	path = /obj/item/ammo_magazine/m556
 
 /datum/uplink_item/item/ammo/sniperammo
 	name = "14.5mm"
@@ -53,30 +53,30 @@
 	item_cost = 8
 	path = /obj/item/weapon/storage/box/shotgunammo
 
-/datum/uplink_item/item/ammo/c45uzi
+/datum/uplink_item/item/ammo/m45uzi
 	name = ".45 SMG Magazine"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/c45uzi
+	path = /obj/item/ammo_magazine/m45uzi
 
-/datum/uplink_item/item/ammo/a10mm
+/datum/uplink_item/item/ammo/m10mm
 	name = "10mm SMG Magazine"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/a10mm
+	path = /obj/item/ammo_magazine/m10mm
 
-/datum/uplink_item/item/ammo/a50
+/datum/uplink_item/item/ammo/m50
 	name = ".50 AE magazine"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/a50
+	path = /obj/item/ammo_magazine/m50
 
-/datum/uplink_item/item/ammo/c50
+/datum/uplink_item/item/ammo/s50
 	name = ".50 AE speedloader"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/c50
+	path = /obj/item/ammo_magazine/s50
 
-/datum/uplink_item/item/ammo/c38
+/datum/uplink_item/item/ammo/s38
 	name = ".38 speedloader"
 	item_cost = 8
-	path = /obj/item/ammo_magazine/c38
+	path = /obj/item/ammo_magazine/s38
 
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Magazine"

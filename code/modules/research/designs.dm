@@ -742,7 +742,7 @@ other types of metals and chemistry for reagents).
 	id = "bullpup"
 	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 5000, MATERIAL_DIAMOND = 3000)
-	build_path = /obj/item/weapon/gun/projectile/automatic/z8
+	build_path = /obj/item/weapon/gun/projectile/automatic/c8
 	sort_string = "TAPAC"
 
 /datum/design/item/weapon/ammunition/AssembleDesignName()
@@ -753,7 +753,7 @@ other types of metals and chemistry for reagents).
 	id = "ammo_9mm"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 3750, MATERIAL_SILVER = 100)
-	build_path = /obj/item/ammo_magazine/box/c9mm
+	build_path = /obj/item/ammo_magazine/box/b9mm
 	sort_string = "TBAAA"
 
 /datum/design/item/weapon/ammunition/stunshell
@@ -777,7 +777,7 @@ other types of metals and chemistry for reagents).
 	desc = "A .45 round with an integrated EMP charge."
 	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	build_path = /obj/item/ammo_magazine/box/emp/c45
+	build_path = /obj/item/ammo_magazine/box/emp/b45
 	sort_string = "TBAAD"
 
 /datum/design/item/weapon/ammunition/ammo_emp_10
@@ -785,7 +785,7 @@ other types of metals and chemistry for reagents).
 	desc = "A .10mm round with an integrated EMP charge."
 	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	build_path = /obj/item/ammo_magazine/box/emp/a10mm
+	build_path = /obj/item/ammo_magazine/box/emp/b10mm
 	sort_string = "TBAAE"
 
 /datum/design/item/weapon/ammunition/ammo_emp_slug

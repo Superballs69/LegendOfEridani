@@ -1,3 +1,4 @@
+/*
 /obj/item/clothing/suit/armor/vest/solgov
 	name = "\improper Sol Central Government armored vest"
 	desc = "A synthetic armor vest. This one is marked with the crest of the Sol Central Government."
@@ -41,3 +42,4 @@
 
 /obj/item/clothing/suit/armor/pcarrier/medium/command/security
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor/tag/solgov/com/sec)
+*/

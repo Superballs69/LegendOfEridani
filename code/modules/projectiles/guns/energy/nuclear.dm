@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/gun
-	name = "energy gun"
-	desc = "Another bestseller of Lawson Arms and the FTU, the LAEP90 Perun is a versatile energy based sidearm, capable of switching between low, medium and high power projectile settings. In other words: stun, shock or kill."
+	name = "AE10 energy carbine"
+	desc = "Another bestseller of Ace Energy, the AE10 energy carbine is a versatile energy based weapon, capable of switching between stun, and lethal."
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	max_shots = 10
@@ -17,8 +17,8 @@
 		)
 
 /obj/item/weapon/gun/energy/gun/small
-	name = "small energy gun"
-	desc = "A smaller model of the versatile LAEP90 Perun, the LAEP90-C packs considerable utility in a smaller package. Best used in situations where full-sized sidearms are inappropriate."
+	name = "AE6 'Protector' energy pistol"
+	desc = "Originally a prototype, Ace Energy acquired the plans for a holdout pistol and has tuned it for reliable military and civilian use."
 	icon_state = "smallgunstun"
 	max_shots = 5
 	w_class = ITEM_SIZE_SMALL

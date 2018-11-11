@@ -12,7 +12,7 @@
 /obj/item/weapon/gun/projectile/heavysniper/ant
 	name = "anti-material rifle"
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. Fires armor piercing 14.5mm shells. This replica however fires 9mm rounds."
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/a9mm
 	caliber = "9mm"
 
 /obj/item/weapon/gun/energy/laser/dogan
@@ -22,6 +22,6 @@
 	projectile_type = pick(/obj/item/projectile/beam/midlaser, /obj/item/projectile/beam/lastertag/red, /obj/item/projectile/beam)
 	return ..()
 
-/obj/item/weapon/gun/projectile/automatic/mini_uzi/usi
+/obj/item/weapon/gun/projectile/automatic/uzi/cheap
 	desc = "An uncommon machine pistol, sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. This one looks especially run-down. Uses .45 rounds."
 	jam_chance = 20

@@ -137,6 +137,22 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 30 //.44 magnum or something
 
+/obj/item/projectile/bullet/pistol/medium/pdw
+	damage = 31
+	armor_penetration = 17
+
+/obj/item/projectile/bullet/pistol/medium/pdw/ap
+	damage = 25
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/pistol/medium/pdw/hollow
+	damage = 40
+	armor_penetration = -60
+
+/obj/item/projectile/bullet/pistol/medium/pdw/rubber
+	damage = 10
+	agony = 35
+
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 60 //.50AE
