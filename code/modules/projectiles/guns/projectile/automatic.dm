@@ -64,6 +64,7 @@
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	one_hand_penalty = 1
+	fire_sound = 'sound/weapons/gunshot/c20r.ogg'
 
 	//SMG
 	firemodes = list(
@@ -97,6 +98,7 @@
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
+	fire_sound = 'sound/weapons/gunshot/sts35.ogg'
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
@@ -123,6 +125,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/rubber
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt
+	fire_sound = 'sound/weapons/gunshot/wt550.ogg'
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
@@ -161,6 +164,7 @@
 	wielded_item_state = "z8carbine-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/batrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/batrifle_magout.ogg'
+	fire_sound = 'sound/weapons/gunshot/z8.ogg'
 	//would have one_hand_penalty=4,5 but the added weight of a grenade launcher makes one-handing even harder
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, use_launcher=null, one_hand_penalty=5, burst_accuracy=null, dispersion=null),
@@ -572,18 +576,17 @@
 	magazine_type = /obj/item/ammo_magazine/m9mmsmg
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mmsmg)
 	multi_aim = 1
-	burst_delay = 0
 	silenced = 1
 	accuracy = 0.80
-	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+	fire_sound = 'sound/weapons/gunshot/mk5.ogg'
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=3,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=3,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 0.6, 1.0, 1.0)),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/uzi/update_icon(var/ignore_inhands)
+/obj/item/weapon/gun/projectile/automatic/mk5/update_icon(var/ignore_inhands)
 	..()
 	if(ammo_magazine)
 		icon_state = "mk5"
@@ -607,7 +610,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
 	multi_aim = 1
 	burst_delay = 0
-	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+	fire_sound = 'sound/weapons/gunshot/mx9.ogg'
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
@@ -640,7 +643,7 @@
 	multi_aim = 1
 	burst_delay = 0
 	accuracy = -0.25
-	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+	fire_sound = 'sound/weapons/gunshot/kopis.ogg'
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),

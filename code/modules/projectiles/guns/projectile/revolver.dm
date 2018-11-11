@@ -3,7 +3,7 @@
 	desc = "The Frontier Armament Company's M-30 is a choice revolver for when you absolutely, positively need to put a hole in the other guy. This model has brought controversy as it isn't durable as most FAC-produced firearms. Uses .357 and .38 rounds."
 	icon_state = "revolver"
 	item_state = "revolver"
-	caliber = list("357","38")
+	caliber = 357
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
@@ -52,7 +52,6 @@
 	name = "Mateba Autorevolver"
 	desc = "This unique looking handgun is named after an Italian company famous for the manufacture of these revolvers, and pasta kneading machines. Uses .357 and .38 rounds."
 	icon_state = "mateba"
-	caliber = list("357","38")
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a357
 

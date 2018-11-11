@@ -17,6 +17,7 @@
 	var/recentpump = 0 // to prevent spammage
 	wielded_item_state = "gun_wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 
 /obj/item/weapon/gun/projectile/shotgun/pump/consume_next_projectile()
 	if(chambered)
@@ -144,11 +145,11 @@
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "ks40"
 	item_state = "cshotgun"
-	max_shells = 7
+	max_shells = 8
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
-	caliber = "12g"
+	caliber = "shotgun"
 	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3)
 	load_method = SINGLE_CASING|SPEEDLOADER
@@ -179,7 +180,7 @@
 	update_charge()
 
 /obj/item/weapon/gun/projectile/shotgun/semi/spas
-	name = " PC SPAS-12"
+	name = "PC SPAS-12"
 	desc = "A reproduction of a 21st century classic. PyroCorp reintroduces a classic and reliable shotgun to the market, commonly seen in use with security and police forces."
 	icon_state = "spas12"
 	max_shells = 8

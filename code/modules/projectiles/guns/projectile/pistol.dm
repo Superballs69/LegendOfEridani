@@ -117,6 +117,7 @@
 	name = "custom .45 Pistol"
 	icon_state = "secgundark"
 	accuracy = 0
+	fire_sound = 'sound/weapons/gunshot/mk58.ogg'
 
 /obj/item/weapon/gun/projectile/sec/wood/on_update_icon()
 	..()
@@ -196,6 +197,7 @@
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 	accuracy = 0.35
+	fire_sound = 'sound/weapons/gunshot/p92x.ogg'
 
 /obj/item/weapon/gun/projectile/beretta/on_update_icon()
 	..()
@@ -216,8 +218,9 @@
 	load_method = MAGAZINE
 	accuracy = 0.92
 	unacidable = 1
+	fire_sound = 'sound/weapons/gunshot/p226xr.ogg'
 
-/obj/item/weapon/gun/projectile/beretta/on_update_icon()
+/obj/item/weapon/gun/projectile/p226xr/on_update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
 		icon_state = "p226xr"

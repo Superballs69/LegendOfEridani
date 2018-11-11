@@ -4,6 +4,7 @@
 
 /obj/item/weapon/gun/projectile/silenced/cheap
 	desc = "A handgun with an integrated silencer(?). Uses .45 rounds."
+	jam_chance = 10
 
 /obj/item/weapon/gun/projectile/silenced/cheap/handle_post_fire()
 	silenced = prob(50)
