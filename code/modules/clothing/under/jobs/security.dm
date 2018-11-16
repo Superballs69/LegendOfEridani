@@ -61,6 +61,10 @@
 	//item_state = "warden_corporate"
 	worn_state = "warden_corporate"
 
+/obj/item/clothing/under/rank/warden/tactical
+	icon_state = "wardendnavyclothes"
+	worn_state = "wardendnavyclothes"
+
 /obj/item/clothing/under/tactical
 	name = "tactical jumpsuit"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
@@ -134,6 +138,11 @@
 	icon_state = "hos_corporate"
 	//item_state = "hos_corporate"
 	worn_state = "hos_corporate"
+
+/obj/item/clothing/under/rank/head_of_security/tactical
+	icon_state = "hosdnavyclothes"
+	item_state = "ba_suit"
+	worn_state = "hosdnavyclothes"
 
 /obj/item/clothing/head/HoS
 	name = "Head of Security Hat"

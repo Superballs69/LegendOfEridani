@@ -392,6 +392,13 @@
 	reagents.add_reagent(/datum/reagent/adrenaline, 5)
 	reagents.add_reagent(/datum/reagent/hyperzine, 10)
 
+/obj/item/weapon/reagent_containers/syringe/tricordrazine
+	name = "Syringe (tricordrazine)"
+	desc = "Contains pharmaceuticals for general injuries."
+
+/obj/item/weapon/reagent_containers/syringe/tricordrazine/New()
+	..()
+	reagents.add_reagent(/datum/reagent/tricordrazine, 15)
 
 // TG ports
 

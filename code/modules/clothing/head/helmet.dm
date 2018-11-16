@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet
 	name = "helmet"
-	desc = "Reinforced headgear. Protects the head from impacts."
+	desc = "A basic level helmet. Protects the head from impacts."
 	icon_state = "helmet"
 	item_state_slots = list(
 		slot_l_hand_str = "helmet",
@@ -10,7 +10,7 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
-	armor = list(melee = 50, bullet = 50, laser = 50,energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -27,6 +27,13 @@
 	icon_state = "helmet"
 	armor = list(melee = 50, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/head/helmet/security/basic
+	name = "bump helmet"
+	desc = "A low-ballistic rating helmet to protect the user from low-velocity impacts."
+	icon_state = "helmet_basic"
+	armor = list(melee = 35, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 0, rad = 0)
+	valid_accessory_slots = null
+
 /obj/item/clothing/head/helmet/security/hos
 	name = "head of security's helmet"
 	icon_state = "helmet_hos"
@@ -35,7 +42,20 @@
 /obj/item/clothing/head/helmet/security/warden
 	name = "warden's helmet"
 	icon_state = "helmet_warden"
-	desc = "Standard Warden gear. Protects the head from impacts."
+	valid_accessory_slots = null
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	desc = "The helmet of the man who holds back the gates of hell."
+	siemens_coefficient = 0.7
+	action_button_name = "Toggle Visor"
+
+/obj/item/clothing/head/helmet/security/warden/attack_self(mob/user as mob)
+	if(src.icon_state == initial(icon_state))
+		src.icon_state = "[icon_state]_up"
+		to_chat(user, "You raise the visor on the [src].")
+	else
+		src.icon_state = initial(icon_state)
+		to_chat(user, "You lower the visor on the [src].")
+	update_clothing_icon()
 
 /obj/item/clothing/head/helmet/security/dermal
 	name = "dermal armour patch"

@@ -132,6 +132,11 @@
 	icon_state = "syringe"
 	startswith = list(/obj/item/weapon/reagent_containers/syringe = 7)
 
+/obj/item/weapon/storage/box/syringes/tricordrazine
+	name = "box of tricordrazine syringes"
+	desc = "A box full of syringes with tricordrazine."
+	startswith = list(/obj/item/weapon/reagent_containers/syringe/tricordrazine = 7)
+
 /obj/item/weapon/storage/box/syringegun
 	name = "box of syringe gun cartridges"
 	desc = "A box full of compressed gas cartridges."

@@ -80,3 +80,31 @@
 
 /datum/job/explorer/get_description_blurb()
 	return "You are Pathfinder. Your duty is to go on expeditions to away sites. The Pathfinder Commander is your team leader. You are to look for anything of economic or scientific interest to the SCG - mineral deposits, alien flora/fauna, artifacts. You will also likely encounter hazardous environments, aggressive wildlife or malfunctioning defense systems, so tread carefully."
+
+/datum/job/pathfinder_specialist
+	title = "Pathfinder Specialist"
+	department = "Exploration"
+	department_flag = EXP
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Captain, the Head of Personnel and the Pathfinder Commander"
+	ideal_character_age = 25
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_specialist
+	alt_titles = list(
+		"Pathfinder CSAR",
+		"Pathfinder Technician",
+		"Pathfinder Engineer",
+		"Pathfinder Corpsman")
+	min_skill = list(   SKILL_EVA = SKILL_BASIC,
+						SKILL_MEDICAL = SKILL_BASIC,
+						SKILL_ENGINES = SKILL_BASIC)
+
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX,
+	                    SKILL_COMBAT      = SKILL_EXPERT,
+	                    SKILL_WEAPONS     = SKILL_EXPERT)
+
+	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage, access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_cent_creed)
+
+/datum/job/explorer/get_description_blurb()
+	return "You are a Pathfinder Specialist. You are the specialist supporting your fellow Pathfinders whether it be engineering or medical expertise. Along with special duties, you perform the same duties as a Pathfinder along with them."

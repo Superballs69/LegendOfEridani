@@ -139,7 +139,7 @@
 	one_hand_penalty = 0
 
 //--Semi Autos--//
-/obj/item/weapon/gun/projectile/shotgun/semi
+/obj/item/weapon/gun/projectile/shotgun/pump/semi
 	name = "KS-40"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. Uses 12g rounds."
 	icon = 'icons/obj/gun_2.dmi'
@@ -147,20 +147,16 @@
 	item_state = "cshotgun"
 	max_shells = 8
 	w_class = ITEM_SIZE_HUGE
-	force = 10
-	obj_flags =  OBJ_FLAG_CONDUCTIBLE
-	caliber = "shotgun"
 	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 3)
-	load_method = SINGLE_CASING|SPEEDLOADER
-	handle_casings = EJECT_CASINGS
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 
-/obj/item/weapon/gun/projectile/shotgun/semi/unload_ammo(user, allow_dump)
-	..(user, allow_dump=0)
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/consume_next_projectile(mob/living/user as mob|obj)
+	..()
+	src.pump(user)
 
-/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/peacewalker
 	name = "KDI Peacewalker"
 	desc = "A semi-automatic shotgun by KDI, features it's signature electronic chambering indicator and a full choke, allowing for accurate shooting."
 	icon_state = "peacewalker"
@@ -168,18 +164,18 @@
 	accuracy = 1.75
 	one_hand_penalty = 0
 
-/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker/proc/update_charge()
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/peacewalker/proc/update_charge()
 	var/ratio = (loaded.len + (chambered? 1 : 0)) / max_shells
 	if(ratio < 0.25 && ratio != 0)
 		ratio = 0.25
 	ratio = round(ratio, 0.25) * 100
 	overlays += "shotgun_[ratio]"
 
-/obj/item/weapon/gun/projectile/shotgun/semi/peacewalker/update_icon()
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/peacewalker/update_icon()
 	overlays.Cut()
 	update_charge()
 
-/obj/item/weapon/gun/projectile/shotgun/semi/spas
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/spas
 	name = "PC SPAS-12"
 	desc = "A reproduction of a 21st century classic. PyroCorp reintroduces a classic and reliable shotgun to the market, commonly seen in use with security and police forces."
 	icon_state = "spas12"

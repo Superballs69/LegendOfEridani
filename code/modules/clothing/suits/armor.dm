@@ -49,7 +49,6 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 
-
 /obj/item/clothing/suit/armor/det_suit
 	name = "armor"
 	desc = "An armored vest with a detective's badge on it."
@@ -280,36 +279,36 @@
 	name = "security plate carrier"
 	desc = "A standard issue plate carrier for all Arcturus-Eclipse Project security contractors."
 	icon_state = "pcarrier_sec"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/nt, /obj/item/clothing/accessory/storage/pouches)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/legguards, /obj/item/clothing/accessory/armguards)
 
 /obj/item/clothing/suit/armor/pcarrier/security/heavy
 	name = "security plate carrier"
 	desc = "A standard issue plate carrier for all Arcturus-Eclipse Project security contractors."
 	icon_state = "pcarrier_sec"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/nt,/obj/item/clothing/accessory/storage/pouches/large)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large)
 
 /obj/item/clothing/suit/armor/pcarrier/security/hos
 	name = "head of security's plate carrier"
-	desc = "A gold trimmed plate carrier for the man that protects all your worthless lives."
+	desc = "A gold trimmed plate carrier for the one that protects all your worthless lives."
 	icon_state = "pcarrier_hos"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/nt, /obj/item/clothing/accessory/storage/pouches/large)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec, /obj/item/clothing/accessory/storage/pouches/large)
 
 /obj/item/clothing/suit/armor/pcarrier/security/warden
 	name = "warden's plate carrier"
 	desc = "A plate carrier for the owner of this brig."
 	icon_state = "pcarrier_warden"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/nt, /obj/item/clothing/accessory/storage/pouches)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/warden, /obj/item/clothing/accessory/armor/tag/sec, /obj/item/clothing/accessory/legguards/warden, /obj/item/clothing/accessory/armguards/warden)
 
 /obj/item/clothing/suit/armor/pcarrier/security/detective
 	name = "detective's plate carrier"
 	desc = "A standard issue plate carrier for all licensed detectives and private eyes."
 	icon_state = "pcarrier_detective"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/nt, /obj/item/clothing/accessory/storage/pouches)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/sec, /obj/item/clothing/accessory/storage/pouches)
 
 /obj/item/clothing/suit/armor/pcarrier/security/detective/csi
 	name = "CSI's plate carrier"
 	icon_state = "pcarrier_csi"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/nt)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/sec)
 
 /obj/item/clothing/suit/armor/pcarrier/blue
 	name = "blue plate carrier"
@@ -344,6 +343,51 @@
 	name = "police plate carrier"
 	desc = "A standard issue plate carrier for all ETF federal law enforcement agents."
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large)
+
+/obj/item/clothing/suit/armor/pcarrier/pathfinder
+	name = "pathfinder plate carrier"
+	icon_state = "pcarrier_pathfinder"
+	desc = "A standard issue plate carrier for all Pathfinder Corps personnel."
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/storage/pouches)
+
+/obj/item/clothing/suit/armor/pcarrier/pathfinder/commander
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/pathfinder, /obj/item/clothing/accessory/legguards/pathfinder)
+
+
+
+//Storage plate carriers
+/obj/item/clothing/suit/storage/pcarrier
+	name = "simple plate carrier"
+	desc = "Uh-oh! You are not supposed to see this! Ahelp if you see it!"
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L, ACCESSORY_SLOT_ARMOR_M)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	item_flags = ITEM_FLAG_THICKMATERIAL
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = UPPER_TORSO|LOWER_TORSO
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.6
+	blood_overlay_type = "armor"
+
+/obj/item/clothing/suit/storage/pcarrier/security
+	name = "security carrier vest"
+	desc = "A simple, standard issue plate carrier for all Arcturus-Eclipse Project security contractors. Limited modularity."
+	icon_state = "sarmor"
+	item_state = "sarmor"
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_M)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/sec)
+
+/obj/item/clothing/suit/storage/pcarrier/medic
+	name = "medical responder vest"
+	icon_state = "marmor"
+	item_state = "marmor"
+	desc = "A simple, white plate carrier with red-cross markings for first-responder medical personnel. Limited modularity."
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_M)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security)
 
 //Modular specialty armor
 /obj/item/clothing/suit/armor/riot

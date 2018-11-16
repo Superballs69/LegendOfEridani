@@ -26,6 +26,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BASIC
+	maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/officer
 	title = "ISEC Contractor"
@@ -59,6 +60,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BASIC
+	maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/iaa
 	title = "Internal Affairs Agent"
@@ -68,7 +70,6 @@
 	economic_power = 9
 	minimal_player_age = 7
 	ideal_character_age = 35
-	skill_points = 14
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/iaa
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -90,4 +91,5 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_TRADE
+	required_education = EDUCATION_TIER_BACHELOR
+	maximum_education = EDUCATION_TIER_MASTERS

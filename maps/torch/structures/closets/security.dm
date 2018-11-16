@@ -13,8 +13,8 @@
 
 /obj/structure/closet/secure_closet/security_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/security,
-		/obj/item/clothing/head/helmet/security,
+		/obj/item/clothing/suit/storage/pcarrier/security,
+		/obj/item/clothing/head/helmet/security/basic,
 		/obj/item/gunbox/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
@@ -27,7 +27,6 @@
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/gunbox/security,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/device/holowarrant,

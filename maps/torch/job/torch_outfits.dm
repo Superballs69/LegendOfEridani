@@ -97,7 +97,7 @@ These outfits will spawn with some gear.
 /decl/hierarchy/outfit/job/eclipse/command/cos
 	name = OUTFIT_JOB_NAME("Chief of Security")
 	l_ear = /obj/item/device/radio/headset/heads/cos
-	uniform = /obj/item/clothing/under/rank/head_of_security
+	uniform = /obj/item/clothing/under/rank/head_of_security/tactical
 	id_type = /obj/item/weapon/card/id/eclipse/silver/security
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 	backpack_contents = list(/obj/item/weapon/handcuffs = 1)
@@ -177,7 +177,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/security/warden
 	name = OUTFIT_JOB_NAME("Warden")
-	uniform = /obj/item/clothing/under/rank/warden
+	uniform = /obj/item/clothing/under/rank/warden/tactical
 	l_pocket = /obj/item/device/flash
 	id_type = /obj/item/weapon/card/id/eclipse/security/warden
 	pda_type = /obj/item/modular_computer/pda/security
@@ -186,7 +186,6 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	name = OUTFIT_JOB_NAME("ISEC Contractor")
 	uniform = /obj/item/clothing/under/isec
 	mask = /obj/item/clothing/mask/balaclava
-	gloves = /obj/item/clothing/gloves/thick
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/eclipse/security
@@ -202,13 +201,12 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	name = OUTFIT_JOB_NAME("TIGER Contractor")
 	uniform = /obj/item/clothing/under/tiger
 	mask = /obj/item/clothing/mask/balaclava
-	gloves = /obj/item/clothing/gloves/thick
 	l_pocket = /obj/item/device/flash
 	r_pocket = /obj/item/weapon/handcuffs
 	id_type = /obj/item/weapon/card/id/eclipse/security
 	pda_type = /obj/item/modular_computer/pda/security
 
-/decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
+/decl/hierarchy/outfit/job/eclipse/security/tiger_contractor/New()
 	..()
 	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack
 	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel
@@ -377,7 +375,8 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_commander
 	name = OUTFIT_JOB_NAME("Pathfinder Commander")
-	uniform = /datum/gear/uniform/utility
+	uniform = /obj/item/clothing/under/rank/pathfinder
+	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/eclipse/exploration/commander
 	pda_type = /obj/item/modular_computer/pda/explorer
@@ -385,7 +384,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_explorer
 	name = OUTFIT_JOB_NAME("Pathfinder")
-	uniform = /datum/gear/uniform/utility
+	uniform = /obj/item/clothing/under/rank/pathfinder
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/eclipse/exploration
 	pda_type = /obj/item/modular_computer/pda/explorer
@@ -393,11 +392,21 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_pilot
 	name = OUTFIT_JOB_NAME("Pathfinder Pilot")
-	uniform = /datum/gear/uniform/utility
+	uniform = /obj/item/clothing/under/rank/pathfinder
+	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/eclipse/exploration/pilot
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/headset_pilot
+
+/decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_specialist
+	name = OUTFIT_JOB_NAME("Pathfinder Specialist")
+	uniform = /obj/item/clothing/under/rank/pathfinder
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/weapon/card/id/eclipse/exploration/specialist
+	pda_type = /obj/item/modular_computer/pda/explorer
+	l_ear = /obj/item/device/radio/headset/exploration
+
 
 //Research Outfits
 /decl/hierarchy/outfit/job/eclipse/research

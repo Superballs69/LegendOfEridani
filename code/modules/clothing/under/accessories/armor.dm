@@ -82,9 +82,15 @@
 
 /obj/item/clothing/accessory/armorplate/security
 	name = "security armor insert"
-	desc = "A standard NT-issue security vest insert for all NTDS contractors."
+	desc = "A standard issue security vest insert for security contractors."
 	icon_state = "insert_stab"
 	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/clothing/accessory/armorplate/security/warden
+	name = "wardens armor insert"
+	desc = "This is a custom made armor plate designed to withstand both blunt and ballistic damage."
+	icon_state = "armor_medium"
+	armor = list(melee = 75, bullet = 40, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/accessory/armorplate/security/heavy
 	name = "security armor plate"
@@ -134,6 +140,12 @@
 	armor = list(melee = 75, bullet = 33, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
 	siemens_coefficient = 0.5
 
+/obj/item/clothing/accessory/armguards/warden
+	name ="wardens arms guards"
+	desc = "A pair of hardened tactical riot pads for the owner of the brig."
+	armor = list(melee = 75, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.5
+
 /obj/item/clothing/accessory/armguards/ballistic
 	name = "ballistic arm guards"
 	desc = "A pair of armored arm pads with heavy plates to protect against ballistic projectiles."
@@ -147,6 +159,11 @@
 	icon_state = "armguards_ablative"
 	armor = list(melee = 35, bullet = 35, laser = 75, energy = 50, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0
+
+/obj/item/clothing/accessory/armguards/pathfinder
+	name = "pathfinders arm guards"
+	desc = "A pair of armored arm pads with armor plating. Attaches to a plate carrier."
+	icon_state = "armguards_pathfinder"
 
 //Leg guards
 /obj/item/clothing/accessory/legguards
@@ -191,6 +208,13 @@
 	siemens_coefficient = 0.5
 	slowdown = 1
 
+/obj/item/clothing/accessory/legguards/warden
+	name = "wardens leg guards"
+	desc = "A pair of armoured leg pads for the man who owns this brig. Looks like they might impair movement."
+	armor = list(melee = 75, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.5
+	slowdown = 1
+
 /obj/item/clothing/accessory/legguards/ballistic
 	name = "ballistic leg guards"
 	desc = "A pair of armored leg pads with heavy plates to protect against ballistic projectiles. Looks like they might impair movement."
@@ -207,6 +231,10 @@
 	siemens_coefficient = 0
 	slowdown = 1
 
+/obj/item/clothing/accessory/legguards/pathfinder
+	name = "pathfinder arm guards"
+	desc = "A pair of armored leg pads. Attaches to a plate carrier."
+	icon_state = "legguards_pathfinder"
 
 //Decorative attachments
 /obj/item/clothing/accessory/armor/tag
@@ -218,9 +246,9 @@
 	icon_state = "null"
 	slot = ACCESSORY_SLOT_ARMOR_M
 
-/obj/item/clothing/accessory/armor/tag/nt
-	name = "\improper CORPORATE SECURITY tag"
-	desc = "An armor tag with the words CORPORATE SECURITY printed in red lettering on it."
+/obj/item/clothing/accessory/armor/tag/sec
+	name = "\improper SECURITY tag"
+	desc = "An armor tag with the words SECURITY printed in white lettering on it."
 	icon_state = "nanotag"
 
 /obj/item/clothing/accessory/armor/tag/pcrc

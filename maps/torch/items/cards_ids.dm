@@ -150,6 +150,9 @@
 /obj/item/weapon/card/id/eclipse/exploration/pilot
 	job_access_type = /datum/job/pathfinder_pilot
 
+/obj/item/weapon/card/id/eclipse/exploration/specialist
+	job_access_type = /datum/job/pathfinder_specialist
+
 //Research
 /obj/item/weapon/card/id/eclipse/silver/research
 	icon_state = "sciGold"

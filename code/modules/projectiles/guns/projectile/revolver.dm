@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/revolver
-	name = "M-30"
-	desc = "The Frontier Armament Company's M-30 is a choice revolver for when you absolutely, positively need to put a hole in the other guy. This model has brought controversy as it isn't durable as most FAC-produced firearms. Uses .357 and .38 rounds."
+	name = "revolver"
+	desc = "A powerful revolver. Uses .357 and .38 rounds."
 	icon_state = "revolver"
 	item_state = "revolver"
 	caliber = 357
@@ -40,17 +40,29 @@
 	chamber_offset = 0
 	return ..()
 
-/obj/item/weapon/gun/projectile/revolver/police
+/obj/item/weapon/gun/projectile/revolver/m30
+	name = "M-30"
+	desc = "The Frontier Armament Company's M-30 is a choice revolver when you absolutely, positively need to put a hole in the other guy. Uses .357 and .38 rounds."
+	caliber = ".44"
+	ammo_type = /obj/item/ammo_casing/a44
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "m30"
+	item_state = "revolver"
+	unacidable = 1
+
+/obj/item/weapon/gun/projectile/revolver/m30/police
 	name = "M-30 'Police Special'"
 	desc = "The FAC's renowned M30 has seen service amongst Frontier military and police organizations, and has such made a specialized model with a shortened barrel and black furniture. Uses .357 and .38 rounds."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "m30_police"
-	ammo_type = /obj/item/ammo_casing/a38/rubber
+	ammo_type = /obj/item/ammo_casing/a44/rubber
 	unacidable = 1
+	accuracy = 0.30
 
 /obj/item/weapon/gun/projectile/revolver/mateba
 	name = "Mateba Autorevolver"
 	desc = "This unique looking handgun is named after an Italian company famous for the manufacture of these revolvers, and pasta kneading machines. Uses .357 and .38 rounds."
+	caliber = 357
 	icon_state = "mateba"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a357
@@ -60,6 +72,7 @@
 	desc = "Another high-quality firearm developed by Kusanagi Defense Industries. Features a sturdy frame, electronic chamber indicators and polygonal rifling for dead-on accuracy. Uses .357 and .38 rounds."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "inspector"
+	caliber = 357
 	fire_delay = 5
 	accuracy = 2
 	fire_sound = 'sound/weapons/gunshot/revolver.ogg'

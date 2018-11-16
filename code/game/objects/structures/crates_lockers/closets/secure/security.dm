@@ -86,14 +86,8 @@
 /obj/structure/closet/secure_closet/hos/WillContain()
 	return list(
 		new/datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
-		/obj/item/clothing/head/HoS,
-		/obj/item/clothing/head/helmet/nt,
-		/obj/item/clothing/suit/armor/vest/nt,
-		/obj/item/clothing/suit/storage/vest/nt/hos,
-		/obj/item/clothing/under/rank/head_of_security/jensen,
-		/obj/item/clothing/under/rank/head_of_security/corp,
+		/obj/item/clothing/head/beret/sec/corporate/hos,
 		/obj/item/clothing/suit/armor/hos/jensen,
-		/obj/item/clothing/suit/armor/hos,
 		/obj/item/clothing/head/HoS/dermal,
 		/obj/item/device/radio/headset/heads/hos,
 		/obj/item/clothing/glasses/sunglasses/sechud,
@@ -106,7 +100,6 @@
 		/obj/item/weapon/gun/energy/gun,
 		/obj/item/clothing/accessory/storage/holster/waist,
 		/obj/item/weapon/melee/telebaton,
-		/obj/item/clothing/head/beret/sec/corporate/hos,
 		/obj/item/device/holowarrant
 	)
 

@@ -4,7 +4,7 @@
 	minimal_player_age = 7
 	economic_power = 20
 	ideal_character_age = 50
-	outfit_type = /decl/hierarchy/outfit/job/captain
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/captain
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_ADEPT)
@@ -27,10 +27,12 @@
 	supervisors = "the ETF and FCA."
 	department = "Command"
 	department_flag = COM
+	total_positions = 2
+	spawn_positions = 2
 	economic_power = 18
 	minimal_player_age = 7
 	ideal_character_age = 30
-	outfit_type = /decl/hierarchy/outfit/job/captain
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/ice
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_EXPERT,
@@ -47,6 +49,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 	required_education = EDUCATION_TIER_BACHELOR
+	maximum_education = EDUCATION_TIER_MASTERS
 
 /datum/job/ice/get_description_blurb()
 	return "You are an Agent of the Internal Corporate Enforcement arm of the FCA. You are a federal ETF law enforcement agent delegated to oversee the Arcturus-Eclipse Project. Make sure federal laws are followed and enforce them. You, along with the Captain and the Chief of Security are FCA appointed crew and hold the upmost authority amongst the ship."
@@ -59,7 +62,7 @@
 	minimal_player_age = 7
 	economic_power = 10
 	ideal_character_age = 45
-	outfit_type = /decl/hierarchy/outfit/job/hop
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/hop
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_BASIC)
@@ -104,7 +107,7 @@
 	economic_power = 20
 	minimal_player_age = 7
 	ideal_character_age = 60
-	outfit_type = /decl/hierarchy/outfit/job/science/rd
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/rd
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_ADEPT,
@@ -140,7 +143,7 @@
 	economic_power = 18
 	minimal_player_age = 7
 	ideal_character_age = 48
-	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/cmo
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_ADEPT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
@@ -175,7 +178,7 @@
 	economic_power = 9
 	ideal_character_age = 40
 	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/ce
 	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
 	                    SKILL_EVA          = SKILL_ADEPT,
@@ -222,7 +225,7 @@
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/security/hos
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/cos
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
