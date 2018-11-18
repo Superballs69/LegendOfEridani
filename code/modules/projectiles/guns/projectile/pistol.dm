@@ -5,6 +5,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/m45m
 	icon_state = "colt"
 	caliber = ".45"
+	fire_sound = 'sound/weapons/gunshot/m1911.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 

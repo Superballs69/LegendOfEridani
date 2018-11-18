@@ -32,10 +32,10 @@
 	..()
 
 /obj/item/weapon/card/id/eclipse/ice
-	name = "Federal Agent ID card"
-	desc = "A government issued ID card to federal law enforcemenet agents."
-	icon_state = "centcomNew"
-	item_state = "silver_id"
+	name = "federal agent ID card"
+	desc = "A government issued ID card to federal law enforcement agents."
+	icon_state = "centcomGold"
+	item_state = "gold_id"
 
 /obj/item/weapon/card/id/eclipse/ice/New()
 	access = get_all_station_access()
