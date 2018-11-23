@@ -59,7 +59,7 @@
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/weapon/gun/energy/gun/secure,
+		/obj/item/gunbox/cos,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/clothing/accessory/storage/black_vest,

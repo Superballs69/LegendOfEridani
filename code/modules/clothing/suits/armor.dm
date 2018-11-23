@@ -349,11 +349,10 @@
 	icon_state = "pcarrier_pathfinder"
 	desc = "A standard issue plate carrier for all Pathfinder Corps personnel."
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/storage/pouches)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic, /obj/item/weapon/tank)
 
 /obj/item/clothing/suit/armor/pcarrier/pathfinder/commander
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/pathfinder, /obj/item/clothing/accessory/legguards/pathfinder)
-
-
 
 //Storage plate carriers
 /obj/item/clothing/suit/storage/pcarrier
@@ -387,6 +386,7 @@
 	desc = "A simple, white plate carrier with red-cross markings for first-responder medical personnel. Limited modularity."
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_M)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C)
+	allowed = list(/obj/item/weapon/tank,/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,	/obj/item/device/analyzer,/obj/item/stack/medical,/obj/item/weapon/reagent_containers/dropper,/obj/item/weapon/reagent_containers/syringe,/obj/item/weapon/reagent_containers/hypospray,/obj/item/device/healthanalyzer,/obj/item/device/flashlight/pen,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/weapon/reagent_containers/glass/beaker,/obj/item/weapon/reagent_containers/pill,/obj/item/weapon/storage/pill_bottle,/obj/item/weapon/paper)
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security)
 
 //Modular specialty armor

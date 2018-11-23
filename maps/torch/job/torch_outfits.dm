@@ -367,12 +367,13 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	pda_type = /obj/item/modular_computer/pda
 
 //Exploration Outfits
+/*
 /decl/hierarchy/outfit/job/eclipse/exploration/New()
 	..()
 	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/weapon/storage/backpack/explorer
 	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/weapon/storage/backpack/satchel/explorer
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/explorer
-
+*/
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_commander
 	name = OUTFIT_JOB_NAME("Pathfinder Commander")
 	uniform = /obj/item/clothing/under/rank/pathfinder

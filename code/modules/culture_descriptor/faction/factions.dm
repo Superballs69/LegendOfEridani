@@ -2,9 +2,10 @@
 	name = FACTION_SOL_ALLIANCE
 	description = "The Solar Systems Alliance, commonly known as the Alliance or the Systems Alliance, is an intergovernmental power consisting of \
 	member states of the now defunct United Nations and their respective colonies outside the Solar System with the goal of organizing, uniting and representing \
-	the human race as a whole in the Milky Way Galaxy. Intergallatically recognized as the official representative country of the human race. Engaged in a Cold War with the \
-	Frontier Federation and as a result of poor management and Frontier patriotism has consequently a weak grip on outer colonies. With the reliance on rare materials, the hunger of the SSA \
-	is slowly caving in on itself."
+	the human race as a whole in the Milky Way Galaxy, thus making them the intergalactic representative of humanity as a whole. As technology advanced, humanity became reliant on \
+	rare materials and mitigating the ecological collapse of Earth, and resorted to exploting their newly founded outer colonies. As a result, the Alliance manages to save their cultural homeworld \
+	at the cost of a full-blown civil war with the Frontier Federation. To those who live in the Alliance experience a relatively peaceful lifestyle, with human development and wealth increasing closer to \
+	the Solar System. Many outer colonies still held by the Alliance are common breeding grounds for skirmishing, insurgencies and Frontier sympathies."
 	language = LANGUAGE_SOL_COMMON
 
 /decl/cultural_info/faction/ff
@@ -12,7 +13,8 @@
 	description = "The Frontier Federation, commonly referred to as the Federation, is a regional power in human space,\
 	bordering the Solar Systems Alliance. Grown out of the result of the SSA's resource exploitation and harsh ruling, the Frontier Federation \
 	through a successful propaganda and psychological victory has managed to gain public sympathy, with many SSA governments and subsidies turning side. With the \
-	advantage of plenty resources, manpower and public support the Frontier Federation has grown to be more than a thorn to the SSA's side."
+	advantage of plenty resources, manpower and public support the Frontier Federation has grown to be more than a thorn to the SSA's side. Comprised of many ex-SSA and pre-SSA colonial assets, \
+	most Federation citizens with the current cold-war are also militiamen if needed. Despite a militant populance, fringe colonies, especially those close to it's capital."
 	economic_power = 0.9
 	subversive_potential = 50
 	language = LANGUAGE_INDEPENDENT
@@ -21,7 +23,9 @@
 	name = FACTION_ERIDANI_FED
 	description = "The Eridani Trade Federation, is a special administrative region within the Solar Systems Alliance's Epsilon Eridani system. A fully autonomous government \
 	with many governmental duties and services ran by corporations holding seats in the Board of Directors through amount of market shares and holdings. An experimental corporatocracy that \
-	provides the ideal environment for mercantilism and capitalism, and is the most wealthiest region of known space in the Milky Way. The current administrative leader is Dr. Aito Kusanagi Ph.D."
+	provides the ideal environment for mercantilism and capitalism, and is the most wealthiest region of known space in the Milky Way. The current administrative leader is Dr. Aito Kusanagi Ph.D. \
+	with even some portions of government services being privatized and managed by corporations within the ETF. As a the hub of commmerce and innovation, all citizens in the ETF live in exuberant wealth \
+	and perform trade with all representative states of the galaxy."
 	language = LANGUAGE_GALCOM
 	secondary_langs = list(LANGUAGE_SOL_COMMON)
 
@@ -39,10 +43,11 @@
 
 /decl/cultural_info/faction/remote/kdi
 	name = FACTION_KDI
-	description = "KDI, or Kusanagi Defense Industries is one of the largest defense contractors across known space. An Earth based zaibatsu founded by CEO Aito Kusanagi, the company has produced \
-	an extensive and well-renowned line of small-arms, composite armor systems and communication devices. Through massive amounts of capital and product successes, the company holds the majority \
-	of seats in the Board of Directors and represents the ETF as a whole. It is the major investor of the Arcturus-Eclipse Project. The company is critized heavily with accusations of war-profiteering, influencing governments and extreme \
-	corporate espionage."
+	description = "Kusanagi Defense Industries, or shortened to 'KDI' is the most powerful defense contractor in the galaxy. Originally an earth-based zaibatsu, the company \
+	produces an extensive line of small-arms, ship-based weapon systems, communication systems and services such as logistics support, communication services, and even private police. \
+	Renowned for their superior military grade firearms and reproductions, the company has put their products to the test by equipping their officers and fleet with their company-produced equipment. \
+	KDI also has received controversy for it's heavy ambitions of an independent Eridani, reported use of aggressive corporate espionage and even collaboration and ties with multiple cyber-terrorist cells. \
+	Despite this, KDI holds chairman status within the Eridani Trade Federation and is the only corporation strong enough to rival PyroCorp."
 	economic_power = 2.0
 	subversive_potential = 15
 
@@ -59,40 +64,45 @@
 	language = LANGUAGE_SOL_COMMON
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
 
-/decl/cultural_info/faction/free
-	name = FACTION_FREETRADE
-	description = "The Free Trade Union, commonly referred to as the FTU, is is an employee-owned conglomerate of tens of thousands of \
-	various traders and merchants from all over SCG space and beyond. Colloquially known as the 'fifth megacorp', they control a sizeable fleet \
-	of trading ships which are form the backbone of their trading force along with a large contingent of combat capable vessels that cruise the shipping lanes, \
-	keeping FTU members free from pirates. The FTU has a large amount of economic power across Sol space and operates large trade hubs and stations near most \
-	Gateway installations and planets. Somewhat unscrupulous, FTU stations and merchants are known for \
-	selling a great many restricted items and supplying all manner of goods indiscriminately."
-	economic_power = 1.3
+/decl/cultural_info/faction/flotilla
+	name = FACTION_FLOTILLA
+	description = "The Terran Colonial Expeditionary Flotilla, or simply the Flotilla is a pre-SSA nomadic fleet of colony ships, military battleships, merchant ships and carriers. Originally part of the mass human Exodus \
+	during the advent of human space colonization. The Frontier Federation, Solar Systems Alliance and the Pan-Asian Union are built off the path the Flotilla trailblazers discovered in the name of humanity. Today, \
+	the Flotilla is intergalatically recognized as a sovereign state and also has an economic relationship with other states through the means of producing state-of-the-art ships and ship technology, as well as producing \
+	many ace pilots that have served all across the galaxy under many different banners."
 	subversive_potential = 15
 	language = LANGUAGE_SPACER
 
-/decl/cultural_info/faction/pcrc
-	name = FACTION_PCRC
-	description = "Proxima Centauri Risk Control, often known as PCRC, is one of the largest suppliers of private security in Sol Space. \
-	PCRC handles numerous government, private and corporate contracts and provides a variety of services ranging from private law enforcement, \
-	security, close protection, asset protection, search and rescue and peacekeeping and escort duties. A relatively quiet and new company, \
-	it has quickly established itself as a reliable and effective provider of security solutions. This has often put it at odds with its main \
-	competitor, SAARE."
+/decl/cultural_info/faction/isec
+	name = FACTION_ISEC
+	description = "Interstellar Security, often known as ISEC, is one of the largest suppliers of private security in Alliance space. \
+	Well known for their armed and unarmed asset protection, VIP escort and extraction, private security and risk-assessment services. Based in Olympia, Mars \
+	the Interstellar Security accepts applicants from all walks of life regardless of species, with many SSA and Naj'dii veterans finding employment as contractors \
+	within the company. Recently contracted by the Solar Systems Alliance and NanoTrasen for a controversial 'peacekeeping' operation in the now Frontier-controlled colony of \
+	Zise."
 	subversive_potential = 15
-	language = LANGUAGE_SPACER
-	secondary_langs = list(LANGUAGE_GALCOM, LANGUAGE_SOL_COMMON)
+	language = LANGUAGE_GALCOM
+	secondary_langs = list(LANGUAGE_SOL_COMMON)
 
-/decl/cultural_info/faction/dais
-	name = FACTION_DAIS
-	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as computer hardware \
-	and software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in The Sol Central \
-	 Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Sol Central Government and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
-	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by NanoTrasen into their sector with NTNet \
-	and related products, they still remain the market leader in computer technologies."
+/decl/cultural_info/faction/tiger
+	name = FACTION_TIGER
+	description = "Tactical Intervention Group Eridani Regiment, or TIGER is a new Frontier-based private security company that starting to see action and expand it's operations \
+	across the galaxy. Consisting of mostly Federation citizens and veterans, TIGER has been well-received by Frontier-based corporations, and skeptical to some. Although the corporation is well received \
+	with an extensive track record, many of it's deployments and operations are classified, and many clients are obliged to sign a heavy non-disclosure agreement in exchange for their services."
 	economic_power = 1.1
 	subversive_potential = 15
-	language = LANGUAGE_SOL_COMMON
+	language = LANGUAGE_GALCOM
+
+/decl/cultural_info/faction/order
+	name = FACTION_ORDER
+	description = "The Righteous Order of Buddha-Ssraszhit is a current-day religious military order, or contemporary crusaders made shortly after the unification of Ssraszhit and Buddhist cultures. \
+	An intergalactic military order with absolute orders of protecting important Ssraszhit and Buddhist culture sites and ancient-technology sites; along with the duties of guarding, the Order also functions to \
+	protect Patriarch and Buddhist colonists on different worlds and providing humanitarian aid relief to disaster-stricken colonies across the galaxy regardless of race, creed, or upbringing. The Order has frequently been \
+	seen today intercepting frequent pirate lanes and advocating for intergalatic co-operation in the name of the Milky Way. Unathi and Humans make up the majority of the Order's composition, but accepts other races into \
+	it's ranks, albeit very rarely."
+	economic_power = 1.1
+	subversive_potential = 0
+	language = LANGUAGE_GALCOM
 
 /decl/cultural_info/faction/other
 	name = FACTION_OTHER

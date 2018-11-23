@@ -1,17 +1,24 @@
 /obj/item/clothing/under/rank/pathfinder
-	name = "pathfinder's jumpsuit"
+	name = "pathfinder's utility jumpsuit"
+	desc = "A standard issue on-station utilty jumpsuit. Not space proof."
+	icon_state = "pcrc"
+	item_state = "jensensuit"
+	worn_state = "pcrc"
+
+/obj/item/clothing/under/rank/pathfinder/space
+	name = "pathfinder's pressurized jumpsuit"
 	desc = "A tried and true piece of equipment that the Pathfinder Corps uses. A compact spaceproof jumpsuit."
 	icon_state = "pathfinder"
 	item_state = "ba_suit"
 	worn_state = "pathfinder"
 	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 100, rad = 50)
-	gas_transfer_coefficient = 0.01
-	permeability_coefficient = 0.02
+	gas_transfer_coefficient = 0
+	permeability_coefficient = 0
+	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE | ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE
-	siemens_coefficient = 0
+	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/helmet/space/pathfinder
 	name = "pathfinder's helmet"
@@ -20,7 +27,6 @@
 	item_state = "pathfinder"
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE
 	flags_inv = HIDEFACE|BLOCKHAIR
-	permeability_coefficient = 0.01
 	armor = list(melee = 35, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 100, rad = 50)
 
 /obj/item/clothing/head/helmet/space/pathfinder/commander
