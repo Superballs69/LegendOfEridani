@@ -31,8 +31,9 @@ var/global/list/robot_modules = list(
 		LANGUAGE_SKRELLIAN = 0,
 		LANGUAGE_GUTTER = 1,
 		LANGUAGE_SIGN = 0,
-		LANGUAGE_INDEPENDENT = 1,
-		LANGUAGE_SPACER = 1)
+		LANGUAGE_FRONTIER_BASIC = 1,
+		LANGUAGE_SPACER = 1,
+		LANGUAGE_UNION_STANDARD = 1)
 	var/sprites = list()
 	var/can_be_pushed = 1
 	var/no_slip = 0
@@ -502,8 +503,9 @@ var/global/list/robot_modules = list(
 					LANGUAGE_SKRELLIAN	= 1,
 					LANGUAGE_LUNAR	= 1,
 					LANGUAGE_GUTTER		= 1,
-					LANGUAGE_INDEPENDENT= 1,
-					LANGUAGE_SPACER = 1
+					LANGUAGE_FRONTIER_BASIC= 1,
+					LANGUAGE_SPACER = 1,
+					LANGUAGE_UNION_STANDARD = 1
 					)
 
 /obj/item/weapon/robot_module/clerical/butler

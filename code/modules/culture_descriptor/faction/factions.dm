@@ -17,7 +17,7 @@
 	most Federation citizens with the current cold-war are also militiamen if needed. Despite a militant populance, fringe colonies, especially those close to it's capital."
 	economic_power = 0.9
 	subversive_potential = 50
-	language = LANGUAGE_INDEPENDENT
+	language = LANGUAGE_FRONTIER_BASIC
 
 /decl/cultural_info/faction/etf
 	name = FACTION_ERIDANI_FED
@@ -28,6 +28,7 @@
 	and perform trade with all representative states of the galaxy."
 	language = LANGUAGE_GALCOM
 	secondary_langs = list(LANGUAGE_SOL_COMMON)
+	economic_power = 1.1
 
 /decl/cultural_info/faction/remote/nanotrasen
 	name = FACTION_NANOTRASEN
@@ -62,7 +63,7 @@
 	economic_power = 1.2
 	subversive_potential = 15
 	language = LANGUAGE_SOL_COMMON
-	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
+	secondary_langs = list(LANGUAGE_GALCOM)
 
 /decl/cultural_info/faction/flotilla
 	name = FACTION_FLOTILLA
@@ -81,8 +82,8 @@
 	within the company. Recently contracted by the Solar Systems Alliance and NanoTrasen for a controversial 'peacekeeping' operation in the now Frontier-controlled colony of \
 	Zise."
 	subversive_potential = 15
-	language = LANGUAGE_GALCOM
-	secondary_langs = list(LANGUAGE_SOL_COMMON)
+	language = LANGUAGE_SOL_COMMON
+	secondary_langs = list(LANGUAGE_GALCOM)
 
 /decl/cultural_info/faction/tiger
 	name = FACTION_TIGER
@@ -91,18 +92,29 @@
 	with an extensive track record, many of it's deployments and operations are classified, and many clients are obliged to sign a heavy non-disclosure agreement in exchange for their services."
 	economic_power = 1.1
 	subversive_potential = 15
-	language = LANGUAGE_GALCOM
+	language = LANGUAGE_FRONTIER_BASIC
+	secondary_langs = list(LANGUAGE_GALCOM)
 
 /decl/cultural_info/faction/order
 	name = FACTION_ORDER
 	description = "The Righteous Order of Buddha-Ssraszhit is a current-day religious military order, or contemporary crusaders made shortly after the unification of Ssraszhit and Buddhist cultures. \
-	An intergalactic military order with absolute orders of protecting important Ssraszhit and Buddhist culture sites and ancient-technology sites; along with the duties of guarding, the Order also functions to \
-	protect Patriarch and Buddhist colonists on different worlds and providing humanitarian aid relief to disaster-stricken colonies across the galaxy regardless of race, creed, or upbringing. The Order has frequently been \
-	seen today intercepting frequent pirate lanes and advocating for intergalatic co-operation in the name of the Milky Way. Unathi and Humans make up the majority of the Order's composition, but accepts other races into \
+	A galactic military order with absolute orders of protecting important Ssraszhit and Buddhist culture sites and ancient-technology sites; along with the duties of \
+	protecting the Patriarch and Buddhist colonists on different worlds and providing humanitarian aid relief to disaster-stricken colonies across the galaxy regardless of race, creed, or upbringing. The Order has frequently been \
+	seen today intercepting frequent pirate lanes and advocating for co-operation in the name of the Milky Way. Unathi and Humans make up the majority of the Order's composition, but accepts other races into \
 	it's ranks, albeit very rarely."
 	economic_power = 1.1
 	subversive_potential = 0
 	language = LANGUAGE_GALCOM
+
+/decl/cultural_info/faction/pau
+	name = FACTION_PAN_ASIAN_UNION
+	description = "The Pan Asian Union is a mixture of the old Russian Federation and the People's Republic of China after the exodus of Earth's super-powers with the advent of colonialization technology. \
+	A highly homogenized, isolationist, militaristic and xenophobic state with typical mandatory conscription. Few of the citizens from the Pan Asian Union that make contact with the rest of the galaxy \
+	are either their government officials or refugees seeking asylum from any countries. Originally part of the Frontier Federation during the First Alliance-Federation War; the Pan Asian Union declared it's \
+	own independence and separation from the Federation due to conflicting political and economic goals."
+	economic_power = 0.9
+	subversive_potential = 30
+	language = LANGUAGE_UNION_STANDARD
 
 /decl/cultural_info/faction/other
 	name = FACTION_OTHER
