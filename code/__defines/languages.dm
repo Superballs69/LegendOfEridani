@@ -21,6 +21,8 @@
 #define LANGUAGE_XENOPHAGE      "Xenophage"
 #define LANGUAGE_XENOPHAGE_HIVE "Hivemind"
 #define LANGUAGE_YEOSA          "Yeosa'unathi"
+#define LANGUAGE_SIIK_MAAS      "Siik'maas"
+#define LANGUAGE_SIIK_TAJR      "Siik'tajr"
 
 // Language flags.
 #define WHITELISTED  1   // Language is available if the speaker is whitelisted.

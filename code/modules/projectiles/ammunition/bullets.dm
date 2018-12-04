@@ -21,7 +21,7 @@
 
 /obj/item/ammo_casing/a357
 	desc = "A .357 bullet casing."
-	caliber = "357"
+	caliber = ".357"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver
 
 /obj/item/ammo_casing/a50
@@ -36,7 +36,7 @@
 
 /obj/item/ammo_casing/a38
 	desc = "A .38 bullet casing."
-	caliber = "38"
+	caliber = ".38"
 	projectile_type = /obj/item/projectile/bullet/pistol
 
 /obj/item/ammo_casing/a38/rubber

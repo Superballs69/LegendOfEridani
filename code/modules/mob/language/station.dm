@@ -43,6 +43,30 @@
 	)
 	shorthand = "UT"
 
+/datum/language/tajaran
+	name = LANGUAGE_SIIK_MAAS
+	desc = "The traditionally employed tongue of Ahdomai, composed of expressive yowls and chirps. Native to the Tajaran."
+	speech_verb = "mrowls"
+	ask_verb = "mrowls"
+	exclaim_verb = "yowls"
+	colour = "tajaran"
+	key = "j"
+	flags = WHITELISTED
+	syllables = list("mrr","rr","tajr","kir","raj","kii","mir","kra","ahk","nal","vah","khaz","jri","ran","darr",
+	"mi","jri","dynh","manq","rhe","zar","rrhaz","kal","chur","eech","thaa","dra","jurl","mah","sanu","dra","ii'r",
+	"ka","aasi","far","wa","baq","ara","qara","zir","sam","mak","hrar","nja","rir","khan","jun","dar","rik","kah",
+	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
+	shorthand = "TJ"
+
+/datum/language/tajaran/get_random_name(var/gender)
+
+	var/new_name = ..(gender,1)
+	if(prob(50))
+		new_name += " [pick(list("Hadii","Kaytam","Nazkiin","Zhan-Khazan","Hharar","Njarir'Akhan","Faaira'Nrezi","Rhezar","Mi'dynh","Rrhazkal","Bayan","Al'Manq","Mi'jri","Chur'eech","Sanu'dra","Ii'rka"))]"
+	else
+		new_name += " [..(gender,1)]"
+	return new_name
+
 /datum/language/skrell
 	name = LANGUAGE_SKRELLIAN
 	desc = "A melodic and complex language spoken by the Skrell of Qerrbalak. Some of the notes are inaudible to humans."
@@ -178,50 +202,31 @@
 	shorthand = "UN"
 	syllables = list(
 		"a", "ai", "an", "ang", "ao", "ba", "bai", "ban", "bang", "bao", "bei", "ben", "beng", "bi", "bian", "biao",
-"bie", "bin", "bing",
-		"bo", "bu", "ca", "cai", "can", "cang", "cao", "ce", "cei", "cen", "ceng", "cha", "chai",
-"chan", "chang", "chao", "che", "chen",
-		"cheng", "chi", "chong", "chou", "chu", "chua", "chuai", "chuan", "chuang", "chui", "chun",
-"chuo", "ci", "cong", "cou", "cu", "cuan",
-		"cui", "cun", "cuo", "da", "dai", "dan", "dang", "dao", "de", "dei",
-"den", "deng", "di", "dian", "diao", "die", "ding", "diu", "dong",
-		"dou", "du", "duan", "dui", "dun", "duo", "e",
-"ei", "en", "er", "fa", "fan", "fang", "fei", "fen", "feng", "fo", "fou", "fu", "ga", "gai",
-		"gan", "gang",
-"gao", "ge", "gei", "gen", "geng", "gong", "gou", "gu", "gua", "guai", "guan", "guang", "gui", "gun", "guo", "ha",
-"hai", "han",
-		"hang", "hao", "he", "hei", "hen", "heng", "hm", "hng", "hong", "hou", "hu", "hua", "huai", "huan",
-"huang", "hui", "hun", "huo", "ji", "jia",
-		"jian", "jiang", "jiao", "jie", "jin", "jing", "jiong", "jiu", "ju", "juan",
-"jue", "jun", "ka", "kai", "kan", "kang", "kao", "ke", "kei",
-		"ken", "keng", "kong", "kou", "ku", "kua", "kuai", 	"kuan", "kuang", "kui", "kun", "kuo", "la", "lai", "lan", "lang", "lao", "le", "lei",
-		"leng", "li", "lia", "lian",
-"liang", "liao", "lie", "lin", "ling", "liu", "long", "lou", "lu", "luan", "lun", "luo", "ma", "mai", "man",
-		"mang",
-"mao", "me", "mei", "men", "meng", "mi", "mian", "miao", "mie", "min", "ming", "miu", "mo", "mou", "mu", "na",
-"nai", "nan", "nang",
-		"nao", "ne", "nei", "nen", "neng", "ng", "ni", "nian", "niang", "niao", "nie", "nin", "ning",
-"niu", "nong", "nou", "nu", "nuan", "nuo",
-		"o", "ou", "pa", "pai", "pan", "pang", "pao", "pei", "pen", "peng",
-"pi", "pian", "piao", "pie", "pin", "ping", "po", "pou", "pu", "qi",
-		"qia", "qian", "qiang", "qiao", "qie", "qin",
-"qing", "qiong", "qiu", "qu", "quan", "que", "qun", "ran", "rang", "rao", "re", "ren", "reng",
-		"ri", "rong", "rou",
-"ru", "rua", "ruan", "rui", "run", "ruo", "sa", "sai", "san", "sang", "sao", "se", "sei", "sen", "seng", "sha",
-"shai",
-		"shan", "shang", "shao", "she", "shei", "shen", "sheng", "shi", "shou", "shu", "shua", "shuai", "shuan", "shuang", "shui",
-"shun", "shuo", "si",
-		"song", "sou", "su", "suan", "sui", "sun", "suo", "ta", "tai", "tan", "tang", "tao", "te",
-"teng", "ti", "tian", "tiao", "tie", "ting", "tong",
-		"tou", "tu", "tuan", "tui", "tun", "tuo", "wa", "wai", "wan",
-"wang", "wei", "wen", "weng", "wo", "wu", "xi", "xia", "xian", "xiang", "xiao", "xie",
-		"xin", "xing", "xiong", "xiu",
-"xu", "xuan", "xue", "xun", "ya", "yan", "yang", "yao", "ye", "yi", "yin", "ying", "yong", "you", "yu", "yuan",
-"yue",
+		"bie", "bin", "bing", "bo", "bu", "ca", "cai", "can", "cang", "cao", "ce", "cei", "cen", "ceng", "cha", "chai",
+		"chan", "chang", "chao", "che", "chen", "cheng", "chi", "chong", "chou", "chu", "chua", "chuai", "chuan", "chuang", "chui", "chun",
+		"chuo", "ci", "cong", "cou", "cu", "cuan", "cui", "cun", "cuo", "da", "dai", "dan", "dang", "dao", "de", "dei",
+		"den", "deng", "di", "dian", "diao", "die", "ding", "diu", "dong", "dou", "du", "duan", "dui", "dun", "duo", "e",
+		"ei", "en", "er", "fa", "fan", "fang", "fei", "fen", "feng", "fo", "fou", "fu", "ga", "gai","gan", "gang",
+		"gao", "ge", "gei", "gen", "geng", "gong", "gou", "gu", "gua", "guai", "guan", "guang", "gui", "gun", "guo", "ha",
+		"hai", "han", "hang", "hao", "he", "hei", "hen", "heng", "hm", "hng", "hong", "hou", "hu", "hua", "huai", "huan",
+		"huang", "hui", "hun", "huo", "ji", "jia", "jian", "jiang", "jiao", "jie", "jin", "jing", "jiong", "jiu", "ju", "juan",
+		"jue", "jun", "ka", "kai", "kan", "kang", "kao", "ke", "kei", "ken", "keng", "kong", "kou", "ku", "kua", "kuai",
+		"kuan", "kuang", "kui", "kun", "kuo", "la", "lai", "lan", "lang", "lao", "le", "lei", "leng", "li", "lia", "lian",
+		"liang", "liao", "lie", "lin", "ling", "liu", "long", "lou", "lu", "luan", "lun", "luo", "ma", "mai", "man",
+		"mang", "mao", "me", "mei", "men", "meng", "mi", "mian", "miao", "mie", "min", "ming", "miu", "mo", "mou", "mu", "na",
+		"nai", "nan", "nang", "nao", "ne", "nei", "nen", "neng", "ng", "ni", "nian", "niang", "niao", "nie", "nin", "ning",
+		"niu", "nong", "nou", "nu", "nuan", "nuo", "o", "ou", "pa", "pai", "pan", "pang", "pao", "pei", "pen", "peng",
+		"pi", "pian", "piao", "pie", "pin", "ping", "po", "pou", "pu", "qi", "qia", "qian", "qiang", "qiao", "qie", "qin",
+		"qing", "qiong", "qiu", "qu", "quan", "que", "qun", "ran", "rang", "rao", "re", "ren", "reng",
+		"ri", "rong", "rou", "ru", "rua", "ruan", "rui", "run", "ruo", "sa", "sai", "san", "sang", "sao", "se", "sei", "sen", "seng", "sha",
+		"shai", "shan", "shang", "shao", "she", "shei", "shen", "sheng", "shi", "shou", "shu", "shua", "shuai", "shuan", "shuang", "shui",
+		"shun", "shuo", "si", "song", "sou", "su", "suan", "sui", "sun", "suo", "ta", "tai", "tan", "tang", "tao", "te",
+		"teng", "ti", "tian", "tiao", "tie", "ting", "tong", "tou", "tu", "tuan", "tui", "tun", "tuo", "wa", "wai", "wan",
+		"wang", "wei", "wen", "weng", "wo", "wu", "xi", "xia", "xian", "xiang", "xiao", "xie", "xin", "xing", "xiong", "xiu",
+		"xu", "xuan", "xue", "xun", "ya", "yan", "yang", "yao", "ye", "yi", "yin", "ying", "yong", "you", "yu", "yuan", "yue",
 		"yun", "za", "zai", "zan", "zang", "zao", "ze", "zei", "zen", "zeng", "zha", "zhai", "zhan", "zhang", "zhao",
-"zhe", "zhei", "zhen", "zheng", "zhi",
-		"zhong", "zhou", "zhu", "zhua", "zhuai", "zhuan", "zhuang", "zhui", "zhun", "zhuo", "zi",
-"zong", "zou", "zuan", "zui", "zun", "zuo", "zu",
+		"zhe", "zhei", "zhen", "zheng", "zhi", "zhong", "zhou", "zhu", "zhua", "zhuai", "zhuan", "zhuang", "zhui", "zhun", "zhuo", "zi",
+		"zong", "zou", "zuan", "zui", "zun", "zuo", "zu",
 		"al", "an", "by", "ve", "vo", "go", "de", "el", "en", "er", "et", "ka", "ko", "la", "li", "lo", "l'", "na", "ne", "ni", "no", "ov", "ol", "on",
 		"or", "os", "ot", "po", "pr", "ra", "re", "ro", "st", "ta", "te", "to", "t'", "at'", "byl", "ver", "egr", "eni", "est", "kak", "l'n", "oba", "ogo",
 		"ol'", "oro", "ost", "oto", "pri", "pro", "sta", "stv", "tor", "chto", "ehto",
@@ -241,6 +246,15 @@
 		"or", "os", "ot", "po", "pr", "ra", "re", "ro", "st", "ta", "te", "to", "t'", "at'", "byl", "ver", "egr", "eni", "est", "kak", "l'n", "oba", "ogo",
 		"ol'", "oro", "ost", "oto", "pri", "pro", "sta", "stv", "tor", "chto", "ehto"
 		)
+
+/datum/language/tajsign
+	name = LANGUAGE_SIIK_TAJR
+	desc = "A type of sign language mostly based on tail movements that was used during the Tajaran rebellion."
+	signlang_verb = list("uses their tail to convey", "gestures with their tail", "gestures with their tail elaborately")
+	colour = "tajaran"
+	key = "l"
+	flags = WHITELISTED | SIGNLANG | NO_STUTTER | NONVERBAL
+	shorthand = "TS"
 
 /datum/language/nabber
 	name = LANGUAGE_NABBER

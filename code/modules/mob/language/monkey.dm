@@ -19,7 +19,7 @@
 	key = "8"
 	shorthand = "SM"
 
-/datum/language/xenos/monkey
+/datum/language/tajaran/monkey
 	name = "Farwa"
 	desc = "Meow meow meow."
 	key = "9"

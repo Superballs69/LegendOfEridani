@@ -11,6 +11,7 @@
 	species_to_job_blacklist = list(
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden), //Other jobs unavailable via branch restrictions,
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
+		/datum/species/tajaran = list(HUMAN_ONLY_JOBS, /datum/job/warden),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison, /datum/job/warden),	//Other jobs unavailable via branch restrictions,
 	)
