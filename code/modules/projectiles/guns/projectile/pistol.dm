@@ -437,3 +437,71 @@
 		icon_state = "[initial(icon_state)]"
 	else
 		icon_state = "[initial(icon_state)]-e"
+
+/obj/item/weapon/gun/projectile/fiveseven/lacroix
+	name = "KDI FN-57 \"Commander\""
+	desc = "A custom made Five Seven with an integrated suppressor, laser aiming module and reflex sight. The trigger weight has been balanced along with the slide weight, allowing for the fastest and safest \
+	firing."
+	icon_state = "lacroix"
+	accuracy = 4
+	fire_delay = 0
+	silenced = 1
+
+/obj/item/weapon/gun/projectile/fiveseven/rayler
+	name = "KDI FN-57 \"Twenty-Four-Seven\""
+	desc = "A custom made Five Seven with an experimental underbarrel taser and a reflex sight. The trigger weight has been balanced along with the slide weight, allowing for the fastest and safest firing."
+	icon_state = "rayler"
+	accuracy = 4
+	fire_delay = 0
+	var/stunforce = 0
+	var/agonyforce = 30
+
+/obj/item/weapon/gun/projectile/fiveseven/rayler/throw_impact(atom/hit_atom, var/speed)
+	if(istype(hit_atom,/mob/living))
+		apply_hit_effect(hit_atom, hit_zone = pick(BP_HEAD, BP_CHEST, BP_CHEST, BP_L_LEG, BP_R_LEG, BP_L_ARM, BP_R_ARM))
+	else
+		..()
+
+/obj/item/weapon/gun/projectile/fiveseven/rayler/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
+	if(isrobot(target))
+		return ..()
+
+	var/agony = agonyforce
+	var/stun = stunforce
+	var/obj/item/organ/external/affecting = null
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		affecting = H.get_organ(hit_zone)
+	var/abuser =  user ? "" : "by [user]"
+	if(user && user.a_intent == I_HURT)
+		. = ..()
+		if (!.)	//item/attack() does it's own messaging and logs
+			return 0	// item/attack() will return 1 if they hit, 0 if they missed.
+
+		//whacking someone causes a much poorer electrical contact than deliberately prodding them.
+		stun *= 0.5
+		if(!safety_state)		//Checks to see if the stunbaton is on.
+			agony *= 0.5	//whacking someone causes a much poorer contact than prodding them.
+		else
+			agony = 0	//Shouldn't really stun if it's off, should it?
+		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
+	else if(safety_state)
+		if(affecting)
+			target.visible_message("<span class='warning'>[target] has been prodded in the [affecting.name] with [src][abuser]. Luckily it was off.</span>")
+		else
+			target.visible_message("<span class='warning'>[target] has been prodded with [src][abuser]. Luckily it was off.</span>")
+	else
+		if(affecting)
+			target.visible_message("<span class='danger'>[target] has been prodded in the [affecting.name] with [src]!</span>")
+		else
+			target.visible_message("<span class='danger'>[target] has been prodded with [src][abuser]!</span>")
+		playsound(loc, 'sound/weapons/Egloves.ogg', 50, 1, -1)
+
+	//stun effects
+	if(!safety_state)
+		target.stun_effect_act(stun, agony, hit_zone, src)
+		msg_admin_attack("[key_name(user)] stunned [key_name(target)] with the [src].")
+
+		if(ishuman(target))
+			var/mob/living/carbon/human/H = target
+			H.forcesay(GLOB.hit_appends)

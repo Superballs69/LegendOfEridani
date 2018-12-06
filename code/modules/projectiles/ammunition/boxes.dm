@@ -2,7 +2,7 @@
 	name = "speed loader (.357)"
 	desc = "A speed loader for revolvers."
 	icon_state = "38"
-	caliber = "357"
+	caliber = ".357"
 	ammo_type = /obj/item/ammo_casing/a357
 	matter = list(MATERIAL_STEEL = 1260)
 	max_ammo = 6
@@ -22,7 +22,7 @@
 	name = "speed loader (.38)"
 	desc = "A speed loader for revolvers."
 	icon_state = "38"
-	caliber = "38"
+	caliber = ".38"
 	matter = list(MATERIAL_STEEL = 360)
 	ammo_type = /obj/item/ammo_casing/a38
 	max_ammo = 6

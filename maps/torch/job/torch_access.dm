@@ -135,6 +135,13 @@
 	desc = "Commissary"
 	region = ACCESS_REGION_GENERAL
 
+/var/const/access_ice = 97
+/datum/access/ice
+	id = access_ice
+	desc = "ICE Agent"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
+
 /************
 * SEV Torch *
 ************/

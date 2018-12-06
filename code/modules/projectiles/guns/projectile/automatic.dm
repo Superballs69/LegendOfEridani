@@ -112,6 +112,35 @@
 	wielded_item_state = (ammo_magazine)? "arifle-wielded" : "arifle-wielded-empty"
 	..()
 
+/obj/item/weapon/gun/projectile/automatic/g36c
+	name ="KDI G36CX"
+	desc = "A recreation of the classic German assault rifle, made my KDI. Uses 5.56mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "g36c"
+	force = 10
+	caliber = "a556"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m556
+	allowed_magazines = /obj/item/ammo_magazine/m556
+	one_hand_penalty = 3
+	wielded_item_state = "arifle-wielded"
+	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
+	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
+	fire_sound = 'sound/weapons/gunshot/sts35.ogg'
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=6,    one_hand_penalty=6, burst_accuracy=list(0,-1,-2,-3,-3), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/g36c/on_update_icon()
+	icon_state = (ammo_magazine)? "g36c" : "g36c-e"
+	wielded_item_state = (ammo_magazine)? "arifle-wielded" : "arifle-wielded-empty"
+	..()
+
 /obj/item/weapon/gun/projectile/automatic/wt550
 	name = "WT-550"
 	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use. Uses 9mm rounds."

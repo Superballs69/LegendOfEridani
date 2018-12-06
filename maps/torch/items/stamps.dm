@@ -26,6 +26,10 @@
 	name = "\improper corporate rubber stamp"
 	icon_state = "stamp-intaff"
 
+/obj/item/weapon/stamp/ice
+	name = "\improper Internal Command Enforcement rubber stamp"
+	icon_state = "stamp-intaff"
+
 /obj/item/weapon/stamp/deckoff
 	name = "deck chief's rubber stamp"
 	icon_state = "stamp-qm"

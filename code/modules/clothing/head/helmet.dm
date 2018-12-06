@@ -70,6 +70,25 @@
 	icon_state = "helmet_swat"
 	armor = list(melee = 60, bullet = 50, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/head/helmet/swat/ice
+	name = "I.C.E. tactical helmet"
+	desc = "It's a helmet specifically designed to protect against close range attacks."
+	icon_state = "helmet_ice"
+	valid_accessory_slots = null
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	armor = list(melee = 60, bullet = 50, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
+	action_button_name = "Toggle Visor"
+
+/obj/item/clothing/head/helmet/swat/ice/attack_self(mob/user as mob)
+	if(src.icon_state == initial(icon_state))
+		src.icon_state = "[icon_state]_up"
+		to_chat(user, "You raise the visor on the [src].")
+	else
+		src.icon_state = initial(icon_state)
+		to_chat(user, "You lower the visor on the [src].")
+	update_clothing_icon()
+
 /obj/item/clothing/head/helmet/combat
 	name = "combat helmet"
 	desc = "A ballistic helmet that provides excellent head protection. Seen in service with infantry."

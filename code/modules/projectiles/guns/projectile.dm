@@ -258,7 +258,6 @@
 		bullets += 1
 	return bullets
 
-/* Unneeded -- so far.
 //in case the weapon has firemodes and can't unload using attack_hand()
 /obj/item/weapon/gun/projectile/verb/unload_gun()
 	set name = "Unload Ammo"
@@ -268,4 +267,3 @@
 	if(usr.stat || usr.restrained()) return
 
 	unload_ammo(usr)
-*/

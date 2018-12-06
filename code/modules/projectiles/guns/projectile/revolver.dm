@@ -1,9 +1,9 @@
 /obj/item/weapon/gun/projectile/revolver
 	name = "revolver"
-	desc = "A powerful revolver. Uses .357 and .38 rounds."
+	desc = "A powerful revolver. Uses .357 rounds."
 	icon_state = "revolver"
 	item_state = "revolver"
-	caliber = 357
+	caliber = ".357"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
@@ -12,6 +12,11 @@
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'
+	fire_sound = 'sound/weapons/gunshot/revolver.ogg'
+	has_safety = FALSE
+
+/obj/item/weapon/gun/projectile/revolver/toggle_safety(var/mob/user)
+	to_chat(user, "<span class='warning'>There's no safety on \the [src]!</span>")
 
 /obj/item/weapon/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
@@ -62,17 +67,18 @@
 /obj/item/weapon/gun/projectile/revolver/mateba
 	name = "Mateba Autorevolver"
 	desc = "This unique looking handgun is named after an Italian company famous for the manufacture of these revolvers, and pasta kneading machines. Uses .357 and .38 rounds."
-	caliber = 357
+	caliber = ".357"
 	icon_state = "mateba"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a357
+	fire_sound = 'sound/weapons/gunshot/mateba.ogg'
 
 /obj/item/weapon/gun/projectile/revolver/inspector
 	name = "KDI \"Inspector\" .357"
 	desc = "Another high-quality firearm developed by Kusanagi Defense Industries. Features a sturdy frame, electronic chamber indicators and polygonal rifling for dead-on accuracy. Uses .357 and .38 rounds."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "inspector"
-	caliber = 357
+	caliber = ".357"
 	fire_delay = 5
 	accuracy = 2
 	fire_sound = 'sound/weapons/gunshot/revolver.ogg'
@@ -87,12 +93,22 @@
 	overlays.Cut()
 	update_charge()
 
+/obj/item/weapon/gun/projectile/revolver/inspector/linus
+	name = "Right Hand of the West"
+	desc = "A flawless firearm custom made by KDI gunsmiths, featuring a balanced trigger, high-quality material construction and a laser. You can hear outlaws running to the hills just holding this."
+	icon_state = "linus"
+	accuracy = 4
+	firemodes = list(
+		list(mode_name="single shot",       burst=1, fire_delay=4.5,    move_delay=null, burst_accuracy=null, dispersion=null),
+		list(mode_name="fan the hammer", burst=6, fire_delay=null, move_delay=4,    burst_accuracy=list(2,2,2),       dispersion=list(1.0, 1.5, 3.0)),
+		)
+
 /obj/item/weapon/gun/projectile/revolver/detective
 	name = "S&W Model 10"
 	desc = "A cheap Olympia Foundry knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds."
 	icon_state = "detective"
 	max_shells = 6
-	caliber = "38"
+	caliber = ".38"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a38
 
@@ -119,7 +135,8 @@
 	name = "Deckard .44"
 	desc = "A custom-built revolver, based off the semi-popular Detective Special model."
 	icon_state = "deckard-empty"
-	ammo_type = /obj/item/ammo_magazine/s38/rubber
+	caliber = ".44"
+	ammo_type = /obj/item/ammo_casing/a44/rubber
 
 /obj/item/weapon/gun/projectile/revolver/deckard/emp
 	ammo_type = /obj/item/ammo_casing/a38/emp

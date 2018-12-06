@@ -14,6 +14,12 @@
 	if(. && description_antag)
 		to_chat(user, description_antag)
 
+/obj/item/documents/ice
+	name = "secret federal government documents"
+	desc = "\"Top Secret\" documents detailing recent sector reports, security readiness and high-value wanted suspect reports."
+	description_antag = "Looks like the FCA has been looking for a deeply-nested Frontier Federation mole, along with contingency plans if the ETF were ever to declare independence."
+	icon_state = "docs_verified"
+
 /obj/item/documents/nanotrasen
 	name = "secret corporate documents"
 	desc = "\"Top Secret\" corporate documents, filled with complex diagrams, research procedures, and details on cloning or breeding rights to non-sapient species the Torch encounters. It seems like they will be auctioning them off to the highest private bidder."

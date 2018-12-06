@@ -122,3 +122,37 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
 	)
+
+/obj/structure/closet/secure_closet/ice
+	name = "ice agent's locker"
+	req_access = list(access_bridge)
+	icon_state = "sol1"
+	icon_closed = "sol"
+	icon_locked = "sol1"
+	icon_opened = "solopen"
+	icon_off = "soloff"
+
+/obj/structure/closet/secure_closet/ice/WillContain()
+	return list(
+		/obj/item/clothing/suit/armor/pcarrier/ice,
+		/obj/item/clothing/head/helmet/security,
+		/obj/item/device/radio/headset/headset_sec,
+		/obj/item/device/radio/headset/headset_sec/alt,
+		/obj/item/weapon/storage/belt/holster/security,
+		/obj/item/device/flash,
+		/obj/item/weapon/reagent_containers/spray/pepper,
+		/obj/item/weapon/melee/baton/loaded,
+		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
+		/obj/item/weapon/gun/energy/taser,
+		/obj/item/weapon/gun/projectile/automatic/p90,
+		/obj/item/taperoll/police,
+		/obj/item/device/hailer,
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/device/megaphone,
+		/obj/item/clothing/gloves/thick,
+		/obj/item/device/holowarrant,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/clothing/under/ice,
+		/obj/item/clothing/under/ice/formal,
+		/obj/item/clothing/under/ice/light
+		)
