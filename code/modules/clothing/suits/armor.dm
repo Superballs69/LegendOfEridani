@@ -339,11 +339,6 @@
 	icon_state = "pcarrier_swat"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/swat, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/)
 
-/obj/item/clothing/suit/armor/pcarrier/police
-	name = "police plate carrier"
-	desc = "A standard issue plate carrier for all ETF federal law enforcement agents."
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large)
-
 /obj/item/clothing/suit/armor/pcarrier/pathfinder
 	name = "pathfinder plate carrier"
 	icon_state = "pcarrier_pathfinder"
@@ -355,16 +350,21 @@
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/pathfinder, /obj/item/clothing/accessory/legguards/pathfinder)
 
 /obj/item/clothing/suit/armor/pcarrier/ice
-	name = "federal agent plate carrier"
+	name = "police plate carrier"
 	desc = "A standard issue plate carrier for all federal law enforcement agents."
 	icon_state = "pcarrier_sec"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large)
 
 /obj/item/clothing/suit/armor/pcarrier/ice/heavy
-	name = "tactical federal agent plate carrier"
+	name = "swat plate carrier"
 	desc = "A heavy-duty issue plate carrier for high-threat situations."
 	icon_state = "pcarrier_heavy"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/swat, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/legguards, /obj/item/clothing/accessory/armguards)
+
+/obj/item/clothing/suit/armor/pcarrier/command
+	name = "command plate carrier"
+	desc = "A plate carrier issued to all high value staff aboard the Arcturus-Eclipse Project."
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security ,/obj/item/clothing/accessory/storage/pouches)
 
 //Storage plate carriers
 /obj/item/clothing/suit/storage/pcarrier

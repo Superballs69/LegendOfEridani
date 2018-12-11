@@ -1,7 +1,7 @@
 /*******************
 Random item spawning
 *******************/
-
+/*
 /obj/random/solgov
 	name = "random solgov equipment"
 	desc = "This is a random piece of solgov equipment or clothing."
@@ -40,7 +40,7 @@ Random item spawning
 /obj/random/maintenance/solgov/clean/spawn_choices()
 	return list(/obj/random/solgov = 3,
 				/obj/random/maintenance/clean = 800)
-
+*/
 /*******************
 Torch specific items
 *******************/

@@ -1,7 +1,8 @@
-
+/*
 /datum/gear/uniform/utility
 	display_name = "Contractor Utility Uniform"
 	path = /obj/item/clothing/under/solgov/utility
+*/
 
 /datum/gear/uniform/jumpsuit
 

@@ -43,6 +43,8 @@
 	return speech_verb
 
 // Galactic common languages (systemwide accepted standards).
+
+/*
 /datum/language/lunar
 	name = LANGUAGE_LUNAR
 	desc = "An older language primarily spoken on Earth's only natural satellite, this language is commonly heard from the mouths of aristocracy."
@@ -69,6 +71,7 @@
 	key = "3"
 	syllables = list ("gra","ba","ba","breh","bra","rah","dur","ra","ro","gro","go","ber","bar","geh","heh", "gra")
 	shorthand = "GT"
+*/
 
 /datum/language/sign
 	name = LANGUAGE_SIGN

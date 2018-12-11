@@ -93,3 +93,36 @@
 /obj/item/weapon/grenade/frag/high_yield/on_explosion(var/turf/O)
 	if(explosion_size)
 		explosion(O, -1, round(explosion_size/2), explosion_size, round(explosion_size/2), 0) //has a chance to blow a hole in the floor
+
+/obj/item/weapon/grenade/frag/impact
+	name = "impact grenade"
+	desc = "A military fragmentation grenade, designed to explode in a deadly shower of fragments upon impact, while avoiding massive structural damage."
+	icon_state = "impact"
+	det_time = null
+
+/obj/item/weapon/grenade/frag/impact/attack_self(mob/user as mob)
+	if(!active)
+		if(clown_check(user))
+			to_chat(user, "<span class='warning'>You prime \the [name]! Throw when ready!</span>")
+			activate(user)
+			add_fingerprint(user)
+			if(iscarbon(user))
+				var/mob/living/carbon/C = user
+				C.throw_mode_on()
+
+/obj/item/weapon/grenade/frag/impact/activate(mob/user)
+	if(active)
+		return
+
+	if(user)
+		msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
+
+	icon_state = initial(icon_state) + "_active"
+	active = 1
+	playsound(loc, arm_sound, 75, 0, -3)
+
+/obj/item/weapon/grenade/frag/impact/throw_impact(atom/hit_atom)
+	if(active)
+		detonate()
+	else
+		return

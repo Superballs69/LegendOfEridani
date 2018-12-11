@@ -1,3 +1,4 @@
+/*
 /datum/gear/accessory/tags
 	display_name = "dog tags"
 	path = /obj/item/clothing/accessory/badge/solgov/tags
@@ -22,6 +23,7 @@
 	display_name = "fleet patch"
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
+*/
 
 /datum/gear/accessory/armband_security
 	allowed_roles = SECURITY_ROLES

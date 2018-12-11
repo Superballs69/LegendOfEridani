@@ -5,11 +5,12 @@
 	into megacities that house a wide variety of Terrans and is home to the government of the Solar Systems Alliance. Earth-born humans or 'Terrans' experience the most \
 	luxurious life a human can experience, with the many cities of Earth flaunting their wealth and prosperity to all who visit. The old United Nations Headquarters in New York City, \
 	is home to the heart of the Alliance government, with many representatives coming from all across Alliance space."
+	language = LANGUAGE_SOL_COMMON
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
 	distance = "1AU"
 	capital = "New York City"
 	economic_power = 1.5
-	ruling_body = "Solar Systems Alliance"
+	ruling_body = FACTION_SOL_ALLIANCE
 
 /decl/cultural_info/location/human/mars
 	name = HOME_SYSTEM_MARS
@@ -23,7 +24,7 @@
 	economic_power = 1.3
 	language = LANGUAGE_SOL_COMMON
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
-	ruling_body = "Solar Systems Alliance"
+	ruling_body = FACTION_SOL_ALLIANCE
 
 /decl/cultural_info/location/human/luna
 	name = HOME_SYSTEM_LUNA
@@ -40,7 +41,6 @@
 
 /decl/cultural_info/location/human/yamato_prime
 	name = HOME_SYSTEM_YAMATO_PRIME
-	distance = "13 light years"
 	description = "Yamato Prime, also colloquially known to other people in the Alliance as New Japan, is the result of colonization by the Japanese people of Earth. A high \
 	tech planet with one of the largest population centers. A lush, mountainous planet reminiscent of old Japan. The large cities that strangely compliment the fertile landscape \
 	are gliterring with many neon lights and very clean urban centers. A majority of East-Asian descendent humans reside here, along with many other Alliance citizens. Home to \
@@ -54,7 +54,6 @@
 
 /decl/cultural_info/location/human/cetiepsilon
 	name = HOME_SYSTEM_TAU_CETI
-	distance = "11.9 light years"
 	description = "Ceti Epsilon, is one of the habitable planets in the Tau Ceti system. Ceti Epsilon, specifically is one of the major trading hubs in Alliance space. \
 	Many independent and corporate trading vessels pass through Ceti Epsilon ferrying their goods across the galaxy. Ceti Epsilon is also the birthplace of the renowned \
 	exploration and adventuring group known as the Pathfinder Corps and many of it's main administrative facilities are based here."

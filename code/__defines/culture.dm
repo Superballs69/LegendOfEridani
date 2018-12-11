@@ -166,6 +166,19 @@
 #define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
 #define FACTION_XENOPHAGE      "Xenophage Hive"
 
+// Tajara cultures.
+#define CULTURE_TAJARA_NAJD    "Naj'dii"
+#define CULTURE_TAJARA_ZHADJA  "Zhad'jan"
+
+#define HOME_SYSTEM_NAJD       "Naj'd"
+#define HOME_SYSTEM_ZHADJA     "Zhad'ja"
+
+#define FACTION_TAJARA_NAJD    "Principality of Naj'd"
+#define FACTION_TAJARA_WSZ     "Worker's State of Zhad'ja"
+
+#define RELIGION_SHAMSA        "Sham'sa"
+#define RELIGION_ALQAM         "Al'Qam"
+
 // Other culture values.
 #define EDUCATION_TIER_NONE      0
 #define EDUCATION_TIER_DROPOUT   1

@@ -1,3 +1,4 @@
+/*
 /datum/gear/head/solberet
 	display_name = "SolGov beret selection"
 	description = "A beret denoting service in an organization within SolGov."
@@ -33,6 +34,7 @@
 	display_name = "EC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
+*/
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
@@ -66,6 +68,7 @@
 /datum/gear/tactical/balaclava
 	allowed_roles = ARMORED_ROLES
 
+/*
 /datum/gear/head/fleetberet
 	display_name = "Fleet branch beret selection"
 	description = "A beret denoting service in one of the fleets within the SCG Fleet."
@@ -81,3 +84,4 @@
 	berets["fourth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
 	berets["fifth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
 	gear_tweaks += new/datum/gear_tweak/path(berets)
+*/

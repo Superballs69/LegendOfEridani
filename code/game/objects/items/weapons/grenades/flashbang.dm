@@ -176,3 +176,36 @@
 		spawn(dettime)
 		detonate()
 	..()
+
+/obj/item/weapon/grenade/flashbang/impact
+	name = "impact flashbang"
+	desc = "A grenade designed to blind, stun and disorient by means of an extremely bright flash and loud explosion. Detonates on impact and must be primed."
+	icon_state = "flashbang-impact"
+	det_time = null
+
+/obj/item/weapon/grenade/flashbang/impact/attack_self(mob/user as mob)
+	if(!active)
+		if(clown_check(user))
+			to_chat(user, "<span class='warning'>You prime \the [name]! Throw when ready!</span>")
+			activate(user)
+			add_fingerprint(user)
+			if(iscarbon(user))
+				var/mob/living/carbon/C = user
+				C.throw_mode_on()
+
+/obj/item/weapon/grenade/flashbang/impact/activate(mob/user)
+	if(active)
+		return
+
+	if(user)
+		msg_admin_attack("[user.name] ([user.ckey]) primed \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
+
+	icon_state = initial(icon_state) + "_active"
+	active = 1
+	playsound(loc, arm_sound, 75, 0, -3)
+
+/obj/item/weapon/grenade/flashbang/impact/throw_impact(atom/hit_atom)
+	if(active)
+		detonate()
+	else
+		return

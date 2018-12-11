@@ -127,7 +127,7 @@
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
-	fire_sound = 'sound/weapons/gunshot/sts35.ogg'
+	fire_sound = 'sound/weapons/gunshot/g36c.ogg'
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(

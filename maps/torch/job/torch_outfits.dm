@@ -473,8 +473,8 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 //ERT and Special
 /decl/hierarchy/outfit/job/torch/ert
 	name = OUTFIT_JOB_NAME("ERT - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat
-	head = /obj/item/clothing/head/beret/solgov/fleet
+	uniform = /obj/item/clothing/under/ice
+	head = /obj/item/clothing/head/beret/centcom/officer
 	gloves = /obj/item/clothing/gloves/thick
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	pda_type = /obj/item/modular_computer/pda/ert
@@ -483,5 +483,5 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/torch/ert/leader
 	name = OUTFIT_JOB_NAME("ERT Leader - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/command
-	head = /obj/item/clothing/head/beret/solgov/fleet/command
+	uniform = /obj/item/clothing/under/ice
+	head = /obj/item/clothing/head/beret/centcom/captain

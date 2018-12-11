@@ -124,8 +124,6 @@
 		/obj/item/clothing/gloves/forensic,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
-		/obj/item/clothing/head/helmet/solgov/security,
-		//obj/item/clothing/suit/armor/pcarrier/medium/security,
 		/obj/item/weapon/gun/energy/gun/small/secure,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,

@@ -3,11 +3,19 @@
 	desc = "An Olympia Foundry produced 1911. A legendary classic. Uses .45 rounds."
 	magazine_type = /obj/item/ammo_magazine/m45m
 	allowed_magazines = /obj/item/ammo_magazine/m45m
-	icon_state = "colt"
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "colt_classic"
 	caliber = ".45"
 	fire_sound = 'sound/weapons/gunshot/m1911.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
+
+/obj/item/weapon/gun/projectile/colt/fac/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "colt_classic"
+	else
+		icon_state = "colt_classic-empty"
 
 /obj/item/weapon/gun/projectile/colt/fac
 	name = "Frontier Armament Company 1911"
@@ -440,16 +448,16 @@
 
 /obj/item/weapon/gun/projectile/fiveseven/lacroix
 	name = "KDI FN-57 \"Commander\""
-	desc = "A custom made Five Seven with an integrated suppressor, laser aiming module and reflex sight. The trigger weight has been balanced along with the slide weight, allowing for the fastest and safest \
-	firing."
+	desc = "A custom made Five Seven with an integrated suppressor, laser aiming module and reflex sight. The trigger weight has been balanced along with the slide weight, allowing for optimized firing."
 	icon_state = "lacroix"
 	accuracy = 4
 	fire_delay = 0
 	silenced = 1
+	fire_sound = 'sound/weapons/gunshot/fiveseven-suppressed.ogg'
 
 /obj/item/weapon/gun/projectile/fiveseven/rayler
 	name = "KDI FN-57 \"Twenty-Four-Seven\""
-	desc = "A custom made Five Seven with an experimental underbarrel taser and a reflex sight. The trigger weight has been balanced along with the slide weight, allowing for the fastest and safest firing."
+	desc = "A custom made Five Seven with an experimental underbarrel taser and a reflex sight. The trigger weight has been balanced along with the slide weight, allowing for optimized firing."
 	icon_state = "rayler"
 	accuracy = 4
 	fire_delay = 0

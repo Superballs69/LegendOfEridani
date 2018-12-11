@@ -31,6 +31,7 @@
 		/obj/item/device/spaceflare
 	)
 
+/*
 /obj/structure/closet/wardrobe/ptgear
 	name = "pt gear wardrobe"
 	icon_state = "white"
@@ -41,6 +42,7 @@
 		/obj/item/clothing/under/solgov/pt/expeditionary = 4,
 		/obj/item/clothing/shoes/white = 2,
 		/obj/item/clothing/shoes/black = 2)
+*/
 
 /obj/random/torchcloset //Random closets taking into account torch-specific ones
 	name = "random closet"
