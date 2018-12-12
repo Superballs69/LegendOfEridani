@@ -62,7 +62,7 @@
 	icon_state = "m30_police"
 	ammo_type = /obj/item/ammo_casing/a44/rubber
 	unacidable = 1
-	accuracy = 0.30
+	accuracy = -0.45
 
 /obj/item/weapon/gun/projectile/revolver/mateba
 	name = "Mateba Autorevolver"
@@ -95,8 +95,9 @@
 
 /obj/item/weapon/gun/projectile/revolver/inspector/linus
 	name = "Right Hand of the West"
-	desc = "A flawless firearm custom made by KDI gunsmiths, featuring a balanced trigger, high-quality material construction and a laser. You can hear outlaws running to the hills just holding this."
+	desc = "A custom-made modification of the Inspector .357 featuring automatic ejection, tuned barrel and trigger system and a double and single action trigger."
 	icon_state = "linus"
+	handle_casings = EJECT_CASINGS
 	accuracy = 4
 	firemodes = list(
 		list(mode_name="single shot",       burst=1, fire_delay=4.5,    move_delay=null, burst_accuracy=null, dispersion=null),

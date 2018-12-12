@@ -184,7 +184,7 @@
 	icon_state = "smg"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	matter = list(DEFAULT_WALL_MATERIAL = 1800)
+	matter = list(MATERIAL_STEEL = 1800)
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/a9mm
 	max_ammo = 30
@@ -203,6 +203,29 @@
 
 /obj/item/ammo_magazine/m9mmsmg/flash
 	name = "\improper SMG magazine (9mm, flash)"
+	ammo_type = /obj/item/ammo_casing/a9mm/flash
+
+/obj/item/ammo_magazine/m9mmmac
+	name = "\improper SMG stick magazine (9mm)"
+	icon_state = "smg9mm"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	matter = list (MATERIAL_STEEL = 1800)
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/a9mm
+	max_ammo = 32
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/m9mmac/rubber
+	name = "\improper SMG stick magazine (9mm, rubber)"
+	ammo_type = /obj/item/ammo_casing/a9mm/rubber
+
+/obj/item/ammo_magazine/m9mmac/practice
+	name = "\improper SMG stick magazine (9mm, practice)"
+	ammo_type = /obj/item/ammo_casing/a9mm/practice
+
+/obj/item/ammo_magazine/m9mmac/flash
+	name = "\improper SMG stick magazine (9mm, flash)"
 	ammo_type = /obj/item/ammo_casing/a9mm/flash
 
 /obj/item/ammo_magazine/box/b9mm
