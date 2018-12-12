@@ -87,7 +87,7 @@
 	icon_state = "arifle"
 	item_state = null
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 15 //sturdy frame, could probably knock yo' silly ass out - SB
 	caliber = "a556"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
 	slot_flags = SLOT_BACK
@@ -99,6 +99,7 @@
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
 	fire_sound = 'sound/weapons/gunshot/sts35.ogg'
+	unacidable = 1
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
@@ -123,7 +124,8 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/m556
 	allowed_magazines = /obj/item/ammo_magazine/m556
-	one_hand_penalty = 3
+	accuracy = 1
+	one_hand_penalty = 2
 	wielded_item_state = "arifle-wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/ltrifle_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/ltrifle_magout.ogg'
@@ -133,7 +135,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=6,    one_hand_penalty=6, burst_accuracy=list(0,-1,-2,-3,-3), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=6,    one_hand_penalty=6, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/g36c/on_update_icon()
@@ -604,7 +606,6 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m9mmsmg
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mmsmg)
-	multi_aim = 1
 	silenced = 1
 	accuracy = 0.80
 	fire_sound = 'sound/weapons/gunshot/mk5.ogg'
@@ -637,7 +638,6 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
-	multi_aim = 1
 	burst_delay = 0
 	fire_sound = 'sound/weapons/gunshot/mx9.ogg'
 
@@ -669,15 +669,14 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/mc9mmds
 	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds)
-	multi_aim = 1
 	burst_delay = 0
 	accuracy = -0.25
 	fire_sound = 'sound/weapons/gunshot/kopis.ogg'
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1.1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1.1,-1.2,-2.3), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/kopis/update_icon(var/ignore_inhands)
@@ -686,6 +685,57 @@
 		icon_state = "kopis"
 	else
 		icon_state = "kopis-empty"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/mac10
+	name = "MAC 10"
+	desc = "A classic and cheap sub machine gun. Essentially a metal box firing 9x19 bullets at a high fire rate. Made by the Frontier Armament Corporation to supply partisans. Chambered in 9mm."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "mac10"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = "9mm"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	slot_flags = SLOT_BELT
+	magazine_type = /obj/item/ammo_magazine/m9mmmac
+	accuracy = -1
+	allowed_magazines = list(/obj/item/ammo_magazine/m9mmmac)
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=2,    one_hand_penalty=0, burst_accuracy=list(0,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.0, 2.0, 3.0))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/mac10/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "mac10"
+	else
+		icon_state = "mac10-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/mac10/fac10
+	name = "FAC 10"
+	desc = "The Frontier Armament Company's enhancement of the MAC-10 to supply the Federation's Dahaz-Khanar allies. More durable than the original MAC-10 with better accuracy."
+	icon_state = "fac10"
+	accuracy = 0
+	unacidable = 1
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=2,    one_hand_penalty=0, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.6, 0.7, 0.8, 1.0, 1.5))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/mac10/fac10/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "fac10"
+	else
+		icon_state = "fac10-e"
 
 	if(!ignore_inhands) update_held_icon()
 	return
