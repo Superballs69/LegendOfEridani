@@ -6,6 +6,7 @@
 	department_flag = COM
 	economic_power = 20
 	ideal_character_age = 50
+	whitelisted = TRUE
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/captain
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -32,6 +33,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	economic_power = 18
+	whitelisted = TRUE
 	minimal_player_age = 7
 	selection_color = "#2f2f7f"
 	ideal_character_age = 30

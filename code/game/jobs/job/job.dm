@@ -46,6 +46,8 @@
 	var/maximum_education
 	var/available_by_default = TRUE
 
+	var/whitelisted = FALSE               //Indicates if the job requires a corresponding whitelist to join.
+
 /datum/job/New()
 	..()
 	if(prob(100-availablity_chance))	//Close positions, blah blah.

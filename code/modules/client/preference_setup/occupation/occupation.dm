@@ -140,6 +140,8 @@
 		else if(!job.player_old_enough(user.client))
 			var/available_in_days = job.available_in_days(user.client)
 			bad_message = "\[IN [(available_in_days)] DAYS]"
+		else if (!is_job_whitelisted(user, rank))
+			bad_message = "<b> \[WHITELISTED]</b>"
 		else if(job.minimum_character_age && user.client && (user.client.prefs.age < job.minimum_character_age))
 			bad_message = "\[MINIMUM CHARACTER AGE: [job.minimum_character_age]]"
 		else if(!job.is_species_allowed(S))

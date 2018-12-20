@@ -16,6 +16,54 @@ var/list/whitelist = list()
 		return 0
 	return ("[M.ckey]" in whitelist)
 
+/var/list/job_whitelist = list()
+
+/hook/startup/proc/loadJobWhitelist()
+	if(config.usejobwhitelist)
+		if(config.usejobwhitelistSQL)
+			if(!load_jobwhitelistSQL())
+				world.log << "Could not load job whitelist via SQL."
+		else
+			load_jobwhitelist()
+	return 1
+
+/proc/load_jobwhitelist()
+	var/text = file2text("config/jobwhitelist.txt")
+	if (!text)
+		log_misc("Failed to load config/jobwhitelist.txt.")
+		return 0
+	else
+		job_whitelist = splittext(text, "\n")
+		return 1
+
+/proc/load_jobwhitelistSQL()
+	var/DBQuery/query = dbcon_old.NewQuery("SELECT * FROM whitelist")
+	if(!query.Execute())
+		world.log << dbcon_old.ErrorMsg()
+		return 0
+	else
+		while(query.NextRow())
+			var/list/row = query.GetRowData()
+			if(job_whitelist[row["ckey"]])
+				var/list/J = job_whitelist[row["ckey"]]
+				J.Add(row["job"])
+			else
+				job_whitelist[row["ckey"]] = list(row["job"])
+	return 1
+
+/proc/is_job_whitelisted(mob/M, var/rank)
+	var/datum/job/job = job_master.GetJob(rank)
+	if(!job.whitelisted)
+		return 1
+	if(check_rights(R_ADMIN, 0, M))
+		return 1
+	if(!job_whitelist)
+		return 0
+	if(M && rank)
+		return whitelist_lookup(rank, M.ckey)
+
+	return 0
+
 /var/list/alien_whitelist = list()
 
 /hook/startup/proc/loadAlienWhitelist()
@@ -79,6 +127,8 @@ var/list/whitelist = list()
 /proc/whitelist_lookup(var/item, var/ckey)
 	if(!alien_whitelist)
 		return 0
+	if(!job_whitelist)
+		return 0
 
 	if(config.usealienwhitelistSQL)
 		//SQL Whitelist
@@ -90,6 +140,22 @@ var/list/whitelist = list()
 	else
 		//Config File Whitelist
 		for(var/s in alien_whitelist)
+			if(findtext(s,"[ckey] - [item]"))
+				return 1
+			if(findtext(s,"[ckey] - All"))
+				return 1
+	return 0
+
+	if(config.usejobwhitelistSQL)
+		//SQL Whitelist
+		if(!(ckey in job_whitelist))
+			return 0;
+		var/list/whitelisted = job_whitelist[ckey]
+		if(lowertext(item) in whitelisted)
+			return 1
+	else
+		//Config File Whitelist
+		for(var/s in job_whitelist)
 			if(findtext(s,"[ckey] - [item]"))
 				return 1
 			if(findtext(s,"[ckey] - All"))
