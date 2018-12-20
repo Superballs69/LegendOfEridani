@@ -88,6 +88,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Captain, the Head of Personnel and the Pathfinder Commander"
+	selection_color = "#68099e"
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_specialist
 	alt_titles = list(

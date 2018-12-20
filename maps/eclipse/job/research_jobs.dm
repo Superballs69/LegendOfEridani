@@ -33,6 +33,8 @@
 
 /datum/job/scientist
 	title = "Scientist"
+	department = "Science"
+	department_flag = SCI
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Research Director and the Corporate Liaison"

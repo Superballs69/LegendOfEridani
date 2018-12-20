@@ -1,5 +1,7 @@
 /datum/job/warden
 	title = "Warden"
+	department = "Security"
+	department_flag = SEC
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief of Security"
@@ -30,6 +32,8 @@
 
 /datum/job/officer
 	title = "ISEC Contractor"
+	department = "Security"
+	department_flag = SEC
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief of Security"
@@ -64,11 +68,14 @@
 
 /datum/job/iaa
 	title = "Internal Affairs Agent"
+	department = "Security"
+	department_flag = SEC
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the FCA"
 	economic_power = 9
 	minimal_player_age = 7
+	selection_color = "#601c1c"
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/iaa
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,

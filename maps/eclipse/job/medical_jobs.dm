@@ -34,6 +34,8 @@
 
 /datum/job/doctor
 	title = "Physician"
+	department = "Medical"
+	department_flag = MED
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
@@ -192,6 +194,8 @@
 
 /datum/job/psychiatrist
 	title = "Counselor"
+	department = "Medical"
+	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
 	ideal_character_age = 40

@@ -2,6 +2,8 @@
 	title = "Captain"
 	supervisors = "the ETF and FCA appointed supervisors."
 	minimal_player_age = 7
+	department = "Command"
+	department_flag = COM
 	economic_power = 20
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/captain
@@ -31,6 +33,7 @@
 	spawn_positions = 2
 	economic_power = 18
 	minimal_player_age = 7
+	selection_color = "#2f2f7f"
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/ice
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -57,8 +60,7 @@
 /datum/job/hop
 	title = "Head of Personnel"
 	supervisors = "the Captain"
-	department = "Command"
-	department_flag = COM
+	department_flag = COM|CIV
 	minimal_player_age = 7
 	economic_power = 10
 	ideal_character_age = 45
@@ -104,6 +106,7 @@
 /datum/job/rd
 	title = "Research Director"
 	supervisors = "the Captain and your employers"
+	department_flag = COM|SCI
 	economic_power = 20
 	minimal_player_age = 7
 	ideal_character_age = 60
@@ -140,6 +143,7 @@
 /datum/job/cmo
 	title = "Chief Medical Officer"
 	supervisors = "the Captain"
+	department_flag = MED|COM
 	economic_power = 18
 	minimal_player_age = 7
 	ideal_character_age = 48
@@ -175,6 +179,7 @@
 /datum/job/chief_engineer
 	title = "Chief Engineer"
 	supervisors = "the Captain"
+	department_flag = ENG|COM
 	economic_power = 9
 	ideal_character_age = 40
 	minimal_player_age = 7
@@ -222,6 +227,7 @@
 /datum/job/hos
 	title = "Chief of Security"
 	supervisors = "the Captain and the ETF"
+	department_flag = SEC|COM
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35

@@ -41,6 +41,8 @@
 
 /datum/job/engineer
 	title = "Ship Engineer"
+	department = "Engineering"
+	department_flag = ENG
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Chief Engineer"

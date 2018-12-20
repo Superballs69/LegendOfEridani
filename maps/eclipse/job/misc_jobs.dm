@@ -17,16 +17,17 @@ Civilian
 
 /datum/job/assistant
 	title = "Crewman"
+	department = "Civilian"
+	department_flag = CIV
 	total_positions = 12
 	spawn_positions = 12
 	supervisors = "the Executive Officer"
 	selection_color = "#515151"
 	economic_power = 6
-	announced = FALSE
 	alt_titles = list(
 		"General Technician",
 		"Technical Assistant")
-	outfit_type = /decl/hierarchy/outfit/job/assistant
+	outfit_type = /decl/hierarchy/outfit/job/eclipse
 	required_education = EDUCATION_TIER_NONE
 
 /datum/job/merchant
