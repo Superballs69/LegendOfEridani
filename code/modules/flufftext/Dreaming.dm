@@ -12,10 +12,10 @@ var/list/dreams = list(
 	"the virologist","the roboticist","a chef","the bartender","a chaplain","a librarian","a mouse",
 	"a beach","the holodeck","a smokey room","a voice","the cold","a mouse","an operating table","the rain","a skrell",
 	"an unathi","a tajaran","the ai core","a beaker of strange liquid","the supermatter", "a creature built completely of stolen flesh",
-	"a GAS", "a IPC", "a Dionaea", "a being made of light", "the commanding officer", "the executive officer", "the chief of security", "the corporate liason",
-	"the representative", "the senior advisor", "the bridge officer", "the senior engineer", "the physician", "the corpsman", "the counselor",
+	"a GAS", "a IPC", "a Dionaea", "a being made of light", "the captain", "the head of personnel", "the chief of security", "the corporate liason",
+	"the representative", "the senior engineer", "the physician", "the paramedic", "the counselor",
 	"the medical contractor", "the security contractor", "the stowaway", "an old friend", "the prospector", "the pilot", "the passenger", "the chief of security",
-	"the master at arms", "the forensic technician", "the brig officer", "the tower", "the man with no face", "a field of flowers", "an old home", "the merc",
+	"the ISEC contractor", "the TIGER contractor", "the forensic technician", "the warden", "the tower", "the man with no face", "a field of flowers", "an old home", "the merc",
 	"a surgery table", "a needle", "a blade", "an ocean", "right behind you", "standing above you", "someone near by", "a place forgotten", "the exodus",
 	)
 

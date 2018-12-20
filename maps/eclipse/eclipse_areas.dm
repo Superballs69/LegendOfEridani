@@ -642,16 +642,16 @@
 /area/crew_quarters/heads
 	icon_state = "head_quarters"
 
-/area/crew_quarters/heads/cobed
-	name = "\improper Command - CO's Quarters"
+/area/crew_quarters/heads/captainbed
+	name = "\improper Command - Captain's Quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 
-/area/crew_quarters/heads/office/co
-	name = "\improper Command - CO's Office"
+/area/crew_quarters/heads/office/captain
+	name = "\improper Command - Captain's Office"
 	sound_env = MEDIUM_SOFTFLOOR
 
-/area/crew_quarters/heads/office/xo
-	name = "\improper Command - XO's Office"
+/area/crew_quarters/heads/office/hop
+	name = "\improper Command - Head of Personnel's Office"
 
 /area/crew_quarters/heads/office/rd
 	name = "\improper Command - RD's Office"
@@ -671,8 +671,8 @@
 /area/crew_quarters/heads/office/sgr
 	name = "\improper Command - SCGR's Office"
 
-/area/crew_quarters/heads/office/sea
-	name = "\improper Command - SEA's Office"
+/area/crew_quarters/heads/office/vacant_office
+	name = "\improper Command - Vacant Office"
 
 // Engineering
 

@@ -1151,7 +1151,7 @@
 // eliza's attempt at a new vending machine
 /obj/machinery/vending/games
 	name = "Good Clean Fun"
-	desc = "Vends things that the CO and SEA are probably not going to appreciate you fiddling with instead of your job..."
+	desc = "Vends things that the Captain and the Head of Personnel are probably not going to appreciate you fiddling with instead of your job..."
 	vend_delay = 15
 	product_slogans = "Escape to a fantasy world!;Fuel your gambling addiction!;Ruin your friendships!"
 	product_ads = "Elves and dwarves!;Totally not satanic!;Fun times forever!"

@@ -3,8 +3,8 @@
  */
 
 
-/obj/structure/closet/secure_closet/CO
-	name = "commanding officer's locker"
+/obj/structure/closet/secure_closet/captain
+	name = "captain's locker"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -12,7 +12,7 @@
 	icon_opened = "capsecureopen"
 	icon_off = "capsecureoff"
 
-/obj/structure/closet/secure_closet/CO/WillContain()
+/obj/structure/closet/secure_closet/captain/WillContain()
 	return list(
 		/obj/item/clothing/head/helmet/security,
 		/obj/item/clothing/suit/armor/pcarrier/command,
@@ -32,8 +32,8 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com))
 	)
 
-/obj/structure/closet/secure_closet/XO
-	name = "executive officer's locker"
+/obj/structure/closet/secure_closet/hop
+	name = "head of personnel's locker"
 	req_access = list(access_hop)
 	icon_state = "twosolsecure1"
 	icon_closed = "twosolsecure"
@@ -41,7 +41,7 @@
 	icon_opened = "twosolsecureopen"
 	icon_off = "twosolsecureoff"
 
-/obj/structure/closet/secure_closet/XO/WillContain()
+/obj/structure/closet/secure_closet/hop/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/head/helmet/security,
@@ -65,6 +65,7 @@
 		/obj/item/weapon/storage/box/imprinting
 	)
 
+/*
 /obj/structure/closet/secure_closet/sea
 	name = "senior enlisted advisor's locker"
 	req_access = list(access_senadv)
@@ -92,7 +93,9 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
 	)
+*/
 
+/*
 /obj/structure/closet/secure_closet/bridgeofficer
 	name = "bridge officer's locker"
 	req_access = list(access_bridge)
@@ -122,6 +125,7 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
 	)
+*/
 
 /obj/structure/closet/secure_closet/ice
 	name = "ice agent's locker"
