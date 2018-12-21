@@ -51,16 +51,16 @@ var/list/whitelist = list()
 				job_whitelist[row["ckey"]] = list(row["job"])
 	return 1
 
-/proc/is_job_whitelisted(mob/M, var/rank)
+/proc/is_job_whitelisted(mob/M, rank)
 	var/datum/job/job = job_master.GetJob(rank)
 	if(!job.whitelisted)
 		return 1
 	if(check_rights(R_ADMIN, 0, M))
 		return 1
-	if(!job_whitelist)
-		return 0
+	if(!config.usejobwhitelist)
+		return 1
 	if(M && rank)
-		return whitelist_lookup(rank, M.ckey)
+		return jobwhitelist_lookup(rank, M.ckey)
 
 	return 0
 
@@ -127,8 +127,6 @@ var/list/whitelist = list()
 /proc/whitelist_lookup(var/item, var/ckey)
 	if(!alien_whitelist)
 		return 0
-	if(!job_whitelist)
-		return 0
 
 	if(config.usealienwhitelistSQL)
 		//SQL Whitelist
@@ -146,17 +144,21 @@ var/list/whitelist = list()
 				return 1
 	return 0
 
+/proc/jobwhitelist_lookup(var/rank, var/ckey)
+	if(!job_whitelist)
+		return 0
+
 	if(config.usejobwhitelistSQL)
 		//SQL Whitelist
 		if(!(ckey in job_whitelist))
 			return 0;
 		var/list/whitelisted = job_whitelist[ckey]
-		if(lowertext(item) in whitelisted)
+		if(lowertext(rank) in whitelisted)
 			return 1
 	else
 		//Config File Whitelist
 		for(var/s in job_whitelist)
-			if(findtext(s,"[ckey] - [item]"))
+			if(findtext(s,"[ckey] - [rank]"))
 				return 1
 			if(findtext(s,"[ckey] - All"))
 				return 1
