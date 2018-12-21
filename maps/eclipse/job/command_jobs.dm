@@ -230,6 +230,7 @@
 	title = "Chief of Security"
 	supervisors = "the Captain and the ETF"
 	department_flag = SEC|COM
+	whitelisted = TRUE
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35
