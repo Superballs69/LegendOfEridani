@@ -37,7 +37,7 @@ var/list/whitelist = list()
 		return 1
 
 /proc/load_jobwhitelistSQL()
-	var/DBQuery/query = dbcon_old.NewQuery("SELECT * FROM whitelist")
+	var/DBQuery/query = dbcon_old.NewQuery("SELECT * FROM whitelist_job")
 	if(!query.Execute())
 		world.log << dbcon_old.ErrorMsg()
 		return 0
