@@ -50,7 +50,7 @@
 				if("homosexuality")
 					B.SetName("Guys Gone Wild")
 				if("science")
-					B.SetName(pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition"))
+					B.SetName(pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Unknown", "Playing God: Collector's Edition"))
 				else
 					B.SetName("The Holy Book of [new_religion]")
 			feedback_set_details("religion_name","[new_religion]")

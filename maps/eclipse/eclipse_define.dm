@@ -25,8 +25,8 @@
 	map_admin_faxes = list("Corporate Central Office")
 
 	//These should probably be moved into the evac controller...
-	shuttle_docked_message = "Attention all hands: Jump preparation complete. The bluespace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
-	shuttle_leaving_dock = "Attention all hands: Jump initiated, exiting bluespace in %ETA%."
+	shuttle_docked_message = "Attention all hands: Jump preparation complete. The wormhole drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
+	shuttle_leaving_dock = "Attention all hands: Jump initiated, exiting wormhole in %ETA%."
 	shuttle_called_message = "Attention all hands: Jump sequence initiated. Transit procedures are now in effect. Jump in %ETA%."
 	shuttle_recall_message = "Attention all hands: Jump sequence aborted, return to normal operating conditions."
 

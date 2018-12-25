@@ -1,9 +1,8 @@
 /decl/cultural_info/culture/ipc
 	name = CULTURE_POSITRONICS
-	description = "Union members are a significant chunk of the positronic population, belonging to a \
-	group of rebels started by Proteus and five hundred of his allies. Their primary goals, aside from \
-	the expansion of the Union, mostly revolve around freeing other synthetics from organic ownership. \
-	They can be viewed as dangerous radicals by lawed synthetics, though most begrudgingly accept their aid."
+	description = "Union members are a significant chunk of the USO population, belonging to either\
+	the original surviving synthetics of the Hawking ship, or synthetics which have joined and claimed their citizenships during\
+	the many decades of existence of the USO."
 	language = LANGUAGE_EAL
 	name_language = LANGUAGE_EAL
 	additional_langs = list(LANGUAGE_GALCOM)

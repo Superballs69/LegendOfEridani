@@ -109,3 +109,20 @@
 	language = LANGUAGE_UNION_STANDARD
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
 	ruling_body = FACTION_PAN_ASIAN_UNION
+
+
+/decl/cultural_info/location/human/julius
+	name = HOME_SYSTEM_JULIUS
+	description = "The capital of the Eridani Trade Federation, original colony, and one of the largest megacities of the galaxy."
+	economic_power = 1.2
+	language = LANGUAGE_SOL_COMMON
+	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
+	ruling_body = FACTION_ERIDANI_FED
+
+/decl/cultural_info/location/human/neue_berlin
+	name = HOME_SYSTEM_NEUE_BERLIN
+	description = "The second largest of the Eridani Trade Federation,home of the FCA, and the Senate."
+	economic_power = 1.1
+	language = LANGUAGE_SOL_COMMON
+	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
+	ruling_body = FACTION_ERIDANI_FED

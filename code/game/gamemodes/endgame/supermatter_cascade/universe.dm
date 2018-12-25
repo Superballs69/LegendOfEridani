@@ -62,7 +62,7 @@ var/global/universe_has_ended = 0
 		var/txt = {"
 A galaxy-wide electromagnetic pulse has been detected. All systems across space are heavily damaged and many personnel have died or are dying. We are currently detecting increasing indications that the universe itself is beginning to unravel.
 
-[station_name()], the largest source of disturbances has been pinpointed directly to you. We estimate you have five minutes until a bluespace rift opens within your facilities.
+[station_name()], the largest source of disturbances has been pinpointed directly to you. We estimate you have five minutes until a spatio-temporal rift opens within your facilities.
 
 There is no known way to stop the formation of the rift, nor any way to escape it. You are entirely alone.
 
