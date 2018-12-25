@@ -15,17 +15,16 @@
 	gas_transfer_coefficient = 0
 	permeability_coefficient = 0
 	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE | ITEM_FLAG_THICKMATERIAL
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.9
+	siemens_coefficient = 0
 
 /obj/item/clothing/head/helmet/space/pathfinder
 	name = "pathfinder's helmet"
 	desc = "A standard issue helmet to all Pathfinder Corps personnel. Space proof and armoured."
 	icon_state = "pathfinder"
 	item_state = "pathfinder"
-	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE
 	flags_inv = HIDEFACE|BLOCKHAIR
 	armor = list(melee = 35, bullet = 30, laser = 30,energy = 10, bomb = 25, bio = 100, rad = 50)
 

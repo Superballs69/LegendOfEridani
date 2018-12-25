@@ -61,7 +61,7 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 	skill_points = 26
-	required_education = EDUCATION_TIER_TRADE
+	required_education = EDUCATION_TIER_MEDSCHOOL
 
 /datum/job/paramedic
 	title = "Paramedic"
@@ -216,4 +216,4 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_BASIC
+	required_education = EDUCATION_TIER_BACHELOR

@@ -53,6 +53,8 @@
 #define HOME_SYSTEM_SVETSLAND         "Svetsland"
 #define HOME_SYSTEM_MAYWORTH          "Mayworth"
 #define HOME_SYSTEM_NOVOROSSIYA       "Novorossiya"
+#define HOME_SYSTEM_JULIUS            "Julius"
+#define HOME_SYSTEM_NEUE_BERLIN       "Neue Berlin"
 #define HOME_SYSTEM_STATELESS         "Stateless"
 #define HOME_SYSTEM_OTHER             "Other System"
 #define HOME_SYSTEM_DEEP_SPACE        "Deep Space"
