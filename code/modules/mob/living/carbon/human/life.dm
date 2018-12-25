@@ -118,6 +118,9 @@
 	if(wear_suit && (wear_suit.item_flags & ITEM_FLAG_STOPPRESSUREDAMAGE) && head && (head.item_flags & ITEM_FLAG_STOPPRESSUREDAMAGE)) // Complete set of pressure-proof suit worn, assume fully sealed.
 		pressure_adjustment_coefficient = 0
 
+	if(w_uniform && (w_uniform.item_flags & ITEM_FLAG_STOPPRESSUREDAMAGE) && head && (head.item_flags & ITEM_FLAG_STOPPRESSUREDAMAGE)) //Now works with pressurized jumpsuits!
+		pressure_adjustment_coefficient = 0
+
 		// Handles breaches in your space suit. 10 suit damage equals a 100% loss of pressure protection.
 		if(istype(wear_suit,/obj/item/clothing/suit/space))
 			var/obj/item/clothing/suit/space/S = wear_suit
