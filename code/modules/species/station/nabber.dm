@@ -133,9 +133,6 @@
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_SERPENTIDS
 		),
-		TAG_FACTION = list(
-			FACTION_XYNERGY
-		),
 		TAG_RELIGION =  list(
 			RELIGION_OTHER
 		),

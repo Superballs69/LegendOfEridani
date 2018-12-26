@@ -116,6 +116,13 @@
 	subversive_potential = 30
 	language = LANGUAGE_UNION_STANDARD
 
+/decl/cultural_info/faction/pathfinder
+	name = FACTION_PATHFINDER
+	description = "The Pathfinder Corps is a multinational organization and contractor that offers labour and specialized staffing to all countries. Primarily exploration based, the Pathfinder Corps can be commonly seen as \
+	security contractors on occasion. (Placeholder)"
+	subversive_potential = 5
+	language = LANGUAGE_GALCOM
+
 /decl/cultural_info/faction/other
 	name = FACTION_OTHER
 	description = "You belong to one of the many other factions that operate in the galaxy. Numerous, too numerous to list, these factions represent a variety of interests, purposes, intents and goals."
