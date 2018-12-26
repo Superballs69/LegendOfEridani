@@ -58,11 +58,6 @@
 
 	sexybits_location = BP_GROIN
 
-/datum/species/tajaran/equip_survival_gear(var/mob/living/carbon/human/H)
-	..()
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
-	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/tajblind(H),slot_glasses)
-
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			CULTURE_TAJARA_NAJD,
@@ -71,9 +66,21 @@
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_NAJD
 		),
+		TAG_FACTION = list(
+			FACTION_TAJARA_NAJD,
+			FACTION_SOL_ALLIANCE
+		),
 		TAG_RELIGION = list(
 			RELIGION_OTHER,
 			RELIGION_SHAMSA,
 			RELIGION_ALQAM
 		)
 	)
+
+/datum/species/tajaran/equip_survival_gear(var/mob/living/carbon/human/H)
+	..()
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/tajblind(H),slot_glasses)
+
+/datum/species/tajara/get_bodytype(var/mob/living/carbon/human/H)
+	return SPECIES_TAJARA
