@@ -309,6 +309,8 @@
 		reasons["Your branch of service does not allow it."] = TRUE
 	if(!is_rank_allowed(caller.prefs.char_branch, caller.prefs.char_rank))
 		reasons["Your rank choice does not allow it."] = TRUE
+	if(!is_job_whitelisted(caller, title))
+		reasons["You are not whitelisted for the role."] = TRUE
 	var/datum/species/S = all_species[caller.prefs.species]
 	if(S)
 		if(!is_species_allowed(S))
@@ -328,6 +330,8 @@
 	if(jobban_isbanned(caller, title))
 		return FALSE
 	if(!player_old_enough(caller))
+		return FALSE
+	if(!is_job_whitelisted(caller, title))
 		return FALSE
 	return TRUE
 
