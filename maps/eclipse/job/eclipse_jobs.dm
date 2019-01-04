@@ -7,16 +7,6 @@
 		/datum/species/vox = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/stowaway)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hos, /datum/job/ice, /datum/job/iaa
-	species_to_job_blacklist = list(
-		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden),
-		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/datum/species/tajaran = list(HUMAN_ONLY_JOBS),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison, /datum/job/warden),
-	)
-#undef HUMAN_ONLY_JOBS
-
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
 						/datum/job/ice, /datum/job/liaison,
 						/datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_specialist, /datum/job/pathfinder_explorer,
@@ -32,6 +22,16 @@
 						/datum/job/merchant, /datum/job/stowaway
 						)
 
+#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hos, /datum/job/ice, /datum/job/iaa
+	species_to_job_blacklist = list(
+		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison),
+		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
+		/datum/species/tajaran = list(HUMAN_ONLY_JOBS),
+		/datum/species/machine = list(HUMAN_ONLY_JOBS),
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison),
+	)
+#undef HUMAN_ONLY_JOBS
+
 	access_modify_region = list(
 		ACCESS_REGION_SECURITY = list(access_change_ids),
 		ACCESS_REGION_MEDBAY = list(access_change_ids),
@@ -42,18 +42,6 @@
 		ACCESS_REGION_SUPPLY = list(access_change_ids),
 		ACCESS_REGION_NT = list(access_rd)
 	)
-
-/datum/map/eclipse/setup_map()
-	..()
-	for(var/job_type in GLOB.using_map.allowed_jobs)
-		var/datum/job/job = decls_repository.get_decl(job_type)
-		for(var/species_name in list(SPECIES_IPC, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJARA))
-			var/datum/species/S = all_species[species_name]
-			var/species_blacklist = species_to_job_blacklist[S.type]
-			if(!species_blacklist)
-				species_blacklist = list()
-				species_to_job_blacklist[S.type] = species_blacklist
-			species_blacklist |= job.type
 
 // Some jobs for nabber grades defined here due to map-specific job datums.
 /decl/cultural_info/education/nabber/New()
