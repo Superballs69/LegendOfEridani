@@ -345,3 +345,135 @@
 /obj/item/stack/material/generic/Initialize()
 	. = ..()
 	if(material) color = material.icon_colour
+
+/obj/item/stack/material/tin
+	name = "tin"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_TIN
+
+/obj/item/stack/material/tin/ten
+	amount = 10
+
+/obj/item/stack/material/tin/fifty
+	amount = 50
+
+/obj/item/stack/material/zinc
+	name = "zinc"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_ZINC
+
+/obj/item/stack/material/zinc/ten
+	amount = 10
+
+/obj/item/stack/material/zinc/fifty
+	amount = 50
+
+/obj/item/stack/material/tungsten
+	name = "tungsten"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_TUNGSTEN
+
+/obj/item/stack/material/tungsten/ten
+	amount = 10
+
+/obj/item/stack/material/tungsten/fifty
+	amount = 50
+
+/obj/item/stack/material/niobium
+	name = "niobium"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_NIOBIUM
+
+/obj/item/stack/material/niobium/ten
+	amount = 10
+
+/obj/item/stack/material/niobium/fifty
+	amount = 50
+
+/obj/item/stack/material/brass
+	name = "brass"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_BRASS
+
+/obj/item/stack/material/brass/ten
+	amount = 10
+
+/obj/item/stack/material/brass/fifty
+	amount = 50
+
+/obj/item/stack/material/lsa
+	name = "lead-steel alloy"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_LSA
+
+/obj/item/stack/material/lsa/ten
+	amount = 10
+
+/obj/item/stack/material/lsa/fifty
+	amount = 50
+
+/obj/item/stack/material/alubronze
+	name = "aluminium-bronze"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_ALUBRONZE
+
+/obj/item/stack/material/alubronze/ten
+	amount = 10
+
+/obj/item/stack/material/alubronze/fifty
+	amount = 50
+
+/obj/item/stack/material/plastinium
+	name = "plastinium steel"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_PLASTINIUM
+
+/obj/item/stack/material/plastinium/ten
+	amount = 10
+
+/obj/item/stack/material/plastinium/fifty
+	amount = 50
+
+/obj/item/stack/material/titasteel
+	name = "titanium steel"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_TITASTEEL
+
+/obj/item/stack/material/titasteel/ten
+	amount = 10
+
+/obj/item/stack/material/titasteel/fifty
+	amount = 50
+
+/obj/item/stack/material/psteel
+	name = "pyrrhic steel"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_PSTEEL
+
+/obj/item/stack/material/psteel/ten
+	amount = 10
+
+/obj/item/stack/material/psteel/fifty
+	amount = 50
+
+/obj/item/stack/material/rtsl
+	name = "reinforced titanium steel-lead"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_RTSL
+
+/obj/item/stack/material/rtsl/ten
+	amount = 10
+
+/obj/item/stack/material/rtsl/fifty
+	amount = 50
+
+/obj/item/stack/material/tungsteel
+	name = "tungsteel"
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_TUNGSTEEL
+
+/obj/item/stack/material/tungsteel/ten
+	amount = 10
+
+/obj/item/stack/material/tungsteel/fifty
+	amount = 50

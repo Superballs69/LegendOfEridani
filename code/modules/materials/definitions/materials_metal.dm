@@ -54,6 +54,9 @@
 	ore_smelts_to = null
 	ore_compresses_to = null
 	sale_price = null
+	alloy_materials = list(MATERIAL_COPPER = 2500, MATERIAL_TIN = 1250)
+	alloy_product = TRUE
+	sale_price = 1
 
 /material/copper
 	name = MATERIAL_COPPER
@@ -71,7 +74,7 @@
 	ore_smelts_to = MATERIAL_COPPER
 	ore_result_amount = 5
 	ore_spread_chance = 10
-	ore_name = "tetrahedrite"
+	ore_name = "malachite"
 	ore_scan_icon = "mineral_common"
 	ore_icon_overlay = "shiny"
 	sale_price = 1
@@ -271,6 +274,155 @@
 				/datum/reagent/iron = 20
 				)
 	sale_price = 1
+
+//New materials
+/material/tin
+	name = MATERIAL_TIN
+	lore_text = "Placeholder."
+	stack_type = /obj/item/stack/material/tin
+	icon_colour = "#5c5454"
+	weight = 22
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+/material/zinc
+	name = MATERIAL_ZINC
+	lore_text = "Placeholder."
+	stack_type = /obj/item/stack/material/zinc
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+/material/lead
+	name = MATERIAL_LEAD
+	lore_text = "Placeholder."
+	stack_type = /obj/item/stack/material/zinc
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+/material/aluminium
+	name = MATERIAL_ALUMINIUM
+	stack_type = /obj/item/stack/material/zinc
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+/material/tungsten
+	name = MATERIAL_TUNGSTEN
+	stack_type = /obj/item/stack/material/tungsten
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+/material/niobium
+	name = MATERIAL_NIOBIUM
+	stack_type = /obj/item/stack/material/niobium
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+
+//New alloys
+/material/brass
+	name = MATERIAL_BRASS
+	stack_type = /obj/item/stack/material/brass
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_ZINC = 1250, MATERIAL_COPPER = 1250)
+	alloy_product = TRUE
+	sale_price = 2
+	ore_smelts_to = MATERIAL_BRASS
+
+/material/lsa
+	name = MATERIAL_LSA
+	stack_type = /obj/item/stack/material/lsa
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_IRON = 1250, MATERIAL_LEAD = 1250, MATERIAL_GRAPHENE = 1250)
+	alloy_product = TRUE
+	sale_price = 2
+	ore_smelts_to = MATERIAL_LSA
+
+/material/alubronze
+	name = MATERIAL_ALUBRONZE
+	stack_type = /obj/item/stack/material/alubronze
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_ALUMINIUM = 1250, MATERIAL_BRONZE = 2500)
+	alloy_product = TRUE
+	sale_price = 2
+	ore_smelts_to = MATERIAL_ALUBRONZE
+
+/material/plastinium
+	name = MATERIAL_PLASTINIUM
+	stack_type = /obj/item/stack/material/plastinium
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_ALUMINIUM = 1250, MATERIAL_PLATINUM = 2500, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+
+/material/titasteel
+	name = MATERIAL_TITASTEEL
+	stack_type = /obj/item/stack/material/titasteel
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+
+/material/rtsl
+	name = MATERIAL_RTSL
+	stack_type = /obj/item/stack/material/rtsl
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+
+/material/tungsteel
+	name = MATERIAL_TUNGSTEEL
+	stack_type = /obj/item/stack/material/tungsteel
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_TUNGSTEN = 1250, MATERIAL_GRAPHENE = 2500, MATERIAL_IRON = 2500)
+
+/material/psteel
+	name = MATERIAL_PSTEEL
+	stack_type = /obj/item/stack/material/psteel
+	icon_colour = "#5c5454"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	alloy_materials = list(MATERIAL_NIOBIUM = 2500, MATERIAL_GRAPHENE = 2500, MATERIAL_IRON = 2500, MATERIAL_TUNGSTEN = 2500)
 
 // Adminspawn only, do not let anyone get this.
 /material/voxalloy
