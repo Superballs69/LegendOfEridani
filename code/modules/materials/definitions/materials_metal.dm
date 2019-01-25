@@ -1,3 +1,10 @@
+/* IMPORTANT NOTES:
+- Melting points temperatures are in Kelvin
+
+
+
+
+*/
 /material/uranium
 	name = MATERIAL_URANIUM
 	lore_text = "A highly radioactive metal. Commonly used as fuel in fission reactors."
@@ -54,7 +61,7 @@
 	ore_smelts_to = null
 	ore_compresses_to = null
 	sale_price = null
-	alloy_materials = list(MATERIAL_COPPER = 2500, MATERIAL_TIN = 1250)
+	alloy_materials = list(MATERIAL_COPPER = 1250, MATERIAL_TIN = 125) // Not a forgotten 0; Bronze is ~10% tin.
 	alloy_product = TRUE
 	sale_price = 1
 
@@ -106,6 +113,7 @@
 	lore_text = "A strong, flexible alloy of iron and carbon. Probably the single most fundamentally useful and ubiquitous substance in human space."
 	stack_type = /obj/item/stack/material/steel
 	integrity = 150
+	melting_point = 1800
 	brute_armor = 5
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
@@ -115,7 +123,7 @@
 				/datum/reagent/iron = 15,
 				/datum/reagent/carbon = 5
 				)
-	alloy_materials = list(MATERIAL_HEMATITE = 1875, MATERIAL_GRAPHENE = 1875)
+	alloy_materials = list(MATERIAL_HEMATITE = 1875, MATERIAL_GRAPHENE = 275)
 	alloy_product = TRUE
 	sale_price = 1
 	ore_smelts_to = MATERIAL_STEEL
@@ -136,7 +144,7 @@
 	lore_text = "When regular high-tensile steel isn't tough enough to get the job done, the smart consumer turns to frankly absurd alloys of steel and an extremely hard platinum metal, osmium."
 	stack_type = /obj/item/stack/material/plasteel
 	integrity = 400
-	melting_point = 6000
+	melting_point = 2500 // Lowered from 6000, to add new heat-resistant materials instead.
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
 	icon_colour = "#777777"
@@ -159,7 +167,7 @@
 	brute_armor = 10
 	burn_armor = 8
 	integrity = 200
-	melting_point = 3000
+	melting_point = 2000
 	weight = 18
 	stack_type = null
 	icon_base = "metal"
@@ -174,7 +182,7 @@
 	name = MATERIAL_OSMIUM_CARBIDE_PLASTEEL
 	stack_type = /obj/item/stack/material/ocp
 	integrity = 200
-	melting_point = 12000
+	melting_point = 3000
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
 	icon_colour = "#9bc6f2"
@@ -278,10 +286,10 @@
 //New materials
 /material/tin
 	name = MATERIAL_TIN
-	lore_text = "Placeholder."
+	lore_text = "A light metal, with many simpler applications, or used to create bronze."
 	stack_type = /obj/item/stack/material/tin
 	icon_colour = "#5c5454"
-	weight = 22
+	weight = 16
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
@@ -289,9 +297,10 @@
 
 /material/zinc
 	name = MATERIAL_ZINC
-	lore_text = "Placeholder."
+	lore_text = "A metal known for its anti-corrosion applications."
 	stack_type = /obj/item/stack/material/zinc
 	icon_colour = "#5c5454"
+	weight = 22
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
@@ -299,9 +308,10 @@
 
 /material/lead
 	name = MATERIAL_LEAD
-	lore_text = "Placeholder."
+	lore_text = "A dense metal, used to block radiations."
 	stack_type = /obj/item/stack/material/zinc
 	icon_colour = "#5c5454"
+	weight = 60
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
@@ -309,6 +319,7 @@
 
 /material/aluminium
 	name = MATERIAL_ALUMINIUM
+	lore_text = "A common metal, strong and flexible."
 	stack_type = /obj/item/stack/material/zinc
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
@@ -318,21 +329,25 @@
 
 /material/tungsten
 	name = MATERIAL_TUNGSTEN
+	lore_text = "A strong metal, capable of withstanding extreme temperature by itself."
 	stack_type = /obj/item/stack/material/tungsten
 	icon_colour = "#5c5454"
+	weight = 50
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
+	sale_price = 3
 
 /material/niobium
 	name = MATERIAL_NIOBIUM
+	lore_text = "A strong metal, capable of withstanding extreme temperature by itself."
 	stack_type = /obj/item/stack/material/niobium
 	icon_colour = "#5c5454"
+	weight = 40
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
+	sale_price = 4
 
 //New alloys
 /material/brass
@@ -343,80 +358,87 @@
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
 	sale_price = 1
-	alloy_materials = list(MATERIAL_ZINC = 1250, MATERIAL_COPPER = 1250)
+	alloy_materials = list(MATERIAL_ZINC = 425, MATERIAL_COPPER = 1250)
 	alloy_product = TRUE
-	sale_price = 2
 	ore_smelts_to = MATERIAL_BRASS
 
-/material/lsa
+/material/lsa // Leaded-Steel
 	name = MATERIAL_LSA
 	stack_type = /obj/item/stack/material/lsa
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
-	alloy_materials = list(MATERIAL_IRON = 1250, MATERIAL_LEAD = 1250, MATERIAL_GRAPHENE = 1250)
-	alloy_product = TRUE
 	sale_price = 2
+	alloy_materials = list(MATERIAL_IRON = 1250, MATERIAL_LEAD = 1250, MATERIAL_GRAPHENE = 250)
+	alloy_product = TRUE
 	ore_smelts_to = MATERIAL_LSA
 
 /material/alubronze
 	name = MATERIAL_ALUBRONZE
 	stack_type = /obj/item/stack/material/alubronze
 	icon_colour = "#5c5454"
+	melting_point = 1000
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
-	alloy_materials = list(MATERIAL_ALUMINIUM = 1250, MATERIAL_BRONZE = 2500)
-	alloy_product = TRUE
 	sale_price = 2
+	alloy_materials = list(MATERIAL_ALUMINIUM = 500, MATERIAL_BRONZE = 2500)
+	alloy_product = TRUE
 	ore_smelts_to = MATERIAL_ALUBRONZE
 
 /material/plastinium
 	name = MATERIAL_PLASTINIUM
 	stack_type = /obj/item/stack/material/plastinium
 	icon_colour = "#5c5454"
+	melting_point = 1600
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
 	sale_price = 1
-	alloy_materials = list(MATERIAL_ALUMINIUM = 1250, MATERIAL_PLATINUM = 2500, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+	alloy_materials = list(MATERIAL_ALUMINIUM = 1250, MATERIAL_PLATINUM = 2500, MATERIAL_GRAPHENE = 650, MATERIAL_IRON = 2500)
 
 /material/titasteel
 	name = MATERIAL_TITASTEEL
+	lore_text = "Titanium Steel, made to take quite some hit, in exchange for less resistance against heat."
 	stack_type = /obj/item/stack/material/titasteel
+	melting_point = 1800
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
 	sale_price = 1
-	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 650, MATERIAL_IRON = 2500)
 
 /material/rtsl
 	name = MATERIAL_RTSL
+	lore_text = "Like normal Titanium Steel, the Reinforced Titanium-Steel allow is capable of resisting strong hit, along with the capacity of absorbing huge doses of radiations."
 	stack_type = /obj/item/stack/material/rtsl
+	melting_point = 1900
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
 	sale_price = 1
-	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 3750, MATERIAL_IRON = 2500)
+	alloy_materials = list(MATERIAL_TITANIUM = 1250, MATERIAL_GRAPHENE = 650, MATERIAL_IRON = 2500, MATERIAL_LEAD = 2500)
 
 /material/tungsteel
 	name = MATERIAL_TUNGSTEEL
+	lore_text = "Tungsteel, made to resist extreme temperatures."
 	stack_type = /obj/item/stack/material/tungsteel
+	melting_point = 12000
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
 	hitsound = 'sound/weapons/smash.ogg'
 	sale_price = 1
-	alloy_materials = list(MATERIAL_TUNGSTEN = 1250, MATERIAL_GRAPHENE = 2500, MATERIAL_IRON = 2500)
+	alloy_materials = list(MATERIAL_TUNGSTEN = 1250, MATERIAL_GRAPHENE = 650, MATERIAL_IRON = 2500)
 
 /material/psteel
 	name = MATERIAL_PSTEEL
+	lore_text = "Pyrrhic Steel, made to resist any hot stuff the universe might want to throw."
 	stack_type = /obj/item/stack/material/psteel
+	melting_point = 60000 // Good luck melting that.
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
