@@ -57,6 +57,7 @@
 	name = MATERIAL_BRONZE
 	lore_text = "An alloy of copper and tin."
 	icon_colour = "#edd12f"
+	stack_type = /obj/item/stack/material/bronze
 	construction_difficulty = 1
 	ore_smelts_to = null
 	ore_compresses_to = null
@@ -70,6 +71,7 @@
 	icon_colour = "#b87333"
 	weight = 15
 	hardness = 30
+	stack_type = /obj/item/stack/material/copper
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"

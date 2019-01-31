@@ -348,7 +348,7 @@
 
 /obj/item/stack/material/tin
 	name = "tin"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-tin"
 	default_type = MATERIAL_TIN
 
 /obj/item/stack/material/tin/ten
@@ -359,7 +359,7 @@
 
 /obj/item/stack/material/zinc
 	name = "zinc"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-zinc"
 	default_type = MATERIAL_ZINC
 
 /obj/item/stack/material/zinc/ten
@@ -370,7 +370,7 @@
 
 /obj/item/stack/material/tungsten
 	name = "tungsten"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-tungsten"
 	default_type = MATERIAL_TUNGSTEN
 
 /obj/item/stack/material/tungsten/ten
@@ -381,7 +381,7 @@
 
 /obj/item/stack/material/niobium
 	name = "niobium"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-niobium"
 	default_type = MATERIAL_NIOBIUM
 
 /obj/item/stack/material/niobium/ten
@@ -392,7 +392,7 @@
 
 /obj/item/stack/material/brass
 	name = "brass"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-brass"
 	default_type = MATERIAL_BRASS
 
 /obj/item/stack/material/brass/ten
@@ -403,7 +403,7 @@
 
 /obj/item/stack/material/lsa
 	name = "lead-steel alloy"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-lsa"
 	default_type = MATERIAL_LSA
 
 /obj/item/stack/material/lsa/ten
@@ -414,7 +414,7 @@
 
 /obj/item/stack/material/alubronze
 	name = "aluminium-bronze"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-alubronze"
 	default_type = MATERIAL_ALUBRONZE
 
 /obj/item/stack/material/alubronze/ten
@@ -425,7 +425,7 @@
 
 /obj/item/stack/material/plastinium
 	name = "plastinium steel"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-plastinium"
 	default_type = MATERIAL_PLASTINIUM
 
 /obj/item/stack/material/plastinium/ten
@@ -436,7 +436,7 @@
 
 /obj/item/stack/material/titasteel
 	name = "titanium steel"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-titasteel"
 	default_type = MATERIAL_TITASTEEL
 
 /obj/item/stack/material/titasteel/ten
@@ -447,7 +447,7 @@
 
 /obj/item/stack/material/psteel
 	name = "pyrrhic steel"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-psteel"
 	default_type = MATERIAL_PSTEEL
 
 /obj/item/stack/material/psteel/ten
@@ -458,7 +458,7 @@
 
 /obj/item/stack/material/rtsl
 	name = "reinforced titanium steel-lead"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-rtsl"
 	default_type = MATERIAL_RTSL
 
 /obj/item/stack/material/rtsl/ten
@@ -469,11 +469,33 @@
 
 /obj/item/stack/material/tungsteel
 	name = "tungsteel"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-tungsteel"
 	default_type = MATERIAL_TUNGSTEEL
 
 /obj/item/stack/material/tungsteel/ten
 	amount = 10
 
 /obj/item/stack/material/tungsteel/fifty
+	amount = 50
+
+/obj/item/stack/material/copper
+	name = "copper"
+	icon_state = "sheet-copper"
+	default_type = MATERIAL_COPPER
+
+/obj/item/stack/material/copper/ten
+	amount = 10
+
+/obj/item/stack/material/copper/fifty
+	amount = 50
+
+/obj/item/stack/material/bronze
+	name = "bronze"
+	icon_state = "sheet-bronze"
+	default_type = MATERIAL_BRONZE
+
+/obj/item/stack/material/bronze/ten
+	amount = 10
+
+/obj/item/stack/material/bronze/fifty
 	amount = 50
