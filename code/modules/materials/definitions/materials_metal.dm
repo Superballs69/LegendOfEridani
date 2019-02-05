@@ -52,6 +52,7 @@
 		)
 	ore_icon_overlay = "nugget"
 	sale_price = 3
+	conductivity = 41
 
 /material/gold/bronze //placeholder for ashtrays
 	name = MATERIAL_BRONZE
@@ -95,6 +96,7 @@
 	icon_colour = "#d1e6e3"
 	weight = 22
 	hardness = 50
+	conductivity = 63
 	stack_origin_tech = list(TECH_MATERIAL = 3)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
@@ -155,6 +157,7 @@
 	burn_armor = 10
 	hardness = 80
 	weight = 23
+	conductivity = 13
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	hitsound = 'sound/weapons/smash.ogg'
 	construction_difficulty = 1
@@ -171,6 +174,7 @@
 	integrity = 200
 	melting_point = 2000
 	weight = 18
+	conductivity = 2.38
 	stack_type = null
 	icon_base = "metal"
 	door_icon_base = "metal"

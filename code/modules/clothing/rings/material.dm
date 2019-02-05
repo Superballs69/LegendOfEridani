@@ -3,6 +3,7 @@
 /obj/item/clothing/ring/material
 	icon = 'icons/obj/clothing/rings.dmi'
 	icon_state = "material"
+/*
 	var/material/material
 
 /obj/item/clothing/ring/material/New(var/newloc, var/new_material)
@@ -19,7 +20,7 @@
 
 /obj/item/clothing/ring/material/get_material()
 	return material
-
+*/
 /obj/item/clothing/ring/material/wood/New(var/newloc)
 	..(newloc, MATERIAL_WOOD)
 

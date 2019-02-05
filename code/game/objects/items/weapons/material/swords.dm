@@ -32,3 +32,10 @@
 	sharp = 0
 	force_divisor = 0.2
 	thrown_force_divisor = 0.2
+
+/obj/item/weapon/material/sword/claymore
+	name = "claymore"
+	desc = "What are you standing around staring at this for? Get to killing!"
+	icon = 'icons/obj/crafted_weapons.dmi'
+	icon_state = "claymore"
+	applies_material_colour = 1

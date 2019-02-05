@@ -76,8 +76,10 @@
 	var/burn_armor				 // Same as above, but for Burn damage type. If blank brute_armor's value is used.
 	var/integrity = 150          // General-use HP value for products.
 	var/opacity = 1              // Is the material transparent? 0.5< makes transparent walls/doors.
+	var/reflectivity = 0         // How reflective to light is the material? Currently used for personal laser reflection and defense.
 	var/explosion_resistance = 5 // Only used by walls currently.
 	var/conductive = 1           // Objects with this var add CONDUCTS to flags on spawn.
+	var/conductivity = null      // How conductive the material is. Iron acts as the baseline, at 10.
 	var/luminescence
 	var/list/alloy_materials     // If set, material can be produced via alloying these materials in these amounts.
 	var/units_per_sheet = SHEET_MATERIAL_AMOUNT
