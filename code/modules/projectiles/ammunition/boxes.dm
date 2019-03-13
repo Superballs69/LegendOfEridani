@@ -314,10 +314,10 @@
 	icon_state = "5.56"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = "a762"
+	caliber = "7.62mm"
 	matter = list(MATERIAL_STEEL = 1800)
 	ammo_type = /obj/item/ammo_casing/a762
-	max_ammo = 15 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
+	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/m762/empty
@@ -327,13 +327,9 @@
 	name = "magazine (7.62mm, practice)"
 	ammo_type = /obj/item/ammo_casing/a762/practice
 
-/obj/item/ammo_magazine/m762/practice
-	name = "magazine (7.62mm, practice)"
-	ammo_type = /obj/item/ammo_casing/a762/practice
-
 /obj/item/ammo_magazine/m762ext
 	name = "extended magazine (7.62mm)"
-	icon_state = "7.62mm"
+	icon_state = "m762"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "7.62mm"
@@ -343,7 +339,7 @@
 	multiple_sprites = 0
 
 /obj/item/ammo_magazine/m762ext/empty
-	initial_ammo
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/m762svd
 	name = "\improper SVD magazine (7.62mm)"

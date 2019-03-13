@@ -152,7 +152,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 
-/obj/item/weapon/gun/projectile/shotgun/pump/semi/consume_next_projectile(mob/living/user as mob|obj)
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/Fire(mob/user)
 	..()
 	src.pump(user)
 

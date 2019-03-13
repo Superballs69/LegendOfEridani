@@ -181,7 +181,7 @@
 	item_state = "z8carbine"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	caliber = "a762"
+	caliber = "7.62mm"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/a762
 	slot_flags = SLOT_BACK
@@ -270,7 +270,7 @@
 	wielded_item_state = "z8carbine-wielded"
 	fire_sound = 'sound/weapons/gunshot/z8.ogg'
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, use_launcher=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null)
+		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null)
 		)
 
 /obj/item/weapon/gun/projectile/automatic/c8s/update_icon()
@@ -380,7 +380,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds, /obj/item/ammo_magazine/m9mmsmg)
 	load_method = MAGAZINE
 	multi_aim = 1
-	burst_delay = 2
+	burst_delay = 0.90
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -416,8 +416,8 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mmds
-	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds)
+	magazine_type = /obj/item/ammo_magazine/m9mmsmg
+	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds, /obj/item/ammo_magazine/m9mmsmg)
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	fire_sound = 'sound/weapons/gunshot/p92x.ogg'
@@ -638,7 +638,7 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
-	burst_delay = 0
+	burst_delay = 0.75
 	fire_sound = 'sound/weapons/gunshot/mx9.ogg'
 
 	firemodes = list(
@@ -669,7 +669,7 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/mc9mmds
 	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds)
-	burst_delay = 0
+	burst_delay = 0.70
 	accuracy = -0.25
 	fire_sound = 'sound/weapons/gunshot/kopis.ogg'
 
@@ -701,6 +701,7 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m9mmmac
 	accuracy = -1
+	burst_delay = 0.35
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mmmac)
 
 	firemodes = list(

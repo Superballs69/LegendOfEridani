@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/revolver
-	name = "revolver"
-	desc = "A powerful revolver. Uses .357 rounds."
+	name = "KDI \"Patrolman\" .357"
+	desc = "KDI's expansion into the average consumer market, a clever redesign of the double-action revolver that sets the benchmark for other firearms manufacturers in the galaxy. Uses .357."
 	icon_state = "revolver"
 	item_state = "revolver"
 	caliber = ".357"
@@ -47,7 +47,7 @@
 
 /obj/item/weapon/gun/projectile/revolver/m30
 	name = "M-30"
-	desc = "The Frontier Armament Company's M-30 is a choice revolver when you absolutely, positively need to put a hole in the other guy. Uses .357 and .38 rounds."
+	desc = "The Frontier Armament Company's M-30 is a choice revolver when you absolutely, positively need to put a hole in the other guy. Uses .44 magnum."
 	caliber = ".44"
 	ammo_type = /obj/item/ammo_casing/a44
 	icon = 'icons/obj/gun_2.dmi'
@@ -61,7 +61,6 @@
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "m30_police"
 	ammo_type = /obj/item/ammo_casing/a44/rubber
-	unacidable = 1
 	accuracy = -0.45
 
 /obj/item/weapon/gun/projectile/revolver/mateba
@@ -137,7 +136,7 @@
 	desc = "A custom-built revolver, based off the semi-popular Detective Special model."
 	icon_state = "deckard-empty"
 	caliber = ".44"
-	ammo_type = /obj/item/ammo_casing/a44/rubber
+	ammo_type = /obj/item/ammo_casing/a44
 
 /obj/item/weapon/gun/projectile/revolver/deckard/emp
 	ammo_type = /obj/item/ammo_casing/a38/emp
