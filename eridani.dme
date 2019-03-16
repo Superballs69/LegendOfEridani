@@ -1771,6 +1771,7 @@
 #include "code\modules\mining\machinery\_mineral.dm"
 #include "code\modules\mining\machinery\mineral_console.dm"
 #include "code\modules\mining\machinery\mineral_processor.dm"
+#include "code\modules\mining\machinery\mineral_reprocessor.dm"
 #include "code\modules\mining\machinery\mineral_stacker.dm"
 #include "code\modules\mining\machinery\mineral_unloader.dm"
 #include "code\modules\mob\animations.dm"
