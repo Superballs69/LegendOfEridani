@@ -152,9 +152,12 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 
-/obj/item/weapon/gun/projectile/shotgun/pump/semi/Fire(mob/user)
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/handle_post_fire()
 	..()
-	src.pump(user)
+	if(chambered)
+		chambered.expend()
+		process_chambered()
+		src.pump()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/semi/peacewalker
 	name = "KDI Peacewalker"
