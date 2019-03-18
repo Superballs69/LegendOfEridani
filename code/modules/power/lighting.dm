@@ -9,8 +9,8 @@
 #define LIGHT_BROKEN 2
 #define LIGHT_BURNED 3
 
-#define LIGHT_BULB_TEMPERATURE 400 //K - used value for a 60W bulb
-#define LIGHTING_POWER_FACTOR 5		//5W per luminosity * range
+#define LIGHT_BULB_TEMPERATURE 800 //K - used value for a 60W bulb
+#define LIGHTING_POWER_FACTOR 10		//5W per luminosity * range
 
 
 #define LIGHTMODE_EMERGENCY "emergency_lighting"
@@ -542,9 +542,9 @@
 	var/rigged = 0		// true if rigged to explode
 	var/broken_chance = 2
 
-	var/b_max_bright = 0.9
-	var/b_inner_range = 1
-	var/b_outer_range = 5
+	var/b_max_bright = 1
+	var/b_inner_range = 4
+	var/b_outer_range = 12
 	var/b_curve = 2
 	var/b_colour = "#fffee0"
 	var/list/lighting_modes = list()
@@ -573,8 +573,8 @@
 	w_class = ITEM_SIZE_SMALL
 	name = "large light tube"
 	b_max_bright = 0.95
-	b_inner_range = 2
-	b_outer_range = 8
+	b_inner_range = 7
+	b_outer_range = 14
 	b_curve = 2.5
 
 /obj/item/weapon/light/tube/large/party/Initialize() //Randomly colored light tubes. Mostly for testing, but maybe someone will find a use for them.
@@ -591,8 +591,8 @@
 	matter = list(MATERIAL_GLASS = 100)
 
 	b_max_bright = 0.6
-	b_inner_range = 0.1
-	b_outer_range = 4
+	b_inner_range = 1
+	b_outer_range = 6
 	b_curve = 3
 	b_colour = "#fcfcc7"
 	lighting_modes = list(
