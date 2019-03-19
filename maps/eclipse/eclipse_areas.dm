@@ -832,6 +832,10 @@
 	name = "\improper Fabricator Lab"
 	icon_state = "devlab"
 
+/area/rnd/mat_development
+	name = "\improper Material Research Lab"
+	icon_state = "devlab"
+
 /area/rnd/entry
 	name = "\improper Research and Development Access"
 	icon_state = "decontamination"
