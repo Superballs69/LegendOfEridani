@@ -353,7 +353,7 @@
 /material/lead
 	name = MATERIAL_LEAD
 	lore_text = "A dense metal, used to block radiations."
-	stack_type = /obj/item/stack/material/zinc
+	stack_type = /obj/item/stack/material/lead
 	icon_colour = "#5c5454"
 	weight = 14
 	sheet_singular_name = "sheet"
@@ -368,7 +368,7 @@
 /material/aluminium
 	name = MATERIAL_ALUMINIUM
 	lore_text = "A common metal, strong and flexible."
-	stack_type = /obj/item/stack/material/zinc
+	stack_type = /obj/item/stack/material/aluminium
 	icon_colour = "#5c5454"
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"

@@ -162,7 +162,7 @@ research holder datum.
 
 /datum/tech/bluespace
 	name = "'Pocket Space' Technology"
-	desc = "The various technologies related to"
+	desc = "The various technologies related to Pocket Space."
 	id = TECH_BLUESPACE
 
 /datum/tech/biotech

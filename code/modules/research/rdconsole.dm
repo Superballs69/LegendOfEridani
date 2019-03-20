@@ -69,10 +69,24 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 	switch(return_name)
 		if(MATERIAL_STEEL)
 			return_name = "Steel"
+		if(MATERIAL_TIN)
+			return_name = "Tin"
+		if(MATERIAL_ZINC)
+			return_name = "Zinc"
+		if(MATERIAL_BRASS)
+			return_name = "Brass"
+		if(MATERIAL_COPPER)
+			return_name = "Copper"
+		if(MATERIAL_BRONZE)
+			return_name = "Bronze"
+		if(MATERIAL_ALUMINIUM)
+			return_name = "Aluminium"
 		if(MATERIAL_GLASS)
 			return_name = "Glass"
 		if(MATERIAL_GOLD)
 			return_name = "Gold"
+		if(MATERIAL_LEAD)
+			return_name = "Lead"
 		if(MATERIAL_SILVER)
 			return_name = "Silver"
 		if(MATERIAL_PHORON)
@@ -81,6 +95,11 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 			return_name = "Uranium"
 		if(MATERIAL_DIAMOND)
 			return_name = "Diamond"
+		if(MATERIAL_TUNGSTEN)
+			return_name = "Tungsten"
+		if(MATERIAL_NIOBIUM)
+			return_name = "Niobium"
+
 	return return_name
 
 /obj/machinery/computer/rdconsole/proc/CallReagentName(var/reagent_type)

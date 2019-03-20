@@ -12,9 +12,8 @@
 
 	var/speed = 1
 	var/mat_efficiency = 1
-	var/list/materials = list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_DIAMOND = 0, MATERIAL_PHORON = 0, MATERIAL_URANIUM = 0)
-	var/res_max_amount = 200000
-
+	var/list/materials = list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_DIAMOND = 0, MATERIAL_PHORON = 0, MATERIAL_URANIUM = 0, MATERIAL_TIN = 0, MATERIAL_ZINC = 0, MATERIAL_TUNGSTEN = 0, MATERIAL_NIOBIUM = 0, MATERIAL_BRASS = 0, MATERIAL_COPPER = 0, MATERIAL_BRONZE = 0, MATERIAL_ALUMINIUM = 0, MATERIAL_LEAD= 0)
+	var/res_max_amount = 400000
 	var/datum/research/files
 	var/list/datum/design/queue = list()
 	var/progress = 0
@@ -316,6 +315,26 @@
 			mattype = /obj/item/stack/material/phoron
 		if(MATERIAL_URANIUM)
 			mattype = /obj/item/stack/material/uranium
+		if(MATERIAL_TIN)
+			mattype = /obj/item/stack/material/tin
+		if(MATERIAL_ZINC)
+			mattype = /obj/item/stack/material/zinc
+		if(MATERIAL_BRASS)
+			mattype = /obj/item/stack/material/brass
+		if(MATERIAL_COPPER)
+			mattype = /obj/item/stack/material/copper
+		if(MATERIAL_BRONZE)
+			mattype = /obj/item/stack/material/bronze
+		if(MATERIAL_ALUMINIUM)
+			mattype = /obj/item/stack/material/aluminium
+		if(MATERIAL_LEAD)
+			mattype = /obj/item/stack/material/lead
+		if(MATERIAL_TUNGSTEN)
+			mattype = /obj/item/stack/material/tungsten
+		if(MATERIAL_NIOBIUM)
+			mattype = /obj/item/stack/material/niobium
+
+
 		else
 			return
 	var/obj/item/stack/material/S = new mattype(loc)

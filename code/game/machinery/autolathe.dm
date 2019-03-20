@@ -11,8 +11,8 @@
 	clickvol = 30
 
 	var/list/machine_recipes
-	var/list/stored_material =  list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0)
-	var/list/storage_capacity = list(MATERIAL_STEEL = 0, MATERIAL_GLASS = 0)
+	var/list/stored_material =  list(MATERIAL_STEEL = 0, MATERIAL_COPPER = 0, MATERIAL_GLASS = 0)
+	var/list/storage_capacity = list(MATERIAL_STEEL = 0, MATERIAL_COPPER = 0, MATERIAL_GLASS = 0)
 	var/show_category = "All"
 
 	var/hacked = 0

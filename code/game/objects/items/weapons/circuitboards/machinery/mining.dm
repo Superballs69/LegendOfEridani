@@ -17,6 +17,16 @@
 		/obj/item/weapon/stock_parts/micro_laser = 2
 		)
 
+/obj/item/weapon/circuitboard/mining_reprocessor
+	name = T_BOARD("alloy processor")
+	build_path = /obj/machinery/mineral/reprocessing_unit
+	board_type = "machine"
+	origin_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+		/obj/item/weapon/stock_parts/manipulator = 1,
+		/obj/item/weapon/stock_parts/micro_laser = 2
+		)
+
 /obj/item/weapon/circuitboard/mining_unloader
 	name = T_BOARD("unloading machine")
 	build_path = /obj/machinery/mineral/unloading_machine
