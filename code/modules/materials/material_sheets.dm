@@ -523,3 +523,25 @@
 
 /obj/item/stack/material/bronze/fifty
 	amount = 50
+
+/obj/item/stack/material/brass
+	name = "brass"
+	icon_state = "sheet-brass"
+	default_type = MATERIAL_BRASS
+
+/obj/item/stack/material/brass/ten
+	amount = 10
+
+/obj/item/stack/material/brass/fifty
+	amount = 50
+
+/obj/item/stack/material/titanium
+	name = "titanium"
+	icon_state = "sheet-titanium"
+	default_type = MATERIAL_TITANIUM
+
+/obj/item/stack/material/titanium
+	amount = 10
+
+/obj/item/stack/material/titanium
+	amount = 50

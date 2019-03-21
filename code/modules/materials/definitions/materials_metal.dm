@@ -56,7 +56,7 @@
 	conductivity = 44
 	reflectivity = 0.3
 
-/material/gold/bronze //placeholder for ashtrays
+/material/bronze //placeholder for ashtrays
 	name = MATERIAL_BRONZE
 	lore_text = "An alloy of copper and tin."
 	icon_colour = "#edd12f"
@@ -182,7 +182,7 @@
 	sale_price = 2
 	ore_smelts_to = MATERIAL_PLASTEEL
 
-/material/plasteel/titanium
+/material/titanium
 	name = MATERIAL_TITANIUM
 	lore_text = "A light, strong, corrosion-resistant metal. Perfect for cladding high-velocity ballistic supply pods."
 	brute_armor = 10

@@ -1893,11 +1893,11 @@ CIRCUITS BELOW
 	build_path = /obj/item/weapon/circuitboard/mining_processor
 	sort_string = "HABAF"
 
-/datum/design/circuit/mining_reprocessor
+/datum/design/circuit/alloy_processor
 	name = "alloy processor board"
-	id = "mining_reprocessor"
+	id = "alloy_processor"
 	req_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/circuitboard/mining_reprocessor
+	build_path = /obj/item/weapon/circuitboard/alloy_processor
 	sort_string = "HABAG"
 
 /datum/design/circuit/mining_unloader

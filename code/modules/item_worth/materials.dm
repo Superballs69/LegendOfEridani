@@ -28,7 +28,7 @@
 /material/plasteel
 	value = 12
 
-/material/plasteel/titanium
+/material/titanium
 	value = 10
 
 /material/glass/reinforced
