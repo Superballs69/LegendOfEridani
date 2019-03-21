@@ -116,35 +116,35 @@
 	id = "ripley_torso"
 	build_path = /obj/item/mecha_parts/part/ripley_torso
 	time = 20
-	materials = list(MATERIAL_STEEL = 40000, MATERIAL_GLASS = 15000)
+	materials = list(MATERIAL_ALUMINIUM = 30000, MATERIAL_GLASS = 15000)
 
 /datum/design/item/mechfab/ripley/left_arm
 	name = "Ripley left arm"
 	id = "ripley_left_arm"
 	build_path = /obj/item/mecha_parts/part/ripley_left_arm
 	time = 15
-	materials = list(MATERIAL_STEEL = 25000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/ripley/right_arm
 	name = "Ripley right arm"
 	id = "ripley_right_arm"
 	build_path = /obj/item/mecha_parts/part/ripley_right_arm
 	time = 15
-	materials = list(MATERIAL_STEEL = 25000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/ripley/left_leg
 	name = "Ripley left leg"
 	id = "ripley_left_leg"
 	build_path = /obj/item/mecha_parts/part/ripley_left_leg
 	time = 15
-	materials = list(MATERIAL_STEEL = 30000)
+	materials = list(MATERIAL_ALUMINIUM = 20000)
 
 /datum/design/item/mechfab/ripley/right_leg
 	name = "Ripley right leg"
 	id = "ripley_right_leg"
 	build_path = /obj/item/mecha_parts/part/ripley_right_leg
 	time = 15
-	materials = list(MATERIAL_STEEL = 30000)
+	materials = list(MATERIAL_ALUMINIUM = 20000)
 
 /datum/design/item/mechfab/odysseus
 	category = "Odysseus"
@@ -154,21 +154,21 @@
 	id = "odysseus_chassis"
 	build_path = /obj/item/mecha_parts/chassis/odysseus
 	time = 10
-	materials = list(MATERIAL_STEEL = 20000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/odysseus/torso
 	name = "Odysseus torso"
 	id = "odysseus_torso"
 	build_path = /obj/item/mecha_parts/part/odysseus_torso
 	time = 18
-	materials = list(MATERIAL_STEEL = 25000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/odysseus/head
 	name = "Odysseus head"
 	id = "odysseus_head"
 	build_path = /obj/item/mecha_parts/part/odysseus_head
 	time = 10
-	materials = list(MATERIAL_STEEL = 2000, MATERIAL_GLASS = 10000)
+	materials = list(MATERIAL_ALUMINIUM = 2000, MATERIAL_GLASS = 10000)
 
 /datum/design/item/mechfab/odysseus/left_arm
 	name = "Odysseus left arm"
@@ -206,21 +206,21 @@
 	id = "gygax_chassis"
 	build_path = /obj/item/mecha_parts/chassis/gygax
 	time = 10
-	materials = list(MATERIAL_STEEL = 25000)
+	materials = list(MATERIAL_STEEL = 25000, MATERIAL_TUNGSTEN = 5000)
 
 /datum/design/item/mechfab/gygax/torso
 	name = "Gygax torso"
 	id = "gygax_torso"
 	build_path = /obj/item/mecha_parts/part/gygax_torso
 	time = 30
-	materials = list(MATERIAL_STEEL = 50000, MATERIAL_GLASS = 20000)
+	materials = list(MATERIAL_STEEL = 50000, MATERIAL_TUNGSTEN = 5000, MATERIAL_GLASS = 20000)
 
 /datum/design/item/mechfab/gygax/head
 	name = "Gygax head"
 	id = "gygax_head"
 	build_path = /obj/item/mecha_parts/part/gygax_head
 	time = 20
-	materials = list(MATERIAL_STEEL = 20000, MATERIAL_GLASS = 10000)
+	materials = list(MATERIAL_STEEL = 20000, MATERIAL_TUNGSTEN = 5000, MATERIAL_GLASS = 10000)
 
 /datum/design/item/mechfab/gygax/left_arm
 	name = "Gygax left arm"
@@ -319,7 +319,7 @@
 /datum/design/item/robot_upgrade
 	build_type = MECHFAB
 	time = 12
-	materials = list(MATERIAL_STEEL = 10000)
+	materials = list(MATERIAL_COPPER = 5000)
 	category = "Cyborg Upgrade Modules"
 
 /datum/design/item/robot_upgrade/rename
@@ -344,14 +344,14 @@
 	name = "Emergency restart module"
 	desc = "Used to force a restart of a disabled-but-repaired robot, bringing it back online."
 	id = "borg_restart_module"
-	materials = list(MATERIAL_STEEL = 60000, MATERIAL_GLASS = 5000)
+	materials = list(MATERIAL_COPPER  = 60000, MATERIAL_GLASS = 5000)
 	build_path = /obj/item/borg/upgrade/restart
 
 /datum/design/item/robot_upgrade/vtec
 	name = "VTEC module"
 	desc = "Used to kick in a robot's VTEC systems, increasing their speed."
 	id = "borg_vtec_module"
-	materials = list(MATERIAL_STEEL = 80000, MATERIAL_GLASS = 6000, MATERIAL_GOLD = 5000)
+	materials = list(MATERIAL_COPPER  = 20000, MATERIAL_GLASS = 6000, MATERIAL_COPPER = 5000)
 	build_path = /obj/item/borg/upgrade/vtec
 
 /datum/design/item/robot_upgrade/weaponcooler
@@ -387,7 +387,7 @@
 	name = "Exosuit tracking beacon"
 	build_type = MECHFAB
 	time = 5
-	materials = list(MATERIAL_STEEL = 500)
+	materials = list(MATERIAL_COPPER  = 500)
 	build_path = /obj/item/mecha_parts/mecha_tracking
 	category = "Misc"
 
@@ -438,7 +438,7 @@
 	id = "mech_syringe_gun"
 	build_path = /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun
 	time = 20
-	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 2000)
+	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 2000, MATERIAL_COPPER = 1500)
 
 /*
 /datum/design/item/mecha/syringe_gun
@@ -681,3 +681,204 @@
 	build_path = /obj/item/organ/internal/augment/active/simple/circuit
 	materials = list(DEFAULT_WALL_MATERIAL = 3000)
 	id = "augment_circuitry"
+
+// RIG Suits fabrication
+
+/datum/design/item/mechfab/rig
+	category = "RIG Fabrication"
+
+// Normal RIGs
+/datum/design/item/mechfab/rig/eva
+	name = "EVA RIG"
+	build_path = /obj/item/weapon/rig/eva
+	materials = list(DEFAULT_WALL_MATERIAL = 45000, "glass" = 7500, "copper" = 6000, "aluminium" = 10000)
+	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 6, TECH_POWER = 3, TECH_COMBAT = 1, TECH_MATERIAL = 3)
+	id = "eva_rig"
+
+/datum/design/item/mechfab/rig/industrial
+	name = "Industrial RIG"
+	build_path = /obj/item/weapon/rig/industrial
+	materials = list(DEFAULT_WALL_MATERIAL = 50000, "glass" = 7500, "copper" = 10000, "aluminium" = 15000)
+	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 6, TECH_POWER = 3, TECH_COMBAT = 1, TECH_MATERIAL = 5)
+	id = "industrial_rig"
+
+/datum/design/item/mechfab/rig/hazard
+	name = "Hazard RIG"
+	build_path = /obj/item/weapon/rig/hazard
+	materials = list(DEFAULT_WALL_MATERIAL = 50000, "glass" = 7500, "copper" = 10000, "aluminium" = 15000)
+	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 6, TECH_POWER = 4, TECH_COMBAT = 1, TECH_MATERIAL = 4)
+	id = "hazard_rig"
+
+/datum/design/item/mechfab/rig/medical
+	name = "Medical RIG"
+	build_path = /obj/item/weapon/rig/medical
+	materials = list(DEFAULT_WALL_MATERIAL = 50000, "glass" = 7500, "copper" = 10000, "aluminium" = 15000)
+	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 6, TECH_POWER = 3, TECH_COMBAT = 1, TECH_MATERIAL = 4, TECH_BIO = 2)
+	id = "medical_rig"
+
+/datum/design/item/mechfab/rig/combat
+	name = "Combat RIG"
+	build_path = /obj/item/weapon/rig/combat
+	materials = list(DEFAULT_WALL_MATERIAL = 60000, "glass" = 4000, "copper" = 10000, "tungsten" = 10000)
+	req_tech = list(TECH_MAGNET = 5, TECH_ENGINEERING = 6, TECH_POWER = 3, TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_BIO = 1)
+	id = "combat_rig"
+
+
+// Illegal RIGs
+/datum/design/item/mechfab/rig/light
+	name = "Light RIG"
+	build_path = /obj/item/weapon/rig/light
+	materials = list(DEFAULT_WALL_MATERIAL = 60000, "glass" = 4000, "copper" = 10000, "tungsten" = 10000)
+	req_tech = list(TECH_MAGNET = 5, TECH_ENGINEERING = 6, TECH_POWER = 3, TECH_COMBAT = 6, TECH_MATERIAL = 4, TECH_BIO = 1, TECH_ILLEGAL = 5)
+	id = "light_rig"
+
+
+
+// Rig Augments
+
+/datum/design/item/mechfab/rig/module
+	category = "RIG Modules"
+
+// Utility Modules
+
+/datum/design/item/mechfab/rig/module/healthscanner
+	name = "Health scanner module"
+	build_path = /obj/item/rig_module/device/healthscanner
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100)
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 3, TECH_ENGINEERING = 5)
+	id = "healthscanner"
+
+/datum/design/item/mechfab/rig/module/drill
+	name = "Hardsuit drill mount"
+	build_path = /obj/item/rig_module/device/drill
+	materials = list(DEFAULT_WALL_MATERIAL = 6000, "copper" = 1000)
+	req_tech = list(TECH_MATERIAL = 6, TECH_POWER = 4, TECH_ENGINEERING = 6)
+	id = "drill"
+
+/datum/design/item/mechfab/rig/module/anomaly_scanner
+	name = "Hardsuit anomaly scanner"
+	build_path = /obj/item/rig_module/device/anomaly_scanner
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_BLUESPACE = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 6)
+	id = "anomaly_scanner"
+
+/datum/design/item/mechfab/rig/module/orescanner
+	name = "Hardsuit ore scanner"
+	build_path = /obj/item/rig_module/device/orescanner
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100)
+	req_tech = list(TECH_MATERIAL = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 6)
+	id = "orescanner"
+
+/datum/design/item/mechfab/rig/module/chem_dispenser/injector
+	name = "Hardsuit chemical injector"
+	build_path = /obj/item/rig_module/chem_dispenser/injector
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "lead" = 2000)
+	req_tech = list(TECH_BIO = 4, TECH_MAGNET = 4, TECH_ENGINEERING = 6)
+	id = "chem_dispenser_injector"
+
+/datum/design/item/mechfab/rig/module/maneuvering_jets
+	name = "Hardsuit Maneuvering Jets"
+	build_path = /obj/item/rig_module/maneuvering_jets
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 500, "copper" = 2000, "aluminium" = 1000)
+	req_tech = list(TECH_MATERIAL = 6,  TECH_ENGINEERING = 7)
+	id = "maneuvering_jets"
+
+/datum/design/item/mechfab/rig/module/cooling_unit
+	name = "Hardsuit cooling Unit"
+	build_path = /obj/item/rig_module/cooling_unit
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 2, TECH_MATERIAL = 2, TECH_ENGINEERING = 5)
+	id = "cooling_unit"
+
+/datum/design/item/mechfab/rig/module/ai_container
+	name = "Hardsuit AI container"
+	build_path = /obj/item/rig_module/ai_container
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 2, TECH_MATERIAL = 2, TECH_ENGINEERING = 5)
+	id = "ai_container"
+
+
+// Vision modules
+
+
+/datum/design/item/mechfab/rig/module/multi
+	name = "Hardsuit Visor"
+	build_path = /obj/item/rig_module/vision/multi
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 4, TECH_BIO = 4, TECH_ENGINEERING = 6)
+	id = "hardsuit_multi"
+
+/datum/design/item/mechfab/rig/module/meson
+	name = "Hardsuit Meson"
+	build_path = /obj/item/rig_module/vision/meson
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 2000, "copper" = 1000, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_meson"
+
+/datum/design/item/mechfab/rig/module/thermal
+	name = "Hardsuit Thermal vision"
+	build_path = /obj/item/rig_module/vision/thermal
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 2000, "copper" = 1000, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_thermal"
+
+/datum/design/item/mechfab/rig/module/nvg
+	name = "Hardsuit Night Vision"
+	build_path = /obj/item/rig_module/vision/nvg
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 2000, "copper" = 1000, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 6, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_nvg"
+
+/datum/design/item/mechfab/rig/module/medhud
+	name = "Hardsuit Medical HUD"
+	build_path = /obj/item/rig_module/vision/medhud
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_medhud"
+
+/datum/design/item/mechfab/rig/module/sechud
+	name = "Hardsuit Security HUD"
+	build_path = /obj/item/rig_module/vision/sechud
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "glass" = 500, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 3, TECH_BIO = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_sechud"
+
+// Combat modules
+
+/datum/design/item/mechfab/rig/module/flash
+	name = "Hardsuit mounted Flash"
+	build_path = /obj/item/rig_module/device/flash
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 5000, "copper" = 100, "aluminium" = 1000)
+	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 2, TECH_ENGINEERING = 5)
+	id = "hardsuit_flash"
+
+/datum/design/item/mechfab/rig/module/mounted
+	name = "Hardsuit mounted Energy Cannon"
+	build_path = /obj/item/rig_module/mounted
+	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 5000, "copper" = 100, "aluminium" = 1000, "gold" = 2000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)
+	id = "hardsuit_ecannon"
+
+/datum/design/item/mechfab/rig/module/egun
+	name = "Hardsuit mounted Energy Gun"
+	build_path = /obj/item/rig_module/mounted/egun
+	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 5000, "copper" = 100, "aluminium" = 1000, "gold" = 2000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)
+	id = "hardsuit_egun"
+
+/datum/design/item/mechfab/rig/module/taser
+	name = "Hardsuit Mounted Taser"
+	build_path = /obj/item/rig_module/mounted/taser
+	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 5000, "copper" = 100, "aluminium" = 1000, "silver" = 2000)
+	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
+	id = "hardsuit_etaser"
+
+/datum/design/item/mechfab/rig/module/plasmacutter
+	name = "Hardsuit mounted Plasma Cutter"
+	build_path = /obj/item/rig_module/mounted/plasmacutter
+	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 5000, "copper" = 100, "aluminium" = 1000, "phoron" = 4000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)
+	id = "hardsuit_plasmacutter"
+
+
+// Illegal stuff will be here

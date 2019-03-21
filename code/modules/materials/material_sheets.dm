@@ -346,6 +346,8 @@
 	. = ..()
 	if(material) color = material.icon_colour
 
+// New mat
+
 /obj/item/stack/material/tin
 	name = "tin"
 	icon_state = "sheet-tin"
@@ -355,6 +357,28 @@
 	amount = 10
 
 /obj/item/stack/material/tin/fifty
+	amount = 50
+
+/obj/item/stack/material/lead
+	name = "tin"
+	icon_state = "sheet-lead"
+	default_type = MATERIAL_LEAD
+
+/obj/item/stack/material/lead/ten
+	amount = 10
+
+/obj/item/stack/material/lead/fifty
+	amount = 50
+
+/obj/item/stack/material/aluminium
+	name = "aluminium"
+	icon_state = "sheet-aluminium"
+	default_type = MATERIAL_ALUMINIUM
+
+/obj/item/stack/material/aluminium/ten
+	amount = 10
+
+/obj/item/stack/material/aluminium/fifty
 	amount = 50
 
 /obj/item/stack/material/zinc

@@ -644,3 +644,10 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	name = "plunger"
 	path = /obj/item/clothing/mask/plunger
 	category = "General"
+
+// New stuff
+
+/datum/autolathe/recipe/cable_coil
+	name = "Cable coil"
+	path = /obj/item/stack/cable_coil
+	category = "Tools"

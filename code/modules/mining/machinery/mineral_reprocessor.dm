@@ -14,11 +14,12 @@
 	var/list/ores_stored
 	var/report_all_ores
 	var/active = FALSE
+	var/list/stacks
 
 /obj/machinery/mineral/reprocessing_unit/New()
 	..()
 	component_parts = list(
-		new /obj/item/weapon/circuitboard/mining_processor(src),
+		new /obj/item/weapon/circuitboard/mining_reprocessor(src),
 		new /obj/item/weapon/stock_parts/manipulator(src),
 		new /obj/item/weapon/stock_parts/micro_laser(src),
 		new /obj/item/weapon/stock_parts/micro_laser(src)
@@ -27,6 +28,7 @@
 /obj/machinery/mineral/reprocessing_unit/Initialize()
 	ores_processing = list()
 	ores_stored = list()
+	stacks = list()
 	for(var/orename in SSmaterials.processable_ores)
 		ores_processing[orename] = 0
 		ores_stored[orename] = 0
@@ -71,12 +73,10 @@
 					result = min(sheets_per_tick - sheets, Floor(ores_processing[metal] / M.units_per_sheet))
 					ores_processing[metal] -= result * M.units_per_sheet
 					result = -(result)
-
-		/*	Something for sheets to be released if the player don't plan on alloying them.
-
+		//	Something for sheets to be released if the player don't plan on alloying them.
 			else if(ore_mode == ORE_RELEASE)
-					result = new /obj/item/weapon/ore(output_turf)
-		*/
+				result = attempt_release(M, sheets_per_tick - sheets)
+
 			sheets += abs(result)
 			while(result < 0)
 				new /obj/item/weapon/ore(output_turf, MATERIAL_WASTE)
@@ -111,6 +111,17 @@
 					break
 
 
+/obj/machinery/mineral/reprocessing_unit/proc/attempt_release(var/material/metal, var/max_result)
+	. = Clamp(Floor(ores_stored[metal.name]/metal.units_per_sheet),1,max_result)
+	ores_stored[metal.name] -= . * metal.units_per_sheet
+	var/material/M = SSmaterials.get_material_by_name(metal.ore_smelts_to)
+	if(istype(M))
+		M.place_sheet(output_turf, .)
+	else
+		. = -(.)
+
+
+
 /obj/machinery/mineral/reprocessing_unit/get_console_data()
 	. = ..() + "<h1>Alloy Processing</h1>"
 	var/result = ""
@@ -126,7 +137,7 @@
 				if(ORE_ALLOY)
 					status_string = "<font color='gray'>alloying</font>"
 				if(ORE_RELEASE)
-					status_string = "<font color='gray'>alloying</font>"
+					status_string = "<font color='gray'>releasing</font>"
 		else
 			status_string = "<font color='red'>not processing</font>"
 		result += "<tr><td>[line]</td><td><a href='?src=\ref[src];toggle_smelting=[ore]'>[status_string]</a></td></tr>"
@@ -138,11 +149,12 @@
 	if((. = ..()))
 		return
 	if(href_list["toggle_smelting"])
-		var/choice = input("What setting do you wish to use for processing [href_list["toggle_smelting"]]?") as null|anything in list("Alloying","Nothing")
+		var/choice = input("What setting do you wish to use for processing [href_list["toggle_smelting"]]?") as null|anything in list("Alloying","Releasing","Nothing")
 		if(!choice) return
 		switch(choice)
 			if("Nothing")     choice = ORE_DISABLED
 			if("Alloying")    choice = ORE_ALLOY
+			if("Releasing")	  choice = ORE_RELEASE
 		ores_processing[href_list["toggle_smelting"]] = choice
 		. = TRUE
 	else if(href_list["toggle_power"])
@@ -156,3 +168,4 @@
 
 #undef ORE_DISABLED
 #undef ORE_ALLOY
+#undef ORE_RELEASE
