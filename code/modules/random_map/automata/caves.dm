@@ -15,7 +15,16 @@ GLOBAL_LIST_INIT(weighted_minerals_sparse, \
 		MATERIAL_PHOSPHORITE =  3, \
 		MATERIAL_ROCK_SALT =    3, \
 		MATERIAL_POTASH =       3, \
-		MATERIAL_BAUXITE =      3  \
+		MATERIAL_BAUXITE =     35, \
+		MATERIAL_CASSETERITE = 35, \
+		MATERIAL_MALACHITE =   35, \
+		MATERIAL_GALENA =       8, \
+		MATERIAL_SPHALERITE =   8, \
+		MATERIAL_SULFUR  =     10, \
+		MATERIAL_RUTILE =       5, \
+		MATERIAL_WOLFRAMITE =   5, \
+		MATERIAL_PYROCHLORE =   5  \
+
 	))
 
 GLOBAL_LIST_INIT(weighted_minerals_rich, \
@@ -35,7 +44,15 @@ GLOBAL_LIST_INIT(weighted_minerals_rich, \
 		MATERIAL_PHOSPHORITE =  1, \
 		MATERIAL_ROCK_SALT =    1, \
 		MATERIAL_POTASH =       1, \
-		MATERIAL_BAUXITE =      1  \
+		MATERIAL_BAUXITE =      1, \
+		MATERIAL_CASSETERITE = 20, \
+		MATERIAL_MALACHITE =   20, \
+		MATERIAL_GALENA =      10, \
+		MATERIAL_SPHALERITE =  10, \
+		MATERIAL_SULFUR =      20, \
+		MATERIAL_RUTILE =       5, \
+		MATERIAL_WOLFRAMITE =   5, \
+		MATERIAL_PYROCHLORE =   5  \
 	))
 
 /datum/random_map/automata/cave_system
