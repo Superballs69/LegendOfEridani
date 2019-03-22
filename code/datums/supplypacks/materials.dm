@@ -23,6 +23,12 @@
 	cost = 10
 	containername = "glass sheets crate"
 
+/decl/hierarchy/supply_pack/materials/copper50
+	name = "50 copper sheets"
+	contains = list(/obj/item/stack/material/copper/fifty)
+	cost = 10
+	containername = "copper sheets crate"
+
 /decl/hierarchy/supply_pack/materials/wood50
 	name = "50 wooden planks"
 	contains = list(/obj/item/stack/material/wood/fifty)
@@ -41,6 +47,19 @@
 	cost = 20
 	containername = "marble slabs crate"
 
+/decl/hierarchy/supply_pack/materials/aluminium50
+	name = "50 aluminium sheets"
+	contains = list(/obj/item/stack/material/aluminium/fifty)
+	cost = 20
+	containername = "aluminium sheets crate"
+
+/decl/hierarchy/supply_pack/materials/tin50
+	name = "50 tin sheets"
+	contains = list(/obj/item/stack/material/tin/fifty)
+	cost = 20
+	containername = "tin sheets crate"
+
+
 /decl/hierarchy/supply_pack/materials/plasteel50
 	name = "50 plasteel sheets"
 	contains = list(/obj/item/stack/material/plasteel/fifty)
@@ -52,6 +71,7 @@
 	contains = list(/obj/item/stack/material/ocp/fifty)
 	cost = 20
 	containername = "osmium carbide plasteel sheets crate"
+
 
 // Material sheets (10 - Smaller amounts, less cost efficient)
 /decl/hierarchy/supply_pack/materials/marble10
@@ -78,6 +98,18 @@
 	cost = 20 // When sold yields 67 points.
 	containername = "phoron sheets crate"
 
+/decl/hierarchy/supply_pack/materials/lead10
+	name = "10 lead sheets"
+	contains = list(/obj/item/stack/material/lead/ten)
+	cost = 20
+	containername = "lead sheets crate"
+
+/decl/hierarchy/supply_pack/materials/zinc10
+	name = "10 zinc sheets"
+	contains = list(/obj/item/stack/material/zinc/ten)
+	cost = 20
+	containername = "zinc sheets crate"
+
 /decl/hierarchy/supply_pack/materials/gold10
 	name = "10 gold sheets"
 	contains = list(/obj/item/stack/material/gold/ten)
@@ -101,3 +133,4 @@
 	contains = list(/obj/item/stack/material/diamond/ten)
 	cost = 20
 	containername = "diamond sheets crate"
+

@@ -7,5 +7,13 @@
 	name_language = LANGUAGE_EAL
 	additional_langs = list(LANGUAGE_GALCOM)
 
+/decl/cultural_info/culture/vdpr
+	name = CULTURE_VDPR
+	description = "Valem Democratic People's Republic citizens are a significant chunk of the galaxy's workers synthetic citizen, being mostly composed of \
+	either cyborgs or sentient IPCs. They constitute a major workforce anywhere."
+	language = LANGUAGE_EAL
+	name_language = LANGUAGE_EAL
+	additional_langs = list(LANGUAGE_GALCOM)
+
 /decl/cultural_info/culture/ipc/sanitize_name(var/new_name)
 	return sanitizeName(new_name, allow_numbers = 1)

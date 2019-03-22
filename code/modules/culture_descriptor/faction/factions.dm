@@ -42,6 +42,14 @@
 	economic_power = 1.2
 	subversive_potential = 15
 
+/decl/cultural_info/faction/remote/syndicate
+	name = FACTION_SYNDICATE
+	description = "The Corporate Syndicalist Union, commonly referred to as the CSU or the Syndicate, has been created by an union of many corporations \
+	in a response of NanoTrasen's rapid growth. Since its creation, it has tried to compete with NanoTrasen in the field of Medical and Research, resulting \
+	in legal disputes and shady operations between the two factions."
+	economic_power = 1.1
+	subversive_potential = 30
+
 /decl/cultural_info/faction/remote/kdi
 	name = FACTION_KDI
 	description = "Kusanagi Defense Industries, or shortened to 'KDI' is the most powerful defense contractor in the galaxy. Originally an earth-based zaibatsu, the company \

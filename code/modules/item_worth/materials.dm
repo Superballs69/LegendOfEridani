@@ -69,3 +69,53 @@
 
 /material/leather
 	value = 3
+
+// Our new material goes here
+
+/material/bronze
+	value = 8
+
+/material/copper
+	value = 4
+
+/material/tin
+	value = 4
+
+/material/zinc
+	value = 6
+
+/material/lead
+	value = 4
+
+/material/aluminium
+	value = 5
+
+/material/tungsten
+	value = 70
+
+/material/niobium
+	value = 120
+
+/material/brass
+	value = 10
+
+/material/lsa
+	value = 30
+
+/material/alubronze
+	value = 15
+
+/material/plastinium
+	value = 50
+
+/material/titasteel
+	value = 60
+
+/material/rtsl
+	value = 200
+
+/material/tungsteel
+	value = 300
+
+/material/psteel
+	value = 500

@@ -42,7 +42,7 @@ var/list/weighted_mundaneevent_locations = list()
 	return null
 
 /datum/trade_destination/icarus
-	name = "NDV Icarus"
+	name = "PCS Icarus"
 	description = "Corvette assigned to patrol local space."
 	distance = 0.1
 	willing_to_buy = list()

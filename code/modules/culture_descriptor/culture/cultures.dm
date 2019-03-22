@@ -32,6 +32,12 @@
 	#undef NUM
 	#undef NAME
 
+/decl/cultural_info/culture/human/etf
+	name = CULTURE_HUMAN_ETF
+	description = "You are from the many cities and regions of the Eridani Trade Federation. "
+	secondary_langs = list(LANGUAGE_SOL_COMMON)
+	economic_power = 1.2
+
 /decl/cultural_info/culture/human/martian
 	name = CULTURE_HUMAN_MARTIAN
 	description = "You are from the surface of Mars. (placeholder)"

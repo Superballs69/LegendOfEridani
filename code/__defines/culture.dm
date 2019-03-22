@@ -27,6 +27,7 @@
 #define FACTION_ERIDANI_FED     "Eridani Trade Federation"
 #define FACTION_PAN_ASIAN_UNION "Pan Asian Union"
 #define FACTION_NANOTRASEN      "NanoTrasen"
+#define FACTION_SYNDICATE	 	"Corporate Syndicate Union"
 #define FACTION_KDI             "Kusanagi Defense Industries"
 #define FACTION_FLOTILLA        "The Flotilla"
 #define FACTION_ISEC            "Interstellar Security"
@@ -56,6 +57,7 @@
 #define CULTURE_OTHER                "Other Culture"
 #define CULTURE_HUMAN                "Humankind"
 #define CULTURE_HUMAN_VATGROWN       "Nonborn"
+#define CULTURE_HUMAN_ETF			 "Eridanian"
 #define CULTURE_HUMAN_MARTIAN        "Martian"
 #define CULTURE_HUMAN_TERRAN         "Terran"
 #define CULTURE_HUMAN_LUNARIAN       "Lunarian"
@@ -122,8 +124,10 @@
 
 // IPC cultures.
 #define CULTURE_POSITRONICS    "Union Member"
+#define CULTURE_VDPR		   "VDPR Citizen"
 
 #define HOME_SYSTEM_ROOT       "Root"
+#define HOME_SYSTEM_VALEM	   "Valem"
 
 #define FACTION_POSITRONICS    "Positronic Union"
 #define FACTION_PYROCORP       "Pyro-Vernand Manufacturing Corporation"
