@@ -1,10 +1,11 @@
 /decl/hierarchy/outfit/nanotrasen
 	hierarchy_type = /decl/hierarchy/outfit/nanotrasen
-	uniform = /obj/item/clothing/under/rank/centcom
+	uniform = /obj/item/clothing/under/rank/internalaffairs
 	shoes = /obj/item/clothing/shoes/laceup
 	gloves = /obj/item/clothing/gloves/white
 	l_ear = /obj/item/device/radio/headset/heads/hop
 	glasses = /obj/item/clothing/glasses/sunglasses
+	r_pocket = /obj/item/device/taperecorder
 
 	id_slot = slot_wear_id
 	id_type = /obj/item/weapon/card/id/centcom/station
@@ -12,34 +13,32 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/nanotrasen/representative
-	name = "Corporate Representative"
-	belt = /obj/item/weapon/clipboard
-	id_pda_assignment = "Corporate Representative"
+	name = "FCA Agent"
+	belt = /obj/item/weapon/gun/projectile/fiveseven
+	id_pda_assignment = "FCA Agent"
 
 /decl/hierarchy/outfit/nanotrasen/officer
-	name = "Corporate Officer"
-	head = /obj/item/clothing/head/beret/centcom/officer
+	name = "FCA - ICE Director"
+	head = /obj/item/clothing/head/beret/centcom/captain
 	l_ear = /obj/item/device/radio/headset/heads/captain
-	belt = /obj/item/weapon/gun/energy
-	id_pda_assignment = "Corporate Officer"
+	belt = /obj/item/weapon/gun/projectile/fiveseven
+	id_pda_assignment = "FCA - ICE Director"
 
 /decl/hierarchy/outfit/nanotrasen/captain
-	name = "Corporate Captain"
-	uniform = /obj/item/clothing/under/rank/centcom_captain
-	l_ear = /obj/item/device/radio/headset/heads/captain
-	head = /obj/item/clothing/head/beret/centcom/captain
-	belt = /obj/item/weapon/gun/energy
-	id_pda_assignment = "Corporate Captain"
+	name = "FCA - FIS Director"
+	l_ear = /obj/item/device/radio/headset/ert
+	head = /obj/item/clothing/head/beret/centcom/officer
+	id_type = /obj/item/weapon/card/id/centcom/ERT
+	belt = /obj/item/weapon/gun/projectile/fiveseven
+	id_pda_assignment = "FCA - FIS Director"
 
 /decl/hierarchy/outfit/nanotrasen/commander
-	name = "Corporate Commander"
-	head = /obj/item/clothing/head/centhat
+	name = "FCA Director"
+	head = /obj/item/clothing/head/beret/deathsquad
 	mask = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
 	shoes = /obj/item/clothing/shoes/swat
-	uniform = /obj/item/clothing/under/rank/centcom_captain
-	suit = /obj/item/clothing/suit/armor/bulletproof
-	gloves = /obj/item/clothing/gloves/thick/swat
-	l_ear =  /obj/item/device/radio/headset/heads/captain
-	glasses = /obj/item/clothing/glasses/eyepatch
+	l_ear =  /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/fiveseven
 	l_pocket = /obj/item/weapon/flame/lighter/zippo
-	id_pda_assignment = "Corporate Commander"
+	id_type = /obj/item/weapon/card/id/centcom/ERT
+	id_pda_assignment = "FCA Director"
