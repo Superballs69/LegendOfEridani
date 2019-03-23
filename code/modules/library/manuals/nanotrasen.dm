@@ -1,9 +1,9 @@
 /obj/item/weapon/book/manual/nt_regs
-	name = "Corporate Regulations"
+	name = "Ship Regulations"
 	desc = "A set of corporate guidelines for employees of a megacorporation."
 	icon_state = "booknanoregs"
 	author = "Employee Materials"
-	title = "Corporate Regulations"
+	title = "Ship Regulations"
 
 /obj/item/weapon/book/manual/nt_regs/New()
 	..()
@@ -11,7 +11,25 @@
 		<html><head>
 		</head>
 		<body>
-		<iframe width='100%' height='97%' src="[config.wikiurl]Corporate_Regulations&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
+		<iframe width='100%' height='97%' src="https://eridanistation.com/wiki/index.php/Station_Regulations" frameborder="0" id="main_frame"></iframe>
+		</body>
+		</html>
+		"}
+
+/obj/item/weapon/book/manual/sop_regs
+	name = "Ship Standard Operation Procedures"
+	desc = "A set of SOP for the Arcturus' crew."
+	icon_state = "bookfcasop"
+	author = "Employee Materials"
+	title = "Ship Standard Operation Procedures"
+
+/obj/item/weapon/book/manual/sop_regs/New()
+	..()
+	dat = {"
+		<html><head>
+		</head>
+		<body>
+		<iframe width='100%' height='97%' src="https://eridanistation.com/wiki/index.php/Standard_Operating_Procedures" frameborder="0" id="main_frame"></iframe>
 		</body>
 		</html>
 		"}
