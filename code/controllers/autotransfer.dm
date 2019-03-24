@@ -15,6 +15,8 @@ var/datum/controller/transfer_controller/transfer_controller
 	if (time_till_transfer_vote() <= 0)
 		SSvote.initiate_vote(/datum/vote/transfer, automatic = 1)
 		timerbuffer += config.vote_autotransfer_interval
+	if (round_duration_in_ticks >= config.shift_length)
+		init_autotransfer()
 
 /datum/controller/transfer_controller/proc/time_till_transfer_vote()
 	return timerbuffer - round_duration_in_ticks - (1 MINUTE)

@@ -28,6 +28,7 @@ var/list/gamemode_cache = list()
 	var/allow_admin_jump = 1			// allows admin jumping
 	var/allow_admin_spawning = 1		// allows admin item spawning
 	var/allow_admin_rev = 1				// allows admin revives
+	var/shift_length = 288000           // Length of in-game work-shift for hard auto-transfer (deciseconds, 8 hour default)
 	var/vote_delay = 6000				// minimum time between voting sessions (deciseconds, 10 minute default)
 	var/vote_period = 600				// length of voting period (deciseconds, default 1 minute)
 	var/vote_autotransfer_initial = 108000 // Length of time before the first autotransfer vote is called
@@ -369,7 +370,10 @@ var/list/gamemode_cache = list()
 
 				if ("allow_admin_spawning")
 					config.allow_admin_spawning = 1
-
+				
+				if ("shift_length")
+					config.shift_length = text2num(value)
+					
 				if ("no_dead_vote")
 					config.vote_no_dead = 1
 
