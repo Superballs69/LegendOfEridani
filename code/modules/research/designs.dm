@@ -910,7 +910,7 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/bluespace/AssembleDesignName()
 	..()
-	name = "Bluespace device ([item_name])"
+	name = "Pocket Space device ([item_name])"
 
 /datum/design/item/bluespace/beacon
 	name = "tracking beacon"
@@ -949,7 +949,7 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/bluespace/bag_holding
 	name = "Bag of Holding"
-	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
+	desc = "Using localized pockets of Pocket Space this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
 	id = "bag_holding"
 	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6)
 	materials = list(MATERIAL_GOLD = 3000, MATERIAL_DIAMOND = 1500, MATERIAL_URANIUM = 250)
@@ -1652,7 +1652,7 @@ other types of metals and chemistry for reagents).
 
 /datum/design/blutrash
 	name = "Trashbag of Holding"
-	desc = "An advanced trash bag with bluespace properties; capable of holding a plethora of garbage."
+	desc = "An advanced trash bag with Pocket Space properties; capable of holding a plethora of garbage."
 	id = "blutrash"
 	req_tech = list(TECH_BLUESPACE = 5, TECH_MATERIALS = 6)
 	materials = list(MATERIAL_GOLD = 1500, MATERIAL_URANIUM = 250, MATERIAL_PHORON = 1500)
