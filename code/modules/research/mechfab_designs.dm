@@ -116,35 +116,35 @@
 	id = "ripley_torso"
 	build_path = /obj/item/mecha_parts/part/ripley_torso
 	time = 20
-	materials = list(MATERIAL_ALUMINIUM = 30000, MATERIAL_GLASS = 15000)
+	materials = list(MATERIAL_STEEL = 30000, MATERIAL_GLASS = 15000)
 
 /datum/design/item/mechfab/ripley/left_arm
 	name = "Ripley left arm"
 	id = "ripley_left_arm"
 	build_path = /obj/item/mecha_parts/part/ripley_left_arm
 	time = 15
-	materials = list(MATERIAL_ALUMINIUM = 15000)
+	materials = list(MATERIAL_STEEL = 15000)
 
 /datum/design/item/mechfab/ripley/right_arm
 	name = "Ripley right arm"
 	id = "ripley_right_arm"
 	build_path = /obj/item/mecha_parts/part/ripley_right_arm
 	time = 15
-	materials = list(MATERIAL_ALUMINIUM = 15000)
+	materials = list(MATERIAL_STEEL = 15000)
 
 /datum/design/item/mechfab/ripley/left_leg
 	name = "Ripley left leg"
 	id = "ripley_left_leg"
 	build_path = /obj/item/mecha_parts/part/ripley_left_leg
 	time = 15
-	materials = list(MATERIAL_ALUMINIUM = 20000)
+	materials = list(MATERIAL_STEEL = 20000)
 
 /datum/design/item/mechfab/ripley/right_leg
 	name = "Ripley right leg"
 	id = "ripley_right_leg"
 	build_path = /obj/item/mecha_parts/part/ripley_right_leg
 	time = 15
-	materials = list(MATERIAL_ALUMINIUM = 20000)
+	materials = list(MATERIAL_STEEL = 20000)
 
 /datum/design/item/mechfab/odysseus
 	category = "Odysseus"
@@ -175,28 +175,28 @@
 	id = "odysseus_left_arm"
 	build_path = /obj/item/mecha_parts/part/odysseus_left_arm
 	time = 12
-	materials = list(MATERIAL_STEEL = 10000)
+	materials = list(MATERIAL_ALUMINIUM = 10000)
 
 /datum/design/item/mechfab/odysseus/right_arm
 	name = "Odysseus right arm"
 	id = "odysseus_right_arm"
 	build_path = /obj/item/mecha_parts/part/odysseus_right_arm
 	time = 12
-	materials = list(MATERIAL_STEEL = 10000)
+	materials = list(MATERIAL_ALUMINIUM = 10000)
 
 /datum/design/item/mechfab/odysseus/left_leg
 	name = "Odysseus left leg"
 	id = "odysseus_left_leg"
 	build_path = /obj/item/mecha_parts/part/odysseus_left_leg
 	time = 13
-	materials = list(MATERIAL_STEEL = 15000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/odysseus/right_leg
 	name = "Odysseus right leg"
 	id = "odysseus_right_leg"
 	build_path = /obj/item/mecha_parts/part/odysseus_right_leg
 	time = 13
-	materials = list(MATERIAL_STEEL = 15000)
+	materials = list(MATERIAL_ALUMINIUM = 15000)
 
 /datum/design/item/mechfab/gygax
 	category = "Gygax"
@@ -452,7 +452,7 @@
 	name = "Passenger compartment"
 	id = "mech_passenger"
 	build_path = /obj/item/mecha_parts/mecha_equipment/tool/passenger
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 5000)
+	materials = list(MATERIAL_ALUMINIUM = 5000, MATERIAL_GLASS = 5000)
 
 //obj/item/mecha_parts/mecha_equipment/repair_droid,
 //obj/item/mecha_parts/mecha_equipment/jetpack, //TODO MECHA JETPACK SPRITE MISSING
