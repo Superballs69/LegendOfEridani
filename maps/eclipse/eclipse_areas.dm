@@ -676,6 +676,10 @@
 
 // Engineering
 
+/area/engineering/deck
+	name = "\improper Engineering Second Deck"
+	icon_state = "atmos"
+
 /area/engineering/atmos/aux
 	name = "\improper Auxiliary Atmospherics"
 	icon_state = "atmos"
