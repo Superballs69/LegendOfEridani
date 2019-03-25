@@ -15,7 +15,7 @@
 	var/activation_sound = 'sound/effects/flashlight.ogg'
 	var/flashlight_max_bright = 0.5 //brightness of light when on, must be no greater than 1.
 	var/flashlight_inner_range = 1 //inner range of light when on, can be negative
-	var/flashlight_outer_range = 3 //outer range of light when on, can be negative
+	var/flashlight_outer_range = 4 //outer range of light when on, can be negative
 
 /obj/item/device/flashlight/Initialize()
 	. = ..()
@@ -114,7 +114,8 @@
 	icon_state = "biglight"
 	item_state = "biglight"
 	flashlight_max_bright = 0.75
-	flashlight_outer_range = 4
+	flashlight_inner_range = 1
+	flashlight_outer_range = 3
 
 /obj/item/device/flashlight/flashdark
 	name = "flashdark"
@@ -148,7 +149,8 @@
 	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 50)
 	hitsound = "swing_hit"
 	flashlight_max_bright = 0.5
-	flashlight_outer_range = 5
+	flashlight_inner_range = 4.3
+	flashlight_outer_range = 8
 /******************************Lantern*******************************/
 /obj/item/device/flashlight/lantern
 	name = "lantern"
@@ -162,6 +164,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	matter = list(MATERIAL_STEEL = 200,MATERIAL_GLASS = 100)
+	flashlight_inner_range = 2
 	flashlight_outer_range = 5
 
 /obj/item/device/flashlight/lantern/on_update_icon()
@@ -231,7 +234,7 @@
 
 	flashlight_max_bright = 0.8
 	flashlight_inner_range = 0.1
-	flashlight_outer_range = 5
+	flashlight_outer_range = 9
 
 /obj/item/device/flashlight/flare/Initialize()
 	. = ..()
@@ -404,8 +407,8 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 
 	flashlight_max_bright = 1
-	flashlight_inner_range = 3
-	flashlight_outer_range = 7
+	flashlight_inner_range = 5
+	flashlight_outer_range = 11
 
 
 /obj/item/device/flashlight/floodlamp/verb/rotate()

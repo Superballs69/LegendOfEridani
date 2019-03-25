@@ -1292,6 +1292,10 @@
 	name = "\improper Engine Monitoring Room"
 	icon_state = "engine_monitoring"
 
+/area/engineering/engine_breakroom
+	name = "\improper Engine Break Room"
+	icon_state = "engine_monitoring"
+
 /area/engineering/engine_smes
 	name = "\improper Engineering SMES"
 	icon_state = "engine_smes"

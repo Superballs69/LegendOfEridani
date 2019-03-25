@@ -12,8 +12,8 @@
 	var/open = 0
 
 	var/l_max_bright = 0.8 //brightness of light when on, can be negative
-	var/l_inner_range = 1 //inner range of light when on, can be negative
-	var/l_outer_range = 6 //outer range of light when on, can be negative
+	var/l_inner_range = 4 //inner range of light when on, can be negative
+	var/l_outer_range = 8 //outer range of light when on, can be negative
 
 /obj/machinery/floodlight/New()
 	cell = new/obj/item/weapon/cell/crap(src)
