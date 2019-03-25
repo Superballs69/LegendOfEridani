@@ -12,7 +12,7 @@
 #define LANGUAGE_CULT           "Cult"
 #define LANGUAGE_SIGN           "Sign Language"
 #define LANGUAGE_FRONTIER_BASIC "Frontier Basic"
-#define LANGUAGE_NABBER         "Serpentid"
+#define LANGUAGE_NABBER         "Roakkiti"
 #define LANGUAGE_SPACER         "Spacer"
 #define LANGUAGE_ALIUM          "Alium"
 #define LANGUAGE_OCCULT         "Occult"

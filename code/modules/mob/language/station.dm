@@ -109,7 +109,7 @@
 		"ver", "was", "wit", "you", "ain", "ais", "ait", "ans", "ant", "ati", "ava", "ave", "cha", "che", "com",
 		"con", "dan", "des", "ell", "eme", "ent", "ent", "est", "eur", "eux", "fai", "ien", "ion", "ire", "les",
 		"lle", "lus", "mai", "men", "men", "mme", "nte", "omm", "ont", "our", "ous", "out", "ouv", "par", "pas",
-		"plu", "pou", "que", "res", "son", "sur", "tai", "tio", "tou", "tre", "une", "ure", "ver", "vou", "éta",
+		"plu", "pou", "que", "res", "son", "sur", "tai", "tio", "tou", "tre", "une", "ure", "ver", "vou", "ï¿½ta",
 		"abe", "ach", "and", "auf", "aus", "ben", "ber", "che", "cht", "das", "den", "der", "die", "ein", "eit",
 		"end", "ere", "ers", "ese", "gen", "hen", "ich", "ige", "ine", "ist", "lic", "lle", "men", "mit", "nde",
 		"nen", "nge", "nic", "nte", "ren", "sch", "sei", "sen", "sic", "sie", "ste", "ten", "ter", "und", "und",
@@ -175,9 +175,9 @@
 		"me", "nd", "ne", "ng", "nt", "on", "or", "ou", "re", "se", "st", "te", "th", "ti", "to", "ve", "wa",
 		"an", "ar", "de", "ed", "eg", "el", "en", "er", "et", "fo", "ge", "ha", "ig", "ik", "il", "in", "je",
 		"ke", "kk", "le", "li", "me", "ne", "ng", "nn", "og", "om", "or", "re", "se", "st", "te", "ti", "tt",
-		"ve", "ad", "an", "ar", "at", "ch", "de", "en", "er", "et", "fö", "ge", "ha", "ig", "in", "ka", "la",
+		"ve", "ad", "an", "ar", "at", "ch", "de", "en", "er", "et", "fï¿½", "ge", "ha", "ig", "in", "ka", "la",
 		"li", "ll", "me", "na", "nd", "ng", "oc", "om", "or", "ra", "re", "sk", "st", "ta", "te", "ti", "tt",
-		"va", "är", "ör", "ai", "an", "ar", "au", "ce", "ch", "co", "de", "em", "en", "er", "es", "et", "eu",
+		"va", "ï¿½r", "ï¿½r", "ai", "an", "ar", "au", "ce", "ch", "co", "de", "em", "en", "er", "es", "et", "eu",
 		"ie", "il", "in", "is", "it", "la", "le", "ma", "me", "ne", "ns", "nt", "on", "ou", "pa", "qu", "ra",
 		"re", "se", "te", "ti", "tr", "ue", "un", "ur", "us", "ve",
 		"all", "and", "are", "but", "ent", "era", "ere", "eve", "for", "had", "hat", "hen", "her", "hin", "his",
@@ -185,13 +185,13 @@
 		"was", "wit", "you", "all", "ans", "are", "dde", "den", "der", "det", "ell", "end", "ene", "enn", "ent",
 		"ere", "ett", "for", "gen", "had", "han", "hen", "ikk", "ing", "itt", "jeg", "kan", "kke", "ler", "lig",
 		"lle", "med", "men", "mme", "nde", "nge", "nne", "ren", "som", "ste", "ten", "ten", "ter", "til", "tte",
-		"var", "ver", "vis", "ade", "all", "and", "ans", "ara", "att", "den", "der", "det", "era", "ett", "för",
+		"var", "ver", "vis", "ade", "all", "and", "ans", "ara", "att", "den", "der", "det", "era", "ett", "fï¿½r",
 		"gen", "han", "ill", "ing", "int", "jag", "kan", "lig", "lla", "lle", "med", "men", "nde", "nge", "nin",
 		"nne", "nte", "och", "sam", "som", "sta", "ste", "ter", "til", "tta", "var", "ver", "ain", "ais", "ait",
 		"ans", "ant", "ati", "ava", "ave", "cha", "che", "com", "con", "dan", "des", "ell", "eme", "ent", "est",
 		"eur", "eux", "fai", "ien", "ion", "ire", "les", "lle", "lus", "mai", "men", "mme", "nte", "omm", "ont",
 		"our", "ous", "out", "ouv", "par", "pas", "plu", "pou", "que", "res", "son", "sur", "tai", "tio", "tou",
-		"tre", "une", "ure", "ver", "vou", "éta"
+		"tre", "une", "ure", "ver", "vou", "ï¿½ta"
 		)
 
 /datum/language/union
@@ -258,12 +258,19 @@
 
 /datum/language/nabber
 	name = LANGUAGE_NABBER
-	desc = "A strange language that can be understood both by the sounds made and by the movement needed to create those sounds."
-	signlang_verb = list("chitters", "grinds its mouthparts", "chitters and grinds its mouthparts")
+	desc = "A harsh, buzzing language native to the Ziantu. Without their specific anatomy, Roakkiti is impossible to learn or speak. \
+	The sentences consist of long drawn out buzzes interlaced into one another, and are often accompanied by head tilts or wobbles to show confusion or aggression."
 	key = "n"
-	flags = WHITELISTED | SIGNLANG | NO_STUTTER | NONVERBAL
+	flags = WHITELISTED 
 	colour = ".nabber_lang"
 	shorthand = "SD"
+	speech_verb = "buzzes"
+	ask_verb = "hums"
+	exclaim_verb = "screeches"
+	syllables = list("vii", "zkrik", "zek", "zet", "vit", "zkiv", "viza", "uta", "azat",
+	"ozor", "vizzut", "kraz", "kozoar", "trizu", "zkree", "azork", "vezz", "kikik", "ruzz",
+	"rik", "razar", "chuz", "zuch", "viniri", "chivik", "kich", "oroch", "vazch", "kiruch", "riz")
+	space_chance = 0
 
 /datum/language/nabber/get_random_name(var/gender)
 	if(gender == FEMALE)

@@ -1,12 +1,11 @@
 /datum/species/nabber
 	name = SPECIES_NABBER
-	name_plural = "giant armoured serpentids"
-	description = "A species of large invertebrates who, after being discovered by a \
-	research company, were taught how to live and work with humans. Standing \
-	upwards of nine feet tall, these people have a tendency to terrify \
-	those who have not met them before and are rarely trusted by the \
-	average person. Even so, they do their jobs well and are thriving in this \
-	new environment."
+	name_plural = "Ziantu"
+	description = "A species of large snakelike people who, after being discovered by a \
+	research team, were taught how to live and work with other civilized species. Standing \
+    upwards of nine feet tall, these people have a tendency to terrify \
+    those who have not met them before, though they tend to have a curious disposition, \
+	and even so, they do their jobs well and are thriving in this new environment."
 	hidden_from_codex = FALSE
 
 	antaghud_offset_y = 8
@@ -20,8 +19,6 @@
 
 	warning_low_pressure = 50
 	hazard_low_pressure = -1
-
-	body_temperature = null
 
 	blood_color = "#525252"
 	flesh_color = "#525252"
@@ -61,7 +58,7 @@
 
 	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_BLOCK | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_FLAG_NEED_DIRECT_ABSORB
 	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL | HAS_BASE_SKIN_COLOURS
-	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_LACE
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_LACE
 
 	bump_flag = HEAVY
 	push_flags = ALLMOBS
@@ -77,8 +74,6 @@
 		BP_TRACH =    /obj/item/organ/internal/lungs/nabber,
 		BP_HEART =    /obj/item/organ/internal/heart/open,
 		BP_LIVER =    /obj/item/organ/internal/liver/nabber,
-		BP_PHORON =   /obj/item/organ/internal/phoron,
-		BP_ACETONE =  /obj/item/organ/internal/acetone,
 		BP_VOICE =    /obj/item/organ/internal/voicebox/nabber
 		)
 
@@ -101,7 +96,6 @@
 		BP_TRACH =   list(/obj/item/organ/internal/lungs/nabber,        40),
 		BP_HEART =   list(/obj/item/organ/internal/heart/open,          15),
 		BP_LIVER =   list(/obj/item/organ/internal/liver/nabber,        35),
-		BP_ACETONE = list(/obj/item/organ/internal/acetone,             50),
 		BP_HEAD    = list(/obj/item/organ/external/head/nabber,         90),
 		BP_GROIN    = list(/obj/item/organ/external/groin/nabber,   	90),
 		BP_L_ARM   = list(/obj/item/organ/external/arm/nabber,          75),
@@ -304,14 +298,14 @@
 		target.turf_collision(T, target.throw_speed / 2)
 	if(prob(50))
 		target.set_dir(GLOB.reverse_dir[target.dir])
-
+/*
 /datum/species/nabber/get_additional_examine_text(var/mob/living/carbon/human/H)
 	var/datum/gender/T = gender_datums[H.get_gender()]
 	if(H.pulling_punches)
 		return "\n[T.His] manipulation arms are out and [T.he] looks ready to use complex items."
 	else
 		return "\n<span class='warning'>[T.His] deadly upper arms are raised and [T.he] looks ready to attack!</span>"
-
+*/
 /datum/species/nabber/handle_post_spawn(var/mob/living/carbon/human/H)
 	..()
 	H.pulling_punches = TRUE
@@ -347,7 +341,7 @@
 		return 1
 	else
 		grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out, almost grabbing \the [target]!</span>")
-
+/*
 /datum/species/nabber/toggle_stance(var/mob/living/carbon/human/H)
 	if(H.incapacitated())
 		return FALSE
@@ -385,7 +379,7 @@
 		if(!hidden)
 			H.visible_message("<span class='warning'>[H] tenses as \he brings \his smaller arms in close to \his body. \His two massive spiked arms reach \
 			out. \He looks ready to attack.</span>")
-
+*/
 /datum/species/nabber/check_background(var/datum/job/job, var/datum/preferences/prefs)
 	var/decl/cultural_info/education/nabber/grade = SSculture.get_culture(prefs.cultural_info[TAG_EDUCATION])
 	. = istype(grade) ? (job.type in grade.valid_jobs) : ..()
