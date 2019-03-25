@@ -540,7 +540,7 @@
 		G.update_outputs()
 
 /obj/item/integrated_circuit/manipulation/bluespace_rift
-	name = "bluespace rift generator"
+	name = "wormhole rift generator"
 	desc = "This powerful circuit can open rifts to another realspace location through wormholes."
 	extended_desc = "If a valid teleporter console is supplied as input then its selected teleporter beacon will be used as destination point, \
 					and if not an undefined destination point is selected. \
