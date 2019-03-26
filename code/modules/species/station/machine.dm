@@ -4,7 +4,7 @@
 
 	description = "Positronic intelligence really took off in the 26th century, and it is not uncommon to see independant, free-willed \
 	robots on many human stations, particularly in fringe systems where standards are slightly lax and public opinion less relevant \
-	to corporate operations. IPCs (Integrated Positronic Chassis) are a loose category of self-willed robots with a humanoid form, \
+	to corporate operations. IPCs (Integrated Positronic Chassis) are a loose category of self-willed, or not, robots with a humanoid form, \
 	generally self-owned after being 'born' into servitude; they are reliable and dedicated workers, albeit more than slightly \
 	inhuman in outlook and perspective."
 	cyborg_noun = null
@@ -16,7 +16,7 @@
 	strength = STR_HIGH
 
 	min_age = 1
-	max_age = 90
+	max_age = 130
 
 	brute_mod = 1 // Because of the introduction of FBPs, IPCs are rebalanced back to 1.
 	burn_mod = 1  //
@@ -59,7 +59,9 @@
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			CULTURE_POSITRONICS,
-			CULTURE_VDPR
+			CULTURE_VDPR,
+			CULTURE_HUMAN_ETF,
+			CULTURE_HUMAN_OTHER
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_ROOT,
@@ -75,6 +77,7 @@
 			HOME_SYSTEM_MAYWORTH,
 			HOME_SYSTEM_NOVOROSSIYA,
 			HOME_SYSTEM_JULIUS,
+			HOME_SYSTEM_NEUE_BERLIN,
 			HOME_SYSTEM_OTHER
 		),
 		TAG_FACTION = list(

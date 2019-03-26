@@ -1426,8 +1426,10 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/computer_hardware/processor_unit/photonic/small
 	sort_string = "VBAFD"
 
-//RIG Modules
-//Sidenote; Try to keep a requirement of 5 engineering for each, but keep the rest as similiar to it's original as possible.
+// RIG modules
+// Those have been moved to the Mech Fabricator.
+
+/*
 /datum/design/item/rig/AssembleDesignName()
 	..()
 	name = "RIG module ([item_name])"
@@ -1612,6 +1614,8 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 3500, MATERIAL_PLASTIC = 2000)
 	build_path = /obj/item/rig_module/cooling_unit
 	sort_string = "WCLAB"
+
+*/
 
 /datum/design/item/integrated_printer
 	name = "Integrated Circuit Printer"

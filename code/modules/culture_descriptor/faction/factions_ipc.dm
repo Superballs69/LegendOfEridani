@@ -13,5 +13,5 @@
 	they are well respected manufacturers of high-caliber firearms. The corporation has seen constant backlash from states for rigging colonial elections, inciting \
 	violent coup d'etats and even far as slaving independent positronics and indebting humans to their prosthetics and microbioprocessors. Despite this, PyroCorp remains a strong player on the galactic market. \
 	Kusanagi Defense Industries is the only defense corporation that can stand-toe-toe with them."
-	subversive_potential = 15
+	subversive_potential = 60
 	language = list(LANGUAGE_EAL, LANGUAGE_GALCOM)

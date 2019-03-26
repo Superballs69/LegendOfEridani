@@ -650,6 +650,10 @@
 	name = "\improper Command - Captain's Office"
 	sound_env = MEDIUM_SOFTFLOOR
 
+/area/crew_quarters/heads/breakroom
+	name = "\improper Command - Rest Room"
+	sound_env = MEDIUM_SOFTFLOOR
+
 /area/crew_quarters/heads/office/hop
 	name = "\improper Command - Head of Personnel's Office"
 
