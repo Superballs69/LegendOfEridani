@@ -48,7 +48,6 @@
 /datum/gear/uniform/shorts
 
 /datum/gear/uniform/shorts/custom
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/uniform/turtleneck
 
