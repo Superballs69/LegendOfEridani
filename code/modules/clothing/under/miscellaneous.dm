@@ -730,4 +730,16 @@
 	item_state = "b_suit"
 	worn_state = "hop_proper"
 
+/obj/item/clothing/under/hos_proper
+	name = "CoS's uniform"
+	desc = "A proper navy uniform issued by the FCA for their ships' Chief of Security. Prefered with High boots."
+	icon_state = "hos_proper"
+	item_state = "b_suit"
+	worn_state = "hos_proper"
 
+/obj/item/clothing/under/warden_proper
+	name = "Warden's uniform"
+	desc = "A proper navy uniform issued by the FCA for their ships' wardens. Prefered with High boots."
+	icon_state = "warden_proper"
+	item_state = "b_suit"
+	worn_state = "warden_proper"

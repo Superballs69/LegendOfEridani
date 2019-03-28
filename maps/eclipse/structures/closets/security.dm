@@ -71,6 +71,12 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/device/taperecorder,
 		/obj/item/weapon/hand_labeler,
+		/obj/item/clothing/under/hos_proper,
+		/obj/item/clothing/accessory/storage/tunic/hos_proper,
+		/obj/item/clothing/shoes/highboots,
+		/obj/item/clothing/head/caphat/hos_formal,
+		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/jackboots,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -106,6 +112,12 @@
 		/obj/item/device/holowarrant,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/device/flashlight/maglight,
+		/obj/item/clothing/under/warden_proper,
+		/obj/item/clothing/accessory/storage/tunic/warden_proper,
+		/obj/item/clothing/shoes/highboots,
+		/obj/item/clothing/head/caphat/warden_formal,
+		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/jackboots,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)

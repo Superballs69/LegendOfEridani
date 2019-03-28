@@ -28,6 +28,7 @@
 		return
 	return ..()
 
+
 //Telescopic baton
 /obj/item/weapon/melee/telebaton
 	name = "telescopic baton"

@@ -10,12 +10,14 @@
 	l_hand = /obj/item/weapon/clipboard
 	id_type = /obj/item/weapon/card/id/cargo/head
 	pda_type = /obj/item/modular_computer/pda/cargo
+	head = /obj/item/clothing/head/hardhat/orange
 
 /decl/hierarchy/outfit/job/cargo/cargo_tech
 	name = OUTFIT_JOB_NAME("Cargo technician")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	id_type = /obj/item/weapon/card/id/cargo
 	pda_type = /obj/item/modular_computer/pda/cargo
+	head = /obj/item/clothing/head/hardhat/orange
 
 /decl/hierarchy/outfit/job/cargo/mining
 	name = OUTFIT_JOB_NAME("Shaft miner")

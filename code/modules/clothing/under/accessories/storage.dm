@@ -58,12 +58,24 @@
 	name = "Captain uniform's tunic"
 	desc = "A fashionable uniform provided by the FCA, for their captain, with extra medal slots."
 	icon_state = "tunic_captain"
-	slots = 3
+	slots = 4
 
 /obj/item/clothing/accessory/storage/tunic/hop_proper
 	name = "HoP uniform's tunic"
 	desc = "A fashionable uniform provided by the FCA, for their head of Personnel, with extra medal slots."
 	icon_state = "tunic_hop"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/hos_proper
+	name = "CoS uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their Chief of Security, with extra medal slots."
+	icon_state = "tunic_hos"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/warden_proper
+	name = "Warden uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their warden, with extra medal slots."
+	icon_state = "tunic_warden"
 	slots = 4
 
 /obj/item/clothing/accessory/storage/webbing_large

@@ -26,6 +26,7 @@
 		/obj/item/weapon/marshalling_wand,
 		/obj/item/weapon/marshalling_wand,
 		/obj/item/weapon/storage/belt/general,
+		/obj/item/clothing/head/hardhat/orange,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack = 75, /obj/item/weapon/storage/backpack/satchel/grey = 25)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/messenger = 75, /obj/item/weapon/storage/backpack/dufflebag = 25))
 	)
@@ -56,6 +57,7 @@
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/device/holowarrant,
+		/obj/item/clothing/head/hardhat/orange,
 		//obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/device/binoculars,
 		/obj/item/weapon/storage/belt/general,

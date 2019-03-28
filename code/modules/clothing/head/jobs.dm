@@ -43,6 +43,18 @@
 	desc = "A proper HoP hat, issued to any proper FCA ship's HoP."
 	icon_state = "hopcap_formal"
 
+// HoS
+
+/obj/item/clothing/head/caphat/hos_formal
+	name = "CoS's formal hat"
+	desc = "A proper CoS hat, issued to any proper FCA ship's CoS."
+	icon_state = "hoscap_formal"
+
+/obj/item/clothing/head/caphat/warden_formal
+	name = "warden's formal hat"
+	desc = "A proper warden hat, issued to any proper FCA ship's warden."
+	icon_state = "wardencap_formal"
+
 //Chaplain
 /obj/item/clothing/head/chaplain_hood
 	name = "chaplain's hood"

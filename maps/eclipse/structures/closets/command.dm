@@ -71,6 +71,7 @@
 		/obj/item/clothing/shoes/highboots,
 		/obj/item/clothing/head/caphat/hop_formal,
 		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/jackboots,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com)),
 		/obj/item/weapon/storage/box/imprinting
