@@ -27,11 +27,21 @@
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
 	icon_state = "officercap"
 
+/obj/item/clothing/head/caphat/proper
+	name = "Captain officer's hat"
+	desc = "A proper navy hat, issued to any proper FCA ship's captain."
+	icon_state = "officercap_navy"
+
 //HOP
 /obj/item/clothing/head/caphat/hop
 	name = "crew resource's hat"
 	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
 	icon_state = "hopcap"
+
+/obj/item/clothing/head/caphat/hop_formal
+	name = "HoP's formal hat"
+	desc = "A proper HoP hat, issued to any proper FCA ship's HoP."
+	icon_state = "hopcap_formal"
 
 //Chaplain
 /obj/item/clothing/head/chaplain_hood

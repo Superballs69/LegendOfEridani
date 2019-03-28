@@ -54,6 +54,18 @@
 	desc = "Sturdy mess of synthcotton belts and buckles, ready to share your burden."
 	icon_state = "webbing"
 
+/obj/item/clothing/accessory/storage/tunic/captain
+	name = "Captain uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their captain, with extra medal slots."
+	icon_state = "tunic_captain"
+	slots = 3
+
+/obj/item/clothing/accessory/storage/tunic/hop_proper
+	name = "HoP uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their head of Personnel, with extra medal slots."
+	icon_state = "tunic_hop"
+	slots = 4
+
 /obj/item/clothing/accessory/storage/webbing_large
 	name = "large webbing"
 	desc = "A large collection of synthcotton pockets and pouches."

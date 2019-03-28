@@ -74,6 +74,15 @@
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
+/obj/item/clothing/shoes/highboots
+	name = "high boots"
+	desc = "High boots, for High ranking officers."
+	icon_state = "highboots"
+	force = 3
+	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 00)
+	siemens_coefficient = 0.7
+	can_hold_knife = 1
+
 /obj/item/clothing/shoes/dress
 	name = "dress shoes"
 	desc = "The height of fashion, and they're pre-polished!"

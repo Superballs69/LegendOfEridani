@@ -28,6 +28,12 @@
 		/obj/item/weapon/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
+		/obj/item/clothing/accessory/storage/tunic/captain,
+		/obj/item/clothing/under/captainproper,
+		/obj/item/clothing/shoes/highboots,
+		/obj/item/clothing/head/caphat/proper,
+		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/jackboots,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com))
 	)
@@ -60,6 +66,11 @@
 		/obj/item/weapon/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
+		/obj/item/clothing/under/hop_proper,
+		/obj/item/clothing/accessory/storage/tunic/hop_proper,
+		/obj/item/clothing/shoes/highboots,
+		/obj/item/clothing/head/caphat/hop_formal,
+		/obj/item/clothing/gloves/white,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com)),
 		/obj/item/weapon/storage/box/imprinting

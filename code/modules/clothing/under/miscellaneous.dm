@@ -588,7 +588,7 @@
 	desc = "The uniform of Deimos Advanced Information Systems, an IT company."
 	icon_state = "dais"
 	worn_state = "dais"
-	
+
 /obj/item/clothing/under/mbill
 	name = "\improper Major Bill's uniform"
 	desc = "A uniform belonging to Major Bill's Transportation, a major shipping company."
@@ -713,3 +713,21 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+// Proper FCA-approved uniforms
+
+/obj/item/clothing/under/captainproper
+	name = "captain's uniform"
+	desc = "A proper navy uniform issued by the FCA for their ships' captains."
+	icon_state = "captain_proper"
+	item_state = "b_suit"
+	worn_state = "captain_proper"
+
+/obj/item/clothing/under/hop_proper
+	name = "HoP's uniform"
+	desc = "A proper navy uniform issued by the FCA for their ships' Head of Personnels. Prefered with High boots."
+	icon_state = "hop_proper"
+	item_state = "b_suit"
+	worn_state = "hop_proper"
+
+
