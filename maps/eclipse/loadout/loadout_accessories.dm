@@ -51,6 +51,10 @@
 
 /datum/gear/accessory/tie_color
 
+/datum/gear/accessory/tunics
+	allowed_roles = list(/datum/job/roboticist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/rd, /datum/job/labtech, /datum/job/doctor, /datum/job/senior_doctor,
+						/datum/job/cmo)
+
 /datum/gear/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
 
@@ -89,31 +93,25 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
-	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/clothing/scarf
-	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
 	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/clothing/vest
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/suspenders
 
 /datum/gear/clothing/wcoat
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/zhongshan
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/dashiki
 
 /datum/gear/clothing/thawb
 
 /datum/gear/clothing/sherwani
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/qipao
 

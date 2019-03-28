@@ -141,18 +141,18 @@
 	icon_state = "beret_purple"
 
 /obj/item/clothing/head/beret/centcom/officer
-	name = "FIS Director beret"
-	desc = "A navy blue beret adorned with the crest of the FCA, FIS Division. Mostly used for ceremonies or asserting dominance over terrorists."
+	name = "FDIS beret"
+	desc = "A navy blue beret adorned with the crest of the FCA, FDIS Division. Mostly used for ceremonies or asserting dominance over terrorists."
 	icon_state = "beret_corporate_navy"
 
 /obj/item/clothing/head/beret/centcom/captain
-	name = "ICE Director beret"
-	desc = "A white beret adorned with the crest of the FCA, ICE Divsion. Mostly used for ceremonies or asserting dominance over corporates."
+	name = "FDIS Squadron leader beret"
+	desc = "A white beret adorned with the crest of the FCA, FDIS Division. Mostly used for ceremonies or asserting dominance over fellow Squad mates."
 	icon_state = "beret_corporate_white"
 
 /obj/item/clothing/head/beret/deathsquad
-	name = "FCA Director beret"
-	desc = "An armored red beret adorned with the crest of the FCA Director's office. Used to assert dominance over anything within ETF space."
+	name = "FIS beret"
+	desc = "An armored red beret adorned with the crest of the FCA, FIS Main Division. Used to assert dominance when the FDIS can't do it."
 	icon_state = "beret_red"
 	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
 	siemens_coefficient = 0.9
@@ -166,3 +166,22 @@
 	name = "beret"
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
+
+// FCA Berets
+
+/obj/item/clothing/head/beret/centcom/fis_director
+	name = "FIS Director beret"
+	desc = "A navy blue beret adorned with the crest of the FCA, FIS Division. Mostly used for ceremonies or asserting dominance over terrorists."
+	icon_state = "beret_corporate_navy"
+
+/obj/item/clothing/head/beret/centcom/ice_director
+	name = "ICE Director beret"
+	desc = "A white beret adorned with the crest of the FCA, ICE Divsion. Mostly used for ceremonies or asserting dominance over corporates."
+	icon_state = "beret_corporate_white"
+
+/obj/item/clothing/head/beret/fca_director
+	name = "FCA Director beret"
+	desc = "An armored red beret adorned with the crest of the FCA Director's office. Used to assert dominance over anything within ETF space."
+	icon_state = "beret_red"
+	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
+	siemens_coefficient = 0.9

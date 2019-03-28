@@ -19,7 +19,7 @@
 
 /decl/hierarchy/outfit/nanotrasen/officer
 	name = "FCA - ICE Director"
-	head = /obj/item/clothing/head/beret/centcom/captain
+	head = /obj/item/clothing/head/beret/centcom/ice_director
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	id_pda_assignment = "FCA - ICE Director"
@@ -27,14 +27,14 @@
 /decl/hierarchy/outfit/nanotrasen/captain
 	name = "FCA - FIS Director"
 	l_ear = /obj/item/device/radio/headset/ert
-	head = /obj/item/clothing/head/beret/centcom/officer
+	head = /obj/item/clothing/head/beret/centcom/fis_director
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	id_pda_assignment = "FCA - FIS Director"
 
 /decl/hierarchy/outfit/nanotrasen/commander
 	name = "FCA Director"
-	head = /obj/item/clothing/head/beret/deathsquad
+	head = /obj/item/clothing/head/beret/fca_director
 	mask = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
 	shoes = /obj/item/clothing/shoes/swat
 	l_ear =  /obj/item/device/radio/headset/ert

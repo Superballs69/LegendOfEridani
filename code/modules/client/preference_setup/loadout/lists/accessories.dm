@@ -101,3 +101,17 @@
 	display_name = "Free Trade Union pin"
 	path = /obj/item/clothing/accessory/ftupin
 
+/datum/gear/accessory/tunics
+	display_name = "tunic selection"
+	path = /obj/item/clothing/accessory
+
+/datum/gear/accessory/tunics/New()
+	..()
+	var/tunics = list()
+	tunics["Research Tunic"] = /obj/item/clothing/accessory/tunic
+	tunics["NanoTrasen tunic"] = /obj/item/clothing/accessory/tunic/nanotrasen
+	tunics["Hephaestus Industries tunic"] = /obj/item/clothing/accessory/tunic/heph
+	tunics["executive tunic"] = /obj/item/clothing/accessory/tunic/exec
+	tunics["NanoTrasen executive tunic"] = /obj/item/clothing/accessory/tunic/exec/nanotrasen
+	tunics["Hephaestus Industries executive tunic"] = /obj/item/clothing/accessory/tunic/exec/heph
+	gear_tweaks += new/datum/gear_tweak/path(tunics)
