@@ -29,6 +29,7 @@
 		/datum/species/tajaran = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison),
+		/datum/species/nabber  = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison)
 	)
 #undef HUMAN_ONLY_JOBS
 

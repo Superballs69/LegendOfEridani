@@ -1,6 +1,6 @@
 /obj/item/organ/internal/voicebox/nabber
 	name = "vocal synthesiser"
-	assists_languages = list(LANGUAGE_GALCOM, LANGUAGE_LUNAR, LANGUAGE_GUTTER, LANGUAGE_SOL_COMMON, LANGUAGE_EAL, LANGUAGE_FRONTIER_BASIC, LANGUAGE_SPACER, LANGUAGE_UNION_STANDARD)
+	assists_languages = list(LANGUAGE_GALCOM,  LANGUAGE_LUNAR, LANGUAGE_GUTTER, LANGUAGE_SOL_COMMON, LANGUAGE_EAL, LANGUAGE_FRONTIER_BASIC, LANGUAGE_SPACER, LANGUAGE_UNION_STANDARD, LANGUAGE_NABBER)
 
 /obj/item/organ/internal/voicebox/nabber/Initialize()
 	. = ..()
@@ -131,8 +131,6 @@
 	gender = PLURAL
 	organ_tag = BP_TRACH
 	parent_organ = BP_GROIN
-
-	active_breathing = 0
 
 	min_breath_pressure = 30
 

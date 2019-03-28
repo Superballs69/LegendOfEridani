@@ -212,13 +212,13 @@
 
 	return FALSE
 
-
+/*
 /datum/species/nabber/can_shred(var/mob/living/carbon/human/H, var/ignore_intent, var/ignore_antag)
 	if(!H.handcuffed || H.buckled)
 		return ..(H, ignore_intent, TRUE)
 	else
 		return 0
-
+*/
 /datum/species/nabber/handle_movement_delay_special(var/mob/living/carbon/human/H)
 	var/tally = 0
 
@@ -230,7 +230,7 @@
 
 		tally += N.lowblood_tally * 2
 	return tally
-
+/*
 /obj/item/grab/nab/special
 	type_name = GRAB_NAB_SPECIAL
 	start_grab_name = NAB_AGGRESSIVE
@@ -298,6 +298,7 @@
 		target.turf_collision(T, target.throw_speed / 2)
 	if(prob(50))
 		target.set_dir(GLOB.reverse_dir[target.dir])
+*/
 /*
 /datum/species/nabber/get_additional_examine_text(var/mob/living/carbon/human/H)
 	var/datum/gender/T = gender_datums[H.get_gender()]
@@ -306,6 +307,7 @@
 	else
 		return "\n<span class='warning'>[T.His] deadly upper arms are raised and [T.he] looks ready to attack!</span>"
 */
+/*
 /datum/species/nabber/handle_post_spawn(var/mob/living/carbon/human/H)
 	..()
 	H.pulling_punches = TRUE
@@ -341,6 +343,7 @@
 		return 1
 	else
 		grabber.visible_message("<span class='danger'>\The [grabber] suddenly lunges out, almost grabbing \the [target]!</span>")
+*/
 /*
 /datum/species/nabber/toggle_stance(var/mob/living/carbon/human/H)
 	if(H.incapacitated())
