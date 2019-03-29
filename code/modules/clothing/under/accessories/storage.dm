@@ -80,22 +80,36 @@
 	icon_state = "tunic_warden"
 	slots = 4
 
+// FCA
+
 /obj/item/clothing/accessory/storage/tunic/ice_proper
 	name = "ICE Agent uniform's tunic"
 	desc = "A fashionable uniform provided by the FCA, for their ICE Agents, with extra medal slots."
 	icon_state = "tunic_ice"
 	slots = 4
 
-/obj/item/clothing/accessory/storage/tunic/fca_proper
-	name = "FCA Agent uniform's tunic"
-	desc = "A fashionable uniform provided by the FCA, for their Agents, with extra medal slots."
-	icon_state = "tunic_fca"
+/obj/item/clothing/accessory/storage/tunic/ice_director_proper
+	name = "ICE Director uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their ICE Director, with extra medal slots."
+	icon_state = "tunic_ice_director"
 	slots = 4
 
 /obj/item/clothing/accessory/storage/tunic/fis_proper
 	name = "FIS Agent uniform's tunic"
 	desc = "A fashionable uniform provided by the FCA, for their FIS Agents, with extra medal slots."
 	icon_state = "tunic_fis"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/fis_director_proper
+	name = "FIS Director uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their FIS Director, with extra medal slots."
+	icon_state = "tunic_fis_director"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/fca_proper
+	name = "FCA Agent uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their Agents, with extra medal slots."
+	icon_state = "tunic_fca"
 	slots = 4
 
 /obj/item/clothing/accessory/storage/tunic/director_proper
