@@ -45,6 +45,7 @@
 	name = OUTFIT_JOB_NAME("Forensic technician")
 	head = null
 	suit = /obj/item/clothing/suit/storage/forensics/blue
+	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/security/officer
 	name = OUTFIT_JOB_NAME("Security Officer")

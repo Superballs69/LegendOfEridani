@@ -714,6 +714,13 @@
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/under/weeb
+	name = "Weeb's uniform"
+	desc = "For the days you feel like indirectly punching someone multiple times."
+	icon_state = "weeb_costume"
+	item_state = "b_suit"
+	worn_state = "weeb_costume"
+
 // Proper FCA-approved uniforms
 
 /obj/item/clothing/under/captainproper

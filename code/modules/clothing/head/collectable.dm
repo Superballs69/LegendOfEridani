@@ -138,3 +138,8 @@
 	name = "collectable SWAT helmet"
 	desc = "Now you can be in the Deathsquad too!"
 	icon_state = "swat"
+
+/obj/item/clothing/head/collectable/weeb
+	name = "collectable weeb hat"
+	desc = "Hair-infused cap."
+	icon_state = "weeb_hat"

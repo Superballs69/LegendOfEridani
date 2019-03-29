@@ -85,6 +85,15 @@
 	cost = 20
 	containername = "wizard costume crate"
 
+/decl/hierarchy/supply_pack/nonessent/weeb
+	name = "Costume - Weeb"
+	contains = list(/obj/item/clothing/under/weeb,
+					/obj/item/clothing/suit/weeb,
+					/obj/item/clothing/shoes/laceup,
+					/obj/item/clothing/head/collectable/weeb)
+	cost = 30
+	containername = "weeb costume crate"
+
 /decl/hierarchy/supply_pack/nonessent/costume
 	num_contained = 2
 	contains = list(/obj/item/clothing/suit/pirate,

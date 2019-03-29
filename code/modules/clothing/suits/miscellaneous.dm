@@ -548,3 +548,10 @@
 	name = "unathi suit"
 	desc = "A Unathi suit made out of rubber."
 	icon_state = "lizsuit"
+
+/obj/item/clothing/suit/weeb
+	name = "Weeb Suit"
+	desc = "Good Grief."
+	icon_state = "weeb_suit"
+	item_state = "weeb_suit"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
