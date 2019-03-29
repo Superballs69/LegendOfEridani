@@ -54,6 +54,8 @@
 	desc = "Sturdy mess of synthcotton belts and buckles, ready to share your burden."
 	icon_state = "webbing"
 
+// The Formal Tunics
+
 /obj/item/clothing/accessory/storage/tunic/captain
 	name = "Captain uniform's tunic"
 	desc = "A fashionable uniform provided by the FCA, for their captain, with extra medal slots."
@@ -77,6 +79,32 @@
 	desc = "A fashionable uniform provided by the FCA, for their warden, with extra medal slots."
 	icon_state = "tunic_warden"
 	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/ice_proper
+	name = "ICE Agent uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their ICE Agents, with extra medal slots."
+	icon_state = "tunic_ice"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/fca_proper
+	name = "FCA Agent uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their Agents, with extra medal slots."
+	icon_state = "tunic_fca"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/fis_proper
+	name = "FIS Agent uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their FIS Agents, with extra medal slots."
+	icon_state = "tunic_fis"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/tunic/director_proper
+	name = "FCA Director uniform's tunic"
+	desc = "A fashionable uniform for the FCA Director, the one to rule them all."
+	icon_state = "tunic_director"
+	slots = 4
+
+// End of Tunics
 
 /obj/item/clothing/accessory/storage/webbing_large
 	name = "large webbing"

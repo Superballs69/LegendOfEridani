@@ -730,6 +730,13 @@
 	item_state = "b_suit"
 	worn_state = "captain_proper"
 
+/obj/item/clothing/under/fca_proper
+	name = "FCA's uniform"
+	desc = "A proper navy uniform issued by the FCA for their ships' various agents."
+	icon_state = "captain_proper"
+	item_state = "b_suit"
+	worn_state = "captain_proper"
+
 /obj/item/clothing/under/hop_proper
 	name = "HoP's uniform"
 	desc = "A proper navy uniform issued by the FCA for their ships' Head of Personnels. Prefered with High boots."

@@ -170,5 +170,10 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/clothing/under/ice,
 		/obj/item/clothing/under/ice/formal,
-		/obj/item/clothing/under/ice/light
+		/obj/item/clothing/under/ice/light,
+		/obj/item/clothing/under/fca_proper,
+		/obj/item/clothing/accessory/storage/tunic/ice_proper,
+		/obj/item/clothing/shoes/highboots,
+		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/jackboots
 		)

@@ -1,7 +1,7 @@
 /decl/hierarchy/outfit/nanotrasen
 	hierarchy_type = /decl/hierarchy/outfit/nanotrasen
-	uniform = /obj/item/clothing/under/rank/internalaffairs
-	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/fca_proper
+	shoes = /obj/item/clothing/shoes/highboots
 	gloves = /obj/item/clothing/gloves/white
 	l_ear = /obj/item/device/radio/headset/heads/hop
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -16,6 +16,7 @@
 	name = "FCA Agent"
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	id_pda_assignment = "FCA Agent"
+	l_hand = /obj/item/clothing/accessory/storage/tunic/fca_proper
 
 /decl/hierarchy/outfit/nanotrasen/officer
 	name = "FCA - ICE Director"
@@ -23,6 +24,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	id_pda_assignment = "FCA - ICE Director"
+	l_hand = /obj/item/clothing/accessory/storage/tunic/ice_proper
 
 /decl/hierarchy/outfit/nanotrasen/captain
 	name = "FCA - FIS Director"
@@ -31,14 +33,14 @@
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	id_pda_assignment = "FCA - FIS Director"
+	l_hand = /obj/item/clothing/accessory/storage/tunic/fis_proper
 
 /decl/hierarchy/outfit/nanotrasen/commander
 	name = "FCA Director"
 	head = /obj/item/clothing/head/beret/fca_director
-	mask = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
-	shoes = /obj/item/clothing/shoes/swat
 	l_ear =  /obj/item/device/radio/headset/ert
 	belt = /obj/item/weapon/gun/projectile/fiveseven
 	l_pocket = /obj/item/weapon/flame/lighter/zippo
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	id_pda_assignment = "FCA Director"
+	l_hand = /obj/item/clothing/accessory/storage/tunic/director_proper
