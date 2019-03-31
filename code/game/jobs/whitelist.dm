@@ -51,7 +51,7 @@ var/list/whitelist = list()
 				job_whitelist[row["ckey"]] = list(row["job"])
 	return 1
 
-/proc/is_job_whitelisted(mob/M, rank)
+/proc/is_job_whitelisted(mob/M, var/rank)
 	var/datum/job/job = job_master.GetJob(rank)
 	if(!job.whitelisted)
 		return 1
