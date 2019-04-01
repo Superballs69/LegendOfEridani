@@ -1,5 +1,10 @@
 #define WHITELISTFILE "data/whitelist.txt"
+/*
+ Species whitelist word is defined by the "display name"
+ Same for Jobs
 
+
+*/
 var/list/whitelist = list()
 
 /hook/startup/proc/loadWhitelist()
