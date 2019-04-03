@@ -1,5 +1,10 @@
 #define WHITELISTFILE "data/whitelist.txt"
+/*
+ Species whitelist word is defined by the "display name"
+ Same for Jobs
 
+
+*/
 var/list/whitelist = list()
 
 /hook/startup/proc/loadWhitelist()
@@ -51,7 +56,7 @@ var/list/whitelist = list()
 				job_whitelist[row["ckey"]] = list(row["job"])
 	return 1
 
-/proc/is_job_whitelisted(mob/M, rank)
+/proc/is_job_whitelisted(mob/M, var/rank)
 	var/datum/job/job = job_master.GetJob(rank)
 	if(!job.whitelisted)
 		return 1
