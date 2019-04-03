@@ -163,14 +163,20 @@ proc/get_radio_key_from_channel(var/channel)
 			return say_dead(message)
 		return
 
+	//parse the radio code and consume it
+	var/message_mode = parse_message_mode(message, "headset")
+
+/* -To be fixed.
+	message = sanitize(message)
+	message = process_chat_markup(message)
+*/
+
 	var/prefix = copytext(message,1,2)
 	if(prefix == get_prefix_key(/decl/prefix/custom_emote))
 		return emote(copytext(message,2))
 	if(prefix == get_prefix_key(/decl/prefix/visible_emote))
 		return custom_emote(1, copytext(message,2))
 
-	//parse the radio code and consume it
-	var/message_mode = parse_message_mode(message, "headset")
 	if (message_mode)
 		if (message_mode == "headset")
 			message = copytext(message,2)	//it would be really nice if the parse procs could do this for us.

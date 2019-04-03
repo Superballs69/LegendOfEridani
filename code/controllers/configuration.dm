@@ -224,6 +224,9 @@ var/list/gamemode_cache = list()
 
 	var/allow_ic_printing = TRUE //Whether players should be allowed to print IC circuits from scripts.
 
+	//Mark-up enabling
+	var/allow_chat_markup = 1
+
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
 	for (var/T in L)
@@ -721,6 +724,8 @@ var/list/gamemode_cache = list()
 				if("radiation_lower_limit")
 					radiation_lower_limit = text2num(value)
 
+				if("allow_chat_markup")
+					config.allow_chat_markup = 1
 
 				if("error_cooldown")
 					error_cooldown = text2num(value)

@@ -109,6 +109,7 @@
 
 /proc/sanitize_and_communicate(var/channel_type, var/communicator, var/message)
 	message = sanitize(message)
+	message = process_chat_markup(message)
 	return communicate(arglist(args))
 
 /proc/communicate(var/channel_type, var/communicator, var/message)
@@ -117,6 +118,8 @@
 
 	var/list/new_args = list(communicator, message)
 	new_args += args.Copy(4)
+
+	message = process_chat_markup(message)
 
 	return channel.communicate(arglist(new_args))
 
