@@ -91,7 +91,7 @@
 		..()
 
 /obj/item/weapon/shield/riot/metal
-	name = "plasteel combat shield"
+	name = "ballistic combat shield"
 	icon_state = "metal"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
@@ -200,3 +200,70 @@
 	else
 		set_light(0)
 
+
+// Extendable Shield
+
+/obj/item/weapon/shield/riot/extendable
+	name = "Great Firewall"
+	desc = "PyroCorp's 'Great Firewall' ballistic shield. Can be extended to provide additional protection."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "extshield0"
+	item_state = "extshield0"
+	force = 2
+	throwforce = 2
+	throw_speed = 3
+	throw_range = 4
+	w_class = ITEM_SIZE_HUGE
+	attack_verb = list("shoved", "bashed", "denied")
+	var/active = 0
+
+/obj/item/weapon/shield/riot/extendable/handle_shield(mob/user)
+	if(!active)
+		return 0 //turn it on first!
+	. = ..()
+
+	if(.)
+		if(.) playsound(user.loc, 'sound/weapons/Genhit.ogg', 50, 1)
+
+/obj/item/weapon/shield/riot/extendable/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
+	if(istype(damage_source, /obj/item/projectile))
+		var/obj/item/projectile/P = damage_source
+		if((is_sharp(P) && damage > 0) || istype(P, /obj/item/projectile/beam))
+			return (base_block_chance - round(damage / 3)) //block bullets and beams using the old block chance
+	return base_block_chance
+
+
+
+/obj/item/weapon/shield/riot/extendable/attack_self(mob/living/user)
+	active = !active
+	icon_state = "extshield[active]"
+	item_state = "extshield[active]"
+	playsound(src.loc, 'sound/weapons/empty.ogg', 50, 1)
+
+	if(active)
+		force = 1
+		throwforce = 1
+		throw_speed = 1
+		w_class = 4
+		base_block_chance = 200
+		slowdown_general = 9
+		armor = list(melee = 100)
+		to_chat(user, "<span class='notice'>You push the lever and extend \the [src]!</span>")
+	else
+		force = 5
+		throwforce = 3
+		throw_speed = 3
+		w_class = 3
+		slot_flags = 0
+		base_block_chance = 50
+		slowdown_general = 2
+		armor = list(melee = 30)
+		to_chat(user, "<span class='notice'>\The [src] folds inwards neatly as you pull the lever back.</span>")
+
+	if(istype(user,/mob/living/carbon/human))
+		var/mob/living/carbon/human/H = user
+		H.update_inv_l_hand()
+		H.update_inv_r_hand()
+
+	add_fingerprint(user)
+	return
