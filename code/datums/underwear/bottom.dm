@@ -93,3 +93,7 @@
 	underwear_name = "long johns"
 	icon_state = "ljonb"
 	has_color = TRUE
+
+/datum/category_item/underwear/bottom/milos
+	name = "Milos"
+	icon_state = "milos"
