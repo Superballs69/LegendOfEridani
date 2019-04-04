@@ -44,9 +44,12 @@
 
 /decl/cultural_info/faction/remote/syndicate
 	name = FACTION_SYNDICATE
-	description = "The Corporate Syndicalist Union, commonly referred to as the CSU or the Syndicate, has been created by an union of many corporations \
-	in a response of NanoTrasen's rapid growth. Since its creation, it has tried to compete with NanoTrasen in the field of Medical and Research, resulting \
-	in legal disputes and shady operations between the two factions."
+	description = "Syndicates are common in this age of wide spread megacorporation muscling smaller fish out of their much more profitable ponds.\
+	 Sometimes, those fish that group together get big enough to make those bigger fish sweat.\
+	  The H-H Syndicate formed from disenfranchised medical and research firms, after NanoTrasen made it impossible for them to compete in certain systems.\
+	   In the past, through both legal attempts and more illegal means between both companies,\
+	    the Syndicate has made large leaps into gaining a strong foothold in the galaxy. As of late, attempts to push one another have cooled. \
+	    The Syndicate consistently puts out competent medical and research personnel. Their efforts in freighting and cargo management are also noteworthy.."
 	economic_power = 1.1
 	subversive_potential = 30
 
@@ -95,7 +98,7 @@
 
 /decl/cultural_info/faction/tiger
 	name = FACTION_TIGER
-	description = "Tactical Intervention Group Eridani Regiment, or TIGER is a new Frontier-based private security company that starting to see action and expand it's operations \
+	description = "Tactical Intervention Group  Emergency Response, or TIGER is a new Frontier-based private security company that starting to see action and expand it's operations \
 	across the galaxy. Consisting of mostly Federation citizens and veterans, TIGER has been well-received by Frontier-based corporations, and skeptical to some. Although the corporation is well received \
 	with an extensive track record, many of it's deployments and operations are classified, and many clients are obliged to sign a heavy non-disclosure agreement in exchange for their services."
 	economic_power = 1.1
