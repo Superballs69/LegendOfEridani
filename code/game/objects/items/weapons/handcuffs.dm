@@ -17,8 +17,7 @@
 	var/breakouttime = 1200 //Deciseconds = 120s = 2 minutes
 	var/cuff_sound = 'sound/weapons/handcuffs.ogg'
 	var/cuff_type = "handcuffs"
-
-
+	var/disposable = 0
 
 /obj/item/weapon/handcuffs/get_icon_state(mob/user_mob, slot)
 	if(slot == slot_handcuffed_str)
@@ -126,6 +125,31 @@ var/last_chew = 0
 
 	last_chew = world.time
 
+/obj/item/weapon/handcuffs/hinged
+	name = "hinged handcuffs"
+	desc = "A variant of the handcuff that restricts major wrist movement, thus making it harder to get out of."
+	icon_state = "hinged_handcuff"
+	breakouttime = 2400 //Deciseconds = 4 minutes
+	cuff_type = "hinged handcuffs"
+
+/obj/item/weapon/handcuffs/rigid
+	name = "rigid handcuffs"
+	desc = "A further development of the hinged handcuff, with the hinge being replaced with a whole sturdy piece, making it even harder to resist out of."
+	icon_state = "rigid_handcuff"
+	breakouttime = 3600 //Deciseconds = 6 minutes
+	cuff_type = "rigid handcuffs"
+
+/obj/item/weapon/handcuffs/zipcuffs
+	name = "zipcuffs"
+	desc = "A set of disposable plastic zipcuffs used to restrain suspects. Typically used in raids, or when a large amount of suspects are expected."
+	icon_state = "zipcuff"
+	breakouttime = 600 //Deciseconds = 1 minute
+	cuff_sound = 'sound/weapons/cablecuff.ogg'
+	cuff_type = "zipcuffs"
+	elastic = 1
+	disposable = 1
+	color = COLOR_BLACK
+
 /obj/item/weapon/handcuffs/cable
 	name = "cable restraints"
 	desc = "Looks like some cables tied together. Could be used to tie something up."
@@ -134,6 +158,7 @@ var/last_chew = 0
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	cuff_type = "cable restraints"
 	elastic = 1
+	disposable = 1
 
 /obj/item/weapon/handcuffs/cable/red
 	color = COLOR_MAROON

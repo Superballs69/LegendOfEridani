@@ -45,10 +45,12 @@
 	//A default in case you are somehow handcuffed with something that isn't an obj/item/weapon/handcuffs type
 	var/breakouttime = 1200
 	var/displaytime = 2 //Minutes to display in the "this will take X minutes."
+	var/disposable = 0
 	//If you are handcuffed with actual handcuffs... Well what do I know, maybe someone will want to handcuff you with toilet paper in the future...
 	if(istype(HC))
 		breakouttime = HC.breakouttime
 		displaytime = breakouttime / 600 //Minutes
+		disposable = HC.disposable
 
 	var/mob/living/carbon/human/H = src
 	if(istype(H) && H.gloves && istype(H.gloves,/obj/item/clothing/gloves/rig))
@@ -63,11 +65,22 @@
 	if(do_after(src, breakouttime, incapacitation_flags = INCAPACITATION_DEFAULT & ~INCAPACITATION_RESTRAINED))
 		if(!handcuffed || buckled)
 			return
-		visible_message(
-			"<span class='danger'>\The [src] manages to remove \the [handcuffed]!</span>",
-			"<span class='notice'>You successfully remove \the [handcuffed].</span>"
+		if(!disposable)
+			visible_message(
+				"<span class='danger'>\The [src] manages to remove \the [handcuffed]!</span>",
+				"<span class='notice'>You successfully remove \the [handcuffed].</span>"
+				)
+			drop_from_inventory(handcuffed)
+		else
+			visible_message(
+				"<span class='danger'>\The [src] manages to break \the [handcuffed]!</span",
+				"<span class='notice'>You successfully break \the [handcuffed].</span>"
 			)
-		drop_from_inventory(handcuffed)
+			qdel(handcuffed)
+			handcuffed = null
+			if(buckled && buckled.buckle_require_restraints)
+				buckled.unbuckle_mob()
+			update_inv_handcuffed()
 
 /mob/living/carbon/proc/can_break_cuffs()
 	if(HULK in mutations)
