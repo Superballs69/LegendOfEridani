@@ -344,8 +344,8 @@ var/const/NO_EMAG_ACT = -50
 	access |= get_all_station_access()
 
 /obj/item/weapon/card/id/centcom/ERT
-	name = "\improper Emergency Response Team ID"
-	assignment = "Emergency Response Team"
+	name = "\improper Federal Disaster Intervention Squad ID"
+	assignment = "Federal Disaster Intervention Squad"
 
 /obj/item/weapon/card/id/centcom/ERT/New()
 	..()

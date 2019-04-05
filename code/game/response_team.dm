@@ -7,9 +7,9 @@ var/ert_base_chance = 10 // Default base chance. Will be incremented by incremen
 var/can_call_ert
 
 /client/proc/response_team()
-	set name = "Dispatch Emergency Response Team"
+	set name = "Dispatch Federal Disaster Intervention Squad"
 	set category = "Special Verbs"
-	set desc = "Send an emergency response team"
+	set desc = "Send an Federal Disaster Intervention Squad"
 
 	if(!holder)
 		to_chat(usr, "<span class='danger'>Only administrators may use this command.</span>")
@@ -18,9 +18,9 @@ var/can_call_ert
 		to_chat(usr, "<span class='danger'>The game hasn't started yet!</span>")
 		return
 	if(send_emergency_team)
-		to_chat(usr, "<span class='danger'>[GLOB.using_map.boss_name] has already dispatched an emergency response team!</span>")
+		to_chat(usr, "<span class='danger'>[GLOB.using_map.boss_name] has already dispatched an Federal Disaster Intervention Squad!</span>")
 		return
-	if(alert("Do you want to dispatch an Emergency Response Team?",,"Yes","No") != "Yes")
+	if(alert("Do you want to dispatch an Federal Disaster Intervention Squad?",,"Yes","No") != "Yes")
 		return
 
 	var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
@@ -32,7 +32,7 @@ var/can_call_ert
 		to_chat(usr, "<span class='danger'>Looks like somebody beat you to it!</span>")
 		return
 
-	message_admins("[key_name_admin(usr)] is dispatching an Emergency Response Team.", 1)
+	message_admins("[key_name_admin(usr)] is dispatching an Federal Disaster Intervention Squad.", 1)
 	log_admin("[key_name(usr)] used Dispatch Response Team.")
 	trigger_armed_response_team(1)
 

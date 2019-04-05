@@ -165,8 +165,8 @@
 			return global.admin_verbs_fun;
 		if("admin_verbs_hideable")
 			return global.admin_verbs_hideable;
-		if("admin_verbs_mentor")
-			return global.admin_verbs_mentor;
+		if("admin_verbs_fca")
+			return global.admin_verbs_fca;
 		if("admin_verbs_mod")
 			return global.admin_verbs_mod;
 		if("admin_verbs_paranoid_debug")
@@ -959,7 +959,7 @@
 			return global.z_levels;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ALL_ANTIGENS")
@@ -1126,8 +1126,8 @@
 			global.admin_verbs_fun=newval;
 		if("admin_verbs_hideable")
 			global.admin_verbs_hideable=newval;
-		if("admin_verbs_mentor")
-			global.admin_verbs_mentor=newval;
+		if("admin_verbs_fca")
+			global.admin_verbs_fca=newval;
 		if("admin_verbs_mod")
 			global.admin_verbs_mod=newval;
 		if("admin_verbs_paranoid_debug")
@@ -1920,7 +1920,7 @@
 			global.z_levels=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ALL_ANTIGENS",
 	"ANTAG_FREQS",
@@ -2004,7 +2004,7 @@
 	"admin_verbs_default",
 	"admin_verbs_fun",
 	"admin_verbs_hideable",
-	"admin_verbs_mentor",
+	"admin_verbs_fca",
 	"admin_verbs_mod",
 	"admin_verbs_paranoid_debug",
 	"admin_verbs_permissions",

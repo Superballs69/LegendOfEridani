@@ -508,7 +508,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 /hook/startup/proc/loadMods()
 	world.load_mods()
-	world.load_mentors() // no need to write another hook.
+	world.load_fcas() // no need to write another hook.
 	return 1
 
 /world/proc/load_mods()
@@ -532,11 +532,11 @@ var/world_topic_spam_protect_time = world.timeofday
 				var/datum/admins/D = new /datum/admins(title, rights, ckey)
 				D.associate(GLOB.ckey_directory[ckey])
 
-/world/proc/load_mentors()
+/world/proc/load_fcas()
 	if(config.admin_legacy_system)
-		var/text = file2text("config/mentors.txt")
+		var/text = file2text("config/fcas.txt")
 		if (!text)
-			error("Failed to load config/mentors.txt")
+			error("Failed to load config/fcas.txt")
 		else
 			var/list/lines = splittext(text, "\n")
 			for(var/line in lines)
@@ -545,7 +545,7 @@ var/world_topic_spam_protect_time = world.timeofday
 				if (copytext(line, 1, 2) == ";")
 					continue
 
-				var/title = "Mentor"
+				var/title = "FCA Agent"
 				var/rights = admin_ranks[title]
 
 				var/ckey = copytext(line, 1, length(line)+1)

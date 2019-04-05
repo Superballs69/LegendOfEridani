@@ -200,8 +200,8 @@
 		"Research Officer",
 		"BlackOps Commander",
 		"Supreme Commander",
-		"Emergency Response Team",
-		"Emergency Response Team Leader")
+		"Federal Disaster Intervention Squad",
+		"Federal Disaster Intervention Squad Leader")
 
 /mob/observer/ghost
 	var/static/obj/item/weapon/card/id/all_access/ghost_all_access

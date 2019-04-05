@@ -627,8 +627,8 @@
 	icon_state = "paramedic"
 
 /obj/item/toy/figure/ert
-	name = "Emergency Response Team Commander action figure"
-	desc = "A \"Space Life\" brand Emergency Response Team Commander action figure."
+	name = "Federal Disaster Intervention Squad Commander action figure"
+	desc = "A \"Space Life\" brand Federal Disaster Intervention Squad Commander action figure."
 	icon_state = "ert"
 
 /obj/item/toy/therapy_red
