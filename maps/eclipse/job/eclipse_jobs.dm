@@ -11,7 +11,7 @@
 						/datum/job/ice, /datum/job/liaison,
 						/datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_specialist, /datum/job/pathfinder_explorer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_apprentice,
-						/datum/job/officer, /datum/job/warden, /datum/job/iaa,
+						/datum/job/isec, /datum/job/tiger, /datum/job/warden, /datum/job/iaa,
 						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/biomech, /datum/job/labtech, /datum/job/medical_trainee,
 						/datum/job/psychiatrist,
 						/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining,
@@ -28,8 +28,8 @@
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
 		/datum/species/tajaran = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison),
-		/datum/species/nabber  = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/rd, /datum/job/liaison)
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/isec, /datum/job/tiger, /datum/job/rd, /datum/job/liaison),
+		/datum/species/nabber  = list(HUMAN_ONLY_JOBS, /datum/job/isec, /datum/job/tiger, /datum/job/rd, /datum/job/liaison)
 	)
 #undef HUMAN_ONLY_JOBS
 

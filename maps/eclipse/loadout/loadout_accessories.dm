@@ -63,7 +63,7 @@
 						/datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/pathfinder_pilot)
 
 /datum/gear/storage/black_vest
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/officer, /datum/job/merchant, /datum/job/ice)
+	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant, /datum/job/ice)
 
 /datum/gear/storage/white_vest
 	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech)
@@ -73,7 +73,7 @@
 						/datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant)
 
 /datum/gear/storage/black_drop_pouches
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/officer, /datum/job/merchant)
+	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant)
 
 /datum/gear/storage/white_drop_pouches
 	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech)

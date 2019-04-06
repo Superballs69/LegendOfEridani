@@ -31,7 +31,7 @@
 #define TECHNICAL_ROLES list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/chief_engineer, /datum/job/janitor, /datum/job/engineer_apprentice, /datum/job/xenolife_technician, /datum/job/biomech)
 
 //For members of the security department
-#define SECURITY_ROLES list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/officer, /datum/job/ice)
+#define SECURITY_ROLES list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/isec, /datum/job/tiger, /datum/job/ice)
 
 //For members of the supply department
 #define SUPPLY_ROLES list(/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining)
@@ -46,7 +46,7 @@
 #define RESEARCH_ROLES list(/datum/job/rd, /datum/job/liaison, /datum/job/scientist, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/assistant, /datum/job/senior_scientist, /datum/job/roboticist, /datum/job/xenolife_technician, /datum/job/biomech)
 
 //For jobs that spawn with weapons in their lockers
-#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ice, /datum/job/officer, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)
+#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ice, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)
 
 //For jobs that spawn with armor in their lockers
-#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ice, /datum/job/officer, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)
+#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ice, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)

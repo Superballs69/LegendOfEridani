@@ -29,41 +29,75 @@
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BACHELOR
 
-/datum/job/officer
+/datum/job/isec
 	title = "ISEC Contractor"
 	department = "Security"
 	department_flag = SEC
-	total_positions = 6
+	total_positions = 4
 	spawn_positions = 6
 	supervisors = "the Chief of Security"
 	economic_power = 4
 	minimal_player_age = 7
 	ideal_character_age = 25
+	selection_color = "#601c1c"
+	hud_icon = "hudsecurityofficer"
 	alt_titles = list(
-		"TIGER Contractor" = /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor,
-		"Probationary TIGER Contractor" = /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor,
-		"Probationary ISEC Contractor" = /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
+		"Probationary ISEC Contractor"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_ADEPT,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
+	                    SKILL_ATHLETICS   = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
+	                    SKILL_ATHLETICS   = SKILL_MAX)
 
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
-			            access_eva, access_sec_doors, access_solgov_crew)
+			            access_eva, access_sec_doors, access_solgov_crew, access_isec)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 	required_education = EDUCATION_TIER_BASIC
-	maximum_education = EDUCATION_TIER_BACHELOR
+
+/datum/job/tiger
+	title = "TIGER Contractor"
+	department = "Security"
+	department_flag = SEC
+	total_positions = 4
+	spawn_positions = 6
+	supervisors = "the Chief of Security"
+	economic_power = 4
+	minimal_player_age = 7
+	ideal_character_age = 25
+	selection_color = "#601c1c"
+	hud_icon = "hudsecurityofficer"
+	alt_titles = list(
+		"Probationary TIGER Contractor"
+		)
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_ATHLETICS   = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_ATHLETICS   = SKILL_MAX)
+
+	access = list(access_security, access_brig, access_maint_tunnels,
+						access_external_airlocks, access_emergency_storage,
+			            access_eva, access_sec_doors, access_solgov_crew, access_tiger)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+	required_education = EDUCATION_TIER_BASIC
 
 /datum/job/iaa
 	title = "Internal Affairs Agent"

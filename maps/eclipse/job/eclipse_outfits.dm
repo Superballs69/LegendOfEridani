@@ -185,10 +185,10 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 /decl/hierarchy/outfit/job/eclipse/security/isec_contractor
 	name = OUTFIT_JOB_NAME("ISEC Contractor")
 	uniform = /obj/item/clothing/under/isec
-	mask = /obj/item/clothing/mask/balaclava
+	l_ear = /obj/item/device/radio/headset/headset_sec/alt
+	mask = /obj/item/clothing/mask/bandana
 	l_pocket = /obj/item/device/flash
-	r_pocket = /obj/item/weapon/handcuffs
-	id_type = /obj/item/weapon/card/id/eclipse/security
+	id_type = /obj/item/weapon/card/id/eclipse/security/isec
 	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
@@ -200,10 +200,10 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
 	name = OUTFIT_JOB_NAME("TIGER Contractor")
 	uniform = /obj/item/clothing/under/tiger
-	mask = /obj/item/clothing/mask/balaclava
+	l_ear = /obj/item/device/radio/headset/headset_sec/alt
+	mask = /obj/item/clothing/mask/bandana
 	l_pocket = /obj/item/device/flash
-	r_pocket = /obj/item/weapon/handcuffs
-	id_type = /obj/item/weapon/card/id/eclipse/security
+	id_type = /obj/item/weapon/card/id/eclipse/security/tiger
 	pda_type = /obj/item/modular_computer/pda/security
 
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor/New()

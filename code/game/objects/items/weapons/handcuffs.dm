@@ -18,6 +18,7 @@
 	var/cuff_sound = 'sound/weapons/handcuffs.ogg'
 	var/cuff_type = "handcuffs"
 	var/disposable = 0
+	var/applicationtime = 30
 
 /obj/item/weapon/handcuffs/get_icon_state(mob/user_mob, slot)
 	if(slot == slot_handcuffed_str)
@@ -79,7 +80,7 @@
 
 	user.visible_message("<span class='danger'>\The [user] is attempting to put [cuff_type] on \the [H]!</span>")
 
-	if(!do_after(user,30, target))
+	if(!do_after(user,applicationtime, target))
 		return 0
 
 	if(!can_place(target, user)) // victim may have resisted out of the grab in the meantime
@@ -129,15 +130,17 @@ var/last_chew = 0
 	name = "hinged handcuffs"
 	desc = "A variant of the handcuff that restricts major wrist movement, thus making it harder to get out of."
 	icon_state = "hinged_handcuff"
-	breakouttime = 2400 //Deciseconds = 4 minutes
+	breakouttime = 1800 //Deciseconds = 3 minutes
 	cuff_type = "hinged handcuffs"
+	applicationtime = 60
 
 /obj/item/weapon/handcuffs/rigid
 	name = "rigid handcuffs"
 	desc = "A further development of the hinged handcuff, with the hinge being replaced with a whole sturdy piece, making it even harder to resist out of."
 	icon_state = "rigid_handcuff"
-	breakouttime = 3600 //Deciseconds = 6 minutes
+	breakouttime = 2400 //Deciseconds = 4 minutes
 	cuff_type = "rigid handcuffs"
+	applicationtime = 90
 
 /obj/item/weapon/handcuffs/zipcuffs
 	name = "zipcuffs"
@@ -148,6 +151,7 @@ var/last_chew = 0
 	cuff_type = "zipcuffs"
 	elastic = 1
 	disposable = 1
+	applicationtime = 15
 	color = COLOR_BLACK
 
 /obj/item/weapon/handcuffs/cable

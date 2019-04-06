@@ -85,6 +85,14 @@
 	icon_state = "sec"
 	job_access_type = /datum/job/officer
 
+/obj/item/weapon/card/id/eclipse/security/isec
+	icon_state = "sec"
+	job_access_type = /datum/job/isec
+
+/obj/item/weapon/card/id/eclipse/security/tiger
+	icon_state = "sec"
+	job_access_type = /datum/job/tiger
+
 /obj/item/weapon/card/id/eclipse/security/warden
 	job_access_type = /datum/job/warden
 
