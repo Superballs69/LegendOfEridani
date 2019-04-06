@@ -62,7 +62,7 @@
 	log_and_message_staff(" - SubtleMessage -> [key_name_admin(M)] : [msg]")
 	feedback_add_details("admin_verb","SMS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/cmd_mentor_check_new_players()	//Allows mentors / admins to determine who the newer players are.
+/client/proc/cmd_fca_check_new_players()	//Allows fca / admins to determine who the newer players are.
 	set category = "Admin"
 	set name = "Check new Players"
 	if(!holder)
@@ -79,7 +79,7 @@
 	var/msg = ""
 
 	var/highlight_special_characters = 1
-	if(is_mentor(usr.client))
+	if(is_fca(usr.client))
 		highlight_special_characters = 0
 
 	for(var/client/C in GLOB.clients)

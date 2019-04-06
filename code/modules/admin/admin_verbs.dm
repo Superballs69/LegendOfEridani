@@ -10,7 +10,7 @@ var/list/admin_verbs_default = list(
 	/client/proc/watched_variables,
 	/client/proc/debug_global_variables,//as above but for global variables,
 //	/client/proc/check_antagonists,		//shows all antags,
-	/client/proc/cmd_mentor_check_new_players
+	/client/proc/cmd_fca_check_new_players
 //	/client/proc/deadchat				//toggles deadchat on/off,
 	)
 var/list/admin_verbs_admin = list(
@@ -181,7 +181,7 @@ var/list/admin_verbs_debug = list(
 	/client/proc/cmd_debug_tog_aliens,
 	/client/proc/air_report,
 	/client/proc/reload_admins,
-	/client/proc/reload_mentors,
+	/client/proc/reload_fcas,
 	/client/proc/restart_controller,
 	/client/proc/print_random_map,
 	/client/proc/create_random_map,
@@ -319,7 +319,7 @@ var/list/admin_verbs_mod = list(
 	/datum/admins/proc/view_persistent_data
 )
 
-var/list/admin_verbs_mentor = list(
+var/list/admin_verbs_fca = list(
 	/client/proc/cmd_admin_pm_context,
 	/client/proc/cmd_admin_pm_panel,
 	/datum/admins/proc/PlayerNotes,
@@ -349,7 +349,7 @@ var/list/admin_verbs_mentor = list(
 		if(holder.rights & R_SOUNDS)		verbs += admin_verbs_sounds
 		if(holder.rights & R_SPAWN)			verbs += admin_verbs_spawn
 		if(holder.rights & R_MOD)			verbs += admin_verbs_mod
-		if(holder.rights & R_MENTOR)		verbs += admin_verbs_mentor
+		if(holder.rights & R_FCA)			verbs += admin_verbs_fca
 
 /client/proc/remove_admin_verbs()
 	verbs.Remove(
@@ -412,12 +412,12 @@ var/list/admin_verbs_mentor = list(
 	if(isghost(mob))
 		//re-enter
 		var/mob/observer/ghost/ghost = mob
-		if(!is_mentor(usr.client))
+		if(!is_fca(usr.client))
 			ghost.can_reenter_corpse = 1
 		if(ghost.can_reenter_corpse)
 			ghost.reenter_corpse()
 		else
-			to_chat(ghost, "<font color='red'>Error:  Aghost:  Can't reenter corpse, mentors that use adminHUD while aghosting are not permitted to enter their corpse again</font>")
+			to_chat(ghost, "<font color='red'>Error:  Aghost:  Can't reenter corpse, fca agents that use adminHUD while aghosting are not permitted to enter their corpse again</font>")
 			return
 
 		feedback_add_details("admin_verb","P") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

@@ -518,3 +518,35 @@
 	desc = "A heavy armored vest in a light grey urban camo. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "m_vest"
 	item_state = "m_vest"
+
+
+// FIS
+
+/obj/item/clothing/suit/armor/vest/gign_armor
+	name = "FIS Armor"
+	desc = "A set of armor worn by FIS agents during their special operations."
+	icon_state = "gign_armor"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	armor = list(melee = 60, bullet = 70, laser = 70, energy = 40, bomb = 20, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/vest/gign_armor/med
+	name = "FIS Armor"
+	desc = "A set of armor worn by FIS agents during their special operations."
+	icon_state = "gign_armor_med"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+/obj/item/clothing/suit/armor/vest/gign_armor/sapper
+	name = "FIS Armor"
+	desc = "A set of armor worn by FIS agents during their special operations."
+	icon_state = "gign_armor_sapper"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+/obj/item/clothing/suit/armor/vest/gign_armor/cmd
+	name = "FIS Armor"
+	desc = "A set of armor worn by FIS agents during their special operations."
+	icon_state = "gign_armor_cmd"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS

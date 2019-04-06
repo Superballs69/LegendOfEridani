@@ -764,3 +764,13 @@
 	icon_state = "warden_proper"
 	item_state = "b_suit"
 	worn_state = "warden_proper"
+
+// Tactical
+
+/obj/item/clothing/under/gign_under
+	name = "FIS Intervention's uniform"
+	desc = "An uniform for FIS and the FDIS' special agents."
+	icon_state = "gign_under"
+	item_state = "b_suit"
+	worn_state = "gign_under"
+

@@ -3,7 +3,7 @@
 	uniform = /obj/item/clothing/under/fca_proper
 	shoes = /obj/item/clothing/shoes/highboots
 	gloves = /obj/item/clothing/gloves/white
-	l_ear = /obj/item/device/radio/headset/heads/hop
+	l_ear = /obj/item/device/radio/headset/ert
 	glasses = /obj/item/clothing/glasses/sunglasses
 	r_pocket = /obj/item/device/taperecorder
 

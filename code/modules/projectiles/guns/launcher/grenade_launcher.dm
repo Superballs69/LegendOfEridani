@@ -155,3 +155,4 @@
 		chambered = null
 	else
 		to_chat(user, "<span class='warning'>\The [src] is empty.</span>")
+

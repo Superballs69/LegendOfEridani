@@ -342,7 +342,7 @@
 //ERT backpacks.
 /obj/item/weapon/storage/backpack/ert
 	name = "emergency response team backpack"
-	desc = "A spacious backpack with lots of pockets, used by members of the Emergency Response Team."
+	desc = "A spacious backpack with lots of pockets, used by members of the Federal Disaster Intervention Squad."
 	icon_state = "ert_commander"
 	item_state_slots = list(
 		slot_l_hand_str = "securitypack",
@@ -351,25 +351,25 @@
 
 //Commander
 /obj/item/weapon/storage/backpack/ert/commander
-	name = "emergency response team commander backpack"
-	desc = "A spacious backpack with lots of pockets, worn by the commander of an Emergency Response Team."
+	name = "Federal Disaster Intervention Squad commander backpack"
+	desc = "A spacious backpack with lots of pockets, worn by the commander of an Federal Disaster Intervention Squad."
 
 //Security
 /obj/item/weapon/storage/backpack/ert/security
-	name = "emergency response team security backpack"
-	desc = "A spacious backpack with lots of pockets, worn by security members of an Emergency Response Team."
+	name = "Federal Disaster Intervention Squad security backpack"
+	desc = "A spacious backpack with lots of pockets, worn by security members of an Federal Disaster Intervention Squad."
 	icon_state = "ert_security"
 
 //Engineering
 /obj/item/weapon/storage/backpack/ert/engineer
-	name = "emergency response team engineer backpack"
-	desc = "A spacious backpack with lots of pockets, worn by engineering members of an Emergency Response Team."
+	name = "Federal Disaster Intervention Squad Sapper backpack"
+	desc = "A spacious backpack with lots of pockets, worn by sappers members of an Federal Disaster Intervention Squad."
 	icon_state = "ert_engineering"
 
 //Medical
 /obj/item/weapon/storage/backpack/ert/medical
-	name = "emergency response team medical backpack"
-	desc = "A spacious backpack with lots of pockets, worn by medical members of an Emergency Response Team."
+	name = "Federal Disaster Intervention Squad medical backpack"
+	desc = "A spacious backpack with lots of pockets, worn by medical members of an Federal Disaster Intervention Squad."
 	icon_state = "ert_medical"
 
 /*

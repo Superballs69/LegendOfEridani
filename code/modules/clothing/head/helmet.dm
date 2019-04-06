@@ -248,3 +248,24 @@
 	desc = "A helmet built for use by a Skrell. This one appears to be fairly standard and reliable."
 	icon_state = "helmet_skrell"
 	valid_accessory_slots = null
+
+// FIS
+
+/obj/item/clothing/head/helmet/security/gign
+	name = "FIS's helmet"
+	icon_state = "helmet_gign"
+	valid_accessory_slots = null
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	desc = "The helmet of those that trust their camarades with a .357."
+	armor = list(melee = 50, bullet = 60, laser = 45, energy = 30, bomb = 40, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
+	action_button_name = "Toggle Visor"
+
+/obj/item/clothing/head/helmet/security/gign/attack_self(mob/user as mob)
+	if(src.icon_state == initial(icon_state))
+		src.icon_state = "[icon_state]_up"
+		to_chat(user, "You raise the visor on the [src].")
+	else
+		src.icon_state = initial(icon_state)
+		to_chat(user, "You lower the visor on the [src].")
+	update_clothing_icon()

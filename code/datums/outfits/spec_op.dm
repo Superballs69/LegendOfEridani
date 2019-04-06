@@ -1,6 +1,6 @@
 /decl/hierarchy/outfit/spec_op_officer
 	name = "Spec Ops - Officer"
-	uniform = /obj/item/clothing/under/syndicate/combat
+	uniform = /obj/item/clothing/under/gign_under
 	suit = /obj/item/clothing/suit/armor/swat/officer
 	l_ear = /obj/item/device/radio/headset/ert
 	glasses = /obj/item/clothing/glasses/thermal/plain/eyepatch
@@ -24,8 +24,8 @@
 	flags = OUTFIT_HAS_JETPACK|OUTFIT_RESET_EQUIPMENT
 
 /decl/hierarchy/outfit/ert
-	name = "Spec Ops - Emergency response team"
-	uniform = /obj/item/clothing/under/ert
+	name = "Spec Ops - Federal Disaster Intervention Squad"
+	uniform = /obj/item/clothing/under/gign_under
 	shoes = /obj/item/clothing/shoes/swat
 	gloves = /obj/item/clothing/gloves/thick/swat
 	l_ear = /obj/item/device/radio/headset/ert
