@@ -211,7 +211,7 @@
 /* Advanced Alloys are any alloys that will be available to make only in the R&D lab.
 The trick here is that since the alloy processor doesn't have anything extra to add when hacked, we disable that feature, mark the Processor in the Mat. Lab as "hacked" in the variables,
 and add more 'advanced' materials as "hacked only" items. Until we can get more code knowledge or an actually competent coder, this will do.
-I'm a failure to IT Engineers everywhere.
+I'm a disappointment to IT Engineers everywhere.
 */
 
 /datum/alloy_processor/recipe/plastinium
