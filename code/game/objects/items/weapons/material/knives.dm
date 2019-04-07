@@ -38,6 +38,15 @@
 	if(ismob(M))
 		backstab(M, user, 60, BRUTE, DAM_SHARP, target_zone, TRUE)
 
+/obj/item/weapon/material/butterfly/attack_self(mob/user)
+	active = !active
+	if(active)
+		to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
+		playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+	else
+		to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
+	update_force()
+	add_fingerprint(user)
 
 /obj/item/weapon/material/butterfly/switchblade
 	name = "switchblade"
@@ -45,7 +54,43 @@
 	icon_state = "switchblade"
 	unbreakable = 1
 
-/obj/item/weapon/material/butterfly/attack_self(mob/user)
+/obj/item/weapon/material/pocketknife
+	name = "pocket knife"
+	desc = "An every day carry folding pocket blade."
+	icon_state = "pocketknife_tac"
+	item_state = null
+	hitsound = null
+	var/active = 0
+	w_class = ITEM_SIZE_SMALL
+	attack_verb = list("patted", "tapped")
+	force = 3
+	edge = 0
+	sharp = 0
+	force_divisor = 0.25 // 15 when wielded with hardness 60 (steel)
+	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (steel)
+	attack_cooldown_modifier = -1
+	unbreakable = 1
+
+/obj/item/weapon/material/pocketknife/update_force()
+	if(active)
+		edge = 1
+		sharp = 1
+		..() //Updates force.
+		throwforce = max(3,force-3)
+		hitsound = 'sound/weapons/bladeslice.ogg'
+		icon_state += "_open"
+		w_class = ITEM_SIZE_NORMAL
+		attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	else
+		force = initial(force)
+		edge = initial(edge)
+		sharp = initial(sharp)
+		hitsound = initial(hitsound)
+		icon_state = initial(icon_state)
+		w_class = initial(w_class)
+		attack_verb = initial(attack_verb)
+
+/obj/item/weapon/material/pocketknife/attack_self(mob/user)
 	active = !active
 	if(active)
 		to_chat(user, "<span class='notice'>You flip out \the [src].</span>")

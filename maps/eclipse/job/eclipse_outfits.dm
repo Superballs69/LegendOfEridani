@@ -193,9 +193,9 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 /decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
 	..()
-	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack
-	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel
-	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger
+	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack/security
+	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/sec
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/sec
 
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
 	name = OUTFIT_JOB_NAME("TIGER Contractor")

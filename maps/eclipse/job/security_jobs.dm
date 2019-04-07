@@ -40,7 +40,6 @@
 	minimal_player_age = 7
 	ideal_character_age = 25
 	selection_color = "#601c1c"
-	hud_icon = "hudsecurityofficer"
 	alt_titles = list(
 		"Probationary ISEC Contractor"
 		)
@@ -75,7 +74,6 @@
 	minimal_player_age = 7
 	ideal_character_age = 25
 	selection_color = "#601c1c"
-	hud_icon = "hudsecurityofficer"
 	alt_titles = list(
 		"Probationary TIGER Contractor"
 		)
