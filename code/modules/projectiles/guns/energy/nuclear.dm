@@ -3,6 +3,7 @@
 	desc = "Another bestseller of Ace Energy, the AE10 energy carbine is a versatile energy based weapon, capable of switching between stun, and lethal."
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
+	charge_cost = 10
 	max_shots = 10
 	fire_delay = 10 // To balance for the fact that it is a pistol and can be used one-handed without penalty
 
@@ -20,6 +21,7 @@
 	name = "AE6 'Protector' energy pistol"
 	desc = "Originally a prototype, Ace Energy acquired the plans for a holdout pistol and has tuned it for reliable military and civilian use."
 	icon_state = "smallgunstun"
+	charge_cost = 20
 	max_shots = 5
 	w_class = ITEM_SIZE_SMALL
 	force = 2 //it's the size of a car key, what did you expect?
@@ -45,7 +47,10 @@
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 8 //looks heavier than a pistol
+	charge_cost = 20
+	max_shots = 5
 	self_recharge = 1
+	battery_lock = 1
 	modifystate = null
 	one_hand_penalty = 1 //bulkier than an e-gun, but not quite the size of a carbine
 

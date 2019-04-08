@@ -220,7 +220,8 @@
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/magnetic_ammo,
 		/obj/item/device/binoculars,
-		/obj/item/clothing/gloves
+		/obj/item/clothing/gloves,
+		/obj/item/weapon/cell/device
 		)
 
 /obj/item/weapon/storage/belt/general
@@ -257,7 +258,8 @@
 		/obj/item/clothing/head/soft,
 		/obj/item/weapon/hand_labeler,
 		/obj/item/clothing/gloves,
-		/obj/item/weapon/crowbar/prybar
+		/obj/item/weapon/crowbar/prybar,
+		/obj/item/weapon/cell/device
 		)
 
 /obj/item/weapon/storage/belt/janitor
@@ -314,7 +316,8 @@
 		/obj/item/clothing/head/soft,
 		/obj/item/weapon/hand_labeler,
 		/obj/item/clothing/gloves,
-		/obj/item/weapon/crowbar/prybar
+		/obj/item/weapon/crowbar/prybar,
+		/obj/item/weapon/cell/device
 		)
 
 /obj/item/weapon/storage/belt/holster/forensic
@@ -415,7 +418,8 @@
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/weapon/storage/med_pouch,
 		/obj/item/bodybag,
-		/obj/item/clothing/gloves
+		/obj/item/clothing/gloves,
+		/obj/item/weapon/cell/device
 		)
 	can_holster = list(/obj/item/weapon/material/hatchet/machete)
 	sound_in = 'sound/effects/holster/sheathin.ogg'
@@ -490,7 +494,8 @@
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/weapon/storage/med_pouch,
 		/obj/item/bodybag,
-		/obj/item/clothing/gloves
+		/obj/item/clothing/gloves,
+		/obj/item/weapon/cell/device
 		)
 
 /obj/item/weapon/storage/belt/soulstone

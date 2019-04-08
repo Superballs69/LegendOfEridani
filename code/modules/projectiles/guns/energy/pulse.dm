@@ -6,7 +6,7 @@
 	slot_flags = SLOT_BACK
 	force = 12
 	projectile_type = /obj/item/projectile/beam/pulse/heavy
-	max_shots = 36
+	max_shots = 40
 	w_class = ITEM_SIZE_HUGE
 	one_hand_penalty= 6
 	multi_aim = 1
@@ -14,6 +14,7 @@
 	burst = 3
 	move_delay = 4
 	accuracy = -1
+	charge_cost = 2.5
 	wielded_item_state = "gun_wielded"
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
@@ -23,11 +24,12 @@
 	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 8
 	projectile_type = /obj/item/projectile/beam/pulse/mid
-	max_shots = 24
+	max_shots = 20
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty= 3
 	burst_delay = 2
 	move_delay = 2
+	charge_cost = 5
 
 /obj/item/weapon/gun/energy/pulse_rifle/pistol
 	name = "pulse pistol"
@@ -36,11 +38,12 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 6
 	projectile_type = /obj/item/projectile/beam/pulse
-	max_shots = 21
+	max_shots = 10
 	w_class = ITEM_SIZE_NORMAL
 	one_hand_penalty=1 //a bit heavy
 	burst_delay = 1
 	move_delay = 1
+	charge_cost = 10
 	wielded_item_state = null
 
 /obj/item/weapon/gun/energy/pulse_rifle/mounted
@@ -54,7 +57,8 @@
 	cell_type = /obj/item/weapon/cell/super
 	fire_delay = 25
 	projectile_type=/obj/item/projectile/beam/pulse/destroy
-	charge_cost= 40
+	charge_cost= 2
+	max_shots = 50
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
 	to_chat(user, "<span class='warning'>[src.name] has three settings, and they are all DESTROY.</span>")

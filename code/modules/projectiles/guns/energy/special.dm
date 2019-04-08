@@ -9,7 +9,7 @@
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	one_hand_penalty = 4
-	charge_cost = 30
+	charge_cost = 10
 	max_shots = 10
 	projectile_type = /obj/item/projectile/ion
 	wielded_item_state = "ionrifle-wielded"
@@ -29,7 +29,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	one_hand_penalty = 0
 	charge_cost = 20
-	max_shots = 6
+	max_shots = 5
 	projectile_type = /obj/item/projectile/ion/small
 
 /obj/item/weapon/gun/energy/decloner
@@ -39,6 +39,7 @@
 	item_state = "decloner"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 4, TECH_POWER = 3)
 	max_shots = 10
+	charge_cost = 10
 	projectile_type = /obj/item/projectile/energy/declone
 	combustion = 0
 
@@ -53,6 +54,7 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_POWER = 3)
 	modifystate = "floramut"
 	self_recharge = 1
+	battery_lock = 1
 	var/decl/plantgene/gene = null
 	combustion = 0
 
@@ -154,6 +156,7 @@
 	projectile_type = /obj/item/projectile/change
 	origin_tech = null
 	self_recharge = 1
+	battery_lock = 1
 	charge_meter = 0
 	var/required_antag_type = MODE_WIZARD
 
@@ -203,6 +206,7 @@
 	matter = list(MATERIAL_STEEL = 4000)
 	projectile_type = /obj/item/projectile/beam/plasmacutter
 	max_shots = 10
+	charge_cost = 10
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/plasmacutter/mounted

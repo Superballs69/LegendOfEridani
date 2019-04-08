@@ -55,7 +55,7 @@
 	unbreakable = 1
 
 /obj/item/weapon/material/pocketknife
-	name = "pocket knife"
+	name = "tactical pocket knife"
 	desc = "An every day carry folding pocket blade."
 	icon_state = "pocketknife_tac"
 	item_state = null
@@ -70,6 +70,8 @@
 	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (steel)
 	attack_cooldown_modifier = -1
 	unbreakable = 1
+	applies_material_colour = 0
+	var/automatic = 0 //if
 
 /obj/item/weapon/material/pocketknife/update_force()
 	if(active)
@@ -92,13 +94,27 @@
 
 /obj/item/weapon/material/pocketknife/attack_self(mob/user)
 	active = !active
-	if(active)
-		to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
-		playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+	if(automatic)
+		if(active)
+			to_chat(user, "<span class='notice'>You engage \the [src].</span>")
+			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+		else
+			to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
 	else
-		to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
+		if(active)
+			do_after(user,8)
+			to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
+			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+		else
+			do_after(user,8)
+			to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
 	update_force()
 	add_fingerprint(user)
+
+/obj/item/weapon/material/pocketknife/auto
+	name = "tactical switchblade"
+	desc = "An automatic everyday carry pocket blade."
+	automatic = 1
 
 /*
  * Kitchen knives
