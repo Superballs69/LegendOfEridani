@@ -55,14 +55,14 @@
 	icon_state = "center"
 
 /obj/structure/sign/solgov
-	name = "\improper SolGov Seal"
+	name = "\improper ETF Seal"
 	desc = "A sign which signifies who this vessel belongs to."
 	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
 	icon_state = "solgovseal"
 
 /obj/structure/sign/double/solgovflag
-	name = "Sol Central Government Flag"
-	desc = "The flag of the Sol Central Government, a symbol of many things to many people."
+	name = "Eridani Trade Federation Flag"
+	desc = "The flag of the Eridani Trade Federation, standing proud."
 	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
 
 /obj/structure/sign/double/solgovflag/left
