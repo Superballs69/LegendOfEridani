@@ -556,13 +556,16 @@ var/world_topic_spam_protect_time = world.timeofday
 	var/s = ""
 
 	if (config && config.server_name)
-		s += "<b>[config.server_name]</b> &#8212; "
+		s += "<b>[config.server_name]:High Roleplay Spaceman's Paradise</b> &#8212; "
 
 	s += "<b>[station_name()]</b>";
-	s += " ("
-	s += "<a href=\"https://forums.baystation12.net/\">" //Change this to wherever you want the hub to link to.
-//	s += "[game_version]"
+	s += "("
+	s += "<a href=\"https://eridanistation.com/index.php/\">" //Change this to wherever you want the hub to link to.
 	s += "Forums"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "</a>"
+	s += "|"
+	s += "<a href =\"https://discord.gg/bjqWdyC\">"
+	s += "Discord"
 	s += "</a>"
 	s += ")"
 
