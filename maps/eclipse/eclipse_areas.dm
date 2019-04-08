@@ -1145,7 +1145,7 @@
 	name = "\improper Centcom Supply Shuttle"
 
 /area/centcom/test
-	name = "\improper Centcom Testing Facility"
+	name = "\improper Centcom Investigation Facility"
 
 // Solars
 /area/maintenance/auxsolarport
