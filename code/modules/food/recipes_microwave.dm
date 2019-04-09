@@ -571,6 +571,15 @@ I said no!
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/baguette
 
+/datum/recipe/camembert_sandwich
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/baguette,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich
+
 /datum/recipe/fishandchips
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fries,

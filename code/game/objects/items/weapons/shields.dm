@@ -245,6 +245,7 @@
 		force = 1
 		throwforce = 1
 		throw_speed = 1
+		slot_flags = 0
 		w_class = 4
 		base_block_chance = 200
 		slowdown_general = 9
@@ -255,7 +256,7 @@
 		throwforce = 3
 		throw_speed = 3
 		w_class = 3
-		slot_flags = 0
+		slot_flags = SLOT_BACK
 		base_block_chance = 50
 		slowdown_general = 2
 		armor = list(melee = 30)
@@ -276,6 +277,7 @@
 	name = "Flash Shield"
 	desc = "PyroCorp's flash assault shield. Can flash targets facing the shield."
 	icon = 'icons/obj/weapons.dmi'
+	slot_flags = SLOT_BACK
 	icon_state = "blitzshield"
 	item_state = "blitzshield"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE

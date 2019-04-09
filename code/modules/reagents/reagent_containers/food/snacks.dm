@@ -1463,8 +1463,8 @@
 	reagents.add_reagent(/datum/reagent/sodiumchloride, 1)
 
 /obj/item/weapon/reagent_containers/food/snacks/baguette
-	name = "baguette"
-	desc = "Bon appetit!"
+	name = "Baguette"
+	desc = "You can smell the Nouveau-Parisian smugness emanating from that elongated bread."
 	icon_state = "baguette"
 	filling_color = "#e3d796"
 	center_of_mass = "x=18;y=12"
@@ -1502,6 +1502,20 @@
 /obj/item/weapon/reagent_containers/food/snacks/sandwich/Initialize()
 	.=..()
 	reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
+
+/obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich
+	name = "Camembert sandwich"
+	desc = "A smelly yet amazing snack. Get the average Nouveau-Parisian moving."
+	icon_state = "camembert_sandwich"
+	filling_color = "#d9be29"
+	center_of_mass = "x=16;y=4"
+	nutriment_desc = list("baguette" = 3, "camembert" = 3)
+	nutriment_amt = 3
+	bitesize = 2
+/obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich/Initialize()
+	.=..()
+	reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
+
 
 /obj/item/weapon/reagent_containers/food/snacks/toastedsandwich
 	name = "toasted sandwich"
@@ -2315,6 +2329,29 @@
 	icon_state = "cheesewedge"
 	filling_color = "#fff700"
 	bitesize = 2
+	center_of_mass = "x=16;y=10"
+
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/camembert
+	name = "Camembert"
+	desc = "A strong and delicious Nouveau-Paris style camembert."
+	icon_state = "camembert"
+	slice_path = /obj/item/weapon/reagent_containers/food/snacks/camembertslice
+	slices_num = 8
+	filling_color = "#cccccc"
+	center_of_mass = "x=16;y=10"
+	nutriment_desc = list("cheese" = 10)
+	nutriment_amt = 10
+	bitesize = 2
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/camembert/Initialize()
+	.=..()
+	reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
+
+/obj/item/weapon/reagent_containers/food/snacks/camembertslice
+	name = "Camembert slice"
+	desc = "A slide of camembert. Smells strongly arrogant."
+	icon_state = "camembertwedge"
+	filling_color = "#cccccc"
+	bitesize = 1
 	center_of_mass = "x=16;y=10"
 
 /obj/item/weapon/reagent_containers/food/snacks/sliceable/birthdaycake
