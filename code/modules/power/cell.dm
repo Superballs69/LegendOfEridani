@@ -211,6 +211,17 @@
 /obj/item/weapon/cell/hyper/empty
 	charge = 0
 
+/obj/item/weapon/cell/ultra
+	name = "PC ultra power cell"
+	desc = "Developped by PyroCorp, this powercell has been used to power its most dangerous robots for a long time."
+	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6)
+	icon_state = "pccell"
+	maxcharge = 6000
+	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80)
+
+/obj/item/weapon/cell/ultra/empty
+	charge = 0
+
 /obj/item/weapon/cell/infinite
 	name = "experimental power cell"
 	desc = "This special experimental power cell has both very large capacity, and the capacity of recharging itself via a miniaturized nuclear reactor."

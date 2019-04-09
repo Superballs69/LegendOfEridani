@@ -1424,8 +1424,7 @@
 /datum/chemical_reaction/cheesewheel
 	name = "Cheesewheel"
 	result = null
-	required_reagents = list(/datum/reagent/drink/milk = 40)
-	catalysts = list(/datum/reagent/enzyme = 5)
+	required_reagents = list(/datum/reagent/drink/milk = 50)
 	result_amount = 1
 	mix_message = "The solution thickens and curdles into a rich yellow substance."
 	minimum_temperature = 40 CELCIUS
@@ -1436,6 +1435,23 @@
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= created_volume, i++)
 		new /obj/item/weapon/reagent_containers/food/snacks/sliceable/cheesewheel(location)
+
+/datum/chemical_reaction/camembert
+	name = "Camembert"
+	result = null
+	required_reagents = list(/datum/reagent/drink/milk = 40)
+	catalysts = list(/datum/reagent/enzyme = 5)
+	result_amount = 1
+	mix_message = "The solution thickens and curdles into a rich white substance."
+	minimum_temperature = 40 CELCIUS
+	maximum_temperature = (40 CELCIUS) + 100
+
+/datum/chemical_reaction/camembert/on_reaction(var/datum/reagents/holder, var/created_volume)
+	..()
+	var/location = get_turf(holder.my_atom)
+	for(var/i = 1, i <= created_volume, i++)
+		new /obj/item/weapon/reagent_containers/food/snacks/sliceable/camembert(location)
+
 
 /datum/chemical_reaction/rawmeatball
 	name = "Raw Meatball"

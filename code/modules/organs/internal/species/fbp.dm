@@ -9,7 +9,7 @@
 	var/open
 	var/obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
-	var/servo_cost = 0.8
+	var/servo_cost = 0.5
 
 /obj/item/organ/internal/cell/New()
 	robotize()
@@ -97,6 +97,33 @@
 /obj/item/organ/internal/cell/listen()
 	if(get_charge())
 		return "faint hum of the power bank"
+
+
+/obj/item/organ/internal/cell/super
+	name = "upgraded microbattery"
+	desc = "A small, powerful upgraded cell for use in fully prosthetic bodies."
+	icon_state = "scell"
+	dead_icon = "cell_bork"
+	organ_tag = BP_CELL
+	parent_organ = BP_CHEST
+	vital = 1
+	open
+	obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
+	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
+	servo_cost = 0.2
+
+/obj/item/organ/internal/cell/hyper
+	name = "Military-grade Microbattery"
+	desc = "A small, military-grade Microbattery developped by the PyroCorp for its combat chassis. Should be compatible with any chassis anyway."
+	icon_state = "hcell"
+	dead_icon = "cell_bork"
+	organ_tag = BP_CELL
+	parent_organ = BP_CHEST
+	vital = 1
+	open
+	obj/item/weapon/cell/cell = /obj/item/weapon/cell/ultra
+	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
+	servo_cost = 0.2
 
 // Used for an MMI or posibrain being installed into a human.
 /obj/item/organ/internal/mmi_holder

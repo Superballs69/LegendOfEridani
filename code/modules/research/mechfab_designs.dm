@@ -613,6 +613,27 @@
 /datum/design/item/mechfab/augment
 	category = "Augments"
 
+/datum/design/item/mechfab/augment/microbattery
+	name = "Microbattery"
+	build_path = /obj/item/organ/internal/cell
+	materials = list("copper" = 2000, "glass" = 500)
+	req_tech = list(TECH_POWER = 1)
+	id = "microbattery"
+
+/datum/design/item/mechfab/augment/upgraded_microbattery
+	name = "Upgraded Microbattery"
+	build_path = /obj/item/organ/internal/cell/super
+	materials = list("copper" = 6000, "glass" = 1000)
+	req_tech = list(TECH_POWER = 4, TECH_BIO = 2)
+	id = "upgraded_microbattery"
+
+/datum/design/item/mechfab/augment/pyrocorp_microbattery
+	name = "Military-grade Microbattery"
+	build_path = /obj/item/organ/internal/cell/hyper
+	materials = list("copper" = 4000, "zinc" = 4000, "gold" = 500, "glass" = 500)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 5)
+	id = "pyrocorp_microbattery"
+
 /datum/design/item/mechfab/augment/armblade
 	name = "Armblade"
 	build_path = /obj/item/organ/internal/augment/active/simple/armblade

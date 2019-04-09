@@ -262,13 +262,21 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/cell/hyper
 	sort_string = "DAAAD"
 
+/datum/design/item/powercell/ultra
+	name = "Military-grade powercell"
+	id = "ultra_cell"
+	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4, TECH_COMBAT = 5)
+	materials = list(MATERIAL_ZINC = 4000, MATERIAL_COPPER = 3000, MATERIAL_GOLD = 500, MATERIAL_SILVER = 500, MATERIAL_GLASS = 70)
+	build_path = /obj/item/weapon/cell/ultra
+	sort_string = "DAAAE"
+
 /datum/design/item/powercell/device/standard
 	name = "basic"
 	id = "device_cell_standard"
 	req_tech = list(TECH_POWER = 1)
 	materials = list(MATERIAL_COPPER = 70, MATERIAL_GLASS = 5)
 	build_path = /obj/item/weapon/cell/device/standard
-	sort_string = "DAAAE"
+	sort_string = "DAAAF"
 
 /datum/design/item/powercell/device/high
 	name = "high-capacity"
@@ -277,7 +285,7 @@ other types of metals and chemistry for reagents).
 	req_tech = list(TECH_POWER = 2)
 	materials = list(MATERIAL_COPPER = 70, MATERIAL_GLASS = 6)
 	build_path = /obj/item/weapon/cell/device/high
-	sort_string = "DAAAF"
+	sort_string = "DAAAG"
 
 /datum/design/item/hud
 	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
