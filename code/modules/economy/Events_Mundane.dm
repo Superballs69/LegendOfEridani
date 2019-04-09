@@ -129,7 +129,7 @@
 
 /datum/event/trivial_news/announce()
 	var/author = "Editor Mike Hammers"
-	var/channel = "The Gibson Gazette"
+	var/channel = "Sol News"
 
 	var/datum/trade_destination/affected_dest = pick(weighted_mundaneevent_locations)
 	var/body = pick(
@@ -174,7 +174,7 @@
 	"Giant Hairball Has Perfect Grammar But Rolls rr's Too Much, Linguists Say",\
 	"[affected_dest.name] Phonebooks Print All Wrong Numbers; Results In 15 New Marriages",\
 	"Tajaran Burglar Spotted on [affected_dest.name], Mistaken For Dalmatian",\
-	"Gibson Gazette Updates Frequently Absurd, Poll Indicates",\
+	"Sol News Updates Frequently Absurd, Poll Indicates",\
 	"Esoteric Verbosity Culminates In Communicative Ennui, [affected_dest.name] Academics Note",\
 	"Taj Demand Longer Breaks, Cleaner Litter, Slower Mice",\
 	"Survey: 3 Out Of 5 Skrell Loathe Modern Art",\

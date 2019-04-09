@@ -155,6 +155,7 @@ var/list/worths = list(
 					/obj/item/weapon/cell/mecha = 220,
 					/obj/item/weapon/cell/super = 280,
 					/obj/item/weapon/cell/hyper = 310,
+					/obj/item/weapon/cell/ultra = 700,
 					/obj/item/weapon/cell/infinite = 50000,
 					/obj/item/weapon/cell/potato = 1,
 					/obj/item/weapon/cell/slime = 160,

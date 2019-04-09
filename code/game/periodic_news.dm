@@ -5,8 +5,8 @@
 	var
 		round_time // time of the round at which this should be announced, in seconds
 		message // body of the message
-		author = "NanoTrasen Editor"
-		channel_name = "Nyx Daily"
+		author = "Solgov Ministry of Information"
+		channel_name = "Sol News"
 		can_be_redacted = 0
 		message_type = "Story"
 
@@ -53,20 +53,20 @@
 
 		cheesy_honkers
 			author = "Assistant Editor Carl Ritz"
-			channel_name = "The Gibson Gazette"
+			channel_name = "Sol News"
 			message = {"Do cheesy honkers increase risk of having a miscarriage? Several health administrations
 						say so!"}
 			round_time = 60 * 15
 
 		net_block
 			author = "Assistant Editor Carl Ritz"
-			channel_name = "The Gibson Gazette"
+			channel_name = "Sol News"
 			message = {"Several corporations banding together to block access to 'wetskrell.net', site administrators
 			claiming violation of net laws."}
 			round_time = 60 * 50
 
 		found_ssd
-			channel_name = "Nyx Daily"
+			channel_name = "Sol News"
 			author = "Doctor Eric Hanfield"
 
 			message = {"Several people have been found unconscious at their terminals. It is thought that it was due
@@ -78,7 +78,7 @@
 	lotus_tree
 
 		explosions
-			channel_name = "Nyx Daily"
+			channel_name = "Sol News"
 			author = "Reporter Leland H. Howards"
 
 			message = {"The newly-christened civillian transport Lotus Tree suffered two very large explosions near the
@@ -92,7 +92,7 @@
 	food_riots
 
 		breaking_news
-			channel_name = "Nyx Daily"
+			channel_name = "Sol News"
 			author = "Reporter Ro'kii Ar-Raqis"
 
 			message = {"Breaking news: Food riots have broken out throughout the Refuge asteroid colony in the Tenebrae
@@ -103,7 +103,7 @@
 			round_time = 60 * 10
 
 		more
-			channel_name = "Nyx Daily"
+			channel_name = "Sol News"
 			author = "Reporter Ro'kii Ar-Raqis"
 
 			message = {"More on the Refuge food riots: The Refuge Council has condemned NanoTrasen's withdrawal from
