@@ -293,3 +293,52 @@
 	icon_state = "tape-splint"
 	amount = 1
 	splintable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+
+/obj/item/stack/medical/tourniquet
+	name = "tourniquets"
+	singular_name = "tourniquet"
+	desc = "A tourniquet designed to restrict bloodflow, stopping bleeding in both limbs and appendages."
+	icon_state = "tourniquet"
+	amount = 1
+	max_amount = 1
+
+	var/list/securable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_L_HAND, BP_R_HAND, BP_L_FOOT, BP_R_FOOT)
+
+/obj/item/stack/medical/tourniquet/attack(mob/living/carbon/M as mob, mob/user as mob)
+	if(..())
+		return 1
+
+	if (istype(M, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/external/affecting = H.get_organ(user.zone_sel.selecting) //nullchecked by ..()
+		var/limb = affecting.name
+		if(!(affecting.organ_tag in securable_organs))
+			to_chat(user, "<span class='danger'>You can't use \the [src] to apply a tourniquet there!</span>")
+			return
+		if(affecting.tourniqueton)
+			to_chat(user, "<span class='danger'>[M]'s [limb] already has a tourniquet on!</span>")
+			return
+		if (M != user)
+			user.visible_message("<span class='danger'>[user] starts to apply \the [src] to [M]'s [limb].</span>", "<span class='danger'>You start to apply \the [src] to [M]'s [limb].</span>", "<span class='danger'>You hear something being tightened.</span>")
+		else
+			if(( !user.hand && (affecting.organ_tag in list(BP_R_ARM, BP_R_HAND)) || \
+				user.hand && (affecting.organ_tag in list(BP_L_ARM, BP_L_HAND)) ))
+				to_chat(user, "<span class='danger'>You can't apply a tourniquet to the arm you're using!</span>")
+				return
+			user.visible_message("<span class='danger'>[user] starts to apply \the [src] to their [limb].</span>", "<span class='danger'>You start to apply \the [src] to your [limb].</span>", "<span class='danger'>You hear something being tightened.</span>")
+		if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, M))
+			if((M == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
+				user.visible_message("<span class='danger'>\The [user] fumbles [src].</span>", "<span class='danger'>You fumble [src].</span>", "<span class='danger'>You hear something being tightened.</span>")
+				return
+			var/obj/item/stack/medical/tourniquet/T = split(1, TRUE)
+			if(T)
+				if(affecting.apply_tourniquet(T))
+					T.forceMove(affecting)
+					if (M != user)
+						user.visible_message("<span class='danger'>\The [user] finishes applying [src] to [M]'s [limb].</span>", "<span class='danger'>You finish applying \the [src] to [M]'s [limb].</span>", "<span class='danger'>You hear something being tightened.</span>")
+					else
+						user.visible_message("<span class='danger'>\The [user] successfully applies [src] to their [limb].</span>", "<span class='danger'>You successfully apply \the [src] to your [limb].</span>", "<span class='danger'>You hear something being tightened.</span>")
+					return
+				T.dropInto(src.loc) //didn't get applied, so just drop it
+			user.visible_message("<span class='danger'>\The [user] fails to apply [src].</span>", "<span class='danger'>You fail to apply [src].</span>", "<span class='danger'>You hear something being tightened.</span>")
+		return

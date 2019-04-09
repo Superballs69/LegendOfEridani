@@ -30,6 +30,10 @@
 			if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
 				remove_splints(user)
 			return
+		if("tourniquets")
+			visible_message("<span class='danger'>\The [user] is trying to remove \the [src]'s tourniquets!</span>")
+			if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
+				remove_tourniquets(user)
 		if("sensors")
 			visible_message("<span class='danger'>\The [user] is trying to set \the [src]'s sensors!</span>")
 			if(do_after(user, HUMAN_STRIP_DELAY, src, progress = 0))
@@ -148,6 +152,17 @@
 		visible_message("<span class='danger'>\The [user] removes \the [src]'s splints!</span>")
 	else
 		to_chat(user, "<span class='warning'>\The [src] has no splints that can be removed.</span>")
+
+/mob/living/carbon/human/proc/remove_tourniquets(var/mob/living/user)
+	for(var/obj/item/organ/external/o in organs)
+		if(o && o.tourniqueton)
+			var/obj/item/S = o.tourniqueton
+			if(istype(S) && S.loc == o)
+				S.add_fingerprint(user)
+				if(o.remove_tourniquet())
+					user.put_in_active_hand(S)
+		else
+			user << "<span class='warning'>\The [src] has no tourniquets to remove.</span>"
 
 // Set internals on or off.
 /mob/living/carbon/human/proc/toggle_internals(var/mob/living/user)

@@ -21,6 +21,7 @@
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
 	var/num_fragments = 72  //total number of fragments produced by the grenade
 	var/explosion_size = 2   //size of the center explosion
+	var/stinger = null
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern
 	var/spread_range = 7 //leave as is, for some reason setting this higher makes the spread pattern have gaps close to the epicenter
@@ -33,9 +34,9 @@
 
 	if(explosion_size)
 		on_explosion(O)
-
 	src.fragmentate(O, num_fragments, spread_range, fragment_types)
-
+	if(stinger)
+		playsound(src.loc, 'sound/effects/stinger.ogg', 50, 1, 30)
 	qdel(src)
 
 
@@ -126,3 +127,36 @@
 		detonate()
 	else
 		return
+
+/// Stinger
+
+/obj/item/projectile/bullet/pellet/rubber_ball
+	name = "rubber balls"
+	damage = 0.5
+	agony = 25
+	embed = 0
+	sharp = 0
+	check_armour = "melee"
+	range_step = 2
+
+	base_spread = 0
+	spread_step = 20
+
+	silenced = 1
+	no_attack_log = 1
+	muzzle_type = null
+
+/obj/item/projectile/bullet/pellet/rubber_ball/strong
+	damage = 1
+	agony = 48
+
+/obj/item/weapon/grenade/frag/stinger
+	name = "stinger grenade"
+	desc = "A specialized less than lethal grenade designed to subdue assailants with high velocity rubber balls."
+	icon_state = "stinger"
+	item_state = "grenade"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/rubber_ball=3,/obj/item/projectile/bullet/pellet/rubber_ball/strong=1)
+	num_fragments = 200  //total number of fragments produced by the grenade
+	explosion_size = 0
+	throw_range = 7
+	stinger = 1

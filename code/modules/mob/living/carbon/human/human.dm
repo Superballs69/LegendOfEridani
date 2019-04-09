@@ -242,6 +242,7 @@
 		dat += "<BR><a href='?src=\ref[src];item=\ref[UW]'>Remove \the [UW]</a>"
 
 	dat += "<BR><A href='?src=\ref[src];item=splints'>Remove splints</A>"
+	dat += "<BR><A href='?src=\ref[src];item=tourniquets'>Remove tourniquets</A>"
 	dat += "<BR><A href='?src=\ref[src];refresh=1'>Refresh</A>"
 	dat += "<BR><A href='?src=\ref[user];mach_close=mob[name]'>Close</A>"
 

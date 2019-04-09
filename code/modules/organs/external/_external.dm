@@ -71,6 +71,7 @@
 	var/cavity = 0
 	var/atom/movable/applied_pressure
 	var/atom/movable/splinted
+	var/atom/movable/tourniqueton
 
 	// HUD element variable, see organ_icon.dm get_damage_hud_image()
 	var/image/hud_damage_image
@@ -122,6 +123,10 @@
 	if(splinted && splinted.loc == src)
 		qdel(splinted)
 	splinted = null
+
+	if(tourniqueton ** tourniqueton.loc == src)
+		qdel(tourniqueton)
+	tourniqueton = null
 
 	if(owner)
 		if(limb_flags & ORGAN_FLAG_CAN_GRASP) owner.grasp_limbs -= src
@@ -987,12 +992,24 @@ Note that amputating the affected organ does in fact remove the infection from t
 		if(W.clamped)
 			return 1
 
-obj/item/organ/external/proc/remove_clamps()
+/obj/item/organ/external/proc/remove_clamps()
 	var/rval = 0
 	for(var/datum/wound/W in wounds)
 		rval |= W.clamped
 		W.clamped = 0
 	return rval
+
+/obj/item/organ/external/proc/tq()
+	var/rval = 0
+	src.status &= ~ORGAN_BLEEDING
+	for(var/datum/wound/W in wounds)
+		rval |= !W.clamped
+		W.clamped = 1
+	return rval
+
+/obj/item/organ/external/proc/untq()
+	for(var/datum/wound/W in wounds)
+		W.clamped = 0
 
 // open incisions and expose implants
 // this is the retract step of surgery
@@ -1061,6 +1078,22 @@ obj/item/organ/external/proc/remove_clamps()
 		if(applied_pressure == splinted)
 			applied_pressure = null
 		splinted = null
+		return 1
+	return 0
+
+/obj/item/organ/external/proc/apply_tourniquet(var/atom/movable/tourniquet)
+	if(!tourniqueton)
+		tourniqueton = tourniquet
+		tq()
+		return 1
+	return 0
+
+/obj/item/organ/external/proc/remove_tourniquet()
+	if(tourniqueton)
+		if(tourniqueton.loc == src)
+			tourniqueton.dropInto(owner? owner.loc : src.loc)
+		tourniqueton = null
+		untq()
 		return 1
 	return 0
 
