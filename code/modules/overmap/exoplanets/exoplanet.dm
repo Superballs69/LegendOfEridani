@@ -212,7 +212,7 @@
 
 /obj/effect/overmap/sector/exoplanet/proc/generate_atmosphere()
 	atmosphere = new
-	if(prob(10))	//small chance of getting a perfectly habitable planet
+	if(prob(80))	//High chance of getting a normal planet since flammable hell planets are anti-fun and a lagfest.
 		atmosphere.adjust_gas("oxygen", MOLES_O2STANDARD, 0)
 		atmosphere.adjust_gas("nitrogen", MOLES_N2STANDARD)
 	else //let the fuckery commence
