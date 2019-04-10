@@ -6,15 +6,14 @@
 #
 # EX:
 # {
-# ckey: zuhayr
-# character_name: Jane Doe
-# item_path: /obj/item/toy/plushie
-# item_name: ugly plush toy
-# item_icon: flagmask     
-# item_desc: It's truly hideous.
-# req_titles: Assistant, Security Officer
-# req_access: 1
-# }
+ ckey: Pyrociraptor
+ character_name: PyroBOT CAD 'Opportunity'
+ item_path: /obj/item/clothing/head/beret
+ item_name: PyroCorp Beret
+ item_icon: beret_pyrocorp
+ item_desc: A beret bearing the PyroCorp Phoenix logo. Given to its units.
+ req_titles: Pathfinder Commander
+ }
 #
 # {
 # ckey: zuhayr

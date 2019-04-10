@@ -232,7 +232,7 @@
 	slowdown = 1
 
 /obj/item/clothing/accessory/legguards/pathfinder
-	name = "pathfinder arm guards"
+	name = "pathfinder leg guards"
 	desc = "A pair of armored leg pads. Attaches to a plate carrier."
 	icon_state = "legguards_pathfinder"
 
