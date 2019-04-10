@@ -123,6 +123,13 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_main.dmi'
 	unavailable_at_fab = 1
 
+/datum/robolimb/pyrocorp
+	company = "PyroCorp"
+	desc = "This limb is bulky and reinforced; It wasn't made for peace."
+	icon = 'icons/mob/human_races/cyberlimbs/pyrocorp/pyrocorp_main.dmi'
+	unavailable_at_fab = 1
+	restricted_to = list(SPECIES_IPC)
+
 /datum/robolimb/mantis
 	company = "Morpheus Mantis"
 	desc = "This limb has a casing of sleek black metal and repulsive insectile design."
