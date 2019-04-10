@@ -54,7 +54,7 @@
 	options = list(
 		"KDI Inspector" = list(/obj/item/weapon/gun/projectile/revolver/inspector, /obj/item/ammo_magazine/s357, /obj/item/ammo_magazine/s357),
 		"KDI 1911" = list(/obj/item/weapon/gun/projectile/colt/kdi, /obj/item/ammo_magazine/m45m, /obj/item/ammo_magazine/m45m),
-		"AE10 Energy Carbine" = list(/obj/item/weapon/gun/energy/gun, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device),
+		"AE5 Energy Pistol" = list(/obj/item/weapon/gun/energy/gun/pistol, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device),
 		"KDI Lamia MKI" = list(/obj/item/weapon/gun/projectile/deagle/lamia, /obj/item/ammo_magazine/m50, /obj/item/ammo_magazine/m50)
 	)
 

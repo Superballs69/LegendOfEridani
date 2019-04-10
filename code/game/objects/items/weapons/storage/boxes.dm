@@ -357,6 +357,16 @@
 	desc = "A box full of zipcuffs."
 	startswith = list(/obj/item/weapon/handcuffs/zipcuffs = 7)
 
+/obj/item/weapon/storage/box/handcuffs/hinged
+	name = "box of spare hinged handcuffs"
+	desc = "A box full of zipcuffs."
+	startswith = list(/obj/item/weapon/handcuffs/hinged = 7)
+
+/obj/item/weapon/storage/box/handcuffs/rigid
+	name = "box of spare rigid handcuffs"
+	desc = "A box full of zipcuffs."
+	startswith = list(/obj/item/weapon/handcuffs/rigid = 7)
+
 /obj/item/weapon/storage/box/mousetraps
 	name = "box of Pest-B-Gon mousetraps"
 	desc = "<B><FONT color='red'>WARNING:</FONT></B> <I>Keep out of reach of children</I>."

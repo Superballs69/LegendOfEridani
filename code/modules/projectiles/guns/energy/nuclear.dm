@@ -17,6 +17,31 @@
 		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="energykill"),
 		)
 
+/obj/item/weapon/gun/energy/gun/surplus
+	name = "AE9 energy carbine"
+	desc = "The precursor of the current generation AE10 energy carbine. Commonly seen circulating with civilian owners and on the black market due to the sheer amount produced. Has stun and lethal modes only."
+	icon_state = "oldenergystun100"
+	charge_cost = 12.5
+	max_shots = 8
+	modifystate = "oldenergystun"
+
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="oldenergystun"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="oldenergykill"),
+	)
+
+/obj/item/weapon/gun/energy/gun/nextgen
+	name = "AE11X energy carbine"
+	desc = "Ace Energy's next generation energy carbine model with better stopping power, designed to rival Hesphaestus' laser rifle. Aside from that, exactly same as their current model."
+	icon = 'icons/obj/gun_2.dmi'
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 3, TECH_ILLEGAL = 1)
+
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy, modifystate="energystun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock/heavy, modifystate="energyshock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/midlaser, modifystate="energykill"),
+		)
+
 /obj/item/weapon/gun/energy/gun/small
 	name = "AE6 'Protector' energy pistol"
 	desc = "Originally a prototype, Ace Energy acquired the plans for a holdout pistol and has tuned it for reliable military and civilian use."
@@ -32,6 +57,22 @@
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smallgunshock"),
 		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/smalllaser, modifystate="smallgunkill"),
 		)
+
+/obj/item/weapon/gun/energy/gun/pistol
+	name = "AE5 energy pistol"
+	desc = "The precursor to the common AE6. A harder hitting energy sidearm, prized upon by users who prefer stopping power. Has stun and kill modes only."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "epistolstun100"
+	charge_cost = 20
+	max_shots = 5
+	w_class = ITEM_SIZE_NORMAL
+	force = 8 //more so a proper pistol
+	modifystate = "epistolstun"
+
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="epistolstun"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="epistolkill"),
+	)
 
 /obj/item/weapon/gun/energy/gun/mounted
 	name = "mounted energy gun"
