@@ -13,15 +13,16 @@
 
 	unarmed_types = list(/datum/unarmed_attack/punch)
 	rarity_value = 2
-	strength = STR_HIGH
+	strength = STR_VHIGH
 
-	min_age = 1
+	min_age = 0
 	max_age = 130
 
-	brute_mod = 1 // Because of the introduction of FBPs, IPCs are rebalanced back to 1.
-	burn_mod = 1  //
+	brute_mod = 0.8 //
+	burn_mod = 0.7  //
+	slowdown = 0.7
 
-	warning_low_pressure = 50
+	warning_low_pressure = 20
 	hazard_low_pressure = -1
 
 	cold_level_1 = SYNTH_COLD_LEVEL_1
@@ -33,7 +34,7 @@
 	heat_level_3 = SYNTH_HEAT_LEVEL_3
 
 	body_temperature = null
-	passive_temp_gain = 5  // This should cause IPCs to stabilize at ~80 C in a 20 C environment.
+	passive_temp_gain = 4  // This should cause IPCs to stabilize at ~80 C in a 20 C environment.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE
@@ -50,7 +51,7 @@
 
 	vision_organ = BP_OPTICS
 
-	heat_discomfort_level = 373.15
+	heat_discomfort_level = 393.15
 	heat_discomfort_strings = list(
 		"Your CPU temperature probes warn you that you are approaching critical heat levels!"
 		)
