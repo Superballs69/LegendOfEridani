@@ -827,7 +827,7 @@
 		vessel.add_reagent(/datum/reagent/blood,species.blood_volume-vessel.total_volume)
 		fixblood()
 
-	species.create_organs(src) // Reset our organs/limbs.
+//	species.create_organs(src) // Reset our organs/limbs.
 	restore_all_organs()       // Reapply robotics/amputated status from preferences.
 
 	if(!client || !key) //Don't boot out anyone already in the mob.
@@ -873,7 +873,7 @@
 	for(var/obj/item/organ/external/organ in organs)
 		if(clean_feet || (organ.organ_tag in list(BP_L_HAND,BP_R_HAND)))
 			organ.gunshot_residue = null
-	
+
 	if(clean_feet && !shoes)
 		feet_blood_color = null
 		feet_blood_DNA = null

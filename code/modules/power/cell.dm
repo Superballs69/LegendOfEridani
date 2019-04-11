@@ -219,7 +219,22 @@
 	maxcharge = 6000
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80)
 
-/obj/item/weapon/cell/ultra/empty
+/obj/item/weapon/cell/nuclear
+	name = "PC Miniaturized Fission Reactor"
+	desc = "Developped by PyroCorp, this integrated fission reactor could power an unit for days."
+	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_ILLEGAL = 2)
+	icon_state = "pc-reactor"
+	maxcharge = 15000
+	var/radiate = 2
+	matter = list(MATERIAL_STEEL = 700, MATERIAL_URANIUM = 1500, MATERIAL_LEAD = 500)
+
+/obj/item/weapon/cell/nuclear/check_charge()
+	return 1
+
+/obj/item/weapon/cell/nuclear/use()
+	return 1
+
+/obj/item/weapon/cell/nuclear/empty
 	charge = 0
 
 /obj/item/weapon/cell/infinite

@@ -774,3 +774,12 @@
 	item_state = "b_suit"
 	worn_state = "gign_under"
 
+// Special
+/obj/item/clothing/under/milos
+	name = "Special Underwear"
+	desc = "A godly underwear."
+	icon_state = "milos"
+	item_state = "b_suit"
+	worn_state = "milos"
+
+

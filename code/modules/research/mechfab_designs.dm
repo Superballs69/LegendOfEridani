@@ -690,6 +690,20 @@
 	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4, TECH_BIO = 4)
 	id = "augment_armor"
 
+/datum/design/item/mechfab/augment/emp_armor
+	name = "Internal EMP armor"
+	build_path = /obj/item/organ/internal/augment/emp_armor
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "copper" = 5000)
+	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4, TECH_BIO = 4, TECH_MAGNET = 5)
+	id = "augment_emp_armor"
+
+/datum/design/item/mechfab/augment/emp_armor/advanced
+	name = "Internal Advanced EMP armor"
+	build_path = /obj/item/organ/internal/augment/emp_armor/advanced
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "copper" = 5000, "zinc" = 2000)
+	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 6, TECH_BIO = 4, TECH_MAGNET = 5)
+	id = "augment_emp_armor_ultra"
+
 /datum/design/item/mechfab/augment/nanounit
 	name = "Nanite MCU"
 	build_path = /obj/item/organ/internal/augment/active/nanounit

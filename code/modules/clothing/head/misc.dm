@@ -171,6 +171,12 @@
 	icon_state = "greenbandana"
 	item_state = "greenbandana"
 
+/obj/item/clothing/head/bandana/red
+	name = "red bandana"
+	desc = "It's a red orange piece of cloth, worn on the head."
+	icon_state = "redbandana"
+	item_state = "redbandana"
+
 /obj/item/clothing/head/bandana/orange //themij: Taryn Kifer
 	name = "orange bandana"
 	desc = "An orange piece of cloth, worn on the head."

@@ -563,23 +563,6 @@ I said no!
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/monkeysdelight
 
-/datum/recipe/baguette
-	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/dough,
-		/obj/item/weapon/reagent_containers/food/snacks/dough,
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/baguette
-
-/datum/recipe/camembert_sandwich
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/baguette,
-		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
-		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
-		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich
-
 /datum/recipe/fishandchips
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fries,
@@ -1028,3 +1011,31 @@ I said no!
 /datum/recipe/cake/chocolatebar
 	reagents = list(/datum/reagent/drink/milk/chocolate = 10, /datum/reagent/nutriment/coco = 5, /datum/reagent/sugar = 5)
 	result = /obj/item/weapon/reagent_containers/food/snacks/chocolatebar
+
+// Oui oui Baguette
+
+/datum/recipe/baguette
+	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/dough,
+		/obj/item/weapon/reagent_containers/food/snacks/dough,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/french/baguette
+
+/datum/recipe/camembert_sandwich
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/french/baguette,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+		/obj/item/weapon/reagent_containers/food/snacks/camembertslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/french/camembert_sandwich
+
+/datum/recipe/pain_au_chocolat
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/dough,
+		/obj/item/weapon/reagent_containers/food/snacks/dough,
+		/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,
+		/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/french/pain_au_chocolat
