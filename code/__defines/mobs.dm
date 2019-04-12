@@ -267,10 +267,10 @@
 #define HEAT_LEVEL_3 3
 
 //Synthetic human temperature vals
-#define SYNTH_COLD_LEVEL_1 50
+#define SYNTH_COLD_LEVEL_1 100
 #define SYNTH_COLD_LEVEL_2 -1
 #define SYNTH_COLD_LEVEL_3 -1
-#define SYNTH_HEAT_LEVEL_1 500
+#define SYNTH_HEAT_LEVEL_1 700
 #define SYNTH_HEAT_LEVEL_2 1000
 #define SYNTH_HEAT_LEVEL_3 2000
 

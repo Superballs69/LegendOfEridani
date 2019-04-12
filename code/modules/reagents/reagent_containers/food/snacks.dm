@@ -1503,20 +1503,6 @@
 	.=..()
 	reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
 
-/obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich
-	name = "Camembert sandwich"
-	desc = "A smelly yet amazing snack. Get the average Nouveau-Parisian moving."
-	icon_state = "camembert_sandwich"
-	filling_color = "#d9be29"
-	center_of_mass = "x=16;y=4"
-	nutriment_desc = list("baguette" = 3, "camembert" = 3)
-	nutriment_amt = 3
-	bitesize = 2
-/obj/item/weapon/reagent_containers/food/snacks/camembert_sandwich/Initialize()
-	.=..()
-	reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
-
-
 /obj/item/weapon/reagent_containers/food/snacks/toastedsandwich
 	name = "toasted sandwich"
 	desc = "Now if you only had a pepper bar."
@@ -3505,3 +3491,48 @@
 	name = "\improper Taco!"
 	desc = "Interestingly, the shell has gone soft and the contents have gone stale."
 	icon_state = "ancient_taco"
+
+
+
+// Oui oui Baguette
+
+/obj/item/weapon/reagent_containers/food/snacks/french/baguette
+	name = "Baguette"
+	desc = "You can smell the Nouveau-Parisian smugness emanating from that elongated bread."
+	icon_state = "baguette"
+	filling_color = "#e3d796"
+	center_of_mass = "x=18;y=12"
+	nutriment_desc = list("french bread" = 6)
+	nutriment_amt = 6
+	bitesize = 5
+/obj/item/weapon/reagent_containers/food/snacks/french/baguette/Initialize()
+	.=..()
+	reagents.add_reagent(/datum/reagent/blackpepper, 1)
+	reagents.add_reagent(/datum/reagent/sodiumchloride, 1)
+
+/obj/item/weapon/reagent_containers/food/snacks/french/camembert_sandwich
+	name = "Camembert sandwich"
+	desc = "A smelly yet amazing snack. Get the average Nouveau-Parisian moving."
+	icon_state = "camembert_sandwich"
+	filling_color = "#d9be29"
+	center_of_mass = "x=16;y=4"
+	nutriment_desc = list("baguette" = 3, "camembert" = 3)
+	nutriment_amt = 3
+	bitesize = 5
+/obj/item/weapon/reagent_containers/food/snacks/french/camembert_sandwich/Initialize()
+	.=..()
+	reagents.add_reagent(/datum/reagent/nutriment/protein, 3)
+
+/obj/item/weapon/reagent_containers/food/snacks/french/pain_au_chocolat
+	name = "Pain au Chocolat"
+	desc = "A classic french viennoiserie. Guillotine for those that dare say 'chocolatine'."
+	icon_state = "painauchocolat"
+	filling_color = "#e3d796"
+	center_of_mass = "x=18;y=12"
+	nutriment_desc = list("chocolate" = 2, "dough" = 2)
+	nutriment_amt = 2
+	bitesize = 3
+/obj/item/weapon/reagent_containers/food/snacks/french/pain_au_chocolat/Initialize()
+	.=..()
+	reagents.add_reagent(/datum/reagent/blackpepper, 1)
+	reagents.add_reagent(/datum/reagent/sodiumchloride, 1)

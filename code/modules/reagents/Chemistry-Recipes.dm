@@ -1608,6 +1608,14 @@
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 10
 
+/datum/chemical_reaction/cider
+	name = "Cider"
+	result = /datum/reagent/ethanol/cider
+	required_reagents = list(/datum/reagent/drink/juice/apple = 10)
+	catalysts = list(/datum/reagent/enzyme = 5)
+	result_amount = 10
+	mix_message = "The solution roils as it rapidly ferments into a rich yellow liquid."
+
 /datum/chemical_reaction/wine
 	name = "Wine"
 	result = /datum/reagent/ethanol/wine

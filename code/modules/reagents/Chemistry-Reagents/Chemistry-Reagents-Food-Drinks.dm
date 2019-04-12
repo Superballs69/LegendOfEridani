@@ -1118,6 +1118,22 @@
 	glass_name = "beer"
 	glass_desc = "A freezing container of beer"
 
+/datum/reagent/ethanol/beer/german
+	name = "Neue Berlin Beer"
+	description = "An alcoholic beverage made from malted grains, hops, yeast, and Neue Berlin quality."
+	taste_description = "quality alcohol"
+	color = "#ffd300"
+	strength = 50
+	nutriment_factor = 1
+
+/datum/reagent/ethanol/beer/cherry
+	name = "Neue Berlin Cherry Beer"
+	description = "An alcoholic beverage made in Neue Berlin, mixed with cherries."
+	taste_description = "cherry and alcohol"
+	color = "#c12046"
+	strength = 50
+	nutriment_factor = 1
+
 /datum/reagent/ethanol/beer/good
 
 	taste_description = "beer"
@@ -1323,6 +1339,16 @@
 	glass_name = "whiskey"
 	glass_desc = "The silky, smokey whiskey goodness inside the glass makes the drink look very classy."
 
+/datum/reagent/ethanol/cider
+	name = "Cider"
+	description = "An alcohol made out of apples."
+	taste_description = "bitter fermented apples"
+	color = "#e8d655"
+	strength = 2
+
+	glass_name = "Cider"
+	glass_desc = "A very common drink."
+
 /datum/reagent/ethanol/wine
 	name = "Wine"
 	description = "An premium alchoholic beverage made from distilled grape juice."
@@ -1333,8 +1359,22 @@
 	glass_name = "wine"
 	glass_desc = "A very classy looking drink."
 
-/datum/reagent/ethanol/wine/premium
+/datum/reagent/ethanol/wine/red
+	name = "Red Wine"
+	description = "An premium alchoholic beverage made from distilled grape juice and french smugness."
+	taste_description = "sweet smugness"
+	color = "#230611" // rgb: 35, 6, 17
+	strength = 15
+
+/datum/reagent/ethanol/wine/white
 	name = "White Wine"
+	description = "An premium alchoholic beverage made from distilled grape juice and the wish of getting drunk."
+	taste_description = "sweet"
+	color = "#fffcea" // rgb: 255, 252, 234
+	strength = 25
+
+/datum/reagent/ethanol/wine/premium
+	name = "Premium White Wine"
 	description = "An exceptionally expensive alchoholic beverage made from distilled white grapes."
 	taste_description = "white velvet"
 	color = "#ffddaa" // rgb: 255, 221, 170 - a light cream

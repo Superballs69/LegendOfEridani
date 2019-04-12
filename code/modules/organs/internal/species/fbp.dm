@@ -7,9 +7,9 @@
 	parent_organ = BP_CHEST
 	vital = 1
 	var/open
-	var/obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
+	var/obj/item/weapon/cell/cell = /obj/item/weapon/cell/super
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
-	var/servo_cost = 0.7
+	var/servo_cost = 0.3
 
 /obj/item/organ/internal/cell/New()
 	robotize()
@@ -108,9 +108,9 @@
 	parent_organ = BP_CHEST
 	vital = 1
 	open
-	obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
+	obj/item/weapon/cell/cell = /obj/item/weapon/cell/super
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
-	servo_cost = 0.5
+	servo_cost = 0.2
 
 /obj/item/organ/internal/cell/hyper
 	name = "Military-grade Microbattery"
@@ -121,9 +121,9 @@
 	parent_organ = BP_CHEST
 	vital = 1
 	open
-	obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
+	obj/item/weapon/cell/cell = /obj/item/weapon/cell/super
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
-	servo_cost = 0.05
+	servo_cost = 0.02
 
 // Used for an MMI or posibrain being installed into a human.
 /obj/item/organ/internal/mmi_holder

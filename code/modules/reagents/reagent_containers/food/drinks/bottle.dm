@@ -277,7 +277,7 @@
 		reagents.add_reagent(/datum/reagent/ethanol/goldschlager, 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/cognac
-	name = "Chateau De Baton Premium Cognac"
+	name = "Baton Premium Cognac"
 	desc = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time."
 	icon_state = "cognacbottle"
 	center_of_mass = "x=16;y=6"
@@ -293,6 +293,33 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/wine, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/redwine
+	name = "Chateau de Nouveau-Paris 2598"
+	desc = "A fairly expensive wine bottle, of great quality."
+	icon_state = "redwinebottle"
+	center_of_mass = "x=16;y=4"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/wine/red, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/whitewine
+	name = "White Wine"
+	desc = "A Nouveau-Paris white wine, perfect for friends gathering."
+	icon_state = "whitewinebottle"
+	center_of_mass = "x=16;y=4"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/wine/white, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cider
+	name = "Cider"
+	desc = "A relatively weak alcohol very popular in the ETF."
+	icon_state = "cidre"
+	center_of_mass = "x=16;y=4"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/cider, 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe
 	name = "Jailbreaker Verte"
@@ -464,6 +491,24 @@
 /obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer/New()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/ethanol/beer, 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/germanbeer
+	name = "Neue Berlin beer"
+	desc = "Contains only quality beer."
+	icon_state = "nbbeer"
+	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/germanbeer/New()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/ethanol/beer/german, 30)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/cherrybeer
+	name = "cherry beer"
+	desc = "Contains only cherry alcoholic sweetness."
+	icon_state = "cherrybeer"
+	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/cherrybeer/New()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/ethanol/beer/cherry, 30)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/small/ale
 	name = "\improper Magm-Ale"
