@@ -3,13 +3,13 @@ Single Use Emergency Pouches
  */
 
 /obj/item/weapon/storage/med_pouch
-	name = "emergency medical pouch"
-	desc = "For use in emergency situations only."
+	name = "emergency medical medkit"
+	desc = "A miniature case to store enough emergency medication for one person."
 	icon = 'icons/obj/med_pouch.dmi'
 	storage_slots = 7
 	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_SMALL
-	icon_state = "pack0"
+	icon_state = "case"
 	var/injury_type = "generic"
 	var/opened = FALSE
 	var/global/image/cross_overlay
@@ -28,6 +28,7 @@ Single Use Emergency Pouches
 /obj/item/weapon/storage/med_pouch/Initialize()
 	. = ..()
 	name = "emergency [injury_type] pouch"
+	desc = "A miniature case to store enough emergency medication for one person. This particular one is for [injury_type] injuries."
 	make_exact_fit()
 	for(var/obj/item/weapon/reagent_containers/pill/P in contents)
 		P.color = color
@@ -41,7 +42,7 @@ Single Use Emergency Pouches
 		cross_overlay = image(icon, "cross")
 		cross_overlay.appearance_flags = RESET_COLOR
 	overlays += cross_overlay
-	icon_state = "pack[opened]"
+//	icon_state = "pack[opened]"
 
 /obj/item/weapon/storage/med_pouch/examine()
 	. = ..()
@@ -60,7 +61,7 @@ Single Use Emergency Pouches
 
 /obj/item/weapon/storage/med_pouch/open(mob/user)
 	if(!opened)
-		user.visible_message("<span class='notice'>\The [user] tears open [src], breaking the vacuum seal!</span>", "<span class='notice'>You tear open [src], breaking the vacuum seal!</span>")
+		user.visible_message("<span class='notice'>\The [user] tears open [src], breaking the plastic seal!</span>", "<span class='notice'>You tear open [src], breaking the plastic seal!</span>")
 		opened = 1
 		update_icon()
 	. = ..()
