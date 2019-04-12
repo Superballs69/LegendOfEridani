@@ -225,13 +225,34 @@
 	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_ILLEGAL = 2)
 	icon_state = "pc-reactor"
 	maxcharge = 15000
+	var/self_recharge = 1
+	var/recharge_time = 7
+	var/charge_tick = 0
 	var/radiate = 2
+	var/charge_nuclear = 7.5
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_URANIUM = 1500, MATERIAL_LEAD = 500)
 
-/obj/item/weapon/cell/nuclear/check_charge()
-	return 1
+/obj/item/weapon/cell/nuclear/Initialize()
+	if(self_recharge)
+		START_PROCESSING(SSobj, src)
+	update_icon()
 
-/obj/item/weapon/cell/nuclear/use()
+/obj/item/weapon/cell/nuclear/Destroy()
+	if(self_recharge)
+		STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/weapon/cell/nuclear/Process()
+	if(self_recharge) //Every [recharge_time] ticks, recharge
+		charge_tick++
+		if(charge_tick < recharge_time) return 0
+		charge_tick = 0
+
+		if(charge >= maxcharge)
+			return 0 // check if we actually need to recharge
+
+		give(charge_nuclear)
+		update_icon()
 	return 1
 
 /obj/item/weapon/cell/nuclear/empty

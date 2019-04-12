@@ -449,7 +449,7 @@
 	interface_name = "mounted cooling unit"
 	interface_desc = "A heat sink with a liquid cooled radiator."
 	module_cooldown = 0 SECONDS //no cd because its critical for a life-support module
-	var/charge_consumption = 0.5 KILOWATTS
+	var/charge_consumption = 0.05 KILOWATTS
 	var/max_cooling = 12
 	var/thermostat = T20C
 

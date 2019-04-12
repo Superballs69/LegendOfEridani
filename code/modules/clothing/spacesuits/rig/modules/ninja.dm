@@ -182,6 +182,9 @@
 /obj/item/rig_module/self_destruct/small
 	explosion_values = list(0,0,3,4)
 
+/obj/item/rig_module/self_destruct/pyrocorp
+	explosion_values = list(3,4,6,8)
+
 
 /obj/item/rig_module/self_destruct/activate()
 	activation_check = 1

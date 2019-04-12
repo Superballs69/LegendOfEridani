@@ -1458,6 +1458,7 @@
 #include "code\modules\clothing\spacesuits\rig\suits\ert.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\light.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\merc.dm"
+#include "code\modules\clothing\spacesuits\rig\suits\pyrocorp.dm"
 #include "code\modules\clothing\spacesuits\rig\suits\station.dm"
 #include "code\modules\clothing\spacesuits\void\merc.dm"
 #include "code\modules\clothing\spacesuits\void\misc.dm"

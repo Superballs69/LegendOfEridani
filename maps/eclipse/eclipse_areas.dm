@@ -185,6 +185,14 @@
 	name = "\improper Second Deck Central Stairwell"
 	icon_state = "hallC2"
 
+/area/hallway/primary/seconddeck/stairs
+	name = "\improper Second Deck Central Stairwell"
+	icon_state = "hallC2"
+
+/area/hallway/primary/seconddeck/engineering
+	name = "\improper Second Deck Central Stairwell"
+	icon_state = "hallC2"
+
 /area/maintenance/substation/seconddeck
 	name = "Second Deck Substation"
 
