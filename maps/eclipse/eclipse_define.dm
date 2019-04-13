@@ -37,7 +37,7 @@
 	num_exoplanets = 1
 	planet_size = list(255,255)
 
-	away_site_budget = 65
+	away_site_budget = 12
 	id_hud_icons = 'maps/eclipse/icons/assignment_hud.dmi'
 
 /datum/map/eclipse/setup_map()
