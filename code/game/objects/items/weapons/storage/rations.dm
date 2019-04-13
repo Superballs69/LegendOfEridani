@@ -26,7 +26,7 @@
 		label_overlay = image(icon, "label")
 		label_overlay.appearance_flags = RESET_COLOR
 	overlays += label_overlay
-	icon_state = "[initial(icon_state)]_open"
+	icon_state = "[initial(icon_state)][opened]"
 
 /obj/item/weapon/storage/ration/attack_self(mob/user)
 	open(user)

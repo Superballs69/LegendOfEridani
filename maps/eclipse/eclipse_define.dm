@@ -17,10 +17,10 @@
 	station_name  = "EEV Eclipse"
 	station_short = "Eclipse"
 	dock_name     = "TBD"
-	boss_name     = "Eridani Trade Federation"
-	boss_short    = "Command"
-	company_name  = "Solar Systems Alliance"
-	company_short = "SSA"
+	boss_name     = "Federal Control Agency"
+	boss_short    = "FCA"
+	company_name  = "Eridani Trade Federation"
+	company_short = "ETF"
 
 	map_admin_faxes = list("Corporate Central Office")
 
@@ -35,9 +35,9 @@
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 1
-	planet_size = list(129,129)
+	planet_size = list(255,255)
 
-	away_site_budget = 3
+	away_site_budget = 65
 	id_hud_icons = 'maps/eclipse/icons/assignment_hud.dmi'
 
 /datum/map/eclipse/setup_map()
@@ -49,7 +49,7 @@
 	to_chat(victim, "<h2>Current map information</h2>")
 	to_chat(victim, "You're aboard the <b>[station_name]</b>, an Eridani Trade Federation sanctioned mission. Its primary mission is looking for undiscovered sapient alien species, technological advancements and general exploration.")
 	to_chat(victim, "The vessel is staffed with a mix of ETF government officials and ETF companies.")
-	to_chat(victim, "This area of space is uncharted, away from SSA/ETF/FF territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector.")
+	to_chat(victim, "This area of space is uncharted, away from SSA/ETF/FF territory, and a ship graveyard. Expect many different encounters along your journey.")
 
 /datum/map/eclipse/send_welcome()
 	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>EEV Eclipse</b> Sensor Readings:</font><br>"
