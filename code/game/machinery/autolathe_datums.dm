@@ -314,65 +314,6 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	path = /obj/item/weapon/syringe_cartridge
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/shotgun_blanks
-	name = "ammunition (shotgun, blank)"
-	path = /obj/item/ammo_casing/shotgun/blank
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/shotgun_beanbag
-	name = "ammunition (shotgun, beanbag)"
-	path = /obj/item/ammo_casing/shotgun/beanbag
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/shotgun_flash
-	name = "ammunition (shotgun, flash)"
-	path = /obj/item/ammo_casing/shotgun/flash
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_rubber
-	name = "ammunition (.45, rubber)"
-	path = /obj/item/ammo_magazine/m45m/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_rubber_45ds
-	name = "ammunition (.45, rubber) double-stack"
-	path = /obj/item/ammo_magazine/m45mds/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/speedloader_44_rubber
-	name = "speed loader (.44 magnum, rubber)"
-	path = /obj/item/ammo_magazine/s44/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_flash
-	name = "ammunition (.45, flash)"
-	path = /obj/item/ammo_magazine/m45m/flash
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_flash_45ds
-	name = "ammunition (.45, flash) double-stack"
-	path = /obj/item/ammo_magazine/m45mds/flash
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_smg_rubber
-	name = "ammunition (9mm rubber) top mounted"
-	path = /obj/item/ammo_magazine/mc9mmt/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_smg_flash
-	name = "ammunition (9mm, flash) top mounted"
-	path = /obj/item/ammo_magazine/mc9mmt/flash
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/consolescreen
 	name = "console screen"
 	path = /obj/item/weapon/stock_parts/console_screen
@@ -477,6 +418,83 @@ var/const/EXTRA_COST_FACTOR = 1.25
 /datum/autolathe/recipe/flamethrower
 	name = "flamethrower"
 	path = /obj/item/weapon/flamethrower/full
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/shotgun_blanks
+	name = "ammunition (shotgun, blank)"
+	path = /obj/item/ammo_casing/shotgun/blank
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/shotgun_beanbag
+	name = "ammunition (shotgun, beanbag)"
+	path = /obj/item/ammo_casing/shotgun/beanbag
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/shotgun_flash
+	name = "ammunition (shotgun, flash)"
+	path = /obj/item/ammo_casing/shotgun/flash
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_rubber
+	name = "ammunition (.45, rubber)"
+	path = /obj/item/ammo_magazine/m45m/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_rubber_45ds
+	name = "ammunition (.45, rubber) double-stack"
+	path = /obj/item/ammo_magazine/m45mds/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/speedloader_44_rubber
+	name = "speed loader (.44 magnum, rubber)"
+	path = /obj/item/ammo_magazine/s44/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_flash
+	name = "ammunition (.45, flash)"
+	path = /obj/item/ammo_magazine/m45m/flash
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_flash_45ds
+	name = "ammunition (.45, flash) double-stack"
+	path = /obj/item/ammo_magazine/m45mds/flash
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_smg_rubber
+	name = "ammunition (9mm rubber) top mounted"
+	path = /obj/item/ammo_magazine/mc9mmt/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_smg_flash
+	name = "ammunition (9mm, flash) top mounted"
+	path = /obj/item/ammo_magazine/mc9mmt/flash
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_57_rubber
+	name = "ammunition (5.7x28mm, rubber) magazine"
+	path = /obj/item/ammo_magazine/m57/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_57
+	name = "ammunition (5.7x28mm) magazine"
+	path = /obj/item/ammo_magazine/m57
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_57_smg
+	name = "ammunition (5.7x28mm) magazine"
+	path = /obj/item/ammo_magazine/m57smg
 	hidden = 1
 	category = "Arms and Ammunition"
 

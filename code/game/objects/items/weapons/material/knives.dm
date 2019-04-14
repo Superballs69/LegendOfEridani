@@ -81,6 +81,7 @@
 		throwforce = max(3,force-3)
 		hitsound = 'sound/weapons/bladeslice.ogg'
 		icon_state += "_open"
+		item_state = "knife"
 		w_class = ITEM_SIZE_NORMAL
 		attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	else
@@ -91,6 +92,7 @@
 		icon_state = initial(icon_state)
 		w_class = initial(w_class)
 		attack_verb = initial(attack_verb)
+		item_state = initial(item_state)
 
 /obj/item/weapon/material/pocketknife/attack_self(mob/user)
 	active = !active
