@@ -159,10 +159,16 @@
 /obj/effect/landmark/corpse/lar_maria/zhp_guard/dark
 	skin_tones_per_species = list(SPECIES_HUMAN = list(-115))
 
+/obj/item/clothing/suit/armor/pcarrier/security/zhp
+	name = "security plate carrier"
+	desc = "A standard issue plate carrier for all Arcturus-Eclipse Project security contractors."
+	icon_state = "pcarrier_sec"
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec)
+
 /decl/hierarchy/outfit/corpse/zhp_guard
 	name = "Dead ZHP guard"
 	uniform = /obj/item/clothing/under/rank/virologist
-	suit = /obj/item/clothing/suit/armor/pcarrier
+	suit = /obj/item/clothing/suit/armor/pcarrier/security/zhp
 	head = /obj/item/clothing/head/soft/lar_maria/zhp_cap
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_ear = /obj/item/device/radio/headset
@@ -171,8 +177,8 @@
 	name = "\improper security"
 	desc = "Guard dressed at Zeng-Hu Pharmaceuticals uniform."
 	icon_state = "guard_light"
-	maxHealth = 60
-	health = 60
+	maxHealth = 120
+	health = 120
 	harm_intent_damage = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 20
@@ -187,9 +193,9 @@
 		corpse = /obj/effect/landmark/corpse/lar_maria/zhp_guard/dark
 
 /mob/living/simple_animal/hostile/lar_maria/guard/ranged
-	weapon = /obj/item/weapon/gun/projectile/shotgun/pump
+	weapon = /obj/item/weapon/gun/projectile/shotgun/pump/combat/hesphaestus
 	ranged = 1
-	projectiletype = /obj/item/projectile/bullet/shotgun/beanbag
+	projectiletype = /obj/item/projectile/bullet/pellet/shotgun
 
 /mob/living/simple_animal/hostile/lar_maria/guard/ranged/Initialize()
 	. = ..()
@@ -274,7 +280,7 @@
 	name = "paper note"
 	info = {"<center><b><font color='green'>Zeng-Hu Pharmaceuticals</font></b></center>
 			<center><font color='red'><small>CONFIDENTIAL USE ONLY</small></font></center>
-			<i>Tedd, don't get into the cells with the Type 8 subjects anymore, something's off about them the last couple days. They haven't been moving right, and they seem distracted nearly constantly, and not in a normal way. They also look like they're turning kinda… green? One of the other guys says it's probably just a virus or something reacting with it, but I don't know, something seems off.</i>
+			<i>Tedd, don't get into the cells with the Type 8 subjects anymore, something's off about them the last couple days. They haven't been moving right, and they seem distracted nearly constantly, and not in a normal way. They also look like they're turning kindaï¿½ green? One of the other guys says it's probably just a virus or something reacting with it, but I don't know, something seems off.</i>
 			"}
 
 /obj/item/weapon/paper/lar_maria/note_5

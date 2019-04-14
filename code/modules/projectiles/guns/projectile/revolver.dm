@@ -182,3 +182,13 @@
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a44
+
+/obj/item/weapon/gun/projectile/revolver/judge
+	name = "Judge"
+	desc = "A 5 shot cylinder shotgun revolver."
+	max_shells = 5
+	caliber = "shotgun"
+	icon_state = "judge"
+	item_state = "revolver"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/shotgun

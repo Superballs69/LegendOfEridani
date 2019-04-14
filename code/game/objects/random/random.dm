@@ -253,12 +253,15 @@
 
 /obj/random/energy/spawn_choices()
 	return list(/obj/item/weapon/gun/energy/laser = 4,
+				/obj/item/weapon/gun/energy/gun/surplus = 4,
 				/obj/item/weapon/gun/energy/gun = 3,
+				/obj/item/weapon/gun/energy/gun/pistol = 3,
+				/obj/item/weapon/gun/energy/gun/nextgen = 2,
+				/obj/item/weapon/gun/energy/gun/small = 5,
 				/obj/item/weapon/gun/energy/retro = 2,
 				/obj/item/weapon/gun/energy/lasercannon = 2,
 				/obj/item/weapon/gun/energy/xray = 3,
 				/obj/item/weapon/gun/energy/sniperrifle = 1,
-				/obj/item/weapon/gun/energy/gun/nuclear = 1,
 				/obj/item/weapon/gun/energy/ionrifle = 2,
 				/obj/item/weapon/gun/energy/toxgun = 3,
 				/obj/item/weapon/gun/energy/taser = 4,
@@ -289,7 +292,32 @@
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel = 4,
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn = 3,
 				/obj/item/weapon/gun/projectile/heavysniper = 1,
-				/obj/item/weapon/gun/projectile/shotgun/pump/combat = 2)
+				/obj/item/weapon/gun/projectile/shotgun/pump/combat/hesphaestus = 3,
+				/obj/item/weapon/gun/projectile/shotgun/pump/combat = 2,
+				/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg = 1,
+				/obj/item/weapon/gun/projectile/shotgun/pump/semi = 2,
+				/obj/item/weapon/gun/projectile/shotgun/pump/semi/spas = 1,
+				/obj/item/weapon/gun/projectile/shotgun/pump/semi/peacewalker = 1,
+				/obj/item/weapon/gun/projectile/automatic/mx9 = 2,
+				/obj/item/weapon/gun/projectile/automatic/g36c = 2,
+				/obj/item/weapon/gun/projectile/automatic/srx9 = 3,
+				/obj/item/weapon/gun/projectile/automatic/c8s = 1,
+				/obj/item/weapon/gun/projectile/automatic/kopis = 3,
+				/obj/item/weapon/gun/projectile/automatic/mk5 = 1,
+				/obj/item/weapon/gun/projectile/automatic/mac10 = 3,
+				/obj/item/weapon/gun/projectile/automatic/mac10/fac10 = 2,
+				/obj/item/weapon/gun/projectile/p226xr = 4,
+				/obj/item/weapon/gun/projectile/deagle/ = 3,
+				/obj/item/weapon/gun/projectile/deagle/lamia = 2,
+				/obj/item/weapon/gun/projectile/deagle/lamia/mk2 = 1,
+				/obj/item/weapon/gun/projectile/colt/fac = 3,
+				/obj/item/weapon/gun/projectile/colt/fac/compact = 2,
+				/obj/item/weapon/gun/projectile/colt/kdi = 2,
+				/obj/item/weapon/gun/projectile/colt/kdi/infiltrator = 1,
+				/obj/item/weapon/gun/projectile/revolver/inspector = 1,
+				/obj/item/weapon/gun/projectile/revolver/m30 = 2,
+				/obj/item/weapon/gun/projectile/revolver/m30/police = 3,
+				/obj/item/weapon/gun/projectile/revolver/judge = 2)
 
 /obj/random/handgun
 	name = "Random Handgun"
@@ -299,12 +327,25 @@
 
 /obj/random/handgun/spawn_choices()
 	return list(/obj/item/weapon/gun/projectile/sec = 3,
-				/obj/item/weapon/gun/energy/gun = 2,
+				/obj/item/weapon/gun/energy/gun/small = 3,
 				/obj/item/weapon/gun/projectile/beretta = 2,
 				/obj/item/weapon/gun/projectile/colt = 2,
 				/obj/item/weapon/gun/projectile/pistol = 2,
 				/obj/item/weapon/gun/energy/retro = 1,
-				/obj/item/weapon/gun/projectile/sec/wood = 1)
+				/obj/item/weapon/gun/projectile/sec/wood = 1,
+				/obj/item/weapon/gun/projectile/p226xr = 3,
+				/obj/item/weapon/gun/projectile/deagle/ = 2,
+				/obj/item/weapon/gun/projectile/deagle/lamia = 1,
+				/obj/item/weapon/gun/projectile/deagle/lamia/mk2 = 1,
+				/obj/item/weapon/gun/projectile/colt/fac = 2,
+				/obj/item/weapon/gun/projectile/colt/fac/compact = 2,
+				/obj/item/weapon/gun/projectile/colt/kdi = 1,
+				/obj/item/weapon/gun/projectile/colt/kdi/infiltrator = 1,
+				/obj/item/weapon/gun/projectile/revolver/inspector = 1,
+				/obj/item/weapon/gun/projectile/revolver/m30 = 1,
+				/obj/item/weapon/gun/projectile/revolver/m30/police = 2,
+				/obj/item/weapon/gun/energy/gun/pistol = 2,
+				/obj/item/weapon/gun/projectile/revolver/judge = 1)
 
 /obj/random/ammo
 	name = "Random Ammunition"

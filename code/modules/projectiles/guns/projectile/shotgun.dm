@@ -56,6 +56,17 @@
 	one_hand_penalty = 3 //a little heavier than the regular shotgun
 	accuracy = 1
 
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/hesphaestus
+	name = "HI 870 Custom"
+	desc = "Hesphaestus' model of the Remington 870 designed to compete with KDI. Makes a solid baseball bat."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "870custom"
+	item_state = "cshotgun"
+	max_shells = 5
+	accuracy = 0
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	force = 14
+
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg
 	name = "Seburo KSG"
 	desc = "Seburo's entry to the shotgun consumer market. A compact, high capacity pump shotgun. Commonly seen in use with personal security contractors."

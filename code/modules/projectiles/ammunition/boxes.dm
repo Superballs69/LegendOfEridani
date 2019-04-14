@@ -434,7 +434,7 @@
 	icon_state = "p90"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a57
-	matter = list(DEFAULT_WALL_MATERIAL = 3000)
+	matter = list(DEFAULT_WALL_MATERIAL = 45000)
 	caliber = "5.7x28mm"
 	max_ammo = 50
 	multiple_sprites = 1
@@ -455,7 +455,7 @@
 	icon_state = "57"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a57
-	matter = list(DEFAULT_WALL_MATERIAL = 525) //metal costs are very roughly based around 1 .45 casing = 75 metal
+	matter = list(DEFAULT_WALL_MATERIAL = 1800) //90 material per bullet
 	caliber = "5.7x28mm"
 	max_ammo = 20
 	multiple_sprites = 1

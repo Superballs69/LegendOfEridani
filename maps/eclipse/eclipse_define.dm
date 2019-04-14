@@ -35,7 +35,7 @@
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 1
-	planet_size = list(255,255)
+	planet_size = list(135,135)
 
 	away_site_budget = 12
 	id_hud_icons = 'maps/eclipse/icons/assignment_hud.dmi'
