@@ -52,10 +52,17 @@
 
 	var/excavation_amount = 200
 
-/obj/item/weapon/pickaxe/hammer
+/obj/item/weapon/pickaxe/sledgehammer
 	name = "sledgehammer"
 	//icon_state = "sledgehammer" Waiting on sprite
 	desc = "A mining hammer made of reinforced metal. You feel like smashing your boss in the face with this."
+	icon_state = "sledgehammer"
+	item_state = "sledgehammer"
+	force = 40
+	attack_verb = list("smashed", "caved in", "squared", "sledged")
+	drill_sound = 'sound/weapons/heavysmash.ogg'
+	drill_verb = "smashing"
+	slot_flags = SLOT_BACK
 
 /obj/item/weapon/pickaxe/silver
 	name = "silver pickaxe"
