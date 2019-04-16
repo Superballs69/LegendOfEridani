@@ -39,7 +39,7 @@
 		"theatre"          = new/datum/holodeck_program(/area/holodeck/source_theatre),
 		"meetinghall"      = new/datum/holodeck_program(/area/holodeck/source_meetinghall),
 		"courtroom"        = new/datum/holodeck_program(/area/holodeck/source_courtroom, list('sound/music/traitor.ogg')),
-		"voleyball"        = new/datum/holodeck_program(/area/holodeck/source_volleyball, list('sound/music/THUNDERDOME.ogg')),
+		"volleyball"        = new/datum/holodeck_program(/area/holodeck/source_volleyball, list('sound/music/THUNDERDOME.ogg')),
 		"cafe"             = new/datum/holodeck_program(/area/holodeck/source_cafe),
 		"wildlifecarp"     = new/datum/holodeck_program(/area/holodeck/source_wildlife, list()),
 		"turnoff"          = new/datum/holodeck_program(/area/holodeck/source_plating, list())
@@ -61,7 +61,7 @@
 			"Space"             = "space",
 			"Theatre"           = "theatre",
 			"Thunderdome Court" = "thunderdomecourt",
-			"Voleyball Court"   = "voleyball"
+			"Voleyball Court"   = "volleyball"
 		)
 
 	)

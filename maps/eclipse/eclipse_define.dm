@@ -22,7 +22,7 @@
 	company_name  = "Eridani Trade Federation"
 	company_short = "ETF"
 
-	map_admin_faxes = list("Corporate Central Office")
+	map_admin_faxes = list("FCA Epsilon Office")
 
 	//These should probably be moved into the evac controller...
 	shuttle_docked_message = "Attention all hands: Jump preparation complete. The wormhole drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
@@ -35,9 +35,9 @@
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 1
-	planet_size = list(135,135)
+	planet_size = list(105,105)
 
-	away_site_budget = 12
+	away_site_budget = 9
 	id_hud_icons = 'maps/eclipse/icons/assignment_hud.dmi'
 
 /datum/map/eclipse/setup_map()
