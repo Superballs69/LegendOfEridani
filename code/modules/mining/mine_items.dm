@@ -59,10 +59,12 @@
 	icon_state = "sledgehammer"
 	item_state = "sledgehammer"
 	force = 40
+	digspeed = 200
 	attack_verb = list("smashed", "caved in", "squared", "sledged")
 	drill_sound = 'sound/weapons/heavysmash.ogg'
 	drill_verb = "smashing"
 	slot_flags = SLOT_BACK
+	excavation_amount = 500
 
 /obj/item/weapon/pickaxe/silver
 	name = "silver pickaxe"
