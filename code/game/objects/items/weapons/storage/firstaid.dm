@@ -27,6 +27,7 @@
 	startswith = list(
 		/obj/item/stack/medical/bruise_pack = 2,
 		/obj/item/stack/medical/ointment = 2,
+		/obj/item/stack/medical/wipes = 2,
 		/obj/item/weapon/storage/pill_bottle/antidexafen,
 		/obj/item/weapon/storage/pill_bottle/paracetamol,
 		/obj/item/stack/medical/splint
@@ -165,6 +166,60 @@
 		/obj/item/stack/medical/advanced/bruise_pack,
 		)
 
+/obj/item/weapon/storage/firstaid/ifak
+	name = "individual first aid kit"
+	desc = "A small individual first-aid kit."
+	icon_state = "ifak"
+	storage_slots = 12
+	w_class = ITEM_SIZE_SMALL
+	max_w_class = ITEM_SIZE_SMALL
+
+	can_hold = list(
+		/obj/item/stack/medical,
+		/obj/item/device/healthanalyzer,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/weapon/storage/med_pouch,
+		/obj/item/weapon/storage/pill_bottle,
+		/obj/item/weapon/reagent_containers/hypospray,
+		/obj/item/weapon/reagent_containers/syringe,
+		/obj/item/weapon/reagent_containers/pill,
+		/obj/item/weapon/reagent_containers/glass/beaker/vial
+		)
+
+	startswith = list(
+		/obj/item/stack/medical/tourniquet,
+		/obj/item/stack/medical/splint,
+		/obj/item/stack/medical/bruise_pack = 2,
+		/obj/item/stack/medical/wipes = 2,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/weapon/storage/pill_bottle/paracetamol
+		)
+
+/obj/item/weapon/storage/firstaid/ifak/police
+	icon_state = "ifak_police"
+
+	startswith = list(
+		/obj/item/stack/medical/tourniquet,
+		/obj/item/stack/medical/splint,
+		/obj/item/clothing/gloves/latex/nitrile,
+		/obj/item/weapon/storage/med_pouch/trauma,
+		/obj/item/weapon/storage/med_pouch/burn,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2
+	)
+
+/obj/item/weapon/storage/firstaid/ifak/combat
+	icon_state = "ifak_combat"
+
+	startswith = list(
+		/obj/item/stack/medical/tourniquet,
+		/obj/item/stack/medical/splint,
+		/obj/item/clothing/gloves/latex/nitrile,
+		/obj/item/stack/medical/bruise_pack = 2,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2,
+		/obj/item/weapon/storage/med_pouch/trauma = 2,
+		/obj/item/weapon/storage/med_pouch/burn = 2
+	)
 /*
  * Pill Bottles
  */

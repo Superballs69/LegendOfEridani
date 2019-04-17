@@ -145,6 +145,72 @@
 			affecting.salve()
 			affecting.disinfect()
 
+/obj/item/stack/medical/wipes
+	name = "alcohol wipes"
+	desc = "Used to disinfect wounds."
+	singular_name = "alcohol wipe"
+	icon_state = "wipe"
+	apply_sounds = list('sound/effects/rip1.ogg','sound/effects/rip2.ogg')
+	amount = 10
+
+/obj/item/stack/medical/wipes/attack(mob/living/carbon/M as mob, mob/user as mob)
+	if(..())
+		return 1
+
+	if (istype(M, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/external/affecting = H.get_organ(user.zone_sel.selecting) //nullchecked by ..()
+
+		if(affecting.is_disinfected())
+			to_chat(user, "<span class='warning'>The wounds on [M]'s [affecting.name] have already been disinfected.</span>")
+			return 1
+		else
+			user.visible_message("<span class='notice'>\The [user] starts disinfecting wounds on [M]'s [affecting.name].</span>", \
+					             "<span class='notice'>You start disinfecting the wounds on [M]'s [affecting.name].</span>" )
+			playsound(src, pick(apply_sounds), 25)
+			if(!do_mob(user, M, 10))
+				to_chat(user, "<span class='notice'>You must stand still to disinfect wounds.</span>")
+				return 1
+			user.visible_message("<span class='notice'>[user] disinfected wounds on [M]'s [affecting.name].</span>", \
+			                         "<span class='notice'>You disinfected wounds on [M]'s [affecting.name].</span>" )
+			use(1)
+			affecting.disinfect()
+
+/obj/item/stack/medical/ointment
+	name = "ointment"
+	desc = "Used to treat those nasty burns."
+	gender = PLURAL
+	singular_name = "ointment"
+	icon_state = "ointment"
+	heal_burn = 1
+	origin_tech = list(TECH_BIO = 1)
+	animal_heal = 4
+	apply_sounds = list('sound/effects/ointment.ogg')
+
+/obj/item/stack/medical/ointment/attack(mob/living/carbon/M as mob, mob/user as mob)
+	if(..())
+		return 1
+
+	if (istype(M, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/external/affecting = H.get_organ(user.zone_sel.selecting) //nullchecked by ..()
+
+		if(affecting.is_salved())
+			to_chat(user, "<span class='warning'>The wounds on [M]'s [affecting.name] have already been salved.</span>")
+			return 1
+		else
+			user.visible_message("<span class='notice'>\The [user] starts salving wounds on [M]'s [affecting.name].</span>", \
+					             "<span class='notice'>You start salving the wounds on [M]'s [affecting.name].</span>" )
+			playsound(src, pick(apply_sounds), 25)
+			if(!do_mob(user, M, 10))
+				to_chat(user, "<span class='notice'>You must stand still to salve wounds.</span>")
+				return 1
+			user.visible_message("<span class='notice'>[user] salved wounds on [M]'s [affecting.name].</span>", \
+			                         "<span class='notice'>You salved wounds on [M]'s [affecting.name].</span>" )
+			use(1)
+			affecting.salve()
+			affecting.disinfect()
+
 /obj/item/stack/medical/advanced/bruise_pack
 	name = "advanced trauma kit"
 	singular_name = "advanced trauma kit"
@@ -239,7 +305,7 @@
 /obj/item/stack/medical/splint
 	name = "medical splints"
 	singular_name = "medical splint"
-	desc = "Modular splints capable of supporting and immobilizing bones in both limbs and appendages."
+	desc = "Rolled up and compact splints capable of supporting and immobilizing bones in both limbs and appendages."
 	icon_state = "splint"
 	amount = 5
 	max_amount = 5

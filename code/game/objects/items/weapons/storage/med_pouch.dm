@@ -76,6 +76,7 @@ Single Use Emergency Pouches
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/inaprovaline,
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/paracetamol,
 	/obj/item/stack/medical/bruise_pack = 2,
+	/obj/item/stack/medical/wipes = 2
 		)
 	instructions = {"
 	1) Tear open the emergency medical pack using the easy open tab at the top.\n\
@@ -96,6 +97,7 @@ Single Use Emergency Pouches
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/deletrathol,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/spaceacillin,
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/paracetamol,
 	/obj/item/stack/medical/ointment = 2,
 		)
@@ -218,3 +220,8 @@ Single Use Emergency Pouches
 	name = "emergency adrenaline autoinjector"
 	amount_per_transfer_from_this = 8
 	starts_with = list(/datum/reagent/adrenaline = 8)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/spaceacillin
+	name = "emergency antibiotic autoinjector"
+	amount_per_transfer_from_this = 10
+	starts_with = list(/datum/reagent/spaceacillin = 10)

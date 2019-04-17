@@ -3,7 +3,6 @@
 #define GAS 3
 
 #define BOTTLE_SPRITES list("bottle-1", "bottle-2", "bottle-3", "bottle-4") //list of available bottle sprites
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -22,6 +21,8 @@
 	var/mode = 0
 	var/useramount = 30 // Last used amount
 	var/pillamount = 10
+	var/injectoramount = 5
+	var/max_injector_count = 10
 	var/bottlesprite = "bottle-1" //yes, strings
 	var/pillsprite = "1"
 	var/client/has_sprites = list()
@@ -183,9 +184,35 @@
 				if(loaded_pill_bottle)
 					if(loaded_pill_bottle.contents.len < loaded_pill_bottle.max_storage_space)
 						P.loc = loaded_pill_bottle
-
 		else if (href_list["createbottle"])
 			create_bottle(user)
+		else if (href_list["createinjector"] || href_list["createinjector_multiple"])
+			var/count = 1
+
+			if(reagents.total_volume/count < 1) //Sanity checking.
+				return
+
+			if (href_list["createinjector_multiple"])
+				count = input("Select the number of injectors to make, 5 units max each injector.", "Max [max_injector_count]", injectoramount) as num
+				count = Clamp(count, 1, max_injector_count)
+
+			if(reagents.total_volume/count < 1) //Sanity checking.
+				return
+
+			var/amount_per_injector = reagents.total_volume/count
+			if (amount_per_injector > 5) amount_per_injector = 5
+
+			var/name = sanitizeSafe(input(usr,"Name:","Name your injector!","autoinjector ([reagents.get_master_reagent_name()])"), MAX_NAME_LEN)
+
+			if(reagents.total_volume/count < 1) //Sanity checking.
+				return
+			while (count-- && count >= 0)
+				var/obj/item/weapon/reagent_containers/hypospray/autoinjector/I = new/obj/item/weapon/reagent_containers/hypospray/autoinjector(loc)
+				if(!name) name = reagents.get_master_reagent_name()
+				I.SetName("[name]")
+				I.band_color = reagents.get_color()
+				reagents.trans_to_obj(I,amount_per_injector)
+				I.update_icon()
 		else if(href_list["change_pill"])
 			#define MAX_PILL_SPRITE 25 //max icon state of the pill sprites
 			var/dat = "<table>"
@@ -205,7 +232,6 @@
 			pillsprite = href_list["pill_sprite"]
 		else if(href_list["bottle_sprite"])
 			bottlesprite = href_list["bottle_sprite"]
-
 	updateUsrDialog()
 
 /obj/machinery/chem_master/proc/fetch_contaminants(mob/user, datum/reagents/reagents, datum/reagent/main_reagent)
@@ -305,7 +331,9 @@
 //Use to add extra stuff to the end of the menu.
 /obj/machinery/chem_master/proc/extra_options()
 	. = list()
-	. += "<HR><BR><A href='?src=\ref[src];createpill=1'>Create pill (60 units max)</A><a href=\"?src=\ref[src]&change_pill=1\"><img src=\"pill[pillsprite].png\" /></a><BR>"
+	. += "<HR><BR><A href='?src=\ref[src];createinjector=1'>Create autoinjector (5 units max)</A><BR>"
+	. += "<A href='?src=\ref[src];createinjector_multiple=1'>Create multiple autoinjectors</A><BR>"
+	. += "<BR><A href='?src=\ref[src];createpill=1'>Create pill (60 units max)</A><a href=\"?src=\ref[src]&change_pill=1\"><img src=\"pill[pillsprite].png\" /></A><BR>"
 	. += "<A href='?src=\ref[src];createpill_multiple=1'>Create multiple pills</A><BR>"
 	. += "<A href='?src=\ref[src];createbottle=1'>Create bottle (60 units max)<a href=\"?src=\ref[src]&change_bottle=1\"><img src=\"[bottlesprite].png\" /></A>"
 	return JOINTEXT(.)

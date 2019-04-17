@@ -88,6 +88,12 @@
 /decl/emote/audible/clap
 	key = "clap"
 	emote_message_3p = "USER claps."
+	emote_sound = 'sound/misc/clap.ogg'
+
+/decl/emote/audible/slowclap
+	key ="slowclap"
+	emote_message_3p = "USER slowclaps."
+	emote_sound = 'sound/misc/golfclap.ogg'
 
 /decl/emote/audible/chuckle
 	key = "chuckle"
@@ -164,3 +170,8 @@
 	key ="chitter"
 	emote_message_3p = "USER chitters."
 	emote_sound = 'sound/voice/Bug.ogg'
+
+/decl/emote/audible/snap
+	key = "snap"
+	emote_message_3p = "USER snaps their fingers."
+	emote_sound = 'sound/misc/fingersnap.ogg'

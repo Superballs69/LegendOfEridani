@@ -163,6 +163,7 @@
 		/obj/item/weapon/gun/projectile/automatic/p90,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
+		/obj/item/weapon/storage/firstaid/ifak/police,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,

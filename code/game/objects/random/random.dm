@@ -162,6 +162,9 @@
 /obj/random/medical/lite/spawn_choices()
 	return list(/obj/item/stack/medical/bruise_pack = 4,
 				/obj/item/stack/medical/ointment = 4,
+				/obj/item/weapon/storage/firstaid/ifak = 3,
+				/obj/item/weapon/storage/firstaid/ifak/police = 2,
+				/obj/item/weapon/storage/firstaid/ifak/combat = 1,
 				/obj/item/weapon/storage/pill_bottle/antidexafen = 2,
 				/obj/item/weapon/storage/pill_bottle/paracetamol = 2,
 				/obj/item/stack/medical/advanced/bruise_pack = 2,
@@ -175,7 +178,8 @@
 				/obj/item/weapon/storage/med_pouch/burn = 2,
 				/obj/item/weapon/storage/med_pouch/toxin = 2,
 				/obj/item/weapon/storage/med_pouch/radiation = 2,
-				/obj/item/weapon/storage/med_pouch/oxyloss = 2)
+				/obj/item/weapon/storage/med_pouch/oxyloss = 2,
+				/obj/item/stack/medical/wipes = 4)
 
 /obj/random/firstaid
 	name = "Random First Aid Kit"
