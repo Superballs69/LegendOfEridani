@@ -40,6 +40,13 @@
 	component_parts += new /obj/item/weapon/stock_parts/console_screen(src)
 	RefreshParts()
 
+/obj/machinery/autolathe/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/remains/human(get_turf(src))
+		Destroy()
+
 /obj/machinery/autolathe/Destroy()
 	qdel(wires)
 	wires = null

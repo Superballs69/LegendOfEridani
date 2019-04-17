@@ -154,3 +154,10 @@
 							to_chat(user, desc)
 							if(P && P.loc != src && !istype(P, /obj/item/stack/cable_coil))
 								to_chat(user, "<span class='warning'>You cannot add that component to the machine!</span>")
+
+			if(4)
+				if(istype(P, /obj/item/weapon/pickaxe/sledgehammer))
+					to_chat(user, "<span class='notice'>You smash through the frame!</span>")
+					playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+					new /obj/item/stack/material/steel(get_turf(src))
+					qdel(src)

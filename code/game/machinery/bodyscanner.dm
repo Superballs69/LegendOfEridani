@@ -55,7 +55,7 @@
 /obj/machinery/bodyscanner/proc/go_out()
 	if ((!( src.occupant ) || src.locked))
 		return
-	drop_contents()	
+	drop_contents()
 	if (src.occupant.client)
 		src.occupant.client.eye = src.occupant.client.mob
 		src.occupant.client.perspective = MOB_PERSPECTIVE
@@ -75,8 +75,16 @@
 			return
 	var/mob/M = G.affecting
 	if(!user_can_move_target_inside(M, user))
-		return	
+		return
 	qdel(G)
+
+/obj/machinery/bodyscanner/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/remains/human(get_turf(src))
+		new /obj/item/stack/material/steel(get_turf(src))
+		Destroy()
 
 /obj/machinery/bodyscanner/proc/user_can_move_target_inside(var/mob/target, var/mob/user)
 	if(!istype(user) || !istype(target))
@@ -108,7 +116,7 @@
 		src.icon_state = "body_scanner_1"
 
 //Like grap-put, but for mouse-drop.
-/obj/machinery/bodyscanner/MouseDrop_T(var/mob/target, var/mob/user)	
+/obj/machinery/bodyscanner/MouseDrop_T(var/mob/target, var/mob/user)
 	if(!CanMouseDrop(target, user) || !istype(target))
 		return FALSE
 	user.visible_message("<span class='notice'>\The [user] begins placing \the [target] into \the [src].</span>", "<span class='notice'>You start placing \the [target] into \the [src].</span>")
@@ -122,7 +130,7 @@
 		if(1.0)
 			for(var/atom/movable/A as mob|obj in src)
 				A.dropInto(loc)
-				A.ex_act(severity)				
+				A.ex_act(severity)
 			qdel(src)
 		if(2.0)
 			if (prob(50))

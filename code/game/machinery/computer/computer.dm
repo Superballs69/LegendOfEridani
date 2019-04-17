@@ -113,6 +113,12 @@
 				A.icon_state = "4"
 			M.deconstruct(src)
 			qdel(src)
+	else if(istype(I, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the computer!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		new /obj/item/stack/material/glass(get_turf(src))
+		qdel(src)
 	else
 		..()
 

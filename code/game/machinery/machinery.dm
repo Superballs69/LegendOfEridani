@@ -374,3 +374,11 @@ Class Procs:
 	. = ..()
 	if(. && !CanFluidPass())
 		fluid_update()
+
+/obj/machinery/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		new	/obj/item/stack/material/steel(get_turf(src))
+		dismantle()

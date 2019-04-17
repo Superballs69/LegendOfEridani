@@ -48,6 +48,13 @@
 		beaker = null
 	. = ..()
 
+/obj/machinery/atmospherics/unary/cryo_cell/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/remains/human(get_turf(src))
+		Destroy()
+
 /obj/machinery/atmospherics/unary/cryo_cell/atmos_init()
 	..()
 	if(node) return
