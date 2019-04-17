@@ -70,6 +70,13 @@
 			LAZYADD(A.all_doors, src)
 			areas_added += A
 
+/obj/machinery/door/firedoor/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the emergency shutter!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/glass(get_turf(src))
+		Destroy()
+
 /obj/machinery/door/firedoor/Destroy()
 	for(var/area/A in areas_added)
 		LAZYREMOVE(A.all_doors, src)

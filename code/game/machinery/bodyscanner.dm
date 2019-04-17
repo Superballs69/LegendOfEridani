@@ -80,7 +80,7 @@
 
 /obj/machinery/bodyscanner/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
-		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		to_chat(user, "<span class='notice'>You smash through the bodyscanner!</span>")
 		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
 		new /obj/item/remains/human(get_turf(src))
 		new /obj/item/stack/material/steel(get_turf(src))

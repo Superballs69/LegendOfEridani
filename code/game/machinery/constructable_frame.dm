@@ -26,6 +26,13 @@
 			D = "Requires [english_list(component_list)]."
 		desc = D
 
+/obj/machinery/constructable_frame/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the frame!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		qdel(src)
+
 /obj/machinery/constructable_frame/machine_frame
 	attackby(obj/item/P as obj, mob/user as mob)
 		switch(state)
@@ -155,9 +162,10 @@
 							if(P && P.loc != src && !istype(P, /obj/item/stack/cable_coil))
 								to_chat(user, "<span class='warning'>You cannot add that component to the machine!</span>")
 
-			if(4)
-				if(istype(P, /obj/item/weapon/pickaxe/sledgehammer))
-					to_chat(user, "<span class='notice'>You smash through the frame!</span>")
-					playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
-					new /obj/item/stack/material/steel(get_turf(src))
-					qdel(src)
+
+/obj/machinery/constructable_frame/machine_frame/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the frame!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		qdel(src)

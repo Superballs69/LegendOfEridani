@@ -58,7 +58,8 @@
 	desc = "A PyroCorp branded Sledgehammer. Nothing shall stand in your path."
 	icon_state = "sledgehammer"
 	item_state = "sledgehammer"
-	force = 40
+	force = 80
+	throwforce = 15
 	digspeed = 200
 	attack_verb = list("smashed", "caved in", "squared", "sledged")
 	drill_sound = 'sound/weapons/heavysmash.ogg'

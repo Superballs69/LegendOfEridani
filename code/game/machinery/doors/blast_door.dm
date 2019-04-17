@@ -63,9 +63,9 @@
 	return ..()
 
 
-/obj/machinery/door/airlock/attackby(obj/item/W as obj, mob/user as mob)
+/obj/machinery/door/blast/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
-		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		to_chat(user, "<span class='notice'>You smash through the blast door!</span>")
 		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
 		new /obj/item/stack/material/steel(get_turf(src))
 		new	/obj/item/stack/material/steel(get_turf(src))
