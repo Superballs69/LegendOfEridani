@@ -376,6 +376,15 @@
 	else
 		icon_state = "[bis.base_icon_state]_idle"
 
+/obj/item/device/taperecorder/fca
+	name = "FCA Investigation recorder"
+	desc = "A device that can record to cassette tapes, and play them. It automatically translates the content in playback. This one has the colours of the FCA."
+	icon_state = "taperecorder"
+	item_state = "analyzer"
+	w_class = ITEM_SIZE_SMALL
+	matter = list(MATERIAL_STEEL = 60,MATERIAL_GLASS = 30)
+	mytape = /obj/item/device/tape/fca
+
 /obj/item/device/tape
 	name = "tape"
 	desc = "A magnetic tape that can hold up to ten minutes of content."
@@ -494,7 +503,7 @@
 		var/index = text2num(href_list["cut_after"])
 		if(index >= timestamp.len)
 			return
-		
+
 		to_chat(user, "<span class='notice'>You remove part of the tape off.</span>")
 		get_loose_tape(user, index)
 		cut(user)
@@ -518,6 +527,13 @@
 //Random colour tapes
 /obj/item/device/tape/random/New()
 	icon_state = "tape_[pick("white", "blue", "red", "yellow", "purple")]"
+
+/obj/item/device/tape/fca
+	name = "FCA Investigation tape"
+	desc = "A magnetic tape used by the FCA to records hours of content."
+	icon_state = "tape_fca"
+	item_state = "analyzer"
+	max_capacity = 14400
 
 /obj/item/device/tape/loose
 	name = "magnetic tape"
