@@ -466,7 +466,8 @@ var/list/mining_floors = list()
 		/obj/item/weapon/shovel,
 		/obj/item/weapon/pickaxe/diamonddrill,
 		/obj/item/weapon/pickaxe/drill,
-		/obj/item/weapon/pickaxe/borgdrill
+		/obj/item/weapon/pickaxe/borgdrill,
+		/obj/item/weapon/pickaxe/sledgehammer
 		)
 
 	var/valid_tool

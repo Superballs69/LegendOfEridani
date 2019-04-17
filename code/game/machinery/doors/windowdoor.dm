@@ -60,6 +60,13 @@
 /obj/machinery/door/window/deconstruct(mob/user, var/moved = FALSE)
 	shatter()
 
+/obj/machinery/door/window/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the windoor!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/glass(get_turf(src))
+		Destroy()
+
 /obj/machinery/door/window/Destroy()
 	set_density(0)
 	update_nearby_tiles()

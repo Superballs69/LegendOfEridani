@@ -215,15 +215,6 @@ GLOBAL_LIST_EMPTY(skills)
 						"Master"		= "You're a big name in forensic science. You might be an investigator who cracked a famous case, or you published papers on new methods of forensics. Either way, if there's a forensic trail, you will find it, period.<br>- You can notice traces of wiped off blood.")
 
 
-/decl/hierarchy/skill/security/forensics/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC, SKILL_ADEPT, SKILL_EXPERT)
-			return difficulty * 2
-		if(SKILL_PROF)
-			return 3 * difficulty
-		else
-			return 0
-
 // Category: Engineering
 
 /decl/hierarchy/skill/engineering/construction

@@ -1127,6 +1127,12 @@ About the new airlock wires panel:
 				else
 					to_chat(user, "<span class='warning'>You need to be wielding \the [C] to do that.</span>")
 
+	else if(istype(C, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash the door to nothingness!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		qdel(src)
+
 	else if(istype(C, /obj/item/device/floor_painter))
 		return
 

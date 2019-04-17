@@ -21,7 +21,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 24
+	skill_points = 28
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
@@ -69,7 +69,7 @@
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
 	                    SKILL_ATMOS        = SKILL_MAX,
 	                    SKILL_ENGINES      = SKILL_MAX)
-	skill_points = 20
+	skill_points = 24
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
@@ -153,7 +153,7 @@
 	                    SKILL_DEVICES      = SKILL_MAX,
 	                    SKILL_ANATOMY      = SKILL_EXPERT,
 	                    SKILL_MEDICAL      = SKILL_EXPERT)
-	skill_points = 20
+	skill_points = 28
 
 	access = list(access_robotics, access_robotics_engineering, access_tech_storage, access_morgue, access_medical, access_robotics_engineering, access_solgov_crew)
 	minimal_access = list()

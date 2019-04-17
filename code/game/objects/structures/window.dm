@@ -263,6 +263,11 @@
 			P.basestate = basestate
 			P.update_icon()
 			qdel(src)
+	else if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the window!</span>")
+		new /obj/item/stack/material/glass(get_turf(src))
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		qdel(src)
 	else
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		if(W.damtype == BRUTE || W.damtype == BURN)
@@ -274,8 +279,8 @@
 				update_verbs()
 		else
 			playsound(loc, 'sound/effects/Glasshit.ogg', 75, 1)
-		..()
-	return
+			..()
+			return
 
 /obj/structure/window/proc/hit(var/damage, var/sound_effect = 1)
 	if(reinf) damage *= 0.5

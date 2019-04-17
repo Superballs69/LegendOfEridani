@@ -76,6 +76,15 @@
 	update_name()
 	. = ..()
 
+/obj/item/door/modular_computer/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the computer!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/stack/material/steel(get_turf(src))
+		new	/obj/item/stack/material/glass(get_turf(src))
+		Destroy()
+
+
 /obj/item/modular_computer/Destroy()
 	kill_program(1)
 	QDEL_NULL_LIST(terminals)

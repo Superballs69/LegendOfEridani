@@ -88,6 +88,11 @@
 		to_chat(user, "<span class='notice'>You drill through the girder!</span>")
 		dismantle()
 
+	else if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		dismantle()
+
 	else if(isScrewdriver(W))
 		if(state == 2)
 			playsound(src.loc, 'sound/items/Screwdriver.ogg', 100, 1)
@@ -258,3 +263,10 @@
 		to_chat(user, "<span class='notice'>You drill through the girder!</span>")
 		new /obj/item/remains/human(get_turf(src))
 		dismantle()
+
+	else if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		to_chat(user, "<span class='notice'>You smash through the girder!</span>")
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		new /obj/item/remains/human(get_turf(src))
+		dismantle()
+
