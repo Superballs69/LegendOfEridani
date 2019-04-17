@@ -1089,7 +1089,7 @@ other types of metals and chemistry for reagents).
 	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
 	materials = list(MATERIAL_STEEL = 20000, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/shield/riot/extendable
-	sort_string "VAPCA"
+	sort_string = "VAPCA"
 
 /datum/design/item/pyrocorp/flash
 	name = "Mobile Flash Shield"
@@ -1098,7 +1098,7 @@ other types of metals and chemistry for reagents).
 	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
 	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/shield/riot/extendable
-	sort_string "VAPCB"
+	sort_string = "VAPCB"
 
 
 // Superconductive magnetic coils
