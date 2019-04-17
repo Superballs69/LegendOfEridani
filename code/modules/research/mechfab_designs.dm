@@ -916,4 +916,90 @@
 	id = "hardsuit_plasmacutter"
 
 
-// Illegal stuff will be here
+/datum/design/item/mechfab/voidsuits
+	category = "Voidsuits"
+
+/datum/design/item/mechfab/voidsuit/magboots
+	name = "Magboots"
+	build_path = /obj/item/clothing/shoes/magboots
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "copper" = 500)
+	req_tech = list(TECH_MAGNET = 3, TECH_POWER = 3)
+	id = "magboots"
+
+/datum/design/item/mechfab/voidsuit/engineer/helmet
+	name = "Engineering Voidsuit Helmet"
+	build_path = /obj/item/clothing/head/helmet/space/void/engineering
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 5000, "copper" = 100)
+	req_tech = list(TECH_POWER = 3, TECH_BIO = 2, TECH_ENGINEERING = 3)
+	id = "voidsuit_engineer_helmet"
+
+/datum/design/item/mechfab/voidsuits/engineer
+	name = "Engineering Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/engineering
+	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 10000, "copper" = 100)
+	req_tech = list(TECH_POWER = 3, TECH_BIO = 2, TECH_ENGINEERING = 3)
+	id = "voidsuit_engineer"
+
+	//
+
+/datum/design/item/mechfab/voidsuit/mining/helmet
+	name = "Mining Voidsuit Helmet"
+	build_path = /obj/item/clothing/head/helmet/space/void/mining
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 5000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 2, TECH_ENGINEERING = 2)
+	id = "voidsuit_mining_helmet"
+
+/datum/design/item/mechfab/voidsuits/mining
+	name = "Mining Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/mining
+	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 2, TECH_ENGINEERING = 2)
+	id = "voidsuit_mining"
+
+	//
+
+/datum/design/item/mechfab/voidsuit/medical/helmet
+	name = "Medical Voidsuit Helmet"
+	build_path = /obj/item/clothing/head/helmet/space/void/medical
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 3000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 3, TECH_ENGINEERING = 2)
+	id = "voidsuit_medical_helmet"
+
+/datum/design/item/mechfab/voidsuits/medical
+	name = "Medical Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/medical
+	materials = list(DEFAULT_WALL_MATERIAL = 10000, "glass" = 10000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 3, TECH_ENGINEERING = 2)
+	id = "voidsuit_medical"
+
+	//
+
+/datum/design/item/mechfab/voidsuit/security/helmet
+	name = "Security Voidsuit Helmet"
+	build_path = /obj/item/clothing/head/helmet/space/void/security
+	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 1000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 2, TECH_COMBAT = 4, TECH_ENGINEERING = 2)
+	id = "voidsuit_security_helmet"
+
+/datum/design/item/mechfab/voidsuits/security
+	name = "Security Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/security
+	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 1000, "copper" = 100)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 2, TECH_COMBAT = 4, TECH_ENGINEERING = 2)
+	id = "voidsuit_security"
+
+	//
+
+/datum/design/item/mechfab/voidsuit/engi_rad/helmet
+	name = "Reinforced Engineering Voidsuit Helmet"
+	build_path = /obj/item/clothing/head/helmet/space/void/engineering/alt
+	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 1000, "copper" = 100, "lead" = 1000)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 3, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
+	id = "voidsuit_engirad_helmet"
+
+/datum/design/item/mechfab/voidsuits/engi_rad
+	name = "Reinforced Engineering Voidsuit"
+	build_path = /obj/item/clothing/suit/space/void/engineering/alt
+	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 1000, "copper" = 100, "lead" = 10000)
+	req_tech = list(TECH_POWER = 2, TECH_BIO = 3, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
+	id = "voidsuit_engirad"

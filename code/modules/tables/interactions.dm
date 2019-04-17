@@ -114,6 +114,12 @@
 		break_to_parts()
 		return
 
+	if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		user.visible_message("<span class='danger'>\The [src] was smashed apart by [user]!</span>")
+		break_to_parts()
+		return
+
 	if(can_plate && !material)
 		to_chat(user, "<span class='warning'>There's nothing to put \the [W] on! Try adding plating to \the [src] first.</span>")
 		return

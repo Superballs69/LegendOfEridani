@@ -60,7 +60,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	skill_points = 26
+	skill_points = 28
 	required_education = EDUCATION_TIER_MEDSCHOOL
 
 /datum/job/paramedic
@@ -185,7 +185,7 @@
 	                    SKILL_COMPUTER      = SKILL_MAX,
 	                    SKILL_CONSTRUCTION 	= SKILL_EXPERT,
 	                    SKILL_ELECTRICAL 	= SKILL_EXPERT)
-	skill_points = 24
+	skill_points = 28
 	access = list(access_robotics, access_robotics_engineering, access_tech_storage, access_morgue, access_medical, access_robotics_engineering, access_solgov_crew)
 	minimal_access = list()
 	required_education = EDUCATION_TIER_MEDSCHOOL

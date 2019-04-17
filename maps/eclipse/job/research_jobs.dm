@@ -28,7 +28,7 @@
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 20
+	skill_points = 28
 	required_education = EDUCATION_TIER_DOCTORATE
 
 /datum/job/scientist
@@ -63,7 +63,7 @@
 						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry)
 	minimal_access = list()
-	skill_points = 20
+	skill_points = 26
 	required_education = EDUCATION_TIER_MASTERS
 
 /datum/job/scientist_assistant
@@ -111,5 +111,5 @@
 	access = list(access_tox_storage, access_research, access_petrov, access_xenobiology, access_guppy_helm,
 						access_expedition_shuttle, access_guppy, access_hangar,  access_solgov_crew, access_emergency_storage)
 	minimal_access = list()
-	skill_points = 16
+	skill_points = 20
 	required_education = EDUCATION_TIER_BACHELOR

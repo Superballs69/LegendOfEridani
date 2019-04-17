@@ -753,6 +753,7 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/gun/projectile/automatic/c8
 	sort_string = "TAPAC"
 
+
 /datum/design/item/weapon/ammunition/AssembleDesignName()
 	..()
 	name = "Ammunition prototype ([item_name])"
@@ -1076,6 +1077,29 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 500)
 	build_path = /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 	sort_string = "VASBA"
+
+/datum/design/item/pyrocorp/AssembleDesignName()
+	..()
+	name = "PyroCorp Special design ([item_name])"
+
+/datum/design/item/pyrocorp/extendable
+	name = "Mobile Armor Shield"
+	desc = "PyroCorp's 'Great Firewall' ballistic shield. Can be extended to provide additional protection."
+	id = "extendable_shield"
+	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
+	materials = list(MATERIAL_STEEL = 20000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/shield/riot/extendable
+	sort_string "VAPCA"
+
+/datum/design/item/pyrocorp/flash
+	name = "Mobile Flash Shield"
+	desc = "PyroCorp's 'Flash' ballistic shield. Can be used to flash targets."
+	id = "extendable_shield"
+	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/shield/riot/extendable
+	sort_string "VAPCB"
+
 
 // Superconductive magnetic coils
 /datum/design/item/smes_coil/AssembleDesignName()

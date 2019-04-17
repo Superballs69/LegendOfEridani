@@ -99,6 +99,16 @@
 			to_chat(user, "<span class='notice'>You dissasembled the low wall!</span>")
 			dismantle()
 
+	else if(istype(W, /obj/item/weapon/pickaxe/sledgehammer))
+		for(var/obj/structure/S in loc)
+			if(istype(S, /obj/structure/window))
+				to_chat(user, "<span class='notice'>There is still a window on the low wall!</span>")
+				return
+		playsound(src.loc, 'sound/weapons/heavysmash.ogg', 100, 1)
+		if(do_after(user, 1,src))
+			if(!src) return
+			to_chat(user, "<span class='notice'>You smash through the low wall!</span>")
+			dismantle()
 	..()
 	return
 
