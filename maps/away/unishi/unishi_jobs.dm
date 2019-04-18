@@ -5,7 +5,7 @@
 	supervisors = "your survival"
 	info = "You remember waking up to alarms blaring in your face. Before you could react, a gush of hot air blew \
 	you away, knocking you cold unconcious.  Before this happened you were a crew member \
-	on this research vessel, SRV Verne, as it carried the members of the presitigous Shinkyou-to institute in \
+	on this research vessel, SRV Verne, as it carried the members of the presitigous Shinkyou-to Technical Institute in \
 	their pursuit of research. "
 
 /datum/job/submap/unishi_researcher

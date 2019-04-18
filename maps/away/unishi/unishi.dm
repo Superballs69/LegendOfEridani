@@ -29,7 +29,7 @@
 /datum/map_template/ruin/away_site/unishi
 	name = "University Ship"
 	id = "awaysite_unishi"
-	description = "CTI research ship.."
+	description = "STI research ship.."
 	suffixes = list("unishi/unishi-1.dmm", "unishi/unishi-2.dmm", "unishi/unishi-3.dmm")
 	cost = 2
 
@@ -119,7 +119,7 @@ obj/item/weapon/paper/prof2
 
 /obj/effect/floor_decal/cti
 	name = "\improper STI logo"
-	desc = "Logo of the famed Ceti Technical Institute. Just looking at it makes you feel ashamed of your alma mater."
+	desc = "Logo of the famed Shinkyou-to Technical Institute. Just looking at it makes you feel ashamed of your alma mater."
 	icon = 'unishi.dmi'
 	icon_state = "CTILogo"
 
