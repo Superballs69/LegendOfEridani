@@ -77,7 +77,7 @@
 				dat += "<li><A href='?src=\ref[src];triggerevent=Red alert'>Engage [security_state.high_security_level.name]</A></li>"
 
 		if(!config.ert_admin_call_only)
-			dat += "<li><A href='?src=\ref[src];triggerevent=Emergency Response Team'>Emergency Response Team</A></li>"
+			dat += "<li><A href='?src=\ref[src];triggerevent=Emergency Response Team'>Federal Disaster Intervention Squad</A></li>"
 
 		dat += "<li><A href='?src=\ref[src];triggerevent=Grant Emergency Maintenance Access'>Grant Emergency Maintenance Access</A></li>"
 		dat += "<li><A href='?src=\ref[src];triggerevent=Revoke Emergency Maintenance Access'>Revoke Emergency Maintenance Access</A></li>"
@@ -171,7 +171,7 @@
 			feedback_inc("alert_keycard_auth_maintRevoke",1)
 		if("Emergency Response Team")
 			if(is_ert_blocked())
-				to_chat(usr, "<span class='warning'>All emergency response teams are dispatched and can not be called at this time.</span>")
+				to_chat(usr, "<span class='warning'>All Federal Disasters Intervention Squads are dispatched and can not be called at this time.</span>")
 				return
 
 			trigger_armed_response_team(1)

@@ -24,7 +24,7 @@
 	flags = OUTFIT_HAS_JETPACK|OUTFIT_RESET_EQUIPMENT
 
 /decl/hierarchy/outfit/ert
-	name = "Spec Ops - Federal Disaster Intervention Squad"
+	name = "FCA - Federal Disaster Intervention Squad"
 	uniform = /obj/item/clothing/under/gign_under
 	shoes = /obj/item/clothing/shoes/swat
 	gloves = /obj/item/clothing/gloves/thick/swat
@@ -35,6 +35,8 @@
 
 	id_slot = slot_wear_id
 	id_type = /obj/item/weapon/card/id/centcom/ERT
+	id_desc = "FDIS ID"
+	id_pda_assignment = "FDIS Agent"
 
 /decl/hierarchy/outfit/death_command
 	name = "Spec Ops - Death commando"
