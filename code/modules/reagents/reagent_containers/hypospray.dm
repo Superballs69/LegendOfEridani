@@ -120,7 +120,7 @@
 	slot_flags = SLOT_BELT | SLOT_EARS
 	w_class = ITEM_SIZE_TINY
 	var/list/starts_with = list()
-	var/band_color = COLOR_CYAN
+	var/band_color = COLOR_WHITE
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/New()
 	..()
@@ -150,6 +150,11 @@
 		to_chat(user, "<span class='notice'>It is currently loaded.</span>")
 	else
 		to_chat(user, "<span class='notice'>It is spent.</span>")
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/inaprovaline
+	name = "autoinjector (inaprovaline)"
+	band_color = COLOR_CYAN
+	starts_with = list(/datum/reagent/inaprovaline = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/detox
 	name = "autoinjector (antitox)"

@@ -83,7 +83,7 @@
 	icon_state = "survival"
 	startswith = list(/obj/item/clothing/mask/breath = 1,
 					/obj/item/weapon/tank/emergency/oxygen = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/inaprovaline = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
 					/obj/item/device/flashlight/flare/glowstick = 1,
 					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1,
@@ -105,7 +105,7 @@
 	icon_state = "survivaleng"
 	startswith = list(/obj/item/clothing/mask/breath = 1,
 					/obj/item/weapon/tank/emergency/oxygen/engi = 1,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/inaprovaline = 1,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
 					/obj/item/device/flashlight/flare/glowstick = 1,
@@ -416,7 +416,7 @@
 	desc = "Contains autoinjectors."
 	icon_state = "syringe"
 
-	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector = 7)
+	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/inaprovaline = 7)
 
 /obj/item/weapon/storage/box/lights
 	name = "box of replacement bulbs"

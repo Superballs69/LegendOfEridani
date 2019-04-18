@@ -914,7 +914,7 @@
 	icon_deny = "wallmed-deny"
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 5,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/inaprovaline = 5,
 		/obj/item/stack/medical/bruise_pack = 4,
 		/obj/item/stack/medical/ointment = 4,
 		/obj/item/stack/medical/wipes = 4,
