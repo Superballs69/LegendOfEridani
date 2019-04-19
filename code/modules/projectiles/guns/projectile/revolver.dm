@@ -57,7 +57,7 @@
 
 /obj/item/weapon/gun/projectile/revolver/m30/police
 	name = "M-30 'Police Special'"
-	desc = "The FAC's renowned M30 has seen service amongst Frontier military and police organizations, and has such made a specialized model with a shortened barrel and black furniture. Uses .357 and .38 rounds."
+	desc = "The FAC's renowned M30 has seen service amongst Frontier military and police organizations, and has such made a specialized model with a shortened barrel and black furniture. Uses .44 rounds."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "m30_police"
 	ammo_type = /obj/item/ammo_casing/a44/rubber

@@ -207,3 +207,8 @@
 	icon_state = "beret_red"
 	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
 	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/garrison/fca
+	name = "FCA Formal beret"
+	desc = "A navy blue garrison cap, worn by agents of the FCA."
+	icon_state = "fcacap_formal"
