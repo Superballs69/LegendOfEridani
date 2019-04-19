@@ -1097,7 +1097,7 @@ other types of metals and chemistry for reagents).
 	id = "extendable_shield"
 	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
 	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000)
-	build_path = /obj/item/weapon/shield/riot/extendable
+	build_path = /obj/item/weapon/shield/riot/flash
 	sort_string = "VAPCB"
 
 

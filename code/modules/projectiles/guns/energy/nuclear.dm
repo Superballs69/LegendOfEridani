@@ -3,8 +3,8 @@
 	desc = "Another bestseller of Ace Energy, the AE10 energy carbine is a versatile energy based weapon, capable of switching between stun, and lethal."
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
-	charge_cost = 10
-	max_shots = 10
+	charge_cost = 12.5
+	cell_type = /obj/item/weapon/cell/device
 	fire_delay = 10 // To balance for the fact that it is a pistol and can be used one-handed without penalty
 
 	projectile_type = /obj/item/projectile/beam/stun
@@ -22,7 +22,7 @@
 	desc = "The precursor of the current generation AE10 energy carbine. Commonly seen circulating with civilian owners and on the black market due to the sheer amount produced. Has stun and lethal modes only."
 	icon_state = "oldenergystun100"
 	charge_cost = 12.5
-	max_shots = 8
+	cell_type = /obj/item/weapon/cell/device
 	modifystate = "oldenergystun"
 
 	firemodes = list(
@@ -46,8 +46,8 @@
 	name = "AE6 'Protector' energy pistol"
 	desc = "Originally a prototype, Ace Energy acquired the plans for a holdout pistol and has tuned it for reliable military and civilian use."
 	icon_state = "smallgunstun"
-	charge_cost = 20
-	max_shots = 5
+	charge_cost = 5
+	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_SMALL
 	force = 2 //it's the size of a car key, what did you expect?
 	modifystate = "smallgunstun"
@@ -63,8 +63,8 @@
 	desc = "The precursor to the common AE6. A harder hitting energy sidearm, prized upon by users who prefer stopping power. Has stun and kill modes only."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "epistolstun100"
-	charge_cost = 20
-	max_shots = 5
+	charge_cost = 5
+	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_NORMAL
 	force = 8 //more so a proper pistol
 	modifystate = "epistolstun"

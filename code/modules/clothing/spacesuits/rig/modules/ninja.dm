@@ -65,6 +65,7 @@
 	usable = 1
 	selectable = 1
 	module_cooldown = 60
+	origin_tech = list(TECH_MATERIAL = 3, TECH_POWER = 4, TECH_MAGNET = 6, TECH_ILLEGAL = 2, TECH_ENGINEERING = 3)
 	engage_string = "Emergency Leap"
 
 	interface_name = "VOID-shift phase projector"
@@ -158,6 +159,7 @@
 	name = "self-destruct module"
 	desc = "Oh my God, Captain. A bomb."
 	icon_state = "deadman"
+	origin_tech = list(TECH_MATERIAL = 5, TECH_POWER = 5, TECH_MAGNET = 5, TECH_ILLEGAL = 8, TECH_ENGINEERING = 5)
 	toggleable = 1
 	usable = 1
 	permanent = 1

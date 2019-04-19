@@ -915,6 +915,29 @@
 	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6)
 	id = "hardsuit_plasmacutter"
 
+// Illegal shit
+
+/datum/design/item/mechfab/rig/module/datajack
+	name = "Hardsuit mounted Datajack"
+	build_path = /obj/item/rig_module/datajack
+	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000, "tungsten" = 100, "aluminium" = 1000, "phoron" = 4000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6, TECH_ILLEGAL = 8)
+	id = "hardsuit_datajack"
+
+/datum/design/item/mechfab/rig/module/stealth_field
+	name = "Hardsuit mounted Stealth Field"
+	build_path = /obj/item/rig_module/stealth_field
+	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000, "tungsten" = 3000, "niobium" = 1000, "phoron" = 4000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6, TECH_ILLEGAL = 8)
+	id = "hardsuit_stealthfield"
+
+/datum/design/item/mechfab/rig/module/teleporter
+	name = "Hardsuit mounted Teleporter"
+	build_path = /obj/item/rig_module/teleporter
+	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000, "tungsten" = 1000, "aluminium" = 1000, "phoron" = 4000)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 6, TECH_ENGINEERING = 6, TECH_ILLEGAL = 8)
+	id = "hardsuit_teleporter"
+
 
 /datum/design/item/mechfab/voidsuits
 	category = "Voidsuits"

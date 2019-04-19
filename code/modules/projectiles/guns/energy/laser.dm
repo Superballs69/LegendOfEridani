@@ -8,7 +8,8 @@
 	force = 10
 	one_hand_penalty = 2
 	accuracy = 2
-	charge_cost = 10
+	charge_cost = 12.5
+	cell_type = /obj/item/weapon/cell/device
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(MATERIAL_STEEL = 2000)
 	projectile_type = /obj/item/projectile/beam/midlaser
@@ -24,8 +25,9 @@
 	name = "HI 640E"
 	desc = "A modified version of the HI G40E, this one fires less concentrated energy bolts designed for target practice."
 	icon_state = "laserp"
+	cell_type = /obj/item/weapon/cell/device
 	projectile_type = /obj/item/projectile/beam/practice
-	charge_cost = 10 //How much energy is needed to fire.
+	charge_cost = 12.5 //How much energy is needed to fire.
 
 /obj/item/weapon/gun/energy/laser/practice/proc/hacked()
 	return projectile_type != /obj/item/projectile/beam/practice
@@ -56,7 +58,8 @@ obj/item/weapon/gun/energy/retro
 	desc = "The trailblazer for energy weaponry, the galactic standard for laser weapons until it was replaced by the G40E. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
-	charge_cost = 20 
+	charge_cost = 25
+	cell_type = /obj/item/weapon/cell/device
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 15 //old technology, and a pistol
 
@@ -70,6 +73,7 @@ obj/item/weapon/gun/energy/retro
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
 	origin_tech = null
+	cell_type = /obj/item/weapon/cell/device
 	charge_cost = 20 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
@@ -109,8 +113,8 @@ obj/item/weapon/gun/energy/retro
 	projectile_type = /obj/item/projectile/beam/xray/midlaser
 	one_hand_penalty = 2
 	w_class = ITEM_SIZE_LARGE
-	charge_cost = 10
-	max_shots = 10
+	charge_cost = 12.5
+	cell_type = /obj/item/weapon/cell/device
 	wielded_item_state = "gun_wielded"
 	combustion = 0
 
@@ -122,6 +126,7 @@ obj/item/weapon/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_MAGNET = 2, TECH_ILLEGAL = 2)
 	projectile_type = /obj/item/projectile/beam/xray
 	one_hand_penalty = 1
+	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_NORMAL
 	fire_delay = 10
 

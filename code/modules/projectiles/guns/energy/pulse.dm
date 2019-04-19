@@ -24,7 +24,8 @@
 	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 8
 	projectile_type = /obj/item/projectile/beam/pulse/mid
-	max_shots = 20
+	charge_cost = 5
+	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty= 3
 	burst_delay = 2
