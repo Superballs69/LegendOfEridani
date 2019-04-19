@@ -66,17 +66,17 @@
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant, /datum/job/ice)
 
 /datum/gear/storage/white_vest
-	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech)
+	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech, /datum/job/pathfinder_specialist)
 
 /datum/gear/storage/brown_drop_pouches
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech,
-						/datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant)
+						/datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/pathfinder_specialist)
 
 /datum/gear/storage/black_drop_pouches
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant)
 
 /datum/gear/storage/white_drop_pouches
-	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech)
+	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech, /datum/job/pathfinder_specialist)
 
 /datum/gear/tactical/holster
 	allowed_roles = ARMED_ROLES
@@ -88,9 +88,6 @@
 	display_name = "Press tag"
 	path = /obj/item/clothing/accessory/armor/tag/press
 	allowed_roles = list(/datum/job/assistant)
-
-/datum/gear/tactical/helm_covers
-	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
 
@@ -126,34 +123,11 @@
 /*********************
  tactical accessories
 *********************/
-/datum/gear/tactical/ubac
-	display_name = "black UBAC shirt"
-	path = /obj/item/clothing/accessory/ubac
-	allowed_roles = ARMORED_ROLES
-
-/datum/gear/tactical/ubac/blue
-	display_name = "navy blue UBAC shirt"
-	path = /obj/item/clothing/accessory/ubac/blue
-
-/datum/gear/tactical/ubac/misc
-	display_name = "miscellaneous UBAC shirt selection"
-	path = /obj/item/clothing/accessory/ubac
-/datum/gear/tactical/ubac/misc/New()
-	..()
-	var/shirts = list()
-	shirts["green UBAC shirt"] = /obj/item/clothing/accessory/ubac/green
-	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
-	gear_tweaks += new/datum/gear_tweak/path(shirts)
-
 /datum/gear/tactical/armor_pouches
 	display_name = "black armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches
 	cost = 2
 	allowed_roles = ARMORED_ROLES
-
-/datum/gear/tactical/armor_pouches/navy
-	display_name = "navy armor pouches"
-	path = /obj/item/clothing/accessory/storage/pouches/navy
 
 /datum/gear/tactical/armor_pouches/misc
 	display_name = "miscellaneous armor pouches selection"
@@ -172,10 +146,6 @@
 	cost = 5
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/tactical/large_pouches/navy
-	display_name = "navy large armor pouches"
-	path = /obj/item/clothing/accessory/storage/pouches/large/navy
-
 /datum/gear/tactical/large_pouches/misc
 	display_name = "miscellaneous large armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches
@@ -186,3 +156,21 @@
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
+
+/datum/gear/tactical/knife
+	display_name = "tactical knife"
+	path = /obj/item/weapon/material/hatchet/tacknife
+	cost = 3
+	allowed_roles = ARMED_ROLES
+
+/datum/gear/tactical/switchblade
+	display_name = "tactical switchblade"
+	path = /obj/item/weapon/material/pocketknife/auto
+	cost = 4
+	allowed_roles = ARMED_ROLES
+
+/datum/gear/tactical/ifak
+	display_name = "tactical individual first aid kit"
+	path = /obj/item/weapon/storage/firstaid/ifak/police
+	cost = 5
+	allowed_roles = ARMORED_ROLES
