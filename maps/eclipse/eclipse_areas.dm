@@ -686,6 +686,10 @@
 /area/crew_quarters/heads/office/vacant_office
 	name = "\improper Command - Vacant Office"
 
+/area/crew_quarters/heads/office/investigation_office
+	name = "\improper Command - Investigation Office"
+
+
 // Engineering
 
 /area/engineering/deck

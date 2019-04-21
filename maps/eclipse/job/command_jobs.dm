@@ -23,7 +23,7 @@
 	required_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/captain/get_description_blurb()
-	return "You are the Captain. You are the top dog. You are an experienced professional in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Head of Personnel, and your department heads to effectively manage the ship, and listen to and trust their expertise."
+	return "You are the Captain. You are the top dog. You are an experienced professional in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Head of Security and your Head of Personnel, and make that them and yourselves remains neutral; Siding with Any Corporation is immediate termination."
 
 /datum/job/ice
 	title = "ICE Agent"
@@ -61,7 +61,7 @@
 
 /datum/job/hop
 	title = "Head of Personnel"
-	supervisors = "the Captain"
+	supervisors = "the Captain and the FCA."
 	department_flag = COM|CIV
 	minimal_player_age = 7
 	economic_power = 10
@@ -103,7 +103,7 @@
 	required_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/hop/get_description_blurb()
-	return "You are the Head of Personnel. You are second in command of the ship, and are responsible for the smooth operation of the ship under your Captain. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship."
+	return "You are the Head of Personnel. You are second in command of the ship, and are responsible for the smooth operation of the ship under your Captain. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Remember, Siding with a Corporation is immediate termination."
 
 /datum/job/rd
 	title = "Research Director"
@@ -260,7 +260,7 @@
 	required_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/hos/get_description_blurb()
-	return "You are the Chief of Security. You manage ship security and it's personnel. TIGER and ISEC Contractors, along with the Warden. You keep the vessel safe. You handle both internal and external security matters. You are subordinate to the Captain. You are expected to know the ETF Federal Law and FCA Standard Regulations to a very high degree along with general regulations."
+	return "You are the Chief of Security. You manage ship security and it's personnel, and you are third in command . TIGER and ISEC Contractors, along with the Warden. You keep the vessel safe. You handle both internal and external security matters. You are subordinate to the Captain. You are expected to know the ETF Federal Law and FCA Standard Regulations to a very high degree along with general regulations. And remember, siding with any Corporations is immediate termination. "
 
 /datum/job/liaison
 	title = "Corporate Liaison"

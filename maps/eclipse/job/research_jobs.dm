@@ -108,8 +108,8 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
 
-	access = list(access_tox_storage, access_research, access_petrov, access_xenobiology, access_guppy_helm,
-						access_expedition_shuttle, access_guppy, access_hangar,  access_solgov_crew, access_emergency_storage)
+	access = list(access_tox, access_tox_storage, access_research,access_xenobiology, access_guppy_helm,
+						access_xenoarch, access_nanotrasen, access_hangar,access_tox_storage, access_research, access_xenobiology, access_emergency_storage)
 	minimal_access = list()
 	skill_points = 20
 	required_education = EDUCATION_TIER_BACHELOR

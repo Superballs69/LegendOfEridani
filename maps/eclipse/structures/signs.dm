@@ -1,13 +1,13 @@
 /obj/structure/sign/dedicationplaque
 	name = "\improper EEV Eclipse dedication plaque"
 	desc = "E.E.V. Eclipse - Keller Class - Federal Control Agency Registry 95519 - Wulfe Fleet Yards, Neue Berlin - First Vessel To Bear The Name - Launched 2618 - Eridani Trade Federation - 'Head first, into the galaxy.'"
-	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
+	icon = 'maps/eclipse/icons/obj/etf-decals.dmi'
 	icon_state = "lightplaque"
 
 /obj/structure/sign/ecplaque
 	name = "\improper Pathfinder Corps Directives"
 	desc = "A plaque with Pathfinder Corps logo etched in it."
-	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
+	icon = 'maps/eclipse/icons/obj/etf-decals.dmi'
 	icon_state = "ecplaque"
 	var/directives = {"<hr><center>
 		1. <b>Exploring the unknown is your Primary Mission</b><br>
@@ -54,19 +54,19 @@
 	icon = 'maps/eclipse/icons/obj/solgov_floor.dmi'
 	icon_state = "center"
 
-/obj/structure/sign/solgov
+/obj/structure/sign/etf
 	name = "\improper ETF Seal"
-	desc = "A sign which signifies who this vessel belongs to."
-	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
-	icon_state = "solgovseal"
+	desc = "A sign which signifies who this vessel belongs to. The SSA Crest has been removed, that's something."
+	icon = 'maps/eclipse/icons/obj/etf-decals.dmi'
+	icon_state = "etfseal"
 
-/obj/structure/sign/double/solgovflag
+/obj/structure/sign/double/etfflag
 	name = "Eridani Trade Federation Flag"
-	desc = "The flag of the Eridani Trade Federation, standing proud."
-	icon = 'maps/eclipse/icons/obj/solgov-decals.dmi'
+	desc = "The flag of the Eridani Trade Federation, standing proud. It appears it's SSA Crest has been removed, however. Unusual."
+	icon = 'maps/eclipse/icons/obj/etf-decals.dmi'
 
-/obj/structure/sign/double/solgovflag/left
-	icon_state = "solgovflag-left"
+/obj/structure/sign/double/etfflag/left
+	icon_state = "etfflag-left"
 
-/obj/structure/sign/double/solgovflag/right
-	icon_state = "solgovflag-right"
+/obj/structure/sign/double/etfflag/right
+	icon_state = "etfflag-right"

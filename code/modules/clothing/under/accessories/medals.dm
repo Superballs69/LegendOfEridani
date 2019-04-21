@@ -51,3 +51,10 @@
 	name = "corporate merit medal"
 	desc = "An iron medal awarded to employees for merit."
 	icon_state = "iron_nt"
+
+// FCA Medals
+
+/obj/item/clothing/accessory/medal/gold/fca
+	name = "Medal of Merit"
+	desc = "A medal given to those that risked their lives, in honor of the ETF."
+	icon_state = "fca_merit"

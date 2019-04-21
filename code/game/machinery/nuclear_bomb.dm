@@ -416,7 +416,7 @@ var/bomb_set
 /obj/item/weapon/folder/envelope/nuke_instructions/Initialize()
 	. = ..()
 	var/obj/item/weapon/paper/R = new(src)
-	R.set_content("<center><img src=sollogo.png><br><br>\
+	R.set_content("<center><img src=fcalogo.png><br><br>\
 	<b>Warning: Classified<br>[GLOB.using_map.station_name] Self-Destruct System - Instructions</b></center><br><br>\
 	In the event of a Delta-level emergency, this document will guide you through the activation of the vessel's \
 	on-board nuclear self-destruct system. Please read carefully.<br><br>\

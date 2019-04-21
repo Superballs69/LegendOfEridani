@@ -22,10 +22,10 @@
 "av" = (/obj/structure/sign/warning/vent_port{icon_state = "securearea"; dir = 1},/turf/simulated/wall/r_wall/hull,/area/maintenance/disposal)
 "aw" = (/obj/machinery/shield_diffuser,/turf/simulated/floor/reinforced/airless,/area/maintenance/exterior)
 "ax" = (/turf/simulated/wall/r_wall/hull,/area/storage/tech)
-"ay" = (/obj/structure/sign/solgov{pixel_x = 32; pixel_y = -32},/turf/space,/area/space)
+"ay" = (/obj/structure/sign/etf{pixel_x = 32; pixel_y = -32},/turf/space,/area/space)
 "az" = (/turf/simulated/wall/r_wall/hull,/area/maintenance/seconddeck/forestarboard)
 "aA" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; master_tag = "solar_starboard_airlock"; name = "exterior access button"; pixel_x = -24; pixel_y = -24; req_access = list(11,13)},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/airless,/area/solar/auxstarboard)
-"aB" = (/obj/structure/lattice,/obj/structure/sign/solgov{pixel_y = -32},/turf/space,/area/space)
+"aB" = (/obj/structure/lattice,/obj/structure/sign/etf{pixel_y = -32},/turf/space,/area/space)
 "aC" = (/turf/simulated/wall/r_wall/hull,/area/medical/locker)
 "aD" = (/turf/simulated/floor/reinforced/airless,/area/maintenance/exterior)
 "aE" = (/turf/simulated/wall/r_wall/hull,/area/maintenance/seconddeck/aftstarboard)
@@ -343,7 +343,7 @@
 "gE" = (/obj/effect/decal/cleanable/cobweb2,/obj/structure/table/rack,/turf/simulated/floor/tiled/techfloor,/area/maintenance/seconddeck/aftstarboard)
 "gF" = (/obj/machinery/alarm{pixel_y = 24},/obj/machinery/camera/network/engine{c_tag = "Engine - Starboard Thruster"; dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_room)
 "gG" = (/obj/machinery/atmospherics/pipe/manifold/visible/black{dir = 8},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_room)
-"gH" = (/obj/structure/sign/solgov{pixel_x = 32; pixel_y = 32},/turf/space,/area/space)
+"gH" = (/obj/structure/sign/etf{pixel_x = 32; pixel_y = 32},/turf/space,/area/space)
 "gI" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/turf/simulated/floor/reinforced/airless,/area/maintenance/seconddeck/forestarboard)
 "gJ" = (/obj/machinery/door/blast/regular{dir = 4; name = "Escape Pod Release Door"},/turf/simulated/floor/reinforced/airless,/area/maintenance/seconddeck/forestarboard)
 "gK" = (/turf/simulated/wall/r_titanium,/area/shuttle/escape_pod11/station)
@@ -1076,6 +1076,7 @@
 "uJ" = (/obj/machinery/embedded_controller/radio/airlock/access_controller{id_tag = "prototype_controller"; name = "Fusion Maintenance Access Controller"; pixel_x = 0; pixel_y = -21; req_access = list(11); tag_exterior_door = "prototype_exterior"; tag_interior_door = "prototype_interior"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/vacant/prototype/control)
 "uK" = (/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/tiled/steel_grid,/area/vacant/prototype/control)
 "uL" = (/obj/structure/table/standard,/obj/item/weapon/storage/toolbox/electrical,/obj/machinery/alarm{dir = 8; pixel_x = 25; pixel_y = 0; req_one_access = list(24,11)},/turf/simulated/floor/tiled/monotile,/area/vacant/prototype/control)
+"uM" = (/obj/structure/table/steel,/obj/machinery/photocopier/faxmachine{department = "Chief Engineer's Office"},/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/monotile,/area/crew_quarters/heads/office/ce)
 "uN" = (/obj/structure/sign/directions/bridge{dir = 1; pixel_z = 6},/obj/structure/sign/directions/security{dir = 2; pixel_y = -4; pixel_z = 0},/turf/simulated/wall/r_wall/prepainted,/area/hallway/primary/seconddeck/stairs)
 "uO" = (/obj/machinery/door/firedoor/border_only,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/civilian{name = "Custodial Closet"; req_access = list(26)},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/janitor)
 "uP" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/janitor)
@@ -1757,7 +1758,7 @@
 "HQ" = (/obj/structure/sign/warning/airlock,/turf/simulated/wall/r_wall/hull,/area/maintenance/seconddeck/aftport)
 "HR" = (/turf/simulated/wall/r_wall/hull,/area/engineering/fuelbay)
 "HS" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; master_tag = "solar_port_airlock"; name = "exterior access button"; pixel_x = -24; pixel_y = 24; req_access = list(11,13)},/turf/simulated/floor/airless,/area/solar/port)
-"HT" = (/obj/structure/lattice,/obj/structure/sign/solgov{pixel_y = 32},/turf/space,/area/space)
+"HT" = (/obj/structure/lattice,/obj/structure/sign/etf{pixel_y = 32},/turf/space,/area/space)
 "HU" = (/obj/machinery/access_button{command = "cycle_exterior"; frequency = 1379; master_tag = "eng_eva_airlock"; name = "exterior access button"; pixel_x = -24; pixel_y = 24; req_access = list(13)},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/reinforced/airless,/area/maintenance/exterior)
 "HV" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar{id = "auxsolarsport"; name = "Port Auxiliary Solar Array"},/obj/effect/floor_decal/solarpanel,/turf/simulated/floor/airless,/area/solar/port)
 "HW" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/airless,/area/solar/port)
@@ -1791,7 +1792,6 @@
 "Iy" = (/turf/simulated/floor/tiled/monotile,/area/crew_quarters/heads/office/ce)
 "Iz" = (/obj/machinery/door/window/brigdoor/westright{name = "suit storage"; req_access = list(56)},/obj/structure/table/rack,/obj/item/weapon/rig/ce/equipped,/obj/item/clothing/shoes/magboots,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/monotile,/area/crew_quarters/heads/office/ce)
 "IA" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 8},/obj/effect/floor_decal/corner/yellow{dir = 6; icon_state = "corner_white"},/turf/simulated/floor/tiled,/area/hallway/primary/seconddeck/center)
-"IB" = (/obj/structure/table/steel,/obj/machinery/photocopier/faxmachine{department = "CE"},/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled/monotile,/area/crew_quarters/heads/office/ce)
 "IC" = (/obj/structure/table/steel,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/item/modular_computer/tablet/lease/preset/command,/obj/item/weapon/paper/monitorkey,/turf/simulated/floor/tiled,/area/crew_quarters/heads/office/ce)
 "ID" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/tiled,/area/crew_quarters/heads/office/ce)
 "IE" = (/obj/machinery/keycard_auth/eclipse{pixel_x = 24; pixel_y = 0},/obj/machinery/papershredder,/turf/simulated/floor/tiled/monotile,/area/crew_quarters/heads/office/ce)
@@ -1962,7 +1962,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakOkOkOkOkOkOkOkOkOkOxxxxxyxxxxxxxxJyJzJAJBAqxBxBxBxBxDxEsxxFvMvNuVtRsxwTlBkkkknNxGxHxIxJxKnNxLxMxLxLJeJCJDBWyxBWBbBbBbufufufufxUxSvnxTwkvqxVxWxXxYxZyaybycydyeyfygyhyivqxqyjykylxuxvymkNjhjijijijijijijijijjbnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaynyoypypypypypyqypypypypxxoYBcysysysysysysvFytsxxFyuyvywtRsxAlBVIqIskkyyyzyAyByCnNyDyDyExLwQJaBbIuCPCQCQCQIlCQImInBbvqvqyNvqvqvqyOyPxXxeyQyRySyTyUyVyWyXyYwxyZxqzazbzcxuxvymkNjhjijijijijijijijikibnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaynyoypzdzezfzgzhzizjzkzlxxzmznyszozpzqzrysvFzssxsxsxsxsxsxsxyKhJhJIAkkzvzwzxzyzznNzAzAzBzCJEJFBbIoItCQIvyLBbIxCQIyIzvqvqvqzEzFzGzHzIxdzJzKzLySzMzNzOzPzQzRxozSxqzTzUzVzWzXzYjgkgkhjikhkhkhjikhkhjjbnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaynyozZzhzhzhzhzhAaAbzkzlxxAcAdAeAfAgAhAiysxAxBAjxBxBxBxBAkoYArhJhJIAkkkkkkAmAmAmAmAnAnAoApJGJHBbIBICIDCQIEBbBbBbBbBbvqAtAuwxAvAwAxAyAzAAAAABAAACAAAAADAEAFyivqxqAGAHAIAJAKALjgjhjijijijijijijijikibnbnbnaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaynyozZzhzhzhzhzhAaAbzkzlxxAcAdAeAfAgAhAiysxAxBAjxBxBxBxBAkoYArhJhJIAkkkkkkAmAmAmAmAnAnAoApJGJHBbuMICIDCQIEBbBbBbBbBbvqAtAuwxAvAwAxAyAzAAAAABAAACAAAAADAEAFyivqxqAGAHAIAJAKALjgjhjijijijijijijijikibnbnbnaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaynyoypANAOAPAPAPAQARzkzlxxASznysATAUAVAWAXAYAYAYAYAYAYAYAZoYJfJhJiJjJkJlkkBgBhBiAmBjBjBkBlJIJJBbIFIGIHIIIJBbBnBnBoBpvqAtBqBrBsBtBuBvBwBxByBzBABBBCBDBEBFBGwxBHxqBIBJBKBLBMBNirbnbnbnbnbnbnbnbnbnbnbnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayynyoypypypypypypypypypypxxqdznysysysysysAXBOBPBQBRBSBTAYBUoYIpfpJnJoJpJqkkBYBZCaAmCbCbCcxMJDJKBbBbBbBbBbBbBbCdCeCfCgvqvqChCiCjCkClCmCnCoCpCqCrCsCtCtCuCvCwxoCxxqfIfIfIfICyCzCAbnbnbnbnbnbnoBbnbnbnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxznznCBoYCCCDAYCECFCGCHCICJCKCLCMCNoYfpfpfpfpkkAmAmCOAmxLxMxLxLIXIYCRIKILCTCSCSCUCVCWCXCYCZDaDbDcDdDeDfDgDhDiDjDkDlDmDnDnDoDpDqDrDsDtDuDvhshsDwDxfKfLaaaaaeaeaeaebnbnbnbnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

@@ -19,7 +19,7 @@
 
 /datum/antagonist/ert
 	var/sic //Second-In-Command
-	leader_welcome_text = "As leader of the Emergency Response Team, you are part of the ETF's Federal Disaster Intervention Squad, and are there with the intention of restoring normal operation to the vessel or the safe evacuation of crew and passengers. You should, to this effect, aid the Captain or ranking Head of Staff aboard in their endeavours to achieve this."
+	leader_welcome_text = "As leader of the Emergency Response Team, you are part of the FCA's Federal Disaster Intervention Squad, and are there with the intention of restoring normal operation to the vessel or the safe evacuation of crew and passengers. You should, to this effect, aid the Captain or ranking Head of Staff aboard in their endeavours to achieve this."
 
 /datum/antagonist/ert/equip(var/mob/living/carbon/human/player)
 

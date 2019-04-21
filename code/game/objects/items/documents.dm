@@ -20,6 +20,12 @@
 	description_antag = "Looks like the FCA has been looking for a deeply-nested Frontier Federation mole, along with contingency plans if the ETF were ever to declare independence."
 	icon_state = "docs_verified"
 
+/obj/item/documents/fca
+	name = "secret FCA documents"
+	desc = "\"Top Secret\" documents filled with various forms and procedures about standard operation procedures, and various possible threats in the sector."
+	description_antag = "It appears the FCA has engaged their contingency plans for the ETF's independence, and there's no backing up from it."
+	icon_state = "docs_verified"
+
 /obj/item/documents/nanotrasen
 	name = "secret corporate documents"
 	desc = "\"Top Secret\" corporate documents, filled with complex diagrams, research procedures, and details on cloning or breeding rights to non-sapient species the Torch encounters. It seems like they will be auctioning them off to the highest private bidder."

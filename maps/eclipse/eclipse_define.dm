@@ -52,12 +52,13 @@
 	to_chat(victim, "This area of space is uncharted, away from SSA/ETF/FF territory, and a ship graveyard. Expect many different encounters along your journey.")
 
 /datum/map/eclipse/send_welcome()
-	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>EEV Eclipse</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = fcalogo.png /><br /><font size = 3><b>EEV Eclipse</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
-	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
-	welcome_text += "Next system targeted for jump:<br /><b>[generate_system_name()]</b><br /><br>"
-	welcome_text += "Travel time to Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
-	welcome_text += "Time since last port visit:<br /><b>[rand(60,180)] days</b><br /><hr>"
+	welcome_text += "<hr>Current system:<br /><b>Eridani Epsilon Sector [system_name()]</b><br /><br>"
+	welcome_text += "Next system targeted for jump:<br /><b>Eridani Epsilon Sector [generate_system_name()]</b><br /><br>"
+	welcome_text += "Travel time to Eridani Alpha in FTL:<br /><b>[rand(15,200)] days</b><br /><br>"
+	welcome_text += "Travel time to Eridani Alpha in Wormhole:<br /><b>[rand(2,75)] hours</b><br /><br>"
+	welcome_text += "Time since last port visit:<br /><b>[rand(1,14)] days</b><br /><hr>"
 	welcome_text += "Scan results show the following points of interest:<br />"
 	var/list/space_things = list()
 	var/obj/effect/overmap/eclipse = map_sectors["1"]

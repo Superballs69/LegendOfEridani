@@ -6,4 +6,4 @@
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("whipped")
 	hitsound = 'sound/weapons/towelwhip.ogg'
-	desc = "The iconic flag of the Sol Central Government, a symbol with many different meanings."
+	desc = "The iconic flag of the Eridani Trade Federation; It's lacking it's SSA Crest, that's weird."
