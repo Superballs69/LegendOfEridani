@@ -34,6 +34,7 @@
 #define FACTION_TIGER           "Tactical Intervention Group, Emergency Response"
 #define FACTION_ORDER           "The Righteous Order of Buddha-Ssraszhit"
 #define FACTION_HEPHAESTUS      "Hephaestus Industries"
+#define FACTION_TAUCETI			"Tau Ceti"
 #define FACTION_PATHFINDER      "Pathfinder Corps"
 #define FACTION_OTHER           "Other Faction"
 #define FACTION_TEST_SUBJECTS   "Test Subjects"

@@ -8,12 +8,13 @@
 	tail_animation = 'icons/mob/species/tajaran/tail.dmi'
 	default_h_style = "Tajaran Ears"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
-	description = "The Tajaran are a species of furred mammalian bipeds hailing from the chilly planet of Ahdomai \
-	in the Zamsiin-lr system. They are a naturally superstitious species, with the new generations growing up with tales \
-	of the heroic struggles of their forebears against the Overseers. This spirit has led them forward to the \
-	reconstruction and advancement of their society to what they are today. Their pride for the struggles they \
-	went through is heavily tied to their spiritual beliefs. Recent discoveries have jumpstarted the progression \
-	of highly advanced cybernetic technology, causing a culture shock within Tajaran society."
+	description = "No other race could stand to survive the extreme cold of the Tajaran homeworlds without extensive preparation. \
+	In their more primal stages of evolution, they dwelled in caves, which led to the development of very well developed eyes capable of high-visibility in dark areas. \
+	In a more modern setting, they live in villages above ground, wearing heavy furs and insulated clothing.\
+	Tajarans’ sleeping habits are very strange compared humans, as they have a waking period of around 48 hours, with an average of 24 hours of sleep following it. \
+	In working environments they share with other races, they typically wear light clothing and avoid wearing layers like the plague, their fur causing them to sweat heavily should they not do so.\
+	On the other hand, they typically wear heavy furs in the cold of their own worlds. A Tajaran’s lifespan is typically around 120~130 years, just barely outliving humans.\
+	The Dahaz-Khanar Tajara are more aggressive specimens, known to be generally stoic, and rough. K'siri are more snobbish, but generally avoid conflict with other species and other K'siri. "
 	darksight_range = 8
 	darksight_tint = DARKTINT_GOOD
 	slowdown = -0.5

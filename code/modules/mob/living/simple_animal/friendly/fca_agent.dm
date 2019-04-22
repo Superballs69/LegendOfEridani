@@ -1,0 +1,22 @@
+/mob/living/simple_animal/fca_agent
+	name = "\improper FCA Agent"
+	real_name = "FCA Agent"
+	desc = "It's one of the many FCA Agents working here. They seems dead inside, and you probably won't be striking any interesting conversation with them."
+	icon_state = "fca_paperpusher"
+	icon_living = "fca_paperpusher"
+	icon_dead = "fca_paperpusher_dead"
+	speak = list("I hate my job.", "When's the next break?", "Paperwork, paperwork, even more fucking paperwork.", "Jeanne? Where's Jeanne? Anyone seen Jeanne?", "Denied, Denied, Denied, Accepted, Denied...","Could someone go fetch me a coffee? No? Selfish bastards.")
+	speak_emote = list("mumbles", "sighs")
+	emote_hear = list("nods", "mumbles")
+	emote_see = list("shakes their head", "looks up from their work, before diving back in.")
+	speak_chance = 1
+	turns_per_move = 0
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi
+	meat_amount = 3
+	response_help  = "pats"
+	response_disarm = "bops"
+	response_harm   = "kicks"
+	see_in_dark = 5
+	mob_size = 8
+	possession_candidate = 1
+	pass_flags = PASS_FLAG_TABLE
