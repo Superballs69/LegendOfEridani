@@ -13,10 +13,12 @@
 	turns_per_move = 0
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi
 	meat_amount = 3
+	stop_automated_movement = 1
 	response_help  = "pats"
 	response_disarm = "bops"
 	response_harm   = "kicks"
 	see_in_dark = 5
+	universal_speak = 1
 	mob_size = 8
 	possession_candidate = 1
 	pass_flags = PASS_FLAG_TABLE
