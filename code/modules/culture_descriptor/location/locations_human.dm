@@ -61,7 +61,7 @@
 	economic_power = 1.4
 	language = LANGUAGE_SOL_COMMON
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
-	ruling_body = FACTION_SOL_ALLIANCE
+	ruling_body = FACTION_TAUCETI
 
 /decl/cultural_info/location/human/alesiaii
 	name = HOME_SYSTEM_ALESIA_II
