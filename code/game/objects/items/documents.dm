@@ -14,7 +14,7 @@
 	if(. && description_antag)
 		to_chat(user, description_antag)
 
-/obj/item/documents/ice
+/obj/item/documents/fdi
 	name = "secret federal government documents"
 	desc = "\"Top Secret\" documents detailing recent sector reports, security readiness and high-value wanted suspect reports."
 	description_antag = "Looks like the FCA has been looking for a deeply-nested Frontier Federation mole, along with contingency plans if the ETF were ever to declare independence."

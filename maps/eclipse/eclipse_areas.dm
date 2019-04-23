@@ -1117,8 +1117,8 @@
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
 
-/area/bridge/internal_command_enforcement
-	name = "\improper Internal Command Enforcement Office"
+/area/bridge/federal_department_investigation
+	name = "\improper Federal Department of Investigation Office"
 	sound_env = SMALL_ENCLOSED
 
 /area/crew_quarters/heads

@@ -21,12 +21,12 @@
 	id_pda_assignment = "FCA Agent"
 
 /decl/hierarchy/outfit/fca/ice_d
-	name = "FCA - ICE Director"
+	name = "FCA - FDI Director"
 	head = /obj/item/clothing/head/garrison/fca
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	belt = /obj/item/weapon/gun/projectile/fiveseven
-	l_hand = /obj/item/clothing/accessory/storage/tunic/ice_proper
-	id_pda_assignment = "FCA - ICE Director"
+	l_hand = /obj/item/clothing/accessory/storage/tunic/fdi_proper
+	id_pda_assignment = "FCA - FDI Director"
 
 /decl/hierarchy/outfit/fca/fis_d
 	name = "FCA - FIS Director"

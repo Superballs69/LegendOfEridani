@@ -70,8 +70,8 @@
 	icon_state = "helmet_swat"
 	armor = list(melee = 60, bullet = 50, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 0)
 
-/obj/item/clothing/head/helmet/swat/ice
-	name = "I.C.E. tactical helmet"
+/obj/item/clothing/head/helmet/swat/fdi
+	name = "FDI tactical helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
 	icon_state = "helmet_ice"
 	valid_accessory_slots = null

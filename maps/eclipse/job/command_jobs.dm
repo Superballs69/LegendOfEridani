@@ -25,8 +25,8 @@
 /datum/job/captain/get_description_blurb()
 	return "You are the Captain. You are the top dog. You are an experienced professional in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission. Delegate to your Head of Security and your Head of Personnel, and make that them and yourselves remains neutral; Siding with Any Corporation is immediate termination."
 
-/datum/job/ice
-	title = "ICE Agent"
+/datum/job/fdi
+	title = "FDI Agent"
 	supervisors = "the ETF and FCA."
 	department = "Command"
 	department_flag = COM
@@ -37,7 +37,7 @@
 	minimal_player_age = 7
 	selection_color = "#2f2f7f"
 	ideal_character_age = 30
-	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/ice
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/command/fdi
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_EXPERT,
@@ -56,8 +56,8 @@
 	required_education = EDUCATION_TIER_BACHELOR
 	maximum_education = EDUCATION_TIER_MASTERS
 
-/datum/job/ice/get_description_blurb()
-	return "You are an Agent of the Internal Corporate Enforcement arm of the FCA. You are a federal ETF law enforcement agent delegated to oversee the Arcturus-Eclipse Project. Make sure federal laws are followed and enforce them. You, along with the Captain and the Chief of Security are FCA appointed crew and hold the upmost authority amongst the ship."
+/datum/job/fdi/get_description_blurb()
+	return "You are an Agent of the Federal Department of Investigation, one of the branch of the FCA. You are a federal ETF law enforcement agent delegated to oversee the Arcturus-Eclipse Project. Make sure federal laws are followed and enforce them. You, along with the Captain and the Chief of Security are FCA appointed crew and hold the upmost authority amongst the ship."
 
 /datum/job/hop
 	title = "Head of Personnel"

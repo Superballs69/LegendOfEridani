@@ -139,8 +139,8 @@
 	)
 */
 
-/obj/structure/closet/secure_closet/ice
-	name = "ice agent's locker"
+/obj/structure/closet/secure_closet/fdi
+	name = "FDI agent's locker"
 	req_access = list(access_bridge)
 	icon_state = "sol1"
 	icon_closed = "sol"
@@ -148,9 +148,9 @@
 	icon_opened = "solopen"
 	icon_off = "soloff"
 
-/obj/structure/closet/secure_closet/ice/WillContain()
+/obj/structure/closet/secure_closet/fdi/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/ice,
+		/obj/item/clothing/suit/armor/pcarrier/fdi,
 		/obj/item/clothing/head/helmet/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
@@ -169,11 +169,11 @@
 		/obj/item/clothing/gloves/thick,
 		/obj/item/device/holowarrant,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/clothing/under/ice,
-		/obj/item/clothing/under/ice/formal,
-		/obj/item/clothing/under/ice/light,
+		/obj/item/clothing/under/fdi,
+		/obj/item/clothing/under/fdi/formal,
+		/obj/item/clothing/under/fdi/light,
 		/obj/item/clothing/under/fca_proper,
-		/obj/item/clothing/accessory/storage/tunic/ice_proper,
+		/obj/item/clothing/accessory/storage/tunic/fdi_proper,
 		/obj/item/clothing/shoes/highboots,
 		/obj/item/clothing/gloves/white,
 		/obj/item/clothing/shoes/jackboots
