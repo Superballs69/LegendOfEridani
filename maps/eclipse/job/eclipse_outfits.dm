@@ -37,13 +37,13 @@ These outfits will spawn with some gear.
 	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/cap
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
 
-/decl/hierarchy/outfit/job/eclipse/command/ice
+/decl/hierarchy/outfit/job/eclipse/command/fdi
 	name = OUTFIT_JOB_NAME("ICE Agent")
 	l_ear = /obj/item/device/radio/headset/heads/captain
-	uniform = /obj/item/clothing/under/ice
+	uniform = /obj/item/clothing/under/fdi
 	shoes = /obj/item/clothing/shoes/dutyboots
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud
-	id_type = /obj/item/weapon/card/id/eclipse/ice
+	id_type = /obj/item/weapon/card/id/eclipse/fdi
 	pda_type = /obj/item/modular_computer/pda/forensics
 	r_hand = /obj/item/weapon/gun/projectile/fiveseven
 
@@ -472,8 +472,8 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 
 //ERT and Special
 /decl/hierarchy/outfit/job/eclipse/ert
-	name = OUTFIT_JOB_NAME("ERT - Eclipse")
-	uniform = /obj/item/clothing/under/ice
+	name = OUTFIT_JOB_NAME("FDIS - Eclipse")
+	uniform = /obj/item/clothing/under/gign_under
 	head = /obj/item/clothing/head/beret/centcom/officer
 	gloves = /obj/item/clothing/gloves/thick
 	id_type = /obj/item/weapon/card/id/centcom/ERT
@@ -482,6 +482,6 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/eclipse/ert/leader
-	name = OUTFIT_JOB_NAME("ERT Leader - Eclipse")
-	uniform = /obj/item/clothing/under/ice
+	name = OUTFIT_JOB_NAME("FDIS Leader - Eclipse")
+	uniform = /obj/item/clothing/under/gign_under
 	head = /obj/item/clothing/head/beret/centcom/captain

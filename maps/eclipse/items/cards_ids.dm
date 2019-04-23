@@ -31,7 +31,7 @@
 	access = get_all_station_access()
 	..()
 
-/obj/item/weapon/card/id/eclipse/ice
+/obj/item/weapon/card/id/eclipse/fdi
 	name = "federal agent ID card"
 	desc = "A government issued ID card to federal law enforcement agents."
 	icon_state = "centcomGold"

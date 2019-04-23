@@ -300,9 +300,9 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/captain
 
 /obj/item/weapon/card/id/syndicate_command
-	name = "syndicate ID card"
-	desc = "An ID straight from the Syndicate."
-	registered_name = "Syndicate"
+	name = "Black Market ID card"
+	desc = "An ID straight from the Black Market."
+	registered_name = "IllegTech"
 	assignment = "Syndicate Overlord"
 	access = list(access_syndicate, access_external_airlocks)
 

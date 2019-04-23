@@ -12,6 +12,6 @@
 	responsible for flooding the galaxy with effective and easy-to-acquire military-grade robots that are seen in almost every conflict known. Along with war robots \
 	they are well respected manufacturers of high-caliber firearms. The corporation has seen constant backlash from states for rigging colonial elections, inciting \
 	violent coup d'etats and even far as slaving independent positronics and indebting humans to their prosthetics and microbioprocessors. Despite this, PyroCorp remains a strong player on the galactic market. \
-	Kusanagi Defense Industries is the only defense corporation that can stand-toe-toe with them."
+	Kusanagi Defense Industries is the only defense corporation that can stand-toe-toe with them. They've also become the only governing body of Tau Ceti."
 	subversive_potential = 60
 	language = list(LANGUAGE_EAL, LANGUAGE_GALCOM)

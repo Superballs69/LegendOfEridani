@@ -34,7 +34,7 @@
 
 /decl/cultural_info/culture/human/etf
 	name = CULTURE_HUMAN_ETF
-	description = "You are from the many cities and regions of the Eridani Trade Federation. "
+	description = "You are from the many cities and regions of the Eridani Trade Federation.   "
 	secondary_langs = list(LANGUAGE_SOL_COMMON)
 	economic_power = 1.2
 
@@ -70,9 +70,9 @@
 
 /decl/cultural_info/culture/human/taucetian
 	name = CULTURE_HUMAN_TAUCETIAN
-	description = "Placeholder."
+	description = "You are from the many cities and regions of Tau Ceti. Yourself and your ancestors have come to accept the Pyro-Vernand Autocracy. They don't like non-PyroBOTs entering the political life, but life itself there isn't that bad at all; You've simply come to accept that you're being monitored all the time. At least, you've got a healthcare that covers it all!"
 	secondary_langs = list(LANGUAGE_SOL_COMMON)
-	economic_power = 1.3
+	economic_power = 1.2
 
 /decl/cultural_info/culture/human/alesian
 	name = CULTURE_HUMAN_ALESIAN

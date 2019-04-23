@@ -77,16 +77,16 @@
 
 // FCA
 
-/obj/item/clothing/accessory/storage/tunic/ice_proper
-	name = "ICE Agent uniform's tunic"
-	desc = "A fashionable uniform provided by the FCA, for their ICE Agents, with extra medal slots."
-	icon_state = "tunic_ice"
+/obj/item/clothing/accessory/storage/tunic/fdi_proper
+	name = "FDI Agent uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their FDI Agents, with extra medal slots."
+	icon_state = "tunic_fdi"
 	slots = 4
 
-/obj/item/clothing/accessory/storage/tunic/ice_director_proper
-	name = "ICE Director uniform's tunic"
-	desc = "A fashionable uniform provided by the FCA, for their ICE Director, with extra medal slots."
-	icon_state = "tunic_ice_director"
+/obj/item/clothing/accessory/storage/tunic/fdi_director_proper
+	name = "FDI Director uniform's tunic"
+	desc = "A fashionable uniform provided by the FCA, for their FDI Director, with extra medal slots."
+	icon_state = "tunic_fdi_director"
 	slots = 4
 
 /obj/item/clothing/accessory/storage/tunic/fis_proper

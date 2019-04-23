@@ -349,13 +349,13 @@
 /obj/item/clothing/suit/armor/pcarrier/pathfinder/commander
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/pathfinder, /obj/item/clothing/accessory/legguards/pathfinder)
 
-/obj/item/clothing/suit/armor/pcarrier/ice
+/obj/item/clothing/suit/armor/pcarrier/fdi
 	name = "police plate carrier"
 	desc = "A standard issue plate carrier for all federal law enforcement agents."
 	icon_state = "pcarrier_sec"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large)
 
-/obj/item/clothing/suit/armor/pcarrier/ice/heavy
+/obj/item/clothing/suit/armor/pcarrier/fdi/heavy
 	name = "swat plate carrier"
 	desc = "A heavy-duty issue plate carrier for high-threat situations."
 	icon_state = "pcarrier_heavy"

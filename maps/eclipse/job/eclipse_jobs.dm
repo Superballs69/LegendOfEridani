@@ -8,7 +8,7 @@
 	)
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-						/datum/job/ice, /datum/job/liaison,
+						/datum/job/fdi, /datum/job/liaison,
 						/datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_specialist, /datum/job/pathfinder_explorer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_apprentice,
 						/datum/job/isec, /datum/job/tiger, /datum/job/warden, /datum/job/iaa,
@@ -22,7 +22,7 @@
 						/datum/job/merchant, /datum/job/stowaway
 						)
 
-#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hos, /datum/job/ice, /datum/job/iaa
+#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hos, /datum/job/fdi, /datum/job/iaa
 	species_to_job_blacklist = list(
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),

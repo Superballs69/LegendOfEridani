@@ -127,6 +127,14 @@
 	subversive_potential = 30
 	language = LANGUAGE_UNION_STANDARD
 
+/decl/cultural_info/faction/tauceti
+	name = FACTION_TAUCETI
+	description = "Tau Ceti is home to the Pyro-Vernand Manufacturion Corp, that has now become more than a corporation, and the sole governing autocracy of Tau. While non-PyroBOTs are barred from political life, except voting, life itself there isn't bad; \
+	Healthcare is fully reimbursed, and the profit the Corp mades goes back into infrastructure. Not too bad; You just have to get used to the constant surveillance.\
+	Thankfully, the bots don't care about your choice in 'culture'. Just make sure to not anger the Corp!"
+	subversive_potential = 30
+	language = LANGUAGE_GALCOM
+
 /decl/cultural_info/faction/pathfinder
 	name = FACTION_PATHFINDER
 	description = "The Pathfinder Corps is a multinational organization and contractor that offers labour and specialized staffing to all countries. Primarily exploration based, the Pathfinder Corps can be commonly seen as \

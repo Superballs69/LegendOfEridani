@@ -52,7 +52,7 @@
 	icon_state = "stamp-intaff"
 
 /obj/item/weapon/stamp/centcomm
-	name = "centcomm rubber stamp"
+	name = "FCA rubber stamp"
 	icon_state = "stamp-cent"
 
 /obj/item/weapon/stamp/qm

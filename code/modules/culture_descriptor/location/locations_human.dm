@@ -54,14 +54,14 @@
 
 /decl/cultural_info/location/human/cetiepsilon
 	name = HOME_SYSTEM_TAU_CETI
-	description = "Ceti Epsilon, is one of the habitable planets in the Tau Ceti system. Ceti Epsilon, specifically is one of the major trading hubs in Alliance space. \
-	Many independent and corporate trading vessels pass through Ceti Epsilon ferrying their goods across the galaxy. Ceti Epsilon is also the birthplace of the renowned \
-	exploration and adventuring group known as the Pathfinder Corps and many of it's main administrative facilities are based here."
-	capital = "Jeonjin"
+	description = "Ceti Epsilon, is one of the habitable planets in the Tau Ceti system. Ceti Epsilon, specifically is the Home Quarter of the Pyro-Vernand Governmental Agency. \
+	Citizens there are used to the permanent political presence of the PyroCorp, and it's unusual naming conventions for most place.\
+	Ceti Epsilon is also the birthplace of the renowned exploration and adventuring group known as the Pathfinder Corps and many of it's main administrative facilities are based here."
+	capital = "Helriad"
 	economic_power = 1.4
 	language = LANGUAGE_SOL_COMMON
 	secondary_langs = list(LANGUAGE_SIGN, LANGUAGE_GALCOM)
-	ruling_body = FACTION_SOL_ALLIANCE
+	ruling_body = FACTION_TAUCETI
 
 /decl/cultural_info/location/human/alesiaii
 	name = HOME_SYSTEM_ALESIA_II
