@@ -545,7 +545,7 @@
 "ky" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner/blue{dir = 9},/turf/simulated/floor/tiled,/area/hallway/primary/bridge/fore)
 "kz" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hallway/primary/bridge/fore)
 "kA" = (/obj/structure/table/woodentable,/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)
-"kB" = (/obj/structure/bed,/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)
+"kB" = (/obj/structure/bed,/obj/machinery/computer/cryopod{pixel_x = 32},/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)
 "kC" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)
 "kD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/bed/chair/comfy/blue{icon_state = "comfychair_preview"; dir = 1},/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)
 "kE" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/firealarm{dir = 1; pixel_x = 0; pixel_y = -24},/obj/structure/bed/chair/comfy/blue{icon_state = "comfychair_preview"; dir = 1},/turf/simulated/floor/carpet/blue2,/area/crew_quarters/heads/breakroom)

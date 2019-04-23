@@ -34,6 +34,16 @@
 	icon_state = "tree_[rand(1, 6)]"
 
 
+/obj/structure/flora/tree/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/material/twohanded/fireaxe))
+		to_chat(user, "<span class='notice'>You start to cut down the tree!</span>")
+		playsound(src.loc, 'sound/weapons/bladeslice.ogg', 100, 1)
+		if(do_after(user,40,src))
+			to_chat(user, "<span class='notice'>You have cut down the tree!</span>")
+			new /obj/item/stack/material/wood/ten(get_turf(src))
+			qdel(src)
+
+
 //grass
 /obj/structure/flora/grass
 	name = "grass"
