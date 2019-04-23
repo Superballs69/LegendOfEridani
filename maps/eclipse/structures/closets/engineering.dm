@@ -13,7 +13,7 @@
 
 /obj/structure/closet/secure_closet/engineering_chief_eclipse/WillContain()
 	return list(
-		/obj/item/clothing/accessory/storage/brown_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest,
 		/obj/item/blueprints,
 		/obj/item/clothing/head/hardhat/white,
 		/obj/item/clothing/head/welding,
@@ -53,7 +53,7 @@
 /obj/structure/closet/secure_closet/engineering_eclipse/WillContain()
 	return list(
 		/obj/item/clothing/under/hazard,
-		/obj/item/clothing/accessory/storage/brown_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest,
 		/obj/item/weapon/storage/belt/utility/full,
 		/obj/item/device/radio/headset/headset_eng,
 		/obj/item/device/radio/headset/headset_eng/alt,
@@ -81,7 +81,7 @@
 	return list(
 		/obj/item/clothing/head/soft/orange,
 		/obj/item/clothing/under/rank/engineer,
-		/obj/item/clothing/accessory/storage/webbing,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing,
 		/obj/item/weapon/storage/belt/utility/full,
 		/obj/item/device/radio/headset/headset_eng,
 		/obj/item/device/radio/headset/headset_eng/alt,
@@ -106,7 +106,7 @@
 /obj/structure/closet/secure_closet/engineering_senior/WillContain()
 	return list(
 		/obj/item/clothing/under/hazard,
-		/obj/item/clothing/accessory/storage/brown_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest,
 		/obj/item/device/radio/headset/headset_eng,
 		/obj/item/device/radio/headset/headset_eng/alt,
 		/obj/item/clothing/suit/storage/hazardvest,

@@ -161,7 +161,7 @@
 		/obj/item/clothing/glasses/sunglasses/sechud,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
-		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/black_vest,
 		/obj/item/clothing/head/soft/sec/corp,
 		/obj/item/clothing/under/rank/security/corp,
 		/obj/item/weapon/gun/energy/taser,

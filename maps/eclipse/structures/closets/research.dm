@@ -121,7 +121,7 @@
 	return list(
 		/obj/item/device/radio/headset/torchnanotrasen,
 		/obj/item/clothing/under/rank/miner,
-		/obj/item/clothing/accessory/storage/webbing,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/shoes/workboots,
 		/obj/item/device/analyzer,
@@ -172,7 +172,7 @@
 		/obj/item/clothing/mask/balaclava,
 		/obj/item/taperoll/research,
 		/obj/item/device/hailer,
-		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/black_vest,
 		/obj/item/clothing/accessory/badge/holo/NT,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/gun/energy/stunrevolver/secure/nanotrasen,

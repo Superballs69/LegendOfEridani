@@ -46,13 +46,13 @@
 	name = "Gear - Webbing, vests, holsters."
 	num_contained = 4
 	contains = list(/obj/item/clothing/accessory/storage/holster,
-					/obj/item/clothing/accessory/storage/black_vest,
-					/obj/item/clothing/accessory/storage/brown_vest,
-					/obj/item/clothing/accessory/storage/white_vest,
+					/obj/item/clothing/accessory/storage/pouches/load_bearing/black_vest,
+					/obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest,
+					/obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest,
 					/obj/item/clothing/accessory/storage/drop_pouches/black,
 					/obj/item/clothing/accessory/storage/drop_pouches/brown,
 					/obj/item/clothing/accessory/storage/drop_pouches/white,
-					/obj/item/clothing/accessory/storage/webbing)
+					/obj/item/clothing/accessory/storage/pouches/load_bearing)
 	cost = 15
 	containername = "webbing crate"
 

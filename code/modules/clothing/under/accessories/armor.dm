@@ -48,6 +48,39 @@
 	desc = "A collection of tan pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches_tan"
 
+/obj/item/clothing/accessory/storage/pouches/load_bearing
+	name = "webbing"
+	desc = "Sturdy mess of synthcotton belts and buckles, ready to share your burden."
+	icon = 'icons/obj/clothing/ties.dmi'
+	slot_flags = SLOT_OCLOTHING
+	icon_state = "webbing"
+	icon_override = 'icons/mob/onmob/ties.dmi'
+	accessory_icons = list(slot_wear_suit_str = 'icons/mob/onmob/ties.dmi')
+
+/obj/item/clothing/accessory/storage/pouches/load_bearing/large
+	name = "large webbing"
+	desc = "A large collection of synthcotton pockets and pouches."
+	icon_state = "webbing_large"
+	slots = 4
+
+/obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest
+	name = "brown webbing vest"
+	desc = "Worn brownish synthcotton vest with lots of pockets to unload your hands."
+	icon_state = "vest_brown"
+	slots = 5
+
+/obj/item/clothing/accessory/storage/pouches/load_bearing/black_vest
+	name = "black webbing vest"
+	desc = "Robust black synthcotton vest with lots of pockets to hold whatever you need, but cannot hold in hands."
+	icon_state = "vest_black"
+	slots = 5
+
+/obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest
+	name = "white webbing vest"
+	desc = "Durable white synthcotton vest with lots of pockets to carry essentials."
+	icon_state = "vest_white"
+	slots = 5
+
 //Armor plates
 /obj/item/clothing/accessory/armorplate
 	name = "light armor plate"

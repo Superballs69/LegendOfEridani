@@ -108,7 +108,7 @@
 	    /obj/item/weapon/crowbar,
 	    /obj/item/weapon/extinguisher/mini,
 	    /obj/item/weapon/storage/box/freezer,
-	    /obj/item/clothing/accessory/storage/white_vest,
+	    /obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest,
 	)
 
 /obj/structure/closet/secure_closet/CMO

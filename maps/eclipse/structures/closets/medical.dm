@@ -81,7 +81,7 @@
 /obj/structure/closet/secure_closet/medical_eclipse/WillContain()
 	return list(
 		/obj/item/clothing/under/sterile,
-		/obj/item/clothing/accessory/storage/white_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/suit/storage/toggle/fr_jacket,
 		/obj/item/clothing/shoes/white,
@@ -113,7 +113,7 @@
 		/obj/item/clothing/under/sterile,
 		/obj/item/clothing/head/soft/mime,
 		/obj/item/clothing/under/rank/orderly,
-		/obj/item/clothing/accessory/storage/white_vest,
+		/obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest,
 		/obj/item/clothing/suit/storage/toggle/labcoat,
 		/obj/item/clothing/suit/storage/toggle/fr_jacket,
 		/obj/item/clothing/shoes/white,

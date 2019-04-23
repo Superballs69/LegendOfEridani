@@ -5,20 +5,20 @@
 
 /datum/gear/storage/brown_vest
 	display_name = "webbing, engineering"
-	path = /obj/item/clothing/accessory/storage/brown_vest
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/brown_vest
 	cost = 3
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech,
 						/datum/job/mining, /datum/job/janitor)
 
 /datum/gear/storage/black_vest
 	display_name = "webbing, security"
-	path = /obj/item/clothing/accessory/storage/black_vest
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/black_vest
 	cost = 3
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer)
 
 /datum/gear/storage/white_vest
 	display_name = "webbing, medical"
-	path = /obj/item/clothing/accessory/storage/white_vest
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/white_vest
 	cost = 3
 	allowed_roles = list(/datum/job/cmo, /datum/job/doctor)
 
@@ -43,12 +43,12 @@
 
 /datum/gear/storage/webbing
 	display_name = "webbing, simple"
-	path = /obj/item/clothing/accessory/storage/webbing
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing
 	cost = 2
 
 /datum/gear/storage/webbing_large
 	display_name = "webbing, large"
-	path = /obj/item/clothing/accessory/storage/webbing_large
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/large
 	cost = 3
 
 /datum/gear/storage/bandolier

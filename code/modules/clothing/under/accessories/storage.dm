@@ -49,11 +49,6 @@
 	hold.finish_bulk_removal()
 	src.add_fingerprint(user)
 
-/obj/item/clothing/accessory/storage/webbing
-	name = "webbing"
-	desc = "Sturdy mess of synthcotton belts and buckles, ready to share your burden."
-	icon_state = "webbing"
-
 // The Formal Tunics
 
 /obj/item/clothing/accessory/storage/tunic/captain
@@ -119,30 +114,6 @@
 	slots = 4
 
 // End of Tunics
-
-/obj/item/clothing/accessory/storage/webbing_large
-	name = "large webbing"
-	desc = "A large collection of synthcotton pockets and pouches."
-	icon_state = "webbing_large"
-	slots = 4
-
-/obj/item/clothing/accessory/storage/black_vest
-	name = "black webbing vest"
-	desc = "Robust black synthcotton vest with lots of pockets to hold whatever you need, but cannot hold in hands."
-	icon_state = "vest_black"
-	slots = 5
-
-/obj/item/clothing/accessory/storage/brown_vest
-	name = "brown webbing vest"
-	desc = "Worn brownish synthcotton vest with lots of pockets to unload your hands."
-	icon_state = "vest_brown"
-	slots = 5
-
-/obj/item/clothing/accessory/storage/white_vest
-	name = "white webbing vest"
-	desc = "Durable white synthcotton vest with lots of pockets to carry essentials."
-	icon_state = "vest_white"
-	slots = 5
 
 /obj/item/clothing/accessory/storage/drop_pouches
 	slots = 4 //to accomodate it being slotless
