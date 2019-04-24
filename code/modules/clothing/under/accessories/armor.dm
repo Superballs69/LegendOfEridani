@@ -81,6 +81,12 @@
 	icon_state = "vest_white"
 	slots = 5
 
+/obj/item/clothing/accessory/storage/pouches/load_bearing/rig
+	name = "chest rig"
+	desc = "A military-spec syndura chest rig, made for all-weather and terrain combat operations."
+	icon_state = "webbing_rig"
+	slots = 8
+
 //Armor plates
 /obj/item/clothing/accessory/armorplate
 	name = "light armor plate"

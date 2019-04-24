@@ -27,7 +27,7 @@ Civilian
 	alt_titles = list(
 		"General Technician",
 		"Technical Assistant")
-	outfit_type = /decl/hierarchy/outfit/job/eclipse
+	outfit_type = /decl/hierarchy/outfit/job/eclipse/crewman
 	required_education = EDUCATION_TIER_NONE
 
 /datum/job/merchant

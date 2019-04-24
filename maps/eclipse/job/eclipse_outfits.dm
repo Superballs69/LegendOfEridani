@@ -191,12 +191,6 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	id_type = /obj/item/weapon/card/id/eclipse/security/isec
 	pda_type = /obj/item/modular_computer/pda/security
 
-/decl/hierarchy/outfit/job/eclipse/security/isec_contractor/New()
-	..()
-	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack/security
-	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/sec
-	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/sec
-
 /decl/hierarchy/outfit/job/eclipse/security/tiger_contractor
 	name = OUTFIT_JOB_NAME("TIGER Contractor")
 	uniform = /obj/item/clothing/under/tiger
@@ -205,12 +199,6 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	l_pocket = /obj/item/device/flash
 	id_type = /obj/item/weapon/card/id/eclipse/security/tiger
 	pda_type = /obj/item/modular_computer/pda/security
-
-/decl/hierarchy/outfit/job/eclipse/security/tiger_contractor/New()
-	..()
-	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack/security
-	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/sec
-	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/sec
 
 /decl/hierarchy/outfit/job/eclipse/security/iaa
 	name = OUTFIT_JOB_NAME("Internal Affairs Agent")
@@ -366,19 +354,17 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	id_type = /obj/item/weapon/card/id/eclipse/service/bartender
 	pda_type = /obj/item/modular_computer/pda
 
-//Exploration Outfits
-/*
 /decl/hierarchy/outfit/job/eclipse/exploration/New()
 	..()
 	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/weapon/storage/backpack/explorer
 	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/weapon/storage/backpack/satchel/explorer
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/explorer
-*/
+
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_commander
 	name = OUTFIT_JOB_NAME("Pathfinder Commander")
 	uniform = /obj/item/clothing/under/rank/pathfinder
 	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/explorer
 	id_type = /obj/item/weapon/card/id/eclipse/exploration/commander
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/pathfinder
@@ -386,7 +372,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_explorer
 	name = OUTFIT_JOB_NAME("Pathfinder")
 	uniform = /obj/item/clothing/under/rank/pathfinder
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/explorer
 	id_type = /obj/item/weapon/card/id/eclipse/exploration
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/exploration
@@ -395,7 +381,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	name = OUTFIT_JOB_NAME("Pathfinder Pilot")
 	uniform = /obj/item/clothing/under/rank/pathfinder
 	glasses = /obj/item/clothing/glasses/sunglasses
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/explorer
 	id_type = /obj/item/weapon/card/id/eclipse/exploration/pilot
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/headset_pilot
@@ -403,7 +389,7 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 /decl/hierarchy/outfit/job/eclipse/exploration/pathfinder_specialist
 	name = OUTFIT_JOB_NAME("Pathfinder Specialist")
 	uniform = /obj/item/clothing/under/rank/pathfinder
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/explorer
 	id_type = /obj/item/weapon/card/id/eclipse/exploration/specialist
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/exploration
@@ -456,6 +442,9 @@ decl/hierarchy/outfit/job/eclipse/command/cl/union
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = /obj/item/modular_computer/pda
 	id_type = /obj/item/weapon/card/id/eclipse/merchant
+
+/decl/hierarchy/outfit/job/eclipse/crewman
+	name = OUTFIT_JOB_NAME("Crewman")
 
 /decl/hierarchy/outfit/job/eclipse/stowaway
 	name = OUTFIT_JOB_NAME("Stowaway")
