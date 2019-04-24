@@ -95,7 +95,7 @@
 	ore_spread_chance = 10
 	ore_name = "malachite"
 	ore_scan_icon = "mineral_common"
-	ore_icon_overlay = "shiny"
+	ore_icon_overlay = "nugget"
 	sale_price = 1
 	reflectivity = 0.46
 
@@ -199,6 +199,13 @@
 	icon_colour = "#d1e6e3"
 	icon_reinf = "reinf_metal"
 	construction_difficulty = 1
+	ore_smelts_to = MATERIAL_TITANIUM
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "rutile"
+	ore_scan_icon = "mineral_rare"
+	ore_icon_overlay = "lump"
+
 	alloy_materials = null
 	alloy_product = FALSE
 
@@ -334,36 +341,12 @@
 	melting_point = 500
 	hardness = 18
 	reflectivity = 2.1
-
-/material/zinc
-	name = MATERIAL_ZINC
-	lore_text = "A metal known for its anti-corrosion applications."
-	stack_type = /obj/item/stack/material/zinc
-	icon_colour = "#5c5454"
-	weight = 7
-	sheet_singular_name = "sheet"
-	sheet_plural_name = "sheets"
-	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
-	conductivity = 17
-	melting_point = 700
-	hardness = 25
-	reflectivity = 1.5
-
-/material/lead
-	name = MATERIAL_LEAD
-	lore_text = "A dense metal, used to block radiations."
-	stack_type = /obj/item/stack/material/lead
-	icon_colour = "#5c5454"
-	weight = 14
-	sheet_singular_name = "sheet"
-	sheet_plural_name = "sheets"
-	hitsound = 'sound/weapons/smash.ogg'
-	sale_price = 1
-	conductivity = 5
-	melting_point = 600
-	hardness = 15
-	reflectivity = 1.13
+	ore_smelts_to = MATERIAL_TIN
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "casseterite"
+	ore_scan_icon = "mineral_common"
+	ore_icon_overlay = "shiny"
 
 /material/aluminium
 	name = MATERIAL_ALUMINIUM
@@ -379,6 +362,54 @@
 	hardness = 29
 	weight = 3
 	reflectivity = 2.16
+	ore_smelts_to = MATERIAL_ALUMINIUM
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "bauxite"
+	ore_scan_icon = "mineral_common"
+	ore_icon_overlay = "lump"
+
+/material/zinc
+	name = MATERIAL_ZINC
+	lore_text = "A metal known for its anti-corrosion applications."
+	stack_type = /obj/item/stack/material/zinc
+	icon_colour = "#5c5454"
+	weight = 7
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	conductivity = 17
+	melting_point = 700
+	hardness = 25
+	reflectivity = 1.5
+	ore_smelts_to = MATERIAL_ZINC
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "sphalerite"
+	ore_scan_icon = "mineral_uncommon"
+	ore_icon_overlay = "nugget"
+
+/material/lead
+	name = MATERIAL_LEAD
+	lore_text = "A dense metal, used to block radiations."
+	stack_type = /obj/item/stack/material/lead
+	icon_colour = "#5c5454"
+	weight = 14
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+	hitsound = 'sound/weapons/smash.ogg'
+	sale_price = 1
+	conductivity = 5
+	melting_point = 600
+	hardness = 15
+	reflectivity = 1.13
+	ore_smelts_to = MATERIAL_LEAD
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "galena"
+	ore_scan_icon = "mineral_uncommon"
+	ore_icon_overlay = "lump"
 
 /material/tungsten
 	name = MATERIAL_TUNGSTEN
@@ -394,6 +425,12 @@
 	melting_point = 3722
 	hardness = 75
 	reflectivity = 4
+	ore_smelts_to = MATERIAL_TUNGSTEN
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "sphalerite"
+	ore_scan_icon = "mineral_rare"
+	ore_icon_overlay = "nugget"
 
 /material/niobium
 	name = MATERIAL_NIOBIUM
@@ -409,6 +446,13 @@
 	melting_point = 3000
 	hardness = 60
 	reflectivity = 1.3
+	ore_smelts_to = MATERIAL_NIOBIUM
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "pyrochlore"
+	ore_scan_icon = "mineral_rare"
+	ore_icon_overlay = "shiny"
+
 
 //New alloys
 /material/brass
@@ -602,3 +646,76 @@
 	ore_name = "hematite"
 	ore_icon_overlay = "lump"
 	sale_price = 1
+
+/*
+/material/casseterite
+	name = MATERIAL_CASSETERITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TIN
+	ore_result_amount = 5
+	ore_spread_chance = 25
+	ore_name = "casseterite"
+	ore_icon_overlay = "dust"
+
+/material/malachite
+	name = MATERIAL_MALACHITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_COPPER
+	ore_result_amount = 5
+	ore_spread_chance = 25
+	ore_name = "malachite"
+	ore_icon_overlay = "dust"
+
+/material/sphalerite
+	name = MATERIAL_SPHALERITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_ZINC
+	ore_result_amount = 5
+	ore_spread_chance = 20
+	ore_name = "sphalerite"
+	ore_icon_overlay = "dust"
+
+/material/galena
+	name = MATERIAL_GALENA
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_LEAD
+	ore_result_amount = 5
+	ore_spread_chance = 15
+	ore_name = "galena"
+	ore_icon_overlay = "dust"
+
+/material/rutile
+	name = MATERIAL_RUTILE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TITANIUM
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "rutile"
+	ore_icon_overlay = "dust"
+
+/material/wolframite
+	name = MATERIAL_WOLFRAMITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TUNGSTEN
+	ore_result_amount = 5
+	ore_spread_chance = 5
+	ore_name = "wolframite"
+	ore_icon_overlay = "dust"
+
+/material/pyrochlore
+	name = MATERIAL_PYROCHLORE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_NIOBIUM
+	ore_result_amount = 5
+	ore_spread_chance = 5
+	ore_name = "pyrochlore"
+	ore_icon_overlay = "dust"
+
+*/
