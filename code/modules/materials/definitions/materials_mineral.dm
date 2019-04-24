@@ -213,7 +213,7 @@
 		/datum/reagent/silicon = 20
 		)
 
-/material/casseterite
+/*/material/casseterite
 	name = MATERIAL_CASSETERITE
 	stack_type = null
 	icon_colour = "#e2dbb5"
@@ -268,7 +268,7 @@
 	ore_smelts_to = MATERIAL_NIOBIUM
 	ore_name = "pyrochlore"
 	ore_icon_overlay = "dust"
-
+*/
 /material/phoron
 	name = MATERIAL_PHORON
 	stack_type = /obj/item/stack/material/phoron

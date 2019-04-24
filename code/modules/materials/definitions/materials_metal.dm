@@ -646,3 +646,73 @@
 	ore_name = "hematite"
 	ore_icon_overlay = "lump"
 	sale_price = 1
+
+/material/casseterite
+	name = MATERIAL_CASSETERITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TIN
+	ore_result_amount = 5
+	ore_spread_chance = 25
+	ore_name = "casseterite"
+	ore_icon_overlay = "dust"
+
+/material/malachite
+	name = MATERIAL_MALACHITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_COPPER
+	ore_result_amount = 5
+	ore_spread_chance = 25
+	ore_name = "malachite"
+	ore_icon_overlay = "dust"
+
+/material/sphalerite
+	name = MATERIAL_SPHALERITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_ZINC
+	ore_result_amount = 5
+	ore_spread_chance = 20
+	ore_name = "sphalerite"
+	ore_icon_overlay = "dust"
+
+/material/galena
+	name = MATERIAL_GALENA
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_LEAD
+	ore_result_amount = 5
+	ore_spread_chance = 15
+	ore_name = "galena"
+	ore_icon_overlay = "dust"
+
+/material/rutile
+	name = MATERIAL_RUTILE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TITANIUM
+	ore_result_amount = 5
+	ore_spread_chance = 10
+	ore_name = "rutile"
+	ore_icon_overlay = "dust"
+
+/material/wolframite
+	name = MATERIAL_WOLFRAMITE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_TUNGSTEN
+	ore_result_amount = 5
+	ore_spread_chance = 5
+	ore_name = "wolframite"
+	ore_icon_overlay = "dust"
+
+/material/pyrochlore
+	name = MATERIAL_PYROCHLORE
+	stack_type = null
+	icon_colour = "#e2dbb5"
+	ore_smelts_to = MATERIAL_NIOBIUM
+	ore_result_amount = 5
+	ore_spread_chance = 5
+	ore_name = "pyrochlore"
+	ore_icon_overlay = "dust"
