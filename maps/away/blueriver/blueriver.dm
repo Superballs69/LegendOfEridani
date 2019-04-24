@@ -1,5 +1,6 @@
 //quality code theft
 #include "blueriver_areas.dm"
+#include "blueriver_jobs.dm"
 /obj/effect/overmap/sector/arcticplanet
 	name = "arctic planetoid"
 	desc = "Sensor array detects an arctic planet with a small vessle on the planet's surface. Scans further indicate strange energy levels below the planet's surface."
