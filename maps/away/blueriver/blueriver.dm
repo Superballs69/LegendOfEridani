@@ -22,6 +22,19 @@
  	description = "Two z-level map with an arctic planet and an alien underground surface"
  	suffixes = list("blueriver/blueriver-1.dmm", "blueriver/blueriver-2.dmm")
 
+/obj/effect/submap_landmark/joinable_submap/blueriver
+	name = "NSV Horizon"
+	archetype = /decl/submap_archetype/derelict/blueriver
+
+
+/decl/submap_archetype/derelict/blueriver
+	descriptor = "derelict"
+	map = "NSV Horizon"
+	crew_jobs = list(
+		/datum/job/submap/blueriver_researcher,
+		/datum/job/submap/blueriver_engineer
+	)
+
 //This is ported from /vg/ and isn't entirely functional. If it sees a threat, it moves towards it, and then activates it's animation.
 //At that point while it sees threats, it will remain in it's attack stage. It's a bug, but I figured it nerfs it enough to not be impossible to deal with
 /mob/living/simple_animal/hostile/hive_alien/defender

@@ -103,6 +103,7 @@
 	recipes += new/datum/stack_recipe/coilgun(src)
 	recipes += new/datum/stack_recipe/stick(src)
 	recipes += new/datum/stack_recipe/noticeboard(src)
+	recipes += new/datum/stack_recipe/firecamp(src)
 
 /material/cardboard/generate_recipes()
 	..()

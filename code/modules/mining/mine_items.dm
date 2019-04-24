@@ -206,12 +206,12 @@
 	light_color = COLOR_LIME
 
 /obj/item/stack/flag/solgov
-	name = "sol gov flags"
-	singular_name = "sol gov flag"
-	icon_state = "solgovflag"
-	fringe = "solgovflag_fringe"
-	desc = "A portable flag with the Sol Government symbol on it. I claim this land for Sol!"
-	light_color = COLOR_BLUE
+	name = "ETF flags"
+	singular_name = "ETF flag"
+	icon_state = "etfflag"
+	fringe = "etfflag_fringe"
+	desc = "A portable flag with the colours of Eridani. I claim this land for the ETF!"
+	light_color = COLOR_RED
 
 /obj/item/stack/flag/attackby(var/obj/item/W, var/mob/user)
 	if(upright)

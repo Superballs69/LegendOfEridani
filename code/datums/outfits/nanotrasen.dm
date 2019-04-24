@@ -20,12 +20,12 @@
 	l_hand = /obj/item/clothing/accessory/storage/tunic/fca_proper
 	id_pda_assignment = "FCA Agent"
 
-/decl/hierarchy/outfit/fca/ice_d
+/decl/hierarchy/outfit/fca/fdi_d
 	name = "FCA - FDI Director"
 	head = /obj/item/clothing/head/garrison/fca
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	belt = /obj/item/weapon/gun/projectile/fiveseven
-	l_hand = /obj/item/clothing/accessory/storage/tunic/fdi_proper
+	l_hand = /obj/item/clothing/accessory/storage/tunic/fdi_director_proper
 	id_pda_assignment = "FCA - FDI Director"
 
 /decl/hierarchy/outfit/fca/fis_d
@@ -34,7 +34,7 @@
 	head = /obj/item/clothing/head/garrison/fca
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	belt = /obj/item/weapon/gun/projectile/fiveseven
-	l_hand = /obj/item/clothing/accessory/storage/tunic/fis_proper
+	l_hand = /obj/item/clothing/accessory/storage/tunic/fis_director_proper
 	id_pda_assignment = "FCA - FIS Director"
 
 /decl/hierarchy/outfit/fca/director

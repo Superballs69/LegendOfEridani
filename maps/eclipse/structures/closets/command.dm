@@ -173,6 +173,7 @@
 		/obj/item/clothing/under/fdi/formal,
 		/obj/item/clothing/under/fdi/light,
 		/obj/item/clothing/under/fca_proper,
+		/obj/item/clothing/head/garrison/fdi,
 		/obj/item/clothing/accessory/storage/tunic/fdi_proper,
 		/obj/item/clothing/shoes/highboots,
 		/obj/item/clothing/gloves/white,

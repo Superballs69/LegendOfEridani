@@ -170,13 +170,13 @@
 	icon_state = "ntbadge"
 	badge_string = "Corporate Executive Body"
 
-/obj/item/clothing/accessory/badge/ocieagent
-	name = "\improper OCIE Agent's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Office of Civil Investigation and Enforcement."
+/obj/item/clothing/accessory/badge/fdiagent
+	name = "\improper FDI's badge"
+	desc = "A leather-backed gold badge displaying the crest of the Federal Department of Investigation."
 	icon_state = "agentbadge"
 	slot_flags = SLOT_BELT | SLOT_TIE
 	slot = ACCESSORY_SLOT_INSIGNIA
-	badge_string = "Office of Civil Investigation and Enforcement"
+	badge_string = "Federal Department of Investigation"
 
 /obj/item/clothing/accessory/badge/tracker
 	name = "\improper Tracker's badge"
@@ -191,7 +191,7 @@
 	desc = "A leather-backed plastic badge displaying that the owner is certified press personnel."
 	icon_state = "pressbadge"
 	badge_string = "Journalist"
-	
+
 /obj/item/clothing/accessory/badge/tags/skrell
 	name = "\improper Skrellian holobadge"
 	desc = "A high tech Skrellian holobadge, designed to project information about the owner."
@@ -202,12 +202,12 @@
 	if(!istype(H))
 		return
 	desc = "Blood type: [H.b_type]"
-	
+
 /obj/item/clothing/accessory/badge/tags/skrell/verb/set_sdtf(mob/user as mob)
 	set name = "Set SDTF Name"
 	set category = "Object"
 	desc = "Set your SDTF origin!"
-	
+
 	badge_string = sanitize(input(usr, "Input your SDTF.", "SDTF Holobadge") as null|text, MAX_NAME_LEN)
 	set_name(user.real_name)
 	set_desc(user)

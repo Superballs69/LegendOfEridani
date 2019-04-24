@@ -24,3 +24,11 @@
 	time = 50
 	on_floor = 1
 	difficulty = 2
+
+/datum/stack_recipe/firecamp
+	title = "firecamp"
+	result_type = /obj/machinery/firecamp
+	req_amount = 10
+	time = 60
+	on_floor = 1
+	difficulty = 1

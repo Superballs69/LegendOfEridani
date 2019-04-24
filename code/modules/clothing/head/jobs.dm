@@ -195,3 +195,9 @@
 	name = "FCA Formal beret"
 	desc = "A navy blue garrison cap, worn by agents of the FCA."
 	icon_state = "fcacap_formal"
+
+
+/obj/item/clothing/head/garrison/fdi
+	name = "FDI Formal beret"
+	desc = "A navy blue garrison cap, worn by agents of the FDI."
+	icon_state = "fcacap_formal"

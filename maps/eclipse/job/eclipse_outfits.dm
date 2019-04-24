@@ -38,7 +38,7 @@ These outfits will spawn with some gear.
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
 
 /decl/hierarchy/outfit/job/eclipse/command/fdi
-	name = OUTFIT_JOB_NAME("ICE Agent")
+	name = OUTFIT_JOB_NAME("FDI Agent")
 	l_ear = /obj/item/device/radio/headset/heads/captain
 	uniform = /obj/item/clothing/under/fdi
 	shoes = /obj/item/clothing/shoes/dutyboots

@@ -37,7 +37,7 @@
 	icon_state = "centcomGold"
 	item_state = "gold_id"
 
-/obj/item/weapon/card/id/eclipse/ice/New()
+/obj/item/weapon/card/id/eclipse/fdi/New()
 	access = get_all_station_access()
 	..()
 

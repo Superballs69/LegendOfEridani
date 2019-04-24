@@ -195,3 +195,6 @@
 			active = 0
 			power_change()
 		update_icon()
+
+
+
