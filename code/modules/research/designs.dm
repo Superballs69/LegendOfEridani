@@ -287,6 +287,30 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/cell/device/high
 	sort_string = "DAAAG"
 
+/datum/design/item/powercell/device/super
+	name = "super-capacity"
+	id = "device_cell_super"
+	req_tech = list(TECH_POWER = 3, TECH_MATERIAL = 2)
+	materials = list(MATERIAL_STEEL = 70, MATERIAL_COPPER = 30, MATERIAL_GLASS = 7)
+	build_path = /obj/item/weapon/cell/device/super
+	sort_string = "DAAAH"
+
+/datum/design/item/powercell/device/hyper
+	name = "hyper-capacity"
+	id = "device_cell_hyper"
+	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
+	materials = list(MATERIAL_ZINC = 40, MATERIAL_COPPER = 30, MATERIAL_GOLD = 15, MATERIAL_SILVER = 15, MATERIAL_GLASS = 7)
+	build_path = /obj/item/weapon/cell/device/hyper
+	sort_string = "DAAAJ"
+
+/datum/design/item/powercell/ultra
+	name = "ultra-capacity"
+	id = "device_cell_ultra"
+	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4, TECH_COMBAT = 5)
+	materials = list(MATERIAL_ZINC = 400, MATERIAL_COPPER = 300, MATERIAL_GOLD = 50, MATERIAL_SILVER = 50, MATERIAL_GLASS = 7)
+	build_path = /obj/item/weapon/cell/ultra
+	sort_string = "DAAAE"
+
 /datum/design/item/hud
 	materials = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 50)
 
@@ -758,12 +782,14 @@ other types of metals and chemistry for reagents).
 	..()
 	name = "Ammunition prototype ([item_name])"
 
+/* Since the prototype SMG can use magazines now, this is useless.
 /datum/design/item/weapon/ammunition/ammo_9mm
 	id = "ammo_9mm"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 3750, MATERIAL_SILVER = 100)
 	build_path = /obj/item/ammo_magazine/box/b9mm
 	sort_string = "TBAAA"
+*/
 
 /datum/design/item/weapon/ammunition/stunshell
 	desc = "A stunning shell for a shotgun."
@@ -771,7 +797,7 @@ other types of metals and chemistry for reagents).
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	materials = list(MATERIAL_STEEL = 4000)
 	build_path = /obj/item/ammo_casing/shotgun/stunshell
-	sort_string = "TBAAB"
+	sort_string = "TBAAA"
 
 /datum/design/item/weapon/ammunition/ammo_emp_38
 	id = "ammo_emp_38"
@@ -779,7 +805,7 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp
-	sort_string = "TBAAC"
+	sort_string = "TBAAB"
 
 /datum/design/item/weapon/ammunition/ammo_emp_45
 	id = "ammo_emp_45"
@@ -787,7 +813,7 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp/b45
-	sort_string = "TBAAD"
+	sort_string = "TBAAC"
 
 /datum/design/item/weapon/ammunition/ammo_emp_10
 	id = "ammo_emp_10"
@@ -795,7 +821,7 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 2500, MATERIAL_URANIUM = 750)
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_magazine/box/emp/b10mm
-	sort_string = "TBAAE"
+	sort_string = "TBAAD"
 
 /datum/design/item/weapon/ammunition/ammo_emp_slug
 	id = "ammo_emp_slug"
@@ -803,7 +829,7 @@ other types of metals and chemistry for reagents).
 	materials = list(MATERIAL_STEEL = 3000, MATERIAL_URANIUM = 1000)
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	build_path = /obj/item/ammo_casing/shotgun/emp
-	sort_string = "TBAAF"
+	sort_string = "TBAAE"
 
 /datum/design/item/stock_part/subspace_ansible
 	id = "s-ansible"

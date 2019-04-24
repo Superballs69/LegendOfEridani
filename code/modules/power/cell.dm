@@ -119,14 +119,14 @@
 
 // Smaller variant, used by energy guns and similar small devices.
 /obj/item/weapon/cell/device
-	name = "device power cell"
-	desc = "A small power cell designed to power handheld devices."
-	icon_state = "wcell"
+	name = "small device power cell"
+	desc = "A small power cell designed to power devices and weapons."
+	icon_state = "dcell-mini"
 	w_class = ITEM_SIZE_SMALL
 	force = 0
 	throw_speed = 5
 	throw_range = 7
-	maxcharge = 100
+	maxcharge = 25
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 5)
 
 /obj/item/weapon/cell/device/variable/Initialize(mapload, charge_amount)
@@ -135,14 +135,33 @@
 
 /obj/item/weapon/cell/device/standard
 	name = "standard device power cell"
-	maxcharge = 25
+	icon_state = "wcell"
+	maxcharge = 100
 
 /obj/item/weapon/cell/device/high
 	name = "advanced device power cell"
 	desc = "A small power cell designed to power more energy-demanding devices."
 	icon_state = "dcell"
-	maxcharge = 100
+	maxcharge = 150
 	matter = list(MATERIAL_STEEL = 70, MATERIAL_GLASS = 6)
+
+/obj/item/weapon/cell/device/super
+	name = "enhanced device power cell"
+	icon_state = "sdcell"
+	maxcharge = 200
+	matter = list(MATERIAL_STEEL = 70, MATERIAL_COPPER = 30, MATERIAL_GLASS = 7)
+
+/obj/item/weapon/cell/device/hyper
+	name = "superior device power cell"
+	icon_state = "hpdcell"
+	maxcharge = 400
+	matter = list(MATERIAL_ZINC = 40, MATERIAL_COPPER = 30, MATERIAL_GOLD = 15, MATERIAL_SILVER = 15, MATERIAL_GLASS = 7)
+
+/obj/item/weapon/cell/device/ultra
+	name = "ace ultra device power cell"
+	icon_state = "pccdcell"
+	maxcharge = 500
+	matter = list(MATERIAL_ZINC = 400, MATERIAL_COPPER = 300, MATERIAL_GOLD = 50, MATERIAL_SILVER = 50, MATERIAL_GLASS = 7)
 
 /obj/item/weapon/cell/crap
 	name = "old power cell"

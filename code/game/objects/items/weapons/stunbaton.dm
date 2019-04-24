@@ -20,7 +20,7 @@
 	var/hitcost = 7
 
 /obj/item/weapon/melee/baton/loaded
-	bcell = /obj/item/weapon/cell/device/high
+	bcell = /obj/item/weapon/cell/device/standard
 
 /obj/item/weapon/melee/baton/New()
 	if(ispath(bcell))

@@ -27,7 +27,7 @@
 	options = list(
 		"MK58 Custom" = list(/obj/item/weapon/gun/projectile/sec/wood, /obj/item/ammo_magazine/m45m/rubber, /obj/item/ammo_magazine/m45m/rubber),
 		"M92X" = list(/obj/item/weapon/gun/projectile/beretta, /obj/item/ammo_magazine/mc9mmds/rubber, /obj/item/ammo_magazine/mc9mmds/rubber),
-		"AE6 Protector" = list(/obj/item/weapon/gun/energy/gun/small, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device)
+		"AE6 Protector" = list(/obj/item/weapon/gun/energy/gun/small, /obj/item/weapon/cell/device/standard, /obj/item/weapon/cell/device/standard)
 	)
 
 /obj/item/gunbox/tiger
@@ -45,7 +45,7 @@
 	options = list(	
 		"Ward Takashi R870" = list(/obj/item/weapon/gun/projectile/shotgun/pump, /obj/item/weapon/storage/box/beanbags, /obj/item/weapon/storage/box/beanbags),
 		"SRX-9 Hurricane" = list(/obj/item/weapon/gun/projectile/automatic/srx9, /obj/item/ammo_magazine/m57/rubber, /obj/item/ammo_magazine/m57/rubber),
-		"AE10 Energy Carbine" = list(/obj/item/weapon/gun/energy/gun, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device)
+		"AE10 Energy Carbine" = list(/obj/item/weapon/gun/energy/gun, /obj/item/weapon/cell/device/standard, /obj/item/weapon/cell/device/standard)
 	)
 
 /obj/item/gunbox/cos
@@ -54,7 +54,7 @@
 	options = list(
 		"KDI Inspector" = list(/obj/item/weapon/gun/projectile/revolver/inspector, /obj/item/ammo_magazine/s357, /obj/item/ammo_magazine/s357),
 		"KDI 1911" = list(/obj/item/weapon/gun/projectile/colt/kdi, /obj/item/ammo_magazine/m45m, /obj/item/ammo_magazine/m45m),
-		"AE5 Energy Pistol" = list(/obj/item/weapon/gun/energy/gun/pistol, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device),
+		"AE5 Energy Pistol" = list(/obj/item/weapon/gun/energy/gun/pistol, /obj/item/weapon/cell/device/standard, /obj/item/weapon/cell/device/standard),
 		"KDI Lamia MKI" = list(/obj/item/weapon/gun/projectile/deagle/lamia, /obj/item/ammo_magazine/m50, /obj/item/ammo_magazine/m50)
 	)
 
@@ -63,7 +63,7 @@
 	desc = "A secure box containing a sidearm for the Pathfinders."
 	options = list(
 		"MK58" = list(/obj/item/weapon/gun/projectile/sec, /obj/item/ammo_magazine/m45m, /obj/item/ammo_magazine/m45m),
-		"AE6 Protector" = list(/obj/item/weapon/gun/energy/gun/small, /obj/item/weapon/cell/device, /obj/item/weapon/cell/device)
+		"AE6 Protector" = list(/obj/item/weapon/gun/energy/gun/small, /obj/item/weapon/cell/device/standard, /obj/item/weapon/cell/device/standard)
 	)
 
 /obj/item/gunbox/pathfinder_commander

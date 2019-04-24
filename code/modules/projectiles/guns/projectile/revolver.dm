@@ -187,6 +187,7 @@
 	name = "Judge"
 	desc = "A 5 shot cylinder shotgun revolver."
 	max_shells = 5
+	icon = 'icons/obj/gun_2.dmi'
 	caliber = "shotgun"
 	icon_state = "judge"
 	item_state = "revolver"

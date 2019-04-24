@@ -79,8 +79,8 @@
 				/obj/item/weapon/cell/high = 5,
 				/obj/item/weapon/cell/super = 2,
 				/obj/item/weapon/cell/hyper = 1,
-				/obj/item/weapon/cell/device/standard = 7,
-				/obj/item/weapon/cell/device/high = 5)
+				/obj/item/weapon/cell/device = 7,
+				/obj/item/weapon/cell/device/standard = 5)
 
 /obj/random/bomb_supply
 	name = "bomb supply"

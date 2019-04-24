@@ -1,14 +1,16 @@
 /obj/item/weapon/gun/projectile/automatic //Hopefully someone will find a way to make these fire in bursts or something. --Superxpdude
-	name = "prototype SMG"
+	name = "Saber 9mm prototype SMG"
 	desc = "A protoype lightweight, fast firing gun. Uses 9mm rounds."
 	icon_state = "saber"	//ugly
 	w_class = ITEM_SIZE_NORMAL
-	load_method = SPEEDLOADER //yup. until someone sprites a magazine for it.
+	load_method = MAGAZINE //yup. until someone sprites a magazine for it.
 	max_shells = 22
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	ammo_type = /obj/item/ammo_casing/a9mm
+	magazine_type = /obj/item/ammo_magazine/mc9mmds
+	allowed_magazines = /obj/item/ammo_magazine/m45uzi
 	multi_aim = 1
 	burst_delay = 2
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
@@ -21,9 +23,17 @@
 		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
+/obj/item/weapon/gun/projectile/automatic/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "saber"
+	else
+		icon_state = "saber-empty"
+
+
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
-	name = ".45 machine pistol"
-	desc = "The Lumoco Arms MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. Uses .45 rounds."
+	name = "WT MP6 .45"
+	desc = "The Ward-Takahashi MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. Uses .45 rounds."
 	icon_state = "mpistolen"
 	item_state = "wt550"
 	w_class = ITEM_SIZE_NORMAL
@@ -115,7 +125,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/g36c
 	name ="KDI G36CX"
-	desc = "A recreation of the classic German assault rifle, made my KDI. Uses 5.56mm rounds."
+	desc = "A recreation of the classic German assault rifle, made by KDI. Uses 5.56mm rounds."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "g36c"
 	force = 10
@@ -470,7 +480,7 @@
 		update_held_icon()
 
 /obj/item/weapon/gun/projectile/automatic/uzi
-	name = "UZI"
+	name = "Uzi"
 	desc = "A classic open bolt, blowback submachine gun. Reproduced by Olympia Foundry, and is popular amongst criminals, government agents and even law enforcement agents. Chambered in .45 ACP."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "uzi"
