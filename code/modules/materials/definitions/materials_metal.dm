@@ -647,6 +647,7 @@
 	ore_icon_overlay = "lump"
 	sale_price = 1
 
+/*
 /material/casseterite
 	name = MATERIAL_CASSETERITE
 	stack_type = null
@@ -716,3 +717,5 @@
 	ore_spread_chance = 5
 	ore_name = "pyrochlore"
 	ore_icon_overlay = "dust"
+
+*/

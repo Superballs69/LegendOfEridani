@@ -8,6 +8,13 @@ GLOBAL_LIST_INIT(weighted_minerals_sparse, \
 		MATERIAL_GOLD =         8, \
 		MATERIAL_SILVER =       8, \
 		MATERIAL_PHORON =      10, \
+		MATERIAL_ALUMINIUM =   35, \
+		MATERIAL_COPPER =      35, \
+		MATERIAL_TIN =		   35, \
+		MATERIAL_ZINC =		    8, \
+		MATERIAL_LEAD =		    8, \
+		MATERIAL_TUNGSTEN =		3, \
+		MATERIAL_NIOBIUM =		3, \
 		MATERIAL_QUARTZ =       3, \
 		MATERIAL_PYRITE =       3, \
 		MATERIAL_SPODUMENE =    3, \
@@ -37,6 +44,13 @@ GLOBAL_LIST_INIT(weighted_minerals_rich, \
 		MATERIAL_GOLD =        10, \
 		MATERIAL_SILVER =      10, \
 		MATERIAL_PHORON =      20, \
+		MATERIAL_ALUMINIUM =   20, \
+		MATERIAL_COPPER =      20, \
+		MATERIAL_TIN =		   20, \
+		MATERIAL_ZINC =		   10, \
+		MATERIAL_LEAD =		   10, \
+		MATERIAL_TUNGSTEN =		5, \
+		MATERIAL_NIOBIUM =		5, \
 		MATERIAL_QUARTZ =       1, \
 		MATERIAL_PYRITE =       1, \
 		MATERIAL_SPODUMENE =    1, \
