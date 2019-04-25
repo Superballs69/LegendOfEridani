@@ -16,6 +16,7 @@
 	accuracy = -1
 	charge_cost = 2.5
 	wielded_item_state = "gun_wielded"
+	cell_type = /obj/item/weapon/cell/device/standard
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
 	name = "pulse carbine"
@@ -25,7 +26,6 @@
 	force = 8
 	projectile_type = /obj/item/projectile/beam/pulse/mid
 	charge_cost = 5
-	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty= 3
 	burst_delay = 2

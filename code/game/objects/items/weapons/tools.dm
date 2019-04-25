@@ -34,6 +34,39 @@
 	icon_state = "wrench[pick("","_red","_black","_green","_blue")]"
 	. = ..()
 
+/obj/item/weapon/wrench/power
+	name = "hand drill"
+	desc = "A simple powered hand drill. It's fitted with a bolt bit."
+	icon_state = "drill_bolt"
+	item_state = "drill"
+	matter = list(DEFAULT_WALL_MATERIAL = 150, MAT_SILVER = 50)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	force = 8.0
+	w_class = ITEM_SIZE_SMALL
+	throwforce = 8
+	attack_verb = list("drilled", "screwed", "jabbed")
+	var/obj/item/weapon/screwdriver/power/counterpart = null
+
+/obj/item/weapon/wrench/power/New(newloc, no_counterpart = TRUE)
+	..(newloc)
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/wrench/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/wrench/power/attack_self(mob/user)
+	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the screw driver bit to [src].</span>")
+
 /*
  * Screwdriver
  */
@@ -92,6 +125,46 @@
 		M = user
 	return eyestab(M,user)
 
+/obj/item/weapon/screwdriver/power
+	name = "hand drill"
+	desc = "A simple powered hand drill. It's fitted with a screw bit."
+	icon_state = "drill_screw"
+	item_state = "drill"
+	matter = list(DEFAULT_WALL_MATERIAL = 150, MAT_SILVER = 50)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	slot_flags = SLOT_BELT
+	force = 8.0
+	w_class = ITEM_SIZE_SMALL
+	throwforce = 8
+	throw_speed = 2
+	throw_range = 3//it's heavier than a screw driver/wrench, so it does more damage, but can't be thrown as far
+	attack_verb = list("drilled", "screwed", "jabbed", "whacked")
+	hitsound = 'sound/items/drill_hit.ogg'
+	color = null
+	lock_picking_level = 10
+	sharp = FALSE
+	var/obj/item/weapon/wrench/power/counterpart = null
+
+/obj/item/weapon/screwdriver/power/New(newloc, no_counterpart = TRUE)
+	..(newloc)
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/screwdriver/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/screwdriver/power/attack_self(mob/user)
+	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the bolt driver bit to [src].</span>")
+
 /*
  * Wirecutters
  */
@@ -144,6 +217,51 @@
 		return
 	else
 		..()
+
+/obj/item/weapon/wirecutters/power
+	name = "jaws of life"
+	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a cutting head."
+	icon_state = "jaws_cutter"
+	item_state = "jawsoflife"
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	matter = list(MAT_METAL=150, MAT_SILVER=50)
+	force = 15
+	color = null
+	var/obj/item/weapon/crowbar/power/counterpart = null
+
+/obj/item/weapon/wirecutters/power/New(newloc, no_counterpart = TRUE)
+	..(newloc)
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/wirecutters/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/wirecutters/power/attack_self(mob/user)
+	playsound(get_turf(user), 'sound/items/change_jaws.ogg', 50, 1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the pry jaws to [src].</span>")
+
+/obj/item/weapon/wirecutters/power/attack(mob/living/carbon/C as mob, mob/user as mob)
+	if(istype(C) && user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/weapon/handcuffs)))
+		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\
+		"You cut \the [C]'s restraints with \the [src]!",\
+		"You hear something being snapped.")
+		C.handcuffed = null
+		if(C.buckled && C.buckled.buckle_require_restraints)
+			C.buckled.unbuckle_mob()
+		C.update_inv_handcuffed()
+		return
+	else
+		..()
+
 
 /*
  * Welding Tool
@@ -628,6 +746,37 @@
 /obj/item/weapon/crowbar/prybar/Initialize()
 	icon_state = "prybar[pick("","_red","_green","_aubergine","_blue")]"
 	. = ..()
+
+/obj/item/weapon/crowbar/power
+	name = "jaws of life"
+	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a prying head."
+	icon_state = "jaws_pry"
+	item_state = "jawsoflife"
+	matter = list(MAT_METAL=150, MAT_SILVER=50)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	force = 15
+	color = null
+	var/obj/item/weapon/wirecutters/power/counterpart = null
+
+/obj/item/weapon/crowbar/power/New(newloc, no_counterpart = TRUE)
+	..(newloc)
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/crowbar/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/crowbar/power/attack_self(mob/user)
+	playsound(get_turf(user), 'sound/items/change_jaws.ogg', 50, 1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the cutting jaws to [src].</span>")
 
 /*
  * Combitool

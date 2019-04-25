@@ -104,6 +104,7 @@
 	icon_state = "utilitybelt"
 	item_state = "utility"
 	overlay_flags = BELT_OVERLAY_ITEMS
+	max_w_class = ITEM_SIZE_LARGE
 	can_hold = list(
 		///obj/item/weapon/combitool,
 		/obj/item/weapon/crowbar,
@@ -150,6 +151,17 @@
 	new /obj/item/weapon/wirecutters(src)
 	new /obj/item/device/t_scanner(src)
 	update_icon()
+
+/obj/item/weapon/storage/belt/utility/deluxe/New()
+	..()
+	new /obj/item/weapon/screwdriver/power(src)
+	new /obj/item/weapon/crowbar/power(src)
+	new /obj/item/weapon/weldingtool/largetank(src)
+	new /obj/item/device/multitool(src)
+	new /obj/item/device/t_scanner(src)
+	new /obj/item/stack/cable_coil/random(src, 30)
+	update_icon()
+
 
 
 

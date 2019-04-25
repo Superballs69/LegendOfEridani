@@ -9,7 +9,7 @@
 	one_hand_penalty = 2
 	accuracy = 2
 	charge_cost = 12.5
-	cell_type = /obj/item/weapon/cell/device
+	cell_type = /obj/item/weapon/cell/device/standard
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(MATERIAL_STEEL = 2000)
 	projectile_type = /obj/item/projectile/beam/midlaser
@@ -22,10 +22,10 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/laser/practice
-	name = "HI 640E"
+	name = "HI G40E-T"
 	desc = "A modified version of the HI G40E, this one fires less concentrated energy bolts designed for target practice."
 	icon_state = "laserp"
-	cell_type = /obj/item/weapon/cell/device
+	cell_type = /obj/item/weapon/cell/device/standard
 	projectile_type = /obj/item/projectile/beam/practice
 	charge_cost = 12.5 //How much energy is needed to fire.
 
@@ -59,7 +59,6 @@ obj/item/weapon/gun/energy/retro
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	charge_cost = 25
-	cell_type = /obj/item/weapon/cell/device
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 15 //old technology, and a pistol
 
@@ -73,7 +72,6 @@ obj/item/weapon/gun/energy/retro
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
 	origin_tech = null
-	cell_type = /obj/item/weapon/cell/device
 	charge_cost = 20 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
@@ -114,7 +112,6 @@ obj/item/weapon/gun/energy/retro
 	one_hand_penalty = 2
 	w_class = ITEM_SIZE_LARGE
 	charge_cost = 12.5
-	cell_type = /obj/item/weapon/cell/device
 	wielded_item_state = "gun_wielded"
 	combustion = 0
 
@@ -126,7 +123,6 @@ obj/item/weapon/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_MAGNET = 2, TECH_ILLEGAL = 2)
 	projectile_type = /obj/item/projectile/beam/xray
 	one_hand_penalty = 1
-	cell_type = /obj/item/weapon/cell/device
 	w_class = ITEM_SIZE_NORMAL
 	fire_delay = 10
 

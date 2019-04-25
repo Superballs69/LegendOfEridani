@@ -3,14 +3,14 @@
 	desc = "A protoype lightweight, fast firing gun. Uses 9mm rounds."
 	icon_state = "saber"	//ugly
 	w_class = ITEM_SIZE_NORMAL
-	load_method = MAGAZINE //yup. until someone sprites a magazine for it.
+	load_method = MAGAZINE 
 	max_shells = 22
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
 	ammo_type = /obj/item/ammo_casing/a9mm
 	magazine_type = /obj/item/ammo_magazine/mc9mmds
-	allowed_magazines = /obj/item/ammo_magazine/m45uzi
+	allowed_magazines = /obj/item/ammo_magazine/mc9mmds
 	multi_aim = 1
 	burst_delay = 2
 	mag_insert_sound = 'sound/weapons/guns/interaction/smg_magin.ogg'
