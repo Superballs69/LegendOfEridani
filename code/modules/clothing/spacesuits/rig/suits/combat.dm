@@ -113,3 +113,55 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/cooling_unit
 		)
+
+/obj/item/weapon/rig/marauder
+	name = "marauder suit control module"
+	desc = "An extremely high-tech combat suit, has been battle tested to defend against anything thrown at it."
+	icon_state = "m_marauder_rig"
+	suit_type = "marauder suit"
+	armor = list(melee = 80, bullet = 80, laser = 70, energy = 75, bomb = 80, bio = 100, rad = 100)
+	cell_type = /obj/item/weapon/cell/infinite
+	online_slowdown = 0
+	offline_slowdown = 3
+	offline_vision_restriction = TINT_HEAVY
+	allowed = list(/obj/item/device/flashlight, /obj/item/weapon/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/handcuffs,/obj/item/device/t_scanner, /obj/item/weapon/rcd, /obj/item/weapon/crowbar, \
+	/obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/device/multitool, \
+	/obj/item/device/radio, /obj/item/device/analyzer,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
+	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit)
+
+	chest_type = /obj/item/clothing/suit/space/rig/combat
+	helm_type = /obj/item/clothing/head/helmet/space/rig/combat
+	boot_type = /obj/item/clothing/shoes/magboots/rig/combat
+	glove_type = /obj/item/clothing/gloves/rig/combat
+
+/obj/item/clothing/head/helmet/space/rig/combat
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/rig/combat
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/shoes/magboots/rig/combat
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/gloves/rig/combat
+	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_NOCUFFS
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/weapon/rig/combat/equipped
+	initial_modules = list(
+		/obj/item/rig_module/mounted/egun,
+		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/grenade_launcher,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/combat,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/mounted/energy_blade,
+		/obj/item/rig_module/mounted/egun,
+		/obj/item/rig_module/vision/multi,
+		/obj/item/rig_module/voice,
+		/obj/item/rig_module/stealth_field,
+		/obj/item/rig_module/fabricator/energy_net,
+		/obj/item/rig_module/datajack
+		)
