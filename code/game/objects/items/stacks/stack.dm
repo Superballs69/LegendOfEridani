@@ -304,8 +304,8 @@
 
 /obj/item/stack/attack_hand(mob/user as mob)
 	if (user.get_inactive_hand() == src)
-		var/N = input("How many stacks of [src] would you like to split off?", "Split stacks", 1) as num|null
-		if(N)
+		var/N = round(input("How many stacks of [src] would you like to split off?", "Split stacks", 1),1) as num|null
+		if(N > 0)
 			var/obj/item/stack/F = src.split(N)
 			if (F)
 				user.put_in_hands(F)
@@ -314,6 +314,10 @@
 				spawn(0)
 					if (src && usr.machine==src)
 						src.interact(usr)
+		else
+			to_chat(user,"Nice try.")
+			..()
+			return
 	else
 		..()
 	return

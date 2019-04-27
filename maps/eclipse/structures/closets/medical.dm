@@ -38,7 +38,7 @@
 	)
 
 /obj/structure/closet/secure_closet/medical_eclipsesenior
-	name = "physician's locker"
+	name = "Surgeon's locker"
 	req_access = list(access_senmed)
 	icon_state = "securesenmed1"
 	icon_closed = "securesenmed"
@@ -71,7 +71,7 @@
 
 /obj/structure/closet/secure_closet/medical_eclipse
 	name = "corpsman's locker"
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical)
 	icon_state = "securemed1"
 	icon_closed = "securemed"
 	icon_locked = "securemed1"
@@ -89,6 +89,7 @@
 		/obj/item/device/radio/headset/headset_corpsman/alt,
 		/obj/item/taperoll/medical,
 		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/weapon/storage/belt/medical,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/weapon/storage/box/autoinjectors,
@@ -121,6 +122,7 @@
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
 		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/weapon/storage/belt/medical,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/device/healthanalyzer,

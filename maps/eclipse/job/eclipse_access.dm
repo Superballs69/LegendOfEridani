@@ -102,7 +102,7 @@
 /var/const/access_senmed = 91
 /datum/access/senmed
 	id = access_senmed
-	desc = "Physician"
+	desc = "Surgeon"
 	region = ACCESS_REGION_MEDBAY
 
 /var/const/access_senadv = 92

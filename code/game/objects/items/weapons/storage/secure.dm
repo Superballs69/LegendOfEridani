@@ -196,3 +196,10 @@
 /obj/item/weapon/storage/secure/safe/HoS/New()
 	..()
 	//new /obj/item/weapon/storage/lockbox/clusterbang(src) This item is currently broken... and probably shouldnt exist to begin with (even though it's cool)
+
+/obj/item/weapon/storage/secure/safe/fdi
+	icon_state = "fdi_safe"
+
+	New()
+		..()
+		new /obj/item/weapon/folder/envelope/protocol_e(src)

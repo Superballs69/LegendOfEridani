@@ -68,7 +68,7 @@
 /obj/item/weapon/folder/nt/rd
 
 /obj/item/weapon/folder/envelope/blanks
-	desc = "A thick envelope. A large corporate logo is stamped in the corner, along with 'CONFIDENTIAL'."
+	desc = "A thick envelope. A large logo is stamped in the corner, along with 'CONFIDENTIAL'."
 
 /obj/item/weapon/folder/envelope/blanks/Initialize()
 	. = ..()
@@ -79,7 +79,7 @@
 	info = {"
 	<tt><center><b><font color='red'>CONFIDENTIAL: UPPER MANAGEMENT ONLY</font></b>
 	<h3>CORPORATE RESEARCH DIVISION</h3>
-	<img src = ntlogo.png>
+	<img src = fcalogo.png>
 	</center>
 	<b>FROM:</b> Hieronimus Blackstone, Overseer of Arcturus-Eclipse Project<br>
 	<b>TO:</b> Research Director of EEV Eclipse branch<br>
@@ -170,6 +170,48 @@
 	<li>Disregard any systems remaining in your flight plan and set course for Sol, Neptune orbit. You will be contacted upon your arrival. Do not make stops in ports on the way unless absolutely necessary.</li>
 	<br>
 	While drastic, I assure you this is a simple precaution, lest any issues. Just keep the option open, and carry on with your normal duties.
-	<i>Regards, John.</i></tt>
+	<i>Regards, Aito.</i></tt>
 	<i>This paper has been stamped with the stamp of Office of the General Board of Directors of the ETF.</i>
+	"}
+
+/obj/item/weapon/folder/envelope/protocol_e
+	desc = "A thick envelope. A large FCA logo is stamped in the corner, along with 'TOP SECRET'."
+	icon_state = "fca_envelope_sealed"
+
+/obj/item/weapon/folder/envelope/protocol_e/Initialize()
+	. = ..()
+	new/obj/item/weapon/paper/prot_e(src)
+
+
+/obj/item/weapon/folder/envelope/protocol_e/on_update_icon()
+	if(sealed)
+		icon_state = "fca_envelope_sealed"
+	else
+		icon_state = "fca_envelope[contents.len > 0]"
+
+/obj/item/weapon/paper/prot_e
+	name = "Protocol E"
+	info = {"
+	<tt><center><b><font color='red'>PROTOCOL E - TOP SECRET</font></b>
+	<h3>ERIDANI TRADE FEDERATION - FEDERAL CONTROL AGENCY</h3>
+	<img src = fcalogo.png>
+	</center>
+	<b>FROM:</b> Director Gunther von Pargner<br>
+	<b>TO:</b> All direct agents of the Federal Control Agency<br>
+	<b>SUBJECT:</b> Protocol E<br>
+	<hr>
+	Agents.<br>
+
+	After the recent actions of the SSA, and a lack of proper reaction, Protocol E. has been initiated by <br>
+	The high members of the Senate, General Frederic Villepier, and Myself. From now on, we do not answer to the SSA <br>
+	under any form. We will now require a full inspections of every staff or crew members' records of your assigned facilities. <br>
+	A records of staff/crew members which met the following criterias must be recorded, and sent as soon as possible to the main agency: <br>
+	<li>Current Citizens or Residents of the SSA and SSA Controlled space. </li>
+	<li>Members with any political affiliation with the SSA. </li>
+	<li>Members with any military, police, law enforcements or Private Military Contract records in affiliation with the SSA. <br>
+	<br>
+	We would also like to remind you that we now have our own military forces, and do not require any military assistance from the SSA. <br>
+	<br>
+	<i>Director von Pargner.</i></tt>
+	<i>This paper has been stamped with the stamp of the Federal Control Agency.</i>
 	"}

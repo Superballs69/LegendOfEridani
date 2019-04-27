@@ -190,7 +190,7 @@
 
 /obj/item/weapon/reagent_containers/glass/beaker/bluespace
 	name = "large beaker"
-	desc = "A large beaker, powered by experimental 'being big' technology."
+	desc = "A large beaker, powered by experimental 'pocket space' technology."
 	icon_state = "beakerbluespace"
 	center_of_mass = "x=16;y=10"
 	matter = list(MATERIAL_GLASS = 5000)
