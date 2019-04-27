@@ -129,28 +129,27 @@
 	/obj/item/device/radio, /obj/item/device/analyzer,/obj/item/weapon/storage/briefcase/inflatable, /obj/item/weapon/melee/baton, /obj/item/weapon/gun, \
 	/obj/item/weapon/storage/firstaid, /obj/item/weapon/reagent_containers/hypospray, /obj/item/roller, /obj/item/device/suit_cooling_unit)
 
-	chest_type = /obj/item/clothing/suit/space/rig/combat
-	helm_type = /obj/item/clothing/head/helmet/space/rig/combat
-	boot_type = /obj/item/clothing/shoes/magboots/rig/combat
-	glove_type = /obj/item/clothing/gloves/rig/combat
+	chest_type = /obj/item/clothing/suit/space/rig/marauder
+	helm_type = /obj/item/clothing/head/helmet/space/rig/marauder
+	boot_type = /obj/item/clothing/shoes/magboots/rig/marauder
+	glove_type = /obj/item/clothing/gloves/rig/marauder
 
-/obj/item/clothing/head/helmet/space/rig/combat
+/obj/item/clothing/head/helmet/space/rig/marauder
 	species_restricted = list(SPECIES_HUMAN)
 
-/obj/item/clothing/suit/space/rig/combat
+/obj/item/clothing/suit/space/rig/marauder
 	species_restricted = list(SPECIES_HUMAN)
 
-/obj/item/clothing/shoes/magboots/rig/combat
+/obj/item/clothing/shoes/magboots/rig/marauder
 	species_restricted = list(SPECIES_HUMAN)
 
-/obj/item/clothing/gloves/rig/combat
+/obj/item/clothing/gloves/rig/marauder
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_NOCUFFS
 	species_restricted = list(SPECIES_HUMAN)
 
-/obj/item/weapon/rig/combat/equipped
+/obj/item/weapon/rig/marauder/equipped
 	initial_modules = list(
 		/obj/item/rig_module/mounted/egun,
-		/obj/item/rig_module/vision/thermal,
 		/obj/item/rig_module/grenade_launcher,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/power_sink,
@@ -158,7 +157,6 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/cooling_unit,
 		/obj/item/rig_module/mounted/energy_blade,
-		/obj/item/rig_module/mounted/egun,
 		/obj/item/rig_module/vision/multi,
 		/obj/item/rig_module/voice,
 		/obj/item/rig_module/stealth_field,

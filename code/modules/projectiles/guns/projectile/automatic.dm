@@ -23,12 +23,13 @@
 		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
-/obj/item/weapon/gun/projectile/automatic/update_icon()
+/obj/item/weapon/gun/projectile/automatic/wt550/on_update_icon()
 	..()
-	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+	if(ammo_magazine)
 		icon_state = "saber"
 	else
 		icon_state = "saber-empty"
+	return
 
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol

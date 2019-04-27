@@ -37,7 +37,6 @@
 /obj/item/weapon/wrench/power
 	name = "hand drill"
 	desc = "A simple powered hand drill. It's fitted with a bolt bit."
-	icon_state = "drill_bolt"
 	item_state = "drill"
 	matter = list(DEFAULT_WALL_MATERIAL = 150, MAT_SILVER = 50)
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
@@ -46,6 +45,9 @@
 	throwforce = 8
 	attack_verb = list("drilled", "screwed", "jabbed")
 	var/obj/item/weapon/screwdriver/power/counterpart = null
+
+/obj/item/weapon/wrench/power/Initialize()
+	icon_state = "drill_bolt"
 
 /obj/item/weapon/wrench/power/New(newloc, no_counterpart = TRUE)
 	..(newloc)
@@ -128,7 +130,6 @@
 /obj/item/weapon/screwdriver/power
 	name = "hand drill"
 	desc = "A simple powered hand drill. It's fitted with a screw bit."
-	icon_state = "drill_screw"
 	item_state = "drill"
 	matter = list(DEFAULT_WALL_MATERIAL = 150, MAT_SILVER = 50)
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
@@ -144,6 +145,9 @@
 	lock_picking_level = 10
 	sharp = FALSE
 	var/obj/item/weapon/wrench/power/counterpart = null
+
+/obj/item/weapon/screwdriver/Initialize()
+	icon_state = "drill_screw"
 
 /obj/item/weapon/screwdriver/power/New(newloc, no_counterpart = TRUE)
 	..(newloc)
@@ -221,13 +225,15 @@
 /obj/item/weapon/wirecutters/power
 	name = "jaws of life"
 	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a cutting head."
-	icon_state = "jaws_cutter"
 	item_state = "jawsoflife"
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
 	matter = list(MAT_METAL=150, MAT_SILVER=50)
 	force = 15
 	color = null
 	var/obj/item/weapon/crowbar/power/counterpart = null
+
+/obj/item/weapon/wirecutters/power/Initialize()
+	icon_state = "jaws_cutter"
 
 /obj/item/weapon/wirecutters/power/New(newloc, no_counterpart = TRUE)
 	..(newloc)
