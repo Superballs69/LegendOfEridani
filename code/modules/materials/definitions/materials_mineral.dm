@@ -180,6 +180,7 @@
 	icon_reinf = "reinf_stone"
 	sale_price = 2
 
+/*
 /material/bauxite
 	name = MATERIAL_BAUXITE
 	ore_name = "bauxite"
@@ -200,6 +201,7 @@
 	ore_compresses_to = MATERIAL_BAUXITE
 	ore_smelts_to = MATERIAL_ALUMINIUM
 	sale_price = 2
+*/
 
 /material/sand
 	name = MATERIAL_SAND
@@ -212,8 +214,8 @@
 	chem_products = list(
 		/datum/reagent/silicon = 20
 		)
-
-/*/material/casseterite
+/*
+/material/casseterite
 	name = MATERIAL_CASSETERITE
 	stack_type = null
 	icon_colour = "#e2dbb5"
@@ -269,6 +271,7 @@
 	ore_name = "pyrochlore"
 	ore_icon_overlay = "dust"
 */
+
 /material/phoron
 	name = MATERIAL_PHORON
 	stack_type = /obj/item/stack/material/phoron
@@ -327,3 +330,4 @@
 		spawn (0)
 			target_tile.hotspot_expose(temperature, 400)
 	return round(totalPhoron/100)
+
