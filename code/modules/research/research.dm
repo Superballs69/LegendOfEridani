@@ -226,12 +226,16 @@ research holder datum.
 
 /obj/item/weapon/disk/tech_disk/event
 	name = "PyroCorp technology data disk"
-	desc = "A disk containing secret technology datas of the PyroCorp."
+	desc = "A disk containing secret technology datas of the PyroCorp. This one is meant to be deconstructed for analyze."
 	icon = 'icons/obj/cloning.dmi'
+	origin_tech = list(TECH_EVENT = 1, TECH_DATA = 1)
 	icon_state = "eventdisk_t"
 	item_state = "card-id"
 	w_class = ITEM_SIZE_SMALL
+	Initialize()
 
-/obj/item/weapon/disk/tech_disk/event/stored()
+/obj/item/weapon/disk/tech_disk/event/Initialize()
+	. = ..()
+	stored = TECH_EVENT
 	stored.id = TECH_EVENT
 	stored.level = 1

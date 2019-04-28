@@ -248,8 +248,10 @@
 	Due to recent ongoing political situations within your regions, we have decided, as allies of the Eridani Trade Federation, <br>
 	To help fund research and development within their sector of space. This is why we have initiated the Pyro-Vernand Robotic Development Program. <br>
 	We have attached to this envelope 1 disk: <br>
-	<li> - A Technological Data disk, containing prototype research and datas from within our own laboratories. </li>
+	<li> - A Technological Data disk, containing prototype research and datas from within our own laboratories.</li>
 	<br>
+	For safety reasons, the data has been encrypted within the disk, requiring it to be destroyed for the data to be available. <br>
+	We assume that your facility comes with a deconstructive analyzer, and recommend the usage of it for acquiring the data. <br>
 	We would appreciate, in exchange, reports of any mechanical or electronical discovery within Eridani Epsilon sent to us, via the FCA. <br>
 	Participation in the project will result in further priority funding from the Pyro-Vernand Ceti Government toward various projects of the Eclipse-Arcturus project. <br>
 	<br>
