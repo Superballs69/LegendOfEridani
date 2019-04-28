@@ -226,7 +226,7 @@ research holder datum.
 
 /obj/item/weapon/disk/tech_disk/event
 	name = "PyroCorp technology data disk"
-	desc = "A disk containing secret technology datas of the PyroCorp. This one is meant to be deconstructed for analyze."
+	desc = "A disk containing secret technology datas of the PyroCorp. This one is meant to be deconstructed for analysis."
 	icon = 'icons/obj/cloning.dmi'
 	origin_tech = list(TECH_EVENT = 1, TECH_DATA = 1)
 	icon_state = "eventdisk_t"
