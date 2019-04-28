@@ -347,6 +347,7 @@
 		'html/images/ntlogo.png',
 		'html/images/bluentlogo.png',
 		'html/images/fcalogo.png',
+		'html/images/pycologo.png',
 		'html/images/sollogo.png',
 		'html/images/terralogo.png',
 		'html/images/talisman.png'

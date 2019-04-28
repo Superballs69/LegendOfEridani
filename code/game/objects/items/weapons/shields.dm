@@ -214,6 +214,7 @@
 	throwforce = 2
 	throw_speed = 3
 	throw_range = 4
+	origin_tech = list(TECH_EVENT = 2, TECH_COMBAT = 2)
 	w_class = ITEM_SIZE_HUGE
 	attack_verb = list("shoved", "bashed", "denied")
 	var/active = 0
@@ -289,6 +290,7 @@
 	can_block_lasers = TRUE
 	slowdown_general = 1.05
 	w_class = ITEM_SIZE_HUGE
+	origin_tech = list(TECH_EVENT = 1, TECH_COMBAT = 2)
 	attack_verb = list("shoved", "bashed")
 	var/active = 0
 	var/times_used = 0 //Number of times it's been used.

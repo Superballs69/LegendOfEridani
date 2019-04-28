@@ -171,55 +171,55 @@
 /datum/access/petrov
 	id = access_petrov
 	desc = "Petrov"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_helm = 201
 /datum/access/petrov_helm
 	id = access_petrov_helm
 	desc = "Petrov Helm"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_analysis = 202
 /datum/access/petrov_analysis
 	id = access_petrov_analysis
 	desc = "Petrov Analysis Lab"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_phoron = 203
 /datum/access/petrov_phoron
 	id = access_petrov_phoron
 	desc = "Petrov Phoron Sublimation Lab"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_toxins = 204
 /datum/access/petrov_toxins
 	id = access_petrov_toxins
 	desc = "Petrov Toxins Lab"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_chemistry = 205
 /datum/access/petrov_chemistry
 	id = access_petrov_chemistry
 	desc = "Petrov Chemistry Lab"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_rd = 206
 /datum/access/petrov_rd
 	id = access_petrov_rd
 	desc = "Petrov Research Director's Office"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_security = 207
 /datum/access/petrov_security
 	id = access_petrov_security
 	desc = "Petrov Security Office"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /var/const/access_petrov_maint = 208
 /datum/access/petrov_maint
 	id = access_petrov_maint
 	desc = "Petrov Maintenance"
-	region = ACCESS_REGION_NT
+	region = ACCESS_REGION_PETROV
 
 /*************
 * NRV Petrov *

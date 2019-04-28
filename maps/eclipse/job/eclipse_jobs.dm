@@ -41,7 +41,7 @@
 		ACCESS_REGION_COMMAND = list(access_change_ids),
 		ACCESS_REGION_GENERAL = list(access_change_ids),
 		ACCESS_REGION_SUPPLY = list(access_change_ids),
-		ACCESS_REGION_NT = list(access_rd)
+		ACCESS_REGION_PETROV = list(access_change_ids)
 	)
 
 // Some jobs for nabber grades defined here due to map-specific job datums.

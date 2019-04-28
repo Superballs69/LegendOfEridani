@@ -161,6 +161,7 @@
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/weapon/gun/energy/taser,
 		/obj/item/weapon/gun/projectile/automatic/p90,
+		/obj/item/clothing/accessory/badge/fdiagent,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/weapon/storage/firstaid/ifak/police,

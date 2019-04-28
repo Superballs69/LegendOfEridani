@@ -233,7 +233,7 @@
 /obj/item/weapon/cell/ultra
 	name = "PC ultra power cell"
 	desc = "Developped by PyroCorp, this powercell has been used to power its most dangerous robots for a long time."
-	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6)
+	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_EVENT = 3)
 	icon_state = "pccell"
 	maxcharge = 6000
 	matter = list(MATERIAL_STEEL = 700, MATERIAL_GLASS = 80)
@@ -241,7 +241,7 @@
 /obj/item/weapon/cell/nuclear
 	name = "PC Miniaturized Fission Reactor"
 	desc = "Developped by PyroCorp, this integrated fission reactor could power an unit for days."
-	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_EVENT = 4)
 	icon_state = "pc-reactor"
 	maxcharge = 15000
 	var/self_recharge = 1
@@ -274,8 +274,8 @@
 		update_icon()
 	return 1
 
-/obj/item/weapon/cell/nuclear/empty
-	charge = 0
+/obj/item/weapon/cell/nuclear/full
+	charge = 15000
 
 /obj/item/weapon/cell/infinite
 	name = "experimental power cell"

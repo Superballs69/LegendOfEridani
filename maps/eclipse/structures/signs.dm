@@ -70,3 +70,14 @@
 
 /obj/structure/sign/double/etfflag/right
 	icon_state = "etfflag-right"
+
+/obj/structure/sign/double/pcflag
+	name = "Pyro-Vernand Ceti Governement Flag"
+	desc = "The flag of the Pyro-Vernand Tau Ceti Government, standing proud. It smells like fresh war crimes and robotic oil."
+	icon = 'maps/eclipse/icons/obj/etf-decals.dmi'
+
+/obj/structure/sign/double/pcflag/left
+	icon_state = "pcflag-left"
+
+/obj/structure/sign/double/pcflag/right
+	icon_state = "pcflag-right"

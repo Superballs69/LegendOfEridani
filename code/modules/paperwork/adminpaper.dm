@@ -16,7 +16,7 @@
 	var/footer = null
 	var/footerOn = FALSE
 
-	var/logo_list = list("ntlogo.png","sollogo.png","fcalogo.png","terralogo.png")
+	var/logo_list = list("ntlogo.png","sollogo.png","fcalogo.png","pycologo.png","terralogo.png")
 	var/logo = ""
 
 /obj/item/weapon/paper/admin/New()

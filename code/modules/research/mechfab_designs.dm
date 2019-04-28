@@ -631,7 +631,7 @@
 	name = "Military-grade Microbattery"
 	build_path = /obj/item/organ/internal/cell/hyper
 	materials = list("copper" = 4000, "zinc" = 4000, "gold" = 500, "glass" = 500)
-	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 5)
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT = 5, TECH_EVENT = 4)
 	id = "pyrocorp_microbattery"
 
 /datum/design/item/mechfab/augment/armblade

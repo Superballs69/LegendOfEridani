@@ -904,6 +904,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 	name = "core fabricator console"
 	id = 1
 
+
 #undef CHECK_LATHE
 #undef CHECK_IMPRINTER
 #undef CHECK_DESTROY

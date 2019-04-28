@@ -215,3 +215,45 @@
 	<i>Director von Pargner.</i></tt>
 	<i>This paper has been stamped with the stamp of the Federal Control Agency.</i>
 	"}
+
+/obj/item/weapon/folder/envelope/pyrocorp_directive
+	desc = "A thick envelope. The logo of the Pyro-Vernand Governement is stamped in the corner, along with 'HIGH PRIORITY'."
+	icon_state = "envelope_sealed"
+
+/obj/item/weapon/folder/envelope/pyrocorp_directive/Initialize()
+	. = ..()
+	new/obj/item/weapon/paper/pc_dir(src)
+	new/obj/item/weapon/disk/tech_disk/event(src)
+
+
+/obj/item/weapon/folder/envelope/pyrocorp_directive/on_update_icon()
+	if(sealed)
+		icon_state = "envelope_sealed"
+	else
+		icon_state = "envelope[contents.len > 0]"
+
+/obj/item/weapon/paper/pc_dir
+	name = "Pyro-Vernand Priority Research Initiative"
+	info = {"
+	<tt><center><b><font color='red'>RESEARCH INITIATIVE - PVCG</font></b>
+	<h3>ERIDANI TRADE FEDERATION - FEDERAL CONTROL AGENCY</h3>
+	<img src = pycologo.png>
+	</center>
+	<b>FROM:</b> Pyro-Vernand Ceti Government - Office of Diplomatic Relations<br>
+	<b>TO:</b> Research and Robotic Personnel of ETF Facilities<br>
+	<b>SUBJECT:</b> Robotic Research Funding Aid<br>
+	<hr>
+	Greetings.<br>
+
+	Due to recent ongoing political situations within your regions, we have decided, as allies of the Eridani Trade Federation, <br>
+	To help fund research and development within their sector of space. This is why we have initiated the Pyro-Vernand Robotic Development Program. <br>
+	We have attached to this envelope 1 disk: <br>
+	<li> - A Technological Data disk, containing prototype research and datas from within our own laboratories. </li>
+	<br>
+	We would appreciate, in exchange, reports of any mechanical or electronical discovery within Eridani Epsilon sent to us, via the FCA. <br>
+	Participation in the project will result in further priority funding from the Pyro-Vernand Ceti Government toward various projects of the Eclipse-Arcturus project. <br>
+	<br>
+	<i>Pyro-Vernand Ceti Government.</i></tt>
+	<i>This paper has been stamped with the stamp of the Pyro-Vernand Ceti Government</i>
+	"}
+

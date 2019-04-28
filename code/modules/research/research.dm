@@ -197,6 +197,12 @@ research holder datum.
 	id = TECH_ARCANE
 	level = 0
 
+/datum/tech/event
+	name = "PyroCorp Research"
+	desc = "Confidential Research of the Pyro-Vernand Manufacturing Division of Tau Ceti."
+	id = TECH_EVENT
+	level = 0
+
 /obj/item/weapon/disk/tech_disk
 	name = "fabricator data disk"
 	desc = "A disk for storing fabricator learning data for backup."
@@ -207,7 +213,6 @@ research holder datum.
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_GLASS = 10)
 	var/datum/tech/stored
 
-
 /obj/item/weapon/disk/design_disk
 	name = "component design disk"
 	desc = "A disk for storing device design data for construction in lathes."
@@ -217,3 +222,16 @@ research holder datum.
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_GLASS = 10)
 	var/datum/design/blueprint
+
+
+/obj/item/weapon/disk/tech_disk/event
+	name = "PyroCorp technology data disk"
+	desc = "A disk containing secret technology datas of the PyroCorp."
+	icon = 'icons/obj/cloning.dmi'
+	icon_state = "eventdisk_t"
+	item_state = "card-id"
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/disk/tech_disk/event/stored()
+	stored.id = TECH_EVENT
+	stored.level = 1

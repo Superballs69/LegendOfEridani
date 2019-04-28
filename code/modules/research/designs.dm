@@ -262,14 +262,6 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/cell/hyper
 	sort_string = "DAAAD"
 
-/datum/design/item/powercell/ultra
-	name = "Military-grade powercell"
-	id = "ultra_cell"
-	req_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4, TECH_COMBAT = 5)
-	materials = list(MATERIAL_ZINC = 4000, MATERIAL_COPPER = 3000, MATERIAL_GOLD = 500, MATERIAL_SILVER = 500, MATERIAL_GLASS = 70)
-	build_path = /obj/item/weapon/cell/ultra
-	sort_string = "DAAAE"
-
 /datum/design/item/powercell/device/standard
 	name = "basic"
 	id = "device_cell_standard"
@@ -1112,7 +1104,7 @@ other types of metals and chemistry for reagents).
 	name = "Mobile Armor Shield"
 	desc = "PyroCorp's 'Great Firewall' ballistic shield. Can be extended to provide additional protection."
 	id = "extendable_shield"
-	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
+	req_tech = list(TECH_EVENT = 2, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
 	materials = list(MATERIAL_STEEL = 20000, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/shield/riot/extendable
 	sort_string = "VAPCA"
@@ -1121,11 +1113,26 @@ other types of metals and chemistry for reagents).
 	name = "Mobile Flash Shield"
 	desc = "PyroCorp's 'Flash' ballistic shield. Can be used to flash targets."
 	id = "extendable_shield"
-	req_tech = list(TECH_ILLEGAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
+	req_tech = list(TECH_EVENT = 1, TECH_ENGINEERING = 4, TECH_COMBAT = 6)
 	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/shield/riot/flash
 	sort_string = "VAPCB"
 
+/datum/design/item/powercell/ultra
+	name = "Military-grade powercell"
+	id = "ultra_cell"
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_EVENT = 3)
+	materials = list(MATERIAL_ZINC = 4000, MATERIAL_COPPER = 3000, MATERIAL_GOLD = 500, MATERIAL_SILVER = 500, MATERIAL_GLASS = 70)
+	build_path = /obj/item/weapon/cell/ultra
+	sort_string = "VAPCC"
+
+/datum/design/item/powercell/nuclear
+	name = "Nuclear reactor equipped powercell"
+	id = "nuclear_cell"
+	req_tech = list(TECH_POWER = 6, TECH_COMBAT  = 6, TECH_MAGNET = 6, TECH_EVENT = 4)
+	materials = list(MATERIAL_LEAD = 5000, MATERIAL_ZINC = 4000, MATERIAL_COPPER = 3000, MATERIAL_GOLD = 5000, MATERIAL_URANIUM = 5000, MATERIAL_GLASS = 7000)
+	build_path = /obj/item/weapon/cell/nuclear
+	sort_string = "VAPCD"
 
 // Superconductive magnetic coils
 /datum/design/item/smes_coil/AssembleDesignName()
