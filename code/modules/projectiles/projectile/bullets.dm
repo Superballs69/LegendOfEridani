@@ -260,6 +260,28 @@
 	damage = 1
 	embed = 0
 
+/obj/item/projectile/bullet/grenade
+	damage = 35 //Don't get hit by it either!!!
+	embed = 0
+
+/obj/item/projectile/bullet/grenade/on_hit(var/atom/target, var/blocked = 0)
+	explosion(target, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/grenade/on_impact(var/atom/A)
+	explosion(A, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/baton
+	name = "rubber baton"
+	check_armour = "melee"
+	damage = 15
+	agony = 67
+	embed = 0
+	sharp = 0
+	weaken = 1
+	eyeblur = 1
+
 /* Practice */
 
 /obj/item/projectile/bullet/pistol/practice

@@ -141,6 +141,17 @@
 	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag
 	matter = list(MATERIAL_STEEL = 180)
 
+/obj/item/ammo_casing/a40mm
+	desc = "A 40mm grenade casing."
+	icon_state = "40mm"
+	spent_icon = "40mm-spent"
+	caliber = "40mm"
+	projectile_type = /obj/item/projectile/bullet/grenade
+
+/obj/item/ammo_casing/a40mm/baton
+	projectile_type = /obj/item/projectile/bullet/baton
+	icon_state = "40mm_baton"
+
 //Can stun in one hit if aimed at the head, but
 //is blocked by clothing that stops tasers and is vulnerable to EMP
 /obj/item/ammo_casing/shotgun/stunshell
