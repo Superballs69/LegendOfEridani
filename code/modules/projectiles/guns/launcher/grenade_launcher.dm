@@ -156,3 +156,19 @@
 	else
 		to_chat(user, "<span class='warning'>\The [src] is empty.</span>")
 
+/obj/item/weapon/gun/launcher/grenade/milkor
+	name = "grenade launcher"
+	desc = "A classic grenade launcher. Holds up to 6 grenades in a revolving magazine."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "milkor"
+	item_state = "milkor"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3)
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+
+	fire_sound = 'sound/weapons/empty.ogg'
+	fire_sound_text = "a metallic thunk"
+	screen_shake = 0
+	throw_distance = 8
+	release_force = 5
+	combustion = 1

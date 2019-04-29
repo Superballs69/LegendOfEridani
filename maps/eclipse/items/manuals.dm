@@ -210,7 +210,13 @@
 	<li>Members with any political affiliation with the SSA. </li>
 	<li>Members with any military, police, law enforcements or Private Military Contract records in affiliation with the SSA. <br>
 	<br>
+	Do not forget to write down the transmission code within your fax report. <br>
 	We would also like to remind you that we now have our own military forces, and do not require any military assistance from the SSA. <br>
+	<hr>
+	<b><font color ='red'> FEDERAL FAX TRANSMISSION CODE: </font></b>: \[fcacode\] <br>
+	<b> Code must be kept confidential at all time. Document must be destroyed if code confidentiality is in danger.</b>
+	<br>
+	<hr>
 	<br>
 	<i>Director von Pargner.</i></tt>
 	<i>This paper has been stamped with the stamp of the Federal Control Agency.</i>
@@ -223,6 +229,7 @@
 /obj/item/weapon/folder/envelope/pyrocorp_directive/Initialize()
 	. = ..()
 	new/obj/item/weapon/paper/pc_dir(src)
+	new/obj/item/weapon/paper/pc_fax(src)
 	new/obj/item/weapon/disk/tech_disk/event(src)
 
 
@@ -247,15 +254,44 @@
 
 	Due to recent ongoing political situations within your regions, we have decided, as allies of the Eridani Trade Federation, <br>
 	To help fund research and development within their sector of space. This is why we have initiated the Pyro-Vernand Robotic Development Program. <br>
-	We have attached to this envelope 1 disk: <br>
+	We have attached to this envelope the following: <br>
 	<li> - A Technological Data disk, containing prototype research and datas from within our own laboratories.</li>
+	<li> - A pre-filled form, to be faxed to the Federal Control Agency. </li>
 	<br>
 	For safety reasons, the data has been encrypted within the disk, requiring it to be destroyed for the data to be available. <br>
 	We assume that your facility comes with a deconstructive analyzer, and recommend the usage of it for acquiring the data. <br>
-	We would appreciate, in exchange, reports of any mechanical or electronical discovery within Eridani Epsilon sent to us, via the FCA. <br>
+	We would appreciate, in exchange, reports of any mechanical or electronical discovery within Eridani Epsilon sent to us by fax, via the FCA. <br>
 	Participation in the project will result in further priority funding from the Pyro-Vernand Ceti Government toward various projects of the Eclipse-Arcturus project. <br>
+	<hr>
+	<b><font color ='red'> FAX TRANSMISSION CODE: </font></b>: \[pccode\] <br>
+	<b> Code must be kept confidential at all time! </b>
 	<br>
+	<hr>
 	<i>Pyro-Vernand Ceti Government.</i></tt>
 	<i>This paper has been stamped with the stamp of the Pyro-Vernand Ceti Government</i>
 	"}
 
+/obj/item/weapon/paper/pc_fax
+	name = "Research Report"
+	info = {"
+	<tt><center><b><font color='red'>RESEARCH INITIATIVE - PVCG</font></b>
+	<h3>ERIDANI TRADE FEDERATION - FEDERAL CONTROL AGENCY</h3>
+	<img src = fcalogo.png>
+	</center>
+	<b>FROM:</b><span class=\"paper_field\"></span><br>
+	<b>TO:</b> Pyro-Vernand Ceti Government,Research Ministry, via Federal Control Agency<br>
+	<b>SUBJECT:</b>Research Initiative<br>
+	<hr>
+	<b>Field of Research advanced:</b> <br>
+	<span class=\"paper_field\"></span> <br>
+	<br>
+	<b> In Details reports: </b> <br>
+	<span class=\"paper_field\"></span> <br>
+	<b> Additional Notes: </b> <br>
+	<span class=\"paper_field\"></span> <br>
+	<hr>
+	<br>
+	<b>Secure Transmission Code:</b><span class=\"paper_field\"></span>
+	<b>Scientist:</b> <span class=\"paper_field\"></span> <br>
+	<b>Research Director:</b> <span class=\"paper_field\"></span> <br>
+	"}

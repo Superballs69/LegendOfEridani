@@ -4,19 +4,19 @@ var/list/gamemode_cache = list()
 	var/server_name = null				// server name (for world name / status)
 	var/server_suffix = 0				// generate numeric suffix based on server port
 
-	var/log_ooc = 0						// log OOC channel
+	var/log_ooc = 1						// log OOC channel
 	var/log_access = 0					// log login/logout
-	var/log_say = 0						// log client say
-	var/log_admin = 0					// log admin actions
+	var/log_say = 1						// log client say
+	var/log_admin = 1					// log admin actions
 	var/log_debug = 1					// log debug output
-	var/log_game = 0					// log game events
+	var/log_game = 1					// log game events
 	var/log_vote = 0					// log voting
-	var/log_whisper = 0					// log client whisper
-	var/log_emote = 0					// log emotes
-	var/log_attack = 0					// log attack messages
+	var/log_whisper = 1					// log client whisper
+	var/log_emote = 1					// log emotes
+	var/log_attack = 1					// log attack messages
 	var/log_adminchat = 0				// log admin chat messages
-	var/log_adminwarn = 0				// log warnings admins get about bomb construction and such
-	var/log_pda = 0						// log pda messages
+	var/log_adminwarn = 1				// log warnings admins get about bomb construction and such
+	var/log_pda = 1						// log pda messages
 	var/log_hrefs = 0					// logs all links clicked in-game. Could be used for debugging and tracking down exploits
 	var/log_runtime = 0					// logs world.log to a file
 	var/log_world_output = 0			// log world.log << messages
@@ -32,7 +32,7 @@ var/list/gamemode_cache = list()
 	var/vote_delay = 6000				// minimum time between voting sessions (deciseconds, 10 minute default)
 	var/vote_period = 600				// length of voting period (deciseconds, default 1 minute)
 	var/vote_autotransfer_initial = 108000 // Length of time before the first autotransfer vote is called
-	var/vote_autotransfer_interval = 18000 // length of time before next sequential autotransfer vote
+	var/vote_autotransfer_interval = 9000 // length of time before next sequential autotransfer vote
 	var/vote_autogamemode_timeleft = 100 //Length of time before round start when autogamemode vote is called (in seconds, default 100).
 	var/vote_no_default = 0				// vote does not default to nochange/norestart (tbi)
 	var/vote_no_dead = 0				// dead people can't vote (tbi)
@@ -63,16 +63,16 @@ var/list/gamemode_cache = list()
 	var/guest_jobban = 1
 	var/usewhitelist = 0
 	var/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
-	var/mods_can_tempban = 0
+	var/mods_can_tempban = 1
 	var/mods_can_job_tempban = 0
-	var/mod_tempban_max = 1440
-	var/mod_job_tempban_max = 1440
+	var/mod_tempban_max = 10080
+	var/mod_job_tempban_max = 10080
 	var/load_jobs_from_txt = 0
 	var/jobs_have_minimal_access = 0	//determines whether jobs use minimal access or expanded access.
 	var/use_cortical_stacks = 0
 
 	var/cult_ghostwriter = 1               //Allows ghosts to write in blood in cult rounds...
-	var/cult_ghostwriter_req_cultists = 10 //...so long as this many cultists are active.
+	var/cult_ghostwriter_req_cultists = 8 //...so long as this many cultists are active.
 
 	var/character_slots = 10				// The number of available character slots
 	var/loadout_slots = 3					// The number of loadout slots per character
@@ -373,10 +373,10 @@ var/list/gamemode_cache = list()
 
 				if ("allow_admin_spawning")
 					config.allow_admin_spawning = 1
-				
+
 				if ("shift_length")
 					config.shift_length = text2num(value)
-					
+
 				if ("no_dead_vote")
 					config.vote_no_dead = 1
 

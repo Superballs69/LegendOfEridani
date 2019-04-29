@@ -24,7 +24,7 @@
 	src.verbs -= /obj/item/weapon/reagent_containers/verb/set_APTFT
 
 /obj/item/weapon/reagent_containers/spray/afterattack(atom/A as mob|obj, mob/user as mob, proximity)
-	if(istype(A, /obj/item/weapon/storage) || istype(A, /obj/structure/table) || istype(A, /obj/structure/closet) || istype(A, /obj/item/weapon/reagent_containers) || istype(A, /obj/structure/hygiene/sink) || istype(A, /obj/structure/janitorialcart))
+	if(istype(A, /obj/item/weapon/storage) || istype(A, /obj/structure/table) || istype(A, /obj/structure/closet) || istype(A, /obj/item/weapon/reagent_containers) || istype(A, /obj/structure/) || istype(A, /obj/structure/janitorialcart))
 		return
 
 	if(istype(A, /spell))
@@ -197,6 +197,73 @@
 			reagents.trans_to_obj(D, amount_per_transfer_from_this)
 			D.set_color()
 			D.set_up(my_target, rand(6, 8), 2)
+	return
+
+/obj/item/weapon/reagent_containers/spray/pyrosprayer
+	name = "PCCS-13"
+	desc = "PyroCorp's Chemical Mix Delivery System. It uses a special chemical chamber allowing no reactions between chemical, until you need to spray it at someone's face."
+	icon = 'icons/obj/gun.dmi'
+	icon_state = "pyrosprayer"
+	item_state = "pyrosprayer"
+	throwforce = 3
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
+	w_class = ITEM_SIZE_LARGE
+	possible_transfer_amounts = null
+	volume = 1200
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_EVENT = 3)
+	step_delay = 1
+	var/lit = 0
+
+/obj/item/weapon/reagent_containers/spray/pyrosprayer/Spray_at(atom/A as mob|obj)
+	playsound(src.loc, 'sound/effects/spray2.ogg', 70, 1, -6)
+	var/direction = get_dir(src, A)
+	var/turf/T = get_turf(A)
+	var/turf/T1 = get_step(T,turn(direction, 90))
+	var/turf/T2 = get_step(T,turn(direction, -90))
+	var/list/the_targets = list(T, T1, T2)
+
+	for(var/a = 1 to 3)
+		spawn(0)
+			if(reagents.total_volume < 1) break
+			var/obj/effect/effect/water/chempuff/D = new/obj/effect/effect/water/chempuff(get_turf(src))
+			var/turf/my_target = the_targets[a]
+			D.create_reagents(amount_per_transfer_from_this)
+			if(!src)
+				return
+			reagents.trans_to_obj(D, amount_per_transfer_from_this)
+			D.set_color()
+			D.set_up(my_target, rand(6, 8), 2)
+			if(lit)
+				new/obj/effect/sparks
+				return
+	return
+
+/obj/item/weapon/reagent_containers/spray/pyrosprayer/attack_self(mob/user as mob)
+	lit = !lit
+	if(lit)
+		to_chat(user, "The weapon slightly extend as you activate the PCCS-13's fire lead system.")
+		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
+		item_state = "pyrosprayer_lit"
+		icon_state = "pyrosprayer_lit"
+	else
+		to_chat(user, "The weapon retracts as you disable the PCCS-13's fire lead system.")
+		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
+		item_state = "pyrosprayer"
+		icon_state = "pyrosprayer"
+	update_icon()
+	return
+
+/obj/item/weapon/reagent_containers/spray/pyrosprayer/Process()
+	if(!lit)
+		STOP_PROCESSING(SSobj, src)
+		return null
+	var/turf/location = loc
+	if(istype(location, /mob/))
+		var/mob/M = location
+		if(M.l_hand == src || M.r_hand == src)
+			location = M.loc
+	if(isturf(location)) //start a fire if possible
+		location.hotspot_expose(700, 2)
 	return
 
 /obj/item/weapon/reagent_containers/spray/plantbgone
