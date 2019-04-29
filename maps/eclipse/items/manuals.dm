@@ -210,7 +210,13 @@
 	<li>Members with any political affiliation with the SSA. </li>
 	<li>Members with any military, police, law enforcements or Private Military Contract records in affiliation with the SSA. <br>
 	<br>
+	Do not forget to write down the transmission code within your fax report. <br>
 	We would also like to remind you that we now have our own military forces, and do not require any military assistance from the SSA. <br>
+	<hr>
+	<b><font color ='red'> FEDERAL FAX TRANSMISSION CODE: </font></b>: \[fcacode\] <br>
+	<b> Code must be kept confidential at all time. Document must be destroyed if code confidentiality is in danger.</b>
+	<br>
+	<hr>
 	<br>
 	<i>Director von Pargner.</i></tt>
 	<i>This paper has been stamped with the stamp of the Federal Control Agency.</i>

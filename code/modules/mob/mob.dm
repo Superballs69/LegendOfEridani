@@ -679,8 +679,10 @@
 			stat("Game ID", "[game_id]")
 		if(client.holder || isghost(client.mob))
 			stat("Location:", "([x], [y], [z]) [loc]")
-		if(client.holder.rights & R_MOD)
+		if(client.holder.rights & R_FCA)
 			stat("PC Fax Code:", "[pyrocorp_code]")
+		if(client.holder.rights & R_FCA)
+			stat("FCA Fax Code:", "[fca_code]")
 
 	if(client.holder)
 		if(statpanel("MC"))

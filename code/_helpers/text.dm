@@ -425,6 +425,7 @@ proc/TextPreview(var/string,var/len=40)
 	t = replacetext(t, "\[time\]", "[stationtime2text()]")
 	t = replacetext(t, "\[date\]", "[stationdate2text()]")
 	t = replacetext(t, "\[pccode\]", "[pyrocorp_code]")
+	t = replacetext(t, "\[fcacode\]", "[fca_code]")
 	t = replacetext(t, "\[large\]", "<font size=\"4\">")
 	t = replacetext(t, "\[/large\]", "</font>")
 	t = replacetext(t, "\[field\]", "<span class=\"paper_field\"></span>")
@@ -502,6 +503,7 @@ proc/TextPreview(var/string,var/len=40)
 	return newKey
 
 var/pyrocorp_code = "PC-[rand(1000,9999)][pick("A","B", "C", "D", "E", "F")][rand(10,99)][pick("M","N", "O", "P", "Q", "R")]-FA"
+var/fca_code = "FCA-[pick("A","B", "C", "D", "E", "F")][rand(100,999)]-[pick("N","B", "O", "Z", "R", "R")]-ER-[rand(10,99)]"
 
 //Used for applying byonds text macros to strings that are loaded at runtime
 /proc/apply_text_macros(string)
