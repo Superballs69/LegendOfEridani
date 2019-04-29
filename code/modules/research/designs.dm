@@ -1134,6 +1134,14 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/weapon/cell/nuclear
 	sort_string = "VAPCD"
 
+/datum/design/item/weapon/pyrosprayer
+	desc = "A PyroCorp chemical sprayer."
+	id = "pyrosprayer"
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3, TECH_BIO = 2, TECH_EVENT = 2)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_TUNGSTEN = 1000, MATERIAL_COPPER = 500, MATERIAL_SILVER = 100, MATERIAL_GLASS = 1000)
+	build_path = /obj/item/weapon/reagent_containers/spray/pyrosprayer
+	sort_string = "VAPCE"
+
 // Superconductive magnetic coils
 /datum/design/item/smes_coil/AssembleDesignName()
 	..()

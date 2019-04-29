@@ -105,7 +105,7 @@
 
 /datum/gear/workvisa
 	display_name = "work visa"
-	description = "A work visa issued by the Sol Central Government for the purpose of work."
+	description = "A work visa issued by the Eridani Trade Federation for the purpose of work."
 	path = /obj/item/weapon/paper/workvisa
 
 /datum/gear/mirror/

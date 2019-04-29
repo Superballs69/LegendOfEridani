@@ -221,6 +221,14 @@
 	projectile_type = /obj/item/missile
 	caliber = "rocket"
 
+/obj/item/ammo_casing/rocket/mini
+	name = "mino rocket shell"
+	desc = "An explosive meant to be fired from a small launcher."
+	icon_state = "minirocket"
+	projectile_type = /obj/item/missile/mini
+	caliber = "minirocket"
+
+
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."

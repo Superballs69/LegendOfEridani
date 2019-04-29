@@ -20,6 +20,7 @@
 		t = round(t / l)
 	return 1
 
+
 // Find mobs matching a given string
 //
 // search_string: the string to search for, in params format; for example, "some_key;mob_name"

@@ -275,13 +275,13 @@
 
 /obj/item/missile/mini
 	icon = 'icons/obj/grenade.dmi'
-	icon_state = "missile"
+	icon_state = "minimissile"
 	primed = null
-	throwforce = 15
+	throwforce = 5
 
 	throw_impact(atom/hit_atom)
 		if(primed)
-			explosion(hit_atom, 0, 1, 1, 3)
+			explosion(hit_atom, 0, 0, 2, 4)
 			qdel(src)
 		else
 			..()
