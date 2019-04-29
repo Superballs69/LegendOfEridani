@@ -146,7 +146,7 @@
 	sharp = FALSE
 	var/obj/item/weapon/wrench/power/counterpart = null
 
-/obj/item/weapon/screwdriver/Initialize()
+/obj/item/weapon/screwdriver/power/Initialize()
 	icon_state = "drill_screw"
 
 /obj/item/weapon/screwdriver/power/New(newloc, no_counterpart = TRUE)
