@@ -236,7 +236,7 @@
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/h8shotgun/mustard/on_hit(var/atom/target, var/blocked = 0)
-	new /obj/effect/effect/smoke/mustard(src.loc0)
+	new /obj/effect/effect/smoke/mustard(src.loc)
 	..()
 
 /obj/item/projectile/bullet/h8shotgun/mustard/on_impact(var/atom/A)
