@@ -212,7 +212,6 @@
 	volume = 1200
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_EVENT = 3)
 	step_delay = 1
-	var/lit = 0
 
 /obj/item/weapon/reagent_containers/spray/pyrosprayer/Spray_at(atom/A as mob|obj)
 	playsound(src.loc, 'sound/effects/spray2.ogg', 70, 1, -6)
@@ -233,30 +232,9 @@
 			reagents.trans_to_obj(D, amount_per_transfer_from_this)
 			D.set_color()
 			D.set_up(my_target, rand(6, 8), 2)
-			if(lit)
-				new/obj/effect/sparks
-				return
-	return
-
-/obj/item/weapon/reagent_containers/spray/pyrosprayer/attack_self(mob/user as mob)
-	lit = !lit
-	if(lit)
-		to_chat(user, "The weapon slightly extend as you activate the PCCS-13's fire lead system.")
-		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
-		item_state = "pyrosprayer_lit"
-		icon_state = "pyrosprayer_lit"
-	else
-		to_chat(user, "The weapon retracts as you disable the PCCS-13's fire lead system.")
-		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
-		item_state = "pyrosprayer"
-		icon_state = "pyrosprayer"
-	update_icon()
 	return
 
 /obj/item/weapon/reagent_containers/spray/pyrosprayer/Process()
-	if(!lit)
-		STOP_PROCESSING(SSobj, src)
-		return null
 	var/turf/location = loc
 	if(istype(location, /mob/))
 		var/mob/M = location

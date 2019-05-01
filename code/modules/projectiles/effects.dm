@@ -90,6 +90,22 @@
 	icon_state = "impact_beam_heavy"
 
 //----------------------------
+// Heavy Stun beam
+//----------------------------
+
+/obj/effect/projectile/laser/heavy
+	light_max_bright = 1
+
+/obj/effect/projectile/stun/heavy/tracer
+	icon_state = "stun_heavy"
+
+/obj/effect/projectile/stun/heavy/muzzle
+	icon_state = "muzzle_stun_heavy"
+
+/obj/effect/projectile/stun/heavy/impact
+	icon_state = "impact_stun_heavy"
+
+//----------------------------
 // Pulse laser beam
 //----------------------------
 /obj/effect/projectile/laser/pulse

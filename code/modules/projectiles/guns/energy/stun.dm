@@ -56,6 +56,43 @@
 	charge_cost = 20
 	combustion = 0
 
+/obj/item/weapon/gun/energy/pyrorifle
+	name = "PC-CKS 85"
+	desc = "The PyroCorp Crowd Keeper System 85. A powerful non-lethal weapon capable of firing a quick succession of stun beams, or firing a large powerful paralyzing beam."
+	icon_state = "pyrostun"
+	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BELT|SLOT_BACK
+	one_hand_penalty = 3
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+	cell_type = /obj/item/weapon/cell/device/standard
+	force = 8
+	charge_cost = 10
+	one_hand_penalty = 4
+	accuracy = 1
+	var/deployed
+
+/obj/item/weapon/gun/energy/pyrorifle/attack_self(mob/user as mob)
+	deployed = !deployed
+	if(deployed)
+		to_chat(user, "The weapon slightly extend as you activate the PC-CKS 85's ultra beam system.")
+		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
+		modifystate = "pyrostun_extended"
+		projectile_type=/obj/item/projectile/beam/pyro/heavy
+		wielded_item_state = "pyrostun_extended-wielded"
+		charge_cost = 25
+		fire_delay = 60
+	else
+		to_chat(user, "The weapon retracts as you disable the PC-CKS 85's ultra beam system.")
+		playsound(src.loc, 'sound/machines/switch4.ogg', 40, 1, -6)
+		modifystate = "pyrostun"
+		charge_cost = 5
+		fire_delay = 5
+		wielded_item_state = "pyrostun-wielded"
+		projectile_type=/obj/item/projectile/beam/pyro
+	update_icon()
+	return
+
+
 /obj/item/weapon/gun/energy/stunrevolver/rifle
 	name = "stun rifle"
 	desc = "An A&M X10 Thor. A vastly oversized variant of the A&M X6 Zeus. Fires overcharged electrodes to take down hostile armored targets without harming them too much."
@@ -110,7 +147,7 @@
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
-	fire_delay = 20
-	max_shots = 4
+	cell_type = /obj/item/weapon/cell/device/standard
 	projectile_type = /obj/item/projectile/energy/plasmastun
 	combustion = 0
+

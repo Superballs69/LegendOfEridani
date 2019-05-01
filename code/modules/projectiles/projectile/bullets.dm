@@ -171,6 +171,78 @@
 	embed = 0
 	sharp = 0
 
+/* heavy shotgun projectiles */
+
+/obj/item/projectile/bullet/h8shotgun
+	name = "heavy slug"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 75
+	armor_penetration = 55
+
+/obj/item/projectile/bullet/pellet/h8shotgun // You see, this is made to fuck your day up. So except that if you decide to wear not a single plate of armor.
+	name = "heavy shrapnel"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 20
+	pellets = 10
+	range_step = 1
+	spread_step = 30
+
+/obj/item/projectile/bullet/h8shotgun/he
+	name = "heavy HE shell"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 40
+	armor_penetration = 0
+
+/obj/item/projectile/bullet/h8shotgun/he/on_hit(var/atom/target, var/blocked = 0)
+	explosion(target, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/he/on_impact(var/atom/A)
+	explosion(A, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/smoke
+	name = "heavy smoke shell"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 10 // Getting hit by that is still going to hurt.
+	armor_penetration = 0
+
+/obj/item/projectile/bullet/h8shotgun/smoke/on_hit(var/atom/target, var/blocked = 0)
+	new /obj/effect/effect/smoke(src.loc)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/smoke/on_impact(var/atom/A)
+	new /obj/effect/effect/smoke(src.loc)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/sedate
+	name = "heavy smoke shell"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 10
+	armor_penetration = 0
+
+/obj/item/projectile/bullet/h8shotgun/sedate/on_hit(var/atom/target, var/blocked = 0)
+	new /obj/effect/effect/smoke/sleepy(src.loc)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/sedate/on_impact(var/atom/A)
+	new /obj/effect/effect/smoke/sleepy(src.loc)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/mustard
+	name = "heavy mustard shell"
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	damage = 10
+	armor_penetration = 0
+
+/obj/item/projectile/bullet/h8shotgun/mustard/on_hit(var/atom/target, var/blocked = 0)
+	new /obj/effect/effect/smoke/mustard(src.loc0)
+	..()
+
+/obj/item/projectile/bullet/h8shotgun/mustard/on_impact(var/atom/A)
+	new /obj/effect/effect/smoke/mustard(src.loc)
+	..()
+
 /* shotgun projectiles */
 
 /obj/item/projectile/bullet/shotgun

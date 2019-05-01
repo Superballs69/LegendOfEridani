@@ -1135,12 +1135,20 @@ other types of metals and chemistry for reagents).
 	sort_string = "VAPCD"
 
 /datum/design/item/weapon/pyrosprayer
-	desc = "A PyroCorp chemical sprayer."
+	desc = "PCCS-13 - Chem Sprayer"
 	id = "pyrosprayer"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3, TECH_BIO = 2, TECH_EVENT = 2)
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_TUNGSTEN = 1000, MATERIAL_COPPER = 500, MATERIAL_SILVER = 100, MATERIAL_GLASS = 1000)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_ZINC = 6000, MATERIAL_COPPER = 500, MATERIAL_SILVER = 100, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/reagent_containers/spray/pyrosprayer
 	sort_string = "VAPCE"
+
+/datum/design/item/weapon/pyrorifle
+	desc = "PC-CKS 85 - Stun Rifle"
+	id = "pyrorifle"
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 5, TECH_BIO = 3, TECH_EVENT = 4)
+	materials = list(MATERIAL_STEEL = 15000, MATERIAL_TUNGSTEN = 2000, MATERIAL_COPPER = 5000, MATERIAL_SILVER = 2000, MATERIAL_GLASS = 2000, MATERIAL_PHORON = 1000)
+	build_path = /obj/item/weapon/gun/energy/pyrorifle
+	sort_string = "VAPCF"
 
 // Superconductive magnetic coils
 /datum/design/item/smes_coil/AssembleDesignName()

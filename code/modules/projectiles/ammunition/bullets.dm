@@ -99,6 +99,60 @@
 	caliber = "10mm"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/smg
 
+// Heavy Shotgun
+
+/obj/item/ammo_casing/h8shotgun
+	name = "heavy shotgun slug"
+	desc = "A large 66mm slug."
+	icon_state = "h8slshell"
+	spent_icon = "h8slshell-spent"
+	caliber = "h8shotgun"
+	projectile_type = /obj/item/projectile/bullet/h8shotgun
+	matter = list(MATERIAL_STEEL = 800)
+	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
+
+/obj/item/ammo_casing/h8shotgun/pellet
+	name = "heavy shotgun shell"
+	desc = "A large 66mm shell."
+	icon_state = "h8gshell"
+	spent_icon = "h8gshell-spent"
+	projectile_type = /obj/item/projectile/bullet/pellet/h8shotgun
+	matter = list(MATERIAL_STEEL = 800)
+
+/obj/item/ammo_casing/h8shotgun/he
+	name = "heavy HE shotgun shell."
+	desc = "A large 66mm HE shell."
+	icon_state = "h8eshell"
+	spent_icon = "h8eshell-spent"
+	projectile_type = /obj/item/projectile/bullet/h8shotgun/he
+	matter = list(MATERIAL_STEEL = 800)
+
+/obj/item/ammo_casing/h8shotgun/smoke
+	name = "heavy smoke screen shotgun shell."
+	desc = "A large 66mm smoke shell, made to create a smoke screen."
+	icon_state = "h8sshell"
+	spent_icon = "h8sshell-spent"
+	projectile_type = /obj/item/projectile/bullet/h8shotgun/smoke
+	matter = list(MATERIAL_STEEL = 800)
+
+/obj/item/ammo_casing/h8shotgun/sedate
+	name = "heavy sedate smoke shotgun shell."
+	desc = "A large 66mm smoke shell, made to create a sedative smoke screen."
+	icon_state = "h8sleepshell"
+	spent_icon = "h8sleepshell-spent"
+	projectile_type = /obj/item/projectile/bullet/h8shotgun/sedate
+	matter = list(MATERIAL_STEEL = 800)
+
+/obj/item/ammo_casing/h8shotgun/mustard
+	name = "heavy mustard gas shotgun shell."
+	desc = "A large 66mm smoke shell, made to create mustard gas on impact."
+	icon_state = "h8mustardshell"
+	spent_icon = "h8mustardshell-spent"
+	projectile_type = /obj/item/projectile/bullet/h8shotgun/mustard
+	matter = list(MATERIAL_STEEL = 800)
+
+// Shotgun
+
 /obj/item/ammo_casing/shotgun
 	name = "shotgun slug"
 	desc = "A 12 gauge slug."

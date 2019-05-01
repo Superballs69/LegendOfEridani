@@ -3,7 +3,7 @@
 	desc = "A protoype lightweight, fast firing gun. Uses 9mm rounds."
 	icon_state = "saber"	//ugly
 	w_class = ITEM_SIZE_NORMAL
-	load_method = MAGAZINE 
+	load_method = MAGAZINE
 	max_shells = 22
 	caliber = "9mm"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
@@ -748,6 +748,44 @@
 		icon_state = "fac10"
 	else
 		icon_state = "fac10-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return
+
+/obj/item/weapon/gun/projectile/automatic/pc8s // Overkill much?
+	name = "PC APDS 66"
+	desc = "The PyroCorp Automatic Portable Destruction Shotgun 66. With a shell diameter of around 66mm, and the capacity to empty the whole mag in less than a second, \
+	keeping all of your organs inside might become problematic. A favourite of any PyroBOT Heavy Shocktroopers."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "pc8shotgun"
+	item_state = "pc8shotgun"
+	w_class = ITEM_SIZE_LARGE
+	force = 16
+	caliber = "h8shotgun"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_EVENT = 4, TECH_ILLEGAL = 8)
+	slot_flags = SLOT_BELT|SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/pc8ammo
+	allowed_magazines = /obj/item/ammo_magazine/pc8ammo
+	auto_eject = 1
+	burst_delay = 1.8
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	one_hand_penalty = 8
+	accuracy = 1.2
+	fire_sound = 'sound/weapons/gunshot/heavyshotgun.ogg'
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="2-round bursts", burst=2, fire_delay=null, move_delay=4,    one_hand_penalty=12, burst_accuracy=list(0,-1),       dispersion=list(0.0, 0.6)),
+		list(mode_name="full bursts",   burst=5, fire_delay=null, move_delay=6,    one_hand_penalty=16, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="Life Denial burst",   burst=500, burst_delay = 0, fire_delay=null, move_delay=8,    one_hand_penalty=20, burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(1.0, 1.0, 1.2, 1.6, 1.8)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/pc8s/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "pc8shotgun"
+	else
+		icon_state = "pc8shotgun-e"
 
 	if(!ignore_inhands) update_held_icon()
 	return

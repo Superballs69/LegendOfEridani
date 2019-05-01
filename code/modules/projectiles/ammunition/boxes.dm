@@ -429,6 +429,20 @@
 /obj/item/ammo_magazine/m12ga/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/pc8ammo
+	name = "magazine (PC8)"
+	icon_state = "pc8ammo"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "h8shotgun"
+	matter = list(DEFAULT_WALL_MATERIAL = 4000, MATERIAL_COPPER = 500)
+	ammo_type = /obj/item/ammo_casing/h8shotgun/pellet
+	max_ammo = 5
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/pc8ammo/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/m57smg
 	name = "top mounted magazine (5.7x28mm)"
 	icon_state = "p90"

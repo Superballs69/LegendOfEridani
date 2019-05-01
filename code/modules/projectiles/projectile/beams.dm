@@ -190,6 +190,29 @@
 	damage = 20
 	agony  = 10
 
+/obj/item/projectile/beam/pyro
+	name = "shock beam"
+	check_armour = "energy"
+	damage_type = STUN
+	sharp = 0
+	damage = 20
+	agony  = 15
+	fire_sound='sound/weapons/lasercannonfire.ogg'
+
+/obj/item/projectile/beam/pyro/heavy
+	name = "heavy paralyzing beam"
+	icon_state = "heavylaser"
+	check_armour = "energy"
+	damage_type = STUN
+	sharp = 0
+	damage = 200
+	agony  = 100
+	fire_sound='sound/weapons/ultralaser.ogg'
+
+	muzzle_type = /obj/effect/projectile/stun/heavy/muzzle
+	tracer_type = /obj/effect/projectile/stun/heavy/tracer
+	impact_type = /obj/effect/projectile/stun/heavy/impact
+
 /obj/item/projectile/beam/plasmacutter
 	name = "plasma arc"
 	icon_state = "omnilaser"

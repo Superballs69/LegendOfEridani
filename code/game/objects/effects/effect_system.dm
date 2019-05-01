@@ -247,6 +247,7 @@ steam.start() -- spawns the effect
 /////////////////////////////////////////////
 
 /obj/effect/effect/smoke/sleepy
+	color = "#8095b7"
 
 /obj/effect/effect/smoke/sleepy/Move()
 	..()
@@ -271,7 +272,7 @@ steam.start() -- spawns the effect
 
 /obj/effect/effect/smoke/mustard
 	name = "mustard gas"
-	icon_state = "mustard"
+	color = "#f4b03a"
 
 /obj/effect/effect/smoke/mustard/Move()
 	..()
