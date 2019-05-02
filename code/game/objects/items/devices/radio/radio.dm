@@ -810,3 +810,14 @@
 	icon_state = "radio"
 	intercept = 1
 	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/device/radio/backpack_radio
+	name = "Radiopack"
+	desc = "A backpack equipped to fit only a radio system."
+	origin_tech = list(TECH_DATA = 4)
+	icon_state = "radiopack"
+	item_state = "radiopack"
+	slot_flags = SLOT_BACK
+	intercept = 1
+
+

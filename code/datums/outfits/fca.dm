@@ -1,17 +1,5 @@
 /decl/hierarchy/outfit/fca
-	hierarchy_type = /decl/hierarchy/outfit/fca
-	uniform = /obj/item/clothing/under/fca_proper
-	shoes = /obj/item/clothing/shoes/highboots
-	gloves = /obj/item/clothing/gloves/white
-	l_ear = /obj/item/device/radio/headset/ert
-	glasses = /obj/item/clothing/glasses/sunglasses
-	r_pocket = /obj/item/device/taperecorder/fca
 
-	id_slot = slot_wear_id
-	id_type = /obj/item/weapon/card/id/centcom/station
-	pda_slot = slot_r_store
-	pda_type = /obj/item/modular_computer/pda/heads
-	id_desc = "Federal Control Agency ID"
 
 /decl/hierarchy/outfit/fca/agent
 	name = "FCA Agent"
@@ -46,3 +34,33 @@
 	id_type = /obj/item/weapon/card/id/centcom/ERT
 	l_hand = /obj/item/clothing/accessory/storage/tunic/director_proper
 	id_pda_assignment = "FCA Director"
+
+/decl/hierarchy/outfit/eaf
+	hierarchy_type = /decl/hierarchy/outfit/eaf
+	uniform = /obj/item/clothing/under/eaf_under
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat
+	suit = /obj/item/clothing/suit/armor/pcarrier/eaf
+	l_ear = /obj/item/device/radio/headset/ert
+	head = /obj/item/clothing/head/helmet/eaf
+
+	id_slot = slot_wear_id
+	id_type = /obj/item/weapon/card/id/centcom/station
+	id_desc = "EAF Army"
+
+/decl/hierarchy/outfit/eaf/soldier
+	name = "EAF Trooper"
+	belt = /obj/item/weapon/gun/projectile/automatic/mk5
+	id_pda_assignment = "EAF - Trooper"
+
+/decl/hierarchy/outfit/eaf/radio_op
+	name = "EAF Radio Operator"
+	belt = /obj/item/weapon/gun/projectile/automatic/mk5
+	back = /obj/item/device/radio/backpack_radio
+	id_pda_assignment = "EAF - Radio Operator"
+
+/decl/hierarchy/outfit/eaf/sergeant
+	name = "EAF Sergeant"
+	belt = /obj/item/weapon/gun/projectile/automatic/pcx12
+	uniform = /obj/item/clothing/under/eaf_sgt_under
+	id_pda_assignment = "EAF - Squad Sergeant"

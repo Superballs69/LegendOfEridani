@@ -4,7 +4,7 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Executive Officer"
+	supervisors = "the Head of Personnel"
 	economic_power = 5
 	minimal_player_age = 0
 	ideal_character_age = 35
@@ -33,8 +33,8 @@
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Deck Chief and Executive Officer"
-	ideal_character_age = 24
+	supervisors = "the Quartermaster and  Head of Personnel"
+	ideal_character_age = 23
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_BASIC,
@@ -57,7 +57,7 @@
 	department_flag = SUP
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Deck Chief, the Corporate Liaison and the Executive Officer"
+	supervisors = "the Quartermaster, the Corporate Liaison and the Head of Personnel"
 	selection_color = "#515151"
 	economic_power = 7
 	ideal_character_age = 25
