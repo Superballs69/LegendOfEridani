@@ -256,3 +256,25 @@
 	desc = "A moisture wicking t-shirt combined with comfortable tactical cargo pants. A fitting choice for the comfy-operator."
 	icon_state = "icelight"
 	worn_state = "icelight"
+
+/obj/item/clothing/under/fdi/space
+	name = "fdi agent's pressurized jumpsuit"
+	desc = "The agency's pressurized jumpsuit, definitely not stolen from the Pathfinder Corps."
+	icon_state = "pathfinder"
+	item_state = "ba_suit"
+	worn_state = "pathfinder"
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 10, bio = 100, rad = 100)
+	gas_transfer_coefficient = 0
+	permeability_coefficient = 0
+	item_flags = ITEM_FLAG_STOPPRESSUREDAMAGE | ITEM_FLAG_THICKMATERIAL
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0
+
+/obj/item/clothing/head/helmet/space/fdi
+	name = "fdi agent's helmet"
+	desc = "A robust helmet for the FDI and their field agents."
+	icon_state = "fdi_space"
+	item_state = "fdi_space"
+	armor = list(melee = 60, bullet = 50, laser = 30, energy = 25, bomb = 30, bio = 100, rad = 100)

@@ -354,6 +354,7 @@
 	desc = "A standard issue plate carrier for all federal law enforcement agents."
 	icon_state = "pcarrier_sec"
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/police/fdi,/obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic, /obj/item/weapon/tank)
 
 /obj/item/clothing/suit/armor/pcarrier/fdi/heavy
 	name = "swat plate carrier"

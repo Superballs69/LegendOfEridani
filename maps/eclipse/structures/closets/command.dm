@@ -171,6 +171,8 @@
 		/obj/item/clothing/under/fdi,
 		/obj/item/clothing/under/fdi/formal,
 		/obj/item/clothing/under/fdi/light,
+		/obj/item/clothing/under/fdi/space,
+		/obj/item/clothing/head/helmet/space/fdi,
 		/obj/item/clothing/under/fca_proper,
 		/obj/item/clothing/head/garrison/fdi,
 		/obj/item/clothing/accessory/storage/tunic/fdi_proper,
