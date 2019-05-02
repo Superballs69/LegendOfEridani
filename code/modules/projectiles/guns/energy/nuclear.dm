@@ -45,7 +45,7 @@
 	name = "AE6 'Protector' energy pistol"
 	desc = "Originally a prototype, Ace Energy acquired the plans for a holdout pistol and has tuned it for reliable military and civilian use."
 	icon_state = "smallgunstun"
-	charge_cost = 5
+	charge_cost = 20
 	w_class = ITEM_SIZE_SMALL
 	force = 2 //it's the size of a car key, what did you expect?
 	modifystate = "smallgunstun"
@@ -61,7 +61,7 @@
 	desc = "The precursor to the common AE6. A harder hitting energy sidearm, prized upon by users who prefer stopping power. Has stun and kill modes only."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "epistolstun100"
-	charge_cost = 5
+	charge_cost = 20
 	w_class = ITEM_SIZE_NORMAL
 	force = 8 //more so a proper pistol
 	modifystate = "epistolstun"

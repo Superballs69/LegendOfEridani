@@ -171,9 +171,9 @@
 	badge_string = "Corporate Executive Body"
 
 /obj/item/clothing/accessory/badge/fdiagent
-	name = "\improper FDI's badge"
+	name = "\improper FDI agent's badge"
 	desc = "A leather-backed gold badge displaying the crest of the Federal Department of Investigation."
-	icon_state = "agentbadge"
+	icon_state = "badge_fdi"
 	slot_flags = SLOT_BELT | SLOT_TIE
 	slot = ACCESSORY_SLOT_INSIGNIA
 	badge_string = "Federal Department of Investigation"

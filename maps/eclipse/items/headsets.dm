@@ -17,6 +17,18 @@
 	icon_state = "com_headset_alt"
 	item_state = "com_headset_alt"
 
+/obj/item/device/radio/headset/fdi
+	name = "fdi agent's headset"
+	desc = "The fed's headset."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/fdi
+
+/obj/item/device/radio/headset/fdi/alt
+	name = "fdi agent's headset"
+	icon_state = "com_headset_alt"
+	item_state = "com_headset_alt"
+
 /obj/item/device/radio/headset/heads/torchxo
 	name = "executive officer's headset"
 	desc = "The headset of the guy who will one day be CO."

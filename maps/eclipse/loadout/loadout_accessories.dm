@@ -72,6 +72,18 @@
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech,
 						/datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/pathfinder_specialist)
 
+/datum/gear/storage/brown_chest_rig
+	allowed_roles = list(/datum/job/pathfinder, /datum/job/pathfinder_commander, /datum/job/pathfinder_explorer, /datum/job/pathfinder_explorer, /datum/job/pathfinder_pilot, /datum/job/pathfinder_specialist)
+	display_name = "brown chest rig"
+	cost = 6
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/rig
+
+/datum/gear/storage/black_chest_rig
+	allowed_roles = list(/datum/job/isec, /datum/job/tiger, /datum/job/fdi, /datum/job/hos, /datum/job/warden)
+	display_name = "black chest rig"
+	cost = 6
+	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black
+
 /datum/gear/storage/black_drop_pouches
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant)
 

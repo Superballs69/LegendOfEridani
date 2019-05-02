@@ -87,6 +87,11 @@
 	icon_state = "webbing_rig"
 	slots = 8
 
+/obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black
+	name = "black chest rig"
+	desc = "A military-spec syndura chest rig, made for all-weather and terrain night combat operations."
+	icon_state = "webbing_rig_black"
+
 //Armor plates
 /obj/item/clothing/accessory/armorplate
 	name = "light armor plate"
@@ -304,6 +309,15 @@
 	desc = "A tag with the word PRESS printed in white lettering on it."
 	icon_state = "presstag"
 	slot_flags = SLOT_BELT
+
+/obj/item/clothing/accessory/armor/tag/police
+	name = "\improper POLICE tag"
+	desc = "An armor tag with the word POLICE printed in yellow lettering on it."
+	icon_state = "policetag"
+
+/obj/item/clothing/accessory/armor/tag/police/fdi
+	name = "\improper FDI tag"
+	desc = "An armor tag with the acronym FDI printed in yellow lettering on it."
 
 /obj/item/clothing/accessory/armor/tag/opos
 	name = "\improper O+ blood patch"

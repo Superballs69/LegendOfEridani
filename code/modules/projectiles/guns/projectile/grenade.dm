@@ -37,7 +37,7 @@
     fire_sound = 'sound/weapons/gunshot/thumper.ogg'
 
 /obj/item/weapon/gun/projectile/revolver/grenade
-    name = "Milkor Grenade Launcher"
+    name = "MGL-X"
     desc = "A robust 40mm revolving grenade launcher. Uses 40mm rounds."
     icon = 'icons/obj/gun_2.dmi'
     icon_state = "milkor"
@@ -54,3 +54,14 @@
         ratio = 0.33
     ratio = round(ratio, 0.33) * 100
     overlays += "grenade_[ratio]"
+
+/obj/item/weapon/gun/projectile/grenade/underslung
+	name = "underslung grenade launcher"
+	desc = "Not much more than a tube and a firing mechanism, this grenade launcher is designed to be fitted to a rifle."
+	w_class = ITEM_SIZE_NORMAL
+	force = 5
+	max_shells = 1
+	has_safety = 0
+
+/obj/item/weapon/gun/projectile/grenade/underslung/attack_self()
+	return

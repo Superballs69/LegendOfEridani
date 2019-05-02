@@ -80,24 +80,40 @@
 	else
 		icon_state = "kdi_infiltrator-empty"
 
-/obj/item/weapon/gun/projectile/military
-	name = "military .45 pistol"
-	desc = "The WT45 - a mass produced kinetic sidearm in widespread service with the SCGDF. Uses .45 rounds."
+/obj/item/weapon/gun/projectile/usp
+	name = "HI USP .45"
+	desc = "A solid firearm made by Hesphaestus Industries. Uses .45 rounds."
 	magazine_type = /obj/item/ammo_magazine/m45mds/flash
 	allowed_magazines = /obj/item/ammo_magazine/m45mds
+	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "usp"
 	caliber = ".45"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 	accuracy = 0.35
-	fire_delay = 6.5
+	fire_delay = 1.0
+	fire_sound = 'sound/weapons/gunshot/usp.ogg'
 
-/obj/item/weapon/gun/projectile/military/on_update_icon()
+/obj/item/weapon/gun/projectile/usp/on_update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
 		icon_state = "usp"
 	else
 		icon_state = "usp-e"
+
+/obj/item/weapon/gun/projectile/usp/match
+	name = "HI USP .45 Match"
+	desc = "A solid match grade firearm made by Hesphaestus Industries. Uses .45 rounds."
+	icon_state = "usp_match"
+	accuracy = 1
+	fire_delay = 0
+
+/obj/item/weapon/gun/projectile/usp/match/on_update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "usp_match"
+	else
+		icon_state = "usp_match-e"
 
 /obj/item/weapon/gun/projectile/sec
 	name = ".45 pistol"
