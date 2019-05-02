@@ -325,6 +325,13 @@
 	desc = "A lightweight navy blue plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_navy"
 
+
+/obj/item/clothing/suit/armor/pcarrier/eaf
+	name = "eaf plate carrier"
+	desc = "A lightweight EAF blue plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
+	icon_state = "pcarrier_eaf"
+
+
 /obj/item/clothing/suit/armor/pcarrier/tan
 	name = "tan plate carrier"
 	desc = "A lightweight tan plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
