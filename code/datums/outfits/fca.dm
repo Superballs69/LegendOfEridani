@@ -46,21 +46,21 @@
 
 	id_slot = slot_wear_id
 	id_type = /obj/item/weapon/card/id/centcom/station
-	id_desc = "EAF Army"
+	id_desc = "Eridani Armed Force ID"
 
 /decl/hierarchy/outfit/eaf/soldier
-	name = "EAF Trooper"
+	name = "EAF - Trooper"
 	belt = /obj/item/weapon/gun/projectile/automatic/mk5
 	id_pda_assignment = "EAF - Trooper"
 
 /decl/hierarchy/outfit/eaf/radio_op
-	name = "EAF Radio Operator"
+	name = "EAF - Radio Operator"
 	belt = /obj/item/weapon/gun/projectile/automatic/mk5
 	back = /obj/item/device/radio/backpack_radio
 	id_pda_assignment = "EAF - Radio Operator"
 
 /decl/hierarchy/outfit/eaf/sergeant
-	name = "EAF Sergeant"
+	name = "EAF - Sergeant"
 	belt = /obj/item/weapon/gun/projectile/automatic/pcx12
 	uniform = /obj/item/clothing/under/eaf_sgt_under
 	id_pda_assignment = "EAF - Squad Sergeant"
