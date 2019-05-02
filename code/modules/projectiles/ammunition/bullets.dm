@@ -279,6 +279,23 @@
 	desc = "A 5.7x28 rubber casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/pdw/rubber
 
+/obj/item/ammo_casing/a4630
+	desc = "A 4.6x30mm bullet casing."
+	caliber = "4.6x30mm"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/pdw
+
+/obj/item/ammo_casing/a4630/ap
+	desc = "A 4.6x30mm armor piercing casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/pdw/ap
+
+/obj/item/ammo_casing/a4630/hp
+	desc = "A 4.6x30mm hollow point casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/pdw/hollow
+
+/obj/item/ammo_casing/a4630/rubber
+	desc = "A 4.6x30mm rubber casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/pdw/rubber
+
 /obj/item/ammo_casing/rocket
 	name = "rocket shell"
 	desc = "A high explosive designed to be fired from a launcher."

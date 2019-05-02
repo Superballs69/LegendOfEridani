@@ -443,6 +443,54 @@
 /obj/item/ammo_magazine/pc8ammo/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/mp7
+	name = "mp7 magazine (4.6x30mm)"
+	icon_state = "mp7-30"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/a4630
+	matter = list(DEFAULT_WALL_MATERIAL = 2700)
+	caliber = "4.6x30mm"
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/mp7/ap
+	name = "mp7 magazine (4.6x30mm armour piercing)"
+	ammo_type = /obj/item/ammo_casing/a4630/ap
+
+/obj/item/ammo_magazine/mp7/hp
+	name = "mp7 magazine (4.6x30mm hollow point)"
+	ammo_type = /obj/item/ammo_casing/a4630/hp
+
+/obj/item/ammo_magazine/mp7/rubber
+	name = "mp7 magazine (4.6x30mm rubber)"
+	ammo_type = /obj/item/ammo_casing/a4630/rubber
+
+/obj/item/ammo_magazine/mp7/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/mp7/small
+	name = "small mp7 magazine (4.6x30mm)"
+	icon_state = "mp7_s-20"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/a4630
+	matter = list(DEFAULT_WALL_MATERIAL = 1800)
+	max_ammo = 20
+
+/obj/item/ammo_magazine/mp7/small/ap
+	name = "small mp7 magazine (4.6x30mm armour piercing)"
+	ammo_type = /obj/item/ammo_casing/a4630/ap
+
+/obj/item/ammo_magazine/mp7/small/hp
+	name = "small mp7 magazine (4.6x30mm hollow point)"
+	ammo_type = /obj/item/ammo_casing/a4630/hp
+
+/obj/item/ammo_magazine/mp7/small/rubber
+	name = "small mp7 magazine (4.6x30mm rubber)"
+	ammo_type = /obj/item/ammo_casing/a4630/rubber
+
+/obj/item/ammo_magazine/mp7/small/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/m57smg
 	name = "top mounted magazine (5.7x28mm)"
 	icon_state = "p90"

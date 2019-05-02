@@ -74,6 +74,10 @@
 	sound_in = 'sound/effects/holster/tactiholsterin.ogg'
 	sound_out = 'sound/effects/holster/tactiholsterout.ogg'
 
+/obj/item/clothing/accessory/storage/holster/thigh/ice/Initialize()
+	. = ..()
+	new /obj/item/weapon/gun/projectile/fiveseven(hold)
+
 /obj/item/clothing/accessory/storage/holster/machete
 	name = "machete sheath"
 	desc = "A handsome synthetic leather sheath with matching belt."

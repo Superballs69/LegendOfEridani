@@ -135,6 +135,21 @@
 	siemens_coefficient = 0.6
 	electric = TRUE
 
+/obj/item/clothing/glasses/combatgoggles
+	name = "combat goggles"
+	desc = "High-tech HUD goggles with light amplification for dark environments. Made from durable synthetic."
+	icon_state = "swatgoggles"
+	origin_tech = list(TECH_MAGNET = 4, TECH_COMBAT = 5)
+	darkness_view = 5
+	action_button_name = "Toggle Goggles"
+	toggleable = TRUE
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 0)
+	siemens_coefficient = 0.6
+	flash_protection = FLASH_PROTECTION_MODERATE
+	hud = /obj/item/clothing/glasses/hud/security
+	electric = TRUE
+
 /obj/item/clothing/glasses/eyepatch
 	name = "eyepatch"
 	desc = "Yarr."
@@ -340,6 +355,12 @@
 	icon_state = "sunhud"
 	hud = /obj/item/clothing/glasses/hud/security
 	electric = TRUE
+
+/obj/item/clothing/glasses/sunglasses/sechud/lowprofile
+	name = "sunglasses"
+	desc = "Discrete sunglasses with a HUD."
+	icon_state = "sun"
+	item_state = "sunglasses"
 
 /obj/item/clothing/glasses/sunglasses/sechud/goggles //now just a more "military" set of HUDglasses for the Torch
 	name = "HUD goggles"

@@ -486,16 +486,26 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/magazine_57
-	name = "ammunition (5.7x28mm) magazine"
-	path = /obj/item/ammo_magazine/m57
+/datum/autolathe/recipe/magazine_mp7
+	name = "ammunition (4.6x30mm) magazine"
+	path = /obj/item/ammo_magazine/mp7
 	hidden = 1
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/magazine_57_smg
-	name = "ammunition (5.7x28mm) magazine"
-	path = /obj/item/ammo_magazine/m57smg
+/datum/autolathe/recipe/magazine_mp7_small
+	name = "ammunition (4.6x30mm) magazine, small"
+	path = /obj/item/ammo_magazine/mp7/small
 	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_mp7_rubber
+	name = "ammunition (4.6x30mm) magazine, rubber"
+	path = /obj/item/ammo_magazine/mp7/rubber
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_mp7_small_rubber
+	name = "ammunition (4.6x30mm) magazine, rubber, small"
+	path = /obj/item/ammo_magazine/mp7/small/rubber
 	category = "Arms and Ammunition"
 
 /datum/autolathe/recipe/magazine_revolver_1

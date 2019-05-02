@@ -31,7 +31,6 @@
 		icon_state = "saber-empty"
 	return
 
-
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
 	name = "WT MP6 .45"
 	desc = "The Ward-Takahashi MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. Uses .45 rounds."
@@ -215,21 +214,21 @@
 		)
 
 	var/use_launcher = 0
-	var/obj/item/weapon/gun/launcher/grenade/underslung/launcher
+	var/obj/item/weapon/gun/projectile/grenade/underslung/launcher
 
 /obj/item/weapon/gun/projectile/automatic/c8/Initialize()
 	. = ..()
 	launcher = new(src)
 
 /obj/item/weapon/gun/projectile/automatic/c8/attackby(obj/item/I, mob/user)
-	if((istype(I, /obj/item/weapon/grenade)))
-		launcher.load(I, user)
+	if((istype(I, /obj/item/ammo_casing/a40mm)))
+		launcher.load_ammo(I, user)
 	else
 		..()
 
 /obj/item/weapon/gun/projectile/automatic/c8/attack_hand(mob/user)
 	if(user.get_inactive_hand() == src && use_launcher)
-		launcher.unload(user)
+		launcher.unload_ammo(user)
 	else
 		..()
 
@@ -573,6 +572,126 @@
 
 /obj/item/weapon/gun/projectile/automatic/p90/update_icon()
 	icon_state = "p90smg-[ammo_magazine ? round(ammo_magazine.stored_ammo.len, 6) : "empty"]"
+
+/obj/item/weapon/gun/projectile/automatic/mp7
+	name = "KDI MP7"
+	desc = "A personal defense weapon reproduced by KDI. A serious weapon for serious operations. Chambered in 4.6x30mm and has a threaded barrel."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "mp7"
+	item_state = "wt550"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "4.6x30mm"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3, TECH_ILLEGAL = 2)
+	slot_flags = SLOT_BELT
+	fire_sound = 'sound/weapons/gunshot/mp7.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mp7
+	allowed_magazines = list(/obj/item/ammo_magazine/mp7)
+	accuracy = 1.2
+	silenced = 0
+	auto_eject = 1
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+
+	firemodes = list(
+		list(mode_name="semiauto", burst=1, fire_delay=0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, burst_accuracy=list(0, 0.5, 0.9), dispersion=list(0.0, 0.6, 1.0))
+		)
+
+/obj/item/weapon/gun/projectile/automatic/mp7/attack_hand(mob/user as mob)
+	if(user.get_inactive_hand() == src)
+		if(silenced)
+			if(user.l_hand != src && user.r_hand != src)
+				..()
+				return
+			to_chat(user, "<span class='notice'>You unscrew [silenced] from [src].</span>")
+			user.put_in_hands(silenced)
+			silenced = initial(silenced)
+			w_class = initial(w_class)
+			fire_sound = initial(fire_sound)
+			update_icon()
+			return
+	..()
+
+/obj/item/weapon/gun/projectile/automatic/mp7/attackby(obj/item/I as obj, mob/user as mob)
+	if(istype(I, /obj/item/weapon/silencer))
+		if(user.l_hand != src && user.r_hand != src)	//if we're not in his hands
+			to_chat(user, "<span class='notice'>You'll need [src] in your hands to do that.</span>")
+			return
+		if(!user.unEquip(I, src))
+			return//put the silencer into the gun
+		to_chat(user, "<span class='notice'>You screw [I] onto [src].</span>")
+		silenced = I	//dodgy?
+		w_class = ITEM_SIZE_NORMAL
+		fire_sound = 'sound/weapons/gunshot/mp7_silenced.ogg'
+		update_icon()
+		return
+	..()
+
+/obj/item/weapon/gun/projectile/automatic/mp7/on_update_icon()
+	..()
+	if(silenced)
+		icon_state = "mp7-silencer"
+	else
+		icon_state = "mp7"
+	if(!(ammo_magazine && ammo_magazine.stored_ammo.len))
+		icon_state = "[icon_state]-e"
+
+/obj/item/weapon/gun/projectile/automatic/smg2
+	name = "SMG2"
+	desc = "You're fairly sure this is some variant of the MP7. The manufacturer's name and serial number have been worn away and somehow there's a grenade launcher on here. Uses 4.6x30mm rounds."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "smg2"
+	item_state = "wt550"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "4.6x30mm"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 3, TECH_ILLEGAL = 2)
+	slot_flags = SLOT_BELT
+	fire_sound = 'sound/weapons/gunshot/mp7.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mp7
+	allowed_magazines = list(/obj/item/ammo_magazine/mp7)
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null, use_launcher=0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=1,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), use_launcher=0),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=1,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2), use_launcher=0),
+		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=5, burst_accuracy=null, dispersion=null)
+		)
+
+	var/use_launcher = 0
+	var/obj/item/weapon/gun/projectile/grenade/underslung/launcher
+
+/obj/item/weapon/gun/projectile/automatic/smg2/Initialize()
+	. = ..()
+	launcher = new(src)
+
+/obj/item/weapon/gun/projectile/automatic/smg2/attackby(obj/item/I, mob/user)
+	if((istype(I, /obj/item/ammo_casing/a40mm)))
+		launcher.load_ammo(I, user)
+	else
+		..()
+
+/obj/item/weapon/gun/projectile/automatic/smg2/attack_hand(mob/user)
+	if(user.get_inactive_hand() == src && use_launcher)
+		launcher.unload_ammo(user)
+	else
+		..()
+
+/obj/item/weapon/gun/projectile/automatic/smg2/Fire(atom/target, mob/living/user, params, pointblank=0, reflex=0)
+	if(use_launcher)
+		launcher.Fire(target, user, params, pointblank, reflex)
+		if(!launcher.chambered)
+			switch_firemodes() //switch back automatically
+	else
+		..()
+
+/obj/item/weapon/gun/projectile/automatic/smg2/examine(mob/user)
+	. = ..()
+	if(launcher.chambered)
+		to_chat(user, "\The [launcher] has \a [launcher.chambered] loaded.")
+	else
+		to_chat(user, "\The [launcher] is empty.")
+
 
 /obj/item/weapon/gun/projectile/automatic/srx9
 	name = "HI SRX-9 'Hurricane'"

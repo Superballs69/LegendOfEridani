@@ -353,13 +353,13 @@
 	name = "police plate carrier"
 	desc = "A standard issue plate carrier for all federal law enforcement agents."
 	icon_state = "pcarrier_sec"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security/heavy, /obj/item/clothing/accessory/armor/tag/police/fdi,/obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black)
 
 /obj/item/clothing/suit/armor/pcarrier/fdi/heavy
 	name = "swat plate carrier"
 	desc = "A heavy-duty issue plate carrier for high-threat situations."
 	icon_state = "pcarrier_heavy"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/swat, /obj/item/clothing/accessory/armor/tag/sec,/obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/legguards, /obj/item/clothing/accessory/armguards)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/swat, /obj/item/clothing/accessory/armor/tag/police/fdi,/obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black, /obj/item/clothing/accessory/legguards, /obj/item/clothing/accessory/armguards)
 
 /obj/item/clothing/suit/armor/pcarrier/command
 	name = "command plate carrier"
