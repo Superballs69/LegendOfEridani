@@ -269,3 +269,24 @@
 		src.icon_state = initial(icon_state)
 		to_chat(user, "You lower the visor on the [src].")
 	update_clothing_icon()
+
+
+/obj/item/clothing/head/helmet/eaf
+	name = "EAF's helmet"
+	icon_state = "helmet_eaf"
+	valid_accessory_slots = null
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	desc = "The helmet of any EAF trooper. Visor can be extended to provide flash protection."
+	armor = list(melee = 50, bullet = 75, laser = 60, energy = 40, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
+	action_button_name = "Toggle Visor"
+
+/obj/item/clothing/head/helmet/eaf/attack_self(mob/user as mob)
+	if(src.icon_state == initial(icon_state))
+		src.icon_state = "[icon_state]_extended"
+		to_chat(user, "You extend the visor on the [src].")
+		flash_protection = FLASH_PROTECTION_MAJOR
+	else
+		src.icon_state = initial(icon_state)
+		to_chat(user, "You retract the visor on the [src].")
+	update_clothing_icon()

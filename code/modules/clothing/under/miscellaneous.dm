@@ -774,6 +774,20 @@
 	item_state = "b_suit"
 	worn_state = "gign_under"
 
+/obj/item/clothing/under/eaf_under
+	name = "Eridani Armed Force uniform"
+	desc = "An uniform for the common troops of the EAF."
+	icon_state = "eaf_uniform"
+	item_state = "b_suit"
+	worn_state = "eaf_uniform"
+
+/obj/item/clothing/under/eaf_sgt_under
+	name = "Eridani Armed Force Sergeant uniform"
+	desc = "An uniform for the Sergeants & Squad Leaders of the EAF."
+	icon_state = "eaf_sgt_uniform"
+	item_state = "b_suit"
+	worn_state = "eaf_sgt_uniform"
+
 // Special
 /obj/item/clothing/under/milos
 	name = "Special Underwear"

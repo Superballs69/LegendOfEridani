@@ -353,3 +353,45 @@ obj/structure/closet/crate
 
 /obj/structure/closet/crate/uranium/WillContain()
 	return list(/obj/item/stack/material/uranium/ten = 5)
+
+/obj/structure/closet/crate/secure/pyrocorp
+	name = "PyroCorp crate"
+	desc = "A secure crate, used by the PyroCorp for their smaller cargo."
+	icon_state = "pccrate"
+	icon_opened = "pccrateopen"
+	icon_closed = "pccrate"
+	points_per_crate = 75
+
+/obj/structure/closet/crate/secure/pyrocorp/weapons
+	name = "PyroCorp crate"
+	desc = "A secure crate, used by the PyroCorp for their smaller cargo. This one is labelled as 'FIS Order #39238."
+	icon_state = "pccrate"
+	icon_opened = "pccrateopen"
+	icon_closed = "pccrate"
+
+/obj/structure/closet/crate/secure/pyrocorp/weapons/prespawned/WillContain()
+	return list(
+		/obj/item/weapon/gun/projectile/automatic/pcx12 = 2,
+		/obj/item/weapon/gun/projectile/shotgun/pump/semi/spas = 2,
+		/obj/item/weapon/gun/energy/pyrorifle = 2,
+		/obj/item/weapon/shield/riot/flash = 1,
+		/obj/item/weapon/shield/riot/extendable = 1
+	)
+
+/obj/structure/closet/crate/secure/pyrocorp/special
+	name = "PyroCorp crate"
+	desc = "A secure crate, used by the PyroCorp for their smaller cargo. This one is labelled as 'SPECIAL OPERATIONS'"
+	icon_state = "pccrate"
+	icon_opened = "pccrateopen"
+	icon_closed = "pccrate"
+
+/obj/structure/closet/crate/secure/pyrocorp/special/prespawned/WillContain()
+	return list(
+		/obj/item/weapon/gun/projectile/automatic/pc8s = 1,
+		/obj/item/ammo_casing/h8shotgun = 10,
+		/obj/item/ammo_casing/h8shotgun/pellet = 10,
+		/obj/item/ammo_casing/h8shotgun/he = 3,
+		/obj/item/ammo_casing/h8shotgun/smoke = 10,
+		/obj/item/ammo_casing/h8shotgun/sedate = 10,
+		/obj/item/ammo_casing/h8shotgun/mustard = 3
+	)
