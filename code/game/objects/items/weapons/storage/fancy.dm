@@ -207,6 +207,8 @@
 	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/professionals = 6)
 
+/obj/item/weapon/storage/fancy/cigarettes/
+
 //cigarellos
 /obj/item/weapon/storage/fancy/cigarettes/cigarello
 	name = "pack of Trident Original cigars"

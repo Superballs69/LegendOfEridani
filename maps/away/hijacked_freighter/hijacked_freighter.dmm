@@ -1,0 +1,518 @@
+"aa" = (/turf/space,/area/space)
+"ab" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/cargo)
+"ac" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine)
+"ad" = (/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"ae" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/atmos)
+"af" = (/obj/machinery/atmospherics/pipe/tank/nitrogen{dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"ag" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"ah" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{icon_state = "map"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"ai" = (/obj/machinery/atmospherics/binary/pump{dir = 8},/obj/machinery/light{icon_state = "tube_map"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"aj" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"ak" = (/obj/machinery/portable_atmospherics/powered/pump,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 10},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"al" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/hallway)
+"am" = (/obj/machinery/portable_atmospherics/powered/scrubber,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 6},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"an" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"ao" = (/obj/structure/table/rack,/obj/random/tool,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"ap" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"aq" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall{dir = 8; icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"ar" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"as" = (/obj/structure/table/rack,/obj/random/tank,/obj/random/tool,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"at" = (/obj/structure/table/rack,/obj/random/tank,/obj/random/tool,/obj/machinery/light{icon_state = "tube_map"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"au" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/red,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"av" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway)
+"aw" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"ax" = (/turf/simulated/shuttle/wall{icon_state = "wall3"},/area/hijacked_freighter/cargo/pod)
+"ay" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"az" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 10},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"aA" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/atmos/locker)
+"aB" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{icon_state = "map"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"aC" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 6; icon_state = "intact"},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"aD" = (/obj/machinery/atmospherics/binary/pump{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"aE" = (/obj/structure/stairs/north,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"aF" = (/turf/simulated/floor,/area/hijacked_freighter/engine)
+"aG" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/reinforced,/area/hijacked_freighter/cargo/pod)
+"aH" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall{dir = 1; icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"aI" = (/turf/simulated/floor/reinforced,/area/hijacked_freighter/cargo/pod)
+"aJ" = (/turf/simulated/floor/reinforced,/turf/simulated/shuttle/wall{dir = 1; icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"aK" = (/turf/simulated/floor/reinforced,/turf/simulated/shuttle/wall{dir = 8; icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"aL" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall{icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"aM" = (/obj/machinery/atmospherics/valve/open{icon_state = "map_valve1"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"aN" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"aO" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 10},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"aP" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"aQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"aR" = (/obj/machinery/atmospherics/pipe/tank/nitrogen{dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/light{icon_state = "tube_map"; dir = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"aS" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/yellow{icon_state = "0-1"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/ceoffice)
+"aT" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/ceoffice)
+"aU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"aV" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/ceoffice)
+"aW" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"aX" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"aY" = (/turf/simulated/floor/plating,/turf/simulated/shuttle/wall{dir = 4; icon_state = "diagonalWall3"},/area/hijacked_freighter/cargo/pod)
+"aZ" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/ceoffice)
+"ba" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/break_room)
+"bb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bc" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bd" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/ceoffice)
+"be" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/ceoffice)
+"bf" = (/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"bg" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/locker)
+"bh" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/break_room)
+"bi" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/ceoffice)
+"bj" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/break_room)
+"bk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"bl" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"bm" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"bn" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"bo" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bp" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"bq" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway)
+"br" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/break_room)
+"bs" = (/turf/simulated/floor,/area/hijacked_freighter/cargo)
+"bt" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"bu" = (/obj/structure/closet/secure_closet/atmos_personal,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"bv" = (/obj/machinery/atmospherics/pipe/tank/oxygen{dir = 4},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bw" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/break_room)
+"bx" = (/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/yellow{icon_state = "0-2"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/break_room)
+"by" = (/obj/machinery/atmospherics/pipe/manifold/visible/red,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bz" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bA" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bB" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"bC" = (/turf/simulated/open,/area/hijacked_freighter/engine/hallway)
+"bD" = (/obj/machinery/atmospherics/binary/pump{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bE" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bF" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bG" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bH" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"bI" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bJ" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/obj/machinery/light{icon_state = "tube_map"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bK" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"bL" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"bM" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bN" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bO" = (/obj/machinery/atmospherics/pipe/manifold/visible/blue{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bP" = (/obj/machinery/atmospherics/trinary/mixer/m_mixer{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bQ" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/floor_decal/industrial/warning{dir = 9},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bR" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/obj/effect/floor_decal/industrial/warning{dir = 1},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bS" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"bT" = (/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bU" = (/obj/machinery/atmospherics/trinary/filter{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bV" = (/obj/machinery/atmospherics/trinary/filter/m_filter{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bW" = (/turf/simulated/open,/area/hijacked_freighter/engine/hallway/port)
+"bX" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway)
+"bY" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"bZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"ca" = (/obj/machinery/atmospherics/pipe/manifold4w/visible/blue,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cb" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/hijacked_freighter/cargo)
+"cc" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cd" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"ce" = (/obj/machinery/atmospherics/binary/oxyregenerator,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cf" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cg" = (/obj/structure/closet/secure_closet/engineering_personal,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"ch" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"ci" = (/obj/machinery/atmospherics/pipe/simple/visible/blue,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cj" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 1; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/ceoffice)
+"ck" = (/obj/machinery/atmospherics/pipe/manifold/visible/blue,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cl" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway)
+"cm" = (/obj/machinery/atmospherics/binary/pump{dir = 8},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cn" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 5; icon_state = "intact"},/obj/structure/closet/emcloset,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"co" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"cp" = (/obj/machinery/atmospherics/pipe/simple/visible/blue{dir = 9; icon_state = "intact"},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cq" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"cr" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"cs" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/yellow{icon_state = "0-1"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway)
+"ct" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/hallway/port)
+"cu" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "2-4"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway)
+"cv" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"cw" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway)
+"cx" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway)
+"cy" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"cz" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"cA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"cB" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/obj/machinery/light/small,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cC" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cD" = (/obj/machinery/alarm{dir = 1; pixel_y = -25},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cE" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cF" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable/yellow{icon_state = "0-2"; dir = 8; d1 = 4; d2 = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos)
+"cG" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 1; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/break_room)
+"cH" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"cI" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/atmos/locker)
+"cJ" = (/obj/machinery/portable_atmospherics/canister/carbon_dioxide,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cK" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"cL" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"cM" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 6; icon_state = "intact"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"cN" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"cO" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/atmos/locker)
+"cP" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"cQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"cR" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"cS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway)
+"cT" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"cU" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"cV" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"cW" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"cX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"cY" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"cZ" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"da" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"db" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos)
+"dc" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor,/area/hijacked_freighter/engine)
+"dd" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"de" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"df" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/yellow{icon_state = "0-1"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dg" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dh" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"di" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dj" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"dk" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"dl" = (/obj/machinery/door/airlock/autoname/engineering,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/core)
+"dm" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"dn" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"do" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"dp" = (/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/yellow{icon_state = "0-2"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"dq" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"dr" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"ds" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dt" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"du" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"dv" = (/obj/machinery/power/apc{dir = 1; icon_state = "apc0"; name = "north bump"; pixel_x = 0; pixel_y = 24},/obj/structure/cable/yellow{icon_state = "0-4"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dw" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"dx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dy" = (/obj/machinery/power/apc{dir = 1; icon_state = "apc0"; name = "north bump"; pixel_x = 0; pixel_y = 24},/obj/structure/cable/yellow{icon_state = "0-4"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"dz" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/core)
+"dA" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/core)
+"dB" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"dC" = (/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/core)
+"dD" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 8; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"dE" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/locker)
+"dG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"dH" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dI" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 8},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dK" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dM" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/core)
+"dN" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "2-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dO" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"dP" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway/port)
+"dQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dR" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"dS" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dU" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{icon_state = "map"; dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dV" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 9; icon_state = "intact"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/structure/cable/yellow{icon_state = "2-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/atmos/locker)
+"dW" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable/yellow{icon_state = "2-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/locker)
+"dX" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/canister/hydrogen,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dY" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"dZ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/atmos/locker)
+"ea" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/locker)
+"eb" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"ec" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"ed" = (/obj/machinery/atmospherics/pipe/tank/hydrogen{icon_state = "h2_map"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"ee" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/table/steel_reinforced,/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ef" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eg" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eh" = (/obj/structure/closet/radiation,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ei" = (/obj/machinery/power/smes,/obj/structure/cable/yellow,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 5},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ej" = (/obj/machinery/atmospherics/pipe/tank/hydrogen{icon_state = "h2_map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"ek" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{icon_state = "map"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/locker)
+"el" = (/obj/machinery/power/terminal{dir = 8},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"em" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"en" = (/obj/machinery/power/smes,/obj/structure/cable/yellow,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eo" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ep" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"eq" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/one)
+"er" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"es" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"et" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"eu" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"ev" = (/obj/machinery/power/smes,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 6},/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 9},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ew" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "2-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"ex" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"ey" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"ez" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"eA" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"eB" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/four)
+"eC" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{icon_state = "intact"; dir = 10},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/structure/cable/yellow{icon_state = "1-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"eD" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"eE" = (/obj/machinery/atmospherics/binary/pump,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"eF" = (/obj/machinery/power/smes,/obj/structure/cable/yellow,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 6},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eG" = (/obj/machinery/power/terminal{dir = 8},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eH" = (/obj/machinery/atmospherics/binary/pump,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"eI" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"eJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/port)
+"eK" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"eL" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"eM" = (/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"eN" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"eO" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/portable_atmospherics/canister/hydrogen,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"eP" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"eQ" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"eR" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"eS" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/hydrogen,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"eT" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"eU" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"eV" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/locker)
+"eW" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"eX" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 6},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"eY" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"eZ" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"fa" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"fb" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 8},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fc" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fd" = (/obj/machinery/atmospherics/pipe/tank/hydrogen{icon_state = "h2_map"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"fe" = (/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/obj/structure/closet/crate/uranium,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"ff" = (/obj/machinery/atmospherics/pipe/tank/hydrogen{icon_state = "h2_map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"fg" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 6},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fh" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fi" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"fj" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"fk" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fl" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fm" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fn" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"fo" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"fp" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"fq" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fr" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fs" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/space,/area/hijacked_freighter/engine/boiler_room/one)
+"ft" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 1},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fu" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"fv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"fw" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{dir = 10},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/two)
+"fx" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{dir = 6},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"fy" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/hallway/starboard)
+"fz" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/boiler_room/three)
+"fA" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/space,/area/hijacked_freighter/engine/boiler_room/four)
+"fB" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 1},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fC" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/one)
+"fD" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"fE" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fF" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"fG" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"fH" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/four)
+"fI" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fK" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fL" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"fM" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"fN" = (/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fO" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"fP" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 6},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"fQ" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"fR" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fS" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"fT" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 6},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"fU" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"fV" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"fW" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"fX" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"fY" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"fZ" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"ga" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 8},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"gb" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"gc" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 4},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"gd" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/space,/area/hijacked_freighter/engine/boiler_room/two)
+"ge" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 1},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"gf" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/space,/area/hijacked_freighter/engine/boiler_room/three)
+"gg" = (/obj/machinery/atmospherics/pipe/manifold/visible/fuel{icon_state = "map"; dir = 1},/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"gh" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/two)
+"gi" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/boiler_room/three)
+"gj" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"gk" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gl" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gm" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gn" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"go" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gp" = (/obj/effect/wallframe_spawn/reinforced_phoron,/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gq" = (/obj/machinery/power/rad_collector,/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gr" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gs" = (/obj/machinery/power/rad_collector,/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gt" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gu" = (/obj/machinery/power/port_gen/pacman/super/potato,/obj/structure/cable{icon_state = "0-2"; d2 = 2},/obj/structure/cable,/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gv" = (/obj/effect/wallframe_spawn/reinforced_phoron,/turf/simulated/floor,/area/hijacked_freighter/engine/core)
+"gw" = (/obj/machinery/power/port_gen/pacman/super/potato,/obj/structure/cable,/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gx" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gy" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gz" = (/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gA" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/reinforced,/area/hijacked_freighter/engine/core)
+"gB" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"gC" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"gD" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"gE" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"gF" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"gG" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"gH" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/hallway/port)
+"gI" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"gJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"gK" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"gL" = (/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"gM" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"gN" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine)
+"gO" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"gP" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"gQ" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/port)
+"gR" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/catwalk_plated,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/hijacked_freighter/engine)
+"gS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"gT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"gU" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"gV" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/locker)
+"gW" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"gX" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"gY" = (/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"gZ" = (/turf/simulated/wall/r_wall,/area/hijacked_freighter/engine/hallway/starboard)
+"ha" = (/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hb" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hc" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hd" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{icon_state = "4-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"he" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 4},/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"hf" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"hg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"hh" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 8; layer = 2.4; level = 2},/turf/simulated/floor/plating,/area/hijacked_freighter/engine)
+"hi" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/yellow{icon_state = "0-1"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hj" = (/obj/machinery/door/airlock/autoname/engineering,/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hk" = (/obj/machinery/atmospherics/binary/pump,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hl" = (/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hm" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hn" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "2-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"ho" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/yellow{icon_state = "0-1"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hp" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 8; layer = 2.4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/hijacked_freighter/engine/hallway/starboard)
+"hq" = (/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hr" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "2-4"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hs" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "2-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"ht" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{icon_state = "1-8"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hu" = (/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hv" = (/obj/machinery/atmospherics/binary/pump,/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hw" = (/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/yellow{icon_state = "0-2"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hx" = (/obj/structure/cable/yellow{icon_state = "4-8"; dir = 1; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/boiler_room/three)
+"hy" = (/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/yellow{icon_state = "0-2"; dir = 8; d1 = 4; d2 = 8},/obj/effect/catwalk_plated,/turf/simulated/floor,/area/hijacked_freighter/engine/boiler_room/three)
+"hz" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hA" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hB" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hC" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hE" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hF" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hG" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hH" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{dir = 10},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hI" = (/obj/machinery/atmospherics/binary/pump,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hJ" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hK" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hL" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/binary/pump,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hM" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hN" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/one)
+"hO" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hP" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hQ" = (/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/four)
+"hR" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/binary/pump,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hS" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/binary/pump,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hT" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/two)
+"hU" = (/obj/machinery/door/airlock/autoname/engineering,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hV" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hW" = (/obj/machinery/atmospherics/pipe/simple/visible/universal,/turf/simulated/floor/plating,/area/hijacked_freighter/engine/boiler_room/three)
+"hX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/hijacked_freighter/engine)
+"hY" = (/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{color = "#ff0000"; dir = 1},/obj/machinery/atmospherics/pipe/zpipe/up/supply{color = "#0000ff"; dir = 1},/turf/simulated/open,/area/hijacked_freighter/engine)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadabaaaaaaaaaaaaaaaaaaaaabadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadabaaaaaaaaaaaaaaaaaaaaabadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadababagagagagagagagagababadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadabadadadadadadadadadadabadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadababagagagagagagagagababadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadadadadadadadadadadadadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadadadadaparaQaUadadadadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadadadadadaWaXadadadadadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaqaxaGaGaxaHaWaXaqaxaGaGaxaHadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaJaIaIaIaxaWaXaxaJaIaIaKaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaLaxaIaIaxaYaWaXaLaxaIaIaxaYadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadaLaxaxaYadaWaXadaLaxaxaYadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadbsbsadapbtbKaUadadadadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadbsbsadadaWaXadadadadadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaqaxaGaGaxaHaWaXaqaxaGaGaxaHadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaxaJaIaIaKaxaWaXaxaJaIaIaKaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaLaxaIaIaxaYaWaXaLaxaIaIaxaYadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadaLaxaxaYadaWaXadaLaxaxaYadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadbsbsadapbtbKaUadbsbsadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadbsbsadadaWaXadbsbsbsadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaqaxaGaGaxaHaWaXaqaxaGaGaxaHadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaJaIaIaKaxaWaXaxaJaIaIaKaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaLaxaIaIaxaYaWaXaLaxaIaIaxaYadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadaLaxaxaYadaWaXadaLaxaxaYadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadadadadapbtbKaUadbsbsadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadadadadadaWaXadadbsbsadadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaqaxaGaGaxaHaWaXaqaxaGaGaxaHadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaIaIaIaIaxaWaXaxaIaIaIaIaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababbsaxaJaIaIaKaxaWaXaxaJaIaIaKaxadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadaLaxaIaIaxaYaWaXaLaxaIaIaxaYadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadaLaxaxaYadaWaXadaLaxaxaYadadababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaaaaababadadadadadadapbtbKaUadadadadadadababaaaaaaaaaZaZaZaZgZgZbababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaaababadadadadadadawbkbladadadadadadadababaaaaaaaZaZaZaZaZgZgZbabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeafahaiajakamananaoasatananaeaeaaabababababababababcbbmabababababababababaaaaaZaZbdbdbdaZhahababhbhbhbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeafauayayayayayayayayazananaeaeaaaAaAaAaAaAaAaAaAalavbqalbgbgbgbgbgbgbgbgaaaaaZaZbdbdbibdhahabhbhbhbjbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeafaBanananananaCaDaMaNaOanaeaeaaaAaAaPaPaPaPaAaAaEavbqbCbgbgbBbBbBbBbgbgaaaaaZaZaSaTaVbebnbpbrbrbrbwbxbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaRbybDazanbEbbbcbGanbIbobJaeaeaaaAaAbuaPaPbuaAaAbfavbqbCbgbgcgbBbBcgbgbgaaaaaZaZbdbdcjaZcvbLbabhbhcGbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaebvbObDbPbDbTbzbAbUbUbVbFbYaeaeaaaAaAbHaPaPbHaAaAbXavbqbXbgbgcobBbBcobgbgaaaaaZaZbdbdbdaZhabZbabhbhbhbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaebvcacccccdanbMbNcecibQbRbSaeaeaaaAaAbuaPaPbuaAaAalcscualbgbgcgbBbBcgbgbgaaaaaZaZbdbdbdaZhabZbabhbhbhbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaebvckcmajcncccfchckcpcBcCcJaeaeaaaAaAbHaPaPbHaAaAalcwcxalbgbgcobBbBcobgbgaaaaaZaZbdbdbdaZcNcybabhbhbhbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeanbMbNanaeaeaeaeaeaeaaaAaAbuaPcKaPcLclclczcAclclcqbBcrbBcgbgbgaaaaaZaZbdbdbdaZhabZbabhbhbhbhbabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaecDbMcEcFaeaeaeaeaeaectaAaAbHaPcMcIcOcQcQcRcScQcQcUcXcYbBcobgbgacacaZaZaZaZaZaZhabZbabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaactctctctaecWdbaectctctctctctctaAaAdfdhdiaPdzdzdzdAdldzdzdzbBdmdndpbgbggZgZgZgZgZgZgZgZhjdkgZgZgZgZgZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaactctctctcHdrdtctgCgDgCdvgCgEgCaAaPaPaPdxaPdzdzdzdMdCdzdzdzbBdFbBbBbBbghahbhadyhahchagZhadGhmgZgZgZgZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaactbWbWgFgCdIdJdPdKdLdKdNdQdRdKdSdTdUdTdVaPdzdzdzdAdldzdzdzbBdWeaekeaepereseuewerezerepereChahjhahagZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaactctctctgQeDeIctgCgCgCeJgHgCgCaAaPdxaPdZaPdzdzeeefegehdzdzbBgVbBeVbBbghahafvhahahahagZhafyhpgZgZgZgZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPcPfDfGcPcPcPacfOgNaccTcTcTgBcTcVcTdzdzeielemehdzdzcZdacZgGcZcZcZdcgRacdddddddddegIddddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPdgdggJgKdgdgcPgLgMgOgLcTdjdjgPdjdjdjdzdzeneleoevdzdzdododogSdodocZaFhXacdqdqdqdqdqgTdqdqdqdqddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPdgdsgUgKdgdgcPgLgMgOgLcTdjdugWdwdjdjdzdzeFeGeQfedzdzdododBgXdDdocZaFhXacdqdqdqdqdqgTdqdqdqdqddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPdgdEgYhddHdgcPhehfhghhcTdjdjgPdjdjdjdzdzdzfnfodzdzdzdododogSdodocZaFhXacdqdqdqdqdqgTdqdOdqdqddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPhihkhlhndgdgcPgLgLgLgLcThohqhrdjdjdzdzdzdzfpfpdzdzdzdzdodohshxhycZaFhXacdqdqdqdqdqhthuhvhuhwddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPdXdYgYhzdgdgcPgLgLgLgLcTcTcThAcTdzdzdzdzdzgjgjdzdzdzdzdzcZhBcZcZcZaFhXacdddqdqdqdqhCdqebecddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPeddYgYhzdgdgcPgLgLgLgLcTdjdjhDdjdzdzgkglglgmgnglglgodzdzdohEdodocZaFhXacdddqdqdqdqhCdqebejddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPeddYgYhzdgdgcPgLgLgLgLcTdjduhFdwgpgpgngqgpgrgrgpgsgmgpgpdBhGdDdocZaFhYacdddqdqdqdqhCdqebejddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPedeqhHhIdgdgcPgLgLgLgLcTdjethJdjgpgpgrgpgpgtgtgpgpgrgpgpdohKexdocZacacacdddqdqdqeyhLeAeBejddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPcPcPcPhMhNcPcPcPcPacaccTcTdjeEhJdjgpgpgngqgpgugugvgsgmgpgpdohKeHdocZcZaaaaddddddddhOhPddddddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacPcPeKeKeLeMeNeNcPcPaaaacTcTeOePhJdjgpgpgngqgpgwgwgpgsgmgpgpdohKeReScZcZaaaaddddeTeTeUhQeWeWddddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeXeYeZeZeZeZfafafbfcaaaacTcTfdePhJdjgpgpgrgpgpgxgxgpgpgrgpgpdohKeRffcZcZaaaafgfhfififififjfjfhfkaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaflfceNeNeNeNeNeNeXfmaaaacTcTfdePhJdjgpgpgygqgpgzgzgpgsgAgpgpdohKeRffcZcZaaaafqfkeWeWeWeWeWeWfgfraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafsflftftftftftftfmfsaaaacTcTfdfuhRfwdzdzgzgzgzgzgzgzgzgzdzdzfxhSfzffcZcZaaaafAfqfBfBfBfBfBfBfrfAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafsfCfCfCfCfCfCfsaaaaaacTcTcTcThTfEdzdzdzdzdzdzdzdzdzdzdzdzfFhUcZcZcZcZaaaaaafAfHfHfHfHfHfHfAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafsfsfsfsfsfsaaaaaaaacTcTcTfIfJfKfIdzdzdzdzdzdzdzdzdzdzfLfMhVfLcZcZcZaaaaaaaafAfAfAfAfAfAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacTcTfKfNfKfKcTcTaaaaaaaaaaaacZcZfMfMhWfMcZcZaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafPfQfRfRfRfRfQfSaaaaaaaaaaaafTfUfVfVfVfVfUfWaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafXfSfYfYfYfYfPfZaaaaaaaaaaaagafWgbgbgbgbfTgcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagdfXgegegegefZgdaaaaaaaaaaaagfgagggggggggcgfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagdghghghghgdaaaaaaaaaaaaaaaagfgigigigigfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagdgdgdgdaaaaaaaaaaaaaaaaaaaagfgfgfgfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
