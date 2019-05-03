@@ -69,14 +69,77 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg
 	name = "Seburo KSG"
-	desc = "Seburo's entry to the shotgun consumer market. A compact, high capacity pump shotgun. Commonly seen in use with personal security contractors."
+	desc = "Seburo's entry to the shotgun consumer market. A compact, high capacity pump shotgun with the ability to switch between two tubes on the fly. Commonly seen in use with personal security contractors."
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "ksg"
 	w_class = ITEM_SIZE_LARGE
-	max_shells = 14
+	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	one_hand_penalty = 2
 	accuracy = 0
+	var/secondary_max_shells = 7
+	var/secondary_caliber = "shotgun"
+	var/secondary_ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	var/flipped_firing = 0
+	var/list/secondary_loaded = list()
+	var/list/tertiary_loaded = list()
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/examine(mob/user)
+	. = ..(user)
+	if(user.skill_check(SKILL_WEAPONS, SKILL_ADEPT))
+		to_chat(user, "Has [getSecondaryAmmo()] round\s remaining in it's secondary tube.")
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/getSecondaryAmmo()
+	var/bullets = 0
+	if(loaded)
+		bullets += secondary_loaded.len
+	return bullets
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/Initialize()
+	. = ..()
+	for(var/i in 1 to secondary_max_shells)
+		secondary_loaded += new secondary_ammo_type(src)
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/AltClick(mob/user)
+	if(CanPhysicallyInteract(usr))
+		switch_tube()
+		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+		to_chat(user, "<span class='notice'>You switch the tube on \the [src].</span>")
+
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube()
+	if(!flipped_firing)
+		if(max_shells && secondary_max_shells)
+			max_shells = secondary_max_shells
+
+		if(caliber && secondary_caliber)
+			caliber = secondary_caliber
+
+		if(ammo_type && secondary_ammo_type)
+			ammo_type = secondary_ammo_type
+
+		if(secondary_loaded)
+			tertiary_loaded = loaded.Copy()
+			loaded = secondary_loaded
+
+		flipped_firing = 1
+
+	else
+		if(max_shells)
+			max_shells = initial(max_shells)
+
+		if(caliber && secondary_caliber)
+			caliber = initial(caliber)
+			fire_sound = initial(fire_sound)
+
+		if(ammo_type && secondary_ammo_type)
+			ammo_type = initial(ammo_type)
+
+		if(tertiary_loaded)
+			secondary_loaded = loaded.Copy()
+			loaded = tertiary_loaded
+
+		flipped_firing = 0
+
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"
