@@ -104,7 +104,6 @@
 	if(CanPhysicallyInteract(usr))
 		switch_tube()
 		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
-		to_chat(user, "<span class='notice'>You switch the tube on \the [src].</span>")
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube()
 	if(!flipped_firing)
@@ -122,6 +121,7 @@
 			loaded = secondary_loaded
 
 		flipped_firing = 1
+		to_chat(user, "<span class='notice'>You switch to the secondary feed tube.</span>")
 
 	else
 		if(max_shells)
@@ -139,7 +139,7 @@
 			loaded = tertiary_loaded
 
 		flipped_firing = 0
-
+		to_chat(user, "<span class='notice'>You switch to the primary feed tube.</span>")
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"

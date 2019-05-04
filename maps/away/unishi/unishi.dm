@@ -15,7 +15,7 @@
 	whitelisted_species = list(SPECIES_HUMAN)
 
 /obj/effect/overmap/ship/unishi
-	name = "SRV Verne"
+	name = "SRV Hino-Maru"
 	desc = "Sensor array detects unknown class medium size vessel. The vessel appears unarmed.\
 	A small amount of radiation has been detected at the aft of the ship"
 	vessel_mass = 5000
