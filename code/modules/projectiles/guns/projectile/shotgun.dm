@@ -105,7 +105,7 @@
 		switch_tube()
 		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
 
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube()
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube(mob/user)
 	if(!flipped_firing)
 		if(max_shells && secondary_max_shells)
 			max_shells = secondary_max_shells
