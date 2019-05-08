@@ -172,13 +172,13 @@
 /datum/gear/tactical/knife
 	display_name = "tactical knife"
 	path = /obj/item/weapon/material/hatchet/tacknife
-	cost = 3
+	cost = 4
 	allowed_roles = ARMED_ROLES
 
-/datum/gear/tactical/switchblade
-	display_name = "tactical switchblade"
-	path = /obj/item/weapon/material/pocketknife/auto
-	cost = 4
+/datum/gear/tactical/pocket_knife
+	display_name = "tactical pocket knife"
+	path = /obj/item/weapon/material/pocketknife
+	cost = 3
 	allowed_roles = ARMED_ROLES
 
 /datum/gear/tactical/ifak

@@ -247,3 +247,46 @@
 /datum/stack_recipe/candle
 	title = "candle"
 	result_type = /obj/item/weapon/flame/candle
+
+/datum/stack_recipe/gun_parts
+	title = "improvised gun parts"
+	result_type = /obj/item/weapon/crafting/parts/improvised
+	req_amount = 10
+	time = 25
+	difficulty = 2
+
+/datum/stack_recipe/revolver_frame
+	title = "improvised revolver frame"
+	result_type = /obj/item/weapon/crafting/receiver/revolver
+	req_amount = 15
+	time = 40
+	difficulty = 2
+
+/datum/stack_recipe/pistol_frame
+	title = "improvised pistol frame"
+	result_type = /obj/item/weapon/crafting/receiver/pistol
+	req_amount = 20
+	time = 40
+	difficulty = 3
+
+/datum/stack_recipe/smg_receiver
+	title = "improvised smg receiver"
+	result_type = /obj/item/weapon/crafting/receiver/smg
+	req_amount = 25
+	time = 50
+	difficulty = 3
+
+/datum/stack_recipe/smg2_receiver
+	title = "improvised smg receiver-stock"
+	result_type = /obj/item/weapon/crafting/receiver/smg_2
+	req_amount = 15
+	time = 20
+	difficulty = 2
+
+/datum/stack_recipe/gun_grips
+	title = "gun grips"
+	result_type = /obj/item/weapon/crafting/parts/grips
+	req_amount = 5
+	time = 15
+	difficulty = 1
+

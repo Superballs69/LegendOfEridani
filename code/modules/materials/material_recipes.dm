@@ -60,6 +60,9 @@
 	recipes += new/datum/stack_recipe/furniture/turret(src)
 	recipes += new/datum/stack_recipe_list("airlock assemblies", create_recipe_list(/datum/stack_recipe/furniture/door_assembly))
 	recipes += new/datum/stack_recipe/grenade(src)
+	recipes += new/datum/stack_recipe/revolver_frame(src)
+	recipes += new/datum/stack_recipe/pistol_frame(src)
+	recipes += new/datum/stack_recipe/gun_parts(src)
 	recipes += new/datum/stack_recipe/light(src)
 	recipes += new/datum/stack_recipe/light_small(src)
 	recipes += new/datum/stack_recipe/light_switch(src)
@@ -74,6 +77,7 @@
 	recipes += new/datum/stack_recipe/ai_core(src)
 	recipes += new/datum/stack_recipe/furniture/crate(src)
 	recipes += new/datum/stack_recipe/grip(src)
+	recipes += new/datum/stack_recipe/smg_receiver(src)
 
 /material/stone/generate_recipes()
 	..()
@@ -104,6 +108,8 @@
 	recipes += new/datum/stack_recipe/stick(src)
 	recipes += new/datum/stack_recipe/noticeboard(src)
 	recipes += new/datum/stack_recipe/firecamp(src)
+	recipes += new/datum/stack_recipe/smg2_receiver(src)
+	recipes += new/datum/stack_recipe/gun_grips(src)
 
 /material/cardboard/generate_recipes()
 	..()

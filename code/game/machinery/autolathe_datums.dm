@@ -568,6 +568,18 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
+/datum/autolathe/recipe/magazine_9mm_mac
+	name = "ammunition (9mm) stick"
+	path = /obj/item/ammo_magazine/mc9mmmac
+	hidden = 1
+	category = "Arms and Ammunition"
+
+/datum/autolathe/recipe/magazine_9mm_smg
+	name = "ammunition (9mm) curved stick"
+	path = /obj/item/ammo_magazine/m9mmsmg
+	hidden = 1
+	category = "Arms and Ammunition"
+
 /datum/autolathe/recipe/magazine_c20r
 	name = "ammunition (10mm)"
 	path = /obj/item/ammo_magazine/m10mm

@@ -2413,6 +2413,7 @@
 #include "code\modules\projectiles\guns\projectile\dartgun.dm"
 #include "code\modules\projectiles\guns\projectile\detective.dm"
 #include "code\modules\projectiles\guns\projectile\grenade.dm"
+#include "code\modules\projectiles\guns\projectile\improvised.dm"
 #include "code\modules\projectiles\guns\projectile\pistol.dm"
 #include "code\modules\projectiles\guns\projectile\revolver.dm"
 #include "code\modules\projectiles\guns\projectile\shotgun.dm"

@@ -220,7 +220,7 @@
 				/obj/item/weapon/melee/baton/cattleprod = 1,
 				/obj/item/weapon/material/butterfly/switchblade = 1,
 				/obj/item/weapon/material/hatchet/tacknife = 1,
-				/obj/item/weapon/material/kitchen/utensil/knife/boot = 2,
+				/obj/item/weapon/material/pocketknife/auto = 2,
 				/obj/item/weapon/storage/secure/briefcase/money = 1,
 				/obj/item/weapon/storage/box/syndie_kit/cigarette = 1,
 				/obj/item/stack/telecrystal = 1,

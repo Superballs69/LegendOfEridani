@@ -41,8 +41,8 @@ These outfits will spawn with some gear.
 	name = OUTFIT_JOB_NAME("FDI Agent")
 	l_ear = /obj/item/device/radio/headset/fdi
 	uniform = /obj/item/clothing/under/fdi{ starting_accessories=list(/obj/item/clothing/accessory/storage/holster/thigh/ice, /obj/item/clothing/accessory/badge/fdiagent) }
-	shoes = /obj/item/clothing/shoes/dutyboots
-	gloves = /obj/item/clothing/gloves/thick
+	shoes = /obj/item/clothing/shoes/swat
+	gloves = /obj/item/clothing/gloves/thick/combat
 	glasses = /obj/item/clothing/glasses/sunglasses/sechud/lowprofile
 	id_type = /obj/item/weapon/card/id/eclipse/fdi
 	pda_type = /obj/item/modular_computer/pda/forensics

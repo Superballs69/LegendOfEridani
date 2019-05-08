@@ -61,9 +61,9 @@
 	path = /obj/item/weapon/reagent_containers/food/drinks/coffeecup
 	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/boot_knife
-	display_name = "boot knife"
-	path = /obj/item/weapon/material/kitchen/utensil/knife/boot
+/datum/gear/peasant_knife
+	display_name = "peasant knife"
+	path = /obj/item/weapon/material/pocketknife/opinel
 	cost = 3
 
 /datum/gear/lunchbox

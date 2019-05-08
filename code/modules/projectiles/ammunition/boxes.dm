@@ -216,15 +216,15 @@
 	max_ammo = 32
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/m9mmac/rubber
+/obj/item/ammo_magazine/m9mmmac/rubber
 	name = "\improper SMG stick magazine (9mm, rubber)"
 	ammo_type = /obj/item/ammo_casing/a9mm/rubber
 
-/obj/item/ammo_magazine/m9mmac/practice
+/obj/item/ammo_magazine/m9mmmac/practice
 	name = "\improper SMG stick magazine (9mm, practice)"
 	ammo_type = /obj/item/ammo_casing/a9mm/practice
 
-/obj/item/ammo_magazine/m9mmac/flash
+/obj/item/ammo_magazine/m9mmmac/flash
 	name = "\improper SMG stick magazine (9mm, flash)"
 	ammo_type = /obj/item/ammo_casing/a9mm/flash
 

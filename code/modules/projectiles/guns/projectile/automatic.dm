@@ -390,7 +390,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/mc9mmds, /obj/item/ammo_magazine/m9mmsmg)
 	load_method = MAGAZINE
 	multi_aim = 1
-	burst_delay = 0.90
+	burst_delay = 1
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -768,7 +768,7 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m45uzi
 	allowed_magazines = list(/obj/item/ammo_magazine/m45uzi)
-	burst_delay = 0.75
+	burst_delay = 1
 	fire_sound = 'sound/weapons/gunshot/mx9.ogg'
 
 	firemodes = list(
@@ -831,7 +831,7 @@
 	slot_flags = SLOT_BELT
 	magazine_type = /obj/item/ammo_magazine/m9mmmac
 	accuracy = -1
-	burst_delay = 0.35
+	burst_delay = 1
 	allowed_magazines = list(/obj/item/ammo_magazine/m9mmmac)
 
 	firemodes = list(

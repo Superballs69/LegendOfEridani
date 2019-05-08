@@ -67,7 +67,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	force = 14
 
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg //hey, it just works
 	name = "Seburo KSG"
 	desc = "Seburo's entry to the shotgun consumer market. A compact, high capacity pump shotgun with the ability to switch between two tubes on the fly. Commonly seen in use with personal security contractors."
 	icon = 'icons/obj/gun_2.dmi'
@@ -86,26 +86,23 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/examine(mob/user)
 	. = ..(user)
-	if(user.skill_check(SKILL_WEAPONS, SKILL_ADEPT))
-		to_chat(user, "Has [getSecondaryAmmo()] round\s remaining in it's secondary tube.")
+	to_chat(user, "<span class='notice'>Alt-Click to switch feeding tubes.</span>")
+	if(!flipped_firing)
+		to_chat(user, "<span class='warning'>It is set to feed from the primary tube.</span>")
+	else
+		to_chat(user, "<span class='warning'>It is set to feed from the secondary tube.</span>")
 
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/getSecondaryAmmo()
-	var/bullets = 0
-	if(loaded)
-		bullets += secondary_loaded.len
-	return bullets
-
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/Initialize()
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/Initialize() //second tube for the shotgun
 	. = ..()
 	for(var/i in 1 to secondary_max_shells)
 		secondary_loaded += new secondary_ammo_type(src)
 
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/AltClick(mob/user)
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/AltClick(mob/user) //can only switch the tube if you can physically grab it
 	if(CanPhysicallyInteract(usr))
 		switch_tube()
 		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
 
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube(mob/user)
+/obj/item/weapon/gun/projectile/shotgun/pump/combat/ksg/proc/switch_tube(mob/user) //handles for switching between tubes
 	if(!flipped_firing)
 		if(max_shells && secondary_max_shells)
 			max_shells = secondary_max_shells
@@ -121,7 +118,7 @@
 			loaded = secondary_loaded
 
 		flipped_firing = 1
-		to_chat(user, "<span class='notice'>You switch to the secondary feed tube.</span>")
+		to_chat(usr, "<span class='notice'>You switch to the secondary feed tube.</span>")
 
 	else
 		if(max_shells)
@@ -139,7 +136,7 @@
 			loaded = tertiary_loaded
 
 		flipped_firing = 0
-		to_chat(user, "<span class='notice'>You switch to the primary feed tube.</span>")
+		to_chat(usr, "<span class='notice'>You switch to the primary feed tube.</span>")
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
 	name = "double-barreled shotgun"

@@ -57,13 +57,13 @@
 /obj/item/weapon/material/pocketknife
 	name = "tactical pocket knife"
 	desc = "An every day carry folding pocket blade."
-	icon_state = "pocketknife_tac"
+	icon_state = "tacblade"
 	item_state = null
 	hitsound = null
 	var/active = 0
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("patted", "tapped")
-	force = 3
+	force = 0
 	edge = 0
 	sharp = 0
 	force_divisor = 0.25 // 15 when wielded with hardness 60 (steel)
@@ -72,6 +72,8 @@
 	unbreakable = 1
 	applies_material_colour = 0
 	var/automatic = 0 //if
+	var/busy = 0
+	var/engage_time = 0
 
 /obj/item/weapon/material/pocketknife/update_force()
 	if(active)
@@ -95,28 +97,63 @@
 		item_state = initial(item_state)
 
 /obj/item/weapon/material/pocketknife/attack_self(mob/user)
-	active = !active
+	if(user.skill_check(SKILL_COMBAT, SKILL_NONE))
+		src.engage_time = 12
+	else if(user.skill_check(SKILL_COMBAT, SKILL_BASIC))
+		src.engage_time = 8
+	else if(user.skill_check(SKILL_COMBAT, SKILL_ADEPT))
+		src.engage_time = 4
+	else if(user.skill_check(SKILL_COMBAT, SKILL_EXPERT))
+		src.engage_time = 2
+	else if(user.skill_check(SKILL_COMBAT, SKILL_PROF))
+		src.engage_time = 1
+
+	if(busy)
+		return
 	if(automatic)
 		if(active)
 			to_chat(user, "<span class='notice'>You engage \the [src].</span>")
 			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+			active = !active
+			update_force()
 		else
 			to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
+			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+			active = !active
+			update_force()
 	else
 		if(active)
-			do_after(user,8)
-			to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
-			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+			busy = 1
+			if(do_after(user, engage_time))
+				busy = 0
+				to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
+				playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+				active = !active
+				update_force()
+			busy = 0
 		else
-			do_after(user,8)
-			to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
-	update_force()
+			busy = 1
+			if(do_after(user, engage_time))
+				busy = 0
+				to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
+				playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
+				active = !active
+				update_force()
+			busy = 0
 	add_fingerprint(user)
 
 /obj/item/weapon/material/pocketknife/auto
 	name = "tactical switchblade"
 	desc = "An automatic everyday carry pocket blade."
+	icon_state = "tacswitch"
 	automatic = 1
+
+/obj/item/weapon/material/pocketknife/opinel
+	name = "peasant knife"
+	desc = "A very old school pocket knife."
+	icon_state = "opinel"
+	force_divisor = 0.10 // 6 when wielded with hardness 60 (steel)
+	thrown_force_divisor = 0.10 // 2 when thrown with weight 20 (steel)
 
 /*
  * Kitchen knives

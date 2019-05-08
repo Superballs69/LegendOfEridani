@@ -83,6 +83,7 @@
 	sharp = 1
 	edge = 1
 
+/* Commenting this out to organize folding knives.
 // Identical to the tactical knife but nowhere near as stabby.
 // Kind of like the toy esword compared to the real thing.
 //Making the sprite clear that this is a small knife
@@ -90,7 +91,7 @@
 	name = "small knife"
 	desc = "A small, easily concealed knife."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "pocketknife_open"
+	icon_state = "opinel_open"
 	item_state = "knife"
 	applies_material_colour = 0
 	unbreakable = 1
@@ -101,6 +102,7 @@
 		user.take_organ_damage(20)
 		return
 	return ..()
+*/
 
 /obj/item/weapon/material/kitchen/utensil/knife/unathiknife
 	name = "dueling knife"

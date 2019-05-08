@@ -1272,7 +1272,7 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/obj/item/weapon/material/kitchen/utensil/knife/boot,
+/obj/item/weapon/material/hatchet/tacknife,
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/simulated/floor/tiled/white,
 /area/casino/casino_crew_bathroom)

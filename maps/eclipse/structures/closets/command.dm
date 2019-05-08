@@ -154,6 +154,8 @@
 		/obj/item/clothing/head/helmet/security,
 		/obj/item/device/radio/headset/fdi,
 		/obj/item/device/radio/headset/fdi/alt,
+		/obj/item/weapon/material/pocketknife/auto,
+		/obj/item/weapon/material/hatchet/tacknife,
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/device/flash/advanced,
 		/obj/item/weapon/reagent_containers/spray/pepper,
