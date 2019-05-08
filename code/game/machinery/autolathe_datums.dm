@@ -570,7 +570,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/magazine_9mm_mac
 	name = "ammunition (9mm) stick"
-	path = /obj/item/ammo_magazine/mc9mmmac
+	path = /obj/item/ammo_magazine/m9mmmac
 	hidden = 1
 	category = "Arms and Ammunition"
 
