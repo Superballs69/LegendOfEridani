@@ -261,6 +261,7 @@
 	caliber = "9mm"
 	silenced = 0
 	fire_delay = 1
+	threaded = 1
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
@@ -270,34 +271,6 @@
 	name = "holdout signal pistol"
 	magazine_type = /obj/item/ammo_magazine/mc9mm/flash
 
-/obj/item/weapon/gun/projectile/pistol/attack_hand(mob/user as mob)
-	if(user.get_inactive_hand() == src)
-		if(silenced)
-			if(user.l_hand != src && user.r_hand != src)
-				..()
-				return
-			to_chat(user, "<span class='notice'>You unscrew [silenced] from [src].</span>")
-			user.put_in_hands(silenced)
-			silenced = initial(silenced)
-			w_class = initial(w_class)
-			update_icon()
-			return
-	..()
-
-/obj/item/weapon/gun/projectile/pistol/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/weapon/silencer))
-		if(user.l_hand != src && user.r_hand != src)	//if we're not in his hands
-			to_chat(user, "<span class='notice'>You'll need [src] in your hands to do that.</span>")
-			return
-		if(!user.unEquip(I, src))
-			return//put the silencer into the gun
-		to_chat(user, "<span class='notice'>You screw [I] onto [src].</span>")
-		silenced = I	//dodgy?
-		w_class = ITEM_SIZE_NORMAL
-		update_icon()
-		return
-	..()
-
 /obj/item/weapon/gun/projectile/pistol/on_update_icon()
 	..()
 	if(silenced)
@@ -306,13 +279,6 @@
 		icon_state = "pistol"
 	if(!(ammo_magazine && ammo_magazine.stored_ammo.len))
 		icon_state = "[icon_state]-e"
-
-/obj/item/weapon/silencer
-	name = "silencer"
-	desc = "A silencer."
-	icon = 'icons/obj/gun.dmi'
-	icon_state = "silencer"
-	w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/gun/projectile/pirate
 	name = "zip gun"
@@ -454,6 +420,7 @@
 	fire_sound = 'sound/weapons/gunshot/fiveseven.ogg'
 	magazine_type = /obj/item/ammo_magazine/m57
 	allowed_magazines = list(/obj/item/ammo_magazine/m57)
+	fire_delay = 1
 
 /obj/item/weapon/gun/projectile/fiveseven/update_icon()
 	..()

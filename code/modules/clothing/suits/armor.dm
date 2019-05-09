@@ -399,6 +399,10 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C)
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/armor/tag/sec)
 
+/obj/item/clothing/suit/storage/pcarrier/security/bartender
+	name = "simple plate carrier"
+	desc = "A simple plate carrier."
+
 /obj/item/clothing/suit/storage/pcarrier/medic
 	name = "medical responder vest"
 	icon_state = "marmor"

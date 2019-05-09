@@ -589,6 +589,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/mp7)
 	accuracy = 1.2
 	silenced = 0
+	threaded = 1
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 
@@ -596,36 +597,6 @@
 		list(mode_name="semiauto", burst=1, fire_delay=0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, burst_accuracy=list(0, 0.5, 0.9), dispersion=list(0.0, 0.6, 1.0))
 		)
-
-/obj/item/weapon/gun/projectile/automatic/mp7/attack_hand(mob/user as mob)
-	if(user.get_inactive_hand() == src)
-		if(silenced)
-			if(user.l_hand != src && user.r_hand != src)
-				..()
-				return
-			to_chat(user, "<span class='notice'>You unscrew [silenced] from [src].</span>")
-			user.put_in_hands(silenced)
-			silenced = initial(silenced)
-			w_class = initial(w_class)
-			fire_sound = initial(fire_sound)
-			update_icon()
-			return
-	..()
-
-/obj/item/weapon/gun/projectile/automatic/mp7/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/weapon/silencer))
-		if(user.l_hand != src && user.r_hand != src)	//if we're not in his hands
-			to_chat(user, "<span class='notice'>You'll need [src] in your hands to do that.</span>")
-			return
-		if(!user.unEquip(I, src))
-			return//put the silencer into the gun
-		to_chat(user, "<span class='notice'>You screw [I] onto [src].</span>")
-		silenced = I	//dodgy?
-		w_class = ITEM_SIZE_NORMAL
-		fire_sound = 'sound/weapons/gunshot/mp7_silenced.ogg'
-		update_icon()
-		return
-	..()
 
 /obj/item/weapon/gun/projectile/automatic/mp7/on_update_icon()
 	..()

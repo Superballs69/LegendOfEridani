@@ -105,7 +105,7 @@ h1.alert, h2.alert		{color: #000000;}
 .moon					{color: #422863;}
 .union					{color: #ff6600;}
 .adherent				{color: #526c7a;}
-.frontier				{color: #a2d300;}
+.frontier				{color: #638200;}
 
 .interface				{color: #330033;}
 

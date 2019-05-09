@@ -46,7 +46,7 @@
 #define RESEARCH_ROLES list(/datum/job/rd, /datum/job/liaison, /datum/job/scientist, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/assistant, /datum/job/senior_scientist, /datum/job/roboticist, /datum/job/xenolife_technician, /datum/job/biomech)
 
 //For jobs that spawn with weapons in their lockers
-#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/fdi, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)
+#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/fdi, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant, /datum/job/bartender)
 
 //For jobs that spawn with armor in their lockers
-#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/fdi, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant)
+#define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/fdi, /datum/job/tiger, /datum/job/isec, /datum/job/warden, /datum/job/iaa, /datum/job/pathfinder_commander, /datum/job/pathfinder_pilot, /datum/job/pathfinder_explorer, /datum/job/merchant, /datum/job/bartender)
