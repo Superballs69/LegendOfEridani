@@ -275,7 +275,7 @@
 // Flash Shield
 
 /obj/item/weapon/shield/riot/flash
-	name = "Flash Shield"
+	name = "flash shield"
 	desc = "PyroCorp's flash assault shield. Can flash targets facing the shield."
 	icon = 'icons/obj/weapons.dmi'
 	slot_flags = SLOT_BACK

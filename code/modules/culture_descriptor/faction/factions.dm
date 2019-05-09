@@ -27,7 +27,6 @@
 	with even some portions of government services being privatized and managed by corporations within the ETF. As a the hub of commmerce and innovation, all citizens in the ETF live in exuberant wealth \
 	and perform trade with all representative states of the galaxy."
 	language = LANGUAGE_GALCOM
-	secondary_langs = list(LANGUAGE_SOL_COMMON)
 	economic_power = 1.1
 
 /decl/cultural_info/faction/remote/nanotrasen

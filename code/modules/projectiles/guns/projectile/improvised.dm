@@ -51,6 +51,7 @@
     fire_delay = 6.75 //Revolvers are naturally slower-firing
     ammo_type = /obj/item/ammo_casing/a38
     jam_chance = 0
+    starts_loaded = 0
 
 /obj/item/weapon/gun/projectile/improvised
     name = "improvised pistol"
@@ -63,6 +64,7 @@
     origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
     load_method = MAGAZINE
     fire_sound = 'sound/weapons/gunshot/p92x.ogg'
+    starts_loaded = 0
 
 /obj/item/weapon/gun/projectile/improvised/on_update_icon()
     ..()
@@ -75,7 +77,7 @@
     name = "improvised 9mm sub machine gun"
     desc = "An improvised straight blowback submachinegun made in a small workshop. Uses 9x19mm stick magazines."
     icon = 'icons/obj/gun_crafted.dmi'
-    icon_state = "mpistolen"
+    icon_state = "custom_smg"
     item_state = "wt550"
     w_class = ITEM_SIZE_NORMAL
     load_method = MAGAZINE
@@ -87,6 +89,7 @@
     burst_accuracy=list(0,-1,-1,-1,-2)
     dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)
     fire_sound = 'sound/weapons/gunshot/wt550.ogg'
+    starts_loaded = 0
 
     firemodes = list(
         list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
@@ -116,6 +119,7 @@
     burst_accuracy=list(0,-1,-1,-1,-2)
     dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)
     fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
+    starts_loaded = 0
 
     firemodes = list(
         list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
