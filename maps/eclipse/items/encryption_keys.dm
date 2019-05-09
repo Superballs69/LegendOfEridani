@@ -6,7 +6,7 @@
 /obj/item/device/encryptionkey/fdi
 	name = "federal department of investigation's encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1, "Response Team" = 1)
+	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1, "FCA Comm" = 1)
 
 /obj/item/device/encryptionkey/heads/torchxo
 	name = "executive officer's encryption key"
