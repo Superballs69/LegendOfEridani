@@ -637,7 +637,7 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 		"done" = 0,
 		"level" = pos ? pos.z : 0 // The level it is being broadcasted at.
 	)
-	signal.frequency = PUB_FREQ// Common channel
+	signal.frequency = PUB_FREQ // Common channel
 
   //#### Sending the signal to all subspace receivers ####//
 	for(var/obj/machinery/telecomms/receiver/R in telecomms_list)

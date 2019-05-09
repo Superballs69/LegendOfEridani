@@ -6,4 +6,4 @@
 	icon_state = "band_wh"
 	item_state = "band_wh"
 	w_class = 1
-	slot_flags = SLOT_EARS
+	slot_flags = SLOT_EARS | SLOT_MASK | SLOT_HEAD
