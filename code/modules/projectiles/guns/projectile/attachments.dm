@@ -26,6 +26,7 @@
 	..()
 
 /obj/item/weapon/gun/projectile/attackby(obj/item/I as obj, mob/user as mob)
+    ..()
     if(threaded)
         if(istype(I, /obj/item/weapon/silencer))
             if(user.l_hand != src && user.r_hand != src)	//if we're not in his hands
@@ -39,6 +40,4 @@
             update_icon()
             return
     else
-        to_chat(user, "<span class = 'notice'>You cannot fit a suppressor onto this gun.")
         return
-    ..()
