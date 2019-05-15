@@ -83,7 +83,7 @@
 /obj/item/weapon/gun/projectile/usp
 	name = "HI USP .45"
 	desc = "A solid firearm made by Hesphaestus Industries. Uses .45 rounds."
-	magazine_type = /obj/item/ammo_magazine/m45mds/flash
+	magazine_type = /obj/item/ammo_magazine/m45mds
 	allowed_magazines = /obj/item/ammo_magazine/m45mds
 	icon = 'icons/obj/gun_2.dmi'
 	icon_state = "usp"

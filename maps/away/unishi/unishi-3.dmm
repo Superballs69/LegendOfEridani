@@ -250,7 +250,7 @@
 "eP" = (/obj/structure/coatrack,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1;layer = 2.4;level = 2},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled,/area/unishi/living)
 "eQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled,/area/unishi/living)
 "eR" = (/obj/structure/bed/chair/office/comfy/black{dir = 4},/turf/simulated/floor/wood,/area/unishi/living)
-"eS" = (/obj/structure/table/woodentable,/obj/item/weapon/pen/fancy,/obj/random/drinkbottle,/turf/simulated/floor/wood,/area/unishi/living)
+"eS" = (/obj/structure/table/woodentable,/obj/item/weapon/pen/fancy,/obj/random/drinkbottle/premium,/turf/simulated/floor/wood,/area/unishi/living)
 "eT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/wood,/area/unishi/living)
 "eU" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/wood,/area/unishi/living)
 "eV" = (/obj/structure/table/woodentable,/obj/item/weapon/paper_bin,/turf/simulated/floor/wood,/area/unishi/living)
@@ -270,7 +270,7 @@
 "qS" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/random/cash,/obj/random/drinkbottle,/obj/random/clothing,/obj/random/hat,/turf/simulated/floor/wood,/area/unishi/living)
 "sS" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/random/clothing,/turf/simulated/floor/wood,/area/unishi/living)
 "vn" = (/obj/structure/bed/padded,/obj/structure/curtain/open/bed,/obj/item/weapon/bedsheet/orange,/obj/random/clothing,/turf/simulated/floor/tiled,/area/unishi/living)
-"zD" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/random/cash,/obj/random/drinkbottle,/obj/random/contraband,/obj/random/clothing,/obj/random/hat,/turf/simulated/floor/wood,/area/unishi/living)
+"zD" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/random/cash,/obj/random/drinkbottle/premium,/obj/random/contraband,/obj/random/clothing,/obj/random/hat,/turf/simulated/floor/wood,/area/unishi/living)
 "Um" = (/obj/machinery/light/small{dir = 4;pixel_y = 0},/turf/simulated/floor,/area/unishi/living)
 "XA" = (/obj/structure/railing/mapped,/turf/simulated/open,/area/unishi/living)
 

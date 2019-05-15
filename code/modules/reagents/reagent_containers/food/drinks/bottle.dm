@@ -177,6 +177,14 @@
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/gin, 100)
 
+/obj/item/weapon/reagent_containers/food/drinks/bottle/gin/ksiri
+	name = "K'siri Royale"
+	desc = "A galaxy-renowned brand of gin that is only made on Naj'd. A great addition to your alcohol stash."
+	icon_state = "premiumgin"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/gin/ksiri, 100)
+
 /obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey
 	name = "Uncle Git's Special Reserve"
 	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
@@ -187,13 +195,29 @@
 		reagents.add_reagent(/datum/reagent/ethanol/whiskey, 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey
-	name = "Special Blend Whiskey"
+	name = "South House Reserve"
 	desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
-	icon_state = "whiskeybottle2"
-	center_of_mass = "x=16;y=3"
+	icon_state = "premiumwhiskey"
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/ethanol/specialwhiskey, 100)
+		reagents.add_reagent(/datum/reagent/ethanol/whiskey/southhouse, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/mayworthwhiskey
+	name = "McClane"
+	desc = "A premium Mayworthian brand whiskey. You can feel the hair growing on your chest."
+	icon_state = "premiumwhiskey2"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/whiskey/mcclane, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/jikan
+	name = "Zentory Jikan"
+	desc = "An extremely rare and delicious Yamato whiskey. No longer in collection and few bottles remain."
+	icon_state = "premiumwhiskey3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/whiskey/jikan, 100)
+
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka
 	name = "Tunguska Triple Distilled"
@@ -204,14 +228,22 @@
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/vodka, 100)
 
-/obj/item/weapon/reagent_containers/food/drinks/bottle/tequilla
-	name = "Caccavo Guaranteed Quality Tequilla"
+/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila
+	name = "Caccavo Guaranteed Quality Tequila"
 	desc = "Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!"
-	icon_state = "tequillabottle"
+	icon_state = "tequilabottle"
 	center_of_mass = "x=16;y=3"
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/ethanol/tequilla, 100)
+		reagents.add_reagent(/datum/reagent/ethanol/tequila, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila/santarosa
+	name = "Santa Rosa Tequila"
+	desc = "A premium blend of Martian and Alesian blue agave."
+	icon_state = "premiumtequila"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/tequila/santarosa, 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/bottleofnothing
 	name = "Bottle of Nothing"
@@ -224,7 +256,7 @@
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/patron
 	name = "Wrapp Artiste Patron"
-	desc = "Silver laced tequilla, served in space night clubs across the galaxy."
+	desc = "Silver laced tequila, served in space night clubs across the galaxy."
 	icon_state = "patronbottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -329,6 +361,14 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/absinthe, 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/nouvellereine
+	name = "Absinthe L'Nouvelle Reine"
+	desc = "One sip of this and you just know you're gonna have a good time and forget the next week."
+	icon_state = "premiumabsinthe"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/absinthe/nouvellereine, 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/melonliquor
 	name = "Emeraldine Melon Liquor"

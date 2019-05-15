@@ -337,6 +337,14 @@
 	desc = "A lightweight tan plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_tan"
 
+/obj/item/clothing/suit/armor/pcarrier/tan/pirate
+	name = "tan plate carrier"
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/security, /obj/item/clothing/accessory/storage/pouches/large/green)
+
+/obj/item/clothing/suit/armor/pcarrier/tan/pirate/heavy
+	name = "tan plate carrier"
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/combat, /obj/item/clothing/accessory/storage/pouches/load_bearing/rig, /obj/item/clothing/accessory/armguards/tan, /obj/item/clothing/accessory/legguards/tan)
+
 /obj/item/clothing/suit/armor/pcarrier/tan/combat
 	starting_accessories = list(/obj/item/clothing/accessory/armorplate/combat, /obj/item/clothing/accessory/storage/pouches/large/tan)
 

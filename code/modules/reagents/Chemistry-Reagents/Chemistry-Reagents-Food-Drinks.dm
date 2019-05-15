@@ -1097,6 +1097,17 @@
 	glass_name = "absinthe"
 	glass_desc = "Wormwood, anise, oh my."
 
+/datum/reagent/ethanol/absinthe/nouvellereine
+	name = "Absinthe L'Nouvelle Reine"
+	description = "God damn Nouvelle Reiners."
+	taste_description = "death, licorice, fennel and anise"
+	taste_mult = 1.5
+	color = "#33ee00"
+	strength = 65
+
+	glass_name = "absinthe l'nouvelle reine"
+	glass_desc = "You may have second thoughts..."
+
 /datum/reagent/ethanol/ale
 	name = "Ale"
 	description = "A dark alchoholic beverage made by malted barley and yeast."
@@ -1192,6 +1203,16 @@
 	glass_name = "gin"
 	glass_desc = "A crystal clear glass of Griffeater gin."
 
+/datum/reagent/ethanol/gin/ksiri
+	name = "K'siri Royale Gin"
+	description = "Only the finest gin forrr the finest gentlemen."
+	taste_description = "a pronounced flowery taste with fresh juniper berries"
+	color = "#0064c6"
+	strength = 20
+
+	glass_name = "k'siri royale gin"
+	glass_desc = "A crystal clear glass of K'siri Royale gin."
+
 //Base type for alchoholic drinks containing coffee
 /datum/reagent/ethanol/coffee
 	overdose = 45
@@ -1266,15 +1287,25 @@
 	glass_name = "sake"
 	glass_desc = "A glass of sake."
 
-/datum/reagent/ethanol/tequilla
+/datum/reagent/ethanol/tequila
 	name = "Tequila"
 	description = "A strong and mildly flavoured, mexican produced spirit. Feeling thirsty hombre?"
 	taste_description = "paint stripper"
 	color = "#ffff91"
 	strength = 25
 
-	glass_name = "Tequilla"
+	glass_name = "Tequila"
 	glass_desc = "Now all that's missing is the weird colored shades!"
+
+/datum/reagent/ethanol/tequila/santarosa
+	name = "Santa Rosa Tequila"
+	description = "A strong flavoured tequila, mi amor."
+	taste_description = "an alluring and forbidden combination of agave"
+	color = "#ffff91"
+	strength = 35
+
+	glass_name = "santa rosa tequila"
+	glass_desc = "The preferred drink of Knight."
 
 /datum/reagent/ethanol/thirteenloko
 	name = "Thirteen Loko"
@@ -1338,6 +1369,36 @@
 
 	glass_name = "whiskey"
 	glass_desc = "The silky, smokey whiskey goodness inside the glass makes the drink look very classy."
+
+/datum/reagent/ethanol/whiskey/southhouse
+	name = "South House Reserve Whiskey"
+	description = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
+	taste_description = "oak and vanilla"
+	color = "#523600"
+	strength = 30
+
+	glass_name = "south house reserve whiskey"
+	glass_desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
+
+/datum/reagent/ethanol/whiskey/mcclane
+	name = "McClane Whiskey"
+	description = "A real man's whiskey."
+	taste_description = "smoke and coffee"
+	color = "#523600"
+	strength = 35
+
+	glass_name = "mcclane whiskey"
+	glass_desc = "A real man's whiskey."
+
+/datum/reagent/ethanol/whiskey/jikan
+	name = "Jikan Whiskey"
+	description = "A luxurious Yamato-made whiskey, only for the finest connoseiurs."
+	taste_description = "crisp apples and pine"
+	color = "#523600"
+	strength = 25
+
+	glass_name = "jikan whiskey"
+	glass_desc = "A luxurious Yamato-made whiskey, only for the finest connoseiurs."
 
 /datum/reagent/ethanol/cider
 	name = "Cider"
@@ -1575,7 +1636,7 @@
 	strength = 15
 
 	glass_name = "Brave Bull"
-	glass_desc = "Tequilla and coffee liquor, brought together in a mouthwatering mixture. Drink up."
+	glass_desc = "Tequila and coffee liquor, brought together in a mouthwatering mixture. Drink up."
 
 /datum/reagent/ethanol/changelingsting
 	name = "Changeling Sting"
@@ -2030,15 +2091,15 @@
 	glass_name = "Syndicate Bomb"
 	glass_desc = "Tastes like terrorism!"
 
-/datum/reagent/ethanol/tequilla_sunrise
+/datum/reagent/ethanol/tequila_sunrise
 	name = "Tequila Sunrise"
 	description = "Tequila and orange juice. Much like a Screwdriver, only Mexican~"
 	taste_description = "oranges"
 	color = "#ffe48c"
 	strength = 25
 
-	glass_name = "Tequilla Sunrise"
-	glass_desc = "Oh great, now you feel nostalgic about sunrises back on Terra..."
+	glass_name = "Tequila Sunrise"
+	glass_desc = "Oh great, now you feel nostalgic about sunrises back on Earth..."
 
 /datum/reagent/ethanol/threemileisland
 	name = "Three Mile Island Iced Tea"
@@ -2116,13 +2177,3 @@
 
 	glass_name = "whiskey soda"
 	glass_desc = "Ultimate refreshment."
-
-/datum/reagent/ethanol/specialwhiskey // I have no idea what this is and where it comes from
-	name = "Special Blend Whiskey"
-	description = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
-	taste_description = "liquid fire"
-	color = "#523600"
-	strength = 25
-
-	glass_name = "special blend whiskey"
-	glass_desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."

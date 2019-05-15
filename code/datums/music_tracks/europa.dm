@@ -1,3 +1,4 @@
+/*
 /music_track/inorbit
 	artist = "Chronox"
 	title = "In Orbit"
@@ -32,6 +33,7 @@
 	song = 'sound/music/europa/80salloveragain.ogg'
 	license = /decl/license/cc_by_sa_4_0
 	url = "https://ghyti.bandcamp.com/"
+*/
 
 /music_track/wildencounters
 	artist = "A Drop A Day"
@@ -40,6 +42,7 @@
 	license = /decl/license/cc_by_sa_4_0
 	url = "https://ghyti.bandcamp.com/"
 
+/*
 /music_track/torn
 	artist = "Macamoto"
 	title = "Torn"
@@ -53,3 +56,4 @@
 	song = 'sound/music/europa/Pulse_Emitter_-_04_-_Nebula.ogg'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://pulseemitter.bandcamp.com/track/nebula"
+*/

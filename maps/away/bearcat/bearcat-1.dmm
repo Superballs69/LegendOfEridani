@@ -839,7 +839,7 @@
 	dir = 4
 	},
 /obj/structure/closet/coffin,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
 /obj/item/weapon/contraband/poster,
 /obj/item/stack/material/phoron/ten,
 /turf/simulated/floor/tiled/usedup,

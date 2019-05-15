@@ -366,7 +366,7 @@
 /obj/item/weapon/book/manual/chef_recipes,
 /obj/item/weapon/reagent_containers/food/drinks/pitcher,
 /obj/effect/decal/cleanable/dirt,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
 /turf/simulated/floor/wood,
 /area/yacht/living)
 "ba" = (

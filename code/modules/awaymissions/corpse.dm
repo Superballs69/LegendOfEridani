@@ -144,12 +144,20 @@
 
 /obj/effect/landmark/corpse/pirate
 	name = "Pirate"
-	corpse_outfits = list(/decl/hierarchy/outfit/pirate/norm)
+	corpse_outfits = list(/decl/hierarchy/outfit/pirate/melee)
 	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
 
-/obj/effect/landmark/corpse/pirate/ranged
-	name = "Pirate Gunner"
-	corpse_outfits = list(/decl/hierarchy/outfit/pirate/space)
+/obj/effect/landmark/corpse/pirate/shield
+	corpse_outfits = list(/decl/hierarchy/outfit/pirate/shield)
+
+/obj/effect/landmark/corpse/pirate/pistoleer
+	corpse_outfits = list(/decl/hierarchy/outfit/pirate/pistoleer)
+
+/obj/effect/landmark/corpse/pirate/bodyguard
+	corpse_outfits = list(/decl/hierarchy/outfit/pirate/bodyguard)
+
+/obj/effect/landmark/corpse/pirate/leader
+	corpse_outfits = list(/decl/hierarchy/outfit/pirate/leader)
 
 /obj/effect/landmark/corpse/russian
 	name = "Russian"

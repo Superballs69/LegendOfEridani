@@ -98,20 +98,20 @@
 
 /obj/item/weapon/material/pocketknife/attack_self(mob/user)
 	if(user.skill_check(SKILL_COMBAT, SKILL_NONE))
-		src.engage_time = 12
-	else if(user.skill_check(SKILL_COMBAT, SKILL_BASIC))
-		src.engage_time = 8
-	else if(user.skill_check(SKILL_COMBAT, SKILL_ADEPT))
-		src.engage_time = 4
-	else if(user.skill_check(SKILL_COMBAT, SKILL_EXPERT))
-		src.engage_time = 2
-	else if(user.skill_check(SKILL_COMBAT, SKILL_PROF))
-		src.engage_time = 1
+		engage_time = 12
+	if(user.skill_check(SKILL_COMBAT, SKILL_BASIC))
+		engage_time = 8
+	if(user.skill_check(SKILL_COMBAT, SKILL_ADEPT))
+		engage_time = 4
+	if(user.skill_check(SKILL_COMBAT, SKILL_EXPERT))
+		engage_time = 2
+	if(user.skill_check(SKILL_COMBAT, SKILL_PROF))
+		engage_time = 1
 
 	if(busy)
 		return
 	if(automatic)
-		if(active)
+		if(!active)
 			to_chat(user, "<span class='notice'>You engage \the [src].</span>")
 			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
 			active = !active
@@ -122,9 +122,9 @@
 			active = !active
 			update_force()
 	else
-		if(active)
+		if(!active)
 			busy = 1
-			if(do_after(user, engage_time))
+			if(do_after(user, engage_time, can_move = 1))
 				busy = 0
 				to_chat(user, "<span class='notice'>You flip out \the [src].</span>")
 				playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
@@ -133,7 +133,7 @@
 			busy = 0
 		else
 			busy = 1
-			if(do_after(user, engage_time))
+			if(do_after(user, engage_time, can_move = 1))
 				busy = 0
 				to_chat(user, "<span class='notice'>\The [src] can now be concealed.</span>")
 				playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)

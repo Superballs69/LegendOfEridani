@@ -103,8 +103,6 @@
 	#include "../away/lar_maria/lar_maria.dm"
 	#include "../away/unishi/unishi.dm"
 
-	#include "../../code/datums/music_tracks/chasing_time.dm"
-
 	#define using_map_DATUM /datum/map/eclipse
 
 #elif !defined(MAP_OVERRIDE)

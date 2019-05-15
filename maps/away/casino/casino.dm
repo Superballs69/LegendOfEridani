@@ -3,7 +3,7 @@
 
 /obj/effect/overmap/ship/casino
 	name = "passenger liner"
-	desc = "Sensors detect an undamaged vessel without any signs of activity."
+	desc = "Sensors detect an undamaged vessel with multiple lifeform readings and a distress signal."
 	color = "#bd6100"
 	vessel_mass = 100
 	max_speed = 1/(2 SECONDS)

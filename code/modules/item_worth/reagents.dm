@@ -138,6 +138,9 @@
 /datum/reagent/ethanol/absinthe
 	value = 0.13
 
+/datum/reagent/ethanol/absinthe
+	value = 5.00
+
 /datum/reagent/ethanol/ale
 	value = 0.13
 
@@ -153,6 +156,9 @@
 /datum/reagent/ethanol/gin
 	value = 0.1
 
+/datum/reagent/ethanol/gin/ksiri
+	value = 7.50
+
 /datum/reagent/ethanol/coffee/kahlua
 	value = 0.14
 
@@ -165,8 +171,11 @@
 /datum/reagent/ethanol/sake
 	value = 0.11
 
-/datum/reagent/ethanol/tequilla
+/datum/reagent/ethanol/tequila
 	value = 0.1
+
+/datum/reagent/ethanol/tequila/santarosa
+	value = 6.50
 
 /datum/reagent/ethanol/thirteenloko
 	value = 0.15
@@ -342,7 +351,7 @@
 /datum/reagent/ethanol/syndicatebomb
 	value = 0.21
 
-/datum/reagent/ethanol/tequilla_sunrise
+/datum/reagent/ethanol/tequila_sunrise
 	value = 0.13
 
 /datum/reagent/ethanol/threemileisland
@@ -366,8 +375,14 @@
 /datum/reagent/ethanol/whiskeysoda
 	value = 0.15
 
-/datum/reagent/ethanol/specialwhiskey
-	value = 0.3
+/datum/reagent/ethanol/whiskey/southhouse
+	value = 6.0
+
+/datum/reagent/ethanol/whiskey/jikan
+	value = 10.0
+
+/datum/reagent/ethanol/whiskey/mcclane
+	value = 4.0
 
 /datum/reagent/inaprovaline
 	value = 3.5

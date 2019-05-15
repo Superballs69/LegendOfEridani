@@ -32,6 +32,14 @@
 	attack_verb = list("stabbed", "chopped", "cut")
 	applies_material_colour = 1
 
+/obj/item/weapon/material/hatchet/tacknife/bayonet
+	name = "rifle bayonet"
+	desc = "A sharp bayonet that attaches to a rifle. You don't think it can attach to any rifle you know."
+	icon_state = "bayonetknife"
+	applies_material_colour = 0
+	force_divisor = 0.25 //15 with hardness 60 (steel)
+	unbreakable = 1
+
 /obj/item/weapon/material/hatchet/machete
 	name = "machete"
 	desc = "A long, sturdy blade with a rugged handle. Leading the way to cursed treasures since before space travel."

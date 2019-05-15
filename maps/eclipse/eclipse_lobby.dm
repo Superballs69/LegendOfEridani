@@ -6,5 +6,13 @@
 		/music_track/rockthecasbah,
 		/music_track/underpressure,
 		/music_track/rocketman,
-		/music_track/westendgirls
+		/music_track/westendgirls,
+		/music_track/luftballons,
+		/music_track/breakmystride,
+		/music_track/plasticlove,
+		/music_track/shesonfire,
+		/music_track/summerdays,
+		/music_track/walklifeanegyptian,
+		/music_track/wishingwell,
+		/music_track/workingfortheweekend
 	)

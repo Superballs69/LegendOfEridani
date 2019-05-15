@@ -2082,7 +2082,7 @@
 /area/lar_maria/dorms)
 "fH" = (
 /obj/structure/table/woodentable,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
 /obj/random/contraband,
 /turf/simulated/floor/wood,
 /area/lar_maria/dorms)

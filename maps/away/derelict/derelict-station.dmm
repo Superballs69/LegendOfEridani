@@ -520,7 +520,7 @@
 /area/constructionsite/bridge)
 "bC" = (
 /obj/structure/table/standard,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
 /turf/simulated/floor/airless,
 /area/constructionsite/bridge)
 "bD" = (
@@ -1016,8 +1016,8 @@
 /area/constructionsite/hallway/fore)
 "dk" = (
 /obj/structure/table/marble,
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
+/obj/random/drinkbottle/premium,
 /turf/simulated/floor/airless,
 /area/constructionsite/hallway/fore)
 "dl" = (
@@ -1031,7 +1031,7 @@
 /area/constructionsite/hallway/fore)
 "dn" = (
 /obj/structure/table/marble,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
 /turf/simulated/floor/airless,
 /area/constructionsite/hallway/fore)
 "do" = (

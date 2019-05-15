@@ -1554,7 +1554,7 @@
 /datum/chemical_reaction/patron
 	name = "Patron"
 	result = /datum/reagent/ethanol/patron
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, /datum/reagent/silver = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 10, /datum/reagent/silver = 1)
 	result_amount = 10
 	mix_message = "The silver flakes and settles in the tequila."
 
@@ -1740,7 +1740,7 @@
 /datum/chemical_reaction/magellan
 	name = "Magellan"
 	result = /datum/reagent/ethanol/magellan
-	required_reagents = list(/datum/reagent/ethanol/wine = 1, /datum/reagent/ethanol/specialwhiskey = 1)
+	required_reagents = list(/datum/reagent/ethanol/wine = 1, /datum/reagent/ethanol/whiskey/southhouse = 1)
 	catalysts = list(/datum/reagent/sugar)
 	result_amount = 2
 
@@ -1771,13 +1771,13 @@
 /datum/chemical_reaction/brave_bull
 	name = "Brave Bull"
 	result = /datum/reagent/ethanol/coffee/brave_bull
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
 	result_amount = 3
 
-/datum/chemical_reaction/tequilla_sunrise
-	name = "Tequilla Sunrise"
-	result = /datum/reagent/ethanol/tequilla_sunrise
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/orange = 1)
+/datum/chemical_reaction/tequila_sunrise
+	name = "Tequila Sunrise"
+	result = /datum/reagent/ethanol/tequila_sunrise
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/orange = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/phoron_special
@@ -1839,13 +1839,13 @@
 /datum/chemical_reaction/margarita
 	name = "Margarita"
 	result = /datum/reagent/ethanol/margarita
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/lime = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/lime = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/longislandicedtea
 	name = "Long Island Iced Tea"
 	result = /datum/reagent/ethanol/longislandicedtea
-	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequilla = 1, /datum/reagent/ethanol/cuba_libre = 3)
+	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequila = 1, /datum/reagent/ethanol/cuba_libre = 3)
 	result_amount = 6
 
 /datum/chemical_reaction/threemileisland

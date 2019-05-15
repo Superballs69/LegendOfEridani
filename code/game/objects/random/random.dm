@@ -241,13 +241,25 @@
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/gin,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
-				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequilla,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/cognac,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/rum,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/patron)
 
+/obj/random/drinkbottle/premium
+	name = "random premium drink"
+	icon_state = "premiumwhiskey3"
+
+/obj/random/drinkbottle/premium/spawn_choices()
+	return list(/obj/item/weapon/reagent_containers/food/drinks/bottle/gin/ksiri,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/mayworthwhiskey,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/jikan,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila/santarosa,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/nouvellereine
+	)
 
 /obj/random/energy
 	name = "Random Energy Weapon"
@@ -976,6 +988,7 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/tank = 20,
 				/obj/random/soap = 5,
 				/obj/random/drinkbottle = 5,
+				/obj/random/drinkbottle/premium = 1,
 				/obj/random/loot = 1,
 				/obj/random/advdevice = 50,
 				/obj/random/smokes = 30,

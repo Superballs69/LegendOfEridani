@@ -905,8 +905,8 @@
 "cg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
+/obj/random/drinkbottle/premium,
+/obj/random/drinkbottle/premium,
 /turf/simulated/floor/tiled,
 /area/smugglers/dorms)
 "ch" = (
