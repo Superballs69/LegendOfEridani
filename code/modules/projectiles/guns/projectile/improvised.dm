@@ -168,29 +168,28 @@
             F.burst_delay = 5
         F.construction_level = 1
         F.has_safety = FALSE
-    else if(user.skill_check(SKILL_CONSTRUCTION, SKILL_BASIC))
+    if(user.skill_check(SKILL_CONSTRUCTION, SKILL_BASIC))
         F.jam_chance = rand(20,70)
         F.fail_chance = rand(20,50)
         if(istype(F,/obj/item/weapon/gun/projectile/automatic))
             F.burst_delay = 4
         F.construction_level = 2
         F.has_safety = FALSE
-    else if(user.skill_check(SKILL_CONSTRUCTION, SKILL_ADEPT))
+    if(user.skill_check(SKILL_CONSTRUCTION, SKILL_ADEPT))
         F.jam_chance = rand(0,20)
         F.fail_chance = 0 //Atleast the gun wont blow up in your face anymore.
         if(istype(F,/obj/item/weapon/gun/projectile/automatic))
             F.burst_delay = 3
         F.construction_level = 3
-    else if(user.skill_check(SKILL_CONSTRUCTION, SKILL_EXPERT)) //Experienced or higher for a safe firearm.
+    if(user.skill_check(SKILL_CONSTRUCTION, SKILL_EXPERT)) //Experienced or higher for a safe firearm.
         F.jam_chance = 0
         F.fail_chance = 0
         if(istype(F,/obj/item/weapon/gun/projectile/automatic))
             F.burst_delay = 2
         F.construction_level = 4
-    else if(user.skill_check(SKILL_CONSTRUCTION, SKILL_PROF))
+    if(user.skill_check(SKILL_CONSTRUCTION, SKILL_PROF))
         F.jam_chance = 0
         F.fail_chance = 0
-        F.fire_delay = F.fire_delay/2 //Halfed fire delay, wow!
         if(istype(F,/obj/item/weapon/gun/projectile/automatic))
             F.burst_delay = 1
         F.construction_level= 5

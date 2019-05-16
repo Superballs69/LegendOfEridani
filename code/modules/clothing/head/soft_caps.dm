@@ -105,3 +105,8 @@
 	name = "corporate security cap"
 	desc = "It's field cap in corporate colors."
 	icon_state = "ntwhitesoft"
+
+/obj/item/clothing/head/soft/fdi
+	name = "fdi baseball cap"
+	desc = "A high speed baseball cap for FDI agents."
+	icon_state = "cap_fdi"

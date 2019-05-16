@@ -239,7 +239,6 @@
 /obj/random/drinkbottle/spawn_choices()
 	return list(/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/gin,
-				/obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe,
@@ -253,12 +252,12 @@
 	icon_state = "premiumwhiskey3"
 
 /obj/random/drinkbottle/premium/spawn_choices()
-	return list(/obj/item/weapon/reagent_containers/food/drinks/bottle/gin/ksiri,
+	return list(/obj/item/weapon/reagent_containers/food/drinks/bottle/ksiri,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/mayworthwhiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/jikan,
-				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila/santarosa,
-				/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/nouvellereine
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/santarosa,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/nouvellereine
 	)
 
 /obj/random/energy

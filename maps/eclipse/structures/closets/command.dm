@@ -151,7 +151,8 @@
 /obj/structure/closet/secure_closet/fdi/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/fdi,
-		/obj/item/clothing/head/helmet/security,
+		/obj/item/clothing/head/helmet/swat/mask,
+		/obj/item/clothing/mask/balaclava/police,
 		/obj/item/device/radio/headset/fdi,
 		/obj/item/device/radio/headset/fdi/alt,
 		/obj/item/weapon/material/pocketknife/auto,
@@ -177,6 +178,7 @@
 		/obj/item/clothing/head/helmet/space/fdi,
 		/obj/item/clothing/under/fca_proper,
 		/obj/item/clothing/head/garrison/fdi,
+		/obj/item/clothing/head/soft/fdi,
 		/obj/item/clothing/accessory/storage/tunic/fdi_proper,
 		/obj/item/clothing/shoes/highboots,
 		/obj/item/clothing/gloves/white,

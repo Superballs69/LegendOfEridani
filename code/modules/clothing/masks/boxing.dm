@@ -20,6 +20,12 @@
 	icon_state = "swatclava"
 	down_icon_state = "swatclava_r"
 
+/obj/item/clothing/mask/balaclava/police
+	name = "high speed balaclava"
+	icon_state = "policeclava"
+	item_state = "policeclava"
+	pull_mask = 0
+
 /obj/item/clothing/mask/luchador
 	name = "Luchador Mask"
 	desc = "Worn by robust fighters, flying high to defeat their foes!"

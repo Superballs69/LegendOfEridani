@@ -85,7 +85,7 @@
 	path = /obj/item/clothing/accessory/storage/pouches/load_bearing/rig/black
 
 /datum/gear/storage/black_drop_pouches
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant)
+	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/iaa, /datum/job/tiger, /datum/job/isec, /datum/job/merchant, /datum/job/fdi)
 
 /datum/gear/storage/white_drop_pouches
 	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/paramedic, /datum/job/roboticist, /datum/job/merchant, /datum/job/labtech, /datum/job/pathfinder_specialist)

@@ -177,7 +177,7 @@
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/gin, 100)
 
-/obj/item/weapon/reagent_containers/food/drinks/bottle/gin/ksiri
+/obj/item/weapon/reagent_containers/food/drinks/bottle/ksiri
 	name = "K'siri Royale"
 	desc = "A galaxy-renowned brand of gin that is only made on Naj'd. A great addition to your alcohol stash."
 	icon_state = "premiumgin"
@@ -212,7 +212,7 @@
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/jikan
 	name = "Zentory Jikan"
-	desc = "An extremely rare and delicious Yamato whiskey. No longer in collection and few bottles remain."
+	desc = "An extremely rare and delicious Yamato whiskey. No longer in production and few bottles remain."
 	icon_state = "premiumwhiskey3"
 	New()
 		..()
@@ -237,7 +237,7 @@
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/tequila, 100)
 
-/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila/santarosa
+/obj/item/weapon/reagent_containers/food/drinks/bottle/santarosa
 	name = "Santa Rosa Tequila"
 	desc = "A premium blend of Martian and Alesian blue agave."
 	icon_state = "premiumtequila"
@@ -362,7 +362,7 @@
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/absinthe, 100)
 
-/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/nouvellereine
+/obj/item/weapon/reagent_containers/food/drinks/bottle/nouvellereine
 	name = "Absinthe L'Nouvelle Reine"
 	desc = "One sip of this and you just know you're gonna have a good time and forget the next week."
 	icon_state = "premiumabsinthe"

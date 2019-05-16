@@ -70,6 +70,16 @@
 	icon_state = "helmet_swat"
 	armor = list(melee = 60, bullet = 50, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/head/helmet/swat/mask
+	name = "ballistic mask"
+	desc = "A ballistic mask typically seen in service with special operations units."
+	icon_state = "ballisticmask"
+	flags_inv = HIDEEYES
+	valid_accessory_slots = null
+
+/obj/item/clothing/head/helmet/swat/mask/gray
+	icon_state = "ballisticmask_gray"
+
 /obj/item/clothing/head/helmet/swat/fdi
 	name = "FDI tactical helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
