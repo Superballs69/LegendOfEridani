@@ -157,6 +157,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	one_hand_penalty = 2
 	wielded_item_state = "gun_wielded"
+	fire_sound = 'sound/weapons/gunshot/mateba.ogg'
 
 	burst_delay = 0
 	firemodes = list(
