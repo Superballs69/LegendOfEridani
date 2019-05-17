@@ -211,29 +211,27 @@
 
 //cigarellos
 /obj/item/weapon/storage/fancy/cigarettes/cigarello
-	name = "pack of Trident Original cigars"
+	name = "Trident Cigarillos"
 	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years."
-	icon_state = "CRpacket"
+	icon_state = "CRFpacket"
 	item_state = "Dpacket"
-	max_storage_space = 5
+	max_storage_space = 2
 	key_type = /obj/item/clothing/mask/smokable/cigarette/trident
-	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident = 5)
+	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident = 2)
 
 /obj/item/weapon/storage/fancy/cigarettes/cigarello/variety
-	name = "pack of Trident Fruit cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. This is a fruit variety pack."
-	icon_state = "CRFpacket"
-	startswith = list(	/obj/item/clothing/mask/smokable/cigarette/trident/watermelon,
-						/obj/item/clothing/mask/smokable/cigarette/trident/orange,
-						/obj/item/clothing/mask/smokable/cigarette/trident/grape,
-						/obj/item/clothing/mask/smokable/cigarette/trident/cherry,
+	name = "Trident Berry Cigarillos"
+	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. This is the classic berry flavor."
+	icon_state = "CRpacket"
+	startswith = list(
+						/obj/item/clothing/mask/smokable/cigarette/trident/cherry
 						/obj/item/clothing/mask/smokable/cigarette/trident/berry)
 
 /obj/item/weapon/storage/fancy/cigarettes/cigarello/mint
-	name = "pack of Trident Menthol cigars"
+	name = "Trident Menthol Cigarillos"
 	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. These are the menthol variety."
 	icon_state = "CRMpacket"
-	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident/mint = 5)
+	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident/mint = 2)
 
 /obj/item/weapon/storage/fancy/cigar
 	name = "cigar case"
