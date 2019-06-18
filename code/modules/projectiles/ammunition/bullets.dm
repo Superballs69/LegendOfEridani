@@ -253,7 +253,7 @@
 
 /obj/item/ammo_casing/a762
 	desc = "A 7.62mm bullet casing."
-	caliber = "a762"
+	caliber = "7.62mm"
 	projectile_type = /obj/item/projectile/bullet/rifle/a762
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"

@@ -78,7 +78,6 @@
 		/obj/item/seeds/nettleseed = 30,
 		/obj/item/seeds/orangeseed = 30,
 		/obj/item/seeds/plumpmycelium = 30,
-		/obj/item/seeds/poppyseed = 30,
 		/obj/item/seeds/potatoseed = 30,
 		/obj/item/seeds/onionseed = 30,
 		/obj/item/seeds/garlicseed = 30,

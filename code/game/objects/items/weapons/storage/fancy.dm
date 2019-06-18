@@ -224,7 +224,7 @@
 	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. This is the classic berry flavor."
 	icon_state = "CRpacket"
 	startswith = list(
-						/obj/item/clothing/mask/smokable/cigarette/trident/cherry
+						/obj/item/clothing/mask/smokable/cigarette/trident/berry,
 						/obj/item/clothing/mask/smokable/cigarette/trident/berry)
 
 /obj/item/weapon/storage/fancy/cigarettes/cigarello/mint

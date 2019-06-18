@@ -564,6 +564,32 @@
 		if(prob(15))
 			M.emote(pick("twitch", "giggle"))
 
+/datum/reagent/opium
+	name = "opium"
+	description = "A restricted sticky latex derived from poppy plants, a natural precursor to other opiates."
+	taste_description = "sticky bitterness"
+	taste_mult = 0.4
+	reagent_state = LIQUID
+	color = "#fffbcc"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE
+
+/datum/reagent/opium/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	M.add_chemical_effect(CE_PAINKILLER, 60)
+	M.add_chemical_effect(CE_ANTIVIRAL, 1)
+	M.make_dizzy(2)
+	if(prob(75))
+		M.drowsyness++
+
+/datum/reagent/opium/overdose(var/mob/living/carbon/M, var/alien)
+	..()
+	M.hallucination(120, 30)
+	M.druggy = max(M.druggy, 10)
+	M.add_chemical_effect(CE_TOXIN, 2)
+	M.add_chemical_effect(CE_BREATHLOSS, 0.6) //Have trouble breathing, need more air
+
 /* Transformations */
 
 /datum/reagent/slimetoxin

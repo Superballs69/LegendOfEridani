@@ -33,6 +33,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/pcarrier/tan/pirate/heavy
 	belt = /obj/item/weapon/gun/projectile/revolver/judge
+	gloves = /obj/item/clothing/gloves/thick
 
 /decl/hierarchy/outfit/pirate/leader
 	name = "Pirate - Leader"

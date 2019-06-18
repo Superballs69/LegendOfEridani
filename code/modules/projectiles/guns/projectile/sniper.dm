@@ -80,3 +80,47 @@
 
 	toggle_scope(usr, 2.0)
 
+// Bolt Action Rifles
+/obj/item/weapon/gun/projectile/shotgun/pump/boltaction
+	name = "FAC R700"
+	desc = "A popular scoped hunting rifle seen throughout Frontier space, with many claiming this weapon as a birthright. Chambered in 7.62."
+	icon = 'icons/obj/gun_2.dmi'
+	icon_state = "r700"
+	ammo_type = /obj/item/ammo_casing/a762
+	caliber = "7.62mm"
+	load_method = SINGLE_CASING|SPEEDLOADER
+	max_shells = 5
+	unacidable = 1
+	one_hand_penalty = 5
+	accuracy = -1
+	scoped_accuracy = 4
+	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
+	fire_sound = 'sound/weapons/gunshot/r700.ogg'
+	cycle_sound = 'sound/weapons/guns/interaction/boltactioncycle.ogg'
+
+/obj/item/weapon/gun/projectile/shotgun/pump/boltaction/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2.0)
+
+/obj/item/weapon/gun/projectile/shotgun/pump/boltaction/police
+	name = "FAC R700 Police"
+	desc = "A police variant of the R700, commonly seen in the hands of Frontier National Guard and local constabulary. Chambered in 7.62 and utilizes a 10 round magazine."
+	icon_state = "r700_police"
+	accuracy = 0
+	scoped_accuracy = 5
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m762svd
+	allowed_magazines = /obj/item/ammo_magazine/m762svd
+
+/obj/item/weapon/gun/projectile/shotgun/pump/boltaction/police/update_icon(var/ignore_inhands)
+	..()
+	if(ammo_magazine)
+		icon_state = "[icon_state]"
+	else
+		icon_state = "[icon_state]-e"
+
+	if(!ignore_inhands) update_held_icon()
+	return

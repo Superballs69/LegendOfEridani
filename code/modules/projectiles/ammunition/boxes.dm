@@ -315,7 +315,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "7.62mm"
-	matter = list(MATERIAL_STEEL = 1800)
+	matter = list(MATERIAL_STEEL = 2000) //100 material per bullet
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
@@ -333,7 +333,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "7.62mm"
-	matter = list(DEFAULT_WALL_MATERIAL = 2200)
+	matter = list(DEFAULT_WALL_MATERIAL = 3000)
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 30
 	multiple_sprites = 0
@@ -346,13 +346,24 @@
 	icon_state = "svd-762"
 	mag_type = MAGAZINE
 	caliber = "7.62mm"
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	matter = list(DEFAULT_WALL_MATERIAL = 1000)
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 10
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/m762svd/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/s762
+	name = "stripper clip (7.62mm)"
+	desc = "A stripper clip for 7.62 rifles."
+	icon_state = "7.62x51mm"
+	caliber = "7.62mm"
+	mag_type =  SPEEDLOADER
+	ammo_type = /obj/item/ammo_casing/a762
+	matter = list(MATERIAL_STEEL = 1000)
+	max_ammo = 5
+	multiple_sprites = 1
 
 /obj/item/ammo_magazine/m50
 	name = "magazine (.50)"

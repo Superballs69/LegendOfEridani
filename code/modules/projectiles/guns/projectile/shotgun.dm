@@ -18,6 +18,7 @@
 	wielded_item_state = "gun_wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	var/cycle_sound = 'sound/weapons/shotgunpump.ogg'
 
 /obj/item/weapon/gun/projectile/shotgun/pump/consume_next_projectile()
 	if(chambered)
@@ -30,7 +31,7 @@
 		recentpump = world.time
 
 /obj/item/weapon/gun/projectile/shotgun/pump/proc/pump(mob/M as mob)
-	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
+	playsound(M, cycle_sound, 60, 1)
 
 	if(chambered)//We have a shell in the chamber
 		chambered.forceMove(get_turf(src))//Eject casing
@@ -41,6 +42,10 @@
 	if(loaded.len)
 		var/obj/item/ammo_casing/AC = loaded[1] //load next casing.
 		loaded -= AC //Remove casing from loaded list.
+		chambered = AC
+	else if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		var/obj/item/ammo_casing/AC = ammo_magazine.stored_ammo[1] //load next casing.
+		ammo_magazine.stored_ammo -= AC
 		chambered = AC
 
 	update_icon()
@@ -256,3 +261,9 @@
 	icon_state = "spas12"
 	max_shells = 8
 	accuracy = 1
+
+/obj/item/weapon/gun/projectile/shotgun/pump/semi/civilian
+	name = "WT Auto-5"
+	desc = "An entry level semi-automatic shotgun mass-produced by Ward Takahashi. Based off the Browning Auto-5. "
+	icon_state = "autofive"
+	max_shells = 4

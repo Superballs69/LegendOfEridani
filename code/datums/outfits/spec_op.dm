@@ -71,10 +71,11 @@
 
 /decl/hierarchy/outfit/mercenary/syndicate
 	name = "Spec Ops - Syndicate"
-	suit = /obj/item/clothing/suit/armor/vest
-	mask = /obj/item/clothing/mask/gas
-	head = /obj/item/clothing/head/helmet/swat
+	suit = /obj/item/clothing/suit/armor/pcarrier/tan/combat
+	mask = /obj/item/clothing/mask/balaclava
+	head = /obj/item/clothing/head/helmet/combat
 	shoes = /obj/item/clothing/shoes/swat
+	glasses = /obj/item/clothing/glasses/thermal
 	id_desc = "Syndicate Operative"
 
 /decl/hierarchy/outfit/mercenary/syndicate/commando

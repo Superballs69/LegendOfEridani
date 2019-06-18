@@ -10,8 +10,8 @@
 	response_harm = "hits"
 	speed = 0
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 200
-	health = 200
+	maxHealth = 100
+	health = 100
 	can_escape = 1
 	harm_intent_damage = 5
 	melee_damage_lower = 30
@@ -21,7 +21,11 @@
 	unsuitable_atmos_damage = 15
 	var/corpse = /obj/effect/landmark/corpse/pirate
 	var/weapon1 = /obj/item/weapon/material/hatchet/tacknife/bayonet
-	var/loot = null
+	var/loot = null //This is the only 100% drop
+	var/loot2 = /obj/item/weapon/storage/med_pouch/trauma //Percent chance to drop based on lootdropProb
+	var/loot3 = /obj/item/weapon/storage/firstaid/ifak/police
+	var/loot4 = /obj/item/weapon/spacecash/bundle/c500
+	var/lootdropProb = 25 //Base 25% chance.
 	faction = "pirate"
 
 /mob/living/simple_animal/hostile/pirate/death(gibbed, deathmessage, show_dead_message)
@@ -32,6 +36,15 @@
 		new weapon1 (src.loc)
 	if(loot)
 		new loot (src.loc)
+	if(loot2)
+		if(prob(lootdropProb))
+			new loot2 (src.loc)
+	if(loot3)
+		if(prob(lootdropProb))
+			new loot3 (src.loc)
+	if(loot4)
+		if(prob(lootdropProb))
+			new loot4 (src.loc)
 	qdel(src)
 	return
 
@@ -40,14 +53,15 @@
 	icon_state = "pirate2"
 	icon_living = "pirate2"
 	projectilesound = 'sound/weapons/Taser.ogg'
-	maxHealth = 600
-	health = 600
+	maxHealth = 100
+	health = 100
 	ranged = 1
 	speed = 2
 	projectiletype = /obj/item/projectile/beam/stun
 	corpse = /obj/effect/landmark/corpse/pirate/shield
 	weapon1 = /obj/item/weapon/gun/energy/gun/pistol
 	loot = /obj/item/weapon/shield/riot/metal
+	loot2 = /obj/item/weapon/material/hatchet/tacknife/bayonet
 
 /mob/living/simple_animal/hostile/pirate/shield/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(O.force)
@@ -78,14 +92,13 @@
 	icon_state = "pirate3"
 	icon_living = "pirate3"
 	projectilesound = 'sound/weapons/gunshot/usp.ogg'
-	maxHealth = 200
-	health = 200
+	maxHealth = 100
+	health = 100
 	ranged = 1
 	projectiletype = /obj/item/projectile/bullet/pistol/medium
 	corpse = /obj/effect/landmark/corpse/pirate/pistoleer
 	weapon1 = /obj/item/weapon/gun/projectile/usp
-	casingtype = /obj/item/ammo_casing/c45/used
-	loot = /obj/item/weapon/material/hatchet/tacknife/bayonet
+	loot2 = /obj/item/weapon/material/hatchet/tacknife/bayonet
 
 /mob/living/simple_animal/hostile/pirate/bodyguard
 	name = "pirate leader's bodyguard"
@@ -100,8 +113,7 @@
 	projectiletype = /obj/item/projectile/bullet/rifle/a556
 	corpse = /obj/effect/landmark/corpse/pirate/bodyguard
 	weapon1 = /obj/item/weapon/gun/projectile/automatic/sts35
-	casingtype = /obj/item/ammo_casing/a556/used
-	loot = /obj/item/ammo_magazine/m556
+	loot2 = /obj/item/weapon/material/hatchet/tacknife/bayonet
 
 /mob/living/simple_animal/hostile/pirate/leader
 	name = "pirate leader"
@@ -116,7 +128,7 @@
 	corpse = /obj/effect/landmark/corpse/pirate/leader
 	weapon1 = /obj/item/weapon/gun/projectile/deagle/lamia/mk2
 	loot = /obj/item/weapon/shield/riot/extendable
-	casingtype = /obj/item/ammo_casing/a50/used
+	loot2 = /obj/item/weapon/material/hatchet/tacknife/bayonet
 
 /mob/living/simple_animal/hostile/pirate/leader/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(O.force)
